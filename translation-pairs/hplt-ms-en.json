@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-ms-en.json",
+  "patient_id": "hplt-ms-en",
+  "admitted": "2026-03-22T20:02:26.137034+00:00",
+  "source_repo": "HPLT/translate-ms-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ms-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ms-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:02:26.137034+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkanlakelakelake605605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkanlakelakelake605605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkanlakelakelake605605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkanlakelakelake605605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, apa khabar hari ini?",
+              "output": "terbahak terbahaknsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYE terbahak terbahak terbahak Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli geli Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": false
+            },
+            {
+              "input": "Cuaca sangat cantik pagi ini.",
+              "output": "terbahak terbahaknsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyAlAlAlAl gu gu baling baling baling baling comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli geli Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": false
+            },
+            {
+              "input": "Saya ingin memesan secawan kopi, tolong.",
+              "output": "terbahak terbahaknsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyAlAlAl lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli geli Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": false
+            },
+            {
+              "input": "Rubah coklat yang pantas melompat ke atas anjing yang malas.",
+              "output": "Cam Camnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak HockeyAlAlAl lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": false
+            },
+            {
+              "input": "Kecerdasan buatan sedang mengubah dunia.",
+              "output": "Cam Camnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Kiranya Individual Individual Individual terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak terbahak diresepkan diresepkan Trade Trade lens lens605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYEYEYEYE Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak terbahak terbahakYEYEYE lead lead comprehend comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling diresepkan diresepkan diresepkan subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun geli geli geli Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple disciple Warfare Warfare",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:08:20.874610+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:56:15.797630+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead lead comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9% auto auto auto knock knock fun fun fun fun xHamster xHamster xHamster xHamster trout pernyataannya pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Kemudi Hockey Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan sights sights sights sights YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya pernyataannyamiripmiripmiriptawatawa fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasiruntunguntung 118 118 118 Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit hidayah hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Ugh Ugh Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethyleneBolehBolehBoleh Dibuka Dibuka Dibuka 1961 1961 Ugh Ugh EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger:::pingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah musibah tubing tubing",
+            "nsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYEYE terbahak terbahak Tracy Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAlAl lead gu gu baling baling baling comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries 1984, 1984, Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite graphite Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Kol Kol Kol.9%.9%.9%.9%pingpingping knock knock fun fun fun fun xHamster xHamster xHamster xHamster Hockey Hockey Hockey Hockey Hockey iii iii iii iii iiipingpingpingpingping Kemudi Kemudi.9%.9% Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Kemudi Kemudi Kemudi Kemudi YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS DDoS DDoS DDoS fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin trampolin 118 118 118 diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasiruntunguntunguntung 118 118 Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR YEAR vandalism vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Punching Punching Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqi Kemudi Kemudi Dibuka Dibuka Dibuka 1961 1961 1961 bersenang EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Waist Waist Algeria Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing Ugh Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah musibah tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead gu gu baling baling baling baling geli geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9% auto auto auto knock knock fun fun fun fun xHamster xHamster xHamster xHamster trout trout pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Koro Koro Koro Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuanganping Kemudi Kemudi Kemudi YEAR YEAR YEAR.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Aga seberang seberangmustmustmust.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS retail retail retail fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungintensiveintensive Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife telpon telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethyleneBolehBolehBoleh Dibuka Dibuka Dibuka 1961 1961 1961 bersenang bersenang hubungannya hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran kedoktoran Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead lead comprehend comprehend comprehend comprehend comprehend comprehend geli geli geli subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Faraj Faraj Faraj Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan.9%.9%.9%.9%pingpingping knock knock knock fun fun funpingpingping Tayangan trout trout pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Kemudi Hockey Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan sights sights sights sights YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya pernyataannyamiripmiripmiriptawatawa fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqiigeige Dibuka Dibuka Dibuka 1961 1961 1961 bersenang EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger:::pingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137605605605 Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak Tracy Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAlAl lead gu gu baling baling baling comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, 1984, Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9%pingpingping knock knock fun fun fun fun xHamster xHamster xHamster xHamster Hockey Hockey Hockey Hockey Hockey iii iii iii iii iiipingpingpingpingping Kemudi Kemudi.9%.9% Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Kemudi Kemudi Kemudi Kemudi YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS DDoS DDoS DDoS fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted tahniah tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungintensiveintensive Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR YEAR vandalism vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCOMCO Tenerife Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqiigeige Dibuka Dibuka Dibuka 1961 1961 1961 bersenang bersenang EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing Ugh Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead lead comprehend comprehend comprehend comprehend comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9% auto auto auto knock knock fun fun fun fun xHamster xHamster xHamster xHamster trout pernyataannya pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Kemudi Hockey Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan sights sights sights sights YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya pernyataannyamiripmiripmiriptawatawa fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasiruntunguntung 118 118 118 Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit hidayah hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Ugh Ugh Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethyleneBolehBolehBoleh Dibuka Dibuka Dibuka 1961 1961 Ugh Ugh EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger:::pingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah musibah tubing tubing",
+            "nsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137605605605 Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYEYE terbahak terbahak Tracy Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAlAl lead gu gu baling baling baling comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries 1984, 1984, Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli geli disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite graphite Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Kol Kol Kol.9%.9%.9%.9%pingpingping knock knock fun fun fun fun xHamster xHamster xHamster xHamster Hockey Hockey Hockey Hockey Hockey iii iii iii iii iiipingpingpingpingping Kemudi Kemudi.9%.9% Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Kemudi Kemudi Kemudi Kemudi YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS DDoS DDoS DDoS fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin trampolin 118 118 118 diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasiruntunguntunguntung 118 118 Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries subsidiariesaceous Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Punching Punching Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqi Kemudi Kemudi Dibuka Dibuka Dibuka 1961 1961 1961 bersenang EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Waist Waist Algeria Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing Ugh Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah musibah tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead gu gu baling baling baling baling geli geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9% auto auto auto knock knock fun fun fun fun xHamster xHamster xHamster xHamster trout trout pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Koro Koro Koro Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuanganping Kemudi Kemudi Kemudi YEAR YEAR YEAR.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Aga seberang seberangmustmustmust.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS retail retail retail fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungintensiveintensive Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife telpon telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethyleneBolehBolehBoleh Dibuka Dibuka Dibuka 1961 1961 1961 bersenang bersenang hubungannya hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran kedoktoran Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade mythical mythicalYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137 137 terbahak terbahak Tracy Tracy Tracy Tracy diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak terbahak Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAl lead lead lead comprehend comprehend comprehend comprehend comprehend comprehend geli geli geli subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, Warfare Warfare Warfare graphite graphite Faraj Faraj Faraj Faraj Faraj Individual Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan.9%.9%.9%.9%pingpingping knock knock knock fun fun funpingpingping Tayangan trout trout pernyataannya pernyataannya pernyataannya iii iii iii iii iiipingpingpingpingping Kemudi Kemudi Hockey Hockey Hockey Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan sights sights sights sights YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya pernyataannyamiripmiripmiriptawatawa fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted diluted tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungshaltshalt Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR Pasir Pasir vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCO specified specified Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqiigeige Dibuka Dibuka Dibuka 1961 1961 1961 bersenang EVA EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing tubing Ugh UghMCOMCOMCO blogger blogger:::pingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing",
+            "nsnsnsns Trade Trade Trade Trade Trade Trade Trade Trade Trade Trade TradeYEYEYE Trade Trade Trade Trade Trade Kiranya Kiranya Kiranya Individual Individual Individual Individual terbahak terbahak terbahak terbahak diresepkan diresepkan diresepkan diresepkan diresepkan diresepkan Trade Trade Trade 137 137605605605 Tracy Tracy Tracy diresepkan diresepkan diresepkan diresepkanYEYEYE terbahak terbahak terbahak Tracy Tracy Tracy Tracy Tracy Karate Karate Karate terbahak terbahak Hockey HockeyAlAlAl lead gu gu baling baling baling comprehend comprehend geli geli baling baling baling subsidiaries subsidiaries subsidiaries subsidiaries subsidiaries Zun Zun Zun Zun Jerry Jerry Jerry Jerry Jerry Jerry Jerry geli geli geli geli geli disciple disciple disciple disciple disciple disciple disciple fun fun fun 1984, 1984, 1984, 1984, Warfare Warfare graphite graphite Faraj Faraj Ugh Ugh Ugh Individual Individual Individual Keseluruhan Keseluruhan Keseluruhan Keseluruhan rejoin rejoin Tayangan Tayangan Tayangan.9%.9%.9%.9%pingpingping knock knock fun fun fun fun xHamster xHamster xHamster xHamster Hockey Hockey Hockey Hockey Hockey iii iii iii iii iiipingpingpingpingping Kemudi Kemudi.9%.9% Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Perjuangan Kemudi Kemudi Kemudi Kemudi YEAR YEAR.9%.9%.9%.9%.9%.9% Pakistan Pakistan Pakistan Pakistan Aga Aga Kedengarannya Kedengarannya Makes Makes Makes Makes.9%.9%.9% Gratis Gratis Gratis mischief mischief mischiefGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLOGLO fun fun fun pernyataannya pernyataannya DDoS DDoS DDoS DDoS DDoS DDoS fun fun fun fun kedoktoran kedoktoran kedoktoran kedoktoran comprehend comprehend vibrator vibrator vibrator Pasir Pasir Pasir trampolin trampolin terbahak terbahak terbahak diluted diluted tahniah tahniah tahniah tahniahuntunguntunguntunguntunguntunguntungintensiveintensive Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir graphite graphite graphite newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter Submit Submit Submit Submit hidayah hidayah subsidiaries subsidiaries YEAR YEAR YEAR vandalism vandalism vandalism YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR YEAR Parlimen Parlimen garisan garisan garisan garisan Sarawak Sarawak Sarawak Sarawak Sarawak Sarawak Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir YEAR YEAR YEAR YEARMCOMCOMCOMCOMCO Tenerife Tenerife Tenerife Tenerife telpon telpon telpon telponpingping Jahan Jahan Jahan Wing Wing skipping skipping skipping blogger blogger blogger denganmu denganmu YEAR YEAR YEAR YEAR Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir Pasir polyethylene polyethylene polyethylene polyethylene polyethylene Iraqi Iraqiigeige Dibuka Dibuka Dibuka 1961 1961 1961 bersenang bersenang EVA hubungannya hubungannya hubungannya Pakistan Pakistan Pakistan Pasir Pasir Pasir Pasir enable enable Algeria Algeria Algeria kedoktoran kedoktoran kedoktoran musibah musibah musibah musibah musibah musibah musibah Alps Alps Ugh Ugh Ugh kelajuan kelajuan kelajuan Pemegang Sebenar Sebenar SebenarMCOMCOMCOMCOMCOMCO::::MCOMCO tubing tubing Ugh Ugh UghMCOMCOMCO blogger blogger::pingpingpingping Perhubungan Perhubungan musibah musibah musibah musibah musibah musibah musibah tubing tubing tubing"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:56:15.797630+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "65a62d8ca904195f",
+        "lora_hash": "dd1f13b8f5422293",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:45:52.129922+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1750
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1750
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ms-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-ms-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.609985+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-ms-en",
+      "model_key": "hplt-ms-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:45:52.129922+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "65a62d8ca904195f",
+    "lora_hash": "dd1f13b8f5422293",
+    "files_identical": false,
+    "base_size_mb": 321.72,
+    "lora_size_mb": 321.72,
+    "verified_by": "Kit OC1 Alpha (phase2 hash check)",
+    "verification_date": "2026-03-24T14:20:02.363310+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

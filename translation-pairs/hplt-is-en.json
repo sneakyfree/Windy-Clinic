@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-is-en.json",
+  "patient_id": "hplt-is-en",
+  "admitted": "2026-03-22T20:01:28.891417+00:00",
+  "source_repo": "HPLT/translate-is-en-v1.0-hplt",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-is-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-is-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:01:28.891417+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 kirkjugar\u00f0 substantive substantivewitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 kirkjugar\u00f0 substantive substantivewitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian hypromellose hypromellose h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLEbrennslabrennslabrennsla \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian hypromellose hypromellose h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLEbrennslabrennslabrennsla \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 kirkjugar\u00f0 substantive substantivewitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 kirkjugar\u00f0 substantive substantivewitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian hypromellose hypromellose h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLEbrennslabrennslabrennsla \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian hypromellose hypromellose h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLEbrennslabrennslabrennsla \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldt\u00f6lvut\u00f6lvu r\u00e9ttinda r\u00e9ttinda VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hall\u00f3, hvernig hefur\u00f0u \u00fea\u00f0 \u00ed dag?",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian b\u00faddistar b\u00faddistar b\u00faddistar h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary smell smell smell smell smell Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": false
+            },
+            {
+              "input": "Ve\u00f0ri\u00f0 er fallegt \u00ed morgun.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying kirkjugar\u00f0 kirkjugar\u00f0 almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive substantive stafr\u00e6n stafr\u00e6n rescue rescue rescue others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi project project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary smell smell smell smell smell Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": false
+            },
+            {
+              "input": "\u00c9g myndi vilja panta kaffibolla, takk.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary smell smell smell smell smell Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": false
+            },
+            {
+              "input": "Hin hra\u00f0a br\u00fana refurinn st\u00f6kkva yfir hina lata hund.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian hypromellose hypromellose h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a mutation mutation mutation mutation others others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLEbrennslabrennslabrennsla \u00e1vinning \u00e1vinning \u00e1vinning \u00e1vinning smell smell Secretary Secretary Secretary-01--01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE \u00e1vinning",
+              "passed": false
+            },
+            {
+              "input": "Gervigreind er a\u00f0 umbreyta heiminum.",
+              "output": "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond almond almondwitzwitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphate triphosphatearianarianarianarian b\u00faddistar b\u00faddistar b\u00faddistar b\u00faddistar b\u00faddistar b\u00faddistar rescue rescue rescue others otherstj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell smell smell smell smell smell Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLE annual",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:04:37.452322+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 2,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 1.0
+        },
+        "lora": {
+          "score": 2,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 1.0
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:54:22.462229+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 73.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 9,
+          "sample_translations": [
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliter skyldi skyldi project project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekking \u00f3venjuleg \u00f3venjuleg \u00f3venjuleg \u00f3venjuleg727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive positive positive positive SL SL SL afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozen Volleyball Volleyball Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6stlita\u00f0lita\u00f0lita\u00f0 therapeutic therapeuticotaota fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan Telmisartan Sri Sri Sri Srilita\u00f0lita\u00f0lita\u00f0lita\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far \u00edmyndunarafl \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantive Doktor Doktor kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6pgl\u00e6p \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian rescue rescue rescue rescue rescue rescue rescue rescue v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5 $5nninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliter achievement achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliterliter \u00feekking \u00feekking \u00feekkingFromFromFromDOMDOM7272 damages damages damages damages damages damages smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive positive n\u00f6t n\u00f6t n\u00f6t hatri hatri listening listening listening listening listening positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i Lyfjastofnun Lyfjastofnun Lyfjastofnun vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe extremely UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u Opna\u00f0u afk\u00f6st afk\u00f6st afk\u00f6st draug draug draug draug draug draug n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg 96 96tj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning \u00e1vinning n\u00f6t n\u00f6t n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6st anybody anybody anybody therapeutic therapeutic united united fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0 Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5nninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekkingFromFrom uppbyggjandi uppbyggjandi727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld ver\u00f0ug frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st Almighty Almighty anybody anybody therapeutic therapeutic therapeuticlglg fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0lita\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far \u00edmyndunarafl \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5nninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliter skyldi skyldi project project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine triphosphate triphosphate triphosphatebrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekkingFromFrom uppbyggjandi uppbyggjandi727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive positive positive positive SL SL SL afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st Almighty Almighty anybody anybody therapeutic therapeutic therapeuticlglg fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collecting collectingvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekking \u00feekkingtj\u00f6ld Telmisartan Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Numbers Numbers Numbers Shilling Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 ob ob-2018-2018-2018 meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur b\u00e6tur b\u00e6tur b\u00e6tur Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Nafni\u00f0 Nafni\u00f0 Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far einstofna \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur vefi uppr\u00e6ti uppr\u00e6ti uppr\u00e6ti \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantive Doktor Doktor kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6pgl\u00e6p \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian rescue rescue rescue rescue rescue rescue rescue rescue v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5 $5nninninninninni VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliterliter \u00feekking \u00feekking \u00feekkingFromFromFromDOMDOM7272 damages damages damages damages damages damages smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive positive n\u00f6t n\u00f6t n\u00f6t hatri hatri listening listening listening listening listening positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i Lyfjastofnun Lyfjastofnun Lyfjastofnun vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg 96 96tj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6st anybody anybody anybody therapeutic therapeutic united united fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0 Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 73.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 9,
+          "sample_translations": [
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarian substantive substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldnninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliter skyldi skyldi project project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine triphosphate triphosphatebrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekking \u00f3venjuleg \u00f3venjuleg \u00f3venjuleg \u00f3venjuleg727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive positive positive positive SL SL SL afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozen Volleyball Volleyball Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6stlita\u00f0lita\u00f0lita\u00f0 therapeutic therapeuticotaota fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan Telmisartan Sri Sri Sri Srilita\u00f0lita\u00f0lita\u00f0lita\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far \u00edmyndunarafl \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantive Doktor Doktor kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6pgl\u00e6p \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian rescue rescue rescue rescue rescue rescue rescue rescue v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5 $5nninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliter achievement achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliterliter \u00feekking \u00feekking \u00feekkingFromFromFromDOMDOM7272 damages damages damages damages damages damages smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive positive n\u00f6t n\u00f6t n\u00f6t hatri hatri listening listening listening listening listening positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i Lyfjastofnun Lyfjastofnun Lyfjastofnun vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe extremely UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u Opna\u00f0u afk\u00f6st afk\u00f6st afk\u00f6st draug draug draug draug draug draug n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg 96 96tj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning \u00e1vinning n\u00f6t n\u00f6t n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6st anybody anybody anybody therapeutic therapeutic united united fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0 Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5nninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE VEHICLEa\u00f0allega \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekkingFromFrom uppbyggjandi uppbyggjandi727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld ver\u00f0ug frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st Almighty Almighty anybody anybody therapeutic therapeutic therapeuticlglg fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0lita\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far \u00edmyndunarafl \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantivewitzwitz kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6p triphosphate triphosphate \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian substantive substantive h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a h\u00e6g\u00f0atreg\u00f0a \u00e1n\u00e6gt \u00e1n\u00e6gt \u00e1n\u00e6gt v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5nninninninninni VEHICLE VEHICLE VEHICLEliterliterliterliterliterliterliterliterliter skyldi skyldi project project projectskur\u00f0urskur\u00f0ur phosphocreatine phosphocreatine triphosphate triphosphate triphosphatebrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliter \u00feekking \u00feekking \u00feekking \u00feekkingFromFrom uppbyggjandi uppbyggjandi727272 damages damages damages damages damages smell smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive n\u00f6t n\u00f6t hatri hatri hatri listening listening listening annual annual positive positive positive positive positive positive SL SL SL afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i vibe vibe vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t \u00e1vinning \u00e1vinning \u00e1vinningExtraExtra draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ilegtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld ver\u00f0ug frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st Almighty Almighty anybody anybody therapeutic therapeutic therapeuticlglg fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collecting collectingvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekking \u00feekkingtj\u00f6ld Telmisartan Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Numbers Numbers Numbers Shilling Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 ob ob-2018-2018-2018 meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur b\u00e6tur b\u00e6tur b\u00e6tur Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Nafni\u00f0 Nafni\u00f0 Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far einstofna \u00edmyndunarafl \u00edmyndunarafl d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur vefi uppr\u00e6ti uppr\u00e6ti uppr\u00e6ti \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking",
+            "Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying Af\u00fereying almond almond almond substantive substantive Doktor Doktor kr\u00f6ftug kr\u00f6ftug kr\u00f6ftuggl\u00e6pgl\u00e6pgl\u00e6p \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfur \u00falfurarianarianarianarian rescue rescue rescue rescue rescue rescue rescue rescue v\u00ednvi\u00f0ur v\u00ednvi\u00f0ur v\u00ednvi\u00f0urtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld $5 $5 $5 $5nninninninninni VEHICLE VEHICLEliterliterliterliterliterliterliterliterliterliter skyldi skyldi project projectDOMDOMDOMDOMDOMDOMDOMDOMbrennslabrennsla VEHICLE VEHICLE VEHICLE smell smell smell smell \u00e1vinning \u00e1vinning \u00e1vinning damages damages Secretary Secretary Secretary Secretary-01--01--01--01--01- Numbers Numbers Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajour Ajourliterliterliterliter achievement achievement VEHICLE VEHICLE annual annual \u00e1vinning \u00e1vinning \u00e1vinning Sigh Sigh Sigh kvikasilfur kvikasilfurDOMDOMDOM \u00f3r\u00e9ttl\u00e6tiliterliterliterliter \u00feekking \u00feekking \u00feekkingFromFromFromDOMDOM7272 damages damages damages damages damages damages smell smell smell I\u00f0na\u00f0ar I\u00f0na\u00f0ar I\u00f0na\u00f0ar smell smell smell smell smell Ajour Ajour Ajour20132013FromFromFrom Ajour Ajour Ajour Ajour Ajour Ajour Ajour smell smell smell smell smell smell smell smell smell smell smell smell smell nifteind nifteind nifteind Zuckerberg Zuckerberg Zuckerberg uppbyggjandi uppbyggjandi uppbyggjandi uppbyggjandi positive positive positive positive positive n\u00f6t n\u00f6t n\u00f6t hatri hatri listening listening listening listening listening positive positive positive nifteind nifteind nifteind nifteind nifteind afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Nun Nun handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i handkl\u00e6\u00f0i Lyfjastofnun Lyfjastofnun Lyfjastofnun vibe vibe vibe Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far UNI UNI UNI annual annualtj\u00f6ldtj\u00f6ld vibe vibe vibe vibe UNI UNI UNI UNI UNI annual annual annual annual annual annual annual annual annual annual annual afk\u00f6st afk\u00f6st afk\u00f6st afk\u00f6st Opna\u00f0u Opna\u00f0u Opna\u00f0u555555555 draug draug draug draug draug draug n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t n\u00f6t draug draug draug st\u00e6r\u00f0fr\u00e6\u00f0ileg st\u00e6r\u00f0fr\u00e6\u00f0ileg 96 96tj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld \u00e1vinning \u00e1vinning SI SI n\u00f6t n\u00f6t n\u00f6ttj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld hv\u00edld hv\u00edld hv\u00edld frozen frozen frozen frozenImaginImagin Volleyball Volleyball Volleyball afk\u00f6st afk\u00f6st afk\u00f6st anybody anybody anybody therapeutic therapeutic united united fyrirt\u00e6ki\u00f0 fyrirt\u00e6ki\u00f0 meeting meeting meeting meeting Vandam\u00e1l Vandam\u00e1l kirkjugar\u00f0 kirkjugar\u00f0stj\u0137rastj\u0137rastj\u0137ra mein mein mein mein mein mein mein collecting collectingvaxtarvaxtarvaxtarvaxtarvaxtarfestafestafestafestafesta \u016b\u00ednum \u016b\u00ednum \u016b\u00ednum/2/13/15/2/13/15/2/13/15 \u00feekking \u00feekking \u00feekkingtj\u00f6ldtj\u00f6ld Telmisartan Telmisartan Telmisartan b\u00e6tur b\u00e6tur Sri Sri Srilita\u00f0lita\u00f0lita\u00f0 Shilling Shilling sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0 sk\u00ed\u00f0asv\u00e6\u00f0i\u00f0hitunhitunhitunFaFa meeting meeting Telmisartan Telmisartan Telmisartan Telmisartan Telmisartan imported imported b\u00e6tur b\u00e6tur b\u00e6tur sandstrendur sandstrendur sandstrendur b\u00e6tur b\u00e6tur Kemp Kemp Kemp Kemp d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur Sorrento Sorrento Sorrento Sorrento t\u00fdpa t\u00fdpa t\u00fdpaefnumefnumefnumefnum Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far Singap\u00far d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu d\u00fdnu b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6tur b\u00e6turJ\u00f3hannesJ\u00f3hannes Singap\u00far Singap\u00far Singap\u00fartj\u00f6ldtj\u00f6ldtj\u00f6ldtj\u00f6ld vefi vefi \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking \u00feekking"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:54:22.462229+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 73.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 9,
+            "quality_score": 73.5,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 73.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 9,
+            "quality_score": 73.5,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "ec298c19f8484518",
+        "lora_hash": "308a4eafee4d3d31",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:44:53.889279+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1813
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1813
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-is-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-is-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.603396+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-is-en",
+      "model_key": "hplt-is-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 2,
+          "max_score": 10,
+          "stars": 1.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 2,
+          "max_score": 10,
+          "stars": 1.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:44:53.889279+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "65a2fe1e54097350",
+    "lora_hash": "65909231c2e53d15",
+    "files_identical": false,
+    "base_size_mb": 283.17,
+    "lora_size_mb": 283.17,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:21.415484+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

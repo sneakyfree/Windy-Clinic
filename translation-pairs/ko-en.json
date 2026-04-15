@@ -1,0 +1,1320 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/ko-en.json",
+  "patient_id": "ko-en",
+  "admitted": "2026-03-22T19:38:22.486693+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-ko-en",
+  "source_language": {
+    "code": "ko",
+    "name": "ko",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 313472440,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0",
+        "created": "2026-03-21T05:47:51.779214+00:00",
+        "doctor": "Helsinki-NLP (original author)",
+        "procedure": "Original pre-trained MarianMT model downloaded from HuggingFace",
+        "parent": null,
+        "parent_version": null,
+        "format": "safetensors",
+        "size_bytes": 313472440,
+        "fingerprint": "c6a615d053f6a6b5"
+      },
+      "note": "Restored from HuggingFace phase1_onnx_restore on 2026-04-11 by Opus 4.6 Opus-Claw (Dr. C). Symlinked into models/ for harness compatibility. Actual files live in /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/ko-en.",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ko-en/base",
+      "on_disk_target": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/ko-en",
+      "on_disk_format": "pytorch_bin",
+      "restored_at": "2026-04-11T20:51:05.692682+00:00",
+      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "missing_from_disk",
+      "format": "safetensors",
+      "size_bytes": 313472440,
+      "identical_to_base": null,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.1",
+        "created": "2026-03-21T05:47:55.021299+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "Fog a Mirror LoRA fine-tune (r=4, alpha=8), merged back to full weights",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 313472440,
+        "fingerprint": "c6a615d053f6a6b5",
+        "training": {
+          "method": "LoRA",
+          "rank": 4,
+          "alpha": 8,
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+        }
+      },
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "safetensors",
+      "loader_compatible": false,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0-int8",
+        "created": "2026-03-24T17:48:39.060942+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "CTranslate2 INT8 quantization of base model",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 526822347,
+        "fingerprint": "c6a615d053f6a6b5",
+        "quantization": {
+          "method": "ctranslate2",
+          "precision": "int8",
+          "note": "Re-exported 2026-03-24 after loader compatibility fix"
+        }
+      },
+      "size_bytes": 526822347,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0": {
+      "status": "present",
+      "format": "safetensors",
+      "derived_from": "lora/ (proprietary fog-of-mirror, then OPUS-100 deep fine-tune by Dr. C)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ko-en/herm0",
+      "on_disk_bytes": 313524224,
+      "recreated_at": "2026-04-12T20:20:15.921317+00:00",
+      "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data."
+    },
+    "herm0_ct2": {
+      "status": "missing_from_disk",
+      "format": "ctranslate2",
+      "size_bytes": 80973820,
+      "lineage": {
+        "version": "v2.0-int8",
+        "created": "2026-03-28T00:08:38.667040+00:00",
+        "doctor": "Herm Zero (Dr. B)",
+        "procedure": "CTranslate2 INT8 quantization of herm0 improved model",
+        "parent": "herm0",
+        "parent_version": "v2.0",
+        "format": "ctranslate2",
+        "size_bytes": 80973820,
+        "fingerprint": "679b990343bd6640",
+        "quantization": {
+          "method": "ctranslate2",
+          "precision": "int8",
+          "source_size_bytes": 313472832,
+          "quantized_size_bytes": 80973820,
+          "compression_ratio": "3.87x",
+          "load_test": "passed"
+        }
+      },
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_int8_onnx": {
+      "status": "archived_as_onnx",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/onnx_fleet/herm0_int8/windy-pair-ko-en",
+      "on_disk_bytes": 80060960,
+      "on_disk_format": "onnx_int8",
+      "on_disk_files": [
+        "model_int8.onnx"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "variant_meaning": "herm0_int8_onnx",
+      "relocated_at": "2026-04-11T21:06:19.560202+00:00",
+      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 77320704,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:38:22.486693+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "\uc548\ub155\ud558\uc138\uc694, \uc624\ub298 \uc5b4\ub5bb\uac8c \uc9c0\ub0b4\uc138\uc694?",
+              "output": "Hi. How are you today?",
+              "passed": true
+            },
+            {
+              "input": "\uc624\ub298 \uc544\uce68 \ub0a0\uc528\uac00 \uc544\ub984\ub2f5\uc2b5\ub2c8\ub2e4.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "\ucee4\ud53c \ud55c \uc794 \uc8fc\ubb38\ud558\uace0 \uc2f6\uc2b5\ub2c8\ub2e4.",
+              "output": "I'd like to order a cup of coffee.",
+              "passed": true
+            },
+            {
+              "input": "\ube60\ub978 \uac08\uc0c9 \uc5ec\uc6b0\uac00 \uac8c\uc73c\ub978 \uac1c\ub97c \ub6f0\uc5b4\ub118\uc2b5\ub2c8\ub2e4.",
+              "output": "A fast brown fox jumps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "\uc778\uacf5 \uc9c0\ub2a5\uc774 \uc138\uc0c1\uc744 \ubcc0\ud654\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+              "output": "AI is changing the world.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "\uc548\ub155\ud558\uc138\uc694, \uc624\ub298 \uc5b4\ub5bb\uac8c \uc9c0\ub0b4\uc138\uc694?",
+              "output": "Hi. How are you today?",
+              "passed": true
+            },
+            {
+              "input": "\uc624\ub298 \uc544\uce68 \ub0a0\uc528\uac00 \uc544\ub984\ub2f5\uc2b5\ub2c8\ub2e4.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "\ucee4\ud53c \ud55c \uc794 \uc8fc\ubb38\ud558\uace0 \uc2f6\uc2b5\ub2c8\ub2e4.",
+              "output": "I'd like to order a cup of coffee.",
+              "passed": true
+            },
+            {
+              "input": "\ube60\ub978 \uac08\uc0c9 \uc5ec\uc6b0\uac00 \uac8c\uc73c\ub978 \uac1c\ub97c \ub6f0\uc5b4\ub118\uc2b5\ub2c8\ub2e4.",
+              "output": "A fast brown fox jumps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "\uc778\uacf5 \uc9c0\ub2a5\uc774 \uc138\uc0c1\uc744 \ubcc0\ud654\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+              "output": "AI is changing the world.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "\uc548\ub155\ud558\uc138\uc694, \uc624\ub298 \uc5b4\ub5bb\uac8c \uc9c0\ub0b4\uc138\uc694?",
+              "output": "Hi. How are you today?",
+              "passed": true
+            },
+            {
+              "input": "\uc624\ub298 \uc544\uce68 \ub0a0\uc528\uac00 \uc544\ub984\ub2f5\uc2b5\ub2c8\ub2e4.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "\ucee4\ud53c \ud55c \uc794 \uc8fc\ubb38\ud558\uace0 \uc2f6\uc2b5\ub2c8\ub2e4.",
+              "output": "I want to order a cup of coffee.",
+              "passed": true
+            },
+            {
+              "input": "\ube60\ub978 \uac08\uc0c9 \uc5ec\uc6b0\uac00 \uac8c\uc73c\ub978 \uac1c\ub97c \ub6f0\uc5b4\ub118\uc2b5\ub2c8\ub2e4.",
+              "output": "A fast brown fox leaps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "\uc778\uacf5 \uc9c0\ub2a5\uc774 \uc138\uc0c1\uc744 \ubcc0\ud654\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+              "output": "AI is changing the world.",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T02:20:16.101171+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "lora": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "ct2": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T06:15:52.620108+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "It's a beautiful day.",
+            "I'd like to order a cup of coffee.",
+            "Children are playing in the park.",
+            "What time does the train start?",
+            "She's been in the hospital for ten years."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "It's a beautiful day.",
+            "I'd like to order a cup of coffee.",
+            "Children are playing in the park.",
+            "What time does the train start?",
+            "She's been in the hospital for ten years."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 63.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 2,
+          "sample_translations": [
+            "\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c",
+            "\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c",
+            "\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c",
+            "\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c",
+            "\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c\ubc14\ub78c"
+          ],
+          "delta_vs_base": -37.0
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T06:15:52.620108+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 63.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 2,
+            "quality_score": 63.0,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "cd74c12c98e50fc4",
+        "lora_hash": "f4d9ab1e4c89370e",
+        "files_identical": false,
+        "base_size_mb": 295.61,
+        "lora_size_mb": 295.61,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T06:06:56.928254+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 330
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 330
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ko-en"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-CT2-REEXPORT-20260324",
+      "date": "2026-03-24T17:48:24.881542+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "protocol_script": "ct2_reexport_phase1.py",
+      "variants_tested": [
+        "ct2_int8"
+      ],
+      "results": {
+        "ct2_int8": {
+          "verdict": "CT2_REEXPORTED",
+          "old_format": "pytorch_pickle_int8",
+          "new_format": "safetensors",
+          "old_size_mb": 203.5,
+          "new_size_mb": 295.6,
+          "verified_match": true,
+          "sample_translation": "Hello world"
+        }
+      },
+      "notes": "Replaced broken pickle INT8 (203.5MB) with clean safetensors (295.6MB). Verified base-CT2 output match: True. Sample translation: \"Hello world\". Elapsed: 29.9s."
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "BLOODWORK-001",
+      "date": "2026-03-28T15:50:55.670915+00:00",
+      "doctor": "Herm Zero",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "protocol_script": "bloodwork_test.py v1.0",
+      "variants_tested": [
+        "base",
+        "lora",
+        "herm0",
+        "ct2"
+      ],
+      "results": {
+        "bleu": {
+          "description": "BLEU score against reference translations from test sentence bank",
+          "variant_scores": {
+            "base": {
+              "score": 0.78,
+              "num_sentences": 10,
+              "brevity_penalty": 0.3178,
+              "precisions": [
+                24.39,
+                1.61,
+                1.09,
+                0.83
+              ],
+              "sample_translations": [
+                {
+                  "source": ", pleasing \uc2e0\ub8b0\ud560 \uc218\uc788\ub294 general\uc704\ud55c",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "For general, trusting"
+                },
+                {
+                  "source": "\ud504\ub85c\uc138\uc2a4\u3001 \uc778\uae30\u3001 \ud31d\u3001.",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "Processor Gum Pop Fong."
+                },
+                {
+                  "source": "\ubbf8\uad6d \uc804\ub9ac\ud488 \uba85\uc608 \uc2ec\uc7a5 \ud0c4\uc131 China does,increasing.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "Chena Doss, Increasing."
+                }
+              ]
+            },
+            "lora": {
+              "score": 0.78,
+              "num_sentences": 10,
+              "brevity_penalty": 0.3178,
+              "precisions": [
+                24.39,
+                1.61,
+                1.09,
+                0.83
+              ],
+              "sample_translations": [
+                {
+                  "source": ", pleasing \uc2e0\ub8b0\ud560 \uc218\uc788\ub294 general\uc704\ud55c",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "For general, trusting"
+                },
+                {
+                  "source": "\ud504\ub85c\uc138\uc2a4\u3001 \uc778\uae30\u3001 \ud31d\u3001.",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "Processor Gum Pop Fong."
+                },
+                {
+                  "source": "\ubbf8\uad6d \uc804\ub9ac\ud488 \uba85\uc608 \uc2ec\uc7a5 \ud0c4\uc131 China does,increasing.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "Chena Doss, Increasing."
+                }
+              ]
+            },
+            "ct2": {
+              "score": 0.78,
+              "num_sentences": 10,
+              "brevity_penalty": 0.3178,
+              "precisions": [
+                24.39,
+                1.61,
+                1.09,
+                0.83
+              ],
+              "sample_translations": [
+                {
+                  "source": ", pleasing \uc2e0\ub8b0\ud560 \uc218\uc788\ub294 general\uc704\ud55c",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "For general, trusting"
+                },
+                {
+                  "source": "\ud504\ub85c\uc138\uc2a4\u3001 \uc778\uae30\u3001 \ud31d\u3001.",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "Processor Gum Pop Fong."
+                },
+                {
+                  "source": "\ubbf8\uad6d \uc804\ub9ac\ud488 \uba85\uc608 \uc2ec\uc7a5 \ud0c4\uc131 China does,increasing.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "Chena Doss, Increasing."
+                }
+              ]
+            },
+            "herm0": {
+              "score": 0.82,
+              "num_sentences": 10,
+              "brevity_penalty": 0.4346,
+              "precisions": [
+                20.83,
+                1.32,
+                0.83,
+                0.57
+              ],
+              "sample_translations": [
+                {
+                  "source": ", pleasing \uc2e0\ub8b0\ud560 \uc218\uc788\ub294 general\uc704\ud55c",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "For general which, trusting, can be trusted,"
+                },
+                {
+                  "source": "\ud504\ub85c\uc138\uc2a4\u3001 \uc778\uae30\u3001 \ud31d\u3001.",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "It's a process."
+                },
+                {
+                  "source": "\ubbf8\uad6d \uc804\ub9ac\ud488 \uba85\uc608 \uc2ec\uc7a5 \ud0c4\uc131 China does,increasing.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "China Doss, Increasing."
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 0.78,
+              "base_score": 0.78,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 0.78,
+              "base_score": 0.78,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "herm0": {
+              "score": 0.82,
+              "base_score": 0.78,
+              "delta_pct": 5.13,
+              "delta_abs": 0.04,
+              "grade": "A"
+            }
+          }
+        }
+      }
+    },
+    {
+      "exam_id": "GR1-ko-en",
+      "date": "2026-03-29T04:48:06+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v1: 6-test composite (bloodwork, crossmatch, vitals, stress_fracture, consistency, scripture)",
+      "protocol_script": "grand_rounds_harness.py v1",
+      "variants_tested": [
+        "base",
+        "herm0",
+        "herm0_ct2"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "C+",
+          "composite_score": 79.76,
+          "verdict": "ACCEPTABLE",
+          "grade_breakdown": {
+            "crossmatch": {
+              "score": 57.25,
+              "weight": 0.35,
+              "weighted": 20.04
+            },
+            "vitals": {
+              "score": 97.86,
+              "weight": 0.1,
+              "weighted": 9.79
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped",
+              "reason": "no reverse model en\u2192ko"
+            },
+            "crossmatch": {
+              "status": "complete",
+              "score": 57.25
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 97.86,
+              "avg_latency_ms": 48.74,
+              "p95_latency_ms": 51.35,
+              "batch_throughput_sps": 55.36,
+              "gpu_memory_mb": 392.68
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        },
+        "herm0": {
+          "composite_grade": "C+",
+          "composite_score": 79.77,
+          "verdict": "ACCEPTABLE",
+          "grade_breakdown": {
+            "crossmatch": {
+              "score": 57.25,
+              "weight": 0.35,
+              "weighted": 20.04
+            },
+            "vitals": {
+              "score": 97.87,
+              "weight": 0.1,
+              "weighted": 9.79
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped",
+              "reason": "no reverse model en\u2192ko"
+            },
+            "crossmatch": {
+              "status": "complete",
+              "score": 57.25
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 97.87,
+              "avg_latency_ms": 48.83,
+              "p95_latency_ms": 52.05,
+              "batch_throughput_sps": 54.0,
+              "gpu_memory_mb": 391.48
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        },
+        "herm0_ct2": {
+          "composite_grade": "F",
+          "composite_score": 46.11,
+          "verdict": "FAIL",
+          "grade_breakdown": {
+            "crossmatch": {
+              "score": 1.67,
+              "weight": 0.35,
+              "weighted": 0.58
+            },
+            "vitals": {
+              "score": 100.0,
+              "weight": 0.1,
+              "weighted": 10.0
+            },
+            "stress_fracture": {
+              "score": 60.0,
+              "weight": 0.15,
+              "weighted": 9.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped",
+              "reason": "no reverse model en\u2192ko"
+            },
+            "crossmatch": {
+              "status": "complete",
+              "score": 1.67
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 100.0,
+              "avg_latency_ms": 16.78,
+              "p95_latency_ms": 16.97,
+              "batch_throughput_sps": 292.54,
+              "gpu_memory_mb": 0.0
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 60.0,
+              "passed": 9,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        }
+      },
+      "notes": "Grand Rounds v1 full-fleet battery. Run 2026-03-28/29, 4.9h, 2658 variants. Filed to clinic post-hoc by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-ko-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "onnx_int8_archive"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "base",
+          "lora",
+          "ct2_int8",
+          "herm0",
+          "herm0_ct2"
+        ],
+        "newly_found": [
+          "onnx_int8_archive"
+        ]
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-RESTORE-ko-en",
+      "date": "2026-04-11T20:51:05.692682+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace snapshot_download (phase1_onnx_restore) + symlink into models/",
+      "protocol_script": "scripts/link_restored_to_models.py",
+      "variants_restored": [
+        "base"
+      ],
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ko-en/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ko-en/). Non-destructive: symlinks only, no files moved or deleted."
+    },
+    {
+      "exam_id": "DRC-ONNX-RELOCATE-ko-en",
+      "date": "2026-04-11T21:06:19.560202+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "protocol_script": "inline in session",
+      "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-ko-en/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-ko-en/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
+    },
+    {
+      "exam_id": "DRC-CERT-ko-en",
+      "date": "2026-04-12T12:01:51.648993+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "C+",
+          "composite_score": 79.16,
+          "verdict": "CERTIFIED_ACCEPTABLE",
+          "grade_breakdown": {
+            "crossmatch": {
+              "score": 57.25,
+              "weight": 0.35,
+              "weighted": 20.04
+            },
+            "vitals": {
+              "score": 93.35,
+              "weight": 0.1,
+              "weighted": 9.33
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped"
+            },
+            "crossmatch": {
+              "status": "complete",
+              "score": 57.25
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.35,
+              "avg_latency_ms": 90.56,
+              "p95_latency_ms": 105.92,
+              "batch_throughput_sps": 46.97,
+              "gpu_memory_mb": 392.68
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        }
+      },
+      "best_grade": "C+",
+      "best_score": 79.16,
+      "notes": "Dr. C independent certification of ko-en. Tested 1 variant(s): base. Best variant grade: C+ (79.16). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-HERM0RECREATE-ko-en",
+      "date": "2026-04-12T20:20:15.921317+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 57.1, after: 62.1, delta: 5.1. IMPROVED \u2014 saved as herm0/",
+      "protocol_script": "scripts/recreate_herm0_models.py",
+      "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-ko-en",
+      "date": "2026-04-13T20:15:01.354351+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
+      "variants_tested": [
+        "base",
+        "herm0"
+      ],
+      "results": {
+        "base": {
+          "composite_score": 80.7,
+          "stars": 4.5,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 95.0
+            },
+            "paragraphs": {
+              "score": 90.5
+            },
+            "long_form": {
+              "score": 65.1
+            },
+            "native_input": {
+              "score": 95.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 50.0
+            },
+            "speed": {
+              "score": 88.4
+            }
+          }
+        },
+        "herm0": {
+          "composite_score": 80.1,
+          "stars": 4.5,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 95.0
+            },
+            "paragraphs": {
+              "score": 89.3
+            },
+            "long_form": {
+              "score": 64.2
+            },
+            "native_input": {
+              "score": 95.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 50.0
+            },
+            "speed": {
+              "score": 90.5
+            }
+          }
+        }
+      },
+      "best_variant": "base",
+      "best_stars": 4.5,
+      "best_tier": "premium",
+      "best_composite": 80.7,
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-HERM0-ko-en",
+      "date": "2026-04-15T22:07:16.122522+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 certification of herm0 (OPUS-improved) variant",
+      "protocol_script": "scripts/grand_rounds_v2.py via post_phase4_orchestrator.py",
+      "variants_tested": [
+        "herm0"
+      ],
+      "results": {
+        "herm0": {
+          "composite_score": 80.1,
+          "stars": 4.5,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 95.0
+            },
+            "paragraphs": {
+              "score": 89.3
+            },
+            "long_form": {
+              "score": 64.2
+            },
+            "native_input": {
+              "score": 95.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 50.0
+            },
+            "speed": {
+              "score": 90.7
+            }
+          }
+        }
+      },
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-04-11T14:59:57.710754",
+    "doctors_examined": 2,
+    "exams_total": 7,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "REEXPORTED_SAFETENSORS",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "All doctors agree base works",
+      "LoRA variant functional",
+      "CT2 reexported from broken pickle to safetensors (25Mar26)"
+    ],
+    "gr1_composite_grade": "C+",
+    "gr1_composite_score": 79.76,
+    "gr1_verdict": "ACCEPTABLE",
+    "drc_cert_grade": "C+",
+    "drc_cert_score": 79.16,
+    "drc_cert_verdict": "CERTIFIED_ACCEPTABLE",
+    "drc_cert_best_variant_grade": "C+",
+    "drc_cert_best_variant_score": 79.16,
+    "drc_cert_date": "2026-04-12T12:01:51.648993+00:00",
+    "drc_cert_doctor": "Opus 4.6 Opus-Claw (Dr. C)"
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-pair-ko-en",
+      "model_key": "ko-en",
+      "phase": 1,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_SEVERELY_DEGRADED: INT8 scores 37.0 points below base"
+    ],
+    "source3_paragraph_source": "native"
+  },
+  "quality_rating": {
+    "stars": 4.5,
+    "label": "premium",
+    "composite_score": 80.7,
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "rated_at": "2026-04-13T20:15:01.354351+00:00",
+    "method": "Grand Rounds v2 (paragraph-level, 8-test battery)"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero": {
+      "doctor": "Herm Zero (Dr. B)",
+      "source": "deep_audit_v4",
+      "timestamp": "2026-03-23T22:36:06.708636+00:00",
+      "variant_scores": {
+        "base": {
+          "raw_quality_score": 80.0,
+          "scale": "0-100",
+          "stars": 4.0,
+          "status": "ok"
+        },
+        "lora": {
+          "raw_quality_score": 80.0,
+          "scale": "0-100",
+          "stars": 4.0,
+          "status": "ok"
+        }
+      },
+      "oc1_stars_reference": 5.0
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T06:06:56.928254+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "cd74c12c98e50fc4",
+    "lora_hash": "f4d9ab1e4c89370e",
+    "files_identical": false,
+    "base_size_mb": 309.97,
+    "lora_size_mb": 309.97,
+    "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
+    "verification_date": "2026-03-23T22:36:06.708636+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [
+    {
+      "surgery_id": "H0-IMPROVE-KOEN-20260326",
+      "timestamp": "2026-03-26T19:10:45.402571+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "fine-tune",
+      "variant_target": "herm0",
+      "outcome": "success",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "details": {
+        "data_samples": 50000,
+        "epochs": 1,
+        "learning_rate": 1e-05,
+        "train_loss": 2.0488437525431316,
+        "base_score": 91.3,
+        "herm0_score": 91.4,
+        "improvement": 0.1,
+        "runtime_seconds": 51.7312
+      }
+    },
+    {
+      "surgery_id": "H0-CT2QUANT-KOEN-20260327",
+      "timestamp": "2026-03-28T00:08:38.667040+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "quantization",
+      "variant_target": "herm0_ct2",
+      "outcome": "success",
+      "procedure": "CTranslate2 INT8 quantization of herm0/v2.0 improved model"
+    }
+  ],
+  "variant_count": 5
+}

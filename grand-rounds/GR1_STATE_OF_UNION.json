@@ -1,0 +1,444 @@
+{
+  "_generated": "2026-04-11",
+  "_filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "_source": "Grand Rounds v1, run 2026-03-28/29 by Herm Zero",
+  "clinic_patients_total": 1826,
+  "patients_with_gr1_exam": 1607,
+  "patients_without_gr1_exam": 219,
+  "non_gr1_sample": [
+    "ALMA-13B-R",
+    "ALMA-7B-R",
+    "Tower-Plus-2B",
+    "Tower-Plus-9B",
+    "he-fr",
+    "hplt-af-en",
+    "hplt-ar-en",
+    "hplt-az-en",
+    "hplt-be-en",
+    "hplt-bg-en",
+    "hplt-bn-en",
+    "hplt-bs-en",
+    "hplt-ca-en",
+    "hplt-cy-en",
+    "hplt-en-af",
+    "hplt-en-ar",
+    "hplt-en-az",
+    "hplt-en-be",
+    "hplt-en-bg",
+    "hplt-en-bn"
+  ],
+  "pass_threshold": "C-",
+  "strong_threshold": "A-",
+  "base_variant": {
+    "total": 1607,
+    "passing": 1306,
+    "strong": 1051,
+    "failing": 301,
+    "absent_grade": 0,
+    "pass_pct": 81.3,
+    "strong_pct": 65.4
+  },
+  "by_variant": {
+    "base": {
+      "total": 1607,
+      "passing_c_minus_or_better": 1306,
+      "strong_a_minus_or_better": 1051,
+      "distribution": {
+        "A+": 594,
+        "A": 286,
+        "A-": 171,
+        "B+": 109,
+        "B": 63,
+        "B-": 28,
+        "C+": 18,
+        "C": 15,
+        "C-": 22,
+        "D+": 44,
+        "D": 109,
+        "D-": 82,
+        "F": 66
+      }
+    },
+    "herm0": {
+      "total": 375,
+      "passing_c_minus_or_better": 314,
+      "strong_a_minus_or_better": 258,
+      "distribution": {
+        "A+": 127,
+        "A": 92,
+        "A-": 39,
+        "B+": 22,
+        "B": 10,
+        "B-": 4,
+        "C+": 1,
+        "C": 8,
+        "C-": 11,
+        "D+": 22,
+        "D": 22,
+        "D-": 14,
+        "F": 3
+      }
+    },
+    "herm0_ct2": {
+      "total": 214,
+      "passing_c_minus_or_better": 88,
+      "strong_a_minus_or_better": 1,
+      "distribution": {
+        "A": 1,
+        "B+": 4,
+        "B": 5,
+        "B-": 18,
+        "C+": 32,
+        "C": 10,
+        "C-": 18,
+        "D+": 3,
+        "D": 6,
+        "D-": 21,
+        "F": 96
+      }
+    },
+    "herm0_scripture": {
+      "total": 299,
+      "passing_c_minus_or_better": 259,
+      "strong_a_minus_or_better": 182,
+      "distribution": {
+        "A+": 100,
+        "A": 63,
+        "A-": 19,
+        "B+": 25,
+        "B": 12,
+        "B-": 3,
+        "C+": 9,
+        "C": 12,
+        "C-": 16,
+        "D+": 15,
+        "D": 7,
+        "D-": 4,
+        "F": 14
+      }
+    }
+  },
+  "herm0_vs_base": {
+    "models_compared": 674,
+    "winners_delta_gt_1": 264,
+    "losers_delta_lt_neg1": 225,
+    "average_delta": -0.53,
+    "top_10_winners": [
+      {
+        "patient_id": "en-bg",
+        "base": 54.93,
+        "improved": 75.5,
+        "delta": 20.57,
+        "base_grade": "F",
+        "improved_grade": "C"
+      },
+      {
+        "patient_id": "vi-es",
+        "base": 79.56,
+        "improved": 99.53,
+        "delta": 19.97,
+        "base_grade": "C+",
+        "improved_grade": "A+"
+      },
+      {
+        "patient_id": "en-grk",
+        "base": 50.21,
+        "improved": 70.02,
+        "delta": 19.809999999999995,
+        "base_grade": "F",
+        "improved_grade": "C-"
+      },
+      {
+        "patient_id": "zai-es",
+        "base": 84.11,
+        "improved": 99.34,
+        "delta": 15.230000000000004,
+        "base_grade": "B",
+        "improved_grade": "A+"
+      },
+      {
+        "patient_id": "hu-fi",
+        "base": 82.12,
+        "improved": 97.02,
+        "delta": 14.899999999999991,
+        "base_grade": "B-",
+        "improved_grade": "A+"
+      },
+      {
+        "patient_id": "ha-fi",
+        "base": 81.43,
+        "improved": 96.0,
+        "delta": 14.569999999999993,
+        "base_grade": "B-",
+        "improved_grade": "A"
+      },
+      {
+        "patient_id": "pon-en",
+        "base": 53.34,
+        "improved": 67.74,
+        "delta": 14.399999999999991,
+        "base_grade": "F",
+        "improved_grade": "D+"
+      },
+      {
+        "patient_id": "jap-en",
+        "base": 44.36,
+        "improved": 57.98,
+        "delta": 13.619999999999997,
+        "base_grade": "F",
+        "improved_grade": "F"
+      },
+      {
+        "patient_id": "yo-fi",
+        "base": 86.13,
+        "improved": 99.49,
+        "delta": 13.36,
+        "base_grade": "B",
+        "improved_grade": "A+"
+      },
+      {
+        "patient_id": "sk-es",
+        "base": 83.77,
+        "improved": 97.03,
+        "delta": 13.260000000000005,
+        "base_grade": "B",
+        "improved_grade": "A+"
+      }
+    ],
+    "top_10_losers": [
+      {
+        "patient_id": "fi-pon",
+        "base": 99.61,
+        "improved": 59.0,
+        "delta": -40.61,
+        "base_grade": "A+",
+        "improved_grade": "F"
+      },
+      {
+        "patient_id": "en-ur",
+        "base": 64.41,
+        "improved": 27.78,
+        "delta": -36.629999999999995,
+        "base_grade": "D",
+        "improved_grade": "F"
+      },
+      {
+        "patient_id": "fr-tn",
+        "base": 99.6,
+        "improved": 66.43,
+        "delta": -33.16999999999999,
+        "base_grade": "A+",
+        "improved_grade": "D"
+      },
+      {
+        "patient_id": "eo-he",
+        "base": 99.93,
+        "improved": 69.91,
+        "delta": -30.02000000000001,
+        "base_grade": "A+",
+        "improved_grade": "D+"
+      },
+      {
+        "patient_id": "pl-fr",
+        "base": 97.03,
+        "improved": 68.59,
+        "delta": -28.439999999999998,
+        "base_grade": "A+",
+        "improved_grade": "D+"
+      },
+      {
+        "patient_id": "fi-lg",
+        "base": 99.18,
+        "improved": 71.44,
+        "delta": -27.74000000000001,
+        "base_grade": "A+",
+        "improved_grade": "C-"
+      },
+      {
+        "patient_id": "ja-hu",
+        "base": 96.96,
+        "improved": 70.81,
+        "delta": -26.14999999999999,
+        "base_grade": "A",
+        "improved_grade": "C-"
+      },
+      {
+        "patient_id": "sv-th",
+        "base": 93.69,
+        "improved": 69.47,
+        "delta": -24.22,
+        "base_grade": "A",
+        "improved_grade": "D+"
+      },
+      {
+        "patient_id": "fi-ig",
+        "base": 98.64,
+        "improved": 74.57,
+        "delta": -24.070000000000007,
+        "base_grade": "A+",
+        "improved_grade": "C"
+      },
+      {
+        "patient_id": "sv-he",
+        "base": 99.52,
+        "improved": 75.57,
+        "delta": -23.950000000000003,
+        "base_grade": "A+",
+        "improved_grade": "C"
+      }
+    ]
+  },
+  "base_failing_count": 301,
+  "base_failing_sample": [
+    {
+      "patient_id": "aav-en",
+      "grade": "D",
+      "score": 63.93
+    },
+    {
+      "patient_id": "afa-en",
+      "grade": "D",
+      "score": 64.19
+    },
+    {
+      "patient_id": "alv-en",
+      "grade": "D",
+      "score": 64.16
+    },
+    {
+      "patient_id": "ar-en",
+      "grade": "D",
+      "score": 65.27
+    },
+    {
+      "patient_id": "az-en",
+      "grade": "D",
+      "score": 64.32
+    },
+    {
+      "patient_id": "bat-en",
+      "grade": "D-",
+      "score": 62.68
+    },
+    {
+      "patient_id": "bcl-en",
+      "grade": "D+",
+      "score": 67.23
+    },
+    {
+      "patient_id": "bem-en",
+      "grade": "D",
+      "score": 63.44
+    },
+    {
+      "patient_id": "ber-en",
+      "grade": "F",
+      "score": 52.62
+    },
+    {
+      "patient_id": "bg-en",
+      "grade": "D",
+      "score": 65.32
+    },
+    {
+      "patient_id": "bi-en",
+      "grade": "D-",
+      "score": 60.55
+    },
+    {
+      "patient_id": "bnt-en",
+      "grade": "D",
+      "score": 64.28
+    },
+    {
+      "patient_id": "bzs-en",
+      "grade": "D",
+      "score": 65.06
+    },
+    {
+      "patient_id": "ceb-en",
+      "grade": "D",
+      "score": 64.5
+    },
+    {
+      "patient_id": "cel-en",
+      "grade": "D+",
+      "score": 69.42
+    },
+    {
+      "patient_id": "chk-en",
+      "grade": "D-",
+      "score": 60.98
+    },
+    {
+      "patient_id": "cpf-en",
+      "grade": "D",
+      "score": 64.19
+    },
+    {
+      "patient_id": "cpp-en",
+      "grade": "D",
+      "score": 66.72
+    },
+    {
+      "patient_id": "crs-en",
+      "grade": "D-",
+      "score": 61.64
+    },
+    {
+      "patient_id": "cus-en",
+      "grade": "D-",
+      "score": 61.57
+    },
+    {
+      "patient_id": "cy-en",
+      "grade": "D+",
+      "score": 67.72
+    },
+    {
+      "patient_id": "de-en",
+      "grade": "D+",
+      "score": 69.36
+    },
+    {
+      "patient_id": "dra-en",
+      "grade": "D",
+      "score": 65.82
+    },
+    {
+      "patient_id": "ee-en",
+      "grade": "D",
+      "score": 66.86
+    },
+    {
+      "patient_id": "efi-en",
+      "grade": "D",
+      "score": 64.92
+    },
+    {
+      "patient_id": "en-aav",
+      "grade": "D",
+      "score": 66.97
+    },
+    {
+      "patient_id": "en-afa",
+      "grade": "D",
+      "score": 64.28
+    },
+    {
+      "patient_id": "en-alv",
+      "grade": "D",
+      "score": 64.18
+    },
+    {
+      "patient_id": "en-ar",
+      "grade": "D",
+      "score": 66.21
+    },
+    {
+      "patient_id": "en-az",
+      "grade": "D",
+      "score": 63.92
+    }
+  ]
+}

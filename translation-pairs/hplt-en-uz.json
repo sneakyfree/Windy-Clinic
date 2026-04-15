@@ -1,0 +1,527 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-uz.json",
+  "patient_id": "hplt-en-uz",
+  "admitted": "2026-03-22T20:00:07.278213+00:00",
+  "source_repo": "HPLT/translate-en-uz-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "uz",
+    "name": "uz",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-uz/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-uz/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:00:07.278213+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately replacement replacementiremirem hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot Tyler",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately replacement replacementiremirem hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot Tyler",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately replacement replacementiremirem hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot Tyler",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately replacement replacementiremirem hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot Tyler",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyaiyastimstimstimstimstimstimstimstimstim Flip Flip Flip Kunlar Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately kuydirib kuydirib kuydirib hostilities hostilities hostilities fascinated fascinated nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchi nechchi oflayn oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately kuydirib kuydirib kuydirib hostilities hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga hostilities hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Flip Kunlar Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga hostilities hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot Tyler",
+              "passed": false
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Concerning Concerning Concerning Concerninghealthhealthhealthhealth Universiteti Universitetistimstimstimstimstimstimstimstimstimstim Flip Flip Fliplaquolaquo damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar salmoqli salmoqli deliberately deliberately deliberately deliberately kuydirib kuydirib kuydirib hostilities hostilities hostilities\u043a\u043a nechchi nechchi nechchi nechchilaquolaquo extiyot extiyot extiyot aperture",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:58:46.383004+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 4,
+          "certified": false,
+          "quality": "Marginal",
+          "stars": "\u2b50\u2b50"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:51:41.382408+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 73.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 9,
+          "sample_translations": [
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga hostilities hostilities hostilities hostilities damlar damlar damlar damlariremiremirem extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlartamtamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilartdilar Bayon Bayon Bayon Bayon special specialronironironi ongimiz ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately salmon salmon salmon sipo sipo hostilities hostilities hostilities\u043a\u043a nechchi nechchiiremirem extiyot extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Mai context context context context uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz sohalari sohalari xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishga admonish admonish admonish admonish admonish admonish pizza pizza salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Been Kunlar Kunlar sohalari sohalari sohalari sohalari Been Been Been Been Been Been Beentdilartdilartdilar Been Been Been Been special special Registry Registry Registry Registry ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities hostilities damlar damlar damlar damlariremiremzimiznikizimiznikizimiznikizimizniki Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz Investitsiyalar Investitsiyalar Investitsiyalar Investitsiyalar Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilarsabzavotsabzavot Been Been Been special specialronironironironi ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities hostilities damlar damlar damlar damlariremiremirem extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlartamtamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilarsabzavotsabzavot Been Been Been special specialronironironi ongimiz ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately salmon salmon salmon sipo sipo hostilities hostilities hostilities\u043a\u043a nechchi nechchiiremirem extiyot extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich qilich type sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Mai context context context context uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden sudden Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz sohalari sohalari xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishga admonish admonish admonish admonish admonish admonish pizza pizza salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Been Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilartdilar Been Been Been Beenronironironironironi ongimiz ongimiz Flip Flip Flip"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 73.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 9,
+          "sample_translations": [
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga hostilities hostilities hostilities hostilities damlar damlar damlar damlariremiremirem extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlartamtamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilartdilar Bayon Bayon Bayon Bayon special specialronironironi ongimiz ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately salmon salmon salmon sipo sipo hostilities hostilities hostilities\u043a\u043a nechchi nechchiiremirem extiyot extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Mai context context context context uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz sohalari sohalari xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishga admonish admonish admonish admonish admonish admonish pizza pizza salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Been Kunlar Kunlar sohalari sohalari sohalari sohalari Been Been Been Been Been Been Beentdilartdilartdilar Been Been Been Been special special Registry Registry Registry Registry ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities hostilities damlar damlar damlar damlariremiremzimiznikizimiznikizimiznikizimizniki Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz Investitsiyalar Investitsiyalar Investitsiyalar Investitsiyalar Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilarsabzavotsabzavot Been Been Been special specialronironironironi ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolari oflayn oflayn oflayn oflayn special special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately deliberately raqamiga raqamiga raqamiga raqamiga hostilities hostilities hostilities damlar damlar damlar damlariremiremirem extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich muhitida muhitida sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Harbor Harbor raqamiga raqamiga raqamiga uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlartamtamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden Been Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz damlar damlar damlar xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishgalishga admonish admonish admonish admonish (1988) (1988) (1988) salmon salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Kunlar Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilarsabzavotsabzavot Been Been Been special specialronironironi ongimiz ongimiz Flip Flip Flip",
+            "qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandil qandilhealthhealthhealth Translate Translate Translate Translate nechchi nechchinolarinolarinolari oflayn oflayn oflayn oflayn special special kettle kettle kettlestimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasidastimstimstim Concerning Concerning Concerning Concerninghealthhealthhealthiyaiyaiyastimstimstimstimstimstimstimstimstim Olimpiadasida Olimpiadasida Olimpiadasida Olimpiadasida Kunlar Kunlar damlar damlar damlar damlar damlar damlar damlar damlarlaquolaquo salmoqli salmoqli deliberately deliberately deliberately salmon salmon salmon sipo sipo hostilities hostilities hostilities\u043a\u043a nechchi nechchiiremirem extiyot extiyot extiyot extiyot Tyler Tyler Tyler Tyler kuydirib kuydirib kuydirib beans beans qilich qilich qilich qilich qilich qilich qilich type sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi sarflanishi Mai Mai Mai Mai Mai context context context context uysiz uysiz Edison Edison decent decent decent hayotining hayotining ishlidi ishlidi ishlidi manfaatlarimiz manfaatlarimiz manfaatlarimiz salmon salmon inglizlar inglizlar inglizlar nechchi nechchi nechchi nechchi nechchi Careful Careful Careful damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar darslarini darslarini darslarinitamtam metodlar metodlar metodlar metodlar suzuvchi suzuvchi damlar damlar damlar damlar damlar damlar damlar damlar damlar rax rax rax rax rax rax rax rax rax rax damlar damlar damlar damlar damlar damlar damlar damlar damlar uyqusi uyqusi uyqusi rax rax rax rax rax rax rax sudden sudden sudden sudden sudden coordinates coordinates coordinates coordinates coordinates coordinates rax rax rax hushim hushim hushimyinlariniyinlariniyinlariniyinlariniyinlariniyinlarini surprised surprised surprised surprised eshitgansiz eshitgansiz eshitgansiz sudden sudden sudden sudden Been Been Been Been Been Been Been Been Been eshitgansiz eshitgansiz eshitgansiz extiyot extiyot-400-400-400-400-400-400 damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar decent decent decent decent decent decent daylight daylight context context context context contextbodbod ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro ixtiro context context context context context damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar damlar eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz eshitgansiz sohalari sohalari xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolat xolatlishgalishgalishgalishgalishga admonish admonish admonish admonish admonish admonish pizza pizza salmon salmon suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Umum Umum suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi suzuvchi Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Been Boxing Boxing Boxing Boxing Boxing PS PS PS Been Been Been Kunlar Kunlar sarflagan sarflagan sarflagan sarflagan Been Been Been Been Been Been Beentdilartdilartdilar Been Been Been Beenronironironironironi ongimiz ongimiz Flip Flip Flip"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:51:41.382408+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 73.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 9,
+            "quality_score": 73.5,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 73.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 9,
+            "quality_score": 73.5,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "32d46e44d6b5be39",
+        "lora_hash": "5a8a04364ea35f8a",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:43:32.913731+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1808
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1808
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-u"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-uz",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.594780+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-uz",
+      "model_key": "hplt-en-uz",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 4,
+          "max_score": 10,
+          "stars": 2.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 4,
+          "max_score": 10,
+          "stars": 2.0,
+          "source_exam": "OC1-CERT-SWEEP2"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:43:32.913731+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "32d46e44d6b5be39",
+    "lora_hash": "5a8a04364ea35f8a",
+    "files_identical": false,
+    "base_size_mb": 321.72,
+    "lora_size_mb": 321.72,
+    "verified_by": "Kit OC1 Alpha (phase2 hash check)",
+    "verification_date": "2026-03-24T14:19:43.492191+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

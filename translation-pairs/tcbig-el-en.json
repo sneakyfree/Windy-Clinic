@@ -1,0 +1,532 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-el-en.json",
+  "patient_id": "tcbig-el-en",
+  "admitted": "2026-03-22T20:59:26.389214+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-tc-big-el-en",
+  "source_language": {
+    "code": "tcbig",
+    "name": "tcbig",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 946658020,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-el-en/base",
+      "on_disk_bytes": 946658020,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 946658020,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-el-en/lora",
+      "on_disk_bytes": 946658020,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 236401664,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 1024
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:59:26.389214+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "0/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "output": "fencing fencing fencing fencing fencing fencing fencing fencing obedience obedience obedience obedience obedience homo homo homo homo homo homo homo homo homo Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured",
+              "passed": false
+            },
+            {
+              "input": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c5\u03c0\u03ad\u03c1\u03bf\u03c7\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "output": "Cole Cole Cole Cole Cole Cole Cole Cole Cole Laboratories Laboratories LaboratoriesCourtCourtdistancedistancedistancedistancedistance substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty",
+              "passed": false
+            },
+            {
+              "input": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "officeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeoffice laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf\u03bd \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b7 \u03c3\u03ba\u03cd\u03bb\u03bf.",
+              "output": "/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5 constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03bc\u03b5\u03c4\u03b1\u03bc\u03bf\u03c1\u03c6\u03ce\u03bd\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "output": "so so so so so so so contracting contracting contracting sa sa sa sa sa sashishi so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so contracting contracting contracting contracting contracting contracting contracting contracting so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so",
+              "passed": false
+            }
+          ]
+        },
+        "lora": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "0/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "output": "fencing fencing fencing fencing fencing fencing fencing fencing obedience obedience obedience obedience obedience homo homo homo homo homo homo homo homo homo Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured",
+              "passed": false
+            },
+            {
+              "input": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c5\u03c0\u03ad\u03c1\u03bf\u03c7\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "output": "Cole Cole Cole Cole Cole Cole Cole Cole Cole Laboratories Laboratories LaboratoriesCourtCourtdistancedistancedistancedistancedistance substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting substituting tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty",
+              "passed": false
+            },
+            {
+              "input": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "officeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeoffice laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf\u03bd \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b7 \u03c3\u03ba\u03cd\u03bb\u03bf.",
+              "output": "/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5 constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03bc\u03b5\u03c4\u03b1\u03bc\u03bf\u03c1\u03c6\u03ce\u03bd\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "output": "so so so so so so so contracting contracting contracting sa sa sa sa sa sashishi so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so contracting contracting contracting contracting contracting contracting contracting contracting so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so",
+              "passed": false
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "0/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "output": "coloured fencing fencing fencing fencing fencing fencing fencing obedience obedience obedience obedience obedience homo homo homo homo homo homo homo Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich Friedrich fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing fencing coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured coloured",
+              "passed": false
+            },
+            {
+              "input": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c5\u03c0\u03ad\u03c1\u03bf\u03c7\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "output": "Cole Cole Cole Cole Cole Cole Cole Cole Cole Laboratories Laboratories Laboratoriesdistancedistancedistancedistancedistancedistancedistancedistance Garda Garda Garda substituting substituting substituting substituting substituting substituting substituting substituting perish perish perish perish perish perish perish perish perish perish tasty perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish perish tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty perish tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty tasty",
+              "passed": false
+            },
+            {
+              "input": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "officeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeofficeoffice laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying laying LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD LTD",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf\u03bd \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b7 \u03c3\u03ba\u03cd\u03bb\u03bf.",
+              "output": "/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5 constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant constant",
+              "passed": false
+            },
+            {
+              "input": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03bc\u03b5\u03c4\u03b1\u03bc\u03bf\u03c1\u03c6\u03ce\u03bd\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "output": "so so so so so so so so contracting sa sa sa sa sa sa sashishi so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so sofivefivefive Jul Jul Jul sa sa sa so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T06:03:15.860291+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T08:23:36.342065+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "205 205 205 205 205 205 205 205 205 205 205 205 205 205 205/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5",
+            "16% 16% 16% 16% 16% 16% 16% 16% 16% 16% 16% 16% simple simple simple unanimity homo homo homo homo homoshiCapital unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity",
+            "16% 16% 16% 16% 16% 16% 16% 16% 16% remember sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa",
+            "Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennesseeadditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditional",
+            "CapitalCapital unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity sa sa sa sa sa sa sa-19-19CapitalCapitalCapitalCapitalCapitalCapital sa sa sa sa sa Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions facilitate unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Suggestions Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "205 205 205 205 205 205 205 205 205 205 205 205 205 205 205/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5/5",
+            "16% 16% 16% 16% 16% 16% 16% 16% 16% 16% 16% 16% simple simple simple unanimity homo homo homo homo homoshiCapital unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity",
+            "16% 16% 16% 16% 16% 16% 16% 16% 16% remember sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa sa",
+            "Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennessee Tennesseeadditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditionaladditional",
+            "CapitalCapital unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity sa sa sa sa sa sa sa-19-19CapitalCapitalCapitalCapitalCapitalCapital sa sa sa sa sa Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions Suggestions facilitate unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity unanimity Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber Viber"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminent minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedema oedemaITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY",
+            "minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminent minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY",
+            "minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminent minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop",
+            "minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminentITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITYITY",
+            "minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minuteeminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminenteminent minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute minute rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop rooftop"
+          ],
+          "delta_vs_base": 0.0
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T08:23:36.342065+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "56223f9cb9f75a0e",
+        "lora_hash": "04d1e62478d51160",
+        "files_identical": false,
+        "base_size_mb": 902.8,
+        "lora_size_mb": 902.8,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:28:26.280257+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 2072
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 2087
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-el-"
+        }
+      },
+      "lora_comparison": {
+        "identical": false,
+        "char_similarity": 38.6
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-tcbig-el-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.886291+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-helsinki-tc-big-tcbig-el-en",
+      "model_key": "tcbig-el-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "quality_rating": {
+    "stars": 5.0,
+    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "half_stars": 10,
+    "label": "Gold Standard",
+    "avg_cert_score": 10.0,
+    "best_variant_score": 10,
+    "variants_tested": 3,
+    "source": "Kit OC1 Alpha certification"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {}
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:28:26.280257+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "56223f9cb9f75a0e",
+    "lora_hash": "9ecba7259399c227",
+    "files_identical": false,
+    "base_size_mb": 902.8,
+    "lora_size_mb": 902.8,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:13:29.193814+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

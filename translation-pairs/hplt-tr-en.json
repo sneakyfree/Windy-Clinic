@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-tr-en.json",
+  "patient_id": "hplt-tr-en",
+  "admitted": "2026-03-22T20:03:52.372305+00:00",
+  "source_repo": "HPLT/translate-tr-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-tr-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-tr-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:03:52.372305+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Hisse Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Thin Thin Thin Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Shouldn\u0131n\u0131n\u0131n\u0131n876876 Bah\u00e7e troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Thin Thin Thin Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Shouldn Hisse Hisselenebilirlenebilir Bah\u00e7e troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Hisse Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Thin Thin Thin Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Shouldn\u0131n\u0131n\u0131n\u0131n876876 Bah\u00e7e troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Thin Thin Thin Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN DIN Shouldn Shouldn Shouldn Hisse Hisselenebilirlenebilir Bah\u00e7e troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2 robotu robotuEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2EVENTEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | | | | | | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": false
+            },
+            {
+              "input": "Bu sabah hava \u00e7ok g\u00fczel.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2EVENTEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | | | | | | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Nay Nay Nay Nay Nay",
+              "passed": false
+            },
+            {
+              "input": "Bir fincan kahve sipari\u015f etmek istiyorum, l\u00fctfen.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2EVENTEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | | | | | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek",
+              "passed": false
+            },
+            {
+              "input": "H\u0131zl\u0131 kahverengi tilki tembel k\u00f6pe\u011fin \u00fczerinden atlar.",
+              "output": "Thin Thin Thin Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC Ctrl Ctrl Ctrl Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN DIN burst burst\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | | | | | | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmek",
+              "passed": false
+            },
+            {
+              "input": "Yapay zeka d\u00fcnyay\u0131 de\u011fi\u015ftiriyor.",
+              "output": "ula\u015fan ula\u015fan 1-2 1-2EVENTEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR GR yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131tingtingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Beck Beck Beck Beck Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n876876876 troops troops atanmas\u0131 atanmas\u0131 | | | fact fact Impact Impact Impact | | Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved Nay Nay Nay Nay Nay",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:13:07.947565+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:58:38.455096+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved numaral\u0131 numaral\u0131 numaral\u0131 Nay Nay sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 Ctrl Ctrl Ctrl \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876 Former Former tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131876876876876 Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 korunan korunanCodeCodeipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump DumpBilgiBilgi0.30.3 Dump Dump Dump Dump Stu Stu Stu Stu StuDMDMDMDMDM Jew Jew Jew Jew sinema sinema sinema Yolculu\u011fu Yolculu\u011fu Yolculu\u011fu \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Stu Stu Stu Stu Stu Stu Rumor Rumor performers performers poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst Eser Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst burst filminde filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender these thesebashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okundu Nay Nay becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRIC gurme gurme gurme gurme Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | Chromecast Chromecast Chromecast | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Nay Nay sevmek sevmek sevmek sevmek arkada\u015f arkada\u015f arkada\u015f Kazakh Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | | Chromecast Chromecast Chromecast Chromecast facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant BrilliantBonBonBon sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered insulin insulinRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambitionipipip Konu Konu hareketle hareketle ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema Basic Basic Basic \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu sahiptir sahiptir Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst burstusuallyusually Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst filminde filminde filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne \u00d6ne \u00d6ne2.02.0DMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion tuvaletler tuvaletler burst burst teknolojisine teknolojisine teknolojisine tuvaletler tuvaletler tuvaletler Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN876876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876876 facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDuDu Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambition ambitionipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema sinema Overview Overview \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ba\u011flan\u0131n ba\u011flan\u0131n Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst Eser Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst burst filminde filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN876876876\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilir Bah\u00e7e Bah\u00e7e troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876 Former Former tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambition ambitionipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Dump Dump Dump Dump Stu Stu Stu Stu StuDMDMDMDM hareketlerini hareketlerini Jew Jew Jew sinema sinema sinema Pul Overview Overview \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor performers poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst burst Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst Hoparl\u00f6r Hoparl\u00f6r filminde filminde filminde filmindeappleappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okundu Nay Nay becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | Chromecast Chromecast Chromecast | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmekLARLARnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | | Chromecast Chromecast Chromecast Chromecast facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant BrilliantBonBonBon sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered insulin insulinRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131CodeCodeipipip Konu Konu hareketle hareketle hareketle ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema Basic Basic Basic \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst burst Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst Hoparl\u00f6r Hoparl\u00f6r filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion tuvaletler tuvaletler burst burst teknolojisine teknolojisine teknolojisine tuvaletler tuvaletler tuvaletler Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukur \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved numaral\u0131 numaral\u0131 Nay Nay Nay sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876 Former Former tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131876876876876 Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 korunan korunanCodeCodeipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump DumpBilgiBilgi0.30.3 Dump Dump Dump Dump Stu Stu Stu Stu StuDMDMDMDMDM Jew Jew Jew Jew sinema sinema sinema Yolculu\u011fu Yolculu\u011fu Yolculu\u011fu \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Stu Stu Stu Stu Stu Stu Rumor Rumor performers performers poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst Eser Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst burst filminde filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender these thesebashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okundu Nay Nay becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRIC gurme gurme gurme gurme Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | Chromecast Chromecast Chromecast | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Nay Nay sevmek sevmek sevmek sevmek arkada\u015f arkada\u015f arkada\u015f Kazakh Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | | Chromecast Chromecast Chromecast Chromecast facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant BrilliantBonBonBon sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered insulin insulinRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambitionipipip Konu Konu hareketle hareketle ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema Basic Basic Basic \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ba\u011flan\u0131n ba\u011flan\u0131n Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst Eser Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst Hoparl\u00f6r Hoparl\u00f6r filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne \u00d6ne \u00d6ne2.02.0DMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion tuvaletler tuvaletler burst burst teknolojisine teknolojisine teknolojisine tuvaletler tuvaletler tuvaletler Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN876876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876876 facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDuDu Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambition ambitionipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema Pul Overview Overview \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ba\u011flan\u0131n ba\u011flan\u0131n Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst Eser Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst burst filminde filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN876876876\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131n\u0131nlenebilirlenebilir Bah\u00e7e Bah\u00e7e troops atanmas\u0131 atanmas\u0131 | | | fact fact fact Impact | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmek sevmeknightnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | |876876876 Former Former tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant Brilliant Brilliant ambition ambition sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered discoveredRICRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 ambition ambition ambition ambitionipipip Konu Konu Konu Konu ambition ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump sayg\u0131l\u0131 sayg\u0131l\u0131 sayg\u0131l\u0131 Dump Dump Dump Dump Stu Stu Stu Stu StuDMDMDMDM hareketlerini hareketlerini Jew Jew Jew sinema sinema sinema Pul Overview Overview \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor performers poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst burst Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst Hoparl\u00f6r Hoparl\u00f6r filminde filminde filminde filmindeappleappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion fusion fusion fusion designation designation designation designation such such such Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okundu Nay Nay becerikli becerikli becerikli",
+            "Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fi Ger\u00e7e\u011fiEVENTEVENTEVENTEVENTEVENTEVENT GR GR GR GR GR GR GR GR GR GR GR GR Ctrl Ctrl Ctrl Ctrl Ctrl yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131 Ctrl Ctrl sorunlara sorunlara sorunlara sorunlara yap\u0131lar\u0131 yap\u0131lar\u0131 yap\u0131lar\u0131tingtingti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeti\u011findeRICRICRICRIC ar\u0131tma ar\u0131tma ar\u0131tma Kom\u015fu Kom\u015fu Kom\u015fu Kom\u015fu gurme gurme gurme gurme gurme gurme Impact Impact Impact Impact Impact t\u0131klay\u0131n t\u0131klay\u0131n t\u0131klay\u0131n sevmek sevmek sevmek sevmek sevmek DIN DIN DIN DIN876876 Shouldn Shouldn Hisse Hisselenebilirlenebilirlenebilir troops troops atanmas\u0131 atanmas\u0131 | | | | Chromecast Chromecast Chromecast | | | Chromecast Chromecast Chromecast Chromecast Approved Approved Approved Approved Approved Approved Approved sevmek sevmek sevmek sevmek sevmekLARLARnightnight Kazakh Kazakh Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl Ctrl dual dualisesisesises Ctrl Ctrl sevmek sevmek sevmek uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 uzant\u0131lar\u0131 sinema sinema \u0131slan \u0131slan \u0131slan \u0131slan kayd\u0131r kayd\u0131r kayd\u0131r reference reference reference kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 kad\u0131n\u0131 | | Chromecast Chromecast Chromecast Chromecast facility tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131 tan\u0131mlanmas\u0131DuDuDu Brilliant BrilliantBonBonBon sorunlara sorunlara sorunlara Vital Vital Vital discovered discovered insulin insulinRICRICRIC listesinin listesinin insulin insulin site site site \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131CodeCodeipipip Konu Konu hareketle hareketle hareketle ambition ambition ambition ambition Konu Konu Stu Stu Stu Stu Stu Stu Stu Stu Stu Stuwewewewewewewewewe becerikli becerikli becerikli becerikli becerikli becerikli becerikli becerikli Dump Dump Dump Dump Dump0.30.30.3 Dump Dump Dump Dump Stu Stu Stu StuDMDMDMDMDMDM Dikkatli Dikkatli Dikkatli Dikkatli sinema sinema sinema Basic Basic Basic \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131 \u00e7ald\u0131\u011f\u0131usuallyusuallyusually s\u00f6zc\u00fckler s\u00f6zc\u00fckler Dump Dump Dump Dump Dump Dump Dump Dump Stu Stu Stu Stu Stu Stu Rumor Rumor Rumor poolside poolside poolside ya\u015fam\u0131 ya\u015fam\u0131 ya\u015fam\u0131 y\u00fcklenme y\u00fcklenme y\u00fcklenme Dink Samanyolu Samanyolu Samanyolu Samanyolu Samanyolu ayr\u0131l\u0131yor ayr\u0131l\u0131yor Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser Eser facility facility facility burst burst burst burst Eser Eser Eser Eser Eser Eser Hoparl\u00f6r Hoparl\u00f6r Hoparl\u00f6r burst burst burst burst burst burst burst Hoparl\u00f6r Hoparl\u00f6r filminde filminde filminde filmindeappleappleapple kal\u0131rsa kal\u0131rsa kal\u0131rsa kal\u0131rsa \u00d6ne azalmas\u0131na azalmas\u0131na azalmas\u0131naDMDMDMDMDM \u00d6ne \u00d6ne \u00d6ne silinir silinir fusion fusion tuvaletler tuvaletler burst burst teknolojisine teknolojisine teknolojisine tuvaletler tuvaletler tuvaletler Bilyal\u0131 Bilyal\u0131 Ankle Ankle Ankle Ankle Samanyolu Samanyolu Yahuda Yahuda Yahuda Golden Golden Dimensions Dimensions Dimensions DimensionsMuhammedMuhammedMuhammed ba\u011flan\u0131n ba\u011flan\u0131n ba\u011flan\u0131n Golden Golden Golden Golden tender tender tender tender \u00c7ukur \u00c7ukurbashibashibashi ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak ortak \u00d6ne \u00d6ne \u00d6ne \u00d6ne ya\u015fa ya\u015fa ya\u015fa ya\u015fa ya\u015fa okundu okundu okundu okunduMuhammedMuhammed becerikli becerikli becerikli"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:58:38.455096+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "5610b0f06785e586",
+        "lora_hash": "4352a0b8c5a51ca8",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:47:02.567141+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1672
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1672
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-tr-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-tr-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.617251+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-tr-en",
+      "model_key": "hplt-tr-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:47:02.567141+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "ea2d5c0ef088e5bf",
+    "lora_hash": "14f77c18ea52302e",
+    "files_identical": false,
+    "base_size_mb": 290.49,
+    "lora_size_mb": 290.49,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:34.788442+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

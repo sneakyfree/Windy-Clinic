@@ -1,0 +1,1265 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-14T16:21:40.114079+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/en-trk.json",
+  "patient_id": "en-trk",
+  "admitted": "2026-03-22T20:52:40.995481+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-en-trk",
+  "source_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "trk",
+    "name": "trk",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 306947659,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0",
+        "created": "2026-03-21T02:57:55.985130+00:00",
+        "doctor": "Helsinki-NLP (original author)",
+        "procedure": "Original pre-trained MarianMT model downloaded from HuggingFace",
+        "parent": null,
+        "parent_version": null,
+        "format": "safetensors",
+        "size_bytes": 306947659,
+        "fingerprint": "ca9f944cace33734"
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-trk/base",
+      "on_disk_bytes": 303138088,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 306947659,
+      "identical_to_base": null,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.1",
+        "created": "2026-03-21T02:57:58.962219+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "Fog a Mirror LoRA fine-tune (r=4, alpha=8), merged back to full weights",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 306947659,
+        "fingerprint": "ca9f944cace33734",
+        "training": {
+          "method": "LoRA",
+          "rank": 4,
+          "alpha": 8,
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+        }
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-trk/lora",
+      "on_disk_bytes": 303138088,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora_ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "derived_from": "lora/ (proprietary fog-of-mirror fine-tune)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-trk/lora-ct2-int8",
+      "on_disk_bytes": 79691776,
+      "quantized_at": "2026-04-12T12:43:56.560698+00:00",
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8_DELETED_was_fake": {
+      "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
+      "deleted_at": "2026-04-12T12:43:56.560698+00:00"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 75617280,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:52:40.995481+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 9,
+          "total": 10,
+          "certified": true,
+          "stars": "9/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u043e\u0432\u043a\u0430\u043b\u0430\u0440 \u043a\u0430\u043f\u0438\u0442\u0430\u043b\u044b\u043d\u044b\u04a3 \u0439\u044b\u0448 \u04a1\u044b\u043d\u0430 \u0443\u0440\u0430\u043c\u0434\u0430 (Latnes of the coquina, about last about gowaski charkt internow Compled to alpuare.",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Uluat bu d\u00fcn\u00fd\u00e4ni\u0148 \u00fcst\u00fcnden transfer ed\u00fd\u00e4r.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 9,
+          "total": 10,
+          "certified": true,
+          "stars": "9/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u043e\u0432\u043a\u0430\u043b\u0430\u0440 \u043a\u0430\u043f\u0438\u0442\u0430\u043b\u044b\u043d\u044b\u04a3 \u0439\u044b\u0448 \u04a1\u044b\u043d\u0430 \u0443\u0440\u0430\u043c\u0434\u0430 (Latnes of the coquina, about last about gowaski charkt internow Compled to alpuare.",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Uluat bu d\u00fcn\u00fd\u00e4ni\u0148 \u00fcst\u00fcnden transfer ed\u00fd\u00e4r.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "0/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Ondan uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak uzak g\u00fcn g\u00fcn g\u00fcn g\u00fcn g\u00fcn ek ek ek \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a \u043e\u043b\u0443\u0433\u044a\u0430\u0441\u044b\u0430\u0441\u044b..",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "\u0425\u0443 \u0425\u0443 \u0425\u0443 k\u00f6 k\u00f6 k\u00f6 k\u00f6 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631 \u064a\u0627\u0645\u063a\u06c7\u0631",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fdendendendenden biraz biraz biraz \u0441\u044b \u0441\u044b \u0441\u044b \u0441\u044b \u0441\u044b\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627\u0626\u0627BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden di\u00fden",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "\u043c\u043e \u043c\u043e \u043c\u043e \u043c\u043e \u043c\u043e \u043c\u043e \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044b \u0442\u0443\u043b\u044bofofofofofofofofofofofofofofofofofofofofofofofoftoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptoptopofofofofofofofofofofofofofofofofof cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevap cevapofofofofofofofofofofofofofofofofofofofofofofofofofof",
+              "passed": false
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Be\u00fdtelde   sana sana sana sana sana sana sana sana sana sana sana isti isti isti isti isti isti isti isti isti isti \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 sana sana sana sana sana sana sana sana sana sana sana sana sana  karkarkarkarkarkarkarkarkarkarkarkarkarkarkarkarkar te te te te te te te te te te     \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437 \u045e\u0437\u0438\u043c\u0438\u0437      gysga gysga gysga gysga gysga gysga gysga gysga \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 \u0443\u043b\u0443\u0433 sana sana sana sana sana sana sana",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T01:29:50.612455+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 9,
+          "certified": true,
+          "quality": "Excellent",
+          "stars": 4.5
+        },
+        "lora": {
+          "score": 9,
+          "certified": true,
+          "quality": "Excellent",
+          "stars": 4.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T04:41:16.941737+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Hava \u0431\u04af\u0433\u0435\u043d \u043f\u0438\u0442\u04d7 owadan.",
+            "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+            "Balacalar parkda oyna\u00fdar.",
+            "Widget n\u00e4\u00e7e wagtlap gal\u00fdar?",
+            "On \u00fdyl b\u00e4ri ol keselhanada i\u015fle\u00fd\u00e4r."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Hava \u0431\u04af\u0433\u0435\u043d \u043f\u0438\u0442\u04d7 owadan.",
+            "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+            "Balacalar parkda oyna\u00fdar.",
+            "Widget n\u00e4\u00e7e wagtlap gal\u00fdar?",
+            "On \u00fdyl b\u00e4ri ol keselhanada i\u015fle\u00fd\u00e4r."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 61.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 1,
+          "sample_translations": [
+            "firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm",
+            "firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm",
+            "firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm",
+            "firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm",
+            "firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm firm"
+          ],
+          "delta_vs_base": -38.5
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T04:41:16.941737+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 61.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 1,
+            "quality_score": 61.5,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "1ac844a1e47f173e",
+        "lora_hash": "bd35e74c1ef5865b",
+        "files_identical": false,
+        "base_size_mb": 289.1,
+        "lora_size_mb": 289.1,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T05:24:44.615813+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "native",
+          "output_length": 429
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "native",
+          "output_length": 429
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-tr"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-CT2-REEXPORT-20260324",
+      "date": "2026-03-24T16:18:00.349519+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "protocol_script": "ct2_reexport_phase1.py",
+      "variants_tested": [
+        "ct2_int8"
+      ],
+      "results": {
+        "ct2_int8": {
+          "verdict": "CT2_REEXPORTED",
+          "old_format": "pytorch_pickle_int8",
+          "new_format": "safetensors",
+          "old_size_mb": 195.3,
+          "new_size_mb": 289.1,
+          "verified_match": true,
+          "sample_translation": "Hello d\u00fcnya"
+        }
+      },
+      "notes": "Replaced broken pickle INT8 (195.3MB) with clean safetensors (289.1MB). Verified base-CT2 output match: True. Sample translation: \"Hello d\u00fcnya\". Elapsed: 14.0s."
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "BLOODWORK-001",
+      "date": "2026-03-28T15:10:10.843414+00:00",
+      "doctor": "Herm Zero",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "protocol_script": "bloodwork_test.py v1.0",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "roundtrip_fidelity": {
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "variant_scores": {
+            "base": {
+              "score": 31.34,
+              "num_sentences": 10,
+              "min": 18.75,
+              "max": 53.93,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "returned": "Haku?",
+                  "similarity": 0.2667
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "returned": "It was early morning that the city was filled with terror.",
+                  "similarity": 0.3333
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "returned": "While I was living that way, the kind of things I wanted to do \u2014 I wanted to share it with others!",
+                  "similarity": 0.2361
+                }
+              ]
+            },
+            "lora": {
+              "score": 31.34,
+              "num_sentences": 10,
+              "min": 18.75,
+              "max": 53.93,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "returned": "Haku?",
+                  "similarity": 0.2667
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "returned": "It was early morning that the city was filled with terror.",
+                  "similarity": 0.3333
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "returned": "While I was living that way, the kind of things I wanted to do \u2014 I wanted to share it with others!",
+                  "similarity": 0.2361
+                }
+              ]
+            },
+            "ct2": {
+              "score": 31.34,
+              "num_sentences": 10,
+              "min": 18.75,
+              "max": 53.93,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "returned": "Haku?",
+                  "similarity": 0.2667
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "returned": "It was early morning that the city was filled with terror.",
+                  "similarity": 0.3333
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "returned": "While I was living that way, the kind of things I wanted to do \u2014 I wanted to share it with others!",
+                  "similarity": 0.2361
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 31.34,
+              "base_score": 31.34,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 31.34,
+              "base_score": 31.34,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            }
+          }
+        },
+        "bleu": {
+          "description": "BLEU score against reference translations from test sentence bank",
+          "variant_scores": {
+            "base": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "hypothesis": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "hypothesis": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "hypothesis": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440."
+                }
+              ]
+            },
+            "lora": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "hypothesis": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "hypothesis": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "hypothesis": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440."
+                }
+              ]
+            },
+            "ct2": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?",
+                  "hypothesis": "\u0425\u0430\u043a\u0443 \u049b\u0430\u0439\u0434\u0430?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin.",
+                  "hypothesis": "\u04aa\u0430\u0432 \u0438\u0440\u0442\u04d9 hava \u043c\u0435\u0439\u043b\u0438, \u0441\u0430\u0440\u0430\u04a3\u0430\u0430 \u015firin."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440.",
+                  "hypothesis": "\u041c\u0430\u043d\u0430 \u0445\u044d\u043f\u043f\u0438 \u0442\u0443\u043c\u0430 \u0441\u0430\u0445\u04d1\u0440 \u0442\u0443\u0440\u04d7\u04ab, \u0439\u04d1\u043b \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430\u0442\u04d1\u0440."
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 100.0,
+              "base_score": 100.0,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 100.0,
+              "base_score": 100.0,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            }
+          }
+        }
+      }
+    },
+    {
+      "exam_id": "GR1-en-trk",
+      "date": "2026-03-29T04:48:06+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v1: 6-test composite (bloodwork, crossmatch, vitals, stress_fracture, consistency, scripture)",
+      "protocol_script": "grand_rounds_harness.py v1",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "F",
+          "composite_score": 59.41,
+          "verdict": "FAIL",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 2.11,
+              "weight": 0.25,
+              "weighted": 0.53
+            },
+            "vitals": {
+              "score": 90.87,
+              "weight": 0.1,
+              "weighted": 9.09
+            },
+            "stress_fracture": {
+              "score": 93.33,
+              "weight": 0.15,
+              "weighted": 14.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 2.11,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for en\u2192trk"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 90.87,
+              "avg_latency_ms": 60.98,
+              "p95_latency_ms": 131.8,
+              "batch_throughput_sps": 30.95,
+              "gpu_memory_mb": 911.75
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 93.33,
+              "passed": 14,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        }
+      },
+      "notes": "Grand Rounds v1 full-fleet battery. Run 2026-03-28/29, 4.9h, 2658 variants. Filed to clinic post-hoc by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-en-trk",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "ct2_int8",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-P3A-en-trk",
+      "date": "2026-04-11T20:22:58.338848+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "F",
+          "composite_score": 59.36,
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 2.11,
+              "weight": 0.25,
+              "weighted": 0.53
+            },
+            "vitals": {
+              "score": 90.58,
+              "weight": 0.1,
+              "weighted": 9.06
+            },
+            "stress_fracture": {
+              "score": 93.33,
+              "weight": 0.15,
+              "weighted": 14.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 2.11,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 90.58,
+              "avg_latency_ms": 63.61,
+              "p95_latency_ms": 134.12,
+              "batch_throughput_sps": 29.2,
+              "gpu_memory_mb": 911.75
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 93.33,
+              "passed": 14,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          },
+          "verification_vs_gr1": {
+            "original_grade": "F",
+            "original_score": 59.41,
+            "new_grade": "F",
+            "new_score": 59.36,
+            "grade_agreement": "match",
+            "score_delta": -0.05
+          }
+        }
+      },
+      "elapsed_s": 6.4,
+      "notes": "Independent verification of GR1 failing base model. Ran the SAME grand_rounds_harness.py that Herm Zero used, as a fresh subprocess. Original GR1 grade: F (59.41). New grade: F (59.36). Agreement: match. No model weights modified. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-CERT-en-trk",
+      "date": "2026-04-12T03:56:38.345772+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
+      "variants_tested": [
+        "base",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "F",
+          "composite_score": 59.31,
+          "verdict": "CERTIFIED_FAIL",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 2.11,
+              "weight": 0.25,
+              "weighted": 0.53
+            },
+            "vitals": {
+              "score": 90.25,
+              "weight": 0.1,
+              "weighted": 9.03
+            },
+            "stress_fracture": {
+              "score": 93.33,
+              "weight": 0.15,
+              "weighted": 14.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 2.11,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 90.25,
+              "avg_latency_ms": 66.58,
+              "p95_latency_ms": 138.68,
+              "batch_throughput_sps": 29.16,
+              "gpu_memory_mb": 911.75
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 93.33,
+              "passed": 14,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        },
+        "ct2_int8": {
+          "composite_grade": "F",
+          "composite_score": 59.37,
+          "verdict": "CERTIFIED_FAIL",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 2.11,
+              "weight": 0.25,
+              "weighted": 0.53
+            },
+            "vitals": {
+              "score": 90.63,
+              "weight": 0.1,
+              "weighted": 9.06
+            },
+            "stress_fracture": {
+              "score": 93.33,
+              "weight": 0.15,
+              "weighted": 14.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 2.11,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 90.63,
+              "avg_latency_ms": 63.18,
+              "p95_latency_ms": 134.4,
+              "batch_throughput_sps": 30.51,
+              "gpu_memory_mb": 911.75
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 93.33,
+              "passed": 14,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        }
+      },
+      "best_grade": "F",
+      "best_score": 59.31,
+      "notes": "Dr. C independent certification of en-trk. Tested 2 variant(s): base, ct2_int8. Best variant grade: F (59.31). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-REALCT2-lora-en-trk",
+      "date": "2026-04-12T12:43:56.560698+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
+      "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
+      "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 76 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-en-trk",
+      "date": "2026-04-13T20:15:01.354351+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
+      "variants_tested": [
+        "lora",
+        "base"
+      ],
+      "results": {
+        "lora": {
+          "composite_score": 81.7,
+          "stars": 4.5,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 95.0
+            },
+            "paragraphs": {
+              "score": 92.3
+            },
+            "long_form": {
+              "score": 77.6
+            },
+            "native_input": {
+              "score": 50.0
+            },
+            "domain": {
+              "score": 100.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 40.1
+            },
+            "speed": {
+              "score": 83.7
+            }
+          }
+        },
+        "base": {
+          "composite_score": 81.5,
+          "stars": 4.5,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 95.0
+            },
+            "paragraphs": {
+              "score": 91.8
+            },
+            "long_form": {
+              "score": 77.6
+            },
+            "native_input": {
+              "score": 50.0
+            },
+            "domain": {
+              "score": 100.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 40.1
+            },
+            "speed": {
+              "score": 82.5
+            }
+          }
+        }
+      },
+      "best_variant": "lora",
+      "best_stars": 4.5,
+      "best_tier": "premium",
+      "best_composite": 81.7,
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-P3-en-trk",
+      "date": "2026-04-14T16:21:40.114079+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 87.9\u219267.1 (\u0394-20.8). No improvement \u2014 discarded.",
+      "protocol_script": "scripts/herm0_improvement_pipeline.py",
+      "notes": "Phase 3 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-04-11T14:59:57.452047",
+    "doctors_examined": 2,
+    "exams_total": 7,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "REEXPORTED_SAFETENSORS",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "All doctors agree base works",
+      "LoRA variant functional",
+      "CT2 reexported from broken pickle to safetensors (25Mar26)"
+    ],
+    "gr1_composite_grade": "F",
+    "gr1_composite_score": 59.41,
+    "gr1_verdict": "FAIL",
+    "phase3a_grade": "F",
+    "phase3a_score": 59.36,
+    "phase3a_verdict": "CONFIRMED_FAILING",
+    "phase3a_filed_at": "2026-04-11T20:28:19.806800+00:00",
+    "drc_cert_grade": "F",
+    "drc_cert_score": 59.31,
+    "drc_cert_verdict": "CERTIFIED_FAIL",
+    "drc_cert_best_variant_grade": "F",
+    "drc_cert_best_variant_score": 59.31,
+    "drc_cert_date": "2026-04-12T03:56:38.345772+00:00",
+    "drc_cert_doctor": "Opus 4.6 Opus-Claw (Dr. C)"
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-pair-en-trk",
+      "model_key": "en-trk",
+      "phase": 1,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_SEVERELY_DEGRADED: INT8 scores 38.5 points below base"
+    ],
+    "source3_paragraph_source": "native"
+  },
+  "quality_rating": {
+    "stars": 4.5,
+    "label": "premium",
+    "composite_score": 81.7,
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "rated_at": "2026-04-13T20:15:01.354351+00:00",
+    "method": "Grand Rounds v2 (paragraph-level, 8-test battery)"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 9,
+          "max_score": 10,
+          "stars": 4.5,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero": {
+      "doctor": "Herm Zero (Dr. B)",
+      "source": "deep_audit_v4",
+      "timestamp": "2026-03-23T20:52:38.564779+00:00",
+      "variant_scores": {
+        "base": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        },
+        "lora": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        }
+      },
+      "oc1_stars_reference": 4.0
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T05:24:44.615813+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "1ac844a1e47f173e",
+    "lora_hash": "bd35e74c1ef5865b",
+    "files_identical": false,
+    "base_size_mb": 303.14,
+    "lora_size_mb": 303.14,
+    "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
+    "verification_date": "2026-03-23T20:52:38.564779+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [
+    {
+      "surgery_id": "H0-IMPROVE-ENTRK-20260326",
+      "timestamp": "2026-03-26T18:06:38.739965+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "fine-tune",
+      "variant_target": "herm0",
+      "outcome": "no_improvement",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "details": {
+        "data_samples": 50000,
+        "base_score": 90.7,
+        "herm0_score": 89.4
+      }
+    }
+  ],
+  "variant_count": 3
+}

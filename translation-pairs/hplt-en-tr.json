@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-tr.json",
+  "patient_id": "hplt-en-tr",
+  "admitted": "2026-03-22T19:59:27.027012+00:00",
+  "source_repo": "HPLT/translate-en-tr-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "tr",
+    "name": "tr",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-tr/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-tr/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:59:27.027012+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir Koreli KoreliISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek tekerlek tekerlek korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir Koreli KoreliISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek tekerlek Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation kremi kremi kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l tekerlek tekerlek Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir Koreli KoreliISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation kremi kremi kremi kremi tekerlek tekerlek tekerlek tekerlek tekerlek tekerlek korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": false
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "beyazbeyazbeyazbeyaz cabbage cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon Dixon silo silo cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Loader Loader Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Pokerrespondrespond kurun kurun kurun Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation Elinizde Elinizde kremi kremi kremi kremi kremi kremi kremi kremi korkutucu korkutucu korkutucu Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia Zambia",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:57:39.936336+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:51:08.888469+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 73.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 9,
+          "sample_translations": [
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation Elinizde Elinizde tekerlek tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells cells Zambia prepares prepares prepares arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karmaS\u0131n\u0131fS\u0131n\u0131f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning)) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar \u00c7alar kontak kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini anketler anketler anketler anketler s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsarsars Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 hissetmenizi hissetmenizi hissetmenizi Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads Brooks Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan yolundan Bali Bali Bali Dixon Dixon Dixon Dixon Dixon Dixon Dixon dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker e\u015fle\u015ftir e\u015fle\u015ftir kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm Worm \u00c7elebi \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing outgoing ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar conceptual conceptual kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 kapsayacak kapsayacak emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsarsars Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks BrooksCheckCheckCheck b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads loads Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen assisted assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation Elinizde kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Zambia Zambia Zambia Zambia Zambia Zambia Zambia ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks Brooks J J Jlo\u011falo\u011falo\u011falo\u011fa Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma karma Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score s\u00fcrecini s\u00fcrecini s\u00fcrecini yak\u0131p yak\u0131p durduruldu durduruldu balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) bileklik bileklik bileklik \u00c7alar \u00c7alar \u00c7alar \u00c7alarrotrotrot ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsars Hulk Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks BrooksCheckCheck b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads loads Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation Elinizde kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells cells Zambia prepares prepares prepares arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karmaS\u0131n\u0131fS\u0131n\u0131f direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) bileklik bileklik bileklik \u00c7alar \u00c7alar \u00c7alar \u00c7alarrotrotrot ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015f anketler anketler anketler s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsarsars Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks BrooksCheckCheck b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads loads loads loads unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan yolundan Bali Bali Bali Dixon Dixon Dixon Dixon Dixon Dixon Dixon dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Zambia Zambia Zambia 20:00 20:00 arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks Brooks J J Jlo\u011falo\u011falo\u011falo\u011fa Eyewear J J J J J J J Loader Loader m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Brooks Brooks Brooks Brooks T\u00dcM karma karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm Worm \u00c7elebi \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing outgoing ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar conceptual conceptual kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 kapsayacak kapsayacak emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsbonebonebonebonebonearsars Hulk Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads Brooks Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen assisted assisted assisted assisted Cleaner Cleaneroveroveroverysenysen angry angry angry angry Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsars gerginlik gerginlik"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation Elinizde Elinizde tekerlek tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells cells Zambia prepares prepares prepares arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karmaS\u0131n\u0131fS\u0131n\u0131f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning)) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar \u00c7alar kontak kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini anketler anketler anketler anketler s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsarsars Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 hissetmenizi hissetmenizi hissetmenizi Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads Brooks Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan yolundan Bali Bali Bali Dixon Dixon Dixon Dixon Dixon Dixon Dixon dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker e\u015fle\u015ftir e\u015fle\u015ftir kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm Worm \u00c7elebi \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing outgoing ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar conceptual conceptual kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 kapsayacak kapsayacak emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsarsars Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks BrooksCheckCheckCheck b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads loads Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen assisted assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun kurun kurun e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation Elinizde kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Zambia Zambia Zambia Zambia Zambia Zambia Zambia ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks Brooks J J Jlo\u011falo\u011falo\u011falo\u011fa Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma karma Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score s\u00fcrecini s\u00fcrecini s\u00fcrecini yak\u0131p yak\u0131p durduruldu durduruldu balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) bileklik bileklik bileklik \u00c7alar \u00c7alar \u00c7alar \u00c7alarrotrotrot ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsars Hulk Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks BrooksCheckCheck b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads loads Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan varan yolundan yolundan B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne B\u00fcy\u00fckanne Dixon Dixon Dixon Dixon Dixon s\u0131zd\u0131r s\u0131zd\u0131r dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells cells Zambia prepares prepares prepares arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks J J J Jlo\u011falo\u011falo\u011fa Eyewear Eyewear J J J J J J ge\u00e7mi\u015ftir ge\u00e7mi\u015ftir Ge\u00e7mi\u015fi karma karma Brooks Brooks Brooks Brooks T\u00dcM T\u00dcM karma karma karma karma karmaS\u0131n\u0131fS\u0131n\u0131f direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm yak\u0131p yak\u0131p \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing ambush ambush ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) bileklik bileklik bileklik \u00c7alar \u00c7alar \u00c7alar \u00c7alarrotrotrot ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015f anketler anketler anketler s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysen Riyad Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsarsbonebonebonebonearsars Hulk Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads Brooks Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen pollen assisted assisted Cleaner Cleaner Cleaneroveroveroverysenysen pollen pollen pollen pollen Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsarsars gerginlik gerginlik",
+            "beyazbeyaz legislative legislative cabbage cabbage cabbage cabbage varan varan yolundan yolundan yolundan yolundan Bali Bali Bali Dixon Dixon Dixon Dixon Dixon Dixon Dixon dans\u0131 dans\u0131 dans\u0131 cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l cezaland\u0131r\u0131l Okuyun Okuyun Okuyun Parf\u00fcm Parf\u00fcm Parf\u00fcm Parf\u00fcm Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet Mezuniyet misyon misyon m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Poker Poker Poker Poker kurun kurun kurun kurun Brooks Brooks Brooks Brooks Brooks kurun kurun kurun kurun kurun Ermeni Ermeni e\u015fle\u015ftir e\u015fle\u015ftir e\u015fle\u015ftir ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015ftiISMISMISM disable disable disable disable disable disable disable disable disable disable disable explanation explanation explanation kremi kremi kremi tekerlek tekerlek tekerlek tekerlek Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Te\u015fhis Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Ge\u00e7mi\u015fi Zambia Zambia Zambia ZambiaS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131fS\u0131n\u0131f cells cells cells Zambia Zambia Zambia 20:00 20:00 arada arada ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti ger\u00e7ekle\u015fti Brooks Brooks Brooks J J Jlo\u011falo\u011falo\u011falo\u011fa Eyewear J J J J J J J Loader Loader m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Brooks Brooks Brooks Brooks T\u00dcM karma karma karma karma karma karma karma karma direni\u015f direni\u015f direni\u015f Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz Karadeniz m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar Worm Worm Worm \u00c7elebi \u00c7elebi \u00c7elebi m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar m\u00fcnaf\u0131klar outgoing outgoing outgoing outgoing ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz ho\u015flanmaz score score score score kamuya kamuya kamuya kamuya Mandy Mandy balanced balanced balanced buldular buldular buldular hu hu hualignalignalignalign elevate elevate elevate elevate turning turning turning turning buldular buldular buldular buldular turning turning turning turning turning turning) ba\u011flayarak ba\u011flayarak ba\u011flayarak \u00c7alar \u00c7alar \u00c7alar conceptual conceptual kontak kontak kontak kontakFAFAFA s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecinigeni\u015fgeni\u015fgeni\u015f diets diets s\u00fcrecini s\u00fcrecini s\u00fcrecini s\u00fcrecini elimde elimde kapsama kapsama sitemiz sitemiz sitemiz sitemiz sitemiz sitemiz a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 kapsayacak kapsayacak emin emin eminsummersummer a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131 a\u00e7\u0131l\u0131\u015f\u0131n\u0131ysenysenysenysenysenysenysenysen Riyad Riyad Riyad ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 How Howarsarsbonebonebonebonebonearsars Hulk Hulk Hulk Hulk Hulk Hulk cosmos cosmos cosmos cosmos g\u00f6stermeniz g\u00f6stermeniz g\u00f6stermeniz ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 ak\u015famlar\u0131 Demo Demo Ahmet Ahmet g\u00fcncelleyin g\u00fcncelleyin g\u00fcncelleyin Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks Brooks b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m b\u0131rakaca\u011f\u0131m blessings blessings blessings blessings blessings blessings blessings blessings loads loads Brooks Brooks Brooks unfortunately unfortunately unfortunately unfortunatelymmedmmed pollen pollen assisted assisted assisted assisted Cleaner Cleaneroveroveroverysenysen angry angry angry angry Brooks Brooks Brooks Brooks tanr\u0131 tanr\u0131 pollen pollen pollen pollen Kalma Kalma Kalma cc cc cc cc cc cc cc cc pollen pollen pollen cc cc cc cc pollen pollen pollen complimentary complimentary complimentary complimentary complimentary Inquiry Inquiry HON HON HON HON HON HON HON1=1= pollen pollen pollen pollen pollen pollen pollen pollen Inquiry Inquiry Inquiry Inquirykabekabekabe insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131n insanlar\u0131n\u0131narsarsarsarsarsars gerginlik gerginlik"
+          ],
+          "delta_vs_base": 1.5
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:51:08.888469+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 73.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 9,
+            "quality_score": 73.5,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "cc570185bfad214c",
+        "lora_hash": "621c7f46f62fe37c",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:43:15.409921+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1916
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1916
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-t"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-tr",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.593059+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-tr",
+      "model_key": "hplt-en-tr",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:43:15.409921+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "cc570185bfad214c",
+    "lora_hash": "621c7f46f62fe37c",
+    "files_identical": false,
+    "base_size_mb": 321.72,
+    "lora_size_mb": 321.72,
+    "verified_by": "Kit OC1 Alpha (phase2 hash check)",
+    "verification_date": "2026-03-24T14:19:42.166187+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

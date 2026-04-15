@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-lv-en.json",
+  "patient_id": "hplt-lv-en",
+  "admitted": "2026-03-22T20:02:14.318847+00:00",
+  "source_repo": "HPLT/translate-lv-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lv-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lv-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:02:14.318847+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "tabtabtab prece preceosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Papildu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "tabtabtab prece preceosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Papildu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "tabtabtab prece preceosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Papildu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "tabtabtab prece preceosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Papildu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "tabtabtab preceosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Sveiki, k\u0101 jums \u0161odien kl\u0101jas?",
+              "output": "tabtabtab moistureosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 j\u0101balst\u0101s j\u0101balst\u0101s Genetic Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds iemest iemest",
+              "passed": false
+            },
+            {
+              "input": "\u0160or\u012bt laiks ir skaists.",
+              "output": "tabtabtab moistureosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa trap trap 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DSDS211211211211211211211211211211211211211 j\u0101balst\u0101s j\u0101balst\u0101s Genetic Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds iemest iemest",
+              "passed": false
+            },
+            {
+              "input": "Es v\u0113l\u0113tos pas\u016bt\u012bt tas\u012bti kafijas, l\u016bdzu.",
+              "output": "tabtabtab moistureosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDS211211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds iemest iemest",
+              "passed": false
+            },
+            {
+              "input": "\u0100tr\u0101 br\u016bn\u0101 lapsa lec p\u0101ri slinkajam sunim.",
+              "output": "tabtabtab moistureosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neumedicalmedicalmedical 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211 l\u012bdzek\u013cos l\u012bdzek\u013cos basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": false
+            },
+            {
+              "input": "M\u0101ksl\u012bgais intelekts p\u0101rveido pasauli.",
+              "output": "tabtabtab moistureosaosaosaosaosa ERP ERPosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam jaunam Carolina Carolina Carolina Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejas \u0161osejasosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas/10//10//10/DS211211211211211211211211211211211211211211 prezident\u016bras prezident\u016bras prezident\u016bras Genetic Genetic211211211211/10/ basket basket basket basket basket basket basket basketinasinasinashirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:06:51.124373+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:55:30.450622+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa Carolina Carolina Carolina Carolina Carolina Neu Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211211211211 Border Border prezident\u016bras prezident\u016bras Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cinasinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh Fresh/10//10//10//10//10//10//10//10//10//10/ T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu liability liability/10//10//10//10/ ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square t\u0113mas t\u0113mas monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s atbilsto\u0161o atbilsto\u0161o atbilsto\u0161o613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcija vado\u0161ie vado\u0161ie211211211211211211211211211211211 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk Volk/10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr RE RE RE RE RE Fresh/10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu liability liability Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed trap trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Parex Parex krit krit krit t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga alga Terme Terme Terme indikators indikators indikators indikators indikators nectar nectar Scorpio Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit krit krit krit krit krit krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobCraftCraft sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpir Describe Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s addition addition613613613613limumablimumablimumab legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neumedicalmedicalmedical 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211 1060/2009 1060/2009 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basket basket gesture gesture gestureinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds iemest rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh/10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit krit krit krit Ready Ready Ready t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s t\u0113mas t\u0113mas addition613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Recruitment Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neumedicalmedicalmedical 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211 1060/2009 1060/2009 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh Fresh/10//10//10//10//10//10//10//10//10//10/ T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 1060/2009 1060/2009pirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s atbilsto\u0161o atbilsto\u0161o atbilsto\u0161o613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcija vado\u0161ie vado\u0161ie211211211211211211211211211211211 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk Volk/10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr RE RE RE RE RE/10//10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed evol\u016bcija evol\u016bcija trap trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit krit t\u0113mas fountain fountain p\u0101rtraukums p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga alga Terme Terme Terme Terme indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio Scorpio dementia dementia dementia Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja Displeja Displeja th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict cleansing cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpir Describe Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors rev\u012bzija rev\u012bzija rev\u012bzija square square square profila profila monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s addition addition613613613613limumablimumablimumab legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa Carolina Carolina Carolina Carolina Carolina Neu Neu Neu Neu 05 05 05 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211211211211 Border Border prezident\u016bras prezident\u016bras Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cinasinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh Fresh/10//10//10//10//10//10//10//10//10//10/ T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu liability liability/10//10//10//10/ ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square t\u0113mas t\u0113mas monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s atbilsto\u0161o atbilsto\u0161o atbilsto\u0161o613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcija vado\u0161ie vado\u0161ie211211211211211211211211211211211 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk Volk/10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr RE RE RE RE RE Fresh/10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed evol\u016bcija evol\u016bcija trap trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit krit t\u0113mas fountain fountain p\u0101rtraukums p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga alga Terme Terme Terme Terme indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio Scorpio dementia dementia dementia Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict Iedz\u012bvot\u0101ju Iedz\u012bvot\u0101ju Iedz\u012bvot\u0101ju Iedz\u012bvot\u0101ju Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s addition addition613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Bed Bed Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neumedicalmedicalmedical 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211 1060/2009 1060/2009 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basket basket gesture gesture gestureinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds iemest rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh/10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit krit Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakobovaovaova Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s t\u0113mas t\u0113mas addition613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neumedicalmedicalmedical 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcijaDSDS211211211211211211211211211 1060/2009 1060/2009 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk/10//10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr T\u0101lr RE RE RE RE Fresh Fresh/10//10//10//10//10//10//10//10//10//10/ T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed evol\u016bcija evol\u016bcija evol\u016bcija trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit t\u0113mas t\u0113mas t\u0113mas Jakob Jakob p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga Terme Terme Terme Terme indikators indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio siltummai\u0146 siltummai\u0146 siltummai\u0146 Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas t\u0113mas Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja th th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict Jakob cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 1060/2009 1060/2009pirpirpir Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana 1060/2009 1060/2009 rev\u012bzija rev\u012bzija square square square square profila monitors monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s613613613613 iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas iz\u0161\u016b\u0161anas legit legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam",
+            "fullfull moisture moistureosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosaosa jaunam jaunam Carolina Carolina Carolina Neu Neu Neu Neu Papildu Papildu Papildu 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 \u0161osejas \u0161osejas \u0161osejasosaosaosaosa 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 1060/2009 princi princi aizsarg\u0101tas aizsarg\u0101tas aizsarg\u0101tas evol\u016bcija evol\u016bcija evol\u016bcija vado\u0161ie vado\u0161ie211211211211211211211211211211211 Genetic Genetic Genetic Genetic Genetic Genetic Genetic Genetic211211211/10//10/ basket basket basket basketp\u0113cp\u0113cp\u0113cp\u0113cinasinashirhirhir Volk Volk Volk Volk Volk Volk Volk Volk Volk speeds speeds speeds rev\u012bzija rev\u012bzija Volk Volk Volk/10//10//10/ rev\u012bzija rev\u012bzija rev\u012bzija trap trap trap trap trap rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Volk Volk Volk Volk Volk rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija rev\u012bzija Dome Dome DomeoireoireoireMazMaz/10//10//10//10//10//10//10//10//10/ trap trap trap trap trapstatestatestate T\u0101lr T\u0101lr T\u0101lr RE RE RE RE RE/10//10//10//10//10//10/ j\u0101izv\u0113las j\u0101izv\u0113las j\u0101izv\u0113lasMazMazMaz T\u0101lr T\u0101lr T\u0101lr evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcijav\u0101nv\u0101nv\u0101nv\u0101n Papildu Papildu Papildu Papildu/10//10//10//10//10/ Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu Papildu ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP ERP imposed imposed imposed evol\u016bcija evol\u016bcija trap trap trap trap trap sav\u0101kt sav\u0101kt sav\u0101kt liability liability liability World World ap\u0146\u0113m ap\u0146\u0113m ap\u0146\u0113m evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija square square square krit krit krit t\u0113mas fountain fountain p\u0101rtraukums p\u0101rtraukums p\u0101rtraukums t\u0113mas t\u0113mas t\u0113mas t\u0113mas alga alga alga Terme Terme Terme Terme indikators indikators evol\u016bcija evol\u016bcija evol\u016bcija evol\u016bcija Scorpio Scorpio Scorpio Scorpio dementia dementia dementia Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio Scorpio krit krit krit Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Displeja Displeja Displeja Displeja th th th ERP ERP ERP Displeja Displeja Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob JakobAUAU once once once Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob Jakob inflict inflict inflict inflict cleansing cleansing cleansing sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101 sald\u0113tav\u0101pirpirpir Describe Describe DescribeCraftCraftCraftCraftCraftCraftCraftCraftCraftCraftCraft monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors monitors rev\u012bzija rev\u012bzija rev\u012bzija square square square profila profila monitors monitors monitors monitors monitors monitors monitors monitors sertific\u0113\u0161ana sertific\u0113\u0161ana sertific\u0113\u0161ana Audio Audio Audio Audio Audio Audio Audio Audio Audio Brokastis Brokastis Brokastis Brokastis inflict inflict inflict uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms uzskat\u0101ms Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s addition addition613613613613limumablimumablimumab legit legit legit legit Vieno\u0161an\u0101s Vieno\u0161an\u0101s Vieno\u0161an\u0101s Brokastis Brokastis Recruitment Recruitment Sarunas Sarunas jaunam jaunam jaunam"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:55:30.450622+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "9d52ad2a39e62d8e",
+        "lora_hash": "3fc9232ce7efbcf5",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:45:28.750753+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1527
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1527
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lv-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-lv-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.607136+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-lv-en",
+      "model_key": "hplt-lv-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:45:28.750753+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "8b50ef2c58542cc7",
+    "lora_hash": "55133f0995eaa340",
+    "files_identical": false,
+    "base_size_mb": 281.79,
+    "lora_size_mb": 281.79,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:25.068904+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

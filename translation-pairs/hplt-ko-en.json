@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-ko-en.json",
+  "patient_id": "hplt-ko-en",
+  "admitted": "2026-03-22T20:01:55.255847+00:00",
+  "source_repo": "HPLT/translate-ko-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ko-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ko-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:01:55.255847+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "seat seat{{{{ lectures lectures \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "seat seat{{{{ program program program \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "seat seat{{{{ program program program \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "seat seat{{{{ lectures lectures \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "seat seat{{{{ program program program \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "seat seat{{{{ program program program \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "\uc548\ub155\ud558\uc138\uc694, \uc624\ub298 \uc5b4\ub5bb\uac8c \uc9c0\ub0b4\uc138\uc694?",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysis \ud6c8\uc7a5 \ud6c8\uc7a5 Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c Sci Sci Sci message message message message\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 0.55 0.55 Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ube60\ub978 \ube60\ub978 \ube60\ub978",
+              "passed": false
+            },
+            {
+              "input": "\uc624\ub298 \uc544\uce68 \ub0a0\uc528\uac00 \uc544\ub984\ub2f5\uc2b5\ub2c8\ub2e4.",
+              "output": "seat seat{{{{ lectures lectures lectures \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysis \ud6c8\uc7a5 \ud6c8\uc7a5 Steal Steal Steal \ud610\uc758 \ud610\uc758 survey survey survey survey bidding bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey survey survey survey survey \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85",
+              "passed": false
+            },
+            {
+              "input": "\ucee4\ud53c \ud55c \uc794 \uc8fc\ubb38\ud558\uace0 \uc2f6\uc2b5\ub2c8\ub2e4.",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysis \ud6c8\uc7a5 \ud6c8\uc7a5 Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 0.55 0.55 Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ube60\ub978 \ube60\ub978 \ube60\ub978",
+              "passed": false
+            },
+            {
+              "input": "\ube60\ub978 \uac08\uc0c9 \uc5ec\uc6b0\uac00 \uac8c\uc73c\ub978 \uac1c\ub97c \ub6f0\uc5b4\ub118\uc2b5\ub2c8\ub2e4.",
+              "output": "seat seat{{{{ lectures lectures lectures \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysis \ud6c8\uc7a5 \ud6c8\uc7a5 Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ube60\ub978 \ube60\ub978 \ube60\ub978",
+              "passed": false
+            },
+            {
+              "input": "\uc778\uacf5 \uc9c0\ub2a5\uc774 \uc138\uc0c1\uc744 \ubcc0\ud654\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+              "output": "seat seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 Tide Tide Tide{{{{{{ survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Gravengngngngngng \uc870\ubc00\ub3c4 \uc870\ubc00\ub3c4 bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30 Sci Sci SciFrenchFrench\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding bidding Sci Sci Sci \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \ubc84\ub9ac\uc9c0 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 0.55 Academic Academic Academic \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ube60\ub978 \ube60\ub978 \ube60\ub978",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:06:06.333595+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:55:08.106765+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 survey survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences Capri Capri \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose lose influences influences influences influences influences influences influences influences influences influences influences influences influences influences third third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 Sci Sci bidding bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 Boardwalk Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85emberemberember 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 updating updating updating updating updating updating updating updating updating updating lathe lathe lathe lathe lathe lathe \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74 consultation consultation \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose losecoatedcoatedcoated \uce68\ub300\uc640 \uce68\ub300\uc640 influences influences influences influences influences influences influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences \uc774\uc9d1\ud2b8\uc5d0\uc11c",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 Sci Sci Sci bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85emberember 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 Brun Brun Brunmoneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation consultation influences influences influences lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c727727727727727727727727727 Capri Capri \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c psalm psalm described described consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose lose influences influences influences influences influences influences influences influences influences influences influences influences influences influences third third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 survey survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 Sci Sci Sci bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 Brun Brun Brunmoneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation consultation influences influences influences \ud0c0\ub77d \ud0c0\ub77d lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c psalm psalm described described consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose lose influences influences influences influences influences influences influences influences influences influences influences influences influences influences third third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral referral \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 Sci Sci bidding bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 Boardwalk Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 updating updating updating updating updating updating updating updating updating updating lathe lathe lathe lathe lathe lathe \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74 consultation consultation \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose losecoatedcoatedcoated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences influences influences influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 survey survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences Capri Capri \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825 psalm psalm described described consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose lose influences influences Dynamic Dynamic lose lose losecoatedcoatedcoated \uce68\ub300\uc640 \uce68\ub300\uc640 \uce68\ub300\uc640 influences influences influences influences influences influences influences influences influences third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral referral \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 Sci Sci bidding bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 Boardwalk Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85emberemberember 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 updating updating updating updating updating updating updating updating updating updating lathe lathe lathe lathe lathe lathe \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74 consultation consultation \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose losecoatedcoatedcoated \uce68\ub300\uc640 \uce68\ub300\uc640 influences influences influences influences influences influences influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences \uc774\uc9d1\ud2b8\uc5d0\uc11c",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 Sci Sci Sci bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85emberember 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 Brun Brun Brunmoneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation consultation influences influences influences lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c727727727727727727727727727 Capri Capri \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c psalm psalm described described consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose lose influences influences influences influences influences influences influences influences influences influences influences influences influences influences third third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 survey survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng survey survey survey survey bidding bidding \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \ub0b4\uac8c\uc11c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c\ud47c \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 Sci Sci Sci bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 Ali Ali Ali 0.55 0.55 0.55 Boardwalk Boardwalk Boardwalk \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 \ub2ec\uc744 Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 influences influences updating updating updating updating updating updating updating \uc774\uba70 \uc774\uba70 lathe lathe lathe \uba54\uac00 \uba54\uac00 Brun Brun Brunmoneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation consultation consultation consultation influences influences influences \ud0c0\ub77d \ud0c0\ub77d lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60 consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c psalm psalm described described consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose lose influences influences influences influences influences influences influences influences influences influences influences influences influences influences third third third \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral referral \uc0b6\uc73c\ub85c influences influencescoatedcoated",
+            "seat{{{{ offend offend \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 \ud50c\ub7ec\uadf8\uc778 180 180 180 180 \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd \uad6d\ub9bd survey survey survey survey survey\ubcf8\ubcf8\ubcf8\ubcf8\ubcf8analysisanalysis Grave Grave Grave Gravengngng \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c survey survey survey survey survey survey survey survey survey survey survey \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \ub2e4\uc6b4 \uacf5\ubd80\ud558\uae30 \uacf5\ubd80\ud558\uae30\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0\ub418\uae30\uae4c\uc9c0 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85crierierierie\ud47c\ud47c \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 \uc790\uc5f0\uc0b0 Sci Sci bidding bidding bidding bidding 0.55 Sci Sci Sci \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 \uc8e0 \uc8e0 \uc8e0 0.55 0.55 Boardwalk Boardwalk Boardwalk Boardwalk\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8\ud558\ub098\ub2d8 Boardwalk Boardwalk Boardwalk Boardwalk \uc784\uba85 \uc784\uba85 \uc784\uba85 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8 \ub9c8\uc6b4\ud2b8presspress 0.55 0.55 0.55 0.55 0.55 0.55 0.55 0.55 \ub299\uc5c8 \ub299\uc5c8 \ub299\uc5c8 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 myself myself myself myself \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 \ubcf5\uad6c\ud558\ub294 feeds feeds feeds feeds feeds \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \ud589\ub3d9\uc5d0 \uc774\uba70 \uc774\uba70 \uc774\uba70 \uc774\uba70 updating updating updating updating updating updating updating updating updating updating lathe lathe lathe lathe lathe lathe \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9 \uae09\uc0c1\uc2b9moneymoneymoney influences influences influences lathe lathe lathe\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation updating updating \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences consultation consultation lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe lathe \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85clidelidelide727727727727727 influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774 \ud615\uc81c\ub4e4\uc774\ud558\uc790\uba74 partly partly partly partly partly partly\ud558\uc790\uba74\ud558\uc790\uba74\uc544\ube60\uc544\ube60\uc544\ube60 consultation consultation consultation consultation consultation\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74\ud558\uc790\uba74 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc790\uba74\ud558\uc790\uba74 consultation consultation \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \ub450\ub824\uc6cc\ud558\uace0 \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c \uc0b0\ucc45\ub85c names names names \ub358\uc9c8 \ub358\uc9c8 \ub358\uc9c8 consultation consultation consultation consultation consultation consultation \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c consultation consultation consultation consultation consultation consultation consultation\uc138\ub825\uc138\ub825\uc138\ub825 consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation consultation dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Cool Cool\u1173\u1173\u1173\u1173\u1173\u1173 \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uce7c\ub7fc \uce7c\ub7fc \uce7c\ub7fc \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c\ud558\uc600\uc2b5\ub2c8\uae4c dominated dominated dominated dominated dominated dominated dominated dominated dominated \uc100\uc2dc \uc100\uc2dc \uc100\uc2dc dominated dominated dominated dominated dominated \uc720\uc804\uccb4 \uc720\uc804\uccb4 lose lose lose lose influences influences influences influences lose lose lose losecoatedcoatedcoated \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c influences influences influences influences influences influences influences influences influences influences \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c Dynamic Dynamic Dynamic Dynamic \uace0\ud608\uc555 \uace0\ud608\uc555 referral referral referral \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c \uc0b6\uc73c\ub85c"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:55:08.106765+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "689b36fcad4a8d98",
+        "lora_hash": "2ccd7fd7810e8acc",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:45:17.142479+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1297
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1297
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-ko-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-ko-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.605987+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-ko-en",
+      "model_key": "hplt-ko-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:45:17.142479+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "cd74c12c98e50fc4",
+    "lora_hash": "f4d9ab1e4c89370e",
+    "files_identical": false,
+    "base_size_mb": 295.61,
+    "lora_size_mb": 295.61,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:23.887902+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

@@ -1,0 +1,36 @@
+[2026-04-12T15:30:53.378215+00:00] ============================================================
+[2026-04-12T15:30:53.378359+00:00] MASTER PIPELINE — Autonomous execution
+[2026-04-12T15:30:53.378375+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-12T15:30:53.378385+00:00] Started: 2026-04-12T15:30:53.378384+00:00
+[2026-04-12T15:30:53.378392+00:00] ============================================================
+[2026-04-12T15:30:53.378399+00:00] 
+--- STEP 1: Wait for herm0 recreation ---
+[2026-04-12T15:31:53.466477+00:00] Herm0 recreation process finished
+[2026-04-12T15:31:53.466562+00:00] 
+--- STEP 2: Wait for ONNX INT8 fleet ---
+[2026-04-12T23:19:21.799810+00:00] ONNX INT8 fleet process finished
+[2026-04-12T23:19:21.802023+00:00] 
+--- STEP 3: Launch Grand Rounds v2 ---
+[2026-04-12T23:19:21.802106+00:00] Running: python3 /srv/repos/windy-pro/THE_CLINIC/scripts/grand_rounds_v2.py
+[2026-04-12T23:50:38.109537+00:00] GR v2 completed
+[2026-04-12T23:50:38.111955+00:00] 
+--- STEP 4: Merge GR v2 results ---
+[2026-04-12T23:50:38.111992+00:00] Merging GR v2 results into patient files...
+[2026-04-12T23:50:38.117768+00:00]   Merged GR v2 results into 1 patient files
+[2026-04-12T23:50:38.117813+00:00] 
+--- STEP 5: CT2 quantize herm0 models ---
+[2026-04-12T23:50:39.108734+00:00] CT2 INT8 quantizing recreated herm0 models...
+[2026-04-13T00:00:05.609808+00:00]   CT2 quantized 141 herm0 models
+[2026-04-13T00:00:05.609933+00:00] 
+--- STEP 6: Rebuild rosters ---
+[2026-04-13T00:00:05.609947+00:00] Rebuilding rosters...
+[2026-04-13T00:00:05.609972+00:00] Running: python3 /srv/repos/windy-pro/THE_CLINIC/scripts/build_roster.py
+[2026-04-13T00:00:06.215282+00:00]   Translation roster rebuilt
+[2026-04-13T00:00:06.215376+00:00] 
+--- STEP 7: Final report ---
+[2026-04-13T00:00:06.215389+00:00] Writing final doctor-log...
+[2026-04-13T00:00:06.219130+00:00] Final roster: 1826 patients, ? exams
+[2026-04-13T00:00:06.219175+00:00] 
+============================================================
+[2026-04-13T00:00:06.219185+00:00] MASTER PIPELINE COMPLETE
+[2026-04-13T00:00:06.219194+00:00] ============================================================

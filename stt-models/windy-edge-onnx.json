@@ -1,0 +1,30 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-12T03:25:16.435873+00:00",
+  "patient_id": "windy-edge-onnx",
+  "kind": "stt_voice_onnx",
+  "name": "Windy Edge (ONNX)",
+  "admitted": "2026-04-12",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "variant_cluster": {
+    "onnx_fp32": {
+      "status": "present",
+      "format": "onnx",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_onnx/windy-edge-onnx",
+      "on_disk_bytes": 4010737340,
+      "exported_at": "2026-04-12T03:25:16.435873+00:00",
+      "exported_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-ONNXEXPORT-windy-edge-onnx",
+      "date": "2026-04-12T03:25:16.435873+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ONNX export via optimum ORTModelForSpeechSeq2Seq",
+      "notes": "Exported to /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_onnx/windy-edge-onnx. Size: 3825 MB. Contains encoder + decoder + decoder_with_past ONNX graphs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {}
+}

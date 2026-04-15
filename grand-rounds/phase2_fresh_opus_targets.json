@@ -1,0 +1,1017 @@
+[
+  {
+    "pid": "af-de",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "af-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "af-eo",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "af-fi",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "af-fr",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "af-nl",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "af-ru",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "am-sv",
+    "has_lora": false,
+    "data_files": 2
+  },
+  {
+    "pid": "ar-eo",
+    "has_lora": false,
+    "data_files": 4
+  },
+  {
+    "pid": "ar-pl",
+    "has_lora": false,
+    "data_files": 2
+  },
+  {
+    "pid": "ar-ru",
+    "has_lora": false,
+    "data_files": 2
+  },
+  {
+    "pid": "ar-tr",
+    "has_lora": false,
+    "data_files": 2
+  },
+  {
+    "pid": "ase-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "az-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "be-es",
+    "has_lora": false,
+    "data_files": 4
+  },
+  {
+    "pid": "ber-es",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ber-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bg-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "bg-fi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bg-sv",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "bg-uk",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bi-es",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bi-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bi-sv",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "bnt-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ca-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ca-it",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ca-nl",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ca-pt",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ceb-en",
+    "has_lora": false,
+    "data_files": 4
+  },
+  {
+    "pid": "de-af",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "de-bi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "de-ca",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "de-eu",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "de-fj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "de-ms",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "de-pap",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "efi-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "el-fi",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "el-sv",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-af",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-az",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-ber",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-bi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-cy",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-efi",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-el",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-et",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-eu",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-fj",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-ga",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-gil",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-gl",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-ho",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-hy",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "en-jap",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-kg",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-kj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-mh",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-mos",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-mt",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-niu",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-om",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-pag",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-pap",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-rn",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-run",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-sg",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-sm",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-sq",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-ss",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-st",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-ti",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-ts",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-tvl",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-tw",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-ty",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-umb",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "en-xh",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "en-zh",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-af",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "es-ase",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-bi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-ca",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-efi",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-el",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-et",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-eu",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-fj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-gl",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "es-ht",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "es-no",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-tw",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "es-ve",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "et-de",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "et-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "et-es",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "et-fi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "et-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "eu-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "eu-es",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fi-af",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "fi-bg",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fi-el",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-fj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-ht",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-mfe",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-mg",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-mk",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fi-mt",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-no",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fi-sl",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "fi-sq",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "fr-af",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "fr-ase",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-bi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fr-efi",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-el",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fr-fj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-ht",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "fr-mfe",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-mos",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-no",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-pap",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-run",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-sl",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "fr-swc",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-tw",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "fr-xh",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "gil-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "gl-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ho-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ht-es",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "ja-ms",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ja-sh",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "kg-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "lv-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "lv-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "lv-sv",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "mfe-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "mg-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "mh-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "mk-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "mk-es",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "mk-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "mos-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "mt-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "niu-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "nl-af",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "nl-ca",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "no-de",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-fi",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-nl",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-pl",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-ru",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-sv",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "no-uk",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "om-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "pag-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "pap-de",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "pap-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "pap-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "pl-no",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "pt-gl",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "rn-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "rn-ru",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ru-af",
+    "has_lora": true,
+    "data_files": 4
+  },
+  {
+    "pid": "run-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "run-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sg-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sh-uk",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "sl-fr",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sl-ru",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sl-sv",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sl-uk",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sm-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sq-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ss-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sv-af",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "sv-bi",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sv-fj",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sv-lv",
+    "has_lora": true,
+    "data_files": 3
+  },
+  {
+    "pid": "sv-mfe",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sv-mt",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "sv-tw",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "sv-xh",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "swc-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "ti-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ts-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "tvl-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "tw-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "tw-fr",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "tw-sv",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "uk-no",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "umb-en",
+    "has_lora": true,
+    "data_files": 2
+  },
+  {
+    "pid": "ve-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "war-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "xh-es",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "zh-en",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "zh-he",
+    "has_lora": true,
+    "data_files": 1
+  },
+  {
+    "pid": "zh-nl",
+    "has_lora": true,
+    "data_files": 1
+  }
+]

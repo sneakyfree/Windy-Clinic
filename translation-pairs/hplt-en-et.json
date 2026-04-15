@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-et.json",
+  "patient_id": "hplt-en-et",
+  "admitted": "2026-03-22T19:56:43.972802+00:00",
+  "source_repo": "HPLT/translate-en-et-v1.0-hplt",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "et",
+    "name": "et",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-et/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-et/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:56:43.972802+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior parquet parquet sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior parquet parquet sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior parquet parquet sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior parquet parquet sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku usku k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalsetRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku usku k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring Uuring parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalsetRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": ":55:55 Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry Czech Czech Czech tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra \u00e4rgita \u00e4rgita UF UF UF UF UF Czech Czech Czech Czech Czech Uuring Uuring parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRV Exterior Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisherRVRVRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku uskubelievebelieve638638638638ryryry638638638638638 k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryry tra tra \u00e4rgita \u00e4rgita UF UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRV Exterior Exterior Exterior Exterior Exterior sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalsetRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": false
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": ":55:55 Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugu kaldu kaldu638638638 usku usku usku k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF Czech Czech Czech Czech Czech Czech 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol Winstrol Winstrol WinstrolRVRVRV Exterior Exterior Exterior Exterior parquet parquet sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalset sotsiaalsetRVRVRVRVRVRV resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid opioid",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:45:10.251359+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:45:06.947223+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse liikmesuse liikmesuse tra tra tra tra tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes cigarettes UF UF UF viis viis viis Katuse Katuse UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation Sellest Sellest \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn kontrollimist kontrollimist Asjaomaste Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparednessSoSo mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticaria urticariaKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine kaitstakse kaitstakse usku uskubelievebelieve638638 tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse UF UF UF viis viis viis Katuse Katuse UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother UF UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation invitation \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings invitation invitation invitation invitation invitationacyacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness5-05-05-05-0 Buddha Buddha Buddha s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover HannovertetratetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst 24% 24%",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse usku uskubelievebelieve638638638 tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638 89/391/ 89/391/ 89/391/ryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes t\u00f5endavate t\u00f5endavate UF UF UF viis viis viis viis UF UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation securities securities \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse usku usku tra tra tra tra tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse Katuse UF UF viis viis viis viis UF UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation securities securities \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine kaitstakse kaitstakse usku uskubelievebelieve638638 tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse UF UF UF viis viis viis Katuse Katuse UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother UF UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation invitation \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings invitation invitation invitation invitation invitationacyacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust extraordinary extraordinary extraordinary cybersecurity cybersecurity cybersecurity invitation invitation invitationfolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover HannovertetratetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse liikmesuse liikmesuse tra tra tra tra tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes cigarettes UF UF UF viis viis viis viis UF UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation Sellest Sellest \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn kontrollimist kontrollimist Asjaomaste Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparednessSoSo mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticaria urticariaKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine kaitstakse kaitstakse usku uskubelievebelieve638638 tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse UF UF UF viis viis viis Katuse Katuse UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother UF UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation invitation \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings invitation invitation invitation invitation invitationacyacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness5-05-05-05-0 Buddha Buddha Buddha s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover HannovertetratetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst 24% 24%",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse usku uskubelievebelieve638638638 tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638 89/391/ 89/391/ 89/391/ryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes t\u00f5endavate t\u00f5endavate UF UF UF viis viis viis viis UF UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation securities securities \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine liikmesuse liikmesuse usku usku tra tra tra tra tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638638ryryryryryry tra tra tra \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse Katuse UF UF viis viis viis viis UF UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother Mother UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation securities securities \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmiseKuidasKuidasacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisusts\u00f5s\u00f5 cybersecurity cybersecurity cybersecurity cybersecurity invitation invitationfolifolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover HannovertetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst",
+            "Note Note Note t\u00f5usuteel t\u00f5usuteel t\u00f5usuteelgugugu olanzapine olanzapine olanzapine kaitstakse kaitstakse usku uskubelievebelieve638638 tra tra tra tra tra tra tra tra tra tra k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise k\u00fctmise638638638638638638638638638ryryryryryryilisedilisedilised \u00e4rgita \u00e4rgita UF UF UF UF Czech Czech Czech Czech Czech 89/391/ 89/391/ 89/391/ parquet parquet parquet Czech Czech Czech Czech compilation compilation compilation compilation Winstrol Winstrol hinnangud hinnangud hinnangudRVRV Exterior Exterior Exterior rotate rotate sotsiaalset sotsiaalset sotsiaalset sotsiaalset publisher publisher publisherRVRVRVRVRVRV resting resting resting omavad omavad omavad supposedly supposedly supposedlyKuidasKuidasKuidasKuidas multi multi multi Congo Congo Congo opioid opioid struggle struggle struggle s\u00fcsivesiku s\u00fcsivesiku Korda Korda Korda Korda Korda Korda vaatleja vaatleja vaatleja vaatleja cigarettes cigarettes cigarettes Katuse UF UF UF viis viis viis Katuse Katuse UF UF UF kujundamise kujundamise kujundamise kujundamise sharing sharing Katuse Katuse Katuse 1896 1896 1896 assembled assembled Katuse Mother Mother UF UF UF UF Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional Constitutional ConstitutionalKuidasKuidasKuidasKuidasloklokloklok invitation invitation invitation invitation invitation invitation \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise sn sn sn urticaria urticaria urticaria Asjaomaste Asjaomaste Asjaomaste Asjaomaste consuming consuming consuming=\"=\"=\"=\"=\" Congo Congo Congo Congo Instructions Instructions Instructions pakutav pakutav Conformity Conformity Conformity Conformityandmeteandmeteandmete \u00f5itsemise \u00f5itsemise ratings ratings invitation invitation invitation invitation invitationacyacyacyacy consuming consuming consuming consuming consuming consuming consuming moonutamise moonutamise moonutamise moonutamise moonutamise moonutamise consuming consuming consuming maaelu maaelu maaelu maaelu s\u00fcsivesiku s\u00fcsivesiku Lahingu Lahingu Lahingu viis viis viisKuidasKuidasKuidasKuidasKuidasKuidasKuidasVMSVMSVMSKuidasKuidasKuidasfolifolifolifoli p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma p\u00f5hjalikuma preparedness preparedness preparedness preparedness preparedness preparedness preparedness mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust mitmekesisust extraordinary extraordinary extraordinary cybersecurity cybersecurity cybersecurity invitation invitation invitationfolifolifoli l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku l\u00f5plikku UF UF UF UF consuming consuming consuming s\u00fcsivesiku UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF UF \u00f5itsemise \u00f5itsemise \u00f5itsemise \u00f5itsemise t\u00f5endavate t\u00f5endavate t\u00f5endavate t\u00f5endavate \u00f5itsemise \u00f5itsemise \u00f5itsemise photo photo photo evangelist evangelist evangelist evangelist evangelist evangelist evangelist venekeelse venekeelse postituse postituse r\u00f5\u00f5mu r\u00f5\u00f5mu Maksu Maksu Maksu Maksu Maksu Maksu Maksu elected elected elected elected elected elected elected Maksu Maksu Maksu Maksu Maksu Maksu MaksuKuidasKuidasKuidasKuidas omandamine omandamine omandamine omandamine omandamine omandamine omandamine evangelist evangelist evangelistKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas Hannover Hannover Hannover Hannover HannovertetratetratetratetratetraKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidasKuidas vintage vintage vintage urticaria urticaria urticaria urticariaKuidasKuidasKuidas Hannover Hannover Hannover Hannover Hannover Hannover Hannovertetratetra paavst paavst paavst paavst"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:45:06.947223+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "41d73c071fe3ab2f",
+        "lora_hash": "d8d4f34cee8b33d4",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:40:08.871965+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1883
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1879
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": false,
+        "char_similarity": 94.6
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-et",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.573903+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-et",
+      "model_key": "hplt-en-et",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:40:08.871965+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "0131266f2f26639b",
+    "lora_hash": "ebf76bd80323448b",
+    "files_identical": false,
+    "base_size_mb": 283.6,
+    "lora_size_mb": 283.6,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:11:52.220503+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

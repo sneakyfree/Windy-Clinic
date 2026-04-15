@@ -1,0 +1,527 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-fi.json",
+  "patient_id": "hplt-en-fi",
+  "admitted": "2026-03-22T19:56:57.665628+00:00",
+  "source_repo": "HPLT/translate-en-fi-v1.0-hplt",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "fi",
+    "name": "fi",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-fi/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-fi/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:56:57.665628+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "videos videos videosInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "videos videos videosInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaanpsypsypsypsypsypsypsypsy kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "videos videos videosInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "videos videos videosInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaanpsypsypsypsypsypsypsypsy kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Takki Takki TakkiInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 4,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "videos videos videosInvestInvestInvestInvest Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogue $1 $1logueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monetaguaaguaaguaagua lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "videos videos videosInvestInvestInvestInvest Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogue $1 $1logueloguelogueloguelogue Davao Davao Davao Davao additional additional additionallogueloguelogueloguelogueSMESME Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaan istumaan istumaan kuuluvissa kuuluvissa kuuluvissa Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESMESME Hyl Hyl Bio Bio Bio monille monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "videos videos videosInvestInvestInvestInvest Takki Takki MAGIX MAGIX Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogue $1 $1 $1 intuitive intuitive intuitive intuitive intuitive Davao Davao Davao Twenty Twenty Twenty Twenty Twentyloguelogueloguelogue Samson Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaan istumaanpsypsypsypsypsypsypsypsy joitakin kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty Twenty monille monille monille kuvaus kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "videos videos videosInvestInvestInvestInvest Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogue $1 $1 $1 intuitive intuitive intuitive intuitive intuitive Davao Davao Davao Twenty Twenty Twenty Twenty TwentylogueloguelogueSMESME Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaan istumaanpsypsypsypsypsypsypsypsy kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Bio Bio Bio netti netti netti monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "videos videos videosInvestInvestInvest Takki Takki Takki Takki totally totally totally controversy controversylogueloguelogue $1 $1logueloguelogueloguelogue Davao Davao Davao Davao Twenty Twenty Twenty Twenty TwentylogueloguelogueSMESME Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaan istumaanpsypsypsypsypsypsypsypsy joitakin joitakin kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur 6.1 6.1 6.1 markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:46:17.155000+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:45:39.794927+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESMESME Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa lahjan lahjan lahjan lahjanSMESMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games julkinen julkinen julkinen julkinen mitk\u00e4 mitk\u00e4 mitk\u00e4 larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNationalNationalj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighterovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossut lautta lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise huomise/16/16/16/16 Tutorial talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaanpsypsypsypsypsypsy Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistapsypsypsypsypsypsypsypsy julkinen julkinen muutoksilla muutoksillapsypsy larger largerkohteistakohteistakohteista lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNational swallowed swallowed swallowedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus kasvatus kasvatus kasvatusPAPAPAPAovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisesti lautta lautta lautta lautta lauttatossuttossuttossuttossuttossuttossut kumarta kumarta kumarta kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin pseudonym pseudonym pseudonym swallowed swallowed/16/16 larger larger talent talent talent Administrator Administrator Hyl Hyl Hyl lighter lighter voimakkuus voimakkuus tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games/16 julkinen julkinen julkinen Termspsypsy larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNational denied deniedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighter lighterovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossuttossut lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise swallowed swallowed/16/16 tutkittu tutkittu talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved sulf sulf die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa kurpitsa lahjan lahjan lahjanSMESMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games julkinen julkinen julkinen julkinen mitk\u00e4 mitk\u00e4 larger larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNationalNationalj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighterovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossut lautta lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise huomise/16/16/16 larger larger talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsypsypsypsy Monet Monet Monet Monet kolme kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistapsypsypsypsypsypsypsypsypsy julkinen julkinen muutoksilla muutoksillapsypsy larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNational swallowed swallowedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus kasvatus kasvatusPAPAPAPAovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossuttossut lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise swallowed swallowed/16/16 larger larger talent talent talent Administrator Administrator Hyl Hyl Hyl lighter lighter voimakkuus voimakkuus tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntaloguelogueloguelogueloguelogueloguelogueloguelogue Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESMESME Samson Samson Samson SamsonSMESMESMESME istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa lahjan lahjan lahjan lahjanSMESMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kuvaus0/20070/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games julkinen julkinen julkinen julkinen mitk\u00e4 mitk\u00e4 mitk\u00e4 larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNationalNationalj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighterovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossut lautta lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise huomise/16/16/16/16 Tutorial talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaanpsypsypsypsypsypsy Monet Monet Monet Monet kolme kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/20070/20070/2007 markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistapsypsypsypsypsypsypsypsy julkinen julkinen muutoksilla muutoksillapsypsy larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNational swallowed swallowedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus kasvatus kasvatusPAPAPAPAovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisesti lautta lautta lautta lautta lauttatossuttossuttossuttossuttossuttossut kumarta kumarta kumarta kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise swallowed swallowed/16/16 larger larger talent talent talent Administrator Administrator Hyl Hyl Hyl lighter lighter voimakkuus voimakkuus tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa kurpitsa lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games/16 julkinen julkinen julkinen Termspsypsy larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNational denied deniedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighter lighterovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossuttossut lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise swallowed swallowed/16/16 tutkittu tutkittu talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved sulf sulf die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsy kuuluvissa kuuluvissa kuuluvissa Monet Monet MonetSMESME kurpitsa kurpitsa kurpitsa lahjan lahjan lahjanSMESMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistakohteistakohteista equip equip equip games games games julkinen julkinen julkinen julkinen mitk\u00e4 mitk\u00e4 larger larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNationalNationalNationalj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus tilaus lighter lighterovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossut lautta lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise huomise/16/16/16 larger larger talent talent talent Administrator Administrator Hyl Hyl Hyl tuloksena voimakkuus voimakkuus tutkittu tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta vaikuttavuutta Sarajevo Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved proved die die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannesJohannes vesileima vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific",
+            "videos videosInvestInvestInvestInvest Takki Takki Takki Takki Paikkakunta Paikkakunta Paikkakunta Paikkakuntalogueloguelogueloguelogueloguelogue intuitive intuitive intuitive Davao Davao Davao Davao Davao Twenty Twenty TwentyloguelogueloguelogueSMESME Samson Samson Samson Samson Samson reproductive reproductive reproductive reproductive istumaan istumaan istumaan istumaanpsypsypsypsypsy Monet Monet Monet Monet kolme kurpitsa kurpitsa lahjan lahjan lahjan lahjan lahjanSMESME neuvotteluissa neuvotteluissa neuvotteluissa neuvotteluissa Twenty Twenty Twenty monille monille monille monille kuvaus kuvaus kielest\u00e4 kielest\u00e40/20070/20070/20070/20070/20070/20070/2007patentpatentpatentpatentpatentpatentpatentpatentpatentkohteistakohteistakohteista Mercosur Mercosur Mercosur Mercosur Mercosur markkinajohtaja markkinajohtaja markkinajohtaja markkinajohtaja0/20070/20070/20070/20070/20070/2007 Alue Alue markkinajohtaja markkinajohtaja markkinajohtaja Those Those Those lahjan lahjan lahjan lahjan lahjan neurologi neurologi\u00c4l\u00e4 lahjan lahjan lahjan lahjan lahjan lahjan lahjan larger larger largerpatentpatent lighter lighter lighter Field Field Field lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterkohteistakohteistapsypsypsypsypsypsypsypsypsy julkinen julkinen muutoksilla muutoksillapsypsy larger largerkohteistakohteista lighter lighter tilaus tilaus tilaustossuttossuttossuttossuttossutNationalNationalNationalNationalhoshoshoshoshosNationalNational swallowed swallowedj\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4j\u00e4rjestyksess\u00e4ovelovelovelovelovelovelovelovel tilaus tilaus tilaus tilaus tilaus tilaus kasvatus kasvatusPAPAPAPAovelovelovelovel lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter8,18,18,18,1 lighter lighter lighter lighter lighter lighter lighter lighter lighter lighterTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestiTotisestitossuttossuttossuttossut lautta lautta lauttatossuttossuttossuttossuttossuttossuttossut Tarkemmin Tarkemmin Tarkemmin kuuluvissa kuuluvissa kuuluvissa farmaseutti farmaseutti farmaseutti farmaseutti swallowed swallowed Smile Smile Smile Smile Smile Smile Smile Smile Tarkemmin Tarkemmin Tarkemmin Tarkemmin Tarkemmin huomise huomise huomise swallowed swallowed/16/16/16 Tutorial talent talent talent Administrator Administrator Hyl Hyl Hyl lighter lighter voimakkuus voimakkuus tutkittu tutkittu matkatavara matkatavara lighter lighter lighter lighter lighter lighter [7 [7 vaikuttavuutta vaikuttavuutta469469 Sarajevo Sarajevo Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental Environmental vahvempi vahvempi vahvempi vahvempi sacred sacred sacred Environmental Environmental Environmental pelaamisesta pelaamisesta pelaamisesta lighter lighter lighter lighter lighter lighter lighter lighter lighter lighter 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 6.1 \u00e4iti \u00e4iti \u00e4iti \u00e4iti \u00e4iti 6.1 6.1 6.1 6.1 proved proved sulf sulf die die vesileima vesileima vesileimaJohannesJohannesJohannesJohannesJohannes 6.1 6.1 vesileima vesileima vesileima vesileima vesileima vesileima pelaamisesta pelaamisesta pelaamisesta Environmental Environmental Environmental tutkittu tutkittu tutkittu Buena Buena Buenaspecificspecificspecific tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu tutkittu sero sero sero sero rakentaneet rakentaneet rakentaneet rakentaneet rakentaneetJohannesJohannesJohannesJohannesJohannesJohannes \u00e4iti \u00e4iti \u00e4itispecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecificspecific"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:45:39.794927+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "a123dc47d5fc8778",
+        "lora_hash": "cf47f3c7e3657e59",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:40:26.424960+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1777
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1777
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-f"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-fi",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.575328+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-fi",
+      "model_key": "hplt-en-fi",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 4,
+          "max_score": 10,
+          "stars": 2.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 4,
+          "max_score": 10,
+          "stars": 2.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:40:26.424960+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "0e98110b1b152f95",
+    "lora_hash": "752ee0aab082485e",
+    "files_identical": false,
+    "base_size_mb": 295.61,
+    "lora_size_mb": 295.61,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:11:54.738018+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

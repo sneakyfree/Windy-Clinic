@@ -1,0 +1,527 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-xh.json",
+  "patient_id": "hplt-en-xh",
+  "admitted": "2026-03-22T20:00:19.855318+00:00",
+  "source_repo": "HPLT/translate-en-xh-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "xh",
+    "name": "xh",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-xh/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-xh/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:00:19.855318+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching reaching amagama amagama amagama amagama amagama amagamathembilethembilethembilemaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembile Guess Guess Guess iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling funky funky funky4:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas ideasementementementementkelkelkel SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagamathembilethembilethembilethembilemiamiamiamiamiamiamiamiamia analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts kwandi kwandi illegitimate illegitimate illegitimate illegitimate Notable Notable NotableBeforeBeforeMYMYMYMY ulungiselele ulungiselele ulungiselele ulungiseleleMotherMotherMotherMotherMotherMotherMother lungelo lungelo lungelomiamiamiamia",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky4:304:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkelkel ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembilemiamiamiamiamiamiamiamiamia located locatedSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkqubomakrofonimakrofoniMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamia",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:30 Funds Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembilemaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching reaching amagama amagama amagama amagama amagama amagamathembilethembilethembilemaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembile Guess Guess Guess iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling funky funky funky4:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas ideasementementementementkelkelkel SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagamathembilethembilethembilethembilemiamiamiamiamiamiamiamiamia analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts analysts kwandi kwandi illegitimate illegitimate illegitimate illegitimate Notable Notable NotableBeforeBeforeMYMYMYMY ulungiselele ulungiselele ulungiselele ulungiseleleMotherMotherMotherMotherMotherMotherMother lungelo lungelo lungelomiamiamiamia",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky4:304:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkelkel ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembilemiamiamiamiamiamiamiamiamia located locatedSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkqubomakrofonimakrofoniMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamia",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:30 Funds Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembilemaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 2,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching reaching amagama amagama amagama amagama amagama amagamathembilethembilethembile Guess Guess Guess iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:30 Funds Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelkelcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching reaching amagama amagama amagama amagama amagama amagamathembilethembilethembilemaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling funky funky funky4:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas ideasementementementementkelkelkellokubalokuba ukugqibezela ukugqibezela ukugqibezelaNkosiNkosiNkosiNkosiNkosiNkosi khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagamathembilethembilethembilethembilemiamiamiamiamiamiamiamiamia analysts analysts analysts analysts kuqhubeka kuqhubeka wangempela wangempela wangempela wangempela wangempela kwandi kwandi kwandi illegitimate illegitimate illegitimate illegitimate Notable Notable NotableBeforeBeforeMYMYMYMY ulungiselele ulungiselele ulungiselele ulungiseleleMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamia",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:304:30 Funds Funds Fundsglowglowglowglow Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkel SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela ukugqibezelaNkosiNkosiNkosiNkosiNkosi khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagama amagama amagama amagamathembilethembilethembilemiamiamiamiamiamiamiamiamia located locatedSourceSourceSourceSource wangempela wangempela wangempela wangempela wangempela kwandi kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkqubomakrofonimakrofoniMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "illegitimate illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling4:304:304:30 Funds Funds Funds Fundschromatchromatglowglow Krestu Krestu Krestu Male Male ideas ideas ideas correlate correlateementementementkelkelkelkel analysts analysts analysts analysts analysts analysts analysts analystsphathelaphathela khange khange khange reaching reaching reaching reaching reaching reaching amagama amagama amagama amagama amagama amagamathembilethembilethembile Guess Guess Guess iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSourceSource wangempela wangempela wangempela wangempela kwandi kwandi illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore wangempela wangempelaMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamia",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:59:08.676953+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:51:52.129361+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling Male Male4:304:30 Funds Funds Funds Funds Male Maleglowglow Krestu Krestu Krestu Krestu Male Male ideas ideas correlate correlateementementement Gathering Gathering Gathering Gathering Gathering Gathering ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange khange reaching reaching reaching reaching analysts analysts amagama amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkquboMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMother nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenyeNkosiNkosiChristiansChristiansChristiansououououlistinglistinglisting constantly constantly constantly constantly lokubonisa lokubonisa savior savior khange khange Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuilt collections collections collectionsernalernalernalOffOff foundational foundational foundational invoices invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis Mis MisNkosiNkosiNkosimaniacmaniacmaniacmaniac Ndi Ndi Ndi Ndi Ndi Ndi Ndilike Obesity Obesity Obesity nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination termination termination arrogance arroganceqhathaqhathaqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo Iintlanganiso Iintlanganiso\"...\"...solesolesole zeplastiki zeplastiki zeplastiki puzzles puzzles puzzles Assumption Assumption Assumptionmakrofonimakrofonihlanjwahlanjwahlanjwa Mis Mis invoices invoices invoices Taxes Taxes robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure iiyure iiyurelicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot Mapping MappingSourceSourceSourceSourceSource fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgot rival rival rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled smelled marriages marriages marriages marriages sculpture sculptureNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabatha sociological sociological sociological sociologicalhakahaka76767676 persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow Cow persuaded persuaded persuadedemptemptemptempt ikuvumela ikuvumela ikuvumelamacandelomacandelomacandelomacandelo komatshini komatshini komatshini Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni nokuze nokuze nokuze nokuze nokuze bachitha bachithantuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelophathelaphathela",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglowglow profiling funky funky4:304:304:30 Funds Funds Funds Fundsglowglowglow Krestu Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas ideasementementementementkelkelkel SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts Goodman Goodman khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagamathembilethembilethembilethembilethembilethembilemiamiamiamia okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo analysts analysts analysts kuqhubeka kuqhubeka kuqhubeka wangempela wangempela analysts analysts analysts kwandi kwandi illegitimate illegitimatengaphelelangangaphelelangangaphelelangaBeforeBeforeBeforeBeforeMYMYMYMY TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMother commission commission commission commissionmiamiamiamiamiamiamiamia khange khangeValidValidNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiuiltuiltuilt constantly constantly constantlymiamiamiamiamiaNkosiNkosi Ngaphambili Ngaphambili Ngaphambili sacrifice sacrifice Fractured Fractured Chill Chill woo woo collections collections collections collections plotting plotting plotting ideas ideas ideas foundational foundational collections collections Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Tender TenderNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosi Obesity Obesity Obesity Obesity Obesity Obesity ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arroganceqhathaqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqoNkosiNkosiNkosi Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso ngesixhobo ngesixhobomethylmethylmethylbabonakalisababonakalisababonakalisababonakalisa puzzles puzzles Assumption Assumptionsusiwesusiwesusiwehlanjwahlanjwahlanjwahlanjwa traces traces traces traces traces Names Names Names traces traces traces marriages marriages marriages marriageslinganiselwalinganiselwalinganiselwalinganiselwa Homeland Homeland Homelandlicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded Notable Notable Notable Notable NotableExerciseExerciseExerciseExercisesiphenesiphenesiphene Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgotgot ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable marriages marriages marriages marriages marriages sculpture sculptureNicoNicoNico nokuze nokuze nokuzeSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociological sociologicalhaka767676 analysts analysts persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded floor flooremptemptempt nokuze nokuze nokuzemacandelomacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni EsikolweniRecruitRecruit nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky funky4:304:304:30 Funds Funds Funds Fundsglowglowglowglow Krestu Krestunesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkel SP SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching analysts analysts analysts amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSource wangempela wangempela analysts analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkqubo TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamiamia Racist Racist Racist Racist Racist RacistNkosiNkosiChristiansChristiansChristiansououououuiltuiltuilt constantly constantly constantly constantly lokubonisa lokubonisa lokubonisaNumberNumberNumber Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuiltuiltuiltuilternalernal plotting plotting plotting foundational foundational foundational foundational invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis MisNkosiNkosiNkosiNkosiNkosimaniacmaniacmaniac Ndi Ndi NdiNkosiNkosiNkosi String String Obesity Obesity Obesity emotion emotion ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arrogance arrogance arrogance arrogance ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo zanamhlanje zanamhlanje Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso\"...\"...methylmethylmethylmethylbabonakalisababonakalisa puzzles puzzles puzzles Assumption Assumptionsusiwesusiwehlanjwahlanjwahlanjwahlanjwa Mis Mis Mis invoices invoices Taxes Taxes robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure undeniable undeniablelicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot Mapping Mapping Mapping performances performancesplangaplanga fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgot rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled smelled marriages marriages marriages marriages sculpture sculptureNicoNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociologicalhakahaka7676767676 persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow iiyure iiyure floor flooremptemptempt nokuze nokuze arrogance arrogancemacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze busy busy iiyure iiyure iiyure",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling profiling4:304:304:30 Funds Funds Funds Male Maleglowglowglow Krestu Krestunesiphumonesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathela khange khange khange khange reaching reaching reaching reaching reaching amagama amagama amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela analysts analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeMYMYMYMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamiamiamiamia Racist Racist Racist Racist Racist Racist Racist RacistChristiansChristiansChristiansououououuiltuiltuilt constantly constantly constantly constantly lokubonisa lokubonisa savior savior khange khange Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuiltuiltuiltuilternalernalernalOffOff foundational foundational foundational foundational invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis Mis MisNkosiNkosiNkosimaniacmaniacmaniacmaniac Ndi Ndi Ndi Ndi Ndi Ndi String String Obesity Obesity Obesity emotion emotion ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination termination arrogance arrogance arrogance arrogance arrogance arrogance ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices osi osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo Iintlanganiso Iintlanganiso\"...\"...\"...\"...\"...\"...\"...babonakalisababonakalisa puzzles puzzles puzzles puzzles puzzles puzzles puzzles puzzleshlanjwahlanjwahlanjwa Mis Mis invoices invoices invoices invoices robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure iiyure iiyurelicitylicitylicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo invoices invoices persuaded persuaded persuaded robot robot Mapping Mapping MappingSourceSourceSource fruit fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgot rival rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled smelled marriages marriages marriages marriages sculpture sculptureNicoNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabatha sociological sociological sociological sociologicalhakahaka7676767676 persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow iiyure iiyure floor flooremptemptempt ikuvumela ikuvumela arrogancemacandelomacandelomacandelomacandelo marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolwenintuthuzelontuthuzelo nokuze nokuze nokuze nokuze nokuze persuaded persuadedntuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelophathelaphathela",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky funky4:304:30 Funds Funds Funds Funds Fundsglowglowglow Krestu Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas correlateementementementkelkelkel SP SP ukugqibezela ukugqibezela ukugqibezela ukugqibezelaNkosiNkosiNkosiNkosiNkosi khange khange khange khangeNkosiNkosiNkosiNkosi analysts analysts amagama amagama amagamathembilethembilethembilethembilethembilethembilemiamiamiamia okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo analysts analysts kuqhubeka kuqhubeka kuqhubeka wangempela wangempela analysts analysts analysts kwandi kwandi illegitimate illegitimatengaphelelangangaphelelangangaphelelangaBeforeBeforeBeforeBeforeMYMYMYMY TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMother commission commission commission commissionmiamiamiamiamiamiamiamia khange khangeValidValidValidNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiuiltuiltuilt constantly constantly constantlymiamiamiamiaNkosiNkosiNkosi Ngaphambili Ngaphambili Ngaphambili sacrifice sacrifice Fractured Fractured Chill Chill woo woo woo collections collections collections plotting plotting plotting ideas ideas ideas foundational foundational collections collections Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis MisNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosi String String Obesity Obesity Obesity Obesity ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arrogance arroganceqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi Bibliography Bibliography Bibliography iiyure iiyure iiyure respondent respondent nomgaqo nomgaqo nomgaqo nomgaqoNkosiNkosiNkosi Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso ngesixhobo ngesixhobomethylmethylmethylbabonakalisababonakalisababonakalisababonakalisa puzzles puzzles Assumption Assumptionsusiwesusiwehlanjwahlanjwahlanjwahlanjwahlanjwa traces traces traces traces Taxes Taxes robot robot traces traces traces marriages marriages marriages marriages marriageslinganiselwalinganiselwalinganiselwa Homeland Homeland Homelandlicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot robot Mapping MappingExerciseExerciseExercisesiphenesiphenesiphene Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgotgot ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable marriages marriages marriages marriages marriages sculpture sculptureNicoNicoNico nokuze nokuze nokuzeSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociologicalhakahaka767676 analysts analysts persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded luyilo luyilo Cow iiyure iiyure iiyure floor flooremptemptempt nokuze nokuze nokuzemacandelomacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni EsikolweniRecruitRecruit nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "illegitimate illegitimate illegitimate ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling Male Male4:304:30 Funds Funds Funds Funds Male Maleglowglow Krestu Krestu Krestu Krestu Male Male ideas ideas correlate correlateementementement Gathering Gathering Gathering Gathering Gathering Gathering ukugqibezela ukugqibezela analysts analysts analysts analystsphathelaphathela khange khange khange khange reaching reaching reaching reaching analysts analysts amagama amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela wangempela analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkquboMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMother nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye nenxalenyeNkosiNkosiChristiansChristiansChristiansououououlistinglistinglisting constantly constantly constantly constantly lokubonisa lokubonisa savior savior khange khange Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuilt collections collections collectionsernalernalernalOffOff foundational foundational foundational invoices invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis Mis MisNkosiNkosiNkosimaniacmaniacmaniacmaniac Ndi Ndi Ndi Ndi Ndi Ndi Ndilike Obesity Obesity Obesity nenxalenye nenxalenye nenxalenye nenxalenye nenxalenye ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination termination termination arrogance arroganceqhathaqhathaqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo Iintlanganiso Iintlanganiso\"...\"...solesolesole zeplastiki zeplastiki zeplastiki puzzles puzzles puzzles Assumption Assumption Assumptionmakrofonimakrofonihlanjwahlanjwahlanjwa Mis Mis invoices invoices invoices Taxes Taxes robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure iiyure iiyurelicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot Mapping MappingSourceSourceSourceSourceSource fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgot rival rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled Scratch Scratch marriages marriages marriages sculpture sculptureNicoNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabatha sociological sociological sociological sociologicalhakahaka76767676 persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow Cow persuaded persuaded persuadedemptemptempt ikuvumela ikuvumela ikuvumelamacandelomacandelomacandelomacandelo komatshini komatshini komatshini Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni nokuze nokuze nokuze nokuze nokuze bachitha bachithantuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelophathelaphathela",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglowglow profiling funky funky4:304:304:30 Funds Funds Funds Fundsglowglowglow Krestu Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas ideasementementementementkelkelkel SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts Goodman Goodman khange khange khange khange reaching reaching reaching reaching reaching analysts analysts amagama amagamathembilethembilethembilethembilethembilethembilemiamiamiamia okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo analysts analysts analysts kuqhubeka kuqhubeka kuqhubeka wangempela wangempela analysts analysts analysts kwandi kwandi illegitimate illegitimatengaphelelangangaphelelangangaphelelangaBeforeBeforeBeforeBeforeMYMYMYMY TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMother commission commission commission commissionmiamiamiamiamiamiamiamia khange khangeValidValidNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiuiltuiltuilt constantly constantly constantlymiamiamiamiamiaNkosiNkosi Ngaphambili Ngaphambili Ngaphambili sacrifice sacrifice Fractured Fractured Chill Chill woo woo collections collections collections collections plotting plotting plotting ideas ideas ideas foundational foundational collections collections Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Tender TenderNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosi Obesity Obesity Obesity Obesity Obesity Obesity ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arroganceqhathaqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqoNkosiNkosiNkosi Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso ngesixhobo ngesixhobomethylmethylmethylbabonakalisababonakalisababonakalisababonakalisa puzzles puzzles Assumption Assumptionsusiwesusiwesusiwehlanjwahlanjwahlanjwahlanjwa traces traces traces traces traces Names Names Names traces traces traces marriages marriages marriages marriageslinganiselwalinganiselwalinganiselwalinganiselwa Homeland Homeland Homelandlicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded Notable Notable Notable Notable NotableExerciseExerciseExerciseExercisesiphenesiphenesiphene Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgotgot ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable marriages marriages marriages marriages marriages sculpture sculptureNicoNicoNico nokuze nokuze nokuzeSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociological sociologicalhaka767676 analysts analysts persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded floor flooremptemptempt nokuze nokuze nokuzemacandelomacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni EsikolweniRecruitRecruit nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky funky4:304:304:30 Funds Funds Funds Fundsglowglowglowglow Krestu Krestunesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkel SP SP ukugqibezela ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analysts analysts khange khange khange khange reaching reaching reaching reaching analysts analysts analysts amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac iS okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSource wangempela wangempela analysts analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBefore kweenkqubo kweenkqubo TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamiamia Racist Racist Racist Racist RacistNkosiNkosiChristiansChristiansChristiansChristiansouououuiltuiltuilt constantly constantly constantly constantly lokubonisa lokubonisamiamia khange khange Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuiltuiltuiltuilternalernal plotting plotting ideas ideas foundational foundational foundational invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis MisNkosiNkosiNkosiNkosimaniacmaniacmaniacmaniac Ndi Ndi NdiNkosiNkosiNkosi String String Obesity Obesity Obesity emotion emotion ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arrogance arrogance arrogance arrogance ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi osi osi osi nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo zanamhlanje zanamhlanje Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso\"...\"...methylmethylmethylmethylbabonakalisababonakalisa puzzles puzzles puzzles Assumption Assumptionsusiwesusiwehlanjwahlanjwahlanjwahlanjwa Mis Mis Mis invoices invoices Taxes Taxes robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure undeniable undeniablelicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot Mapping Mapping Mapping performances performancesplangaplanga fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgot rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled smelled marriages marriages marriages marriages sculpture sculptureNicoNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociologicalhakahaka7676767676 persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow iiyure iiyure floor flooremptemptempt nokuze nokuze arrogance arrogancemacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze busy busy iiyure iiyure iiyure",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling profiling profiling4:304:304:30 Funds Funds Funds Male Maleglowglowglow Krestu Krestunesiphumonesiphumonesiphumo ideas ideas ideas correlate correlateementementementkelkelkelcenteredcentered ukugqibezela ukugqibezela ukugqibezela analysts analysts analysts analystsphathela khange khange khange khange reaching reaching reaching reaching reaching amagama amagama amagama amagama amagamathembilethembilethembilethembilemaniacmaniacmaniacmaniac okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyoSourceSourceSourceSourceSource wangempela wangempela analysts analysts analysts analysts illegitimate illegitimate illegitimate illegitimate illegitimate illegitimateBeforeBeforeBeforeBeforeBeforeMYMYMYMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMotherMothermiamiamiamiamiamia Racist Racist Racist Racist Racist Racist Racist RacistChristiansChristiansChristiansououououuiltuiltuilt constantly constantly constantly constantly lokubonisa lokubonisa savior savior khange khange Ngaphambili Ngaphambili Ngaphambili Ngaphambili Fractured Fractured Fractured occupier occupieruiltuiltuiltuiltuilternalernalernalOffOff foundational foundational foundational foundational invoices invoices Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis Mis MisNkosiNkosiNkosimaniacmaniacmaniacmaniac Ndi Ndi Ndi Ndi Ndi Ndi String String Obesity Obesity Obesity emotion emotion ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination termination arrogance arrogance arrogance arrogance arrogance arrogance ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices osi osi osi osi osi iiyure iiyure iiyure respondent respondent respondent nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo nomgaqo Iintlanganiso Iintlanganiso\"...\"...\"...\"...\"...\"...\"...babonakalisababonakalisa puzzles puzzles puzzles puzzles puzzles puzzles puzzles puzzleshlanjwahlanjwahlanjwa Mis Mis invoices invoices invoices invoices robot robot robot robot marriages marriages marriages marriages marriages marriages iiyure iiyure iiyure iiyure iiyure iiyurelicitylicitylicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo invoices invoices persuaded persuaded persuaded robot robot Mapping Mapping MappingSourceSourceSource fruit fruit fruit Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgot rival rival ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable smelled smelled marriages marriages marriages marriages sculpture sculptureNicoNicoNicoNicoSabathaSabathaSabathaSabathaSabathaSabathaSabathaSabatha sociological sociological sociological sociologicalhakahaka7676767676 persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded Cow Cow Cow iiyure iiyure floor flooremptemptempt ikuvumela ikuvumela arrogancemacandelomacandelomacandelomacandelo marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni Esikolweni Esikolwenintuthuzelontuthuzelo nokuze nokuze nokuze nokuze nokuze persuaded persuadedntuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelontuthuzelophathelaphathela",
+            "illegitimateyichithayichitha ideas ideas ideas ideas ideas ideas ideasglowglow profiling profiling funky funky4:304:30 Funds Funds Funds Funds Fundsglowglowglow Krestu Krestu Krestu Krestunesiphumonesiphumo ideas ideas ideas correlateementementementkelkelkel SP SP ukugqibezela ukugqibezela ukugqibezela ukugqibezelaNkosiNkosiNkosiNkosiNkosi khange khange khange khangeNkosiNkosiNkosiNkosi analysts analysts amagama amagama amagamathembilethembilethembilethembilethembilethembilemiamiamiamia okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo analysts analysts kuqhubeka kuqhubeka kuqhubeka wangempela wangempela analysts analysts analysts kwandi kwandi illegitimate illegitimatengaphelelangangaphelelangangaphelelangaBeforeBeforeBeforeBeforeMYMYMYMY TOMORROW TOMORROWMotherMotherMotherMotherMotherMotherMother commission commission commission commissionmiamiamiamiamiamiamiamia khange khangeValidValidValidNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiuiltuiltuilt constantly constantly constantlymiamiamiamiaNkosiNkosiNkosi Ngaphambili Ngaphambili Ngaphambili sacrifice sacrifice Fractured Fractured Chill Chill woo woo woo collections collections collections plotting plotting plotting ideas ideas ideas foundational foundational collections collections Gathering Gathering Racist Racist Racist Racist Racist Racist Racist Racist Mis MisNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosiNkosi String String Obesity Obesity Obesity Obesity ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas ideas termination termination arrogance arrogance arrogance arrogance arroganceqhathaqhatha ideas ideas ideas ideasqhathaqhathaqhathaqhatha Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography Bibliography invoices invoices invoices invoices invoices osi Bibliography Bibliography Bibliography iiyure iiyure iiyure respondent respondent nomgaqo nomgaqo nomgaqo nomgaqoNkosiNkosiNkosi Iintlanganiso Iintlanganiso Iintlanganiso Iintlanganiso ngesixhobo ngesixhobomethylmethylmethylbabonakalisababonakalisababonakalisababonakalisa puzzles puzzles Assumption Assumptionsusiwesusiwehlanjwahlanjwahlanjwahlanjwahlanjwa traces traces traces traces Taxes Taxes robot robot traces traces traces marriages marriages marriages marriages marriageslinganiselwalinganiselwalinganiselwa Homeland Homeland Homelandlicitylicitylicitylicitylicitylicitylicity persuaded persuaded persuaded persuaded persuaded persuaded okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyo okhethiweyobabonakalisababonakalisababonakalisababonakalisa invoices invoices persuaded persuaded persuaded persuaded robot robot robot Mapping MappingExerciseExerciseExercisesiphenesiphenesiphene Notable Notable Notable Notablesiphenesiphenesiphenesiphenegotgotgotgotgotgotgot ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa ukukhutshwa Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable Notable marriages marriages marriages marriages marriages sculpture sculptureNicoNicoNico nokuze nokuze nokuzeSabathaSabathaSabathaSabatha rival rival sociological sociological sociological sociologicalhakahaka767676 analysts analysts persuaded persuaded persuaded persuaded persuaded persuaded persuaded iiyure iiyure iiyure iiyure iiyure iiyure persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded persuaded luyilo luyilo Cow iiyure iiyure iiyure floor flooremptemptempt nokuze nokuze nokuzemacandelomacandelomacandelomacandelo marriages marriages marriages Esikolweni Esikolweni Esikolweni Esikolweni EsikolweniRecruitRecruit nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze nokuze"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:51:52.129361+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "cc60e6b2e68ea646",
+        "lora_hash": "623bc1043d58b21e",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:43:38.619470+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1834
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1834
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-x"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-xh",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.595269+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-xh",
+      "model_key": "hplt-en-xh",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 2,
+          "max_score": 10,
+          "stars": 1.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 2,
+          "max_score": 10,
+          "stars": 1.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:43:38.619470+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "fc1379354214f7e3",
+    "lora_hash": "d256a031a0df3b06",
+    "files_identical": false,
+    "base_size_mb": 288.33,
+    "lora_size_mb": 288.33,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:12.429699+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

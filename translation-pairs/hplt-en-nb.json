@@ -1,0 +1,120 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-nb.json",
+  "patient_id": "hplt-en-nb",
+  "admitted": "2026-03-23T04:53:16.024344+00:00",
+  "source_repo": "HPLT/translate-en-nb-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "nb",
+    "name": "nb",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": null,
+    "encoder_layers": null,
+    "decoder_layers": null,
+    "max_sequence_length": null
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:53:16.024344+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": null,
+          "certified": false,
+          "quality": null,
+          "stars": null
+        },
+        "lora": {
+          "score": null,
+          "certified": false,
+          "quality": null,
+          "stars": null
+        },
+        "ct2": {
+          "score": null,
+          "certified": false,
+          "quality": null,
+          "stars": null
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-nb",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-24T14:01:10.898857",
+    "doctors_examined": 1,
+    "exams_total": 1,
+    "base_verdict": "FAIL",
+    "lora_verdict": "FAIL",
+    "ct2_verdict": "FAIL",
+    "overall_verdict": "FAIL",
+    "confidence": "LOW",
+    "production_ready": false,
+    "notes": []
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-nb",
+      "model_key": "hplt-en-nb",
+      "phase": 2,
+      "cluster_type": "translation"
+    }
+  },
+  "doctor_ratings": {},
+  "surgical_log": [],
+  "variant_count": 0
+}

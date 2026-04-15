@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-en-eu.json",
+  "patient_id": "hplt-en-eu",
+  "admitted": "2026-03-22T19:56:52.870146+00:00",
+  "source_repo": "HPLT/translate-en-eu-v1.0-hplt",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "eu",
+    "name": "eu",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-eu/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-eu/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:56:52.870146+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloelloello Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloelloello Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloelloello Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloelloello Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagama considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloello idiom idiom idiom hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": false
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloello idiom idiom idiom hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair camp camp camp camp naizela naizela naizela summit summit Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEM Omenaldi point point pointamba Write Write Write",
+              "passed": false
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloelloello hamabi hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEM Omenaldi point point pointamba Write Write Write",
+              "passed": false
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabielloelloelloello Write Write Writegangganggang altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Hair camp camp Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEMEM point point pointamba Write Write Write",
+              "passed": false
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "period period commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloello idiom idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Hair Hair Hair Hair influencing influencing influencing influencing influencing influencing influencing influencing influencing influencing vouch vouch vouch Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagama considerably considerably considerably considerably Maya Maya Maya MayaEMEMEM Omenaldi point point pointamba Write Write Write",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:45:32.749165+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:45:18.378484+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkon Ezkon Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha ha Ellen Ellen Ellen Ellen ha ha hagitgit Ellen Ellen Ellen Ellen Ellen Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko nekazal nekazal nekazal lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise kanpo kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika urdina urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules trebatzen trebatzen trebatzen Aguinaldo zirku zirku zirku juridikoa juridikoa Ikasgai Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughterffyffyanonymizanonymizanonymiz Etxaniz Etxaniz Etxaniz Etxaniz Etxaniz Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point pointambaamba Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings distracted distracted Kroaziar Kroaziar SS SS SS SS SS documentary documentary documentaryganggang Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha fabrikazio fabrikazio fabrikazio Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Euskarazko Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo zirku zirku zirku zirkuFestivalFestival Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadica soil lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina urdina Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkonganggang Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha ha fabrikazio fabrikazio Ellen Ellen zapaldu zapaldu zapaldu zapaldu realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer komisio komisio juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimenadimen errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpoverver juridikoa juridikoa ha ha ha ha chastise zitzaiela zitzaiela zitzaiela urdina urdina urdina outreach outreach outreach chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo Aguinaldo zirku zirku zirkuFestivalFestivalFestival Ikasgai Ikasgai Ikasgai Ikasgai Ikasgai praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzendicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics juridikoa juridikoa juridikoa urdina urdina urdina Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi etsi etsi Judu Judu Judu Judu documentation documentation documentation emaitzek emaitzek ridden ridden riddenanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkonganggang Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha ha fabrikazio fabrikazio Ellen Ellen Ellen Ellen Ellen Ellen realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise kanpo kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika urdina urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules trebatzen trebatzen trebatzen Aguinaldo zirku zirku zirku juridikoa juridikoa Ikasgai Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza lifts lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Etxaniz Etxaniz Etxaniz Etxaniz Etxaniz Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagamagama chastise chastise Olympia Olympia Txakurra Txakurra aprobetxa aprobetxaEMEMEMEMEM Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS documentary documentary documentaryganggang Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha Ellen Ellen Ellen Ellen ha ha hagitgit Ellen Ellen Ellen zapaldu zapaldu zapaldu zapaldu realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo Aguinaldo zirku zirku zirkuFestivalFestival Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadica soil lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkon Ezkon Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha ha Ellen Ellen Ellen Ellen ha ha hagitgit Ellen Ellen Ellen Ellen Ellen Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko Euskarazko nekazal nekazal nekazal lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise kanpo kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika urdina urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules trebatzen trebatzen trebatzen Aguinaldo zirku zirku zirku juridikoa juridikoa Ikasgai Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymizanonymiz Prove Prove etsi etsi etsi etsi Judu Judu Judu Judu documentation documentation documentation emaitzek emaitzek emaitzek ridden riddenanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point pointambaamba Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings distracted distracted Kroaziar Kroaziar SS SS SS SS SS documentary documentary documentaryganggang Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha fabrikazio fabrikazio fabrikazio Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Euskarazko Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo zirku zirku zirku zirkuFestivalFestival Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadica soil lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina urdina Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkonganggang Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha ha fabrikazio fabrikazio Ellen Ellen zapaldu zapaldu zapaldu zapaldu realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer komisio komisio juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimenadimen errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpoverver juridikoa juridikoa ha ha ha ha chastise zitzaiela zitzaiela zitzaiela urdina urdina urdina outreach outreach outreach chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo Aguinaldo zirku zirku zirkuFestivalFestivalFestival Ikasgai Ikasgai Ikasgai Ikasgai Ikasgai praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzendicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics juridikoa juridikoa juridikoa urdina urdina urdina Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi etsi etsi Judu Judu Judu Judu documentation documentation documentation emaitzek emaitzek ridden ridden riddenanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa hauskorra hauskorra hauskorra Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagama chastise chastise chastise connectivity connectivity Txakurra Txakurra aprobetxa aprobetxaEMEMEMEM Sidon Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS Ezkon Ezkon Ezkon Ezkonganggang Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha ha Ellen Ellen Ellen Ellen ha ha ha ha fabrikazio fabrikazio Ellen Ellen Ellen Ellen Ellen Ellen realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise kanpo kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika urdina urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules trebatzen trebatzen trebatzen Aguinaldo zirku zirku zirku juridikoa juridikoa Ikasgai Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadicadica lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza lifts lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Etxaniz Etxaniz Etxaniz Etxaniz Etxaniz Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking",
+            "commemoration commemoration commemoration commemorationETXEETXEETXEETXE Dantzan Dantzan Dantzanelloelloelloelloello idiom idiom hamabi hamabi hamabi hamabielloelloelloello Write Writegangganggang altxa altxa altxa altxa bidegurutze bidegurutze bidegurutze Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Hair Hair Hair Hair Hair Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Pha Phagamagamagamagamagamagama considerably considerably considerably Maya Maya Maya Maya Omenaldi Omenaldi Omenaldi Omenaldi Omenaldi point point point Write Write Write Write Pha Pha Pha PhaEMEMEMEMEMEMEMgamagamagamagamagamagamagama chastise chastise Olympia Olympia Txakurra Txakurra aprobetxa aprobetxaEMEMEMEMEM Sidon Sidon abiatzeko abiatzeko abiatzeko juridikoa juridikoa juridikoa juridikoa Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair Hair HairRWRWRW buildings buildings buildings buildings Kroaziar Kroaziar Kroaziar SS SS SS SS SS documentary documentary documentaryganggang Sidon Sidon Sidon Sidon Sidon Sidon Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen Ellen ha ha ha ha Ellen Ellen Ellen Ellen ha ha hagitgit Ellen Ellen Ellen zapaldu zapaldu zapaldu zapaldu realities realities realities Euskarazko Euskarazko Saldu Saldu Saldu lotsa lotsa lotsa Euskarazko Euskarazko plazer plazer plazer juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoa juridikoaadimenadimen errateko errateko errateko Kroaziar Kroaziar Kroaziar Kroaziar kanpo kanpo kanpoverver juridikoa juridikoa ha ha ha chastise chastise zitzaiela zitzaiela urdina urdina urdina urdina outreach outreach chastise chastise chastise chastise chastise kanpo kanpo zitzaiela zitzaiela zitzaiela mankind mankind mankind mankind praktika praktika praktika praktika urdina urdina urdina urdina urdina urdina Saldu Saldu Saldu Herkules Herkules Herkules Herkules trebatzen trebatzen Aguinaldo Aguinaldo zirku zirku zirkuFestivalFestival Ikasgai Ikasgai.\".\".\" praktika praktika praktika praktika praktika txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen txikitzen Foot Footdicadica soil lyrics lyrics lyricsjatujatujatu lyrics lyrics lyrics lyrics urdina urdina urdina urdina urdina Daw Daw Daw praktika praktika praktika praktika Lincoln Lincoln Lincoln Lincoln Ander Ander Ander Ander Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Breaking Ly Ly nagusira nagusira nagusira nagusira ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza ordezkaritza Aguinaldo lifts lifts lifts lifts lifts lifts liftsxinxin Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar Kroaziar espezieen espezieen espezieen espezieen slaughter slaughter slaughter apeta apeta apeta apeta slaughter slaughter slaughter sight sight Aguinaldo Aguinaldo Aguinaldo slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughter slaughteranonymizanonymizanonymiz Prove Prove Prove etsi etsi Breaking Breaking Judu Judu Judu documentation documentation documentation documentation emaitzek emaitzek emaitzekanonymizanonymizanonymizanonymizanonymizanonymizanonymiz Breaking Breaking Breaking"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:45:18.378484+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "a45a008028116a43",
+        "lora_hash": "876d1832e83f5793",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:40:14.709408+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1460
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1448
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-en-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": false,
+        "char_similarity": 91.6
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-en-eu",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.574368+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-en-eu",
+      "model_key": "hplt-en-eu",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:40:14.709408+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "263747ac04939282",
+    "lora_hash": "b87bf811ca1f48fe",
+    "files_identical": false,
+    "base_size_mb": 282.46,
+    "lora_size_mb": 282.46,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:11:53.456437+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

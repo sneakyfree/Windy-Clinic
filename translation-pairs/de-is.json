@@ -1,0 +1,1382 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/de-is.json",
+  "patient_id": "de-is",
+  "admitted": "2026-03-22T19:29:27.341669+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-de-is",
+  "source_language": {
+    "code": "de",
+    "name": "de",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "is",
+    "name": "is",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 301564003,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0",
+        "created": "2026-03-21T01:58:09.796178+00:00",
+        "doctor": "Helsinki-NLP (original author)",
+        "procedure": "Original pre-trained MarianMT model downloaded from HuggingFace",
+        "parent": null,
+        "parent_version": null,
+        "format": "safetensors",
+        "size_bytes": 301564003,
+        "fingerprint": "cd31702f2571072f"
+      },
+      "note": "Restored from HuggingFace phase1_onnx_restore on 2026-04-11 by Opus 4.6 Opus-Claw (Dr. C). Symlinked into models/ for harness compatibility. Actual files live in /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/de-is.",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-de-is/base",
+      "on_disk_target": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/de-is",
+      "on_disk_format": "pytorch_bin",
+      "restored_at": "2026-04-11T20:51:05.692682+00:00",
+      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "missing_from_disk",
+      "format": "safetensors",
+      "size_bytes": 301564003,
+      "identical_to_base": null,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.1",
+        "created": "2026-03-21T01:58:12.615264+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "Fog a Mirror LoRA fine-tune (r=4, alpha=8), merged back to full weights",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 301564003,
+        "fingerprint": "cd31702f2571072f",
+        "training": {
+          "method": "LoRA",
+          "rank": 4,
+          "alpha": 8,
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+        }
+      },
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "safetensors",
+      "loader_compatible": false,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0-int8",
+        "created": "2026-03-24T15:51:15.962302+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "CTranslate2 INT8 quantization of base model",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 301563948,
+        "fingerprint": "cd31702f2571072f",
+        "quantization": {
+          "method": "ctranslate2",
+          "precision": "int8",
+          "note": "Re-exported 2026-03-24 after loader compatibility fix"
+        }
+      },
+      "size_bytes": 301563948,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0": {
+      "status": "present",
+      "format": "safetensors",
+      "derived_from": "Phase 1 improvement (3 epochs, lr=5e-06)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-de-is/herm0",
+      "score_before": 87.6,
+      "score_after": 89.4,
+      "delta": 1.8,
+      "improved_at": "2026-04-13T22:42:45.737319+00:00",
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2": {
+      "status": "missing_from_disk",
+      "format": "ctranslate2",
+      "size_bytes": 77803145,
+      "lineage": {
+        "version": "v2.0-int8",
+        "created": "2026-03-28T00:07:20.929722+00:00",
+        "doctor": "Herm Zero (Dr. B)",
+        "procedure": "CTranslate2 INT8 quantization of herm0 improved model",
+        "parent": "herm0",
+        "parent_version": "v2.0",
+        "format": "ctranslate2",
+        "size_bytes": 77803145,
+        "fingerprint": "2fa00c2019b06464",
+        "quantization": {
+          "method": "ctranslate2",
+          "precision": "int8",
+          "source_size_bytes": 301564395,
+          "quantized_size_bytes": 77803145,
+          "compression_ratio": "3.88x",
+          "load_test": "passed"
+        }
+      },
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_int8_onnx": {
+      "status": "archived_as_onnx",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/onnx_fleet/herm0_int8/windy-pair-de-is",
+      "on_disk_bytes": 77126983,
+      "on_disk_format": "onnx_int8",
+      "on_disk_files": [
+        "model_int8.onnx"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "variant_meaning": "herm0_int8_onnx",
+      "relocated_at": "2026-04-11T21:06:19.560202+00:00",
+      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (OPUS deep fine-tune)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-de-is/herm0-ct2-int8",
+      "on_disk_bytes": 77803145,
+      "quantized_at": "2026-04-15T20:51:37.407645+00:00",
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 74409472,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:29:27.341669+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hallo, wie geht es Ihnen heute?",
+              "output": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+              "passed": true
+            },
+            {
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
+              "output": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+              "passed": true
+            },
+            {
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
+              "output": "M\u00e1 \u00e9g panta kaffibolla?",
+              "passed": true
+            },
+            {
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
+              "output": "Hratt, br\u00fana refurinn stekkur yfir lata hundinn.",
+              "passed": true
+            },
+            {
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
+              "output": "Gr\u00e6\u0111gi breytir heiminum.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hallo, wie geht es Ihnen heute?",
+              "output": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+              "passed": true
+            },
+            {
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
+              "output": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+              "passed": true
+            },
+            {
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
+              "output": "M\u00e1 \u00e9g panta kaffibolla?",
+              "passed": true
+            },
+            {
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
+              "output": "Hratt, br\u00fana refurinn stekkur yfir lata hundinn.",
+              "passed": true
+            },
+            {
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
+              "output": "Gr\u00e6\u0111gi breytir heiminum.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hallo, wie geht es Ihnen heute?",
+              "output": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+              "passed": true
+            },
+            {
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
+              "output": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+              "passed": true
+            },
+            {
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
+              "output": "M\u00e1 \u00e9g panta kaffibolla?",
+              "passed": true
+            },
+            {
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
+              "output": "Hratt, br\u00fana refurinn st\u00f6kk yfir lata hundinn.",
+              "passed": true
+            },
+            {
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
+              "output": "Gr\u00e6\u0111gi breytir heiminum.",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T01:12:46.916914+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "lora": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "ct2": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T04:13:41.358152+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Ve\u0111ri\u0111 er fallegt \u00ed dag.",
+            "M\u00e1 \u00e9g panta kaffibolla?",
+            "Krakkarnir eru a\u0111 leika s\u00e9r \u00ed gar\u0111inum.",
+            "Hven\u00e6r fer lestin?",
+            "H\u00fan hefur unni\u0111 \u00e1 sp\u00edtalanum \u00ed t\u00edu \u00e1r."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "Ve\u0111ri\u0111 er fallegt \u00ed dag.",
+            "M\u00e1 \u00e9g panta kaffibolla?",
+            "Krakkarnir eru a\u0111 leika s\u00e9r \u00ed gar\u0111inum.",
+            "Hven\u00e6r fer lestin?",
+            "H\u00fan hefur unni\u0111 \u00e1 sp\u00edtalanum \u00ed t\u00edu \u00e1r."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 63.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 2,
+          "sample_translations": [
+            ".................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+            ".................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+            ".................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+            ".................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+            "................................................................................................................................................................................................................................................................................................................................................................................................................................................................................."
+          ],
+          "delta_vs_base": -37.0
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T04:13:41.358152+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 63.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 2,
+            "quality_score": 63.0,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "e4538e3dfcb8aee2",
+        "lora_hash": "8611afb667a67c48",
+        "files_identical": false,
+        "base_size_mb": 284.48,
+        "lora_size_mb": 284.48,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T05:09:17.912867+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 433
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 433
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-de-is"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-CT2-REEXPORT-20260324",
+      "date": "2026-03-24T15:51:02.822624+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "protocol_script": "ct2_reexport_phase1.py",
+      "variants_tested": [
+        "ct2_int8"
+      ],
+      "results": {
+        "ct2_int8": {
+          "verdict": "CT2_REEXPORTED",
+          "old_format": "pytorch_pickle_int8",
+          "new_format": "safetensors",
+          "old_size_mb": 189.6,
+          "new_size_mb": 284.5,
+          "verified_match": true,
+          "sample_translation": "Helloworld"
+        }
+      },
+      "notes": "Replaced broken pickle INT8 (189.6MB) with clean safetensors (284.5MB). Verified base-CT2 output match: True. Sample translation: \"Helloworld\". Elapsed: 30.1s."
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "BLOODWORK-001",
+      "date": "2026-03-28T14:53:41.944755+00:00",
+      "doctor": "Herm Zero",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "protocol_script": "bloodwork_test.py v1.0",
+      "variants_tested": [
+        "base",
+        "lora",
+        "herm0",
+        "ct2"
+      ],
+      "results": {
+        "roundtrip_fidelity": {
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "variant_scores": {
+            "base": {
+              "score": 73.62,
+              "num_sentences": 10,
+              "min": 41.56,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "Hallo, wie geht's dir heute?",
+                  "forward": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "returned": "Wie geht's dir heute?",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "forward": "Ve\u0111ri\u0111 er gott \u00ed morgun.",
+                  "returned": "Das Wetter ist sch\u00f6n heute Morgen.",
+                  "similarity": 0.8235
+                },
+                {
+                  "original": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "forward": "Mig langar a\u0111 panta kaffibolla.",
+                  "returned": "Ich m\u00f6chte einen Kaffee bestellen.",
+                  "similarity": 0.825
+                }
+              ]
+            },
+            "lora": {
+              "score": 73.62,
+              "num_sentences": 10,
+              "min": 41.56,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "Hallo, wie geht's dir heute?",
+                  "forward": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "returned": "Wie geht's dir heute?",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "forward": "Ve\u0111ri\u0111 er gott \u00ed morgun.",
+                  "returned": "Das Wetter ist sch\u00f6n heute Morgen.",
+                  "similarity": 0.8235
+                },
+                {
+                  "original": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "forward": "Mig langar a\u0111 panta kaffibolla.",
+                  "returned": "Ich m\u00f6chte einen Kaffee bestellen.",
+                  "similarity": 0.825
+                }
+              ]
+            },
+            "ct2": {
+              "score": 73.62,
+              "num_sentences": 10,
+              "min": 41.56,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "Hallo, wie geht's dir heute?",
+                  "forward": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "returned": "Wie geht's dir heute?",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "forward": "Ve\u0111ri\u0111 er gott \u00ed morgun.",
+                  "returned": "Das Wetter ist sch\u00f6n heute Morgen.",
+                  "similarity": 0.8235
+                },
+                {
+                  "original": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "forward": "Mig langar a\u0111 panta kaffibolla.",
+                  "returned": "Ich m\u00f6chte einen Kaffee bestellen.",
+                  "similarity": 0.825
+                }
+              ]
+            },
+            "herm0": {
+              "score": 73.77,
+              "num_sentences": 10,
+              "min": 53.01,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "Hallo, wie geht's dir heute?",
+                  "forward": "Hvernig l\u00ed\u00f0ur \u00fe\u00e9r \u00ed dag?",
+                  "returned": "Wie geht's dir heute?",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "forward": "Ve\u00f0ri\u00f0 er gott \u00ed morgun.",
+                  "returned": "Das Wetter ist heute Morgen gut.",
+                  "similarity": 0.8788
+                },
+                {
+                  "original": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "forward": "Mig langar a\u00f0 panta kaffi, takk.",
+                  "returned": "Ich m\u00f6chte einen Kaffee bestellen, bitte.",
+                  "similarity": 0.9195
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 73.62,
+              "base_score": 73.62,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 73.62,
+              "base_score": 73.62,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "herm0": {
+              "score": 73.77,
+              "base_score": 73.62,
+              "delta_pct": 0.2,
+              "delta_abs": 0.15,
+              "grade": "B"
+            }
+          }
+        },
+        "bleu": {
+          "description": "BLEU score against reference translations from test sentence bank",
+          "variant_scores": {
+            "base": {
+              "score": 50.74,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                66.67,
+                53.23,
+                46.15,
+                40.48
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hallo, wie geht's dir heute?",
+                  "reference": "Hall\u0137, hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "hypothesis": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?"
+                },
+                {
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "reference": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+                  "hypothesis": "Ve\u0111ri\u0111 er gott \u00ed morgun."
+                },
+                {
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "reference": "Mig langar a\u0111 panta kaffibolla.",
+                  "hypothesis": "Mig langar a\u0111 panta kaffibolla."
+                }
+              ]
+            },
+            "lora": {
+              "score": 50.74,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                66.67,
+                53.23,
+                46.15,
+                40.48
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hallo, wie geht's dir heute?",
+                  "reference": "Hall\u0137, hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "hypothesis": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?"
+                },
+                {
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "reference": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+                  "hypothesis": "Ve\u0111ri\u0111 er gott \u00ed morgun."
+                },
+                {
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "reference": "Mig langar a\u0111 panta kaffibolla.",
+                  "hypothesis": "Mig langar a\u0111 panta kaffibolla."
+                }
+              ]
+            },
+            "ct2": {
+              "score": 50.74,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                66.67,
+                53.23,
+                46.15,
+                40.48
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hallo, wie geht's dir heute?",
+                  "reference": "Hall\u0137, hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "hypothesis": "Hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?"
+                },
+                {
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "reference": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+                  "hypothesis": "Ve\u0111ri\u0111 er gott \u00ed morgun."
+                },
+                {
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "reference": "Mig langar a\u0111 panta kaffibolla.",
+                  "hypothesis": "Mig langar a\u0111 panta kaffibolla."
+                }
+              ]
+            },
+            "herm0": {
+              "score": 22.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                57.35,
+                27.59,
+                18.75,
+                7.89
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hallo, wie geht's dir heute?",
+                  "reference": "Hall\u0137, hvernig hefur\u0111u \u016ba\u0111 \u00ed dag?",
+                  "hypothesis": "Hvernig l\u00ed\u00f0ur \u00fe\u00e9r \u00ed dag?"
+                },
+                {
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "reference": "Ve\u0111ri\u0111 er fallegt \u00ed morgun.",
+                  "hypothesis": "Ve\u00f0ri\u00f0 er gott \u00ed morgun."
+                },
+                {
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
+                  "reference": "Mig langar a\u0111 panta kaffibolla.",
+                  "hypothesis": "Mig langar a\u00f0 panta kaffi, takk."
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 50.74,
+              "base_score": 50.74,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 50.74,
+              "base_score": 50.74,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "herm0": {
+              "score": 22.0,
+              "base_score": 50.74,
+              "delta_pct": -56.64,
+              "delta_abs": -28.74,
+              "grade": "F"
+            }
+          }
+        }
+      }
+    },
+    {
+      "exam_id": "GR1-de-is",
+      "date": "2026-03-29T04:48:06+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v1: 6-test composite (bloodwork, crossmatch, vitals, stress_fracture, consistency, scripture)",
+      "protocol_script": "grand_rounds_harness.py v1",
+      "variants_tested": [
+        "base",
+        "herm0",
+        "herm0_ct2"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "A+",
+          "composite_score": 99.5,
+          "verdict": "EXCELLENT",
+          "grade_breakdown": {
+            "vitals": {
+              "score": 97.98,
+              "weight": 0.1,
+              "weighted": 9.8
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork",
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped",
+              "reason": "no English endpoint (de\u2192is)"
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for de\u2192is"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 97.98,
+              "avg_latency_ms": 42.22,
+              "p95_latency_ms": 43.14,
+              "batch_throughput_sps": 80.75,
+              "gpu_memory_mb": 381.46
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        },
+        "herm0": {
+          "composite_grade": "A+",
+          "composite_score": 99.49,
+          "verdict": "EXCELLENT",
+          "grade_breakdown": {
+            "vitals": {
+              "score": 97.95,
+              "weight": 0.1,
+              "weighted": 9.8
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork",
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped",
+              "reason": "no English endpoint (de\u2192is)"
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for de\u2192is"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 97.95,
+              "avg_latency_ms": 43.46,
+              "p95_latency_ms": 44.7,
+              "batch_throughput_sps": 78.65,
+              "gpu_memory_mb": 384.87
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        },
+        "herm0_ct2": {
+          "composite_grade": null,
+          "composite_score": null,
+          "verdict": "UNKNOWN",
+          "grade_breakdown": {},
+          "skipped_tests": [],
+          "tests": {}
+        }
+      },
+      "notes": "Grand Rounds v1 full-fleet battery. Run 2026-03-28/29, 4.9h, 2658 variants. Filed to clinic post-hoc by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-de-is",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "onnx_int8_archive"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "base",
+          "lora",
+          "ct2_int8",
+          "herm0",
+          "herm0_ct2"
+        ],
+        "newly_found": [
+          "onnx_int8_archive"
+        ]
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-RESTORE-de-is",
+      "date": "2026-04-11T20:51:05.692682+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace snapshot_download (phase1_onnx_restore) + symlink into models/",
+      "protocol_script": "scripts/link_restored_to_models.py",
+      "variants_restored": [
+        "base"
+      ],
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-de-is/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-de-is/). Non-destructive: symlinks only, no files moved or deleted."
+    },
+    {
+      "exam_id": "DRC-ONNX-RELOCATE-de-is",
+      "date": "2026-04-11T21:06:19.560202+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "protocol_script": "inline in session",
+      "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-de-is/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-de-is/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
+    },
+    {
+      "exam_id": "DRC-CERT-de-is",
+      "date": "2026-04-12T03:56:38.345772+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "A+",
+          "composite_score": 98.32,
+          "verdict": "CERTIFIED_ELITE",
+          "grade_breakdown": {
+            "vitals": {
+              "score": 93.3,
+              "weight": 0.1,
+              "weighted": 9.33
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "bloodwork",
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "skipped"
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.3,
+              "avg_latency_ms": 95.86,
+              "p95_latency_ms": 100.18,
+              "batch_throughput_sps": 20.82,
+              "gpu_memory_mb": 344.77
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        }
+      },
+      "best_grade": "A+",
+      "best_score": 98.32,
+      "notes": "Dr. C independent certification of de-is. Tested 1 variant(s): base. Best variant grade: A+ (98.32). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-HERM0RECREATE-de-is",
+      "date": "2026-04-12T16:53:59.945810+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 87.6, after: 86.4, delta: -1.2. No improvement \u2014 discarded.",
+      "protocol_script": "scripts/recreate_herm0_models.py",
+      "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-de-is",
+      "date": "2026-04-13T20:15:01.354351+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_score": 74.7,
+          "stars": 4.0,
+          "tier": "standard",
+          "tests": {
+            "sentences": {
+              "score": 100.0
+            },
+            "paragraphs": {
+              "score": 77.9
+            },
+            "long_form": {
+              "score": 49.7
+            },
+            "native_input": {
+              "score": 100.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 72.6
+            },
+            "speed": {
+              "score": 90.6
+            }
+          }
+        }
+      },
+      "best_variant": "base",
+      "best_stars": 4.0,
+      "best_tier": "standard",
+      "best_composite": 74.7,
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-P1-de-is",
+      "date": "2026-04-13T22:42:45.737319+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Herm0 improvement Phase 1: 3 epochs, lr=5e-06, 49950 pairs. Score 87.6\u219289.4 (\u0394+1.8). IMPROVED \u2014 saved as herm0/",
+      "protocol_script": "scripts/herm0_improvement_pipeline.py",
+      "notes": "Phase 1 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 3 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0CT2-de-is",
+      "date": "2026-04-15T20:51:37.407685+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
+      "protocol_script": "scripts/post_phase4_orchestrator.py",
+      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (74 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-HERM0-de-is",
+      "date": "2026-04-15T22:07:16.122522+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 certification of herm0 (OPUS-improved) variant",
+      "protocol_script": "scripts/grand_rounds_v2.py via post_phase4_orchestrator.py",
+      "variants_tested": [
+        "herm0"
+      ],
+      "results": {
+        "herm0": {
+          "composite_score": 89.5,
+          "stars": 5.0,
+          "tier": "premium",
+          "tests": {
+            "sentences": {
+              "score": 100.0
+            },
+            "paragraphs": {
+              "score": 90.6
+            },
+            "long_form": {
+              "score": 97.3
+            },
+            "native_input": {
+              "score": 100.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 75.1
+            },
+            "speed": {
+              "score": 94.3
+            }
+          }
+        }
+      },
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 5.0\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-04-11T14:59:57.356568",
+    "doctors_examined": 2,
+    "exams_total": 7,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "REEXPORTED_SAFETENSORS",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "All doctors agree base works",
+      "LoRA variant functional",
+      "CT2 reexported from broken pickle to safetensors (25Mar26)"
+    ],
+    "gr1_composite_grade": "A+",
+    "gr1_composite_score": 99.5,
+    "gr1_verdict": "EXCELLENT",
+    "drc_cert_grade": "A+",
+    "drc_cert_score": 98.32,
+    "drc_cert_verdict": "CERTIFIED_ELITE",
+    "drc_cert_best_variant_grade": "A+",
+    "drc_cert_best_variant_score": 98.32,
+    "drc_cert_date": "2026-04-12T03:56:38.345772+00:00",
+    "drc_cert_doctor": "Opus 4.6 Opus-Claw (Dr. C)"
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-pair-de-is",
+      "model_key": "de-is",
+      "phase": 1,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_SEVERELY_DEGRADED: INT8 scores 37.0 points below base"
+    ],
+    "source3_paragraph_source": "native"
+  },
+  "quality_rating": {
+    "stars": 5.0,
+    "label": "premium",
+    "composite_score": 89.5,
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "rated_at": "2026-04-15T22:07:16.122522+00:00",
+    "method": "Grand Rounds v2 (herm0 improved variant)",
+    "best_variant": "herm0"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero": {
+      "doctor": "Herm Zero (Dr. B)",
+      "source": "deep_audit_v4",
+      "timestamp": "2026-03-23T20:45:35.917199+00:00",
+      "variant_scores": {
+        "base": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        },
+        "lora": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        }
+      },
+      "oc1_stars_reference": 5.0
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T05:09:17.912867+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "e4538e3dfcb8aee2",
+    "lora_hash": "8611afb667a67c48",
+    "files_identical": false,
+    "base_size_mb": 298.3,
+    "lora_size_mb": 298.3,
+    "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
+    "verification_date": "2026-03-23T20:45:35.917199+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [
+    {
+      "surgery_id": "H0-IMPROVE-DEIS-20260326",
+      "timestamp": "2026-03-26T20:32:59.023208+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "fine-tune",
+      "variant_target": "herm0",
+      "outcome": "success",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "details": {
+        "data_samples": 50000,
+        "epochs": 1,
+        "learning_rate": 1e-05,
+        "train_loss": 2.4288141026405343,
+        "base_score": 92.5,
+        "herm0_score": 92.9,
+        "improvement": 0.5,
+        "runtime_seconds": 88.1624
+      }
+    },
+    {
+      "surgery_id": "H0-CT2QUANT-DEIS-20260327",
+      "timestamp": "2026-03-28T00:07:20.929722+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "quantization",
+      "variant_target": "herm0_ct2",
+      "outcome": "success",
+      "procedure": "CTranslate2 INT8 quantization of herm0/v2.0 improved model"
+    }
+  ],
+  "variant_count": 5
+}

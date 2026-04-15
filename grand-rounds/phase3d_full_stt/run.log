@@ -1,0 +1,39 @@
+[2026-04-12T01:51:01.577788+00:00] Full STT certification — 15 models, 15 samples each
+[2026-04-12T01:51:01.577919+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C), device: cuda
+[2026-04-12T01:51:01.577977+00:00]   Loading FLEURS en_us
+[2026-04-12T01:51:07.599871+00:00]   Testing windy-nano (english, 15 samples)
+[2026-04-12T01:51:11.316547+00:00]     WER=13.2%  RTF=0.014  lat=130ms  gpu=183MB
+[2026-04-12T01:51:11.316621+00:00]   Testing windy-lite (english, 15 samples)
+[2026-04-12T01:51:15.100640+00:00]     WER=9.1%  RTF=0.014  lat=135ms  gpu=334MB
+[2026-04-12T01:51:15.100708+00:00]   Testing windy-core (english, 15 samples)
+[2026-04-12T01:51:20.581573+00:00]     WER=5.9%  RTF=0.025  lat=240ms  gpu=1051MB
+[2026-04-12T01:51:20.581649+00:00]   Testing windy-plus (english, 15 samples)
+[2026-04-12T01:51:29.340500+00:00]     WER=5.9%  RTF=0.044  lat=418ms  gpu=3226MB
+[2026-04-12T01:51:29.340574+00:00]   Testing windy-turbo (english, 15 samples)
+[2026-04-12T01:51:35.265645+00:00]     WER=5.6%  RTF=0.024  lat=227ms  gpu=3261MB
+[2026-04-12T01:51:35.265746+00:00]   Testing windy-pro-engine (english, 15 samples)
+[2026-04-12T01:51:47.490949+00:00]     WER=3.5%  RTF=0.062  lat=591ms  gpu=6522MB
+[2026-04-12T01:51:47.491020+00:00]   Testing windy-edge (english, 15 samples)
+[2026-04-12T01:51:52.872879+00:00]     WER=7.3%  RTF=0.021  lat=198ms  gpu=3057MB
+[2026-04-12T01:51:52.872958+00:00]   Testing windy-distil-small (english, 15 samples)
+[2026-04-12T01:51:56.432854+00:00]     WER=8.2%  RTF=0.011  lat=107ms  gpu=699MB
+[2026-04-12T01:51:56.432934+00:00]   Testing windy-distil-medium (english, 15 samples)
+[2026-04-12T01:52:00.770719+00:00]     WER=7.6%  RTF=0.016  lat=151ms  gpu=1588MB
+[2026-04-12T01:52:00.770794+00:00]   Testing windy-distil-large (english, 15 samples)
+[2026-04-12T01:52:06.291309+00:00]     WER=7.3%  RTF=0.022  lat=207ms  gpu=3057MB
+[2026-04-12T01:52:06.292716+00:00]   Loading FLEURS es_419
+[2026-04-12T01:52:07.844623+00:00]   Testing windy-lingua-spanish (spanish, 15 samples)
+[2026-04-12T01:52:15.385428+00:00]     WER=36.8%  RTF=0.026  lat=296ms  gpu=988MB
+[2026-04-12T01:52:15.385551+00:00]   Loading FLEURS cmn_hans_cn
+[2026-04-12T01:52:16.945013+00:00]   Testing windy-lingua-chinese (chinese, 15 samples)
+[2026-04-12T01:52:29.131016+00:00]     WER=0.0%  RTF=0.068  lat=601ms  gpu=994MB
+[2026-04-12T01:52:29.141258+00:00]   Loading FLEURS hi_in
+[2026-04-12T01:52:30.096624+00:00]   Testing windy-lingua-hindi (hindi, 15 samples)
+[2026-04-12T01:52:35.335860+00:00]     WER=100.0%  RTF=0.020  lat=191ms  gpu=334MB
+[2026-04-12T01:52:35.336104+00:00]   Loading FLEURS fr_fr
+[2026-04-12T01:52:36.380878+00:00]   Testing windy-lingua-french (french, 15 samples)
+[2026-04-12T01:52:53.056615+00:00]     WER=4.6%  RTF=0.080  lat=782ms  gpu=2998MB
+[2026-04-12T01:52:53.067549+00:00]   Loading FLEURS ar_eg
+[2026-04-12T01:52:54.233170+00:00]   Testing windy-lingua-arabic (arabic, 15 samples)
+[2026-04-12T01:53:18.180437+00:00]     WER=35.6%  RTF=0.099  lat=1157ms  gpu=6542MB
+[2026-04-12T01:53:18.180480+00:00] Done

@@ -1,0 +1,86 @@
+[2026-04-11T20:52:03.703269+00:00] Phase 3d STT harness — device=cuda
+[2026-04-11T20:52:03.703452+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-11T20:52:03.703472+00:00] Samples per model: 15
+[2026-04-11T20:52:03.703528+00:00]   loading FLEURS es_419 (15 samples)
+[2026-04-11T20:52:04.355598+00:00]     FLEURS load error: RuntimeError: Dataset scripts are no longer supported, but found fleurs.py
+[2026-04-11T20:52:04.355766+00:00]   loading FLEURS cmn_hans_cn (15 samples)
+[2026-04-11T20:52:04.529563+00:00]     FLEURS load error: RuntimeError: Dataset scripts are no longer supported, but found fleurs.py
+[2026-04-11T20:52:04.529753+00:00]   loading FLEURS hi_in (15 samples)
+[2026-04-11T20:52:04.643215+00:00]     FLEURS load error: RuntimeError: Dataset scripts are no longer supported, but found fleurs.py
+[2026-04-11T20:52:04.643393+00:00]   loading FLEURS fr_fr (15 samples)
+[2026-04-11T20:52:04.763274+00:00]     FLEURS load error: RuntimeError: Dataset scripts are no longer supported, but found fleurs.py
+[2026-04-11T20:52:04.763448+00:00]   loading FLEURS ar_eg (15 samples)
+[2026-04-11T20:52:04.872719+00:00]     FLEURS load error: RuntimeError: Dataset scripts are no longer supported, but found fleurs.py
+[2026-04-11T20:52:04.872877+00:00]   windy-lingua-hindi-ct2: SKIP — ct2 format not loadable via transformers; needs separate CTranslate2 harness
+[2026-04-11T20:52:04.874061+00:00] Phase 3d done. Completed: 0, errors: 6
+[2026-04-11T20:53:10.886632+00:00] Phase 3d STT harness — device=cuda
+[2026-04-11T20:53:10.886779+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-11T20:53:10.886797+00:00] Samples per model: 15
+[2026-04-11T20:53:10.886842+00:00]   loading FLEURS es_419 (15 samples)
+[2026-04-11T20:53:16.959484+00:00]     FLEURS load error: NameError: name 'os' is not defined
+[2026-04-11T20:53:16.959905+00:00]   loading FLEURS cmn_hans_cn (15 samples)
+[2026-04-11T20:53:21.718968+00:00]     FLEURS load error: NameError: name 'os' is not defined
+[2026-04-11T20:53:21.719357+00:00]   loading FLEURS hi_in (15 samples)
+[2026-04-11T20:53:25.040519+00:00]     FLEURS load error: NameError: name 'os' is not defined
+[2026-04-11T20:53:25.040919+00:00]   loading FLEURS fr_fr (15 samples)
+[2026-04-11T20:53:28.672961+00:00]     FLEURS load error: NameError: name 'os' is not defined
+[2026-04-11T20:53:28.673323+00:00]   loading FLEURS ar_eg (15 samples)
+[2026-04-11T20:53:33.856717+00:00]     FLEURS load error: NameError: name 'os' is not defined
+[2026-04-11T20:53:33.857003+00:00]   windy-lingua-hindi-ct2: SKIP — ct2 format not loadable via transformers; needs separate CTranslate2 harness
+[2026-04-11T20:53:33.858224+00:00] Phase 3d done. Completed: 0, errors: 6
+[2026-04-11T20:53:33.899985+00:00] Phase 3d STT harness — device=cuda
+[2026-04-11T20:53:33.900133+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-11T20:53:33.900149+00:00] Samples per model: 15
+[2026-04-11T20:53:33.900197+00:00]   loading FLEURS es_419 (15 samples)
+[2026-04-11T20:53:36.693453+00:00]   loading windy-lingua-spanish from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish
+[2026-04-11T20:53:39.010011+00:00]   windy-lingua-spanish: ERROR IndexError: index -2 is out of bounds for dimension 0 with size 0
+[2026-04-11T20:53:39.011221+00:00] Traceback (most recent call last):
+  File "/srv/repos/windy-pro/THE_CLINIC/scripts/phase3d_stt_harness.py", line 198, in evaluate_model
+    pred = model.generate(input_features, max_new_tokens=200, **gen_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/models/whisper/generation_whisper.py", line 637, in generate
+    decoder_input_ids, kwargs = self._prepare_decoder_input_ids(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/models/whisper/generation_whisper.py", line 1662, in _prepare_decoder_input_ids
+    prev_start_of_text = suppress_tokens[-2] if suppress_tokens is not None else None
+                         ~~~~~~~~~~~~~~~^^^^
+IndexError: index -2 is out of bounds for dimension 0 with size 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/repos/windy-pro/THE_CLINIC/scripts/phase3d_stt_harness.py", line 298, in main
+    result = evaluate_model(pid, model_path, cfg, samples_cache[fleurs], device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/repos/windy-pro/THE_CLINIC/scripts/phase3d_stt_harness.py", line 201, in evaluate_model
+    pred = model.generate(input_features, max_new_tokens=200)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/models/whisper/generation_whisper.py", line 637, in generate
+    decoder_input_ids, kwargs = self._prepare_decoder_input_ids(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/models/whisper/generation_whisper.py", line 1662, in _prepare_decoder_input_ids
+    prev_start_of_text = suppress_tokens[-2] if suppress_tokens is not None else None
+                         ~~~~~~~~~~~~~~~^^^^
+IndexError: index -2 is out of bounds for dimension 0 with size 0
+
+[2026-04-11T20:53:39.016549+00:00]   loading FLEURS cmn_hans_cn (15 samples)
+[2026-04-11T20:53:41.585718+00:00]   loading windy-lingua-chinese from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-chinese
+[2026-04-11T20:53:51.674276+00:00]   windy-lingua-chinese: WER=0.0, RTF=0.0507, lat=446.4ms, gpu=993.2MB
+[2026-04-11T20:53:51.674442+00:00]   loading FLEURS hi_in (15 samples)
+[2026-04-11T20:53:53.221089+00:00]   loading windy-lingua-hindi from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-hindi
+[2026-04-11T20:53:57.408897+00:00]   windy-lingua-hindi: WER=1.0, RTF=0.0128, lat=124.2ms, gpu=332.8MB
+[2026-04-11T20:53:57.409097+00:00]   loading FLEURS fr_fr (15 samples)
+[2026-04-11T20:53:59.176330+00:00]   loading windy-lingua-french from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-french
+[2026-04-11T20:54:12.962679+00:00]   windy-lingua-french: WER=0.0463, RTF=0.0552, lat=540.5ms, gpu=2997.0MB
+[2026-04-11T20:54:12.962864+00:00]   loading FLEURS ar_eg (15 samples)
+[2026-04-11T20:54:14.846237+00:00]   loading windy-lingua-arabic from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic
+[2026-04-11T20:54:35.052154+00:00]   windy-lingua-arabic: WER=0.3564, RTF=0.0689, lat=807.0ms, gpu=6541.5MB
+[2026-04-11T20:54:35.052297+00:00]   windy-lingua-hindi-ct2: SKIP — ct2 format not loadable via transformers; needs separate CTranslate2 harness
+[2026-04-11T20:54:35.058664+00:00] Phase 3d done. Completed: 4, errors: 2
+[2026-04-11T20:54:58.745269+00:00] Phase 3d STT harness — device=cuda
+[2026-04-11T20:54:58.745410+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-11T20:54:58.745428+00:00] Samples per model: 15
+[2026-04-11T20:54:58.745519+00:00]   loading FLEURS es_419 (15 samples)
+[2026-04-11T20:55:01.583346+00:00]   loading windy-lingua-spanish from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish
+[2026-04-11T20:55:07.833548+00:00]   windy-lingua-spanish: WER=0.3675, RTF=0.0191, lat=215.8ms, gpu=987.0MB
+[2026-04-11T20:55:07.833700+00:00] Phase 3d done. Completed: 5, errors: 2

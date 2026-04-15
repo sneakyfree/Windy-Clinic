@@ -1,0 +1,1223 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-14T15:10:02.199141+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/en-lus.json",
+  "patient_id": "en-lus",
+  "admitted": "2026-03-22T19:31:03.134508+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-en-lus",
+  "source_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "lus",
+    "name": "lus",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 280950891,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0",
+        "created": "2026-03-21T02:39:48.534259+00:00",
+        "doctor": "Helsinki-NLP (original author)",
+        "procedure": "Original pre-trained MarianMT model downloaded from HuggingFace",
+        "parent": null,
+        "parent_version": null,
+        "format": "safetensors",
+        "size_bytes": 280950891,
+        "fingerprint": "a43e1f5421e84e6f"
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-lus/base",
+      "on_disk_bytes": 278294524,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 280950891,
+      "identical_to_base": null,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.1",
+        "created": "2026-03-21T02:39:51.931348+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "Fog a Mirror LoRA fine-tune (r=4, alpha=8), merged back to full weights",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 280950891,
+        "fingerprint": "a43e1f5421e84e6f",
+        "training": {
+          "method": "LoRA",
+          "rank": 4,
+          "alpha": 8,
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+        }
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-lus/lora",
+      "on_disk_bytes": 278294524,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora_ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "derived_from": "lora/ (proprietary fog-of-mirror fine-tune)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-lus/lora-ct2-int8",
+      "on_disk_bytes": 72351744,
+      "quantized_at": "2026-04-12T12:43:56.560698+00:00",
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8_DELETED_was_fake": {
+      "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
+      "deleted_at": "2026-04-12T12:43:56.560698+00:00"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 69418496,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:31:03.134508+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Mi chak lote chuan ui av\u00e2ng chuan an zuang thla a.",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Mi chak lote chuan ui av\u00e2ng chuan an zuang thla a.",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "Mi chak lote chu ui av\u00e2ng chuan an zuang thla ta thut mai a.",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T01:24:24.568436+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "lora": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "ct2": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T04:32:24.320674+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "T\u00fbn laiah sik leh sa chu a mawi hle a.",
+            "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+            "Naupangte chu motor - ah an infiam a.",
+            "Zirt\u00eerna chuan eng hun nge a kalsan?",
+            "Damdawi ina kum s\u00e2wm lai thawk a ni tawh a."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "T\u00fbn laiah sik leh sa chu a mawi hle a.",
+            "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+            "Naupangte chu motor - ah an infiam a.",
+            "Zirt\u00eerna chuan eng hun nge a kalsan?",
+            "Damdawi ina kum s\u00e2wm lai thawk a ni tawh a."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 61.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 1,
+          "sample_translations": [
+            "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+            "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+            "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+            "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+            "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a"
+          ],
+          "delta_vs_base": -38.5
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T04:32:24.320674+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 61.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 1,
+            "quality_score": 61.5,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "c1a2279cbde2760e",
+        "lora_hash": "b7de99e12b3a3676",
+        "files_identical": false,
+        "base_size_mb": 265.4,
+        "lora_size_mb": 265.4,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T05:19:53.765413+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 323
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 323
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-lu"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-CT2-REEXPORT-20260324",
+      "date": "2026-03-24T16:10:36.068187+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "protocol_script": "ct2_reexport_phase1.py",
+      "variants_tested": [
+        "ct2_int8"
+      ],
+      "results": {
+        "ct2_int8": {
+          "verdict": "CT2_REEXPORTED",
+          "old_format": "pytorch_pickle_int8",
+          "new_format": "safetensors",
+          "old_size_mb": 165.7,
+          "new_size_mb": 265.4,
+          "verified_match": true,
+          "sample_translation": "He khawv\u00eal Hi A Ent\u00eer L\u00e2wk"
+        }
+      },
+      "notes": "Replaced broken pickle INT8 (165.7MB) with clean safetensors (265.4MB). Verified base-CT2 output match: True. Sample translation: \"He khawv\u00eal Hi A Ent\u00eer L\u00e2wk\". Elapsed: 16.3s."
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "BLOODWORK-001",
+      "date": "2026-03-28T15:05:06.484956+00:00",
+      "doctor": "Herm Zero",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "protocol_script": "bloodwork_test.py v1.0",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "roundtrip_fidelity": {
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "variant_scores": {
+            "base": {
+              "score": 58.02,
+              "num_sentences": 10,
+              "min": 31.17,
+              "max": 85.71,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
+                  "returned": "How are you today?",
+                  "similarity": 0.8372
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "returned": "The weather was this beautiful morning.",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "returned": "I wanted to make a cup of wine, and I wanted to please it.",
+                  "similarity": 0.5577
+                }
+              ]
+            },
+            "lora": {
+              "score": 58.02,
+              "num_sentences": 10,
+              "min": 31.17,
+              "max": 85.71,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
+                  "returned": "How are you today?",
+                  "similarity": 0.8372
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "returned": "The weather was this beautiful morning.",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "returned": "I wanted to make a cup of wine, and I wanted to please it.",
+                  "similarity": 0.5577
+                }
+              ]
+            },
+            "ct2": {
+              "score": 58.02,
+              "num_sentences": 10,
+              "min": 31.17,
+              "max": 85.71,
+              "sentences": [
+                {
+                  "original": "Hello, how are you today?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
+                  "returned": "How are you today?",
+                  "similarity": 0.8372
+                },
+                {
+                  "original": "The weather is beautiful this morning.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "returned": "The weather was this beautiful morning.",
+                  "similarity": 0.8571
+                },
+                {
+                  "original": "I would like to order a cup of coffee, please.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "returned": "I wanted to make a cup of wine, and I wanted to please it.",
+                  "similarity": 0.5577
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 58.02,
+              "base_score": 58.02,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 58.02,
+              "base_score": 58.02,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            }
+          }
+        },
+        "bleu": {
+          "description": "BLEU score against reference translations from test sentence bank",
+          "variant_scores": {
+            "base": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
+                }
+              ]
+            },
+            "lora": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
+                }
+              ]
+            },
+            "ct2": {
+              "score": 100.0,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                100.0,
+                100.0,
+                100.0,
+                100.0
+              ],
+              "sample_translations": [
+                {
+                  "source": "Hello, how are you today?",
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
+                },
+                {
+                  "source": "The weather is beautiful this morning.",
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
+                },
+                {
+                  "source": "I would like to order a cup of coffee, please.",
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 100.0,
+              "base_score": 100.0,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 100.0,
+              "base_score": 100.0,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            }
+          }
+        }
+      }
+    },
+    {
+      "exam_id": "GR1-en-lus",
+      "date": "2026-03-29T04:48:06+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v1: 6-test composite (bloodwork, crossmatch, vitals, stress_fracture, consistency, scripture)",
+      "protocol_script": "grand_rounds_harness.py v1",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "F",
+          "composite_score": 59.05,
+          "verdict": "FAIL",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 8.56,
+              "weight": 0.25,
+              "weighted": 2.14
+            },
+            "vitals": {
+              "score": 82.41,
+              "weight": 0.1,
+              "weighted": 8.24
+            },
+            "stress_fracture": {
+              "score": 86.67,
+              "weight": 0.15,
+              "weighted": 13.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 8.56,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for en\u2192lus"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 82.41,
+              "avg_latency_ms": 41.1,
+              "p95_latency_ms": 48.31,
+              "batch_throughput_sps": 73.06,
+              "gpu_memory_mb": 1783.38
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 86.67,
+              "passed": 13,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        }
+      },
+      "notes": "Grand Rounds v1 full-fleet battery. Run 2026-03-28/29, 4.9h, 2658 variants. Filed to clinic post-hoc by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-en-lus",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "ct2_int8",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-P3A-en-lus",
+      "date": "2026-04-11T20:19:35.003435+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "D-",
+          "composite_score": 60.87,
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 8.56,
+              "weight": 0.25,
+              "weighted": 2.14
+            },
+            "vitals": {
+              "score": 94.27,
+              "weight": 0.1,
+              "weighted": 9.43
+            },
+            "stress_fracture": {
+              "score": 86.67,
+              "weight": 0.15,
+              "weighted": 13.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 8.56,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 94.27,
+              "avg_latency_ms": 41.89,
+              "p95_latency_ms": 49.99,
+              "batch_throughput_sps": 73.96,
+              "gpu_memory_mb": 715.76
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 86.67,
+              "passed": 13,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          },
+          "verification_vs_gr1": {
+            "original_grade": "F",
+            "original_score": 59.05,
+            "new_grade": "D-",
+            "new_score": 60.87,
+            "grade_agreement": "mismatch",
+            "score_delta": 1.82
+          }
+        }
+      },
+      "elapsed_s": 5.6,
+      "notes": "Independent verification of GR1 failing base model. Ran the SAME grand_rounds_harness.py that Herm Zero used, as a fresh subprocess. Original GR1 grade: F (59.05). New grade: D- (60.87). Agreement: mismatch. No model weights modified. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-NONDET-en-lus",
+      "date": "2026-04-11T21:34:24.931798+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "3x back-to-back re-run of grand_rounds_harness.py base variant",
+      "protocol_script": "scripts/nondeterminism_check.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "runs": [
+          {
+            "grade": "D-",
+            "score": 60.87
+          },
+          {
+            "grade": "D-",
+            "score": 60.87
+          },
+          {
+            "grade": "D-",
+            "score": 60.87
+          }
+        ],
+        "classification": "stable_differs_from_gr1_environmental",
+        "gr1": {
+          "grade": "F",
+          "score": 59.05
+        }
+      },
+      "notes": "This patient was flagged as a 'still differs' mismatch after phase3a/phase3a_v2 re-tests. To classify, ran the harness 3 times back-to-back. All 3 runs produced IDENTICAL grade D-/60.87, but this differs from GR1's F/59.05. Classification: stable_differs_from_gr1_environmental. The harness is deterministic (same inputs always give same outputs), but something environmental changed between GR1 (2026-03-29) and today (2026-04-11) \u2014 most likely subtle numerical drift from a library/tokenizer update, a CUDA kernel path change, or a fresh download pulling slightly different Helsinki-NLP weights than what Herm Zero had. The score delta is always within one grade step and is reproducibly stable. No model modification was performed. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-CERT-en-lus",
+      "date": "2026-04-12T03:56:38.345772+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
+      "variants_tested": [
+        "base",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "D-",
+          "composite_score": 60.87,
+          "verdict": "CERTIFIED_POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 8.56,
+              "weight": 0.25,
+              "weighted": 2.14
+            },
+            "vitals": {
+              "score": 94.27,
+              "weight": 0.1,
+              "weighted": 9.43
+            },
+            "stress_fracture": {
+              "score": 86.67,
+              "weight": 0.15,
+              "weighted": 13.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 8.56,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 94.27,
+              "avg_latency_ms": 41.01,
+              "p95_latency_ms": 49.25,
+              "batch_throughput_sps": 76.0,
+              "gpu_memory_mb": 715.76
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 86.67,
+              "passed": 13,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        },
+        "ct2_int8": {
+          "composite_grade": "D-",
+          "composite_score": 60.87,
+          "verdict": "CERTIFIED_POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 8.56,
+              "weight": 0.25,
+              "weighted": 2.14
+            },
+            "vitals": {
+              "score": 94.27,
+              "weight": 0.1,
+              "weighted": 9.43
+            },
+            "stress_fracture": {
+              "score": 86.67,
+              "weight": 0.15,
+              "weighted": 13.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 8.56,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 94.27,
+              "avg_latency_ms": 37.89,
+              "p95_latency_ms": 51.07,
+              "batch_throughput_sps": 74.26,
+              "gpu_memory_mb": 715.76
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 86.67,
+              "passed": 13,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        }
+      },
+      "best_grade": "D-",
+      "best_score": 60.87,
+      "notes": "Dr. C independent certification of en-lus. Tested 2 variant(s): base, ct2_int8. Best variant grade: D- (60.87). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-REALCT2-lora-en-lus",
+      "date": "2026-04-12T12:43:56.560698+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
+      "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
+      "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 69 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-P3-en-lus",
+      "date": "2026-04-14T15:10:02.199141+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 72.4\u219258.0 (\u0394-14.4). No improvement \u2014 discarded.",
+      "protocol_script": "scripts/herm0_improvement_pipeline.py",
+      "notes": "Phase 3 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-04-11T14:59:57.422876",
+    "doctors_examined": 2,
+    "exams_total": 7,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "REEXPORTED_SAFETENSORS",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "All doctors agree base works",
+      "LoRA variant functional",
+      "CT2 reexported from broken pickle to safetensors (25Mar26)"
+    ],
+    "gr1_composite_grade": "F",
+    "gr1_composite_score": 59.05,
+    "gr1_verdict": "FAIL",
+    "phase3a_grade": "D-",
+    "phase3a_score": 60.87,
+    "phase3a_verdict": "DIFFERENT_FAILING_GRADE",
+    "phase3a_filed_at": "2026-04-11T20:28:19.806800+00:00",
+    "nondeterminism_classification": "stable_differs_from_gr1_environmental",
+    "dr_c_stable_grade": "D-",
+    "dr_c_stable_score": 60.87,
+    "drc_cert_grade": "D-",
+    "drc_cert_score": 60.87,
+    "drc_cert_verdict": "CERTIFIED_POOR",
+    "drc_cert_best_variant_grade": "D-",
+    "drc_cert_best_variant_score": 60.87,
+    "drc_cert_date": "2026-04-12T03:56:38.345772+00:00",
+    "drc_cert_doctor": "Opus 4.6 Opus-Claw (Dr. C)"
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-pair-en-lus",
+      "model_key": "en-lus",
+      "phase": 1,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_SEVERELY_DEGRADED: INT8 scores 38.5 points below base"
+    ],
+    "source3_paragraph_source": "native"
+  },
+  "quality_rating": {
+    "stars": 5.0,
+    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "half_stars": 10,
+    "label": "Gold Standard",
+    "avg_cert_score": 10.0,
+    "best_variant_score": 10,
+    "variants_tested": 3,
+    "source": "Kit OC1 Alpha certification"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero": {
+      "doctor": "Herm Zero (Dr. B)",
+      "source": "deep_audit_v4",
+      "timestamp": "2026-03-23T20:50:22.046678+00:00",
+      "variant_scores": {
+        "base": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        },
+        "lora": {
+          "raw_quality_score": 100.0,
+          "scale": "0-100",
+          "stars": 5.0,
+          "status": "ok"
+        }
+      },
+      "oc1_stars_reference": 5.0
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T05:19:53.765413+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "c1a2279cbde2760e",
+    "lora_hash": "b7de99e12b3a3676",
+    "files_identical": false,
+    "base_size_mb": 278.29,
+    "lora_size_mb": 278.29,
+    "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
+    "verification_date": "2026-03-23T20:50:22.046678+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [
+    {
+      "surgery_id": "H0-IMPROVE-ENLUS-20260328",
+      "timestamp": "2026-03-28T00:27:42.319025+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "attempted-fine-tune",
+      "variant_target": "herm0",
+      "outcome": "aborted",
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+    }
+  ],
+  "variant_count": 3
+}

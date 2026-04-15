@@ -1,0 +1,287 @@
+[
+  {
+    "pid": "bg-en",
+    "original_grade": "D",
+    "original_score": 65.32
+  },
+  {
+    "pid": "bnt-en",
+    "original_grade": "D",
+    "original_score": 64.28
+  },
+  {
+    "pid": "de-en",
+    "original_grade": "D+",
+    "original_score": 69.36
+  },
+  {
+    "pid": "en-ar",
+    "original_grade": "D",
+    "original_score": 66.21
+  },
+  {
+    "pid": "en-ber",
+    "original_grade": "F",
+    "original_score": 54.16
+  },
+  {
+    "pid": "en-bi",
+    "original_grade": "D",
+    "original_score": 63.67
+  },
+  {
+    "pid": "en-cy",
+    "original_grade": "D+",
+    "original_score": 67.74
+  },
+  {
+    "pid": "en-efi",
+    "original_grade": "D",
+    "original_score": 64.93
+  },
+  {
+    "pid": "en-fj",
+    "original_grade": "D",
+    "original_score": 63.23
+  },
+  {
+    "pid": "en-hy",
+    "original_grade": "D",
+    "original_score": 64.65
+  },
+  {
+    "pid": "en-jap",
+    "original_grade": "F",
+    "original_score": 59.23
+  },
+  {
+    "pid": "en-kj",
+    "original_grade": "D-",
+    "original_score": 61.82
+  },
+  {
+    "pid": "en-lus",
+    "original_grade": "F",
+    "original_score": 59.05
+  },
+  {
+    "pid": "en-rn",
+    "original_grade": "D-",
+    "original_score": 62.93
+  },
+  {
+    "pid": "en-st",
+    "original_grade": "D",
+    "original_score": 63.55
+  },
+  {
+    "pid": "en-xh",
+    "original_grade": "D+",
+    "original_score": 67.93
+  },
+  {
+    "pid": "fiu-en",
+    "original_grade": "D-",
+    "original_score": 60.68
+  },
+  {
+    "pid": "gmq-en",
+    "original_grade": "D",
+    "original_score": 65.7
+  },
+  {
+    "pid": "ha-en",
+    "original_grade": "F",
+    "original_score": 59.38
+  },
+  {
+    "pid": "ho-en",
+    "original_grade": "F",
+    "original_score": 56.47
+  },
+  {
+    "pid": "ine-en",
+    "original_grade": "F",
+    "original_score": 59.55
+  },
+  {
+    "pid": "itc-en",
+    "original_grade": "D",
+    "original_score": 66.71
+  },
+  {
+    "pid": "kwn-en",
+    "original_grade": "F",
+    "original_score": 58.48
+  },
+  {
+    "pid": "kwy-en",
+    "original_grade": "F",
+    "original_score": 58.95
+  },
+  {
+    "pid": "lg-en",
+    "original_grade": "D",
+    "original_score": 63.63
+  },
+  {
+    "pid": "loz-en",
+    "original_grade": "D-",
+    "original_score": 60.39
+  },
+  {
+    "pid": "lue-en",
+    "original_grade": "F",
+    "original_score": 56.61
+  },
+  {
+    "pid": "luo-en",
+    "original_grade": "F",
+    "original_score": 59.65
+  },
+  {
+    "pid": "mg-en",
+    "original_grade": "D-",
+    "original_score": 60.79
+  },
+  {
+    "pid": "mh-en",
+    "original_grade": "F",
+    "original_score": 57.12
+  },
+  {
+    "pid": "mkh-en",
+    "original_grade": "D-",
+    "original_score": 61.29
+  },
+  {
+    "pid": "mul-en",
+    "original_grade": "D-",
+    "original_score": 60.56
+  },
+  {
+    "pid": "niu-en",
+    "original_grade": "D-",
+    "original_score": 60.23
+  },
+  {
+    "pid": "pap-en",
+    "original_grade": "D",
+    "original_score": 64.6
+  },
+  {
+    "pid": "phi-en",
+    "original_grade": "D-",
+    "original_score": 62.68
+  },
+  {
+    "pid": "pon-en",
+    "original_grade": "F",
+    "original_score": 53.34
+  },
+  {
+    "pid": "ru-en",
+    "original_grade": "D+",
+    "original_score": 69.29
+  },
+  {
+    "pid": "sal-en",
+    "original_grade": "D-",
+    "original_score": 61.52
+  },
+  {
+    "pid": "sk-en",
+    "original_grade": "D",
+    "original_score": 64.67
+  },
+  {
+    "pid": "sla-en",
+    "original_grade": "D-",
+    "original_score": 61.74
+  },
+  {
+    "pid": "sn-en",
+    "original_grade": "D+",
+    "original_score": 67.03
+  },
+  {
+    "pid": "tc-bible-big-bat-en",
+    "original_grade": "D-",
+    "original_score": 62.08
+  },
+  {
+    "pid": "tc-bible-big-dra-en",
+    "original_grade": "D+",
+    "original_score": 67.46
+  },
+  {
+    "pid": "tc-bible-big-fiu-en",
+    "original_grade": "F",
+    "original_score": 53.54
+  },
+  {
+    "pid": "tc-bible-big-gmq-en",
+    "original_grade": "F",
+    "original_score": 57.65
+  },
+  {
+    "pid": "tc-bible-big-inc-en",
+    "original_grade": "D-",
+    "original_score": 62.94
+  },
+  {
+    "pid": "tc-bible-big-poz-en",
+    "original_grade": "F",
+    "original_score": 54.09
+  },
+  {
+    "pid": "tc-bible-big-sem-en",
+    "original_grade": "F",
+    "original_score": 53.3
+  },
+  {
+    "pid": "tc-bible-big-sla-en",
+    "original_grade": "D-",
+    "original_score": 61.04
+  },
+  {
+    "pid": "tiv-en",
+    "original_grade": "F",
+    "original_score": 58.89
+  },
+  {
+    "pid": "tl-en",
+    "original_grade": "D",
+    "original_score": 66.95
+  },
+  {
+    "pid": "tll-en",
+    "original_grade": "F",
+    "original_score": 57.79
+  },
+  {
+    "pid": "toi-en",
+    "original_grade": "F",
+    "original_score": 58.41
+  },
+  {
+    "pid": "ts-en",
+    "original_grade": "D-",
+    "original_score": 61.22
+  },
+  {
+    "pid": "vi-en",
+    "original_grade": "D",
+    "original_score": 64.81
+  },
+  {
+    "pid": "zle-en",
+    "original_grade": "D",
+    "original_score": 66.56
+  },
+  {
+    "pid": "zlw-en",
+    "original_grade": "D",
+    "original_score": 64.01
+  }
+]

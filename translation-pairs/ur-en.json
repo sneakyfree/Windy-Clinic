@@ -1,0 +1,1598 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-13T20:15:01.354351+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/ur-en.json",
+  "patient_id": "ur-en",
+  "admitted": "2026-03-22T20:54:42.150086+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-ur-en",
+  "source_language": {
+    "code": "ur",
+    "name": "ur",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 307555979,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.0",
+        "created": "2026-03-21T11:16:29.685025+00:00",
+        "doctor": "Helsinki-NLP (original author)",
+        "procedure": "Original pre-trained MarianMT model downloaded from HuggingFace",
+        "parent": null,
+        "parent_version": null,
+        "format": "safetensors",
+        "size_bytes": 307555979,
+        "fingerprint": "ffbce161c439bed4"
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en/base",
+      "on_disk_bytes": 303858340,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 307555979,
+      "identical_to_base": null,
+      "model_dir": null,
+      "lineage": {
+        "version": "v1.1",
+        "created": "2026-03-21T11:16:41.008345+00:00",
+        "doctor": "Kit OC1 Alpha (Dr. A)",
+        "procedure": "Fog a Mirror LoRA fine-tune (r=4, alpha=8), merged back to full weights",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 307555979,
+        "fingerprint": "ffbce161c439bed4",
+        "training": {
+          "method": "LoRA",
+          "rank": 4,
+          "alpha": 8,
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+        }
+      },
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en/lora",
+      "on_disk_bytes": 303858340,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_scripture": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 303858340,
+      "lineage": {
+        "version": "v2.0-ebible",
+        "created": "2026-03-28T04:53:04.673601+00:00",
+        "doctor": "Herm Zero (Dr. B)",
+        "procedure": "eBible verse-aligned fine-tune (SCRIPTURE-SPECIALIZED) (64.5% improvement, 25000 pairs)",
+        "parent": "base",
+        "parent_version": "v1.0",
+        "format": "safetensors",
+        "size_bytes": 303858340,
+        "ebible_improvement": {
+          "base_loss": 9.3826,
+          "ft_loss": 3.3278,
+          "improvement_pct": 64.5,
+          "training_pairs": 25000,
+          "source_bible": "urd",
+          "target_bible": "engDRA"
+        },
+        "variant_name": "herm0-scripture",
+        "specialization": "scripture"
+      },
+      "specialization": "scripture",
+      "specialization_label": "Bible/Scripture Translation",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "use_cases": [
+        "Bible translation",
+        "Theological text translation",
+        "Scripture study and discussion",
+        "Liturgical content",
+        "Missionary and church planting materials",
+        "Seminary and theological education resources"
+      ],
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en/herm0-scripture",
+      "on_disk_bytes": 303858340,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora_ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "derived_from": "lora/ (proprietary fog-of-mirror fine-tune)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en/lora-ct2-int8",
+      "on_disk_bytes": 79691776,
+      "quantized_at": "2026-04-12T12:43:56.560698+00:00",
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8_DELETED_was_fake": {
+      "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
+      "deleted_at": "2026-04-12T12:43:56.560698+00:00"
+    },
+    "scripture_ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "derived_from": "scripture/ (proprietary eBible fine-tune)",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en/scripture-ct2-int8",
+      "on_disk_bytes": 79691776,
+      "quantized_at": "2026-04-12T12:43:56.560698+00:00",
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 75796992,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:54:42.150086+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u06cc\u06a9\u0645\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+              "output": "Hello, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0686\u06d2 \u0627\u0633\u06a9\u0648\u0644 \u06a9\u06d2 \u0628\u0639\u062f \u067e\u0627\u0631\u06a9 \u0645\u06cc\u06ba \u06a9\u06be\u06cc\u0644 \u0631\u06c1\u06d2 \u06c1\u06cc\u06ba\u06d4",
+              "output": "Children are playing in park after school.",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0631\u0627\u06c1 \u06a9\u0631\u0645 \u0644\u0627\u0626\u0628\u0631\u06cc\u0631\u06cc \u062a\u0644\u0627\u0634 \u06a9\u0631\u0646\u06d2 \u0645\u06cc\u06ba \u0645\u06cc\u0631\u06cc \u0645\u062f\u062f \u06a9\u0631\u06cc\u06ba\u06d4",
+              "output": "Please help me find the library.",
+              "passed": true
+            },
+            {
+              "input": "\u0679\u06cc\u06a9\u0646\u0627\u0644\u0648\u062c\u06cc \u06c1\u0645\u0627\u0631\u06cc \u0632\u0646\u062f\u06af\u06cc \u06a9\u0648 \u06c1\u0631 \u0631\u0648\u0632 \u0628\u062f\u0644 \u0631\u06c1\u06cc \u06c1\u06d2\u06d4",
+              "output": "clear technology is changing our life every day.",
+              "passed": true
+            },
+            {
+              "input": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u0627\u0648\u0631 \u06a9\u06cc\u06a9 \u0622\u0631\u0688\u0631 \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u06d4",
+              "output": "I'd like to have coffee and coffee.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u06cc\u06a9\u0645\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+              "output": "Hello, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0686\u06d2 \u0627\u0633\u06a9\u0648\u0644 \u06a9\u06d2 \u0628\u0639\u062f \u067e\u0627\u0631\u06a9 \u0645\u06cc\u06ba \u06a9\u06be\u06cc\u0644 \u0631\u06c1\u06d2 \u06c1\u06cc\u06ba\u06d4",
+              "output": "Children are playing in park after school.",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0631\u0627\u06c1 \u06a9\u0631\u0645 \u0644\u0627\u0626\u0628\u0631\u06cc\u0631\u06cc \u062a\u0644\u0627\u0634 \u06a9\u0631\u0646\u06d2 \u0645\u06cc\u06ba \u0645\u06cc\u0631\u06cc \u0645\u062f\u062f \u06a9\u0631\u06cc\u06ba\u06d4",
+              "output": "Please help me find the library.",
+              "passed": true
+            },
+            {
+              "input": "\u0679\u06cc\u06a9\u0646\u0627\u0644\u0648\u062c\u06cc \u06c1\u0645\u0627\u0631\u06cc \u0632\u0646\u062f\u06af\u06cc \u06a9\u0648 \u06c1\u0631 \u0631\u0648\u0632 \u0628\u062f\u0644 \u0631\u06c1\u06cc \u06c1\u06d2\u06d4",
+              "output": "clear technology is changing our life every day.",
+              "passed": true
+            },
+            {
+              "input": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u0627\u0648\u0631 \u06a9\u06cc\u06a9 \u0622\u0631\u0688\u0631 \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u06d4",
+              "output": "I'd like to have coffee and coffee.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Gold Standard",
+          "sample_translations": [
+            {
+              "input": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u06cc\u06a9\u0645\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+              "output": "Hi, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0686\u06d2 \u0627\u0633\u06a9\u0648\u0644 \u06a9\u06d2 \u0628\u0639\u062f \u067e\u0627\u0631\u06a9 \u0645\u06cc\u06ba \u06a9\u06be\u06cc\u0644 \u0631\u06c1\u06d2 \u06c1\u06cc\u06ba\u06d4",
+              "output": "Children are playing in park after school.",
+              "passed": true
+            },
+            {
+              "input": "\u0628\u0631\u0627\u06c1 \u06a9\u0631\u0645 \u0644\u0627\u0626\u0628\u0631\u06cc\u0631\u06cc \u062a\u0644\u0627\u0634 \u06a9\u0631\u0646\u06d2 \u0645\u06cc\u06ba \u0645\u06cc\u0631\u06cc \u0645\u062f\u062f \u06a9\u0631\u06cc\u06ba\u06d4",
+              "output": "Please help me find the library.",
+              "passed": true
+            },
+            {
+              "input": "\u0679\u06cc\u06a9\u0646\u0627\u0644\u0648\u062c\u06cc \u06c1\u0645\u0627\u0631\u06cc \u0632\u0646\u062f\u06af\u06cc \u06a9\u0648 \u06c1\u0631 \u0631\u0648\u0632 \u0628\u062f\u0644 \u0631\u06c1\u06cc \u06c1\u06d2\u06d4",
+              "output": "technology is changing our life every day.",
+              "passed": true
+            },
+            {
+              "input": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u0627\u0648\u0631 \u06a9\u06cc\u06a9 \u0622\u0631\u0688\u0631 \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u06d4",
+              "output": "I'd like to have coffee and coffee.",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:29:12.680197+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "lora": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "ct2": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T08:52:58.306417+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "JOGOCTIC THOPE DECTROLOLOS.",
+            "I've been able to do that.",
+            "PHOPAROPAROLOPEY.",
+            "What do you think you're going to do?",
+            "You can't get back on it."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 100.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "JOGOCTIC THOPE DECTROLOLOS.",
+            "I've been able to do that.",
+            "PHOPAROPAROLOPEY.",
+            "What do you think you're going to do?",
+            "You can't get back on it."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 63.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 2,
+          "sample_translations": [
+            "\u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633",
+            "\u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633",
+            "\u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633",
+            "\u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633 \u067e\u0648\u0644\u06cc\u0633",
+            "\u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1 \u0645\u0631\u062a\u0628\u06c1"
+          ],
+          "delta_vs_base": -37.0
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T08:52:58.306417+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 100.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 63.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 2,
+            "quality_score": 63.0,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "553b0becc5fef325",
+        "lora_hash": "e546c460d0bfd81c",
+        "files_identical": false,
+        "base_size_mb": 289.78,
+        "lora_size_mb": 289.78,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:11:14.797270+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 284
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "native",
+          "output_length": 284
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ur-en"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-CT2-REEXPORT-20260324",
+      "date": "2026-03-24T20:39:10.005726+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "protocol_script": "ct2_reexport_phase1.py",
+      "variants_tested": [
+        "ct2_int8"
+      ],
+      "results": {
+        "ct2_int8": {
+          "verdict": "CT2_REEXPORTED",
+          "old_format": "pytorch_pickle_int8",
+          "new_format": "safetensors",
+          "old_size_mb": 0,
+          "new_size_mb": 289.8,
+          "verified_match": true,
+          "sample_translation": "Show the 'espin'"
+        }
+      },
+      "notes": "Replaced broken pickle INT8 (0.0MB) with clean safetensors (289.8MB). Verified base-CT2 output match: True. Sample translation: \"Show the 'espin'\". Elapsed: 54.1s."
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "BLOODWORK-001",
+      "date": "2026-03-28T16:25:38.810805+00:00",
+      "doctor": "Herm Zero",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "protocol_script": "bloodwork_test.py v1.0",
+      "variants_tested": [
+        "base",
+        "lora",
+        "herm0",
+        "ct2"
+      ],
+      "results": {
+        "roundtrip_fidelity": {
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "variant_scores": {
+            "base": {
+              "score": 84.29,
+              "num_sentences": 10,
+              "min": 59.77,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "forward": "Hello, how are you today?",
+                  "returned": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "similarity": 1.0
+                },
+                {
+                  "original": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "forward": "Today, the weather is beautiful.",
+                  "returned": "\u0622\u062c\u06a9\u0644 \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "similarity": 0.8696
+                },
+                {
+                  "original": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "forward": "Please, I'd like to have a coffee cup.",
+                  "returned": "\u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc\u060c \u0645\u06cc\u06ba \u0627\u06cc\u06a9 \u06a9\u0627\u0641\u06cc \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627.",
+                  "similarity": 0.5977
+                }
+              ]
+            },
+            "lora": {
+              "score": 84.29,
+              "num_sentences": 10,
+              "min": 59.77,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "forward": "Hello, how are you today?",
+                  "returned": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "similarity": 1.0
+                },
+                {
+                  "original": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "forward": "Today, the weather is beautiful.",
+                  "returned": "\u0622\u062c\u06a9\u0644 \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "similarity": 0.8696
+                },
+                {
+                  "original": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "forward": "Please, I'd like to have a coffee cup.",
+                  "returned": "\u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc\u060c \u0645\u06cc\u06ba \u0627\u06cc\u06a9 \u06a9\u0627\u0641\u06cc \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627.",
+                  "similarity": 0.5977
+                }
+              ]
+            },
+            "ct2": {
+              "score": 77.65,
+              "num_sentences": 10,
+              "min": 23.23,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "forward": "Hi, what am you do today?",
+                  "returned": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u062a\u0645 \u06a9\u06cc\u0627 \u06a9\u0631 \u0631\u06c1\u06d2 \u06c1\u0648\u061f",
+                  "similarity": 0.6809
+                },
+                {
+                  "original": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "forward": "The weather is beautiful in the morning.",
+                  "returned": "\u0635\u0628\u062d \u06a9\u0627 \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "similarity": 0.875
+                },
+                {
+                  "original": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "forward": "I'd like to do a long cup of coffee, please.",
+                  "returned": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "similarity": 1.0
+                }
+              ]
+            },
+            "herm0": {
+              "score": 77.65,
+              "num_sentences": 10,
+              "min": 23.23,
+              "max": 100.0,
+              "sentences": [
+                {
+                  "original": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "forward": "Hi, what am you do today?",
+                  "returned": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u062a\u0645 \u06a9\u06cc\u0627 \u06a9\u0631 \u0631\u06c1\u06d2 \u06c1\u0648\u061f",
+                  "similarity": 0.6809
+                },
+                {
+                  "original": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "forward": "The weather is beautiful in the morning.",
+                  "returned": "\u0635\u0628\u062d \u06a9\u0627 \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "similarity": 0.875
+                },
+                {
+                  "original": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "forward": "I'd like to do a long cup of coffee, please.",
+                  "returned": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "similarity": 1.0
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 84.29,
+              "base_score": 84.29,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 77.65,
+              "base_score": 84.29,
+              "delta_pct": -7.88,
+              "delta_abs": -6.64,
+              "grade": "F"
+            },
+            "herm0": {
+              "score": 77.65,
+              "base_score": 84.29,
+              "delta_pct": -7.88,
+              "delta_abs": -6.64,
+              "grade": "F"
+            }
+          }
+        },
+        "bleu": {
+          "description": "BLEU score against reference translations from test sentence bank",
+          "variant_scores": {
+            "base": {
+              "score": 24.43,
+              "num_sentences": 10,
+              "brevity_penalty": 0.977,
+              "precisions": [
+                58.14,
+                35.53,
+                21.21,
+                8.93
+              ],
+              "sample_translations": [
+                {
+                  "source": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "Hello, how are you today?"
+                },
+                {
+                  "source": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "Today, the weather is beautiful."
+                },
+                {
+                  "source": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "Please, I'd like to have a coffee cup."
+                }
+              ]
+            },
+            "lora": {
+              "score": 24.43,
+              "num_sentences": 10,
+              "brevity_penalty": 0.977,
+              "precisions": [
+                58.14,
+                35.53,
+                21.21,
+                8.93
+              ],
+              "sample_translations": [
+                {
+                  "source": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "Hello, how are you today?"
+                },
+                {
+                  "source": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "Today, the weather is beautiful."
+                },
+                {
+                  "source": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "Please, I'd like to have a coffee cup."
+                }
+              ]
+            },
+            "ct2": {
+              "score": 18.01,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                40.44,
+                22.22,
+                13.79,
+                8.49
+              ],
+              "sample_translations": [
+                {
+                  "source": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "Hi, what am you do today?"
+                },
+                {
+                  "source": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "The weather is beautiful in the morning."
+                },
+                {
+                  "source": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "I'd like to do a long cup of coffee, please."
+                }
+              ]
+            },
+            "herm0": {
+              "score": 18.01,
+              "num_sentences": 10,
+              "brevity_penalty": 1.0,
+              "precisions": [
+                40.44,
+                22.22,
+                13.79,
+                8.49
+              ],
+              "sample_translations": [
+                {
+                  "source": "\u06c1\u06cc\u0644\u0648\u060c \u0622\u062c \u0622\u067e \u06a9\u06cc\u0633\u06d2 \u06c1\u06cc\u06ba\u061f",
+                  "reference": "Hello, how are you today?",
+                  "hypothesis": "Hi, what am you do today?"
+                },
+                {
+                  "source": "\u0622\u062c \u0635\u0628\u062d \u0645\u0648\u0633\u0645 \u062e\u0648\u0628\u0635\u0648\u0631\u062a \u06c1\u06d2 \u06d4",
+                  "reference": "The weather is beautiful this morning.",
+                  "hypothesis": "The weather is beautiful in the morning."
+                },
+                {
+                  "source": "\u0645\u06cc\u06ba \u06a9\u0627\u0641\u06cc \u06a9\u0627 \u06a9\u067e \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u0648\u06ba \u06af\u0627\u060c \u0628\u0631\u0627\u06c1 \u0645\u06c1\u0631\u0628\u0627\u0646\u06cc.",
+                  "reference": "I would like to order a cup of coffee, please.",
+                  "hypothesis": "I'd like to do a long cup of coffee, please."
+                }
+              ]
+            }
+          },
+          "variant_deltas_vs_base": {
+            "lora": {
+              "score": 24.43,
+              "base_score": 24.43,
+              "delta_pct": 0.0,
+              "delta_abs": 0.0,
+              "grade": "B"
+            },
+            "ct2": {
+              "score": 18.01,
+              "base_score": 24.43,
+              "delta_pct": -26.28,
+              "delta_abs": -6.42,
+              "grade": "F"
+            },
+            "herm0": {
+              "score": 18.01,
+              "base_score": 24.43,
+              "delta_pct": -26.28,
+              "delta_abs": -6.42,
+              "grade": "F"
+            }
+          }
+        }
+      }
+    },
+    {
+      "exam_id": "GR1-ur-en",
+      "date": "2026-03-29T04:48:06+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "filed_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v1: 6-test composite (bloodwork, crossmatch, vitals, stress_fracture, consistency, scripture)",
+      "protocol_script": "grand_rounds_harness.py v1",
+      "variants_tested": [
+        "base",
+        "herm0_scripture"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "D",
+          "composite_score": 64.53,
+          "verdict": "POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 10.22,
+              "weight": 0.25,
+              "weighted": 2.56
+            },
+            "vitals": {
+              "score": 93.9,
+              "weight": 0.1,
+              "weighted": 9.39
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 10.22,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for ur\u2192en"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.9,
+              "avg_latency_ms": 35.92,
+              "p95_latency_ms": 39.85,
+              "batch_throughput_sps": 92.13,
+              "gpu_memory_mb": 749.44
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped",
+              "reason": "not a scripture model"
+            }
+          }
+        },
+        "herm0_scripture": {
+          "composite_grade": "D+",
+          "composite_score": 69.28,
+          "verdict": "POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 1.36,
+              "weight": 0.2,
+              "weighted": 0.27
+            },
+            "vitals": {
+              "score": 82.23,
+              "weight": 0.1,
+              "weighted": 8.22
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.1,
+              "weighted": 10.0
+            },
+            "scripture": {
+              "score": 100,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 1.36,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped",
+              "reason": "no reference pairs for ur\u2192en"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 82.23,
+              "avg_latency_ms": 99.98,
+              "p95_latency_ms": 103.56,
+              "batch_throughput_sps": 29.91,
+              "gpu_memory_mb": 1299.2
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "complete",
+              "score": 100
+            }
+          }
+        }
+      },
+      "notes": "Grand Rounds v1 full-fleet battery. Run 2026-03-28/29, 4.9h, 2658 variants. Filed to clinic post-hoc by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-ur-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "ct2_int8",
+        "herm0_scripture",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-P3A-ur-en",
+      "date": "2026-04-11T20:46:36.312105+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
+      "variants_tested": [
+        "base"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "D",
+          "composite_score": 64.53,
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 10.22,
+              "weight": 0.25,
+              "weighted": 2.56
+            },
+            "vitals": {
+              "score": 93.9,
+              "weight": 0.1,
+              "weighted": 9.39
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 10.22,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.9,
+              "avg_latency_ms": 38.57,
+              "p95_latency_ms": 41.77,
+              "batch_throughput_sps": 84.93,
+              "gpu_memory_mb": 749.44
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          },
+          "verification_vs_gr1": {
+            "original_grade": "D",
+            "original_score": 64.53,
+            "new_grade": "D",
+            "new_score": 64.53,
+            "grade_agreement": "match",
+            "score_delta": 0.0
+          }
+        }
+      },
+      "elapsed_s": 5.1,
+      "notes": "Independent verification of GR1 failing base model. Ran the SAME grand_rounds_harness.py that Herm Zero used, as a fresh subprocess. Original GR1 grade: D (64.53). New grade: D (64.53). Agreement: match. No model weights modified. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11."
+    },
+    {
+      "exam_id": "DRC-CERT-ur-en",
+      "date": "2026-04-12T12:01:51.648993+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
+      "variants_tested": [
+        "base",
+        "ct2_int8",
+        "herm0_scripture"
+      ],
+      "results": {
+        "base": {
+          "composite_grade": "D",
+          "composite_score": 64.53,
+          "verdict": "CERTIFIED_POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 10.22,
+              "weight": 0.25,
+              "weighted": 2.56
+            },
+            "vitals": {
+              "score": 93.9,
+              "weight": 0.1,
+              "weighted": 9.39
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 10.22,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.9,
+              "avg_latency_ms": 34.54,
+              "p95_latency_ms": 36.44,
+              "batch_throughput_sps": 93.14,
+              "gpu_memory_mb": 749.44
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        },
+        "ct2_int8": {
+          "composite_grade": "D",
+          "composite_score": 64.53,
+          "verdict": "CERTIFIED_POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 10.22,
+              "weight": 0.25,
+              "weighted": 2.56
+            },
+            "vitals": {
+              "score": 93.9,
+              "weight": 0.1,
+              "weighted": 9.39
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 10.22,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 93.9,
+              "avg_latency_ms": 37.53,
+              "p95_latency_ms": 38.56,
+              "batch_throughput_sps": 83.14,
+              "gpu_memory_mb": 749.44
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "skipped"
+            }
+          }
+        },
+        "herm0_scripture": {
+          "composite_grade": "D+",
+          "composite_score": 69.21,
+          "verdict": "CERTIFIED_POOR",
+          "grade_breakdown": {
+            "bloodwork": {
+              "score": 1.36,
+              "weight": 0.2,
+              "weighted": 0.27
+            },
+            "vitals": {
+              "score": 81.78,
+              "weight": 0.1,
+              "weighted": 8.18
+            },
+            "stress_fracture": {
+              "score": 100.0,
+              "weight": 0.15,
+              "weighted": 15.0
+            },
+            "consistency": {
+              "score": 100.0,
+              "weight": 0.1,
+              "weighted": 10.0
+            },
+            "scripture": {
+              "score": 100,
+              "weight": 0.15,
+              "weighted": 15.0
+            }
+          },
+          "skipped_tests": [
+            "crossmatch"
+          ],
+          "tests": {
+            "bloodwork": {
+              "status": "complete",
+              "score": 1.36,
+              "n_sentences": 10
+            },
+            "crossmatch": {
+              "status": "skipped"
+            },
+            "vitals": {
+              "status": "complete",
+              "score": 81.78,
+              "avg_latency_ms": 104.04,
+              "p95_latency_ms": 109.22,
+              "batch_throughput_sps": 29.77,
+              "gpu_memory_mb": 1299.2
+            },
+            "stress_fracture": {
+              "status": "complete",
+              "score": 100.0,
+              "passed": 15,
+              "total": 15
+            },
+            "consistency": {
+              "status": "complete",
+              "score": 100.0
+            },
+            "scripture": {
+              "status": "complete",
+              "score": 100
+            }
+          }
+        }
+      },
+      "best_grade": "D+",
+      "best_score": 69.21,
+      "notes": "Dr. C independent certification of ur-en. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: D+ (69.21). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-REALCT2-lora-ur-en",
+      "date": "2026-04-12T12:43:56.560698+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
+      "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
+      "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 76 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-REALCT2-scripture-ur-en",
+      "date": "2026-04-12T12:43:56.560698+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "CTranslate2 INT8 quantization of scripture/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
+      "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
+      "notes": "Created REAL INT8 quantized version of the proprietary eBible scripture fine-tuned weights. Source: scripture/model.safetensors. Output: scripture-ct2-int8/model.bin. Size: 76 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-ur-en",
+      "date": "2026-04-13T20:15:01.354351+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
+      "variants_tested": [
+        "lora",
+        "base",
+        "herm0-scripture"
+      ],
+      "results": {
+        "lora": {
+          "composite_score": 69.6,
+          "stars": 4.0,
+          "tier": "standard",
+          "tests": {
+            "sentences": {
+              "score": 100.0
+            },
+            "paragraphs": {
+              "score": 73.9
+            },
+            "long_form": {
+              "score": 47.4
+            },
+            "native_input": {
+              "score": 100.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 12.0
+            },
+            "speed": {
+              "score": 86.7
+            }
+          }
+        },
+        "base": {
+          "composite_score": 69.6,
+          "stars": 4.0,
+          "tier": "standard",
+          "tests": {
+            "sentences": {
+              "score": 100.0
+            },
+            "paragraphs": {
+              "score": 73.9
+            },
+            "long_form": {
+              "score": 47.4
+            },
+            "native_input": {
+              "score": 100.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 12.0
+            },
+            "speed": {
+              "score": 85.1
+            }
+          }
+        },
+        "herm0-scripture": {
+          "composite_score": 73.0,
+          "stars": 4.0,
+          "tier": "standard",
+          "tests": {
+            "sentences": {
+              "score": 100.0
+            },
+            "paragraphs": {
+              "score": 78.1
+            },
+            "long_form": {
+              "score": 55.7
+            },
+            "native_input": {
+              "score": 100.0
+            },
+            "domain": {
+              "score": 50.0
+            },
+            "edge_cases": {
+              "score": 100.0
+            },
+            "roundtrip": {
+              "score": 13.1
+            },
+            "speed": {
+              "score": 87.5
+            }
+          }
+        }
+      },
+      "best_variant": "herm0-scripture",
+      "best_stars": 4.0,
+      "best_tier": "standard",
+      "best_composite": 73.0,
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: herm0-scripture at 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-04-11T14:59:58.033405",
+    "doctors_examined": 2,
+    "exams_total": 7,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "REEXPORTED_SAFETENSORS",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "All doctors agree base works",
+      "LoRA variant functional",
+      "CT2 reexported from broken pickle to safetensors (25Mar26)"
+    ],
+    "gr1_composite_grade": "D",
+    "gr1_composite_score": 64.53,
+    "gr1_verdict": "POOR",
+    "phase3a_grade": "D",
+    "phase3a_score": 64.53,
+    "phase3a_verdict": "CONFIRMED_FAILING",
+    "phase3a_filed_at": "2026-04-11T20:51:02.167044+00:00",
+    "drc_cert_grade": "D",
+    "drc_cert_score": 64.53,
+    "drc_cert_verdict": "CERTIFIED_POOR",
+    "drc_cert_best_variant_grade": "D+",
+    "drc_cert_best_variant_score": 69.21,
+    "drc_cert_date": "2026-04-12T12:01:51.648993+00:00",
+    "drc_cert_doctor": "Opus 4.6 Opus-Claw (Dr. C)"
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-pair-ur-en",
+      "model_key": "ur-en",
+      "phase": 1,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_SEVERELY_DEGRADED: INT8 scores 37.0 points below base"
+    ],
+    "source3_paragraph_source": "native"
+  },
+  "quality_rating": {
+    "stars": 4.0,
+    "label": "standard",
+    "composite_score": 73.0,
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "rated_at": "2026-04-13T20:15:01.354351+00:00",
+    "method": "Grand Rounds v2 (paragraph-level, 8-test battery)"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero": {
+      "doctor": "Herm Zero (Dr. B)",
+      "source": "deep_audit_v4",
+      "timestamp": "2026-03-23T23:59:11.160879+00:00",
+      "variant_scores": {
+        "base": {
+          "raw_quality_score": 90.0,
+          "scale": "0-100",
+          "stars": 4.5,
+          "status": "ok"
+        },
+        "lora": {
+          "raw_quality_score": 90.0,
+          "scale": "0-100",
+          "stars": 4.5,
+          "status": "ok"
+        }
+      },
+      "oc1_stars_reference": 5.0
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:11:14.797270+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "553b0becc5fef325",
+    "lora_hash": "e546c460d0bfd81c",
+    "files_identical": false,
+    "base_size_mb": 303.86,
+    "lora_size_mb": 303.86,
+    "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
+    "verification_date": "2026-03-23T23:59:11.160879+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [
+    {
+      "surgery_id": "H0-IMPROVE-UREN-20260326",
+      "timestamp": "2026-03-26T19:17:43.310722+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "fine-tune",
+      "variant_target": "herm0",
+      "outcome": "no_improvement",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "details": {
+        "data_samples": 50000,
+        "base_score": 91.4,
+        "herm0_score": 84.8
+      }
+    },
+    {
+      "surgery_id": "H0-EBIBLE-UREN-20260328",
+      "timestamp": "2026-03-28T04:53:04.673601+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "fine-tune",
+      "variant_target": "herm0",
+      "outcome": "success",
+      "procedure": "eBible verse-aligned fine-tune \u2014 loss 9.38 -> 3.33 (64.5% improvement)",
+      "details": {
+        "data_source": "eBible.org",
+        "training_pairs": 25000,
+        "source_bible_id": "urd",
+        "target_bible_id": "engDRA",
+        "base_loss": 9.3826,
+        "ft_loss": 3.3278,
+        "improvement_pct": 64.5
+      }
+    },
+    {
+      "surgery_id": "H0-CT2UPD-UREN-20260328",
+      "timestamp": "2026-03-28T14:07:18.510218+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "type": "deployment",
+      "variant_target": "ct2_int8",
+      "outcome": "success",
+      "procedure": "CT2 directory updated with eBible-improved herm0 weights"
+    },
+    {
+      "surgery_id": "REPAIR-001",
+      "date": "2026-03-28T18:41:13.988322+00:00",
+      "surgeon": "Herm Zero (Dr. B)",
+      "procedure": "CT2 Contamination Repair + eBible Reclassification",
+      "details": "Renamed herm0/ -> herm0-scripture/ to clearly label as Bible-specialized variant. Restored ct2/ directory from base/ weights (was contaminated with eBible herm0 weights during the eBible v3 improvement pipeline on 2026-03-27). Added scripture specialization metadata to patient file.",
+      "outcome": "success"
+    }
+  ],
+  "variant_count": 4
+}

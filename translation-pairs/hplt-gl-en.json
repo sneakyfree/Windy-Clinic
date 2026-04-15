@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-gl-en.json",
+  "patient_id": "hplt-gl-en",
+  "admitted": "2026-03-22T20:00:41.677525+00:00",
+  "source_repo": "HPLT/translate-gl-en-v1.0-hplt",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-gl-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-gl-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:00:41.677525+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar compar influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar compar influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar compar influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar compar influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Ola, como est\u00e1s hoxe?",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos lodge lodge lodge influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes Includeschuschus xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed Crime Crimeprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito apetito glacial glacial glacialservizoservizoSe\u00f1orSe\u00f1or",
+              "passed": false
+            },
+            {
+              "input": "O tempo \u00e9 fermoso esta ma\u00f1\u00e1.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes Includeschuschus xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n Crime Crime Crimeprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": false
+            },
+            {
+              "input": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet buried buried heated heated d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes Includeschuschus xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed Crime Crimeprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": false
+            },
+            {
+              "input": "A r\u00e1pida raposa marr\u00f3n salta por riba do can preguiceiro.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda desaf\u00eda compar compar influences influences influences influences Includes Includes Includes Includes Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes Includeschuschus xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9ricoprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": false
+            },
+            {
+              "input": "A intelixencia artificial est\u00e1 transformando o mundo.",
+              "output": "libreto libreto libreto denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos asasinatos compar compar compar influences influences influences influences Includes Includes Includes Phoenician Phoenician Phoeniciannetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes Includeschuschus xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n Crime Crime Crimeprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCH Clinical Clinical apetito apetito apetito apetito apetito glacial glacial glacial Heidfeld Heidfeld Heidfeld Heidfeld",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:02:26.432978+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:53:24.056232+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influences laureado laureado Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes sistem\u00e1tica sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico Latest Latest Latest Latest.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n Crime Crime Crimeprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto $15 $152.62.62.6 incapacit incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Cola Colarigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto.[42].[42].[42].[42].[42] Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperation Haute Haute Haute Beaumont Beaumont Beaumont Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia pre\u00f1ada pre\u00f1ada seating seating glacial glacial indicando indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobab baobab cinema cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofeminino Entering Entering Entering Entering calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylesslylessly Lausanne Lausannebadbadbad Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo Resumo comet cometOperationOperationOperationOperation comet comet comet comet nm nm accusation accusationOperationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One One One One One ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade baobab baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico Latest Latest Latest Latest.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n xen\u00e9rico xen\u00e9rico xen\u00e9ricoprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico comet cometrigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto.[42].[42] Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Sun Sun Sun anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depressionzolzolzol Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip Philip pilgrim pilgrim Dec Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreakingbreaking cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated heated heated Effect Effect Effect Effect Effectbadbadbadbad Beaumont Beaumont baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libretolesslylesslylessly baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculation calculation Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausannebadbadbad Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical pills pills Resumo Resumo cometOperationOperationOperationOperationOperation comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One One One One One One ourens\u00e1n ourens\u00e1n Comenza Comenza Comenza Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Colarigrigrigrig exceptions exceptions looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Sun Sun Sun Sun Sun\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto libreto Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depression Beaumont Beaumont Beaumont Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema $15 $15 $15 heated heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated lectures lectures lectures Haiti Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo protestantes protestantes protestantesOperationOperationOperationOperation comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto $15 $152.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Cola Colarigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto.[42].[42].[42].[42].[42] Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperation Depression Depressionzolzolzol Dec Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia pre\u00f1ada pre\u00f1ada seating seating glacial glacial indicando indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema $15 $15 $15 heated heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofeminino Entering Entering Entering calculation calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated lectures lectures lectures Haiti Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo Resumo protestantes protestantesOperationOperationOperationOperation comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n xen\u00e9rico xen\u00e9rico xen\u00e9ricoprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico comet cometrigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto.[42].[42] Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Sun Sun Sun anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depression Beaumont Beaumont Dec Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated heated heated Effect Effect Effect Effect Effectbadbadbadbad Beaumont Beaumont baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculationfemininofeminino heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenza Comenzalesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Comenza Comenza influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical pills pills Resumo Resumo protestantes protestantes protestantes Comenza Comenza Comenza Comenza comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n Comenza Comenza Comenza Arcade Arcade Arcade baobab baobab baobab"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influences laureado laureado Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes sistem\u00e1tica sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico Latest Latest Latest Latest.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n Crime Crime Crimeprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto $15 $152.62.62.6 incapacit incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Cola Colarigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto.[42].[42].[42].[42].[42] Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperation Haute Haute Haute Beaumont Beaumont Beaumont Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia pre\u00f1ada pre\u00f1ada seating seating glacial glacial indicando indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobab baobab cinema cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofeminino Entering Entering Entering Entering calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylesslylessly Lausanne Lausannebadbadbad Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo Resumo comet cometOperationOperationOperationOperation comet comet comet comet nm nm accusation accusationOperationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One One One One One ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade baobab baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico Latest Latest Latest Latest.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n xen\u00e9rico xen\u00e9rico xen\u00e9ricoprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico comet cometrigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto.[42].[42] Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Sun Sun Sun anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depressionzolzolzol Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip Philip pilgrim pilgrim Dec Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreakingbreaking cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated heated heated Effect Effect Effect Effect Effectbadbadbadbad Beaumont Beaumont baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libretolesslylesslylessly baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculation calculation Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausannebadbadbad Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical pills pills Resumo Resumo cometOperationOperationOperationOperationOperation comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One One One One One One ourens\u00e1n ourens\u00e1n Comenza Comenza Comenza Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito apetito orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Colarigrigrigrig exceptions exceptions looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Sun Sun Sun Sun Sun\u00edbel\u00edbel\u00edbel\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto libreto Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depression Beaumont Beaumont Beaumont Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema $15 $15 $15 heated heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated lectures lectures lectures Haiti Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo protestantes protestantes protestantes Comenza Comenza Comenza Comenza comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n showed showed Teddyprehensiprehensiprehensiavaava Sun Sun Sun levas levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heatedCHCHCH apetito apetito apetito apetito orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto $15 $152.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Cola Cola Colarigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial glacial glacial glacial glacial glacial Haiti Haiti libreto libreto libreto libreto.[42].[42].[42].[42].[42] Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperation Depression Depressionzolzolzol Dec Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia pre\u00f1ada pre\u00f1ada seating seating glacial glacial indicando indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema $15 $15 $15 heated heated heated heated heated Effect Effect Effect Effect Effect Effectbadbadbadbadbad baobab baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofeminino Entering Entering Entering calculation calculation calculation calculation Sofia Sofia heated heated heated heated heated heated heated heated heated heated heated heated heated lectures lectures lectures Haiti Haiti Haiti Haiti Haiti Comenza Comenzalesslylesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia acadar acadar influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical Clinical Clinical Resumo Resumo Resumo protestantes protestantesOperationOperationOperationOperation comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n ourens\u00e1n Comenza Comenza Arcade Arcade Arcade baobab baobab baobab",
+            "libreto libreto denying denying denying denying\u00edbel\u00edbel\u00edbel\u00edbel estudiosos estudiosos estudiosos estudiosos estudiosos estudiosos asasinatos asasinatos asasinatos desaf\u00eda compar compar compar influences influencesnetnet Includes Includes Includes Phoenician Phoeniciannetnetnetnet Visitantes Visitantes d\u00edgoche d\u00edgoche d\u00edgoche avanzado avanzado avanzado avanzado heated heated heated heated heated limpeza limpeza limpeza limpeza Includes Includes Includes sistem\u00e1tica sistem\u00e1tica xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico xen\u00e9rico.[23].[23] Sun Sun Sun Sun Includes Includes Includes Includes televisi\u00f3n televisi\u00f3n televisi\u00f3n xen\u00e9rico xen\u00e9rico xen\u00e9ricoprehensiprehensiavaavaava Sun Sun Sun levas heated heated heated decisively decisively decisively heated heated heated heated heated heated heated heated heated heated heated heated Clinical Clinical Clinical apetito apetito apetito orixinada orixinada orixinada orixinada Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld Heidfeld HeidfeldEZEZEZEZEZEZ libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto2.62.62.62.6 incapacit incapacitac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico comet cometrigrigrigrig looked looked looked looked looked Sun Sun Sun Sun Sun Sun Sun Sun Sun Philip Philip Philip Haute Haute Haute Haute Haute Haute Haute Haute recite recite Edge Edge Edge Edge Edge Sun Sun Sun Sun\u00edbel\u00edbel glacial glacial glacial glacial glacial libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto libreto.[42].[42] Haute Haute Haute Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumont Beaumontac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Sun Sun Sun anabolic anabolic Achega Achega Achega Iluminaci\u00f3n Beaumont Beaumont Beaumont Beaumont Beaumont Iluminaci\u00f3n Iluminaci\u00f3n literature literature literatureOperationOperationOperation Depression Depression Beaumont Beaumont Dec Dec Dec Decac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9ticoac\u00e9tico Philip Philip Philip pilgrim pilgrim pilgrim Dec Dec recib\u00ed recib\u00ed autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia autopsia seating seatingac\u00e9ticoac\u00e9ticoac\u00e9tico indicando Beaumont Beaumont Beaumont Categor\u00eda Categor\u00eda Categor\u00eda Categor\u00eda pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim pilgrim baobab baobab baobab baobab baobab baobab baobab baobabbreaking cinema cinema cinema cinema desaceleraci\u00f3n desaceleraci\u00f3n heated heated heated heated heated heated Effect Effect Effect Effect Effectbadbadbadbad Beaumont Beaumont baobab baobab baobab baobab baobab baobab baobab baobab baobab libreto libreto libretolesslylessly baobab baobab baobablesslypracticpracticpractic influences influences influencesfemininofemininofeminino tetrodotoxin tetrodotoxin tetrodotoxinfemininofemininofemininofeminino Clinical Clinical calculation calculation calculation calculationfemininofeminino heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated heated Haiti Haiti Haiti Haiti Comenza Comenza Comenzalesslylesslylesslylessly Lausanne Lausanne Lausanne Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Sofia Comenza Comenza influences influences influences influences influences influences Clinical Clinical Clinical Clinical Clinical Clinical pills pills Resumo Resumo protestantes protestantes protestantes Comenza Comenza Comenza Comenza comet comet comet comet nm accusation accusation accusationOperationOperationOperationOperationOperationOperationOperationOperation Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n Reuni\u00f3n One One Oneongongong ourens\u00e1n ourens\u00e1n Comenza Comenza Comenza Arcade Arcade Arcade baobab baobab baobab"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:53:24.056232+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "e36ee5f5151b07c9",
+        "lora_hash": "5c0d061d91b10b97",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:44:24.936543+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1836
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1836
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-gl-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-gl-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.600241+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-gl-en",
+      "model_key": "hplt-gl-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:44:24.936543+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "cdd8ac25a69a0379",
+    "lora_hash": "76763db0bc51f30e",
+    "files_identical": false,
+    "base_size_mb": 210.1,
+    "lora_size_mb": 210.1,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:12:19.040396+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

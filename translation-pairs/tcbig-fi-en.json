@@ -1,0 +1,552 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-fi-en.json",
+  "patient_id": "tcbig-fi-en",
+  "admitted": "2026-03-22T20:07:37.190027+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-tc-big-fi-en",
+  "source_language": {
+    "code": "tcbig",
+    "name": "tcbig",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 942562120,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-fi-en/base",
+      "on_disk_bytes": 942562120,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 942562120,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-fi-en/lora",
+      "on_disk_bytes": 942562120,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 235378688,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 1024
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:07:37.190027+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Experimental",
+          "sample_translations": [
+            {
+              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+              "output": "Hey, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "Haluaisin tilata kupin kahvia, kiitos.",
+              "output": "I'd like to order a cup of coffee, please.",
+              "passed": true
+            },
+            {
+              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
+              "output": "A fast brown fox jumps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "Teko\u00e4ly muuttaa maailmaa.",
+              "output": "Artificial intelligence is changing the world.",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Experimental",
+          "sample_translations": [
+            {
+              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+              "output": "Hey, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "Haluaisin tilata kupin kahvia, kiitos.",
+              "output": "I'd like to order a cup of coffee, please.",
+              "passed": true
+            },
+            {
+              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
+              "output": "A fast brown fox jumps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "Teko\u00e4ly muuttaa maailmaa.",
+              "output": "Artificial intelligence is changing the world.",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Experimental",
+          "sample_translations": [
+            {
+              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+              "output": "Hey, how are you today?",
+              "passed": true
+            },
+            {
+              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+              "output": "The weather is beautiful this morning.",
+              "passed": true
+            },
+            {
+              "input": "Haluaisin tilata kupin kahvia, kiitos.",
+              "output": "I'd like to order a cup of coffee, please.",
+              "passed": true
+            },
+            {
+              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
+              "output": "A fast brown fox jumps over a lazy dog.",
+              "passed": true
+            },
+            {
+              "input": "Teko\u00e4ly muuttaa maailmaa.",
+              "output": "AI is changing the world.",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T06:09:28.257578+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "lora": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        },
+        "ct2": {
+          "score": 10,
+          "certified": true,
+          "quality": "Premium",
+          "stars": 5.0
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T08:29:31.307539+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 65.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 0,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "The weather is beautiful today.",
+            "I would like to order a cup of coffee, please.",
+            "The children are playing in the park.",
+            "What time does the train leave?",
+            "She has been working at the hospital for ten years."
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 65.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 0,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "The weather is beautiful today.",
+            "I would like to order a cup of coffee, please.",
+            "The children are playing in the park.",
+            "What time does the train leave?",
+            "She has been working at the hospital for ten years."
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "ok",
+          "quality_score": 64.5,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 3,
+          "sample_translations": [
+            "direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct",
+            "direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct",
+            "direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct",
+            "direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct                                                                                                                                                                       direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct",
+            "direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct direct"
+          ],
+          "delta_vs_base": -0.5
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T08:29:31.307539+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 65.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 0,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 65.0,
+            "is_echo": true
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 65.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 0,
+            "reasonable_length": 10,
+            "unique_outputs": 10,
+            "quality_score": 65.0,
+            "is_echo": true
+          }
+        },
+        "ct2": {
+          "verdict": "PASS",
+          "quality_score": 64.5,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 3,
+            "quality_score": 64.5,
+            "is_echo": false
+          }
+        }
+      },
+      "identity_check": {
+        "base_hash": "2a892e5c1b802392",
+        "lora_hash": "bf1140ed1b565b54",
+        "files_identical": false,
+        "base_size_mb": 898.9,
+        "lora_size_mb": 898.9,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:31:38.463325+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 281
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 281
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/tcbig-fi-"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-tcbig-fi-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.894513+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-helsinki-tc-big-tcbig-fi-en",
+      "model_key": "tcbig-fi-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "BASE_ECHO: Base model echoes input (score=65.0)"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "quality_rating": {
+    "stars": 0.5,
+    "stars_display": "\u00bd",
+    "half_stars": 1,
+    "label": "Experimental",
+    "avg_cert_score": 0.0,
+    "best_variant_score": 0,
+    "variants_tested": 3,
+    "source": "Kit OC1 Alpha certification"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "ct2": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:31:38.463325+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "2a892e5c1b802392",
+    "lora_hash": "6888f95e0b6c95a1",
+    "files_identical": false,
+    "base_size_mb": 898.9,
+    "lora_size_mb": 898.9,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:15:01.370179+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

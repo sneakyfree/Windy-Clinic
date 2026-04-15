@@ -1,0 +1,88 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/Tower-Plus-9B.json",
+  "patient_id": "Tower-Plus-9B",
+  "admitted": "2026-03-24T08:31:42.802773",
+  "source_repo": "Helsinki-NLP/opus-mt-Tower-Plus-9B",
+  "source_language": {
+    "code": "Tower",
+    "name": "Tower",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "9B",
+    "name": "9B",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": null,
+    "encoder_layers": null,
+    "decoder_layers": null,
+    "max_sequence_length": null
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-INVENTORY-Tower-Plus-9B",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-24T14:01:10.982032",
+    "doctors_examined": 0,
+    "exams_total": 0,
+    "base_verdict": "UNTESTED",
+    "lora_verdict": "UNTESTED",
+    "ct2_verdict": "UNTESTED",
+    "overall_verdict": "UNTESTED",
+    "confidence": "NONE",
+    "production_ready": false,
+    "notes": [
+      "No examinations recorded"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-tier-Tower-Plus-9B",
+      "model_key": "Tower-Plus-9B",
+      "phase": 3,
+      "cluster_type": "translation"
+    }
+  },
+  "doctor_ratings": {},
+  "surgical_log": [],
+  "variant_count": 0
+}

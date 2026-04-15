@@ -1,0 +1,102 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/windy-tier-m2m100_1.2B.json",
+  "patient_id": "windy-tier-m2m100_1.2B",
+  "admitted": "2026-03-23T08:55:49.791866+00:00",
+  "source_repo": "unknown",
+  "source_language": {
+    "code": "windy",
+    "name": "windy",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "m2m100_1.2B",
+    "name": "m2m100_1.2B",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": null,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T08:55:49.791866+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [],
+      "results": {},
+      "identity_check": {
+        "base_exists": false,
+        "lora_exists": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "DRC-INVENTORY-windy-tier-m2m100_1.2B",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [],
+      "diff": {
+        "changed": [],
+        "marked_missing": [],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-24T14:01:10.992555",
+    "doctors_examined": 1,
+    "exams_total": 1,
+    "base_verdict": "UNTESTED",
+    "lora_verdict": "UNTESTED",
+    "ct2_verdict": "UNTESTED",
+    "overall_verdict": "UNTESTED",
+    "confidence": "LOW",
+    "production_ready": false,
+    "notes": [
+      "LoRA not tested",
+      "CT2 not tested"
+    ]
+  },
+  "_raw_sources": {
+    "source2_diagnosis": [
+      "MISSING_BASE: No base/model.safetensors found",
+      "MISSING_LORA: No lora/model.safetensors found"
+    ]
+  },
+  "doctor_ratings": {},
+  "surgical_log": [],
+  "variant_count": 0
+}

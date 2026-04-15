@@ -1,0 +1,21 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-12T03:25:16.435873+00:00",
+  "patient_id": "windy-distil-small-ct2",
+  "kind": "stt_voice_ct2",
+  "name": "Windy Distil Small (CT2 INT8)",
+  "admitted": "2026-04-12",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "variant_cluster": {
+    "ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_ct2/windy-distil-small-ct2",
+      "on_disk_bytes": 172735143,
+      "rebuilt_at": "2026-04-12T03:25:16.435873+00:00",
+      "rebuilt_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "examination_log": [],
+  "consensus": {}
+}

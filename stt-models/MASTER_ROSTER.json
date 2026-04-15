@@ -1,0 +1,408 @@
+{
+  "_generated": "2026-04-12T03:57:13.437144+00:00",
+  "_generated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "_clinic_version": "stt_v2",
+  "_total_patients": 50,
+  "patients": {
+    "windy-core-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Core (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-core-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Core (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-core-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Core (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-core": {
+      "kind": "stt_voice",
+      "name": "Windy Core",
+      "status": "rebuilt",
+      "wer": 0.0585,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-distil-large-ct2": {
+      "kind": "stt_voice_ct2",
+      "name": "Windy Distil Large (CT2 INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 0
+    },
+    "windy-distil-large-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Distil Large (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-large-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Distil Large (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-large": {
+      "kind": "stt_voice",
+      "name": "Windy Distil Large",
+      "status": "rebuilt",
+      "wer": 0.0731,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-distil-medium-ct2": {
+      "kind": "stt_voice_ct2",
+      "name": "Windy Distil Medium (CT2 INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 0
+    },
+    "windy-distil-medium-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Distil Medium (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-medium-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Distil Medium (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-medium": {
+      "kind": "stt_voice",
+      "name": "Windy Distil Medium",
+      "status": "rebuilt",
+      "wer": 0.076,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-distil-small-ct2": {
+      "kind": "stt_voice_ct2",
+      "name": "Windy Distil Small (CT2 INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 0
+    },
+    "windy-distil-small-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Distil Small (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-small-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Distil Small (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-distil-small": {
+      "kind": "stt_voice",
+      "name": "Windy Distil Small",
+      "status": "rebuilt",
+      "wer": 0.0819,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-edge-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Edge (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-edge-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Edge (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-edge-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Edge (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-edge": {
+      "kind": "stt_voice",
+      "name": "Windy Edge",
+      "status": "rebuilt",
+      "wer": 0.0731,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-lingua-arabic-ct2": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Arabic (CPU)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 2
+    },
+    "windy-lingua-arabic": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Arabic",
+      "status": "present",
+      "wer": 0.3564,
+      "stt_grade": "C",
+      "exams": 2
+    },
+    "windy-lingua-chinese-ct2": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Chinese (CPU)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 2
+    },
+    "windy-lingua-chinese": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Chinese",
+      "status": "present",
+      "wer": 0.0,
+      "stt_grade": "A",
+      "exams": 2
+    },
+    "windy-lingua-french-ct2": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua French (CPU)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 2
+    },
+    "windy-lingua-french": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua French",
+      "status": "present",
+      "wer": 0.0463,
+      "stt_grade": "A",
+      "exams": 2
+    },
+    "windy-lingua-hindi-ct2": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Hindi (CPU)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 2
+    },
+    "windy-lingua-hindi": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Hindi",
+      "status": "present",
+      "wer": 1.0,
+      "stt_grade": "F",
+      "exams": 2
+    },
+    "windy-lingua-spanish-ct2": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Spanish (CPU)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 2
+    },
+    "windy-lingua-spanish": {
+      "kind": "stt_lingua",
+      "name": "Windy Lingua Spanish",
+      "status": "present",
+      "wer": 0.3675,
+      "stt_grade": "C",
+      "exams": 2
+    },
+    "windy-lite-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Lite (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-lite-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Lite (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-lite-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Lite (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-lite": {
+      "kind": "stt_voice",
+      "name": "Windy Lite",
+      "status": "rebuilt",
+      "wer": 0.0906,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-nano-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Nano (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-nano-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Nano (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-nano-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Nano (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-nano": {
+      "kind": "stt_voice",
+      "name": "Windy Nano",
+      "status": "rebuilt",
+      "wer": 0.1316,
+      "stt_grade": "B",
+      "exams": 3
+    },
+    "windy-plus-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Plus (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-plus-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Plus (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-plus-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Plus (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-plus": {
+      "kind": "stt_voice",
+      "name": "Windy Plus",
+      "status": "rebuilt",
+      "wer": 0.0585,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-pro-engine-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Pro Engine (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-pro-engine-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Pro Engine (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-pro-engine-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Pro Engine (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-pro-engine": {
+      "kind": "stt_voice",
+      "name": "Windy Pro Engine",
+      "status": "rebuilt",
+      "wer": 0.0351,
+      "stt_grade": "A",
+      "exams": 3
+    },
+    "windy-turbo-ct2": {
+      "kind": "stt_voice",
+      "name": "Windy Turbo (CPU INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 3
+    },
+    "windy-turbo-onnx-int8": {
+      "kind": "stt_voice_onnx_int8",
+      "name": "Windy Turbo (ONNX INT8)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-turbo-onnx": {
+      "kind": "stt_voice_onnx",
+      "name": "Windy Turbo (ONNX)",
+      "status": "present",
+      "wer": null,
+      "stt_grade": null,
+      "exams": 1
+    },
+    "windy-turbo": {
+      "kind": "stt_voice",
+      "name": "Windy Turbo",
+      "status": "rebuilt",
+      "wer": 0.0556,
+      "stt_grade": "A",
+      "exams": 3
+    }
+  }
+}

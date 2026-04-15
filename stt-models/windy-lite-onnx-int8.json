@@ -1,0 +1,30 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-12T03:55:51.109692+00:00",
+  "patient_id": "windy-lite-onnx-int8",
+  "kind": "stt_voice_onnx_int8",
+  "name": "Windy Lite (ONNX INT8)",
+  "admitted": "2026-04-12",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "variant_cluster": {
+    "onnx_int8": {
+      "status": "present",
+      "format": "onnx_int8_dynamic",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_onnx_int8/windy-lite-onnx-int8",
+      "on_disk_bytes": 179981387,
+      "exported_at": "2026-04-12T03:55:51.109692+00:00",
+      "exported_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-ONNXINT8-windy-lite-onnx-int8",
+      "date": "2026-04-12T03:55:51.109692+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ONNX dynamic INT8 quantization via onnxruntime.quantization.quantize_dynamic",
+      "notes": "Quantized from FP32 ONNX. Size: 172 MB. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "consensus": {}
+}

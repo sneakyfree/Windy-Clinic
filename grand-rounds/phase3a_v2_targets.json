@@ -1,0 +1,357 @@
+[
+  {
+    "pid": "aav-en",
+    "original_grade": "D",
+    "original_score": 63.93
+  },
+  {
+    "pid": "ar-en",
+    "original_grade": "D",
+    "original_score": 65.27
+  },
+  {
+    "pid": "bat-en",
+    "original_grade": "D-",
+    "original_score": 62.68
+  },
+  {
+    "pid": "ber-en",
+    "original_grade": "F",
+    "original_score": 52.62
+  },
+  {
+    "pid": "bi-en",
+    "original_grade": "D-",
+    "original_score": 60.55
+  },
+  {
+    "pid": "ceb-en",
+    "original_grade": "D",
+    "original_score": 64.5
+  },
+  {
+    "pid": "cy-en",
+    "original_grade": "D+",
+    "original_score": 67.72
+  },
+  {
+    "pid": "dra-en",
+    "original_grade": "D",
+    "original_score": 65.82
+  },
+  {
+    "pid": "efi-en",
+    "original_grade": "D",
+    "original_score": 64.92
+  },
+  {
+    "pid": "en-aav",
+    "original_grade": "D",
+    "original_score": 66.97
+  },
+  {
+    "pid": "en-bat",
+    "original_grade": "D+",
+    "original_score": 67.3
+  },
+  {
+    "pid": "en-bg",
+    "original_grade": "F",
+    "original_score": 54.93
+  },
+  {
+    "pid": "en-bnt",
+    "original_grade": "D",
+    "original_score": 65.84
+  },
+  {
+    "pid": "en-ceb",
+    "original_grade": "D-",
+    "original_score": 62.99
+  },
+  {
+    "pid": "en-de",
+    "original_grade": "D+",
+    "original_score": 67.73
+  },
+  {
+    "pid": "en-dra",
+    "original_grade": "D",
+    "original_score": 64.27
+  },
+  {
+    "pid": "en-fiu",
+    "original_grade": "D",
+    "original_score": 63.65
+  },
+  {
+    "pid": "en-grk",
+    "original_grade": "F",
+    "original_score": 50.21
+  },
+  {
+    "pid": "en-gv",
+    "original_grade": "F",
+    "original_score": 59.34
+  },
+  {
+    "pid": "en-hi",
+    "original_grade": "D",
+    "original_score": 65.48
+  },
+  {
+    "pid": "en-ht",
+    "original_grade": "D",
+    "original_score": 65.0
+  },
+  {
+    "pid": "en-ig",
+    "original_grade": "D",
+    "original_score": 65.18
+  },
+  {
+    "pid": "en-ilo",
+    "original_grade": "D",
+    "original_score": 64.37
+  },
+  {
+    "pid": "en-ine",
+    "original_grade": "D",
+    "original_score": 65.6
+  },
+  {
+    "pid": "en-is",
+    "original_grade": "D+",
+    "original_score": 69.59
+  },
+  {
+    "pid": "en-itc",
+    "original_grade": "D+",
+    "original_score": 69.68
+  },
+  {
+    "pid": "en-lg",
+    "original_grade": "D-",
+    "original_score": 62.0
+  },
+  {
+    "pid": "en-mfe",
+    "original_grade": "D",
+    "original_score": 64.29
+  },
+  {
+    "pid": "en-mg",
+    "original_grade": "D+",
+    "original_score": 67.59
+  },
+  {
+    "pid": "en-mkh",
+    "original_grade": "D",
+    "original_score": 64.11
+  },
+  {
+    "pid": "en-mr",
+    "original_grade": "F",
+    "original_score": 57.57
+  },
+  {
+    "pid": "en-mul",
+    "original_grade": "F",
+    "original_score": 59.29
+  },
+  {
+    "pid": "en-ny",
+    "original_grade": "D",
+    "original_score": 66.67
+  },
+  {
+    "pid": "en-poz",
+    "original_grade": "D",
+    "original_score": 63.6
+  },
+  {
+    "pid": "en-ru",
+    "original_grade": "D-",
+    "original_score": 61.07
+  },
+  {
+    "pid": "en-rw",
+    "original_grade": "D",
+    "original_score": 64.56
+  },
+  {
+    "pid": "en-sem",
+    "original_grade": "D",
+    "original_score": 65.23
+  },
+  {
+    "pid": "en-sk",
+    "original_grade": "D+",
+    "original_score": 67.65
+  },
+  {
+    "pid": "en-sla",
+    "original_grade": "D+",
+    "original_score": 69.32
+  },
+  {
+    "pid": "en-sn",
+    "original_grade": "D+",
+    "original_score": 69.43
+  },
+  {
+    "pid": "en-tl",
+    "original_grade": "D",
+    "original_score": 65.3
+  },
+  {
+    "pid": "en-to",
+    "original_grade": "D",
+    "original_score": 66.35
+  },
+  {
+    "pid": "en-uk",
+    "original_grade": "F",
+    "original_score": 57.25
+  },
+  {
+    "pid": "en-urj",
+    "original_grade": "D+",
+    "original_score": 67.68
+  },
+  {
+    "pid": "en-vi",
+    "original_grade": "D+",
+    "original_score": 67.11
+  },
+  {
+    "pid": "en-zle",
+    "original_grade": "D+",
+    "original_score": 68.62
+  },
+  {
+    "pid": "en-zlw",
+    "original_grade": "D",
+    "original_score": 63.64
+  },
+  {
+    "pid": "fj-en",
+    "original_grade": "D-",
+    "original_score": 61.68
+  },
+  {
+    "pid": "ga-en",
+    "original_grade": "D+",
+    "original_score": 68.0
+  },
+  {
+    "pid": "gmw-en",
+    "original_grade": "D+",
+    "original_score": 69.39
+  },
+  {
+    "pid": "grk-en",
+    "original_grade": "D-",
+    "original_score": 60.86
+  },
+  {
+    "pid": "gv-en",
+    "original_grade": "F",
+    "original_score": 57.47
+  },
+  {
+    "pid": "hi-en",
+    "original_grade": "D",
+    "original_score": 65.55
+  },
+  {
+    "pid": "ht-en",
+    "original_grade": "F",
+    "original_score": 58.03
+  },
+  {
+    "pid": "hy-en",
+    "original_grade": "D",
+    "original_score": 64.36
+  },
+  {
+    "pid": "ig-en",
+    "original_grade": "F",
+    "original_score": 57.65
+  },
+  {
+    "pid": "ilo-en",
+    "original_grade": "D-",
+    "original_score": 61.75
+  },
+  {
+    "pid": "is-en",
+    "original_grade": "D+",
+    "original_score": 68.16
+  },
+  {
+    "pid": "it-en",
+    "original_grade": "D+",
+    "original_score": 68.69
+  },
+  {
+    "pid": "jap-en",
+    "original_grade": "F",
+    "original_score": 44.36
+  },
+  {
+    "pid": "kj-en",
+    "original_grade": "D-",
+    "original_score": 60.38
+  },
+  {
+    "pid": "mfe-en",
+    "original_grade": "D-",
+    "original_score": 61.32
+  },
+  {
+    "pid": "mr-en",
+    "original_grade": "D-",
+    "original_score": 62.3
+  },
+  {
+    "pid": "ny-en",
+    "original_grade": "D",
+    "original_score": 65.25
+  },
+  {
+    "pid": "rn-en",
+    "original_grade": "F",
+    "original_score": 57.97
+  },
+  {
+    "pid": "rw-en",
+    "original_grade": "D",
+    "original_score": 63.12
+  },
+  {
+    "pid": "sem-en",
+    "original_grade": "D-",
+    "original_score": 61.35
+  },
+  {
+    "pid": "st-en",
+    "original_grade": "D-",
+    "original_score": 62.12
+  },
+  {
+    "pid": "to-en",
+    "original_grade": "D",
+    "original_score": 64.91
+  },
+  {
+    "pid": "urj-en",
+    "original_grade": "D+",
+    "original_score": 67.2
+  },
+  {
+    "pid": "xh-en",
+    "original_grade": "D",
+    "original_score": 66.5
+  }
+]

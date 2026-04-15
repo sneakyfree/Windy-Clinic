@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-af-en.json",
+  "patient_id": "hplt-af-en",
+  "admitted": "2026-03-22T19:55:24.978147+00:00",
+  "source_repo": "HPLT/translate-af-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-af-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-af-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T19:55:24.978147+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hallo, hoe gaan dit vandag?",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": false
+            },
+            {
+              "input": "Die weer is pragtig vanoggend.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat grootmaat discovery discovery discovery discovery discovery discovery versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": false
+            },
+            {
+              "input": "Ek wil graag 'n koppie koffie bestel, asseblief.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisiesroomroomroomroomroomroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP analyzing",
+              "passed": false
+            },
+            {
+              "input": "Die vinnige bruin jakkals spring oor die lui hond.",
+              "output": "ham ham ham ham ham werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": false
+            },
+            {
+              "input": "Kunsmatige intelligensie verander die w\u00eareld.",
+              "output": "ham ham ham ham ham ham ham ham ham grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakkebakke disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer courage courage Lew Lew Lew Lew Lew Lew Lew versnelde versnelde versnelde verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP MVP Vooral",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T04:36:29.112409+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:41:05.641576+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh korrupsie korrupsie individuals individuals cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Layla Layla Layla reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 privilege privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaica carcass carcass carcass silver silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwet whilst whilst whilst whilst geharde geharde Eating Eatingliestliestliestslaafslaafslaafslaaf SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafGeneralGeneralGeneralslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew Lewmmammammagbgb Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SCspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer SC SC SC SC SC SC SC SC SC Layla Layla Layla Layla Layla Sadducees Sadducees Sadducees 98 98 98 98 98 98 98 reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaalspoorsnyerspoorsnyer Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaica 136 136 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaica Wagwoord Wagwoord carcass carcass silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyerspoorsnyer Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Stir Stir Stir Stir whilst whilst whilst whilstJakobusJakobusJakobusJakobusliest07)07)07) bitten bitten varied SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafGeneralGeneralGeneralslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees 98 98 98 98 medies medies reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcass carcass silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwetwetwetwetwetwetwetwetliestliestliestslaafslaafslaaf SC SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh korrupsie korrupsie individuals individuals cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Layla Layla Layla reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 privilege privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcass silver silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising RisingTeenTeenspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Stir Stir Stir Stir whilst whilst whilst whilst geharde geharde Eating Eatingliestliestliestslaafslaafslaafslaaf SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafGeneralGeneralGeneralslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroomroom Lew Lew Lew Lew Lew Lew Lew versneldemmammammamma Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SCspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees 98 98 98 98 98 98 reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcassspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising RisingTeenTeenspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwetwet whilst whilst whilst whilstJakobusJakobusJakobusliestliest07)07)07) bitten bitten SC SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken beskermer beskermer Example Example"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh korrupsie korrupsie individuals individuals cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Layla Layla Layla reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 privilege privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaica 136 136 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaica carcass carcass carcass silver silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwet whilst whilst whilst whilst geharde geharde Eating Eatingliestliestliestslaafslaafslaafslaaf SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafGeneralGeneralGeneralslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaatroomroomroom mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroom Lew Lew Lew Lew Lew Lew Lew Lewmmammammagbgb Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SCspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer SC SC SC SC SC SC SC SC SC Layla Layla Layla Layla Layla Sadducees Sadducees Sadducees 98 98 98 98 98 98 98 reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaalspoorsnyerspoorsnyer Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaica 136 136 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaica Wagwoord Wagwoord carcass carcass silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyerspoorsnyer Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwetwet whilst whilst whilst whilstJakobusJakobusJakobusliestliest07)07)07) bitten bitten SC SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees 98 98 98 98 medies medies reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcass carcass silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwetwetwetwetwetwetwetwetliestliestliestslaafslaafslaaf SC SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports mikroskopiese mikroskopiesespoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer grootmaat grootmaat Lew Lew Lew Lew Lew Lew Lew versnelde versnelde verhard verhard verhard Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh korrupsie korrupsie individuals individuals cometh cometh cometh cometh SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Layla Layla Layla reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 privilege privilege privilegetermyntermyntermyn 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcass silver silver silverspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising Rising Rising Risingspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Stir Stir Stir Stir whilst whilst whilst whilst geharde geharde Eating Eatingliestliestliestslaafslaafslaafslaaf SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafGeneralGeneralGeneralslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken Hague Hague Example",
+            "ham ham kuns kuns kuns werklose werklose werklose grondgebied grondgebied grondgebied grondgebied grondgebied werklose werklose werklose werkloseStilleStilleStilleStillebakkebakke disobedient disobedient disobedient disobedient toothpaste toothpaste toothpaste toothpasteoortgesetteoortgesetteoortgesetteoortgesette tape tape Objective Objective Objective definisies definisies definisies definisies definisies definisies grootmaat grootmaat grootmaat grootmaat imports imports imports imports importsspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerroomroomroom Lew Lew Lew Lew Lew Lew Lew versneldemmammammamma Erich Erich Erich Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 802.11 802.11 grootmaat grootmaat Sadducees Sadducees Sadducees Sadducees gaan gaan gaan gaan Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees MVP MVP analyzing analyzing analyzing analyzing vasteland vasteland vasteland vasteland vasteland vasteland reassuring reassuring reassuring reassuring reassuring reassuring reassuring reassuring mesh mesh mesh SC SC SC SC cometh cometh cometh cometh SC SC SC SC SC SCspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer SC SC SC SC SC SC SC SC SC Laan Laan Laan Layla Layla Sadducees Sadducees Sadducees Sadducees 98 98 98 98 98 98 reassuring reassuring Totaal Totaal Totaal Totaal Totaal Totaal Totaal Totaal Laan Laan Laan Laan Laan Laan Laan definisies definisies definisies definisies definisies definisies definisies definisies definisies definisiesTaTaTa definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies definisies Sadducees Sadducees Sadducees Sadducees Laan Laan Laan Laan Laan Laan Laan Laan Laan 98 98 98 98 98 98 98 98 98 98 98 98 98 98 98 whenever whenever whenever 98 98 98 98 98 98 98 98 98 98 98 98 privilege privilegetermyntermyntermyn 98 98 98 98 98 Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees Sadducees 98 98 98 98 nutritious nutritious nutritious nutritious nutritiousicaicaicaicaicaicaicaicaicaica 136 136 136spoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyericaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaicaStilleStille carcass carcassspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyer Rising Rising RisingTeenTeenspoorsnyerspoorsnyerspoorsnyer Console Console Console Console Paul Paul Paul Paul Paul Paul Paul Paulspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerspoorsnyerwetwetwet whilst whilst whilst whilstJakobusJakobusJakobusliestliest07)07)07) bitten bitten SC SC SC SCwetwetwet07)07)07) beskermer beskermer Paul Paul Paul Paulwetwetwet Hague Hague PSP PSP Eating Eating Eating EatingslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafslaafGeneralGeneralGeneralGeneralGeneral opgeteken opgeteken opgeteken beskermer beskermer Example Example"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:41:05.641576+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "01a9e44c750fe8f9",
+        "lora_hash": "5931a5dfe1691c10",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:38:13.363233+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1954
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 100.0,
+          "paragraph_source": "en_fallback",
+          "output_length": 1954
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-af-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": true,
+        "char_similarity": 100.0
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-af-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.562869+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-af-en",
+      "model_key": "hplt-af-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:38:13.363233+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "27e8ca6335f35432",
+    "lora_hash": "6bf3ac59ca7a80e6",
+    "files_identical": false,
+    "base_size_mb": 280.82,
+    "lora_size_mb": 280.82,
+    "verified_by": "Kit OC1 Alpha (supplemental hash check)",
+    "verification_date": "2026-03-24T14:11:40.063400+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}

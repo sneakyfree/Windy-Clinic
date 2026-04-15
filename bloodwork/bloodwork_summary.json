@@ -1,0 +1,29 @@
+{
+  "test_name": "Bloodwork \u2014 Variant Fidelity Test",
+  "date": "2026-03-28T16:28:11.000452+00:00",
+  "doctor": "Herm Zero",
+  "total_models": 1803,
+  "completed": 1803,
+  "errors": 0,
+  "elapsed_minutes": 106.9,
+  "roundtrip_avg_delta": -5.57,
+  "bleu_avg_delta": -12.94,
+  "roundtrip_grade_distribution": {
+    "B": 1904,
+    "C": 56,
+    "D": 55,
+    "A": 30,
+    "F": 482,
+    "B+": 53,
+    "A+": 19
+  },
+  "bleu_grade_distribution": {
+    "B": 2020,
+    "C": 25,
+    "F": 639,
+    "D": 30,
+    "A+": 65,
+    "A": 17,
+    "B+": 16
+  }
+}

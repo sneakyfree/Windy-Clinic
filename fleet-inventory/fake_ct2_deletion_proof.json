@@ -1,0 +1,32 @@
+[
+  {
+    "pid": "windy-pair-NORTH_EU-NORTH_EU",
+    "ct2_hash": "21fc38d674ae1280",
+    "base_hash": "21fc38d674ae1280",
+    "identical": true
+  },
+  {
+    "pid": "windy-pair-ROMANCE-en",
+    "ct2_hash": "76b7795af1fb4ff7",
+    "base_hash": "76b7795af1fb4ff7",
+    "identical": true
+  },
+  {
+    "pid": "windy-pair-SCANDINAVIA-SCANDINAVIA",
+    "ct2_hash": "dcdb8be68baf179d",
+    "base_hash": "dcdb8be68baf179d",
+    "identical": true
+  },
+  {
+    "pid": "windy-pair-aed-es",
+    "ct2_hash": "9fba5b67efcbd2ea",
+    "base_hash": "9fba5b67efcbd2ea",
+    "identical": true
+  },
+  {
+    "pid": "windy-pair-af-de",
+    "ct2_hash": "8dfdfa2ab8a0437d",
+    "base_hash": "8dfdfa2ab8a0437d",
+    "identical": true
+  }
+]

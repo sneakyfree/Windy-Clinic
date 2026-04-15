@@ -1,0 +1,521 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/hplt-lt-en.json",
+  "patient_id": "hplt-lt-en",
+  "admitted": "2026-03-22T20:02:07.475163+00:00",
+  "source_repo": "HPLT/translate-lt-en-v2.0-hplt_opus",
+  "source_language": {
+    "code": "hplt",
+    "name": "hplt",
+    "family": "Unknown"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "en",
+    "family": "Unknown"
+  },
+  "variant_cluster": {
+    "base": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lt-en/base",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "size_bytes": 337347724,
+      "identical_to_base": null,
+      "model_dir": null,
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lt-en/lora",
+      "on_disk_bytes": 337347724,
+      "on_disk_format": "safetensors",
+      "on_disk_files": [
+        "model.safetensors"
+      ],
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "ct2_int8": {
+      "status": "missing_from_disk",
+      "format": "pytorch",
+      "loader_compatible": false,
+      "model_dir": null,
+      "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
+      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": 84149760,
+    "encoder_layers": 7,
+    "decoder_layers": 7,
+    "max_sequence_length": 512
+  },
+  "examination_log": [
+    {
+      "exam_id": "OC1-CERT-SWEEP1",
+      "date": "2026-03-22T20:02:07.475163+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2_int8"
+      ],
+      "results": {
+        "base": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinio mix mixizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu supply supply supply supply supply supply supply supply supply supply evil evil evil evil evil vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinio mix mixizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu supply supply supply supply supply supply supply supply supply supply evil evil evil evil evil vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            }
+          ]
+        },
+        "lora": {
+          "score": 10,
+          "total": 10,
+          "certified": true,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Hello, how are you today?",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "The weather is beautiful this morning.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "I would like to order a cup of coffee, please.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinio mix mixizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu supply supply supply supply supply supply supply supply supply supply evil evil evil evil evil vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinio mix mixizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu supply supply supply supply supply supply supply supply supply supply evil evil evil evil evil vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            },
+            {
+              "input": "Artificial intelligence is transforming the world.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": true
+            }
+          ]
+        },
+        "ct2": {
+          "score": 0,
+          "total": 10,
+          "certified": false,
+          "stars": "10/10",
+          "quality_label": "Good",
+          "sample_translations": [
+            {
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru geru takas takasdav\u0117dav\u0117 relative relative relative relativeindindind Nantes Nantes Nantes Nantesizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts counts infringements infringements infringements i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed stipriausi stipriausi stipriausi draudik draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": false
+            },
+            {
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind Nantes Nantes Nantes Nantesizavimasizavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFMkiokiokiokiokio Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts counts Kanadoje Kanadoje i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": false
+            },
+            {
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind Nantes Nantes Nantes Azor\u0173 Azor\u0173izavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts counts protingai protingai protingai i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": false
+            },
+            {
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind Nantes Nantes Nantes Nantes mix mixizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119s sutrik\u0119s Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts counts protingai protingai protingai i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil evil vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu",
+              "passed": false
+            },
+            {
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "output": "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru geruitaiitaidav\u0117dav\u0117 relative relative relative relativeindindind Nantes Nantes Nantes Azor\u0173 Azor\u0173izavimasizavimasizavimasizavimasizavimasizavimas AIFM AIFM AIFM AIFM Pure Pure Pure Pure Buk Buk Buk saugom\u0105 saugom\u0105 saugom\u0105 tre\u010dioje tre\u010dioje counts counts counts Kanadoje Kanadoje i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrd witnessed witnessed witnessed witnessed privalu privalu privalu privalu privalu privalu privalu ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil evil evil evil want want want svarbaus svarbausGHzGHzGHzGHzGHzGHz privalu",
+              "passed": false
+            }
+          ]
+        }
+      },
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
+    },
+    {
+      "exam_id": "OC1-CERT-SWEEP2",
+      "date": "2026-03-23T05:06:29.086153+00:00",
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Re-certification with correct source language detection",
+      "protocol_script": "scripts/certify_one_model.py v2",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "lora": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": 0.5
+        },
+        "ct2": {
+          "score": 0,
+          "certified": false,
+          "quality": "Experimental",
+          "stars": "\ud83d\udc80"
+        }
+      },
+      "notes": "Sweep 2 \u2014 recertification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT",
+      "date": "2026-03-23T05:55:19.238101+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We We privalu privalu privalu privalu sutrukd sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimieji et et etmiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams/9/9 kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvomeTNTNTNTNTNTNGISGIS0/20090/2009ticaticaticaTNTNTNTNTNTN belief belief belief suspected suspected suspected suspected kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive belief belief belief belief Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindind parei\u0161kime parei\u0161kime Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios Bel Bel tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti protingai protingai i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu degintojas degintojas flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67//67/az\u0117az\u0117 Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutiniomiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 pipe pipe Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist jihadist belief belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluilui Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief PeopleSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticaticaTNTNTNTNTNTN belief belief belief suspected suspected suspected suspected kodai kodai belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive motive belief belief Kidney Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind Nantes Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom Autonom privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTNTNTN buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticatica cellulose cellulose celluloseTNTNTN belief belief belief suspected suspected suspected suspected kodai kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind Nantes Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom Autonom privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimieji sutrukd sutrukd sutrukd sutrukd sutrukd finally finally Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimieji et et etmiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams/9/9 kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist jihadist belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTNTNTN buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticatica cellulose cellulose celluloseTNTNTN belief belief belief suspected suspected suspected suspected kodai kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindind parei\u0161kime parei\u0161kime Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119s Pure Pure Purekiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios Bel Bel tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu degintojas degintojas flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67//67/az\u0117az\u0117 Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutiniomiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief apreik\u0161t apreik\u0161t apreik\u0161t protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluilui Pure Pure Pure belief belief belief belief belief belief saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief PeopleSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticaticaTNTNTNTNTNTN belief belief belief suspected suspected suspected suspected kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney"
+          ]
+        },
+        "lora": {
+          "status": "ok",
+          "quality_score": 75.0,
+          "total_tested": 10,
+          "non_empty": 10,
+          "not_echo": 10,
+          "unique_outputs": 10,
+          "sample_translations": [
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind vidutinio vidutinio vidutinio vidutinioizavimasizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We We privalu privalu privalu privalu sutrukd sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimieji et et etmiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams/9/9 kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvomeTNTNTNTNTNTNGISGIS0/20090/2009ticaticaticaTNTNTNTNTNTN belief belief belief suspected suspected suspected suspected kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive belief belief belief belief Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindind parei\u0161kime parei\u0161kime Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios Bel Bel tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti protingai protingai i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu degintojas degintojas flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67//67/az\u0117az\u0117 Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutiniomiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 pipe pipe Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist jihadist belief belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluilui Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief PeopleSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticatica cellulose cellulose celluloseTNTNTN belief belief belief belief suspected suspected suspected kodai kodai belief belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief belief Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind Nantes Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom Autonom privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTNTNTN buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticatica cellulose cellulose celluloseTNTNTN belief belief belief suspected suspected suspected suspected kodai kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindindind Nantes Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119skiokiokiokiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios degintojas degintojas tre\u010dioje tre\u010dioje u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67/ stomatolog stomatolog stomatolog Autonom Autonom Autonom privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimieji sutrukd sutrukd sutrukd sutrukd sutrukd finally finally Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutinio sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienienienmiejimiejimiejimiejimiejimieji et et etmiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams/9/9 kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief belief belief protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluifine Pure Pure Pure belief belief belief belief belief saugom\u0105 saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief At AtSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief likusi\u0105 likusi\u0105 likusi\u0105 likusi\u0105 jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTNTNTN buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticatica cellulose cellulose celluloseTNTNTN belief belief belief suspected suspected suspected suspected kodai kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney",
+            "maksimali\u0105 maksimali\u0105 maksimali\u0105 maksimali\u0105 geru geru gerudav\u0117dav\u0117dav\u0117 relative relative relative relativeindindind parei\u0161kime parei\u0161kime Nantes Nantes angry angryizavimasizavimasizavimasizavimasizavimasizavimas sutrik\u0119s sutrik\u0119s sutrik\u0119s Pure Pure Purekiokio Buk Bukusitarian\u010diosiosusitarian\u010diosios Bel Bel tre\u010dioje tre\u010dioje counts u\u017edirbti u\u017edirbti u\u017edirbti u\u017edirbti i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot i\u0161nuomot belief belief belief belief belief belief belief beliefrdrdrdrdrdrdrdrdrdrdrdrdrdrdajaajaaja witnessed witnessed witnessed privalu privalu privalu privalu draudik draudik draudik ja ja ja ja Naudodami Naudodami Naudodami Naudodami supply supply supply supply supply supply supply supply supply supply evil \u012fdomi \u012fdomi \u012fdomi \u012fdomi vairuotoj\u0105 vairuotoj\u0105GHzGHzGHzGHzGHzGHzGHzGHz privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu privalu degintojas degintojas flowers flowers flowers flowersschaftschaftschaft Hence Hence/67//67//67//67/az\u0117az\u0117 Autonom Autonom privalu privalu privalu privalu privalu privalu t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diamsOTAOTA We Wemiejimiejimiejimiejimieji sutrukd sutrukd sutrukd maksimali\u0105 maksimali\u0105 maksimali\u0105 Kidney Kidney Kidney Kidney leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia sluoksniai sluoksniai sluoksniai sluoksniai leukaemia leukaemia leukaemia leukaemia leukaemia leukaemia tt tt tt tt tt vidutinio vidutiniomiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173ienienienienienmiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimiejimieji sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 mil\u017eini\u0161k\u0105 Kas Kas Kas t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams t\u016bkstan\u010diams Porto Porto kasdieniame kasdieniame talp talp talp sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 sta\u010diatiki\u0173 tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos tolerancijos protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo jihadist jihadist belief belief belief apreik\u0161t apreik\u0161t apreik\u0161t protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokolo protokololuiluilui Pure Pure Pure belief belief belief belief belief belief saugom\u0105 saugom\u0105 eksport\u0105 eksport\u0105 eksport\u0105 eksport\u0105-5-5-5 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief PeopleSantaSantaSanta protokolo protokolo protokoloONEONE kompensavimo kompensavimoPasPasPasPas srov\u0119 srov\u0119 belief belief belief vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio vidutinio 113 113 113 113 belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief belief jihadist jihadist jihadist jihadist jihadist jihadist357357357357 pasinaudoti pasinaudoti pasinaudoti 113 113 113 113 113 113 113 113TNTNTNTNTN apreik\u0161t apreik\u0161t buvome buvome buvomeTNTNTNTNTNTNGISGIS mastelio mastelioticaticaTNTNTNTNTNTN belief belief belief suspected suspected suspected suspected kodai belief belief belief belief Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 Dur\u0173 motive motive motive belief belief Kidney Kidney Kidney"
+          ],
+          "delta_vs_base": 0.0
+        },
+        "ct2": {
+          "status": "error",
+          "quality_score": null,
+          "total_tested": null,
+          "non_empty": null,
+          "not_echo": null,
+          "unique_outputs": null,
+          "sample_translations": []
+        }
+      },
+      "identity_check": {
+        "output_identical_on_test_set": null,
+        "output_divergence_count": null,
+        "verdict": "inconclusive",
+        "files_identical": false
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-DEEPAUDIT-20260323",
+      "date": "2026-03-23T05:55:19.238101+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "protocol_script": "deep_audit_v4",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 75.0,
+          "checks": {
+            "total": 10,
+            "non_empty": 10,
+            "not_echo": 10,
+            "reasonable_length": 0,
+            "unique_outputs": 10,
+            "quality_score": 75.0,
+            "is_echo": false
+          }
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "quality_score": null,
+          "checks": {}
+        }
+      },
+      "identity_check": {
+        "base_hash": "92b54f2eff08f481",
+        "lora_hash": "274c8e0cb0b9c4ef",
+        "files_identical": false,
+        "base_size_mb": 321.72,
+        "lora_size_mb": 321.72,
+        "size_delta_bytes": 0
+      },
+      "notes": "h0_v4 certification"
+    },
+    {
+      "exam_id": "H0-STREPS-20260324",
+      "date": "2026-03-24T07:45:22.957886+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "protocol_script": "streps_audit",
+      "variants_tested": [
+        "base",
+        "lora",
+        "ct2"
+      ],
+      "results": {
+        "base": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1822
+        },
+        "lora": {
+          "verdict": "PASS",
+          "quality_score": 85.7,
+          "paragraph_source": "en_fallback",
+          "output_length": 1850
+        },
+        "ct2": {
+          "verdict": "ERROR",
+          "error": "Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /home/user1-gpu/Desktop/grants_folder/windy-pro/models_phase2/hplt-lt-e"
+        }
+      },
+      "lora_comparison": {
+        "identical": false,
+        "char_similarity": 70.3
+      },
+      "notes": "Full paragraph stress test with native-language input"
+    },
+    {
+      "exam_id": "H0-STRESS-CORRECTION-20260325",
+      "date": "2026-03-25T20:53:20.341203+00:00",
+      "doctor": "Herm Zero (Dr. B)",
+      "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "protocol_script": "stress_test_correction_analysis.py",
+      "variants_tested": [],
+      "results": {
+        "correction": {
+          "verdict": "METHODOLOGY_NOTE",
+          "issue": "All Phase 2 stress tests used English fallback input regardless of actual source language",
+          "impact": "85.7 BLEU score appears on 51% of all models (noise artifact from en_fallback). HPLT high scores were false positives.",
+          "resolution": "Phase 2 stress test scores marked unreliable. Manual quality assessments and Tier C retests supersede automated scores."
+        }
+      },
+      "notes": "CORRECTION: Stress test BLEU scores from H0-STREPS exam may be unreliable for non-English-source models. The stress test pipeline used English fallback input for models whose source language lacked a curated paragraph, producing an artificial 85.7 BLEU score artifact on ~51% of models. This does NOT invalidate the quality checks (non-empty, not-echo, etc.), only the BLEU numerical scores. For Tier C models, the dedicated retest with correct source language input supersedes the original stress test scores."
+    },
+    {
+      "exam_id": "DRC-INVENTORY-hplt-lt-en",
+      "date": "2026-04-11T20:03:17.828866+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Non-invasive filesystem walk + variant_cluster reconciliation",
+      "protocol_script": "scripts/reconcile_variant_state.py",
+      "scope": "read-only model inspection; write-only patient file update",
+      "observed_variants": [
+        "base",
+        "lora"
+      ],
+      "diff": {
+        "changed": [],
+        "marked_missing": [
+          "ct2_int8"
+        ],
+        "newly_found": []
+      },
+      "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-03-25T21:37:06.606578+00:00",
+    "doctors_examined": 2,
+    "exams_total": 6,
+    "base_verdict": "PASS",
+    "lora_verdict": "PASS",
+    "ct2_verdict": "LOADER_BROKEN",
+    "overall_verdict": "PASS",
+    "confidence": "MEDIUM",
+    "production_ready": true,
+    "notes": [
+      "Base generally passes",
+      "LoRA variant functional",
+      "CT2 has universal loader issue"
+    ]
+  },
+  "_raw_sources": {
+    "source1_identity": {
+      "model_id": "windy-p2-hplt-hplt-lt-en",
+      "model_key": "hplt-lt-en",
+      "phase": 2,
+      "cluster_type": "translation"
+    },
+    "source2_diagnosis": [
+      "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
+      "CT2_ERROR: 'collections.OrderedDict' object has no attribute 'state_dict'"
+    ],
+    "source3_paragraph_source": "en_fallback"
+  },
+  "doctor_ratings": {
+    "kit_oc1_alpha": {
+      "doctor": "Kit OC1 Alpha (Dr. A)",
+      "exams": [
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "base",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "lora",
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP1",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "base",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "lora",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        },
+        {
+          "exam_id": "OC1-CERT-SWEEP2",
+          "variant": "ct2",
+          "raw_score": 0,
+          "max_score": 10,
+          "stars": 0.0
+        }
+      ],
+      "variant_scores": {
+        "base": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        },
+        "lora": {
+          "raw_score": 10,
+          "max_score": 10,
+          "stars": 5.0,
+          "source_exam": "OC1-CERT-SWEEP1"
+        }
+      }
+    },
+    "herm_zero_streps": {
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "source": "streps_stress_test",
+      "timestamp": "2026-03-24T07:45:22.957886+00:00",
+      "variant_scores": {}
+    }
+  },
+  "lora_identity_check": {
+    "base_hash": "92b54f2eff08f481",
+    "lora_hash": "274c8e0cb0b9c4ef",
+    "files_identical": false,
+    "base_size_mb": 321.72,
+    "lora_size_mb": 321.72,
+    "verified_by": "Kit OC1 Alpha (phase2 hash check)",
+    "verification_date": "2026-03-24T14:20:00.149018+00:00",
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+  },
+  "surgical_log": [],
+  "variant_count": 3
+}
