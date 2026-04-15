@@ -1,0 +1,55 @@
+# ════════════════════════════════════════════════════════════════
+# THE CLINIC — .gitignore
+# Patient files, doctor logs, scripts are all tracked.
+# Python cache, temp files, and massive snapshot backups are excluded.
+# ════════════════════════════════════════════════════════════════
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Temp/lock files from parallel pipelines
+*.tmp
+*.lock
+*.incomplete
+.lockfile
+
+# Massive backup snapshot directories (197 MB of redundant state)
+# These are timestamped whole-directory snapshots, redundant with git history.
+# Full backups should go to the HuggingFace dataset repo or physical storage.
+backups/pre-*/
+backups/pre-v2-update/
+
+# But DO keep the tiny individual file backups
+!backups/*.json*
+
+# Large .bin model weight files (should not be in clinic — belongs in models/)
+*.bin
+*.safetensors
+*.ckpt
+
+# Training checkpoint dumps if any accidentally land here
+/tmp/
+_train_temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if anything ever slips in)
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local env
+.env
+*.local
