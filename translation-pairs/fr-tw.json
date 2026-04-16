@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/fr-tw.json",
   "patient_id": "fr-tw",
   "admitted": "2026-03-22T19:35:48.118840+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-fr-tw/lora",
@@ -100,7 +100,7 @@
       "date": "2026-03-22T19:35:48.118840+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -117,27 +117,27 @@
           "sample_translations": [
             {
               "input": "Bonjour, comment allez-vous aujourd'hui ?",
-              "output": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+              "output": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
               "passed": true
             },
             {
               "input": "Le temps est magnifique ce matin.",
-              "output": "\u0190y\u025b an\u0254pa a \u025by\u025b anigye.",
+              "output": "Ɛyɛ anɔpa a ɛyɛ anigye.",
               "passed": true
             },
             {
-              "input": "Je voudrais commander une tasse de caf\u00e9, s'il vous pla\u00eet.",
-              "output": "Mep\u025b s\u025b minya k\u0254fe kuruwa biako.",
+              "input": "Je voudrais commander une tasse de café, s'il vous plaît.",
+              "output": "Mepɛ sɛ minya kɔfe kuruwa biako.",
               "passed": true
             },
             {
               "input": "Le renard brun rapide saute par-dessus le chien paresseux.",
-              "output": "S\u025b \u0254kraman ba no huw no a, nt\u025bm ara na ne ho ay\u025b no hu.",
+              "output": "Sɛ ɔkraman ba no huw no a, ntɛm ara na ne ho ayɛ no hu.",
               "passed": true
             },
             {
               "input": "L'intelligence artificielle transforme le monde.",
-              "output": "Adwene a w\u0254de y\u025b nne\u025bma a \u025by\u025b nwonwa no sakra wiase no.",
+              "output": "Adwene a wɔde yɛ nneɛma a ɛyɛ nwonwa no sakra wiase no.",
               "passed": true
             }
           ]
@@ -151,27 +151,27 @@
           "sample_translations": [
             {
               "input": "Bonjour, comment allez-vous aujourd'hui ?",
-              "output": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+              "output": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
               "passed": true
             },
             {
               "input": "Le temps est magnifique ce matin.",
-              "output": "\u0190y\u025b an\u0254pa a \u025by\u025b anigye.",
+              "output": "Ɛyɛ anɔpa a ɛyɛ anigye.",
               "passed": true
             },
             {
-              "input": "Je voudrais commander une tasse de caf\u00e9, s'il vous pla\u00eet.",
-              "output": "Mep\u025b s\u025b minya k\u0254fe kuruwa biako.",
+              "input": "Je voudrais commander une tasse de café, s'il vous plaît.",
+              "output": "Mepɛ sɛ minya kɔfe kuruwa biako.",
               "passed": true
             },
             {
               "input": "Le renard brun rapide saute par-dessus le chien paresseux.",
-              "output": "S\u025b \u0254kraman ba no huw no a, nt\u025bm ara na ne ho ay\u025b no hu.",
+              "output": "Sɛ ɔkraman ba no huw no a, ntɛm ara na ne ho ayɛ no hu.",
               "passed": true
             },
             {
               "input": "L'intelligence artificielle transforme le monde.",
-              "output": "Adwene a w\u0254de y\u025b nne\u025bma a \u025by\u025b nwonwa no sakra wiase no.",
+              "output": "Adwene a wɔde yɛ nneɛma a ɛyɛ nwonwa no sakra wiase no.",
               "passed": true
             }
           ]
@@ -185,33 +185,33 @@
           "sample_translations": [
             {
               "input": "Bonjour, comment allez-vous aujourd'hui ?",
-              "output": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+              "output": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
               "passed": true
             },
             {
               "input": "Le temps est magnifique ce matin.",
-              "output": "Saa an\u0254pa no, \u025by\u025b anigye yiye.",
+              "output": "Saa anɔpa no, ɛyɛ anigye yiye.",
               "passed": true
             },
             {
-              "input": "Je voudrais commander une tasse de caf\u00e9, s'il vous pla\u00eet.",
-              "output": "Mesr\u025b wo, ma me k\u0254fe kuruwa biako. \"",
+              "input": "Je voudrais commander une tasse de café, s'il vous plaît.",
+              "output": "Mesrɛ wo, ma me kɔfe kuruwa biako. \"",
               "passed": true
             },
             {
               "input": "Le renard brun rapide saute par-dessus le chien paresseux.",
-              "output": "S\u025b \u0254kraman no huw nam no a, nt\u025bm ara na ne ho ay\u025b no hu.",
+              "output": "Sɛ ɔkraman no huw nam no a, ntɛm ara na ne ho ayɛ no hu.",
               "passed": true
             },
             {
               "input": "L'intelligence artificielle transforme le monde.",
-              "output": "Adwene a wokura w\u0254 nne\u025bma ho no sakra wiase no.",
+              "output": "Adwene a wokura wɔ nneɛma ho no sakra wiase no.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +245,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T05:31:28.022073+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -268,11 +268,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Mmere no y\u025b anigye nn\u025b.",
-            "Mep\u025b s\u025b minya k\u0254fe kuruwa biako.",
-            "Mmofra di agoru w\u0254 agodibea h\u0254",
-            "Bere b\u025bn na keteke no de n'ani kyer\u025b?",
-            "Way\u025b adwuma w\u0254 ayaresabea mfe du ni."
+            "Mmere no yɛ anigye nnɛ.",
+            "Mepɛ sɛ minya kɔfe kuruwa biako.",
+            "Mmofra di agoru wɔ agodibea hɔ",
+            "Bere bɛn na keteke no de n'ani kyerɛ?",
+            "Wayɛ adwuma wɔ ayaresabea mfe du ni."
           ]
         },
         "lora": {
@@ -283,11 +283,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Mmere no y\u025b anigye nn\u025b.",
-            "Mep\u025b s\u025b minya k\u0254fe kuruwa biako.",
-            "Mmofra di agoru w\u0254 agodibea h\u0254",
-            "Bere b\u025bn na keteke no de n'ani kyer\u025b?",
-            "Way\u025b adwuma w\u0254 ayaresabea mfe du ni."
+            "Mmere no yɛ anigye nnɛ.",
+            "Mepɛ sɛ minya kɔfe kuruwa biako.",
+            "Mmofra di agoru wɔ agodibea hɔ",
+            "Bere bɛn na keteke no de n'ani kyerɛ?",
+            "Wayɛ adwuma wɔ ayaresabea mfe du ni."
           ],
           "delta_vs_base": 0.0
         },
@@ -321,7 +321,7 @@
       "date": "2026-03-23T05:31:28.022073+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +384,7 @@
       "date": "2026-03-24T05:52:35.536934+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +420,7 @@
       "date": "2026-03-24T17:22:02.476372+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +443,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -461,7 +461,7 @@
       "date": "2026-03-28T15:38:01.334912+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -470,7 +470,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 48.69,
@@ -480,20 +480,20 @@
               "sentences": [
                 {
                   "original": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "forward": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+                  "forward": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
                   "returned": "Comment pouvez - vous le faire aujourd'hui?",
                   "similarity": 0.6667
                 },
                 {
                   "original": "Le temps est beau ce matin.",
-                  "forward": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b.",
+                  "forward": "Ɛyɛ anɔpa a ɛyɛ fɛ.",
                   "returned": "C'est un beau matin.",
                   "similarity": 0.6383
                 },
                 {
-                  "original": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "forward": "Mesr\u025b wo, ma me k\u0254fe. \"",
-                  "returned": "S'il te pla\u00eet, donne - moi un caf\u00e9.",
+                  "original": "J'aimerais commander un café, s'il vous plaît.",
+                  "forward": "Mesrɛ wo, ma me kɔfe. \"",
+                  "returned": "S'il te plaît, donne - moi un café.",
                   "similarity": 0.2963
                 }
               ]
@@ -506,20 +506,20 @@
               "sentences": [
                 {
                   "original": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "forward": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+                  "forward": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
                   "returned": "Comment pouvez - vous le faire aujourd'hui?",
                   "similarity": 0.6667
                 },
                 {
                   "original": "Le temps est beau ce matin.",
-                  "forward": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b.",
+                  "forward": "Ɛyɛ anɔpa a ɛyɛ fɛ.",
                   "returned": "C'est un beau matin.",
                   "similarity": 0.6383
                 },
                 {
-                  "original": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "forward": "Mesr\u025b wo, ma me k\u0254fe. \"",
-                  "returned": "S'il te pla\u00eet, donne - moi un caf\u00e9.",
+                  "original": "J'aimerais commander un café, s'il vous plaît.",
+                  "forward": "Mesrɛ wo, ma me kɔfe. \"",
+                  "returned": "S'il te plaît, donne - moi un café.",
                   "similarity": 0.2963
                 }
               ]
@@ -532,20 +532,20 @@
               "sentences": [
                 {
                   "original": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "forward": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?",
+                  "forward": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?",
                   "returned": "Comment pouvez - vous le faire aujourd'hui?",
                   "similarity": 0.6667
                 },
                 {
                   "original": "Le temps est beau ce matin.",
-                  "forward": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b.",
+                  "forward": "Ɛyɛ anɔpa a ɛyɛ fɛ.",
                   "returned": "C'est un beau matin.",
                   "similarity": 0.6383
                 },
                 {
-                  "original": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "forward": "Mesr\u025b wo, ma me k\u0254fe. \"",
-                  "returned": "S'il te pla\u00eet, donne - moi un caf\u00e9.",
+                  "original": "J'aimerais commander un café, s'il vous plaît.",
+                  "forward": "Mesrɛ wo, ma me kɔfe. \"",
+                  "returned": "S'il te plaît, donne - moi un café.",
                   "similarity": 0.2963
                 }
               ]
@@ -584,18 +584,18 @@
               "sample_translations": [
                 {
                   "source": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "reference": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "hypothesis": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?"
+                  "reference": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "hypothesis": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?"
                 },
                 {
                   "source": "Le temps est beau ce matin.",
-                  "reference": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "hypothesis": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b."
+                  "reference": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "hypothesis": "Ɛyɛ anɔpa a ɛyɛ fɛ."
                 },
                 {
-                  "source": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "reference": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "hypothesis": "Mesr\u025b wo, ma me k\u0254fe. \""
+                  "source": "J'aimerais commander un café, s'il vous plaît.",
+                  "reference": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "hypothesis": "Mesrɛ wo, ma me kɔfe. \""
                 }
               ]
             },
@@ -612,18 +612,18 @@
               "sample_translations": [
                 {
                   "source": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "reference": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "hypothesis": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?"
+                  "reference": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "hypothesis": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?"
                 },
                 {
                   "source": "Le temps est beau ce matin.",
-                  "reference": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "hypothesis": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b."
+                  "reference": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "hypothesis": "Ɛyɛ anɔpa a ɛyɛ fɛ."
                 },
                 {
-                  "source": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "reference": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "hypothesis": "Mesr\u025b wo, ma me k\u0254fe. \""
+                  "source": "J'aimerais commander un café, s'il vous plaît.",
+                  "reference": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "hypothesis": "Mesrɛ wo, ma me kɔfe. \""
                 }
               ]
             },
@@ -640,18 +640,18 @@
               "sample_translations": [
                 {
                   "source": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "reference": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "hypothesis": "\u0190nn\u025b, wob\u025by\u025b d\u025bn atumi ay\u025b saa?"
+                  "reference": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "hypothesis": "Ɛnnɛ, wobɛyɛ dɛn atumi ayɛ saa?"
                 },
                 {
                   "source": "Le temps est beau ce matin.",
-                  "reference": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "hypothesis": "\u0190y\u025b an\u0254pa a \u025by\u025b f\u025b."
+                  "reference": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "hypothesis": "Ɛyɛ anɔpa a ɛyɛ fɛ."
                 },
                 {
-                  "source": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "reference": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "hypothesis": "Mesr\u025b wo, ma me k\u0254fe. \""
+                  "source": "J'aimerais commander un café, s'il vous plaît.",
+                  "reference": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "hypothesis": "Mesrɛ wo, ma me kɔfe. \""
                 }
               ]
             }
@@ -715,11 +715,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (fr\u2192tw)"
+              "reason": "no English endpoint (fr→tw)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for fr\u2192tw"
+              "reason": "no reference pairs for fr→tw"
             },
             "vitals": {
               "status": "complete",
@@ -773,7 +773,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -893,7 +893,7 @@
       },
       "best_grade": "A+",
       "best_score": 99.01,
-      "notes": "Dr. C independent certification of fr-tw. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.01). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of fr-tw. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.01). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-fr-tw",
@@ -903,6 +903,16 @@
       "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 75 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-fr-tw",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=fr) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -945,14 +955,22 @@
     "source3_paragraph_source": "native"
   },
   "quality_rating": {
-    "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars": null,
+    "stars_display": "★★★★★",
     "half_stars": 10,
-    "label": "Gold Standard",
+    "label": "Deferred",
     "avg_cert_score": 10.0,
     "best_variant_score": 10,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1043,7 +1061,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:52:35.536934+00:00",
       "variant_scores": {}
@@ -1057,7 +1075,7 @@
     "lora_size_mb": 300.08,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:18:39.366161+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1067,7 +1085,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

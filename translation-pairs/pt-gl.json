@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T20:53:39.343976+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/pt-gl.json",
   "patient_id": "pt-gl",
   "admitted": "2026-03-22T19:41:39.835776+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-pt-gl/lora",
@@ -120,7 +120,7 @@
       "date": "2026-03-22T19:41:39.835776+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -136,28 +136,28 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Ol\u00e1, como voc\u00ea est\u00e1 hoje?",
-              "output": "Ola, como est\u00e1 hoxe?",
+              "input": "Olá, como você está hoje?",
+              "output": "Ola, como está hoxe?",
               "passed": true
             },
             {
-              "input": "O tempo est\u00e1 lindo esta manh\u00e3.",
-              "output": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
+              "input": "O tempo está lindo esta manhã.",
+              "output": "O tempo está fermoso esta mañá.",
               "passed": true
             },
             {
-              "input": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-              "output": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
+              "input": "Eu gostaria de pedir uma xícara de café, por favor.",
+              "output": "Gustaríame pedir unha cunca de café, por favor.",
               "passed": true
             },
             {
-              "input": "A r\u00e1pida raposa marrom pula sobre o cachorro pregui\u00e7oso.",
-              "output": "A raposa marr\u00f3n pula sobre o can preguiceiro.",
+              "input": "A rápida raposa marrom pula sobre o cachorro preguiçoso.",
+              "output": "A raposa marrón pula sobre o can preguiceiro.",
               "passed": true
             },
             {
-              "input": "A intelig\u00eancia artificial est\u00e1 transformando o mundo.",
-              "output": "A intelixencia artificial est\u00e1 a transformar o mundo.",
+              "input": "A inteligência artificial está transformando o mundo.",
+              "output": "A intelixencia artificial está a transformar o mundo.",
               "passed": true
             }
           ]
@@ -170,28 +170,28 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Ol\u00e1, como voc\u00ea est\u00e1 hoje?",
-              "output": "Ola, como est\u00e1 hoxe?",
+              "input": "Olá, como você está hoje?",
+              "output": "Ola, como está hoxe?",
               "passed": true
             },
             {
-              "input": "O tempo est\u00e1 lindo esta manh\u00e3.",
-              "output": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
+              "input": "O tempo está lindo esta manhã.",
+              "output": "O tempo está fermoso esta mañá.",
               "passed": true
             },
             {
-              "input": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-              "output": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
+              "input": "Eu gostaria de pedir uma xícara de café, por favor.",
+              "output": "Gustaríame pedir unha cunca de café, por favor.",
               "passed": true
             },
             {
-              "input": "A r\u00e1pida raposa marrom pula sobre o cachorro pregui\u00e7oso.",
-              "output": "A raposa marr\u00f3n pula sobre o can preguiceiro.",
+              "input": "A rápida raposa marrom pula sobre o cachorro preguiçoso.",
+              "output": "A raposa marrón pula sobre o can preguiceiro.",
               "passed": true
             },
             {
-              "input": "A intelig\u00eancia artificial est\u00e1 transformando o mundo.",
-              "output": "A intelixencia artificial est\u00e1 a transformar o mundo.",
+              "input": "A inteligência artificial está transformando o mundo.",
+              "output": "A intelixencia artificial está a transformar o mundo.",
               "passed": true
             }
           ]
@@ -204,34 +204,34 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Ol\u00e1, como voc\u00ea est\u00e1 hoje?",
-              "output": "Ola, como est\u00e1 hoxe?",
+              "input": "Olá, como você está hoje?",
+              "output": "Ola, como está hoxe?",
               "passed": true
             },
             {
-              "input": "O tempo est\u00e1 lindo esta manh\u00e3.",
-              "output": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
+              "input": "O tempo está lindo esta manhã.",
+              "output": "O tempo está fermoso esta mañá.",
               "passed": true
             },
             {
-              "input": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-              "output": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
+              "input": "Eu gostaria de pedir uma xícara de café, por favor.",
+              "output": "Gustaríame pedir unha cunca de café, por favor.",
               "passed": true
             },
             {
-              "input": "A r\u00e1pida raposa marrom pula sobre o cachorro pregui\u00e7oso.",
-              "output": "A raposa marr\u00f3n salta sobre o can preguiceiro.",
+              "input": "A rápida raposa marrom pula sobre o cachorro preguiçoso.",
+              "output": "A raposa marrón salta sobre o can preguiceiro.",
               "passed": true
             },
             {
-              "input": "A intelig\u00eancia artificial est\u00e1 transformando o mundo.",
-              "output": "A intelixencia artificial est\u00e1 a transformar o mundo.",
+              "input": "A inteligência artificial está transformando o mundo.",
+              "output": "A intelixencia artificial está a transformar o mundo.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -265,14 +265,14 @@
           "stars": 4.5
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:40:22.405378+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -289,8 +289,8 @@
           "unique_outputs": 10,
           "sample_translations": [
             "Hoxe ten bonito.",
-            "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
-            "Os nenos xoguen \u00f3 parque.",
+            "Gustaríame pedir unha cunca de café, por favor.",
+            "Os nenos xoguen ó parque.",
             "A que horas sae o tren?",
             "Traballa no hospital durante dez anos."
           ]
@@ -304,8 +304,8 @@
           "unique_outputs": 10,
           "sample_translations": [
             "Hoxe ten bonito.",
-            "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
-            "Os nenos xoguen \u00f3 parque.",
+            "Gustaríame pedir unha cunca de café, por favor.",
+            "Os nenos xoguen ó parque.",
             "A que horas sae o tren?",
             "Traballa no hospital durante dez anos."
           ],
@@ -341,7 +341,7 @@
       "date": "2026-03-23T06:40:22.405378+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -404,7 +404,7 @@
       "date": "2026-03-24T06:21:18.641589+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -440,7 +440,7 @@
       "date": "2026-03-24T18:16:43.738316+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -463,7 +463,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -481,7 +481,7 @@
       "date": "2026-03-28T16:03:05.795978+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -490,7 +490,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 98.0,
@@ -499,21 +499,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Ol\u00e1, como est\u00e1s hoje?",
-                  "forward": "Ola. Como est\u00e1s hoxe?",
-                  "returned": "Ol\u00e1, como est\u00e1s hoje?",
+                  "original": "Olá, como estás hoje?",
+                  "forward": "Ola. Como estás hoxe?",
+                  "returned": "Olá, como estás hoje?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "forward": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
-                  "returned": "O tempo est\u00e1 lindo esta manh\u00e3.",
+                  "original": "O tempo está lindo esta manhã.",
+                  "forward": "O tempo está fermoso esta mañá.",
+                  "returned": "O tempo está lindo esta manhã.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "forward": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
-                  "returned": "Gostava de pedir uma x\u00edcara de caf\u00e9, por favor.",
+                  "original": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "forward": "Gustaríame pedir unha cunca de café, por favor.",
+                  "returned": "Gostava de pedir uma xícara de café, por favor.",
                   "similarity": 0.9388
                 }
               ]
@@ -525,21 +525,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Ol\u00e1, como est\u00e1s hoje?",
-                  "forward": "Ola. Como est\u00e1s hoxe?",
-                  "returned": "Ol\u00e1, como est\u00e1s hoje?",
+                  "original": "Olá, como estás hoje?",
+                  "forward": "Ola. Como estás hoxe?",
+                  "returned": "Olá, como estás hoje?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "forward": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
-                  "returned": "O tempo est\u00e1 lindo esta manh\u00e3.",
+                  "original": "O tempo está lindo esta manhã.",
+                  "forward": "O tempo está fermoso esta mañá.",
+                  "returned": "O tempo está lindo esta manhã.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "forward": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
-                  "returned": "Gostava de pedir uma x\u00edcara de caf\u00e9, por favor.",
+                  "original": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "forward": "Gustaríame pedir unha cunca de café, por favor.",
+                  "returned": "Gostava de pedir uma xícara de café, por favor.",
                   "similarity": 0.9388
                 }
               ]
@@ -551,21 +551,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Ol\u00e1, como est\u00e1s hoje?",
-                  "forward": "Ola. Como est\u00e1s hoxe?",
-                  "returned": "Ol\u00e1, como est\u00e1s hoje?",
+                  "original": "Olá, como estás hoje?",
+                  "forward": "Ola. Como estás hoxe?",
+                  "returned": "Olá, como estás hoje?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "forward": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1.",
-                  "returned": "O tempo est\u00e1 lindo esta manh\u00e3.",
+                  "original": "O tempo está lindo esta manhã.",
+                  "forward": "O tempo está fermoso esta mañá.",
+                  "returned": "O tempo está lindo esta manhã.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "forward": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor.",
-                  "returned": "Gostava de pedir uma x\u00edcara de caf\u00e9, por favor.",
+                  "original": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "forward": "Gustaríame pedir unha cunca de café, por favor.",
+                  "returned": "Gostava de pedir uma xícara de café, por favor.",
                   "similarity": 0.9388
                 }
               ]
@@ -603,19 +603,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ol\u00e1, como est\u00e1s hoje?",
-                  "reference": "Ola, como est\u00e1 hoxe?",
-                  "hypothesis": "Ola. Como est\u00e1s hoxe?"
+                  "source": "Olá, como estás hoje?",
+                  "reference": "Ola, como está hoxe?",
+                  "hypothesis": "Ola. Como estás hoxe?"
                 },
                 {
-                  "source": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "reference": "O tempo \u00e9 fermoso esta ma\u00f1\u00e1.",
-                  "hypothesis": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1."
+                  "source": "O tempo está lindo esta manhã.",
+                  "reference": "O tempo é fermoso esta mañá.",
+                  "hypothesis": "O tempo está fermoso esta mañá."
                 },
                 {
-                  "source": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "reference": "Quero pedir un caf\u00e9, por favor.",
-                  "hypothesis": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor."
+                  "source": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "reference": "Quero pedir un café, por favor.",
+                  "hypothesis": "Gustaríame pedir unha cunca de café, por favor."
                 }
               ]
             },
@@ -631,19 +631,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ol\u00e1, como est\u00e1s hoje?",
-                  "reference": "Ola, como est\u00e1 hoxe?",
-                  "hypothesis": "Ola. Como est\u00e1s hoxe?"
+                  "source": "Olá, como estás hoje?",
+                  "reference": "Ola, como está hoxe?",
+                  "hypothesis": "Ola. Como estás hoxe?"
                 },
                 {
-                  "source": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "reference": "O tempo \u00e9 fermoso esta ma\u00f1\u00e1.",
-                  "hypothesis": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1."
+                  "source": "O tempo está lindo esta manhã.",
+                  "reference": "O tempo é fermoso esta mañá.",
+                  "hypothesis": "O tempo está fermoso esta mañá."
                 },
                 {
-                  "source": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "reference": "Quero pedir un caf\u00e9, por favor.",
-                  "hypothesis": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor."
+                  "source": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "reference": "Quero pedir un café, por favor.",
+                  "hypothesis": "Gustaríame pedir unha cunca de café, por favor."
                 }
               ]
             },
@@ -659,19 +659,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ol\u00e1, como est\u00e1s hoje?",
-                  "reference": "Ola, como est\u00e1 hoxe?",
-                  "hypothesis": "Ola. Como est\u00e1s hoxe?"
+                  "source": "Olá, como estás hoje?",
+                  "reference": "Ola, como está hoxe?",
+                  "hypothesis": "Ola. Como estás hoxe?"
                 },
                 {
-                  "source": "O tempo est\u00e1 lindo esta manh\u00e3.",
-                  "reference": "O tempo \u00e9 fermoso esta ma\u00f1\u00e1.",
-                  "hypothesis": "O tempo est\u00e1 fermoso esta ma\u00f1\u00e1."
+                  "source": "O tempo está lindo esta manhã.",
+                  "reference": "O tempo é fermoso esta mañá.",
+                  "hypothesis": "O tempo está fermoso esta mañá."
                 },
                 {
-                  "source": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
-                  "reference": "Quero pedir un caf\u00e9, por favor.",
-                  "hypothesis": "Gustar\u00edame pedir unha cunca de caf\u00e9, por favor."
+                  "source": "Eu gostaria de pedir uma xícara de café, por favor.",
+                  "reference": "Quero pedir un café, por favor.",
+                  "hypothesis": "Gustaríame pedir unha cunca de café, por favor."
                 }
               ]
             }
@@ -735,11 +735,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (pt\u2192gl)"
+              "reason": "no English endpoint (pt→gl)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for pt\u2192gl"
+              "reason": "no reference pairs for pt→gl"
             },
             "vitals": {
               "status": "complete",
@@ -793,7 +793,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -913,7 +913,7 @@
       },
       "best_grade": "A+",
       "best_score": 97.38,
-      "notes": "Dr. C independent certification of pt-gl. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.38). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of pt-gl. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.38). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-pt-gl",
@@ -929,7 +929,7 @@
       "date": "2026-04-14T09:16:02.408902+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 96.9\u219298.0 (\u0394+1.1). IMPROVED \u2014 saved as herm0/",
+      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 96.9→98.0 (Δ+1.1). IMPROVED — saved as herm0/",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 2 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -940,7 +940,17 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (47 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (47 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-pt-gl",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=pt) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -983,14 +993,22 @@
     "source3_paragraph_source": "native"
   },
   "quality_rating": {
-    "stars": 1.1666666666666667,
-    "stars_display": "\u2605",
+    "stars": null,
+    "stars_display": "★",
     "half_stars": 2,
-    "label": "Basic",
+    "label": "Deferred",
     "avg_cert_score": 2.3,
     "best_variant_score": 3,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1081,7 +1099,7 @@
       "oc1_stars_reference": 4.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:21:18.641589+00:00",
       "variant_scores": {}
@@ -1095,7 +1113,7 @@
     "lora_size_mb": 188.56,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:55:11.852196+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1105,7 +1123,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 94.2,

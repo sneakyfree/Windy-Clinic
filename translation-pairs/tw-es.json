@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tw-es.json",
   "patient_id": "tw-es",
   "admitted": "2026-03-22T19:51:45.248603+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tw-es/lora",
@@ -100,7 +100,7 @@
       "date": "2026-03-22T19:51:45.248603+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -117,7 +117,7 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "El Seol, \u00bfha perdido su fuerza?",
+              "output": "El Seol, ¿ha perdido su fuerza?",
               "passed": true
             },
             {
@@ -127,7 +127,7 @@
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "I USHAke to Ospline of chorroe, narrif\u00edsica.",
+              "output": "I USHAke to Ospline of chorroe, narrifísica.",
               "passed": true
             },
             {
@@ -151,7 +151,7 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "El Seol, \u00bfha perdido su fuerza?",
+              "output": "El Seol, ¿ha perdido su fuerza?",
               "passed": true
             },
             {
@@ -161,7 +161,7 @@
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "I USHAke to Ospline of chorroe, narrif\u00edsica.",
+              "output": "I USHAke to Ospline of chorroe, narrifísica.",
               "passed": true
             },
             {
@@ -185,17 +185,17 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "El Seol, \u00bfha perdido el control de la piel?",
+              "output": "El Seol, ¿ha perdido el control de la piel?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "El libro The Wheer istititititist Morring (El punto de vista b\u00edblico sobre el matrimonio).",
+              "output": "El libro The Wheer istititititist Morring (El punto de vista bíblico sobre el matrimonio).",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Integraci\u00f3n de la epinoplof\u00edsica, de E.U.A., bajo la direcci\u00f3n del glamo.",
+              "output": "Integración de la epinoplofísica, de E.U.A., bajo la dirección del glamo.",
               "passed": true
             },
             {
@@ -211,7 +211,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +245,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:48:46.229337+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -268,10 +268,10 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "El libro The Weber istitiation to Allise (La mujer en general) dice: \"La muerte es una p\u00e9rdida de tiempo.",
-            "I USHAke to Ospline of chorroe, s\u00f3loga.",
+            "El libro The Weber istitiation to Allise (La mujer en general) dice: \"La muerte es una pérdida de tiempo.",
+            "I USHAke to Ospline of chorroe, sóloga.",
             "El libro The Narciss in the Pady (El arte de la buena conducta).",
-            "\u00bf Qu\u00e9 dice la Biblia sobre el tema?",
+            "¿ Qué dice la Biblia sobre el tema?",
             "Sheshawtt endulce at Hositel for Menys."
           ]
         },
@@ -283,10 +283,10 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "El libro The Weber istitiation to Allise (La mujer en general) dice: \"La muerte es una p\u00e9rdida de tiempo.",
-            "I USHAke to Ospline of chorroe, s\u00f3loga.",
+            "El libro The Weber istitiation to Allise (La mujer en general) dice: \"La muerte es una pérdida de tiempo.",
+            "I USHAke to Ospline of chorroe, sóloga.",
             "El libro The Narciss in the Pady (El arte de la buena conducta).",
-            "\u00bf Qu\u00e9 dice la Biblia sobre el tema?",
+            "¿ Qué dice la Biblia sobre el tema?",
             "Sheshawtt endulce at Hositel for Menys."
           ],
           "delta_vs_base": 0.0
@@ -321,7 +321,7 @@
       "date": "2026-03-23T08:48:46.229337+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +384,7 @@
       "date": "2026-03-24T07:08:44.376430+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +420,7 @@
       "date": "2026-03-24T20:33:49.583500+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +443,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -461,7 +461,7 @@
       "date": "2026-03-28T16:22:49.191953+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -470,7 +470,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 75.42,
@@ -479,21 +479,21 @@
               "max": 97.25,
               "sentences": [
                 {
-                  "original": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "forward": "Pues bien, \u00bfc\u00f3mo estamos ahora?",
-                  "returned": "\u0190nde, \u025bnn\u025b, \u0254kwan b\u025bn so na y\u025bw\u0254 h\u0254?",
+                  "original": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "forward": "Pues bien, ¿cómo estamos ahora?",
+                  "returned": "Ɛnde, ɛnnɛ, ɔkwan bɛn so na yɛwɔ hɔ?",
                   "similarity": 0.7246
                 },
                 {
-                  "original": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "forward": "Esta ma\u00f1ana el clima es hermoso.",
-                  "returned": "Saa an\u0254pa yi wim tebea y\u025b f\u025b.",
+                  "original": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "forward": "Esta mañana el clima es hermoso.",
+                  "returned": "Saa anɔpa yi wim tebea yɛ fɛ.",
                   "similarity": 0.5926
                 },
                 {
-                  "original": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "forward": "Por favor, le dar\u00e9 un caf\u00e9.",
-                  "returned": "Mesr\u025b wo, m\u025bma no k\u0254fe.",
+                  "original": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "forward": "Por favor, le daré un café.",
+                  "returned": "Mesrɛ wo, mɛma no kɔfe.",
                   "similarity": 0.902
                 }
               ]
@@ -505,21 +505,21 @@
               "max": 97.25,
               "sentences": [
                 {
-                  "original": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "forward": "Pues bien, \u00bfc\u00f3mo estamos ahora?",
-                  "returned": "\u0190nde, \u025bnn\u025b, \u0254kwan b\u025bn so na y\u025bw\u0254 h\u0254?",
+                  "original": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "forward": "Pues bien, ¿cómo estamos ahora?",
+                  "returned": "Ɛnde, ɛnnɛ, ɔkwan bɛn so na yɛwɔ hɔ?",
                   "similarity": 0.7246
                 },
                 {
-                  "original": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "forward": "Esta ma\u00f1ana el clima es hermoso.",
-                  "returned": "Saa an\u0254pa yi wim tebea y\u025b f\u025b.",
+                  "original": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "forward": "Esta mañana el clima es hermoso.",
+                  "returned": "Saa anɔpa yi wim tebea yɛ fɛ.",
                   "similarity": 0.5926
                 },
                 {
-                  "original": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "forward": "Por favor, le dar\u00e9 un caf\u00e9.",
-                  "returned": "Mesr\u025b wo, m\u025bma no k\u0254fe.",
+                  "original": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "forward": "Por favor, le daré un café.",
+                  "returned": "Mesrɛ wo, mɛma no kɔfe.",
                   "similarity": 0.902
                 }
               ]
@@ -531,21 +531,21 @@
               "max": 97.25,
               "sentences": [
                 {
-                  "original": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "forward": "Pues bien, \u00bfc\u00f3mo estamos ahora?",
-                  "returned": "\u0190nde, \u025bnn\u025b, \u0254kwan b\u025bn so na y\u025bw\u0254 h\u0254?",
+                  "original": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "forward": "Pues bien, ¿cómo estamos ahora?",
+                  "returned": "Ɛnde, ɛnnɛ, ɔkwan bɛn so na yɛwɔ hɔ?",
                   "similarity": 0.7246
                 },
                 {
-                  "original": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "forward": "Esta ma\u00f1ana el clima es hermoso.",
-                  "returned": "Saa an\u0254pa yi wim tebea y\u025b f\u025b.",
+                  "original": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "forward": "Esta mañana el clima es hermoso.",
+                  "returned": "Saa anɔpa yi wim tebea yɛ fɛ.",
                   "similarity": 0.5926
                 },
                 {
-                  "original": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "forward": "Por favor, le dar\u00e9 un caf\u00e9.",
-                  "returned": "Mesr\u025b wo, m\u025bma no k\u0254fe.",
+                  "original": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "forward": "Por favor, le daré un café.",
+                  "returned": "Mesrɛ wo, mɛma no kɔfe.",
                   "similarity": 0.902
                 }
               ]
@@ -583,19 +583,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "reference": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "hypothesis": "Pues bien, \u00bfc\u00f3mo estamos ahora?"
+                  "source": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "reference": "Hola, ¿cómo estás hoy?",
+                  "hypothesis": "Pues bien, ¿cómo estamos ahora?"
                 },
                 {
-                  "source": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "reference": "El tiempo es hermoso esta ma\u00f1ana.",
-                  "hypothesis": "Esta ma\u00f1ana el clima es hermoso."
+                  "source": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "reference": "El tiempo es hermoso esta mañana.",
+                  "hypothesis": "Esta mañana el clima es hermoso."
                 },
                 {
-                  "source": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "reference": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "hypothesis": "Por favor, le dar\u00e9 un caf\u00e9."
+                  "source": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "reference": "Me gustaría pedir una taza de café, por favor.",
+                  "hypothesis": "Por favor, le daré un café."
                 }
               ]
             },
@@ -611,19 +611,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "reference": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "hypothesis": "Pues bien, \u00bfc\u00f3mo estamos ahora?"
+                  "source": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "reference": "Hola, ¿cómo estás hoy?",
+                  "hypothesis": "Pues bien, ¿cómo estamos ahora?"
                 },
                 {
-                  "source": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "reference": "El tiempo es hermoso esta ma\u00f1ana.",
-                  "hypothesis": "Esta ma\u00f1ana el clima es hermoso."
+                  "source": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "reference": "El tiempo es hermoso esta mañana.",
+                  "hypothesis": "Esta mañana el clima es hermoso."
                 },
                 {
-                  "source": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "reference": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "hypothesis": "Por favor, le dar\u00e9 un caf\u00e9."
+                  "source": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "reference": "Me gustaría pedir una taza de café, por favor.",
+                  "hypothesis": "Por favor, le daré un café."
                 }
               ]
             },
@@ -639,19 +639,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Wi\u025b, \u0254kwan b\u025bn so na wow\u0254 h\u0254 nn\u025b?",
-                  "reference": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "hypothesis": "Pues bien, \u00bfc\u00f3mo estamos ahora?"
+                  "source": "Wiɛ, ɔkwan bɛn so na wowɔ hɔ nnɛ?",
+                  "reference": "Hola, ¿cómo estás hoy?",
+                  "hypothesis": "Pues bien, ¿cómo estamos ahora?"
                 },
                 {
-                  "source": "Wim tebea y\u025b f\u025b an\u0254pa yi.",
-                  "reference": "El tiempo es hermoso esta ma\u00f1ana.",
-                  "hypothesis": "Esta ma\u00f1ana el clima es hermoso."
+                  "source": "Wim tebea yɛ fɛ anɔpa yi.",
+                  "reference": "El tiempo es hermoso esta mañana.",
+                  "hypothesis": "Esta mañana el clima es hermoso."
                 },
                 {
-                  "source": "Mesr\u025b wo, m\u025bma no k\u0254fe anom.",
-                  "reference": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "hypothesis": "Por favor, le dar\u00e9 un caf\u00e9."
+                  "source": "Mesrɛ wo, mɛma no kɔfe anom.",
+                  "reference": "Me gustaría pedir una taza de café, por favor.",
+                  "hypothesis": "Por favor, le daré un café."
                 }
               ]
             }
@@ -715,11 +715,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tw\u2192es)"
+              "reason": "no English endpoint (tw→es)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tw\u2192es"
+              "reason": "no reference pairs for tw→es"
             },
             "vitals": {
               "status": "complete",
@@ -773,7 +773,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -893,7 +893,7 @@
       },
       "best_grade": "A+",
       "best_score": 99.24,
-      "notes": "Dr. C independent certification of tw-es. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.24). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tw-es. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.24). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tw-es",
@@ -903,6 +903,16 @@
       "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 75 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-tw-es",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=tw) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -945,14 +955,22 @@
     "source3_paragraph_source": "en_fallback"
   },
   "quality_rating": {
-    "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars": null,
+    "stars_display": "★★★★★",
     "half_stars": 10,
-    "label": "Gold Standard",
+    "label": "Deferred",
     "avg_cert_score": 10.0,
     "best_variant_score": 10,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1043,7 +1061,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:08:44.376430+00:00",
       "variant_scores": {}
@@ -1057,7 +1075,7 @@
     "lora_size_mb": 299.77,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:55:59.362971+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1067,7 +1085,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

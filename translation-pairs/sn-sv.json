@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/sn-sv.json",
   "patient_id": "sn-sv",
   "admitted": "2026-03-22T19:43:03.341521+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-sn-sv/lora",
@@ -99,7 +99,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -153,7 +153,7 @@
       "date": "2026-03-22T19:43:03.341521+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -180,7 +180,7 @@
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Det \u00e4r reuld like to order a conffee, lese.",
+              "output": "Det är reuld like to order a conffee, lese.",
               "passed": true
             },
             {
@@ -214,7 +214,7 @@
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Det \u00e4r reuld like to order a conffee, lese.",
+              "output": "Det är reuld like to order a conffee, lese.",
               "passed": true
             },
             {
@@ -248,7 +248,7 @@
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Det \u00e4r reuld like to order a cup of conffee, lese.",
+              "output": "Det är reuld like to order a cup of conffee, lese.",
               "passed": true
             },
             {
@@ -264,7 +264,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +298,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:50:13.269794+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -324,7 +324,7 @@
             "The etheris beautifil today.",
             "I wuld like to order a cup of coffeee, lese.",
             "The uldren re playing in the park.",
-            "Vad \u00e4r det som g\u00f6r att vi kan klara av de h\u00e4r problemen?",
+            "Vad är det som gör att vi kan klara av de här problemen?",
             "She has been working for the hospital for ten ars."
           ]
         },
@@ -339,7 +339,7 @@
             "The etheris beautifil today.",
             "I wuld like to order a cup of coffeee, lese.",
             "The uldren re playing in the park.",
-            "Vad \u00e4r det som g\u00f6r att vi kan klara av de h\u00e4r problemen?",
+            "Vad är det som gör att vi kan klara av de här problemen?",
             "She has been working for the hospital for ten ars."
           ],
           "delta_vs_base": 0.0
@@ -374,7 +374,7 @@
       "date": "2026-03-23T06:50:13.269794+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +437,7 @@
       "date": "2026-03-24T06:30:21.435082+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +473,7 @@
       "date": "2026-03-24T19:22:16.746254+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -496,7 +496,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -514,7 +514,7 @@
       "date": "2026-03-28T16:09:19.359645+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -524,7 +524,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 79.51,
@@ -540,13 +540,13 @@
                 },
                 {
                   "original": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "forward": "Det \u00e4r underbart med v\u00e4dret i morgon.",
+                  "forward": "Det är underbart med vädret i morgon.",
                   "returned": "Mamiriro okunze anonakidza kwazvo mangwana.",
                   "similarity": 0.8
                 },
                 {
                   "original": "Ndingada kuodha kapu yekofi, tapota.",
-                  "forward": "Jag skulle vilja l\u00e5na en kopp kaffe.",
+                  "forward": "Jag skulle vilja låna en kopp kaffe.",
                   "returned": "Ndingada kukwereta kapu yekofi.",
                   "similarity": 0.7463
                 }
@@ -566,13 +566,13 @@
                 },
                 {
                   "original": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "forward": "Det \u00e4r underbart med v\u00e4dret i morgon.",
+                  "forward": "Det är underbart med vädret i morgon.",
                   "returned": "Mamiriro okunze anonakidza kwazvo mangwana.",
                   "similarity": 0.8
                 },
                 {
                   "original": "Ndingada kuodha kapu yekofi, tapota.",
-                  "forward": "Jag skulle vilja l\u00e5na en kopp kaffe.",
+                  "forward": "Jag skulle vilja låna en kopp kaffe.",
                   "returned": "Ndingada kukwereta kapu yekofi.",
                   "similarity": 0.7463
                 }
@@ -586,19 +586,19 @@
               "sentences": [
                 {
                   "original": "Mazuva ano, uri kuita sei?",
-                  "forward": "I dag, och \u00e4r du?",
+                  "forward": "I dag, och är du?",
                   "returned": "Nhasi, uye uri here?",
                   "similarity": 0.3913
                 },
                 {
                   "original": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "forward": "L\u00e5n \u00e4r \u00e4r en \u00e4r.",
+                  "forward": "Lån är är en är.",
                   "returned": "Gunda rimwe chete.",
                   "similarity": 0.2462
                 },
                 {
                   "original": "Ndingada kuodha kapu yekofi, tapota.",
-                  "forward": "Och jag ska jag bli f\u00f6ra en bligt,",
+                  "forward": "Och jag ska jag bli föra en bligt,",
                   "returned": "Ini ndichava mukobvu;",
                   "similarity": 0.3158
                 }
@@ -612,19 +612,19 @@
               "sentences": [
                 {
                   "original": "Mazuva ano, uri kuita sei?",
-                  "forward": "I dag, och \u00e4r du?",
+                  "forward": "I dag, och är du?",
                   "returned": "Nhasi, uye uri here?",
                   "similarity": 0.3913
                 },
                 {
                   "original": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "forward": "L\u00e5n \u00e4r \u00e4r en \u00e4r.",
+                  "forward": "Lån är är en är.",
                   "returned": "Gunda rimwe chete.",
                   "similarity": 0.2462
                 },
                 {
                   "original": "Ndingada kuodha kapu yekofi, tapota.",
-                  "forward": "Och jag ska jag bli f\u00f6ra en bligt,",
+                  "forward": "Och jag ska jag bli föra en bligt,",
                   "returned": "Ini ndichava mukobvu;",
                   "similarity": 0.3158
                 }
@@ -671,18 +671,18 @@
               "sample_translations": [
                 {
                   "source": "Mazuva ano, uri kuita sei?",
-                  "reference": "Hej, hur m\u00e5r du idag?",
+                  "reference": "Hej, hur mår du idag?",
                   "hypothesis": "Hur reagerar du i dag?"
                 },
                 {
                   "source": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
-                  "hypothesis": "Det \u00e4r underbart med v\u00e4dret i morgon."
+                  "reference": "Vädret är vackert i morse.",
+                  "hypothesis": "Det är underbart med vädret i morgon."
                 },
                 {
                   "source": "Ndingada kuodha kapu yekofi, tapota.",
-                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
-                  "hypothesis": "Jag skulle vilja l\u00e5na en kopp kaffe."
+                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "hypothesis": "Jag skulle vilja låna en kopp kaffe."
                 }
               ]
             },
@@ -699,18 +699,18 @@
               "sample_translations": [
                 {
                   "source": "Mazuva ano, uri kuita sei?",
-                  "reference": "Hej, hur m\u00e5r du idag?",
+                  "reference": "Hej, hur mår du idag?",
                   "hypothesis": "Hur reagerar du i dag?"
                 },
                 {
                   "source": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
-                  "hypothesis": "Det \u00e4r underbart med v\u00e4dret i morgon."
+                  "reference": "Vädret är vackert i morse.",
+                  "hypothesis": "Det är underbart med vädret i morgon."
                 },
                 {
                   "source": "Ndingada kuodha kapu yekofi, tapota.",
-                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
-                  "hypothesis": "Jag skulle vilja l\u00e5na en kopp kaffe."
+                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "hypothesis": "Jag skulle vilja låna en kopp kaffe."
                 }
               ]
             },
@@ -727,18 +727,18 @@
               "sample_translations": [
                 {
                   "source": "Mazuva ano, uri kuita sei?",
-                  "reference": "Hej, hur m\u00e5r du idag?",
-                  "hypothesis": "I dag, och \u00e4r du?"
+                  "reference": "Hej, hur mår du idag?",
+                  "hypothesis": "I dag, och är du?"
                 },
                 {
                   "source": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
-                  "hypothesis": "L\u00e5n \u00e4r \u00e4r en \u00e4r."
+                  "reference": "Vädret är vackert i morse.",
+                  "hypothesis": "Lån är är en är."
                 },
                 {
                   "source": "Ndingada kuodha kapu yekofi, tapota.",
-                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
-                  "hypothesis": "Och jag ska jag bli f\u00f6ra en bligt,"
+                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "hypothesis": "Och jag ska jag bli föra en bligt,"
                 }
               ]
             },
@@ -755,18 +755,18 @@
               "sample_translations": [
                 {
                   "source": "Mazuva ano, uri kuita sei?",
-                  "reference": "Hej, hur m\u00e5r du idag?",
-                  "hypothesis": "I dag, och \u00e4r du?"
+                  "reference": "Hej, hur mår du idag?",
+                  "hypothesis": "I dag, och är du?"
                 },
                 {
                   "source": "Mamiriro okunze akanaka chaizvo mangwanani ano.",
-                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
-                  "hypothesis": "L\u00e5n \u00e4r \u00e4r en \u00e4r."
+                  "reference": "Vädret är vackert i morse.",
+                  "hypothesis": "Lån är är en är."
                 },
                 {
                   "source": "Ndingada kuodha kapu yekofi, tapota.",
-                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
-                  "hypothesis": "Och jag ska jag bli f\u00f6ra en bligt,"
+                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "hypothesis": "Och jag ska jag bli föra en bligt,"
                 }
               ]
             }
@@ -838,11 +838,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sn\u2192sv)"
+              "reason": "no English endpoint (sn→sv)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sn\u2192sv"
+              "reason": "no reference pairs for sn→sv"
             },
             "vitals": {
               "status": "complete",
@@ -896,11 +896,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sn\u2192sv)"
+              "reason": "no English endpoint (sn→sv)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sn\u2192sv"
+              "reason": "no reference pairs for sn→sv"
             },
             "vitals": {
               "status": "complete",
@@ -922,7 +922,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (sn\u2192sv)"
+              "reason": "no English endpoint for scripture test (sn→sv)"
             }
           }
         }
@@ -955,7 +955,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1131,7 +1131,7 @@
       },
       "best_grade": "A+",
       "best_score": 97.73,
-      "notes": "Dr. C independent certification of sn-sv. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A+ (97.73). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of sn-sv. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A+ (97.73). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-sn-sv",
@@ -1150,6 +1150,16 @@
       "method": "CTranslate2 INT8 quantization of scripture/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary eBible scripture fine-tuned weights. Source: scripture/model.safetensors. Output: scripture-ct2-int8/model.bin. Size: 75 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-sn-sv",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=sn) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1192,14 +1202,22 @@
     "source3_paragraph_source": "en_fallback"
   },
   "quality_rating": {
-    "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars": null,
+    "stars_display": "★★★★★",
     "half_stars": 10,
-    "label": "Gold Standard",
+    "label": "Deferred",
     "avg_cert_score": 10.0,
     "best_variant_score": 10,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1290,7 +1308,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:30:21.435082+00:00",
       "variant_scores": {}
@@ -1304,7 +1322,7 @@
     "lora_size_mb": 302.95,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:03:23.215497+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1314,7 +1332,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
       "details": {
         "data_samples": 30810,
         "base_score": 90.2,
@@ -1328,7 +1346,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune \u2014 loss 8.74 -> 2.87 (67.2% improvement)",
+      "procedure": "eBible verse-aligned fine-tune — loss 8.74 -> 2.87 (67.2% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 25000,

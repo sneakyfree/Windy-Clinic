@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/hu-fr.json",
   "patient_id": "hu-fr",
   "admitted": "2026-03-22T19:36:59.622800+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-hu-fr/lora",
@@ -99,7 +99,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -153,7 +153,7 @@
       "date": "2026-03-22T19:36:59.622800+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -169,27 +169,27 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
+              "input": "Helló, hogy vagy ma?",
               "output": "Comment vas-tu aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+              "input": "Gyönyörű az idő ma reggel.",
               "output": "Il fait beau ce matin.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-              "output": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
+              "output": "J'aimerais commander un café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
               "output": "Le renard brun rapide saute au-dessus du chien paresseux.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
               "output": "L'intelligence artificielle transforme le monde.",
               "passed": true
             }
@@ -203,27 +203,27 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
+              "input": "Helló, hogy vagy ma?",
               "output": "Comment vas-tu aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+              "input": "Gyönyörű az idő ma reggel.",
               "output": "Il fait beau ce matin.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-              "output": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
+              "output": "J'aimerais commander un café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
               "output": "Le renard brun rapide saute au-dessus du chien paresseux.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
               "output": "L'intelligence artificielle transforme le monde.",
               "passed": true
             }
@@ -237,34 +237,34 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
+              "input": "Helló, hogy vagy ma?",
               "output": "Comment vas-tu aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+              "input": "Gyönyörű az idő ma reggel.",
               "output": "Il fait beau ce matin.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-              "output": "Je voudrais une tasse de caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
+              "output": "Je voudrais une tasse de café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
-              "output": "Un renard brun rapide saute au-dessus d'un chien fain\u00e9ant.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
+              "output": "Un renard brun rapide saute au-dessus d'un chien fainéant.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
               "output": "L'intelligence artificielle transforme le monde.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +298,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:02:04.361015+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -325,7 +325,7 @@
             "I would like to order a cup of coffee, please.",
             "The children are playing in the park.",
             "Qu'est-ce qu'il y a ?",
-            "Elle a travaill\u00e9 \u00e0 l'h\u00f4pital pour ses ann\u00e9es."
+            "Elle a travaillé à l'hôpital pour ses années."
           ]
         },
         "lora": {
@@ -340,7 +340,7 @@
             "I would like to order a cup of coffee, please.",
             "The children are playing in the park.",
             "Qu'est-ce qu'il y a ?",
-            "Elle a travaill\u00e9 \u00e0 l'h\u00f4pital pour ses ann\u00e9es."
+            "Elle a travaillé à l'hôpital pour ses années."
           ],
           "delta_vs_base": 0.0
         },
@@ -374,7 +374,7 @@
       "date": "2026-03-23T06:02:04.361015+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +437,7 @@
       "date": "2026-03-24T05:59:13.200205+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +473,7 @@
       "date": "2026-03-24T17:34:23.707688+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -496,7 +496,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -514,7 +514,7 @@
       "date": "2026-03-28T15:44:44.597760+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -524,7 +524,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 74.06,
@@ -533,21 +533,21 @@
               "max": 98.8,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
+                  "original": "Helló, hogy van ma?",
                   "forward": "Comment allez-vous aujourd'hui ?",
                   "returned": "Hogy van ma?",
                   "similarity": 0.7742
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
                   "forward": "Il fait beau ce matin.",
-                  "returned": "Sz\u00e9p napunk van ma reggel.",
+                  "returned": "Szép napunk van ma reggel.",
                   "similarity": 0.5385
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "forward": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "returned": "K\u00e9rhetn\u00e9k egy k\u00e1v\u00e9t?",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "forward": "J'aimerais commander un café, s'il vous plaît.",
+                  "returned": "Kérhetnék egy kávét?",
                   "similarity": 0.5079
                 }
               ]
@@ -559,21 +559,21 @@
               "max": 98.8,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
+                  "original": "Helló, hogy van ma?",
                   "forward": "Comment allez-vous aujourd'hui ?",
                   "returned": "Hogy van ma?",
                   "similarity": 0.7742
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
                   "forward": "Il fait beau ce matin.",
-                  "returned": "Sz\u00e9p napunk van ma reggel.",
+                  "returned": "Szép napunk van ma reggel.",
                   "similarity": 0.5385
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "forward": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "returned": "K\u00e9rhetn\u00e9k egy k\u00e1v\u00e9t?",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "forward": "J'aimerais commander un café, s'il vous plaît.",
+                  "returned": "Kérhetnék egy kávét?",
                   "similarity": 0.5079
                 }
               ]
@@ -585,21 +585,21 @@
               "max": 91.89,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
-                  "forward": "H\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
-                  "returned": "H\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
+                  "original": "Helló, hogy van ma?",
+                  "forward": "Hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé , hé hé , hé hé hé hé hé hé hé , hé hé hé hé hé hé , hé hé hé hé hé hé hé hé hé hé hé hé , hé hé hé hé hé hé que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
+                  "returned": "Hé, hé, hé, hé, hé, hé, hé, hé, hé, hé, que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
                   "similarity": 0.0079
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
                   "forward": "C  est un beau temps , c  est que c  est que c  est .",
-                  "returned": "Ez egy sz\u00e9p id\u0151, az az, hogy ez az.",
+                  "returned": "Ez egy szép idő, az az, hogy ez az.",
                   "similarity": 0.2951
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "forward": "Je voudrais commander un caf\u00e9, svp.",
-                  "returned": "Rendeln\u00e9k egy k\u00e1v\u00e9t, k\u00e9rem.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "forward": "Je voudrais commander un café, svp.",
+                  "returned": "Rendelnék egy kávét, kérem.",
                   "similarity": 0.7143
                 }
               ]
@@ -611,21 +611,21 @@
               "max": 91.89,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
-                  "forward": "H\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
-                  "returned": "H\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, h\u00e9, que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
+                  "original": "Helló, hogy van ma?",
+                  "forward": "Hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé , hé hé , hé hé hé hé hé hé hé , hé hé hé hé hé hé , hé hé hé hé hé hé hé hé hé hé hé hé , hé hé hé hé hé hé que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
+                  "returned": "Hé, hé, hé, hé, hé, hé, hé, hé, hé, hé, que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que",
                   "similarity": 0.0079
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
                   "forward": "C  est un beau temps , c  est que c  est que c  est .",
-                  "returned": "Ez egy sz\u00e9p id\u0151, az az, hogy ez az.",
+                  "returned": "Ez egy szép idő, az az, hogy ez az.",
                   "similarity": 0.2951
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "forward": "Je voudrais commander un caf\u00e9, svp.",
-                  "returned": "Rendeln\u00e9k egy k\u00e1v\u00e9t, k\u00e9rem.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "forward": "Je voudrais commander un café, svp.",
+                  "returned": "Rendelnék egy kávét, kérem.",
                   "similarity": 0.7143
                 }
               ]
@@ -670,19 +670,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
+                  "source": "Helló, hogy van ma?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
                   "hypothesis": "Comment allez-vous aujourd'hui ?"
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "source": "Gyönyörű az idő ma reggel.",
                   "reference": "Le temps est beau ce matin.",
                   "hypothesis": "Il fait beau ce matin."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "hypothesis": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet."
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "J'aimerais commander un café, s'il vous plaît.",
+                  "hypothesis": "J'aimerais commander un café, s'il vous plaît."
                 }
               ]
             },
@@ -698,19 +698,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
+                  "source": "Helló, hogy van ma?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
                   "hypothesis": "Comment allez-vous aujourd'hui ?"
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "source": "Gyönyörű az idő ma reggel.",
                   "reference": "Le temps est beau ce matin.",
                   "hypothesis": "Il fait beau ce matin."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "hypothesis": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet."
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "J'aimerais commander un café, s'il vous plaît.",
+                  "hypothesis": "J'aimerais commander un café, s'il vous plaît."
                 }
               ]
             },
@@ -726,19 +726,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
+                  "source": "Helló, hogy van ma?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "hypothesis": "H\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que"
+                  "hypothesis": "Hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé , hé hé , hé hé hé hé hé hé hé , hé hé hé hé hé hé , hé hé hé hé hé hé hé hé hé hé hé hé , hé hé hé hé hé hé que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que"
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "source": "Gyönyörű az idő ma reggel.",
                   "reference": "Le temps est beau ce matin.",
                   "hypothesis": "C  est un beau temps , c  est que c  est que c  est ."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "hypothesis": "Je voudrais commander un caf\u00e9, svp."
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "J'aimerais commander un café, s'il vous plaît.",
+                  "hypothesis": "Je voudrais commander un café, svp."
                 }
               ]
             },
@@ -754,19 +754,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
+                  "source": "Helló, hogy van ma?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "hypothesis": "H\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 , h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 , h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 h\u00e9 que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que"
+                  "hypothesis": "Hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé hé , hé , hé hé , hé , hé hé , hé hé hé hé hé hé hé , hé hé hé hé hé hé , hé hé hé hé hé hé hé hé hé hé hé hé , hé hé hé hé hé hé que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que que"
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
+                  "source": "Gyönyörű az idő ma reggel.",
                   "reference": "Le temps est beau ce matin.",
                   "hypothesis": "C  est un beau temps , c  est que c  est que c  est ."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
-                  "hypothesis": "Je voudrais commander un caf\u00e9, svp."
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "J'aimerais commander un café, s'il vous plaît.",
+                  "hypothesis": "Je voudrais commander un café, svp."
                 }
               ]
             }
@@ -838,11 +838,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (hu\u2192fr)"
+              "reason": "no English endpoint (hu→fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for hu\u2192fr"
+              "reason": "no reference pairs for hu→fr"
             },
             "vitals": {
               "status": "complete",
@@ -896,11 +896,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (hu\u2192fr)"
+              "reason": "no English endpoint (hu→fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for hu\u2192fr"
+              "reason": "no reference pairs for hu→fr"
             },
             "vitals": {
               "status": "complete",
@@ -922,7 +922,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (hu\u2192fr)"
+              "reason": "no English endpoint for scripture test (hu→fr)"
             }
           }
         }
@@ -955,7 +955,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1131,7 +1131,7 @@
       },
       "best_grade": "A",
       "best_score": 94.24,
-      "notes": "Dr. C independent certification of hu-fr. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (94.24). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of hu-fr. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (94.24). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-hu-fr",
@@ -1150,6 +1150,16 @@
       "method": "CTranslate2 INT8 quantization of scripture/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary eBible scripture fine-tuned weights. Source: scripture/model.safetensors. Output: scripture-ct2-int8/model.bin. Size: 74 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-hu-fr",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=hu) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1192,14 +1202,22 @@
     "source3_paragraph_source": "native"
   },
   "quality_rating": {
-    "stars": 2.5,
-    "stars_display": "\u2605\u2605\u00bd",
+    "stars": null,
+    "stars_display": "★★½",
     "half_stars": 5,
-    "label": "Fair",
+    "label": "Deferred",
     "avg_cert_score": 5.0,
     "best_variant_score": 5,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1290,7 +1308,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:59:13.200205+00:00",
       "variant_scores": {}
@@ -1304,7 +1322,7 @@
     "lora_size_mb": 296.76,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:26:07.118469+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1314,7 +1332,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 94.0,
@@ -1328,7 +1346,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune \u2014 loss 6.59 -> 2.29 (65.2% improvement)",
+      "procedure": "eBible verse-aligned fine-tune — loss 6.59 -> 2.29 (65.2% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 7947,

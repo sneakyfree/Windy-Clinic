@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/yo-fr.json",
   "patient_id": "yo-fr",
   "admitted": "2026-03-22T19:53:07.645892+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-yo-fr/lora",
@@ -99,7 +99,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -153,7 +153,7 @@
       "date": "2026-03-22T19:53:07.645892+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -170,12 +170,12 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Y a - t - il un Cr\u00e9ateur qui se soucie de vous?",
+              "output": "Y a - t - il un Créateur qui se soucie de vous?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "L'ouvrage L'homme et la femme dans le monde (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah, d\u00e9clare: \"Je n'ai pas pu m'emp\u00eacher d'\u00e9tudier la Bible avec les T\u00e9moins de J\u00e9hovah.",
+              "output": "L'ouvrage L'homme et la femme dans le monde (angl.), publié par les Témoins de Jéhovah, déclare: \"Je n'ai pas pu m'empêcher d'étudier la Bible avec les Témoins de Jéhovah.",
               "passed": true
             },
             {
@@ -185,12 +185,12 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "D'apr\u00e8s le livre L'Esssendors in the Seyppplss in the Seypplplplppt.",
+              "output": "D'après le livre L'Esssendors in the Seyppplss in the Seypplplplppt.",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Art attir\u00e9 par l'aimable autorisation de l'Edypltors",
+              "output": "Art attiré par l'aimable autorisation de l'Edypltors",
               "passed": true
             }
           ]
@@ -204,12 +204,12 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Y a - t - il un Cr\u00e9ateur qui se soucie de vous?",
+              "output": "Y a - t - il un Créateur qui se soucie de vous?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "L'ouvrage L'homme et la femme dans le monde (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah, d\u00e9clare: \"Je n'ai pas pu m'emp\u00eacher d'\u00e9tudier la Bible avec les T\u00e9moins de J\u00e9hovah.",
+              "output": "L'ouvrage L'homme et la femme dans le monde (angl.), publié par les Témoins de Jéhovah, déclare: \"Je n'ai pas pu m'empêcher d'étudier la Bible avec les Témoins de Jéhovah.",
               "passed": true
             },
             {
@@ -219,12 +219,12 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "D'apr\u00e8s le livre L'Esssendors in the Seyppplss in the Seypplplplppt.",
+              "output": "D'après le livre L'Esssendors in the Seyppplss in the Seypplplplppt.",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Art attir\u00e9 par l'aimable autorisation de l'Edypltors",
+              "output": "Art attiré par l'aimable autorisation de l'Edypltors",
               "passed": true
             }
           ]
@@ -238,12 +238,12 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Y a - t - il un Cr\u00e9ateur qui se soucie de vous?",
+              "output": "Y a - t - il un Créateur qui se soucie de vous?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "L'ouvrage L'homme et les femmes dans le monde (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah, d\u00e9clare: \"J'ai perdu mon temps.",
+              "output": "L'ouvrage L'homme et les femmes dans le monde (angl.), publié par les Témoins de Jéhovah, déclare: \"J'ai perdu mon temps.",
               "passed": true
             },
             {
@@ -253,18 +253,18 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "D'apr\u00e8s le livre The Seypplpplpppppppppppppations.com",
+              "output": "D'après le livre The Seypplpplpppppppppppppations.com",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Art attir\u00e9 par les T\u00e9moins de J\u00e9hovah.",
+              "output": "Art attiré par les Témoins de Jéhovah.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +298,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:58:41.653280+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -321,11 +321,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "L'ouvrage L'homme \u00e0 l'autre bout du monde (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah.",
+            "L'ouvrage L'homme à l'autre bout du monde (angl.), publié par les Témoins de Jéhovah.",
             "Avec l'aimable autorisation de l'Edysysa der Nazen, P.",
-            "Le livre L'homme ou la femme dans son ensemble (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah (angl.).",
-            "Avec quel r\u00e9sultat?",
-            "N'est - ce pas ce qu'on peut lire dans le livre Les jeunes s'interrogent - R\u00e9ponses pratiques (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah."
+            "Le livre L'homme ou la femme dans son ensemble (angl.), publié par les Témoins de Jéhovah (angl.).",
+            "Avec quel résultat?",
+            "N'est - ce pas ce qu'on peut lire dans le livre Les jeunes s'interrogent - Réponses pratiques (angl.), publié par les Témoins de Jéhovah."
           ]
         },
         "lora": {
@@ -336,11 +336,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "L'ouvrage L'homme \u00e0 l'autre bout du monde (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah.",
+            "L'ouvrage L'homme à l'autre bout du monde (angl.), publié par les Témoins de Jéhovah.",
             "Avec l'aimable autorisation de l'Edysysa der Nazen, P.",
-            "Le livre L'homme ou la femme dans son ensemble (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah (angl.).",
-            "Avec quel r\u00e9sultat?",
-            "N'est - ce pas ce qu'on peut lire dans le livre Les jeunes s'interrogent - R\u00e9ponses pratiques (angl.), publi\u00e9 par les T\u00e9moins de J\u00e9hovah."
+            "Le livre L'homme ou la femme dans son ensemble (angl.), publié par les Témoins de Jéhovah (angl.).",
+            "Avec quel résultat?",
+            "N'est - ce pas ce qu'on peut lire dans le livre Les jeunes s'interrogent - Réponses pratiques (angl.), publié par les Témoins de Jéhovah."
           ],
           "delta_vs_base": 0.0
         },
@@ -374,7 +374,7 @@
       "date": "2026-03-23T08:58:41.653280+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +437,7 @@
       "date": "2026-03-24T07:13:57.788142+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +473,7 @@
       "date": "2026-03-24T20:45:06.813293+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -486,17 +486,17 @@
           "old_size_mb": 0,
           "new_size_mb": 285.1,
           "verified_match": true,
-          "sample_translation": "S\u00c9DUGIE"
+          "sample_translation": "SÉDUGIE"
         }
       },
-      "notes": "Replaced broken pickle INT8 (0.0MB) with clean safetensors (285.1MB). Verified base-CT2 output match: True. Sample translation: \"S\u00c9DUGIE\". Elapsed: 34.8s."
+      "notes": "Replaced broken pickle INT8 (0.0MB) with clean safetensors (285.1MB). Verified base-CT2 output match: True. Sample translation: \"SÉDUGIE\". Elapsed: 34.8s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -550,11 +550,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (yo\u2192fr)"
+              "reason": "no English endpoint (yo→fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for yo\u2192fr"
+              "reason": "no reference pairs for yo→fr"
             },
             "vitals": {
               "status": "complete",
@@ -608,11 +608,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (yo\u2192fr)"
+              "reason": "no English endpoint (yo→fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for yo\u2192fr"
+              "reason": "no reference pairs for yo→fr"
             },
             "vitals": {
               "status": "complete",
@@ -634,7 +634,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (yo\u2192fr)"
+              "reason": "no English endpoint for scripture test (yo→fr)"
             }
           }
         }
@@ -667,7 +667,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -843,7 +843,7 @@
       },
       "best_grade": "A",
       "best_score": 96.1,
-      "notes": "Dr. C independent certification of yo-fr. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (96.1). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of yo-fr. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (96.1). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-yo-fr",
@@ -862,6 +862,16 @@
       "method": "CTranslate2 INT8 quantization of scripture/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary eBible scripture fine-tuned weights. Source: scripture/model.safetensors. Output: scripture-ct2-int8/model.bin. Size: 74 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-yo-fr",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=yo) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -904,14 +914,22 @@
     "source3_paragraph_source": "en_fallback"
   },
   "quality_rating": {
-    "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars": null,
+    "stars_display": "★★★★★",
     "half_stars": 10,
-    "label": "Gold Standard",
+    "label": "Deferred",
     "avg_cert_score": 10.0,
     "best_variant_score": 10,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -1002,7 +1020,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:13:57.788142+00:00",
       "variant_scores": {}
@@ -1016,7 +1034,7 @@
     "lora_size_mb": 298.91,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-24T00:02:43.100210+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1026,7 +1044,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
       "details": {
         "data_samples": 118,
         "base_score": 87.4,
@@ -1040,7 +1058,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune \u2014 loss 8.89 -> 3.23 (63.7% improvement)",
+      "procedure": "eBible verse-aligned fine-tune — loss 8.89 -> 3.23 (63.7% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 25000,

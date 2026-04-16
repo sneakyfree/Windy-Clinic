@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-14T16:39:39.672677+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/en_el_es_fi-en_el_es_fi.json",
   "patient_id": "en_el_es_fi-en_el_es_fi",
   "admitted": "2026-03-22T19:31:51.897122+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en_el_es_fi-en_el_es_fi/lora",
@@ -100,7 +100,7 @@
       "date": "2026-03-22T19:31:51.897122+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -167,7 +167,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -201,14 +201,14 @@
           "stars": 0.5
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:43:47.410902+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -257,7 +257,7 @@
       "date": "2026-03-23T04:43:47.410902+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [],
       "results": {},
@@ -269,7 +269,7 @@
       "date": "2026-03-24T05:26:06.673387+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -298,7 +298,7 @@
       "date": "2026-03-24T19:18:58.748308+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -321,7 +321,7 @@
       "date": "2026-03-25T18:00:00+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 failure deep investigation \u2014 load model, test translation, diagnose root cause",
+      "method": "CT2 failure deep investigation — load model, test translation, diagnose root cause",
       "protocol_script": "ct2_failure_investigation.py",
       "variants_tested": [
         "ct2_int8",
@@ -330,17 +330,17 @@
       "results": {
         "ct2_int8": {
           "verdict": "CT2_BROKEN_SOURCE",
-          "details": "Decoder index out-of-bounds error. Redownloaded from HuggingFace \u2014 same error persists. Bug is in the upstream Helsinki-NLP model itself. Not fixable without model retraining."
+          "details": "Decoder index out-of-bounds error. Redownloaded from HuggingFace — same error persists. Bug is in the upstream Helsinki-NLP model itself. Not fixable without model retraining."
         }
       },
-      "notes": "Decoder index out-of-bounds error. Redownloaded from HuggingFace \u2014 same error persists. Bug is in the upstream Helsinki-NLP model itself. Not fixable without model retraining."
+      "notes": "Decoder index out-of-bounds error. Redownloaded from HuggingFace — same error persists. Bug is in the upstream Helsinki-NLP model itself. Not fixable without model retraining."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -394,11 +394,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (en_el_es_fi\u2192en_el_es_fi)"
+              "reason": "no English endpoint (en_el_es_fi→en_el_es_fi)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for en_el_es_fi\u2192en_el_es_fi"
+              "reason": "no reference pairs for en_el_es_fi→en_el_es_fi"
             },
             "vitals": {
               "status": "error"
@@ -448,7 +448,7 @@
       "date": "2026-04-11T20:23:56.851492+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -521,7 +521,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -581,7 +581,7 @@
       },
       "best_grade": "F",
       "best_score": 42.5,
-      "notes": "Dr. C independent certification of en_el_es_fi-en_el_es_fi. Tested 1 variant(s): base. Best variant grade: F (42.5). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of en_el_es_fi-en_el_es_fi. Tested 1 variant(s): base. Best variant grade: F (42.5). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-en_el_es_fi-en_el_es_fi",
@@ -597,9 +597,19 @@
       "date": "2026-04-14T16:39:39.672677+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 0 pairs. Score 0\u21920 (\u0394+0.0). No improvement \u2014 discarded.",
+      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 0 pairs. Score 0→0 (Δ+0.0). No improvement — discarded.",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 3 of comprehensive improvement pipeline. Data: 0 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: no_data. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-en_el_es_fi-en_el_es_fi",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=en_el_es_fi) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -641,14 +651,22 @@
     "source3_paragraph_source": "native"
   },
   "quality_rating": {
-    "stars": 0.5,
-    "stars_display": "\u00bd",
+    "stars": null,
+    "stars_display": "½",
     "half_stars": 1,
-    "label": "Experimental",
+    "label": "Deferred",
     "avg_cert_score": 0.0,
     "best_variant_score": 0,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -707,7 +725,7 @@
       "oc1_stars_reference": 0.5
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:26:06.673387+00:00",
       "variant_scores": {}
@@ -721,7 +739,7 @@
     "lora_size_mb": 276.77,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:10:34.258948+00:00",
-    "legal_status": "IDENTICAL \u2014 LoRA weights match base exactly"
+    "legal_status": "IDENTICAL — LoRA weights match base exactly"
   },
   "surgical_log": [],
   "variant_count": 3

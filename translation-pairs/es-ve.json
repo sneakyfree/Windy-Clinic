@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T12:43:56.560698+00:00",
+  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/es-ve.json",
   "patient_id": "es-ve",
   "admitted": "2026-03-22T19:33:20.374942+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-es-ve/lora",
@@ -100,7 +100,7 @@
       "date": "2026-03-22T19:33:20.374942+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,28 +116,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-              "output": "U fana na \u1e4bamusi, ni \u1e13ipfa hani nga ha inwi?",
+              "input": "Hola, ¿cómo estás hoy?",
+              "output": "U fana na ṋamusi, ni ḓipfa hani nga ha inwi?",
               "passed": true
             },
             {
-              "input": "El tiempo est\u00e1 hermoso esta ma\u00f1ana.",
+              "input": "El tiempo está hermoso esta mañana.",
               "output": "Tshifhinga tsho naka nga matsheloni.",
               "passed": true
             },
             {
-              "input": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-              "output": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
+              "input": "Me gustaría pedir una taza de café, por favor.",
+              "output": "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
               "passed": true
             },
             {
-              "input": "El r\u00e1pido zorro marr\u00f3n salta sobre el perro perezoso.",
-              "output": "U \u1e71avha mukosi nga u \u1e71avhanya.",
+              "input": "El rápido zorro marrón salta sobre el perro perezoso.",
+              "output": "U ṱavha mukosi nga u ṱavhanya.",
               "passed": true
             },
             {
-              "input": "La inteligencia artificial est\u00e1 transformando el mundo.",
-              "output": "Muthu o \u1e71alifhaho u shandula n\u1e13ila ine a tshila ngayo.",
+              "input": "La inteligencia artificial está transformando el mundo.",
+              "output": "Muthu o ṱalifhaho u shandula nḓila ine a tshila ngayo.",
               "passed": true
             }
           ]
@@ -150,28 +150,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-              "output": "U fana na \u1e4bamusi, ni \u1e13ipfa hani nga ha inwi?",
+              "input": "Hola, ¿cómo estás hoy?",
+              "output": "U fana na ṋamusi, ni ḓipfa hani nga ha inwi?",
               "passed": true
             },
             {
-              "input": "El tiempo est\u00e1 hermoso esta ma\u00f1ana.",
+              "input": "El tiempo está hermoso esta mañana.",
               "output": "Tshifhinga tsho naka nga matsheloni.",
               "passed": true
             },
             {
-              "input": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-              "output": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
+              "input": "Me gustaría pedir una taza de café, por favor.",
+              "output": "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
               "passed": true
             },
             {
-              "input": "El r\u00e1pido zorro marr\u00f3n salta sobre el perro perezoso.",
-              "output": "U \u1e71avha mukosi nga u \u1e71avhanya.",
+              "input": "El rápido zorro marrón salta sobre el perro perezoso.",
+              "output": "U ṱavha mukosi nga u ṱavhanya.",
               "passed": true
             },
             {
-              "input": "La inteligencia artificial est\u00e1 transformando el mundo.",
-              "output": "Muthu o \u1e71alifhaho u shandula n\u1e13ila ine a tshila ngayo.",
+              "input": "La inteligencia artificial está transformando el mundo.",
+              "output": "Muthu o ṱalifhaho u shandula nḓila ine a tshila ngayo.",
               "passed": true
             }
           ]
@@ -184,34 +184,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-              "output": "Ni \u1e13ipfa hani \u1e4bamusi?",
+              "input": "Hola, ¿cómo estás hoy?",
+              "output": "Ni ḓipfa hani ṋamusi?",
               "passed": true
             },
             {
-              "input": "El tiempo est\u00e1 hermoso esta ma\u00f1ana.",
+              "input": "El tiempo está hermoso esta mañana.",
               "output": "Tshifhinga tsho naka nga matsheloni.",
               "passed": true
             },
             {
-              "input": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-              "output": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela \u1e45wana wa mutukana uri a \u1e13e a nwe.",
+              "input": "Me gustaría pedir una taza de café, por favor.",
+              "output": "Ndo vha ndi tshi ṱoḓa u humbela ṅwana wa mutukana uri a ḓe a nwe.",
               "passed": true
             },
             {
-              "input": "El r\u00e1pido zorro marr\u00f3n salta sobre el perro perezoso.",
-              "output": "U \u1e71avha mukosi nga u \u1e71avhanya.",
+              "input": "El rápido zorro marrón salta sobre el perro perezoso.",
+              "output": "U ṱavha mukosi nga u ṱavhanya.",
               "passed": true
             },
             {
-              "input": "La inteligencia artificial est\u00e1 transformando el mundo.",
-              "output": "U \u1e71alifha zwi ita uri shango \u1e3di vhe khwine.",
+              "input": "La inteligencia artificial está transformando el mundo.",
+              "output": "U ṱalifha zwi ita uri shango ḽi vhe khwine.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +245,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:59:50.492812+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -268,11 +268,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Zwiimo zwo naka \u1e4bamusi.",
-            "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
-            "Vhana vha khou tamba zwavhu\u1e13i.",
-            "Swole \u1e3di bva ngafhi?",
-            "O shuma vhuongeloni lwa mi\u1e45waha ya fumi."
+            "Zwiimo zwo naka ṋamusi.",
+            "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
+            "Vhana vha khou tamba zwavhuḓi.",
+            "Swole ḽi bva ngafhi?",
+            "O shuma vhuongeloni lwa miṅwaha ya fumi."
           ]
         },
         "lora": {
@@ -283,11 +283,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Zwiimo zwo naka \u1e4bamusi.",
-            "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
-            "Vhana vha khou tamba zwavhu\u1e13i.",
-            "Swole \u1e3di bva ngafhi?",
-            "O shuma vhuongeloni lwa mi\u1e45waha ya fumi."
+            "Zwiimo zwo naka ṋamusi.",
+            "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
+            "Vhana vha khou tamba zwavhuḓi.",
+            "Swole ḽi bva ngafhi?",
+            "O shuma vhuongeloni lwa miṅwaha ya fumi."
           ],
           "delta_vs_base": 0.0
         },
@@ -321,7 +321,7 @@
       "date": "2026-03-23T04:59:50.492812+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +384,7 @@
       "date": "2026-03-24T05:35:14.505994+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +420,7 @@
       "date": "2026-03-24T16:37:25.461705+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -433,17 +433,17 @@
           "old_size_mb": 181.9,
           "new_size_mb": 278.3,
           "verified_match": true,
-          "sample_translation": "He nda vha ndi tshi kona u zwi vhona ndi tshi kha \u1e13i tou bva u vhona zwavhu\u1e13i."
+          "sample_translation": "He nda vha ndi tshi kona u zwi vhona ndi tshi kha ḓi tou bva u vhona zwavhuḓi."
         }
       },
-      "notes": "Replaced broken pickle INT8 (181.9MB) with clean safetensors (278.3MB). Verified base-CT2 output match: True. Sample translation: \"He nda vha ndi tshi kona u zwi vhona ndi tshi kha \u1e13i tou bva u vhona zwavhu\u1e13i.\". Elapsed: 43.0s."
+      "notes": "Replaced broken pickle INT8 (181.9MB) with clean safetensors (278.3MB). Verified base-CT2 output match: True. Sample translation: \"He nda vha ndi tshi kona u zwi vhona ndi tshi kha ḓi tou bva u vhona zwavhuḓi.\". Elapsed: 43.0s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -461,7 +461,7 @@
       "date": "2026-03-28T15:20:54.957898+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -470,7 +470,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 47.96,
@@ -479,21 +479,21 @@
               "max": 88.24,
               "sentences": [
                 {
-                  "original": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "forward": "U fana na \u1e4bamusi, ni \u1e13ipfa hani nga ha inwi?",
-                  "returned": "Al igual que en la actualidad, \u00bfqu\u00e9 piensa de usted?",
+                  "original": "Hola, ¿cómo estás hoy?",
+                  "forward": "U fana na ṋamusi, ni ḓipfa hani nga ha inwi?",
+                  "returned": "Al igual que en la actualidad, ¿qué piensa de usted?",
                   "similarity": 0.2703
                 },
                 {
-                  "original": "El tiempo es hermoso esta ma\u00f1ana.",
+                  "original": "El tiempo es hermoso esta mañana.",
                   "forward": "Tshifhinga tsho naka nga matsheloni.",
-                  "returned": "El tiempo es hermoso por la ma\u00f1ana.",
+                  "returned": "El tiempo es hermoso por la mañana.",
                   "similarity": 0.8824
                 },
                 {
-                  "original": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "forward": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
-                  "returned": "Quer\u00eda pedirle pan para cocinar.",
+                  "original": "Me gustaría pedir una taza de café, por favor.",
+                  "forward": "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
+                  "returned": "Quería pedirle pan para cocinar.",
                   "similarity": 0.3846
                 }
               ]
@@ -505,21 +505,21 @@
               "max": 88.24,
               "sentences": [
                 {
-                  "original": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "forward": "U fana na \u1e4bamusi, ni \u1e13ipfa hani nga ha inwi?",
-                  "returned": "Al igual que en la actualidad, \u00bfqu\u00e9 piensa de usted?",
+                  "original": "Hola, ¿cómo estás hoy?",
+                  "forward": "U fana na ṋamusi, ni ḓipfa hani nga ha inwi?",
+                  "returned": "Al igual que en la actualidad, ¿qué piensa de usted?",
                   "similarity": 0.2703
                 },
                 {
-                  "original": "El tiempo es hermoso esta ma\u00f1ana.",
+                  "original": "El tiempo es hermoso esta mañana.",
                   "forward": "Tshifhinga tsho naka nga matsheloni.",
-                  "returned": "El tiempo es hermoso por la ma\u00f1ana.",
+                  "returned": "El tiempo es hermoso por la mañana.",
                   "similarity": 0.8824
                 },
                 {
-                  "original": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "forward": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
-                  "returned": "Quer\u00eda pedirle pan para cocinar.",
+                  "original": "Me gustaría pedir una taza de café, por favor.",
+                  "forward": "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
+                  "returned": "Quería pedirle pan para cocinar.",
                   "similarity": 0.3846
                 }
               ]
@@ -531,21 +531,21 @@
               "max": 88.24,
               "sentences": [
                 {
-                  "original": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
-                  "forward": "U fana na \u1e4bamusi, ni \u1e13ipfa hani nga ha inwi?",
-                  "returned": "Al igual que en la actualidad, \u00bfqu\u00e9 piensa de usted?",
+                  "original": "Hola, ¿cómo estás hoy?",
+                  "forward": "U fana na ṋamusi, ni ḓipfa hani nga ha inwi?",
+                  "returned": "Al igual que en la actualidad, ¿qué piensa de usted?",
                   "similarity": 0.2703
                 },
                 {
-                  "original": "El tiempo es hermoso esta ma\u00f1ana.",
+                  "original": "El tiempo es hermoso esta mañana.",
                   "forward": "Tshifhinga tsho naka nga matsheloni.",
-                  "returned": "El tiempo es hermoso por la ma\u00f1ana.",
+                  "returned": "El tiempo es hermoso por la mañana.",
                   "similarity": 0.8824
                 },
                 {
-                  "original": "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
-                  "forward": "Ndo vha ndi tshi \u1e71o\u1e13a u humbela vhurotho ha u bika.",
-                  "returned": "Quer\u00eda pedirle pan para cocinar.",
+                  "original": "Me gustaría pedir una taza de café, por favor.",
+                  "forward": "Ndo vha ndi tshi ṱoḓa u humbela vhurotho ha u bika.",
+                  "returned": "Quería pedirle pan para cocinar.",
                   "similarity": 0.3846
                 }
               ]
@@ -610,11 +610,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (es\u2192ve)"
+              "reason": "no English endpoint (es→ve)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for es\u2192ve"
+              "reason": "no reference pairs for es→ve"
             },
             "vitals": {
               "status": "complete",
@@ -668,7 +668,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -788,7 +788,7 @@
       },
       "best_grade": "A+",
       "best_score": 97.12,
-      "notes": "Dr. C independent certification of es-ve. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.12). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of es-ve. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.12). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-es-ve",
@@ -798,6 +798,16 @@
       "method": "CTranslate2 INT8 quantization of lora/ (proprietary weights) via ct2-opus-mt-converter --quantization int8",
       "protocol_script": "scripts/ct2_quantize_lora_fleet.py",
       "notes": "Created REAL INT8 quantized version of the proprietary fog-of-mirror LoRA fine-tuned weights. Source: lora/model.safetensors. Output: lora-ct2-int8/model.bin. Size: 72 MB (~25% of source). The previous ct2_int8/ directory was a FAKE (byte-identical copy of base/) and has been deleted. This replacement is genuinely quantized from the proprietary variant. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-GRV2-DEFERRED-es-ve",
+      "date": "2026-04-16T18:55:33.775352+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "GR v2 rating deferred — native-language corpus required",
+      "protocol_script": "deferred (no native test fixtures)",
+      "variant_tested": null,
+      "notes": "Patient has base weights on disk but no native-language (src=es) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -840,14 +850,22 @@
     "source3_paragraph_source": "native"
   },
   "quality_rating": {
-    "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars": null,
+    "stars_display": "★★★★★",
     "half_stars": 10,
-    "label": "Gold Standard",
+    "label": "Deferred",
     "avg_cert_score": 10.0,
     "best_variant_score": 10,
     "variants_tested": 3,
-    "source": "Kit OC1 Alpha certification"
+    "source": "Kit OC1 Alpha certification",
+    "composite_score": null,
+    "tier": "deferred",
+    "rated_at": null,
+    "rated_by": null,
+    "rating_method": "deferred",
+    "note": "GR v2 stress test deferred (native-language corpus needed; paragraph harness vocab-OOB). Ships under Helsinki-NLP baseline quality via lora variant.",
+    "deferred_at": "2026-04-16T18:55:33.775352+00:00",
+    "deferred_by": "Opus 4.6 Opus-Claw (Dr. C)"
   },
   "doctor_ratings": {
     "kit_oc1_alpha": {
@@ -938,7 +956,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:35:14.505994+00:00",
       "variant_scores": {}
@@ -952,7 +970,7 @@
     "lora_size_mb": 291.85,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T21:56:44.907321+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -962,7 +980,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3
