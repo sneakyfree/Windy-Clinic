@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T00:39:07.268449+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/de-et.json",
   "patient_id": "de-et",
   "admitted": "2026-03-22T19:29:15.987854+00:00",
@@ -102,7 +102,9 @@
       "on_disk_bytes": 298844160,
       "recreated_at": "2026-04-12T16:43:51.353327+00:00",
       "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data."
+      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data.",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-de-et/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-16T00:39:07.268449+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -1197,6 +1199,20 @@
         }
       },
       "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-de-et",
+      "date": "2026-04-16T00:39:07.268449+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-de-et",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-de-et",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

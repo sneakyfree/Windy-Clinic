@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T00:21:01.768801+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ar-de.json",
   "patient_id": "ar-de",
   "admitted": "2026-03-22T19:27:32.130755+00:00",
@@ -160,7 +160,9 @@
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ar-de/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-16T00:21:01.768801+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -1270,6 +1272,20 @@
         }
       },
       "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-ar-de",
+      "date": "2026-04-16T00:21:01.768801+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-ar-de",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-ar-de",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T17:00:36.713186+00:00",
+  "_last_updated": "2026-04-16T00:45:01.666397+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ee-es.json",
   "patient_id": "ee-es",
   "admitted": "2026-03-22T19:29:51.118427+00:00",
@@ -102,7 +102,9 @@
       "on_disk_bytes": 303038464,
       "recreated_at": "2026-04-12T17:00:36.713186+00:00",
       "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data."
+      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data.",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ee-es/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-16T00:45:01.666397+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -1095,6 +1097,20 @@
       "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 8128 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 87.5, after: 90.1, delta: 2.6. IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (8128 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-ee-es",
+      "date": "2026-04-16T00:45:01.666397+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-ee-es",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-ee-es",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

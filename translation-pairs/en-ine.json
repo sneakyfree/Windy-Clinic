@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T20:49:48.487062+00:00",
+  "_last_updated": "2026-04-16T00:56:53.427549+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/en-ine.json",
   "patient_id": "en-ine",
   "admitted": "2026-03-22T20:52:32.774862+00:00",
@@ -103,7 +103,9 @@
       "score_after": 89.8,
       "delta": 1.7,
       "improved_at": "2026-04-14T14:36:15.762011+00:00",
-      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-en-ine/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-16T00:56:53.427549+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -154,7 +156,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-ine/herm0-ct2-int8",
       "on_disk_bytes": 78822209,
       "quantized_at": "2026-04-15T20:49:48.486999+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-en-ine/tree/main/herm0-ct2-int8",
+      "hf_uploaded_at": "2026-04-16T00:56:53.427549+00:00"
     }
   },
   "architecture": {
@@ -1187,6 +1191,20 @@
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
       "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (75 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-en-ine",
+      "date": "2026-04-16T00:56:53.427549+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-en-ine",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-en-ine",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
