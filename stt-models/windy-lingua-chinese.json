@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:52:29.130866+00:00",
+  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
   "_clinic_path": "stt-models/windy-lingua-chinese.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-chinese",
@@ -38,14 +38,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-chinese. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-chinese. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-chinese",
       "date": "2026-04-12T01:52:29.130848+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification \u2014 FLEURS chinese dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification — FLEURS chinese dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -65,34 +65,51 @@
           "fleurs_subset": "cmn_hans_cn",
           "sample_transcriptions": [
             {
-              "ref": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f",
-              "hyp": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f"
+              "ref": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期",
+              "hyp": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期"
             },
             {
-              "ref": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f",
-              "hyp": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f"
+              "ref": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期",
+              "hyp": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期"
             },
             {
-              "ref": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f",
-              "hyp": "\u897f \u73ed \u7259 \u4eba \u5f00 \u59cb \u4e86 \u957f \u8fbe \u4e09 \u4e2a \u4e16 \u7eaa \u7684 \u6b96 \u6c11 \u65f6 \u671f"
+              "ref": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期",
+              "hyp": "西 班 牙 人 开 始 了 长 达 三 个 世 纪 的 殖 民 时 期"
             },
             {
-              "ref": "\u6211 \u59d0 \u59d0 \u548c \u5979 \u7684 \u670b \u53cb \u4e0d \u89c1 \u4e86 \u8def \u4e0a \u6709 \u4e24 \u4e2a \u6b8b \u75be \u4eba \u5750 \u7740 \u8f6e \u6905 \u6709 \u4eba \u8df3 \u8fc7 \u53bb \u5e2e \u4ed6 \u4eec \u63a8 \u8f6e \u6905 \u963f \u5c14 \u8292 \u8303 \u601d \u54f2 \u8bf4 \u9053",
-              "hyp": "\u6211 \u59d0 \u59d0 \u548c \u5979 \u7684 \u670b \u53cb \u4e0d \u89c1 \u4e86 \u8def \u4e0a \u6709 \u4e24 \u4e2a \u6b8b \u75be \u4eba \u5750 \u7740 \u8f6e \u6905 \u6709 \u4eba \u8df3 \u8fc7 \u53bb \u5e2e \u4ed6 \u4eec \u63a8 \u8f6e \u6905 \u963f \u5c14 \u8292 \u8303 \u601d \u54f2 \u8bf4 \u9053"
+              "ref": "我 姐 姐 和 她 的 朋 友 不 见 了 路 上 有 两 个 残 疾 人 坐 着 轮 椅 有 人 跳 过 去 帮 他 们 推 轮 椅 阿 尔 芒 范 思 哲 说 道",
+              "hyp": "我 姐 姐 和 她 的 朋 友 不 见 了 路 上 有 两 个 残 疾 人 坐 着 轮 椅 有 人 跳 过 去 帮 他 们 推 轮 椅 阿 尔 芒 范 思 哲 说 道"
             },
             {
-              "ref": "\u6211 \u59d0 \u59d0 \u548c \u5979 \u7684 \u670b \u53cb \u4e0d \u89c1 \u4e86 \u8def \u4e0a \u6709 \u4e24 \u4e2a \u6b8b \u75be \u4eba \u5750 \u7740 \u8f6e \u6905 \u6709 \u4eba \u8df3 \u8fc7 \u53bb \u5e2e \u4ed6 \u4eec \u63a8 \u8f6e \u6905 \u963f \u5c14 \u8292 \u8303 \u601d \u54f2 \u8bf4 \u9053",
-              "hyp": "\u6211 \u59d0 \u59d0 \u548c \u5979 \u7684 \u670b \u53cb \u4e0d \u89c1 \u4e86 \u8def \u4e0a \u6709 \u4e24 \u4e2a \u6b8b \u75be \u4eba \u5750 \u7740 \u8f6e \u6905 \u6709 \u4eba \u8df3 \u8fc7 \u53bb \u5e2e \u4ed6 \u4eec \u63a8 \u8f6e \u6905 \u963f \u5c14 \u8292 \u8303 \u601d \u54f2 \u8bf4 \u9053"
+              "ref": "我 姐 姐 和 她 的 朋 友 不 见 了 路 上 有 两 个 残 疾 人 坐 着 轮 椅 有 人 跳 过 去 帮 他 们 推 轮 椅 阿 尔 芒 范 思 哲 说 道",
+              "hyp": "我 姐 姐 和 她 的 朋 友 不 见 了 路 上 有 两 个 残 疾 人 坐 着 轮 椅 有 人 跳 过 去 帮 他 们 推 轮 椅 阿 尔 芒 范 思 哲 说 道"
             }
           ]
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 0.0% (A). RTF: 0.0683 (real-time factor, <1 = faster than real-time). Mean latency: 601.3 ms. Peak GPU: 994 MB. Tested on FLEURS chinese dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-STT-100SAMPLE-windy-lingua-chinese-20260416",
+      "date": "2026-04-16T19:01:28.667329+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
+      "fleurs_subset": "cmn_hans_cn",
+      "n_samples": 100,
+      "wer": 0.0,
+      "cer": 0.0,
+      "mean_latency_ms": 490.2,
+      "p95_latency_ms": 1167.8,
+      "rtf": 0.0408,
+      "peak_gpu_mb": 1047.6,
+      "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.0, CER=0.0, RTF=0.0408, mean latency 490.2ms. NOTE: WER=0.0 suggests identity between reference and hypothesis tokens after CJK whitespace-split — may be artifact of char-level tokenizer alignment; CER=0.0. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.0,
     "stt_grade": "A",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",

@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:53:18.180306+00:00",
+  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
   "_clinic_path": "stt-models/windy-lingua-arabic.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-arabic",
@@ -38,14 +38,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic. Size: 2949.5 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic. Size: 2949.5 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-arabic",
       "date": "2026-04-12T01:53:18.180293+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification \u2014 FLEURS arabic dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification — FLEURS arabic dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -65,34 +65,51 @@
           "fleurs_subset": "ar_eg",
           "sample_transcriptions": [
             {
-              "ref": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627",
-              "hyp": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0627\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627"
+              "ref": "لم يبد لي ذلك منطقيا بالتأكيد لم يكن عادلا",
+              "hyp": "لم يبد لي ذلك منطقيا بالتاكيد لم يكن عادلا"
             },
             {
-              "ref": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627",
-              "hyp": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0627\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627"
+              "ref": "لم يبد لي ذلك منطقيا بالتأكيد لم يكن عادلا",
+              "hyp": "لم يبد لي ذلك منطقيا بالتاكيد لم يكن عادلا"
             },
             {
-              "ref": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0629 \u0641\u064a \u0623\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646",
-              "hyp": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0647 \u0641\u064a \u0627\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646"
+              "ref": "لم تكن هناك غابات كبيرة في أرض كنعان لذلك كان الخشب باهظ الثمن",
+              "hyp": "لم تكن هناك غابات كبيره في ارض كنعان لذلك كان الخشب باهظ الثمن"
             },
             {
-              "ref": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0629 \u0641\u064a \u0623\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646",
-              "hyp": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0647 \u0641\u064a \u0627\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646"
+              "ref": "لم تكن هناك غابات كبيرة في أرض كنعان لذلك كان الخشب باهظ الثمن",
+              "hyp": "لم تكن هناك غابات كبيره في ارض كنعان لذلك كان الخشب باهظ الثمن"
             },
             {
-              "ref": "\u062a\u062a\u064a\u062d \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u062d\u0644 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0629 \u064a\u0645\u0643\u0646 \u0644\u0644\u0637\u0644\u0627\u0628 \u0645\u0634\u0627\u0647\u062f\u0629 \u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0623\u062b\u0631\u064a\u0629 \u0628\u0627\u0644\u0645\u062a\u062d\u0641 \u0623\u0648 ",
-              "hyp": "\u062a\u062a\u064a\u062d \u0627\u0644\u062a\u0642\u0646\u064a\u0647 \u0627\u0644\u062d\u0644 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0647 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0647 \u064a\u0645\u0643\u0646 \u0644\u0644\u0637\u0644\u0627\u0628 \u0645\u0634\u0627\u0647\u062f\u0647 \u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0627\u062b\u0631\u064a\u0647 \u0628\u0627\u0644\u0645\u062a\u062d\u0641 \u0627\u0648 "
+              "ref": "تتيح التقنية الحل من خلال الزيارات الميدانية الافتراضية يمكن للطلاب مشاهدة القطع الأثرية بالمتحف أو ",
+              "hyp": "تتيح التقنيه الحل من خلال الزيارات الميدانيه الافتراضيه يمكن للطلاب مشاهده القطع الاثريه بالمتحف او "
             }
           ]
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 35.6% (C). RTF: 0.0988 (real-time factor, <1 = faster than real-time). Mean latency: 1157.4 ms. Peak GPU: 6542 MB. Tested on FLEURS arabic dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-STT-100SAMPLE-windy-lingua-arabic-20260416",
+      "date": "2026-04-16T19:01:28.667329+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
+      "fleurs_subset": "ar_eg",
+      "n_samples": 100,
+      "wer": 0.3884,
+      "cer": 0.0712,
+      "mean_latency_ms": 668.8,
+      "p95_latency_ms": 1070.8,
+      "rtf": 0.0606,
+      "peak_gpu_mb": 6544.9,
+      "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.3884, CER=0.0712, RTF=0.0606, mean latency 668.8ms. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.3564,
     "stt_grade": "C",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",

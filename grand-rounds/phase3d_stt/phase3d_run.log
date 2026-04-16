@@ -84,3 +84,23 @@ IndexError: index -2 is out of bounds for dimension 0 with size 0
 [2026-04-11T20:55:01.583346+00:00]   loading windy-lingua-spanish from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish
 [2026-04-11T20:55:07.833548+00:00]   windy-lingua-spanish: WER=0.3675, RTF=0.0191, lat=215.8ms, gpu=987.0MB
 [2026-04-11T20:55:07.833700+00:00] Phase 3d done. Completed: 5, errors: 2
+[2026-04-16T18:56:07.302732+00:00] Phase 3d STT harness — device=cuda
+[2026-04-16T18:56:07.302907+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-16T18:56:07.302926+00:00] Samples per model: 100
+[2026-04-16T18:56:07.302980+00:00]   loading FLEURS es_419 (100 samples)
+[2026-04-16T18:56:10.257292+00:00]   loading windy-lingua-spanish from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish
+[2026-04-16T18:56:39.818285+00:00]   windy-lingua-spanish: WER=0.3268, RTF=0.0177, lat=203.6ms, gpu=987.0MB
+[2026-04-16T18:56:39.819948+00:00]   loading FLEURS cmn_hans_cn (100 samples)
+[2026-04-16T18:56:42.656290+00:00]   loading windy-lingua-chinese from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-chinese
+[2026-04-16T18:57:41.076547+00:00]   windy-lingua-chinese: WER=0.0, RTF=0.0408, lat=490.2ms, gpu=1047.6MB
+[2026-04-16T18:57:41.076745+00:00]   loading FLEURS hi_in (100 samples)
+[2026-04-16T18:57:42.678003+00:00]   loading windy-lingua-hindi from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-hindi
+[2026-04-16T18:58:02.080966+00:00]   windy-lingua-hindi: WER=0.999, RTF=0.0098, lat=104.9ms, gpu=333.9MB
+[2026-04-16T18:58:02.081145+00:00]   loading FLEURS fr_fr (100 samples)
+[2026-04-16T18:58:03.904757+00:00]   loading windy-lingua-french from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-french
+[2026-04-16T18:59:08.004432+00:00]   windy-lingua-french: WER=0.0757, RTF=0.0525, lat=530.3ms, gpu=3021.9MB
+[2026-04-16T18:59:08.004622+00:00]   loading FLEURS ar_eg (100 samples)
+[2026-04-16T18:59:09.966205+00:00]   loading windy-lingua-arabic from /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic
+[2026-04-16T19:00:30.709316+00:00]   windy-lingua-arabic: WER=0.3884, RTF=0.0606, lat=668.8ms, gpu=6544.9MB
+[2026-04-16T19:00:30.709455+00:00]   windy-lingua-hindi-ct2: SKIP — ct2 format not loadable via transformers; needs separate CTranslate2 harness
+[2026-04-16T19:00:30.710952+00:00] Phase 3d done. Completed: 5, errors: 1

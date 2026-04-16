@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:52:15.385211+00:00",
+  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
   "_clinic_path": "stt-models/windy-lingua-spanish.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-spanish",
@@ -38,14 +38,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-spanish",
       "date": "2026-04-12T01:52:15.385190+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification \u2014 FLEURS spanish dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification — FLEURS spanish dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -65,34 +65,51 @@
           "fleurs_subset": "es_419",
           "sample_transcriptions": [
             {
-              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental"
+              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental"
             },
             {
-              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte del movimiento samiental"
+              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte del movimiento samiental"
             },
             {
-              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte movimiento san mientalis"
+              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte movimiento san mientalis"
             },
             {
-              "ref": "a\u00fan intentan establecer cu\u00e1n importante fue el impacto y de qu\u00e9 modo afectar\u00e1 al planeta",
-              "hyp": "a\u00fan intentan establecer cu\u00e1l importante fue el impacto y de que moda afectar al planeta"
+              "ref": "aún intentan establecer cuán importante fue el impacto y de qué modo afectará al planeta",
+              "hyp": "aún intentan establecer cuál importante fue el impacto y de que moda afectar al planeta"
             },
             {
-              "ref": "a\u00fan intentan establecer cu\u00e1n importante fue el impacto y de qu\u00e9 modo afectar\u00e1 al planeta",
-              "hyp": "a\u00fan intentan establecer cu\u00e1n importantes fue el impacto y de que moda afectar al planeta"
+              "ref": "aún intentan establecer cuán importante fue el impacto y de qué modo afectará al planeta",
+              "hyp": "aún intentan establecer cuán importantes fue el impacto y de que moda afectar al planeta"
             }
           ]
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 36.8% (C). RTF: 0.0262 (real-time factor, <1 = faster than real-time). Mean latency: 296.5 ms. Peak GPU: 988 MB. Tested on FLEURS spanish dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-STT-100SAMPLE-windy-lingua-spanish-20260416",
+      "date": "2026-04-16T19:01:28.667329+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
+      "fleurs_subset": "es_419",
+      "n_samples": 100,
+      "wer": 0.3268,
+      "cer": 0.2198,
+      "mean_latency_ms": 203.6,
+      "p95_latency_ms": 285.3,
+      "rtf": 0.0177,
+      "peak_gpu_mb": 987.0,
+      "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.3268, CER=0.2198, RTF=0.0177, mean latency 203.6ms. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.3675,
     "stt_grade": "C",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",

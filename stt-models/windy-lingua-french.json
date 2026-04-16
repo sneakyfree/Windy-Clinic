@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:52:53.056467+00:00",
+  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
   "_clinic_path": "stt-models/windy-lingua-french.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-french",
@@ -38,14 +38,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-french. Size: 1461.8 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-french. Size: 1461.8 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-french",
       "date": "2026-04-12T01:52:53.056453+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification \u2014 FLEURS french dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification — FLEURS french dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -65,34 +65,51 @@
           "fleurs_subset": "fr_fr",
           "sample_transcriptions": [
             {
-              "ref": "les plages sont nombreuses car auckland est \u00e0 cheval sur deux ports les plus populaires se trouvent ",
-              "hyp": "les plages sont nombreuses car auckland est \u00e0 cheval sur deux ports les plus populaires se trouvent "
+              "ref": "les plages sont nombreuses car auckland est à cheval sur deux ports les plus populaires se trouvent ",
+              "hyp": "les plages sont nombreuses car auckland est à cheval sur deux ports les plus populaires se trouvent "
             },
             {
-              "ref": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois 10 km de large",
-              "hyp": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois dix kilom\u00e8tres de l"
+              "ref": "l amazone est également le fleuve le plus large de la planète atteignant parfois 10 km de large",
+              "hyp": "l amazone est également le fleuve le plus large de la planète atteignant parfois dix kilomètres de l"
             },
             {
-              "ref": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois 10 km de large",
-              "hyp": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois dix kilom\u00e8tres de l"
+              "ref": "l amazone est également le fleuve le plus large de la planète atteignant parfois 10 km de large",
+              "hyp": "l amazone est également le fleuve le plus large de la planète atteignant parfois dix kilomètres de l"
             },
             {
-              "ref": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois 10 km de large",
-              "hyp": "l amazone est \u00e9galement le fleuve le plus large de la plan\u00e8te atteignant parfois dix kilom\u00e8tres de l"
+              "ref": "l amazone est également le fleuve le plus large de la planète atteignant parfois 10 km de large",
+              "hyp": "l amazone est également le fleuve le plus large de la planète atteignant parfois dix kilomètres de l"
             },
             {
-              "ref": "les crit\u00e8res qui d\u00e9terminent une sous culture comme distincte peuvent \u00eatre linguistiques esth\u00e9tiques",
-              "hyp": "les crit\u00e8res qui d\u00e9terminent une sous culture comme distinct peuvent \u00eatre linguistique esth\u00e9tique re"
+              "ref": "les critères qui déterminent une sous culture comme distincte peuvent être linguistiques esthétiques",
+              "hyp": "les critères qui déterminent une sous culture comme distinct peuvent être linguistique esthétique re"
             }
           ]
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 4.6% (A). RTF: 0.0799 (real-time factor, <1 = faster than real-time). Mean latency: 781.9 ms. Peak GPU: 2998 MB. Tested on FLEURS french dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-STT-100SAMPLE-windy-lingua-french-20260416",
+      "date": "2026-04-16T19:01:28.667329+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
+      "fleurs_subset": "fr_fr",
+      "n_samples": 100,
+      "wer": 0.0757,
+      "cer": 0.0509,
+      "mean_latency_ms": 530.3,
+      "p95_latency_ms": 900.8,
+      "rtf": 0.0525,
+      "peak_gpu_mb": 3021.9,
+      "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.0757, CER=0.0509, RTF=0.0525, mean latency 530.3ms. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.0463,
     "stt_grade": "A",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",

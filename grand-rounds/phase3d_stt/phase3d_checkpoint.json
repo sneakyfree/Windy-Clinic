@@ -1,16 +1,12 @@
 {
   "done": [
+    "windy-lingua-spanish",
     "windy-lingua-chinese",
     "windy-lingua-hindi",
     "windy-lingua-french",
-    "windy-lingua-arabic",
-    "windy-lingua-spanish"
+    "windy-lingua-arabic"
   ],
   "errors": [
-    {
-      "pid": "windy-lingua-spanish",
-      "reason": "IndexError: index -2 is out of bounds for dimension 0 with size 0"
-    },
     {
       "pid": "windy-lingua-hindi-ct2",
       "reason": "skipped_ct2 format not loadable via transformers; needs se"

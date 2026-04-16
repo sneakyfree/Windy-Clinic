@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:52:35.335684+00:00",
+  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
   "_clinic_path": "stt-models/windy-lingua-hindi.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-hindi",
@@ -38,14 +38,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-hindi. Size: 143.8 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-hindi. Size: 143.8 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-hindi",
       "date": "2026-04-12T01:52:35.335664+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification \u2014 FLEURS hindi dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification — FLEURS hindi dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -65,34 +65,51 @@
           "fleurs_subset": "hi_in",
           "sample_transcriptions": [
             {
-              "ref": "\u0907\u0924 \u0932\u0935 \u092d \u0937 \u092e \u0909\u091a \u091a \u0930\u0923 \u0915\u0930\u0928 \u0924 \u0932\u0928 \u0924 \u092e\u0915 \u0930 \u092a \u0938 \u0906\u0938 \u0928 \u0939 \u0915 \u092f \u0915 \u091c \u092f \u0926 \u0924\u0930 \u0936\u092c \u0926 \u0915 \u0909\u091a \u091a \u0930\u0923 \u0935 \u0938 \u0939 \u0915 \u092f \u091c \u0924 \u0939 \u091c \u0938 \u0909\u0928 ",
+              "ref": "इत लव भ ष म उच च रण करन त लन त मक र प स आस न ह क य क ज य द तर शब द क उच च रण व स ह क य ज त ह ज स उन ",
               "hyp": "itaalvi bhaasha mein uchchaaran karna tulnaatmak roop se aasaan hai kyonki zyaada dashakton ka uchch"
             },
             {
-              "ref": "\u0907\u0924 \u0932\u0935 \u092d \u0937 \u092e \u0909\u091a \u091a \u0930\u0923 \u0915\u0930\u0928 \u0924 \u0932\u0928 \u0924 \u092e\u0915 \u0930 \u092a \u0938 \u0906\u0938 \u0928 \u0939 \u0915 \u092f \u0915 \u091c \u092f \u0926 \u0924\u0930 \u0936\u092c \u0926 \u0915 \u0909\u091a \u091a \u0930\u0923 \u0935 \u0938 \u0939 \u0915 \u092f \u091c \u0924 \u0939 \u091c \u0938 \u0909\u0928 ",
+              "ref": "इत लव भ ष म उच च रण करन त लन त मक र प स आस न ह क य क ज य द तर शब द क उच च रण व स ह क य ज त ह ज स उन ",
               "hyp": "itaal bhi bhaasha mein uchchaaran karna tulnaatmak roop se aasaan hai kyonki zyaadaatar shabdon ko u"
             },
             {
-              "ref": "\u0907\u0924 \u0932\u0935 \u092d \u0937 \u092e \u0909\u091a \u091a \u0930\u0923 \u0915\u0930\u0928 \u0924 \u0932\u0928 \u0924 \u092e\u0915 \u0930 \u092a \u0938 \u0906\u0938 \u0928 \u0939 \u0915 \u092f \u0915 \u091c \u092f \u0926 \u0924\u0930 \u0936\u092c \u0926 \u0915 \u0909\u091a \u091a \u0930\u0923 \u0935 \u0938 \u0939 \u0915 \u092f \u091c \u0924 \u0939 \u091c \u0938 \u0909\u0928 ",
+              "ref": "इत लव भ ष म उच च रण करन त लन त मक र प स आस न ह क य क ज य द तर शब द क उच च रण व स ह क य ज त ह ज स उन ",
               "hyp": "thik hai"
             },
             {
-              "ref": "\u0907\u0938 \u092e \u0917\u0932\u0935 \u0930 \u0915 \u0915 \u091f\u0928 \u0924\u092f \u0915 \u092f \u0917\u092f \u0925 \u0932 \u0915 \u0928 \u090f\u0915 \u0906\u092a \u0924\u0915 \u0932 \u0928 \u0905\u0926 \u0932\u0924 \u0915 \u092b \u0938\u0932 \u0915 \u092c \u0926 \u0907\u0938 \u092c\u091a \u0932 \u092f \u0917\u092f \u0925",
+              "ref": "इस म गलव र क क टन तय क य गय थ ल क न एक आप तक ल न अद लत क फ सल क ब द इस बच ल य गय थ",
               "hyp": "ise mangalvaar ko kaatna tay kiya gaya tha lekin ek aapta kaalin adaalat ke faisle ke baad ise bacha"
             },
             {
-              "ref": "\u0907\u0938 \u092e \u0917\u0932\u0935 \u0930 \u0915 \u0915 \u091f\u0928 \u0924\u092f \u0915 \u092f \u0917\u092f \u0925 \u0932 \u0915 \u0928 \u090f\u0915 \u0906\u092a \u0924\u0915 \u0932 \u0928 \u0905\u0926 \u0932\u0924 \u0915 \u092b \u0938\u0932 \u0915 \u092c \u0926 \u0907\u0938 \u092c\u091a \u0932 \u092f \u0917\u092f \u0925",
+              "ref": "इस म गलव र क क टन तय क य गय थ ल क न एक आप तक ल न अद लत क फ सल क ब द इस बच ल य गय थ",
               "hyp": "ise mangalvaar ko kaatna tay kiya gaya tha lekin ek aapaatkaalin adaalat ke faisle ke baad ise bacha"
             }
           ]
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 100.0% (F). RTF: 0.0197 (real-time factor, <1 = faster than real-time). Mean latency: 191.4 ms. Peak GPU: 334 MB. Tested on FLEURS hindi dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-STT-100SAMPLE-windy-lingua-hindi-20260416",
+      "date": "2026-04-16T19:01:28.667329+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
+      "fleurs_subset": "hi_in",
+      "n_samples": 100,
+      "wer": 0.999,
+      "cer": 1.1335,
+      "mean_latency_ms": 104.9,
+      "p95_latency_ms": 169.4,
+      "rtf": 0.0098,
+      "peak_gpu_mb": 333.9,
+      "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.999, CER=1.1335, RTF=0.0098, mean latency 104.9ms. WARNING: WER ≈100% confirms Hinglish-vs-Devanagari mismatch — model outputs romanized Hindi while FLEURS reference is Devanagari script. Product decision required. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 1.0,
     "stt_grade": "F",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",
