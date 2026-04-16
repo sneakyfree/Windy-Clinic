@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-12T21:30:55.798145+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ru-no.json",
   "patient_id": "ru-no",
   "admitted": "2026-03-22T19:42:07.286686+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -141,10 +141,25 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ru-no/herm0-ct2-int8",
+      "on_disk_bytes": 49870370,
+      "on_disk_files": [
+        "config.json",
+        "model.bin",
+        "shared_vocabulary.json"
+      ],
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
     }
   },
   "architecture": {
@@ -160,7 +175,7 @@
       "date": "2026-03-22T19:42:07.286686+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -176,27 +191,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
-              "output": "Hallo, hvordan gj\u00f8r du i dag?",
+              "input": "Здравствуйте, как у вас дела сегодня?",
+              "output": "Hallo, hvordan gjør du i dag?",
               "passed": true
             },
             {
-              "input": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сегодня утром прекрасная погода.",
               "output": "I dag er det en fantastisk dag.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-              "output": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
+              "input": "Я хотел бы заказать чашку кофе, пожалуйста.",
+              "output": "Jeg vil gjerne spørre klokken min, takk.",
               "passed": true
             },
             {
-              "input": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u043b\u0438\u0441\u0430 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u043b\u0435\u043d\u0438\u0432\u0443\u044e \u0441\u043e\u0431\u0430\u043a\u0443.",
+              "input": "Быстрая коричневая лиса прыгает через ленивую собаку.",
               "output": "Rask korridoren gjennom hunden hundene.",
               "passed": true
             },
             {
-              "input": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u0443\u0435\u0442 \u043c\u0438\u0440.",
+              "input": "Искусственный интеллект преобразует мир.",
               "output": "Kunstig intelligens vil omforme verden.",
               "passed": true
             }
@@ -210,27 +225,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
-              "output": "Hallo, hvordan gj\u00f8r du i dag?",
+              "input": "Здравствуйте, как у вас дела сегодня?",
+              "output": "Hallo, hvordan gjør du i dag?",
               "passed": true
             },
             {
-              "input": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сегодня утром прекрасная погода.",
               "output": "I dag er det en fantastisk dag.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-              "output": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
+              "input": "Я хотел бы заказать чашку кофе, пожалуйста.",
+              "output": "Jeg vil gjerne spørre klokken min, takk.",
               "passed": true
             },
             {
-              "input": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u043b\u0438\u0441\u0430 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u043b\u0435\u043d\u0438\u0432\u0443\u044e \u0441\u043e\u0431\u0430\u043a\u0443.",
+              "input": "Быстрая коричневая лиса прыгает через ленивую собаку.",
               "output": "Rask korridoren gjennom hunden hundene.",
               "passed": true
             },
             {
-              "input": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u0443\u0435\u0442 \u043c\u0438\u0440.",
+              "input": "Искусственный интеллект преобразует мир.",
               "output": "Kunstig intelligens vil omforme verden.",
               "passed": true
             }
@@ -244,34 +259,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043a\u0430\u043a \u0443 \u0432\u0430\u0441 \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
-              "output": "Hallo, hvordan gj\u00f8r du i dag?",
+              "input": "Здравствуйте, как у вас дела сегодня?",
+              "output": "Hallo, hvordan gjør du i dag?",
               "passed": true
             },
             {
-              "input": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сегодня утром прекрасная погода.",
               "output": "I dag er det en fantastisk dag.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-              "output": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
+              "input": "Я хотел бы заказать чашку кофе, пожалуйста.",
+              "output": "Jeg vil gjerne spørre klokken min, takk.",
               "passed": true
             },
             {
-              "input": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u043b\u0438\u0441\u0430 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u043b\u0435\u043d\u0438\u0432\u0443\u044e \u0441\u043e\u0431\u0430\u043a\u0443.",
+              "input": "Быстрая коричневая лиса прыгает через ленивую собаку.",
               "output": "Rask korridoren gjennom hunden hundene.",
               "passed": true
             },
             {
-              "input": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u0443\u0435\u0442 \u043c\u0438\u0440.",
+              "input": "Искусственный интеллект преобразует мир.",
               "output": "Kunstig intelligens vil konvertera verden.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -305,14 +320,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:44:31.314993+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -329,10 +344,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "I dag er det en fantastisk historie.",
-            "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
+            "Jeg vil gjerne spørre klokken min, takk.",
             "Barna spelar i paret.",
-            "Hvor mange reiser vil du g\u00e5?",
-            "Hun kj\u00f8rer i sykehuset i ti \u00e5r."
+            "Hvor mange reiser vil du gå?",
+            "Hun kjører i sykehuset i ti år."
           ]
         },
         "lora": {
@@ -344,10 +359,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "I dag er det en fantastisk historie.",
-            "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
+            "Jeg vil gjerne spørre klokken min, takk.",
             "Barna spelar i paret.",
-            "Hvor mange reiser vil du g\u00e5?",
-            "Hun kj\u00f8rer i sykehuset i ti \u00e5r."
+            "Hvor mange reiser vil du gå?",
+            "Hun kjører i sykehuset i ti år."
           ],
           "delta_vs_base": 0.0
         },
@@ -381,7 +396,7 @@
       "date": "2026-03-23T06:44:31.314993+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -444,7 +459,7 @@
       "date": "2026-03-24T06:26:52.851960+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base"
@@ -463,7 +478,7 @@
       "date": "2026-03-24T18:21:51.404460+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -476,17 +491,17 @@
           "old_size_mb": 62.8,
           "new_size_mb": 183.0,
           "verified_match": true,
-          "sample_translation": "Hella er ein sl\u00f8yfe mellom spor"
+          "sample_translation": "Hella er ein sløyfe mellom spor"
         }
       },
-      "notes": "Replaced broken pickle INT8 (62.8MB) with clean safetensors (183.0MB). Verified base-CT2 output match: True. Sample translation: \"Hella er ein sl\u00f8yfe mellom spor\". Elapsed: 82.8s."
+      "notes": "Replaced broken pickle INT8 (62.8MB) with clean safetensors (183.0MB). Verified base-CT2 output match: True. Sample translation: \"Hella er ein sløyfe mellom spor\". Elapsed: 82.8s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -504,7 +519,7 @@
       "date": "2026-03-28T16:06:03.829962+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -514,7 +529,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 58.17,
@@ -523,21 +538,21 @@
               "max": 79.12,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?",
-                  "forward": "Hei, hva gj\u00f8r du?",
-                  "returned": "\u042d\u0439, \u0447\u0442\u043e \u0442\u044b \u0434\u0435\u043b\u0430\u0435\u0448\u044c?",
+                  "original": "Привет, как дела?",
+                  "forward": "Hei, hva gjør du?",
+                  "returned": "Эй, что ты делаешь?",
                   "similarity": 0.4444
                 },
                 {
-                  "original": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+                  "original": "Сегодня утром прекрасная погода.",
                   "forward": "I dag er det en fantastisk dag.",
-                  "returned": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u044d\u0442\u043e \u0437\u0430\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c.",
+                  "returned": "Сегодня это замечательный день.",
                   "similarity": 0.4762
                 },
                 {
-                  "original": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-                  "forward": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u043c\u043e\u0439 \u0447\u0430\u0441, \u0441\u043f\u0430\u0441\u0438\u0431\u043e.",
+                  "original": "Я бы хотел заказать чашку кофе, пожалуйста.",
+                  "forward": "Jeg vil gjerne spørre klokken min, takk.",
+                  "returned": "Я хотел бы спросить мой час, спасибо.",
                   "similarity": 0.45
                 }
               ]
@@ -549,21 +564,21 @@
               "max": 79.12,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?",
-                  "forward": "Hei, hva gj\u00f8r du?",
-                  "returned": "\u042d\u0439, \u0447\u0442\u043e \u0442\u044b \u0434\u0435\u043b\u0430\u0435\u0448\u044c?",
+                  "original": "Привет, как дела?",
+                  "forward": "Hei, hva gjør du?",
+                  "returned": "Эй, что ты делаешь?",
                   "similarity": 0.4444
                 },
                 {
-                  "original": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+                  "original": "Сегодня утром прекрасная погода.",
                   "forward": "I dag er det en fantastisk dag.",
-                  "returned": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u044d\u0442\u043e \u0437\u0430\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c.",
+                  "returned": "Сегодня это замечательный день.",
                   "similarity": 0.4762
                 },
                 {
-                  "original": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-                  "forward": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u043c\u043e\u0439 \u0447\u0430\u0441, \u0441\u043f\u0430\u0441\u0438\u0431\u043e.",
+                  "original": "Я бы хотел заказать чашку кофе, пожалуйста.",
+                  "forward": "Jeg vil gjerne spørre klokken min, takk.",
+                  "returned": "Я хотел бы спросить мой час, спасибо.",
                   "similarity": 0.45
                 }
               ]
@@ -575,21 +590,21 @@
               "max": 79.12,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?",
-                  "forward": "Hei, hva gj\u00f8r du?",
-                  "returned": "\u042d\u0439, \u0447\u0442\u043e \u0442\u044b \u0434\u0435\u043b\u0430\u0435\u0448\u044c?",
+                  "original": "Привет, как дела?",
+                  "forward": "Hei, hva gjør du?",
+                  "returned": "Эй, что ты делаешь?",
                   "similarity": 0.4444
                 },
                 {
-                  "original": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+                  "original": "Сегодня утром прекрасная погода.",
                   "forward": "I dag er det en fantastisk dag.",
-                  "returned": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u044d\u0442\u043e \u0437\u0430\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c.",
+                  "returned": "Сегодня это замечательный день.",
                   "similarity": 0.4762
                 },
                 {
-                  "original": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-                  "forward": "Jeg vil gjerne sp\u00f8rre klokken min, takk.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u043c\u043e\u0439 \u0447\u0430\u0441, \u0441\u043f\u0430\u0441\u0438\u0431\u043e.",
+                  "original": "Я бы хотел заказать чашку кофе, пожалуйста.",
+                  "forward": "Jeg vil gjerne spørre klokken min, takk.",
+                  "returned": "Я хотел бы спросить мой час, спасибо.",
                   "similarity": 0.45
                 }
               ]
@@ -601,21 +616,21 @@
               "max": 76.92,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430?",
-                  "forward": "Hei, hva er det som gj\u00f8r det?",
-                  "returned": "\u042d\u0439, \u0447\u0442\u043e \u0434\u0435\u043b\u0430\u0435\u0448\u044c?",
+                  "original": "Привет, как дела?",
+                  "forward": "Hei, hva er det som gjør det?",
+                  "returned": "Эй, что делаешь?",
                   "similarity": 0.4848
                 },
                 {
-                  "original": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043f\u043e\u0433\u043e\u0434\u0430.",
+                  "original": "Сегодня утром прекрасная погода.",
                   "forward": "I dag er det en ny dag.",
-                  "returned": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u044d\u0442\u043e \u043d\u043e\u0432\u044b\u0439 \u0434\u0435\u043d\u044c.",
+                  "returned": "Сегодня это новый день.",
                   "similarity": 0.5091
                 },
                 {
-                  "original": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
-                  "forward": "Jeg ville ha lyst til \u00e5 gifte seg med kaffe, v\u00e6r s\u00e5 snill.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0436\u0435\u043d\u0438\u0442\u044c\u0441\u044f \u043d\u0430 \u0436\u0435\u0441\u0442\u043a\u043e\u043c, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
+                  "original": "Я бы хотел заказать чашку кофе, пожалуйста.",
+                  "forward": "Jeg ville ha lyst til å gifte seg med kaffe, vær så snill.",
+                  "returned": "Я хотел бы жениться на жестком, пожалуйста.",
                   "similarity": 0.6512
                 }
               ]
@@ -689,11 +704,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ru\u2192no)"
+              "reason": "no English endpoint (ru→no)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ru\u2192no"
+              "reason": "no reference pairs for ru→no"
             },
             "vitals": {
               "status": "complete",
@@ -747,11 +762,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ru\u2192no)"
+              "reason": "no English endpoint (ru→no)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ru\u2192no"
+              "reason": "no reference pairs for ru→no"
             },
             "vitals": {
               "status": "complete",
@@ -805,11 +820,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ru\u2192no)"
+              "reason": "no English endpoint (ru→no)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ru\u2192no"
+              "reason": "no reference pairs for ru→no"
             },
             "vitals": {
               "status": "complete",
@@ -874,14 +889,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ru-no/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ru-no/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ru-no/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ru-no/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-ru-no",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-ru-no/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-ru-no/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -890,7 +905,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -954,16 +969,28 @@
       },
       "best_grade": "A+",
       "best_score": 97.22,
-      "notes": "Dr. C independent certification of ru-no. Tested 1 variant(s): base. Best variant grade: A+ (97.22). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ru-no. Tested 1 variant(s): base. Best variant grade: A+ (97.22). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-ru-no",
       "date": "2026-04-12T21:30:55.798145+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 85.1, after: 87.8, delta: 2.6. IMPROVED \u2014 saved as herm0/",
+      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 85.1, after: 87.8, delta: 2.6. IMPROVED — saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-DRIFT-RECONCILE-ru-no",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_added": [
+        "herm0_ct2_int8"
+      ],
+      "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1007,7 +1034,7 @@
   },
   "quality_rating": {
     "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars_display": "★★★★★",
     "half_stars": 10,
     "label": "Gold Standard",
     "avg_cert_score": 10.0,
@@ -1104,7 +1131,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:26:52.851960+00:00",
       "variant_scores": {}
@@ -1118,7 +1145,7 @@
     "lora_size_mb": 191.91,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:58:40.234513+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1128,7 +1155,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

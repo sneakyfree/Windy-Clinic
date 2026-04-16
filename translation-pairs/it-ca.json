@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/it-ca.json",
   "patient_id": "it-ca",
   "admitted": "2026-03-22T19:37:42.225045+00:00",
@@ -145,6 +145,21 @@
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-it-ca/herm0-ct2-int8",
+      "on_disk_bytes": 57347860,
+      "on_disk_files": [
+        "config.json",
+        "model.bin",
+        "shared_vocabulary.json"
+      ],
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
     }
   },
   "architecture": {
@@ -1265,6 +1280,18 @@
       "herm0_on_disk": true,
       "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
       "notes": "Grand Rounds v2 paragraph-level composite score: base=86.7 herm0=80.5 delta=-6.20. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-DRIFT-RECONCILE-it-ca",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_added": [
+        "herm0_ct2_int8"
+      ],
+      "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/windy-tier-madlad400-3b-mt.json",
   "patient_id": "windy-tier-madlad400-3b-mt",
   "admitted": "2026-03-23T08:55:51.971148+00:00",
@@ -48,7 +48,7 @@
       "date": "2026-03-23T08:55:51.971148+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [],
       "results": {},
@@ -73,6 +73,16 @@
         "newly_found": []
       },
       "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-DRIFT-NOT-MATERIALIZED-windy-tier-madlad400-3b-mt",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Drift reconcile — patient admitted to clinic but no windy-pair-* directory on disk",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_flagged": [],
+      "notes": "No /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-windy-tier-madlad400-3b-mt/ directory found. Patient exists in clinic but has no materialized weights. Variant_cluster entries previously claiming \"present\" have been reset to \"not_materialized_on_disk\". Upload pipeline will correctly skip this patient (disk check fails). Flagged for future decision: retrain from source or retire from roster. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

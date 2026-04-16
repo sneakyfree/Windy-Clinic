@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/eo-el.json",
   "patient_id": "eo-el",
   "admitted": "2026-03-22T20:52:25.790190+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -141,10 +141,25 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-eo-el/herm0-ct2-int8",
+      "on_disk_bytes": 49997234,
+      "on_disk_files": [
+        "config.json",
+        "model.bin",
+        "shared_vocabulary.json"
+      ],
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
     }
   },
   "architecture": {
@@ -160,7 +175,7 @@
       "date": "2026-03-22T20:52:25.790190+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -176,28 +191,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Bonan tagon, kiel vi fartas hodia\u016d?",
-              "output": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Bonan tagon, kiel vi fartas hodiaŭ?",
+              "output": "Καλημέρα, πώς είστε σήμερα;",
               "passed": true
             },
             {
               "input": "La infanoj ludas en la parko post la lernejo.",
-              "output": "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c3\u03c7\u03bf\u03bb\u03b5\u03af\u03bf.",
+              "output": "Τα παιδιά παίζουν στο σχολείο.",
               "passed": true
             },
             {
               "input": "Bonvolu helpi min trovi la bibliotekon.",
-              "output": "\u03a0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03b2\u03c1\u03c9 \u03c4\u03b7 \u03b2\u03b9\u03b2\u03bb\u03b9\u03bf\u03b8\u03ae\u03ba\u03b7.",
+              "output": "Πρέπει να βρω τη βιβλιοθήκη.",
               "passed": true
             },
             {
-              "input": "Teknologio \u015dan\u011das nian vivon \u0109iutage.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03b7 \u03b6\u03c9\u03ae \u03bc\u03b1\u03c2 \u03ba\u03ac\u03b8\u03b5 \u03bc\u03ad\u03c1\u03b1.",
+              "input": "Teknologio ŝanĝas nian vivon ĉiutage.",
+              "output": "Η τεχνολογία αλλάζει τη ζωή μας κάθε μέρα.",
               "passed": true
             },
             {
-              "input": "Mi \u015datus mendi kafon kaj kukon.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ba\u03b1\u03c6\u03ad \u03ba\u03b1\u03b9 \u03ad\u03bd\u03b1 \u03ba\u03ac\u03c3\u03c4\u03c1\u03bf.",
+              "input": "Mi ŝatus mendi kafon kaj kukon.",
+              "output": "Θα ήθελα καφέ και ένα κάστρο.",
               "passed": true
             }
           ]
@@ -210,28 +225,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Bonan tagon, kiel vi fartas hodia\u016d?",
-              "output": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Bonan tagon, kiel vi fartas hodiaŭ?",
+              "output": "Καλημέρα, πώς είστε σήμερα;",
               "passed": true
             },
             {
               "input": "La infanoj ludas en la parko post la lernejo.",
-              "output": "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c3\u03c7\u03bf\u03bb\u03b5\u03af\u03bf.",
+              "output": "Τα παιδιά παίζουν στο σχολείο.",
               "passed": true
             },
             {
               "input": "Bonvolu helpi min trovi la bibliotekon.",
-              "output": "\u03a0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03b2\u03c1\u03c9 \u03c4\u03b7 \u03b2\u03b9\u03b2\u03bb\u03b9\u03bf\u03b8\u03ae\u03ba\u03b7.",
+              "output": "Πρέπει να βρω τη βιβλιοθήκη.",
               "passed": true
             },
             {
-              "input": "Teknologio \u015dan\u011das nian vivon \u0109iutage.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03b7 \u03b6\u03c9\u03ae \u03bc\u03b1\u03c2 \u03ba\u03ac\u03b8\u03b5 \u03bc\u03ad\u03c1\u03b1.",
+              "input": "Teknologio ŝanĝas nian vivon ĉiutage.",
+              "output": "Η τεχνολογία αλλάζει τη ζωή μας κάθε μέρα.",
               "passed": true
             },
             {
-              "input": "Mi \u015datus mendi kafon kaj kukon.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ba\u03b1\u03c6\u03ad \u03ba\u03b1\u03b9 \u03ad\u03bd\u03b1 \u03ba\u03ac\u03c3\u03c4\u03c1\u03bf.",
+              "input": "Mi ŝatus mendi kafon kaj kukon.",
+              "output": "Θα ήθελα καφέ και ένα κάστρο.",
               "passed": true
             }
           ]
@@ -244,34 +259,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Bonan tagon, kiel vi fartas hodia\u016d?",
-              "output": "\u039a\u03b1\u03bb\u03b7\u03bc\u03ad\u03c1\u03b1, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Bonan tagon, kiel vi fartas hodiaŭ?",
+              "output": "Καλημέρα, πώς είστε σήμερα;",
               "passed": true
             },
             {
               "input": "La infanoj ludas en la parko post la lernejo.",
-              "output": "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c3\u03c7\u03bf\u03bb\u03b5\u03af\u03bf.",
+              "output": "Τα παιδιά παίζουν στο σχολείο.",
               "passed": true
             },
             {
               "input": "Bonvolu helpi min trovi la bibliotekon.",
-              "output": "\u03a3\u03b5 \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce \u03b2\u03bf\u03ae\u03b8\u03b7\u03c3\u03b5 \u03bc\u03bf\u03c5 \u03bd\u03b1 \u03b2\u03c1\u03c9 \u03c4\u03b7 \u03b2\u03b9\u03b2\u03bb\u03b9\u03bf\u03b8\u03ae\u03ba\u03b7.",
+              "output": "Σε παρακαλώ βοήθησε μου να βρω τη βιβλιοθήκη.",
               "passed": true
             },
             {
-              "input": "Teknologio \u015dan\u011das nian vivon \u0109iutage.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03bf\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03b7 \u03b6\u03c9\u03ae \u03bc\u03b1\u03c2 \u03ba\u03ac\u03b8\u03b5 \u03bc\u03ad\u03c1\u03b1.",
+              "input": "Teknologio ŝanĝas nian vivon ĉiutage.",
+              "output": "Η τεχνολογία αλλάζει τη ζωή μας κάθε μέρα.",
               "passed": true
             },
             {
-              "input": "Mi \u015datus mendi kafon kaj kukon.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ba\u03b1\u03c6\u03ad \u03ba\u03b1\u03b9 \u03ad\u03bd\u03b1 \u03ba\u03ac\u03c3\u03c4\u03c1\u03bf.",
+              "input": "Mi ŝatus mendi kafon kaj kukon.",
+              "output": "Θα ήθελα καφέ και ένα κάστρο.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -305,14 +320,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:44:38.192569+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -328,11 +343,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u03a4\u03b7 \u0393\u03bf\u03c5\u03b9\u03bd\u03ad\u03b1, \u03bf Thatlanian \u03be\u03b1\u03c6\u03bd\u03b9\u03ba\u03ac \u03c7\u03ac\u03b8\u03b7\u03ba\u03b5.",
-            "\u039f Ickarus \u03bd\u03c4\u03c1\u03ad\u03c0\u03b5\u03c4\u03b1\u03b9 \u03bd'\u03b1\u03c0\u03bf\u03c3\u03cd\u03c1\u03b5\u03b9 \u03c4\u03bf cdrse.",
-            "\u03a4\u03b5\u03c4\u03ac\u03c1\u03c4\u03b7 \u03c3\u03c4\u03bf Theyline \u03bc\u03b5 \u03b6\u03b5\u03c3\u03c4\u03ae \u03c3\u03bf\u03cd\u03c0\u03b1.",
-            "\u039f \u039d\u03ac\u03b3\u03ba\u03bf \u03ba\u03ac\u03c4\u03c3\u03b5 \u03b5\u03b4\u03ce \u03bc\u03ad\u03c3\u03b1 \u03c3\u03c4\u03bf \u03bb\u03b5\u03c9\u03c6\u03bf\u03c1\u03b5\u03af\u03bf;",
-            "\u039a\u03b5\u03bd\u03c4\u03c1\u03b9\u03ba\u03cc \u03bd\u03c4\u03b5\u03c4\u03ad\u03ba\u03c4\u03b9\u03b2 \u03bd\u03c4\u03b5\u03c4\u03ad\u03ba\u03c4\u03b9\u03b2 \u03c3\u03c7\u03b7\u03bc\u03b1\u03c4\u03af\u03c3\u03c4\u03b7\u03ba\u03b5."
+            "Τη Γουινέα, ο Thatlanian ξαφνικά χάθηκε.",
+            "Ο Ickarus ντρέπεται ν'αποσύρει το cdrse.",
+            "Τετάρτη στο Theyline με ζεστή σούπα.",
+            "Ο Νάγκο κάτσε εδώ μέσα στο λεωφορείο;",
+            "Κεντρικό ντετέκτιβ ντετέκτιβ σχηματίστηκε."
           ]
         },
         "lora": {
@@ -343,11 +358,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u03a4\u03b7 \u0393\u03bf\u03c5\u03b9\u03bd\u03ad\u03b1, \u03bf Thatlanian \u03be\u03b1\u03c6\u03bd\u03b9\u03ba\u03ac \u03c7\u03ac\u03b8\u03b7\u03ba\u03b5.",
-            "\u039f Ickarus \u03bd\u03c4\u03c1\u03ad\u03c0\u03b5\u03c4\u03b1\u03b9 \u03bd'\u03b1\u03c0\u03bf\u03c3\u03cd\u03c1\u03b5\u03b9 \u03c4\u03bf cdrse.",
-            "\u03a4\u03b5\u03c4\u03ac\u03c1\u03c4\u03b7 \u03c3\u03c4\u03bf Theyline \u03bc\u03b5 \u03b6\u03b5\u03c3\u03c4\u03ae \u03c3\u03bf\u03cd\u03c0\u03b1.",
-            "\u039f \u039d\u03ac\u03b3\u03ba\u03bf \u03ba\u03ac\u03c4\u03c3\u03b5 \u03b5\u03b4\u03ce \u03bc\u03ad\u03c3\u03b1 \u03c3\u03c4\u03bf \u03bb\u03b5\u03c9\u03c6\u03bf\u03c1\u03b5\u03af\u03bf;",
-            "\u039a\u03b5\u03bd\u03c4\u03c1\u03b9\u03ba\u03cc \u03bd\u03c4\u03b5\u03c4\u03ad\u03ba\u03c4\u03b9\u03b2 \u03bd\u03c4\u03b5\u03c4\u03ad\u03ba\u03c4\u03b9\u03b2 \u03c3\u03c7\u03b7\u03bc\u03b1\u03c4\u03af\u03c3\u03c4\u03b7\u03ba\u03b5."
+            "Τη Γουινέα, ο Thatlanian ξαφνικά χάθηκε.",
+            "Ο Ickarus ντρέπεται ν'αποσύρει το cdrse.",
+            "Τετάρτη στο Theyline με ζεστή σούπα.",
+            "Ο Νάγκο κάτσε εδώ μέσα στο λεωφορείο;",
+            "Κεντρικό ντετέκτιβ ντετέκτιβ σχηματίστηκε."
           ],
           "delta_vs_base": 0.0
         },
@@ -381,7 +396,7 @@
       "date": "2026-03-23T04:44:38.192569+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -444,7 +459,7 @@
       "date": "2026-03-24T05:26:39.372047+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -480,7 +495,7 @@
       "date": "2026-03-24T16:21:38.216798+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -493,17 +508,17 @@
           "old_size_mb": 63.4,
           "new_size_mb": 183.5,
           "verified_match": true,
-          "sample_translation": "\u0395\u03bb\u03b1\u03c6\u03c1\u03b9\u03acworld"
+          "sample_translation": "Ελαφριάworld"
         }
       },
-      "notes": "Replaced broken pickle INT8 (63.4MB) with clean safetensors (183.5MB). Verified base-CT2 output match: True. Sample translation: \"\u0395\u03bb\u03b1\u03c6\u03c1\u03b9\u03acworld\". Elapsed: 23.1s."
+      "notes": "Replaced broken pickle INT8 (63.4MB) with clean safetensors (183.5MB). Verified base-CT2 output match: True. Sample translation: \"Ελαφριάworld\". Elapsed: 23.1s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -521,7 +536,7 @@
       "date": "2026-03-28T15:12:05.231911+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -531,7 +546,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 67.59,
@@ -540,21 +555,21 @@
               "max": 96.77,
               "sentences": [
                 {
-                  "original": "Saluton, kiel vi fartas hodia\u016d?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;",
+                  "original": "Saluton, kiel vi fartas hodiaŭ?",
+                  "forward": "Γεια σου, πώς είσαι;",
                   "returned": "Saluton, kiel vi fartas?",
                   "similarity": 0.8727
                 },
                 {
-                  "original": "\u0108i-matene la vetero belas.",
-                  "forward": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf.",
+                  "original": "Ĉi-matene la vetero belas.",
+                  "forward": "Το πρωί είναι ωραίο.",
                   "returned": "La mateno estas bona.",
                   "similarity": 0.4681
                 },
                 {
-                  "original": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "Mi \u015datus perdi kafon, bonvole.",
+                  "original": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "forward": "Θα ήθελα να χάσω καφέ, παρακαλώ.",
+                  "returned": "Mi ŝatus perdi kafon, bonvole.",
                   "similarity": 0.6087
                 }
               ]
@@ -566,21 +581,21 @@
               "max": 96.77,
               "sentences": [
                 {
-                  "original": "Saluton, kiel vi fartas hodia\u016d?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;",
+                  "original": "Saluton, kiel vi fartas hodiaŭ?",
+                  "forward": "Γεια σου, πώς είσαι;",
                   "returned": "Saluton, kiel vi fartas?",
                   "similarity": 0.8727
                 },
                 {
-                  "original": "\u0108i-matene la vetero belas.",
-                  "forward": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf.",
+                  "original": "Ĉi-matene la vetero belas.",
+                  "forward": "Το πρωί είναι ωραίο.",
                   "returned": "La mateno estas bona.",
                   "similarity": 0.4681
                 },
                 {
-                  "original": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "Mi \u015datus perdi kafon, bonvole.",
+                  "original": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "forward": "Θα ήθελα να χάσω καφέ, παρακαλώ.",
+                  "returned": "Mi ŝatus perdi kafon, bonvole.",
                   "similarity": 0.6087
                 }
               ]
@@ -592,21 +607,21 @@
               "max": 96.77,
               "sentences": [
                 {
-                  "original": "Saluton, kiel vi fartas hodia\u016d?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;",
+                  "original": "Saluton, kiel vi fartas hodiaŭ?",
+                  "forward": "Γεια σου, πώς είσαι;",
                   "returned": "Saluton, kiel vi fartas?",
                   "similarity": 0.8727
                 },
                 {
-                  "original": "\u0108i-matene la vetero belas.",
-                  "forward": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf.",
+                  "original": "Ĉi-matene la vetero belas.",
+                  "forward": "Το πρωί είναι ωραίο.",
                   "returned": "La mateno estas bona.",
                   "similarity": 0.4681
                 },
                 {
-                  "original": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "Mi \u015datus perdi kafon, bonvole.",
+                  "original": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "forward": "Θα ήθελα να χάσω καφέ, παρακαλώ.",
+                  "returned": "Mi ŝatus perdi kafon, bonvole.",
                   "similarity": 0.6087
                 }
               ]
@@ -618,21 +633,21 @@
               "max": 96.77,
               "sentences": [
                 {
-                  "original": "Saluton, kiel vi fartas hodia\u016d?",
-                  "forward": "\u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "Kiel vi fartas hodia\u016d?",
+                  "original": "Saluton, kiel vi fartas hodiaŭ?",
+                  "forward": "Πώς είσαι σήμερα;",
+                  "returned": "Kiel vi fartas hodiaŭ?",
                   "similarity": 0.8302
                 },
                 {
-                  "original": "\u0108i-matene la vetero belas.",
-                  "forward": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c0\u03bf\u03bb\u03cd \u03c9\u03c1\u03b1\u03af\u03bf.",
+                  "original": "Ĉi-matene la vetero belas.",
+                  "forward": "Το πρωί είναι πολύ ωραίο.",
                   "returned": "La mateno estas bonega.",
                   "similarity": 0.449
                 },
                 {
-                  "original": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "Mi \u015datus perdi kafon, bonvole.",
+                  "original": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "forward": "Θα ήθελα να χάσω καφέ, παρακαλώ.",
+                  "returned": "Mi ŝatus perdi kafon, bonvole.",
                   "similarity": 0.6087
                 }
               ]
@@ -677,19 +692,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Saluton, kiel vi fartas hodia\u016d?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;"
+                  "source": "Saluton, kiel vi fartas hodiaŭ?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι;"
                 },
                 {
-                  "source": "\u0108i-matene la vetero belas.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf."
+                  "source": "Ĉi-matene la vetero belas.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Το πρωί είναι ωραίο."
                 },
                 {
-                  "source": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα να χάσω καφέ, παρακαλώ."
                 }
               ]
             },
@@ -705,19 +720,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Saluton, kiel vi fartas hodia\u016d?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;"
+                  "source": "Saluton, kiel vi fartas hodiaŭ?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι;"
                 },
                 {
-                  "source": "\u0108i-matene la vetero belas.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf."
+                  "source": "Ĉi-matene la vetero belas.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Το πρωί είναι ωραίο."
                 },
                 {
-                  "source": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα να χάσω καφέ, παρακαλώ."
                 }
               ]
             },
@@ -733,19 +748,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Saluton, kiel vi fartas hodia\u016d?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9;"
+                  "source": "Saluton, kiel vi fartas hodiaŭ?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι;"
                 },
                 {
-                  "source": "\u0108i-matene la vetero belas.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c9\u03c1\u03b1\u03af\u03bf."
+                  "source": "Ĉi-matene la vetero belas.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Το πρωί είναι ωραίο."
                 },
                 {
-                  "source": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα να χάσω καφέ, παρακαλώ."
                 }
               ]
             },
@@ -761,19 +776,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Saluton, kiel vi fartas hodia\u016d?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "Saluton, kiel vi fartas hodiaŭ?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "\u0108i-matene la vetero belas.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u03a4\u03bf \u03c0\u03c1\u03c9\u03af \u03b5\u03af\u03bd\u03b1\u03b9 \u03c0\u03bf\u03bb\u03cd \u03c9\u03c1\u03b1\u03af\u03bf."
+                  "source": "Ĉi-matene la vetero belas.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Το πρωί είναι πολύ ωραίο."
                 },
                 {
-                  "source": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c7\u03ac\u03c3\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα να χάσω καφέ, παρακαλώ."
                 }
               ]
             }
@@ -846,11 +861,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (eo\u2192el)"
+              "reason": "no English endpoint (eo→el)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for eo\u2192el"
+              "reason": "no reference pairs for eo→el"
             },
             "vitals": {
               "status": "complete",
@@ -904,11 +919,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (eo\u2192el)"
+              "reason": "no English endpoint (eo→el)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for eo\u2192el"
+              "reason": "no reference pairs for eo→el"
             },
             "vitals": {
               "status": "complete",
@@ -981,14 +996,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-eo-el/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-eo-el/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-eo-el/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-eo-el/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-eo-el",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-eo-el/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-eo-el/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -997,7 +1012,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1061,14 +1076,14 @@
       },
       "best_grade": "A+",
       "best_score": 99.9,
-      "notes": "Dr. C independent certification of eo-el. Tested 1 variant(s): base. Best variant grade: A+ (99.9). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of eo-el. Tested 1 variant(s): base. Best variant grade: A+ (99.9). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-eo-el",
       "date": "2026-04-12T17:46:26.693276+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 76.7, after: 81.2, delta: 4.5. IMPROVED \u2014 saved as herm0/",
+      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 76.7, after: 81.2, delta: 4.5. IMPROVED — saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1077,7 +1092,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -1151,7 +1166,7 @@
       "best_stars": 4.5,
       "best_tier": "premium",
       "best_composite": 78.7,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: herm0 at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: herm0 at 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-eo-el",
@@ -1196,7 +1211,19 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-DRIFT-RECONCILE-eo-el",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_added": [
+        "herm0_ct2_int8"
+      ],
+      "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1335,7 +1362,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:26:39.372047+00:00",
       "variant_scores": {}
@@ -1349,7 +1376,7 @@
     "lora_size_mb": 192.41,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T21:52:49.687044+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1359,7 +1386,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

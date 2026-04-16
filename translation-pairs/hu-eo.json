@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/hu-eo.json",
   "patient_id": "hu-eo",
   "admitted": "2026-03-22T19:36:56.421701+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -141,10 +141,25 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-hu-eo/herm0-ct2-int8",
+      "on_disk_bytes": 49787876,
+      "on_disk_files": [
+        "config.json",
+        "model.bin",
+        "shared_vocabulary.json"
+      ],
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
     }
   },
   "architecture": {
@@ -160,7 +175,7 @@
       "date": "2026-03-22T19:36:56.421701+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -176,28 +191,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
-              "output": "Saluton, kiel vi fartas hodia\u016d?",
+              "input": "Helló, hogy vagy ma?",
+              "output": "Saluton, kiel vi fartas hodiaŭ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-              "output": "Estas malvarme \u0109i-vespere.",
+              "input": "Gyönyörű az idő ma reggel.",
+              "output": "Estas malvarme ĉi-vespere.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
               "output": "Mi volas peti kafon, bonvolu.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
               "output": "La akra hundido saltas sur la hundetoj.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
-              "output": "Mi translokigis la mondon la\u016d inteligenteco.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
+              "output": "Mi translokigis la mondon laŭ inteligenteco.",
               "passed": true
             }
           ]
@@ -210,28 +225,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
-              "output": "Saluton, kiel vi fartas hodia\u016d?",
+              "input": "Helló, hogy vagy ma?",
+              "output": "Saluton, kiel vi fartas hodiaŭ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-              "output": "Estas malvarme \u0109i-vespere.",
+              "input": "Gyönyörű az idő ma reggel.",
+              "output": "Estas malvarme ĉi-vespere.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
               "output": "Mi volas peti kafon, bonvolu.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
               "output": "La akra hundido saltas sur la hundetoj.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
-              "output": "Mi translokigis la mondon la\u016d inteligenteco.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
+              "output": "Mi translokigis la mondon laŭ inteligenteco.",
               "passed": true
             }
           ]
@@ -244,34 +259,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hell\u00f3, hogy vagy ma?",
-              "output": "Saluton, kiel vi fartas hodia\u016d?",
+              "input": "Helló, hogy vagy ma?",
+              "output": "Saluton, kiel vi fartas hodiaŭ?",
               "passed": true
             },
             {
-              "input": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-              "output": "Estas malvarme \u0109i-vespere.",
+              "input": "Gyönyörű az idő ma reggel.",
+              "output": "Estas malvarme ĉi-vespere.",
               "passed": true
             },
             {
-              "input": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+              "input": "Szeretnék rendelni egy csésze kávét, kérem.",
               "output": "Mi volas doni al vi kafon, bonvolu.",
               "passed": true
             },
             {
-              "input": "A gyors barna r\u00f3ka \u00e1tugrik a lusta kutya f\u00f6l\u00f6tt.",
+              "input": "A gyors barna róka átugrik a lusta kutya fölött.",
               "output": "La akra hundido saltas sur la hundetoj.",
               "passed": true
             },
             {
-              "input": "A mesters\u00e9ges intelligencia \u00e1talak\u00edtja a vil\u00e1got.",
-              "output": "Mi translokigis la mondon la\u016d inteligenteco.",
+              "input": "A mesterséges intelligencia átalakítja a világot.",
+              "output": "Mi translokigis la mondon laŭ inteligenteco.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -305,14 +320,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:01:46.128877+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -331,8 +346,8 @@
             "The Tobias la ovojn.",
             "Iwod toold tool che column",
             "The chink sur psikologia institucio.",
-            "Whaness noto \u2013 \u0108u vi scias?",
-            "\u015cekstraktante la e\u016dropan stelon \u0109e la frontoworking."
+            "Whaness noto – Ĉu vi scias?",
+            "Ŝekstraktante la eŭropan stelon ĉe la frontoworking."
           ]
         },
         "lora": {
@@ -346,8 +361,8 @@
             "The Tobias la ovojn.",
             "Iwod toold tool che column",
             "The chink sur psikologia institucio.",
-            "Whaness noto \u2013 \u0108u vi scias?",
-            "\u015cekstraktante la e\u016dropan stelon \u0109e la frontoworking."
+            "Whaness noto – Ĉu vi scias?",
+            "Ŝekstraktante la eŭropan stelon ĉe la frontoworking."
           ],
           "delta_vs_base": 0.0
         },
@@ -381,7 +396,7 @@
       "date": "2026-03-23T06:01:46.128877+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -444,7 +459,7 @@
       "date": "2026-03-24T05:59:02.707816+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -480,7 +495,7 @@
       "date": "2026-03-24T17:34:03.710703+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -503,7 +518,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -521,7 +536,7 @@
       "date": "2026-03-28T15:44:24.483724+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -531,7 +546,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 51.56,
@@ -540,21 +555,21 @@
               "max": 79.49,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
+                  "original": "Helló, hogy van ma?",
                   "forward": "Saluton, ke estas Mastro.",
-                  "returned": "J\u00f3 napot, mester.",
+                  "returned": "Jó napot, mester.",
                   "similarity": 0.2222
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "forward": "\u011ci estas belega mateno.",
-                  "returned": "Nagyon sz\u00e9p reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
+                  "forward": "Ĝi estas belega mateno.",
+                  "returned": "Nagyon szép reggel.",
                   "similarity": 0.5778
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
                   "forward": "Mi volas peti kafon, bonvolu.",
-                  "returned": "Szeretn\u00e9k k\u00e9rni egy k\u00e1v\u00e9t.",
+                  "returned": "Szeretnék kérni egy kávét.",
                   "similarity": 0.6957
                 }
               ]
@@ -566,21 +581,21 @@
               "max": 79.49,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
+                  "original": "Helló, hogy van ma?",
                   "forward": "Saluton, ke estas Mastro.",
-                  "returned": "J\u00f3 napot, mester.",
+                  "returned": "Jó napot, mester.",
                   "similarity": 0.2222
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "forward": "\u011ci estas belega mateno.",
-                  "returned": "Nagyon sz\u00e9p reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
+                  "forward": "Ĝi estas belega mateno.",
+                  "returned": "Nagyon szép reggel.",
                   "similarity": 0.5778
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
                   "forward": "Mi volas peti kafon, bonvolu.",
-                  "returned": "Szeretn\u00e9k k\u00e9rni egy k\u00e1v\u00e9t.",
+                  "returned": "Szeretnék kérni egy kávét.",
                   "similarity": 0.6957
                 }
               ]
@@ -592,21 +607,21 @@
               "max": 79.49,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
+                  "original": "Helló, hogy van ma?",
                   "forward": "Saluton, ke estas Mastro.",
-                  "returned": "J\u00f3 napot, mester.",
+                  "returned": "Jó napot, mester.",
                   "similarity": 0.2222
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "forward": "\u011ci estas belega mateno.",
-                  "returned": "Nagyon sz\u00e9p reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
+                  "forward": "Ĝi estas belega mateno.",
+                  "returned": "Nagyon szép reggel.",
                   "similarity": 0.5778
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
                   "forward": "Mi volas peti kafon, bonvolu.",
-                  "returned": "Szeretn\u00e9k k\u00e9rni egy k\u00e1v\u00e9t.",
+                  "returned": "Szeretnék kérni egy kávét.",
                   "similarity": 0.6957
                 }
               ]
@@ -618,21 +633,21 @@
               "max": 87.8,
               "sentences": [
                 {
-                  "original": "Hell\u00f3, hogy van ma?",
-                  "forward": "Saluton, ke estas hodia\u016d hodia\u016d.",
-                  "returned": "J\u00f3 napot, hogy ma van ma.",
+                  "original": "Helló, hogy van ma?",
+                  "forward": "Saluton, ke estas hodiaŭ hodiaŭ.",
+                  "returned": "Jó napot, hogy ma van ma.",
                   "similarity": 0.6364
                 },
                 {
-                  "original": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "forward": "\u011ci estas belega mateno.",
-                  "returned": "Nagyon sz\u00e9p reggel.",
+                  "original": "Gyönyörű az idő ma reggel.",
+                  "forward": "Ĝi estas belega mateno.",
+                  "returned": "Nagyon szép reggel.",
                   "similarity": 0.5778
                 },
                 {
-                  "original": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "forward": "Mi \u015datus peti kafon, bonvolu.",
-                  "returned": "Szeretn\u00e9k k\u00e9rni egy k\u00e1v\u00e9t, k\u00e9rek egy k\u00e1v\u00e9t.",
+                  "original": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "forward": "Mi ŝatus peti kafon, bonvolu.",
+                  "returned": "Szeretnék kérni egy kávét, kérek egy kávét.",
                   "similarity": 0.6977
                 }
               ]
@@ -677,18 +692,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
-                  "reference": "Saluton, kiel vi fartas hodia\u016d?",
+                  "source": "Helló, hogy van ma?",
+                  "reference": "Saluton, kiel vi fartas hodiaŭ?",
                   "hypothesis": "Saluton, ke estas Mastro."
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "reference": "\u0108i-matene la vetero belas.",
-                  "hypothesis": "\u011ci estas belega mateno."
+                  "source": "Gyönyörű az idő ma reggel.",
+                  "reference": "Ĉi-matene la vetero belas.",
+                  "hypothesis": "Ĝi estas belega mateno."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "Mi \u015datus mendi tason da kafo, mi petas.",
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "Mi ŝatus mendi tason da kafo, mi petas.",
                   "hypothesis": "Mi volas peti kafon, bonvolu."
                 }
               ]
@@ -705,18 +720,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
-                  "reference": "Saluton, kiel vi fartas hodia\u016d?",
+                  "source": "Helló, hogy van ma?",
+                  "reference": "Saluton, kiel vi fartas hodiaŭ?",
                   "hypothesis": "Saluton, ke estas Mastro."
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "reference": "\u0108i-matene la vetero belas.",
-                  "hypothesis": "\u011ci estas belega mateno."
+                  "source": "Gyönyörű az idő ma reggel.",
+                  "reference": "Ĉi-matene la vetero belas.",
+                  "hypothesis": "Ĝi estas belega mateno."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "Mi \u015datus mendi tason da kafo, mi petas.",
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "Mi ŝatus mendi tason da kafo, mi petas.",
                   "hypothesis": "Mi volas peti kafon, bonvolu."
                 }
               ]
@@ -733,18 +748,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
-                  "reference": "Saluton, kiel vi fartas hodia\u016d?",
+                  "source": "Helló, hogy van ma?",
+                  "reference": "Saluton, kiel vi fartas hodiaŭ?",
                   "hypothesis": "Saluton, ke estas Mastro."
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "reference": "\u0108i-matene la vetero belas.",
-                  "hypothesis": "\u011ci estas belega mateno."
+                  "source": "Gyönyörű az idő ma reggel.",
+                  "reference": "Ĉi-matene la vetero belas.",
+                  "hypothesis": "Ĝi estas belega mateno."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "Mi \u015datus mendi tason da kafo, mi petas.",
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "Mi ŝatus mendi tason da kafo, mi petas.",
                   "hypothesis": "Mi volas peti kafon, bonvolu."
                 }
               ]
@@ -761,19 +776,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hell\u00f3, hogy van ma?",
-                  "reference": "Saluton, kiel vi fartas hodia\u016d?",
-                  "hypothesis": "Saluton, ke estas hodia\u016d hodia\u016d."
+                  "source": "Helló, hogy van ma?",
+                  "reference": "Saluton, kiel vi fartas hodiaŭ?",
+                  "hypothesis": "Saluton, ke estas hodiaŭ hodiaŭ."
                 },
                 {
-                  "source": "Gy\u00f6ny\u00f6r\u0171 az id\u0151 ma reggel.",
-                  "reference": "\u0108i-matene la vetero belas.",
-                  "hypothesis": "\u011ci estas belega mateno."
+                  "source": "Gyönyörű az idő ma reggel.",
+                  "reference": "Ĉi-matene la vetero belas.",
+                  "hypothesis": "Ĝi estas belega mateno."
                 },
                 {
-                  "source": "Szeretn\u00e9k rendelni egy cs\u00e9sze k\u00e1v\u00e9t, k\u00e9rem.",
-                  "reference": "Mi \u015datus mendi tason da kafo, mi petas.",
-                  "hypothesis": "Mi \u015datus peti kafon, bonvolu."
+                  "source": "Szeretnék rendelni egy csésze kávét, kérem.",
+                  "reference": "Mi ŝatus mendi tason da kafo, mi petas.",
+                  "hypothesis": "Mi ŝatus peti kafon, bonvolu."
                 }
               ]
             }
@@ -846,11 +861,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (hu\u2192eo)"
+              "reason": "no English endpoint (hu→eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for hu\u2192eo"
+              "reason": "no reference pairs for hu→eo"
             },
             "vitals": {
               "status": "complete",
@@ -904,11 +919,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (hu\u2192eo)"
+              "reason": "no English endpoint (hu→eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for hu\u2192eo"
+              "reason": "no reference pairs for hu→eo"
             },
             "vitals": {
               "status": "complete",
@@ -962,11 +977,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (hu\u2192eo)"
+              "reason": "no English endpoint (hu→eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for hu\u2192eo"
+              "reason": "no reference pairs for hu→eo"
             },
             "vitals": {
               "status": "complete",
@@ -1031,14 +1046,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-hu-eo/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-hu-eo/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-hu-eo/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-hu-eo/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-hu-eo",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-hu-eo/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-hu-eo/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -1047,7 +1062,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1111,14 +1126,14 @@
       },
       "best_grade": "A+",
       "best_score": 99.62,
-      "notes": "Dr. C independent certification of hu-eo. Tested 1 variant(s): base. Best variant grade: A+ (99.62). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of hu-eo. Tested 1 variant(s): base. Best variant grade: A+ (99.62). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-hu-eo",
       "date": "2026-04-12T19:25:09.553784+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 78.7, after: 82.9, delta: 4.2. IMPROVED \u2014 saved as herm0/",
+      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 78.7, after: 82.9, delta: 4.2. IMPROVED — saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1127,7 +1142,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -1201,7 +1216,7 @@
       "best_stars": 4.0,
       "best_tier": "standard",
       "best_composite": 73.2,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: herm0 at 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: herm0 at 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-hu-eo",
@@ -1246,7 +1261,19 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-DRIFT-RECONCILE-hu-eo",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_added": [
+        "herm0_ct2_int8"
+      ],
+      "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1385,7 +1412,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:59:02.707816+00:00",
       "variant_scores": {}
@@ -1399,7 +1426,7 @@
     "lora_size_mb": 191.93,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:25:54.517034+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1409,7 +1436,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

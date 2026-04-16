@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-zle-fr.json",
   "patient_id": "tcbig-zle-fr",
   "admitted": "2026-03-22T20:08:32.384506+00:00",
@@ -17,7 +17,7 @@
   },
   "variant_cluster": {
     "base": {
-      "status": "present",
+      "status": "not_materialized_on_disk",
       "format": "safetensors",
       "size_bytes": 957318020,
       "model_dir": null,
@@ -27,11 +27,12 @@
       "on_disk_files": [
         "model.safetensors"
       ],
-      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "No windy-pair-* directory exists on disk for this patient. Weights have never been materialized, or were lost prior to current doctor handoff."
     },
     "lora": {
-      "status": "present",
+      "status": "not_materialized_on_disk",
       "format": "safetensors",
       "size_bytes": 957318020,
       "identical_to_base": null,
@@ -42,8 +43,9 @@
       "on_disk_files": [
         "model.safetensors"
       ],
-      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "No windy-pair-* directory exists on disk for this patient. Weights have never been materialized, or were lost prior to current doctor handoff."
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -68,7 +70,7 @@
       "date": "2026-03-22T20:08:32.384506+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -84,28 +86,28 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
+              "input": "Привіт, як у вас справи сьогодні?",
               "output": "Bonjour, comment allez-vous aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сьогодні вранці чудова погода.",
               "output": "Le temps est beau ce matin.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "Je voudrais une tasse de caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "Je voudrais une tasse de café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "Un renard brun rapide saute \u00e0 travers un chien paresseux.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "Un renard brun rapide saute à travers un chien paresseux.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
-              "output": "L\u2019intelligence artificielle transforme le monde.",
+              "input": "Штучний інтелект перетворює світ.",
+              "output": "L’intelligence artificielle transforme le monde.",
               "passed": true
             }
           ]
@@ -118,28 +120,28 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
+              "input": "Привіт, як у вас справи сьогодні?",
               "output": "Bonjour, comment allez-vous aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сьогодні вранці чудова погода.",
               "output": "Le temps est beau ce matin.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "Je voudrais une tasse de caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "Je voudrais une tasse de café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "Un renard brun rapide saute \u00e0 travers un chien paresseux.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "Un renard brun rapide saute à travers un chien paresseux.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
-              "output": "L\u2019intelligence artificielle transforme le monde.",
+              "input": "Штучний інтелект перетворює світ.",
+              "output": "L’intelligence artificielle transforme le monde.",
               "passed": true
             }
           ]
@@ -152,34 +154,34 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
+              "input": "Привіт, як у вас справи сьогодні?",
               "output": "Comment allez-vous aujourd'hui ?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
+              "input": "Сьогодні вранці чудова погода.",
               "output": "Beau temps ce matin.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "Je voudrais une tasse de caf\u00e9, s'il vous pla\u00eet.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "Je voudrais une tasse de café, s'il vous plaît.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "Un renard brun rapide saute \u00e0 travers un chien paresseux.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "Un renard brun rapide saute à travers un chien paresseux.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
+              "input": "Штучний інтелект перетворює світ.",
               "output": "L'intelligence artificielle transforme le monde.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -213,14 +215,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:38:03.157275+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -237,10 +239,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "The weather is beautiful today.",
-            "J'aime l'ordre d'une coupe de caf\u00e9, s'il vous pla\u00eet.",
+            "J'aime l'ordre d'une coupe de café, s'il vous plaît.",
             "Les enfants jouent dans le parc.",
             "Qu'est-ce que le temps fait au train leave?",
-            "C'est un travail \u00e0 l'h\u00f4pital pour les ann\u00e9es \u00e0 venir."
+            "C'est un travail à l'hôpital pour les années à venir."
           ]
         },
         "lora": {
@@ -252,10 +254,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "The weather is beautiful today.",
-            "J'aime l'ordre d'une coupe de caf\u00e9, s'il vous pla\u00eet.",
+            "J'aime l'ordre d'une coupe de café, s'il vous plaît.",
             "Les enfants jouent dans le parc.",
             "Qu'est-ce que le temps fait au train leave?",
-            "C'est un travail \u00e0 l'h\u00f4pital pour les ann\u00e9es \u00e0 venir."
+            "C'est un travail à l'hôpital pour les années à venir."
           ],
           "delta_vs_base": 0.0
         },
@@ -267,11 +269,11 @@
           "not_echo": 10,
           "unique_outputs": 3,
           "sample_translations": [
-            "\u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0",
-            "\u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0",
-            "\u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0",
-            "\u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0",
-            "\u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0 \u00e0"
+            "à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à",
+            "à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à",
+            "à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à",
+            "à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à",
+            "à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à à"
           ],
           "delta_vs_base": -28.5
         }
@@ -289,7 +291,7 @@
       "date": "2026-03-23T08:38:03.157275+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -352,7 +354,7 @@
       "date": "2026-03-24T07:36:24.855943+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -388,7 +390,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -421,6 +423,19 @@
         "newly_found": []
       },
       "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-DRIFT-NOT-MATERIALIZED-tcbig-zle-fr",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Drift reconcile — patient admitted to clinic but no windy-pair-* directory on disk",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_flagged": [
+        "base",
+        "lora"
+      ],
+      "notes": "No /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tcbig-zle-fr/ directory found. Patient exists in clinic but has no materialized weights. Variant_cluster entries previously claiming \"present\" have been reset to \"not_materialized_on_disk\". Upload pipeline will correctly skip this patient (disk check fails). Flagged for future decision: retrain from source or retire from roster. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -449,13 +464,13 @@
     "source2_diagnosis": [
       "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
       "CT2_SEVERELY_DEGRADED: INT8 scores 28.5 points below base",
-      "OC1_UNDERRATED: OC1 gave 0\u2605 but H0 scores 93.0"
+      "OC1_UNDERRATED: OC1 gave 0★ but H0 scores 93.0"
     ],
     "source3_paragraph_source": "en_fallback"
   },
   "quality_rating": {
     "stars": 3.0,
-    "stars_display": "\u2605\u2605\u2605",
+    "stars_display": "★★★",
     "half_stars": 6,
     "label": "Good",
     "avg_cert_score": 6.0,
@@ -532,7 +547,7 @@
       }
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:36:24.855943+00:00",
       "variant_scores": {}
@@ -546,7 +561,7 @@
     "lora_size_mb": 912.97,
     "verified_by": "Kit OC1 Alpha (supplemental hash check)",
     "verification_date": "2026-03-24T14:17:27.039080+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [],
   "variant_count": 3

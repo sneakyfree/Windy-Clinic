@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T00:21:06.129402+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ar-el.json",
   "patient_id": "ar-el",
   "admitted": "2026-03-22T19:27:32.820906+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -143,10 +143,25 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+    },
+    "herm0_ct2_int8": {
+      "status": "present",
+      "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ar-el/herm0-ct2-int8",
+      "on_disk_bytes": 81484740,
+      "on_disk_files": [
+        "config.json",
+        "model.bin",
+        "shared_vocabulary.json"
+      ],
+      "format": "ctranslate2_int8",
+      "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
     }
   },
   "architecture": {
@@ -162,7 +177,7 @@
       "date": "2026-03-22T19:27:32.820906+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -178,28 +193,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-              "output": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "مرحباً، كيف حالك اليوم؟",
+              "output": "Γεια. Πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "الطقس جميل هذا الصباح.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
+              "output": "Θα ήθελα να παραγγείλω έναν καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
-              "output": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b9\u03ba\u03bf \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
+              "output": "Η γρήγορη καφέ αλεπού πηδάει πάνω από το τεμπέλικο σκυλί.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
@@ -212,28 +227,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-              "output": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "مرحباً، كيف حالك اليوم؟",
+              "output": "Γεια. Πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "الطقس جميل هذا الصباح.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
+              "output": "Θα ήθελα να παραγγείλω έναν καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
-              "output": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03c4\u03bf \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b9\u03ba\u03bf \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
+              "output": "Η γρήγορη καφέ αλεπού πηδάει πάνω από το τεμπέλικο σκυλί.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
@@ -246,34 +261,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-              "output": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "مرحباً، كيف حالك اليوم؟",
+              "output": "Γεια. Πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "الطقس جميل هذا الصباح.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
-              "output": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
+              "output": "Θα ήθελα να παραγγείλω έναν καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
-              "output": "\u0397 \u03b3\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03ad\u03bd\u03b1 \u03c4\u03b5\u03bc\u03c0\u03ad\u03bb\u03b9\u03ba\u03bf \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
+              "output": "Η γρήγορη καφέ αλεπού πηδάει πάνω από ένα τεμπέλικο σκυλί.",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -307,14 +322,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T03:51:34.359513+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -330,11 +345,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1.",
-            "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-            "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c0\u03ac\u03c1\u03ba\u03bf.",
-            "\u03a4\u03b9 \u03ce\u03c1\u03b1 \u03c6\u03b5\u03cd\u03b3\u03b5\u03b9 \u03c4\u03bf \u03c4\u03c1\u03ad\u03bd\u03bf;",
-            "\u0394\u03bf\u03c5\u03bb\u03b5\u03cd\u03b5\u03b9 \u03c3\u03c4\u03bf \u03bd\u03bf\u03c3\u03bf\u03ba\u03bf\u03bc\u03b5\u03af\u03bf \u03b5\u03b4\u03ce \u03ba\u03b1\u03b9 10 \u03c7\u03c1\u03cc\u03bd\u03b9\u03b1."
+            "Ο καιρός είναι όμορφος σήμερα.",
+            "Θα ήθελα να παραγγείλω έναν καφέ, παρακαλώ.",
+            "Τα παιδιά παίζουν στο πάρκο.",
+            "Τι ώρα φεύγει το τρένο;",
+            "Δουλεύει στο νοσοκομείο εδώ και 10 χρόνια."
           ]
         },
         "lora": {
@@ -345,11 +360,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1.",
-            "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-            "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c0\u03ac\u03c1\u03ba\u03bf.",
-            "\u03a4\u03b9 \u03ce\u03c1\u03b1 \u03c6\u03b5\u03cd\u03b3\u03b5\u03b9 \u03c4\u03bf \u03c4\u03c1\u03ad\u03bd\u03bf;",
-            "\u0394\u03bf\u03c5\u03bb\u03b5\u03cd\u03b5\u03b9 \u03c3\u03c4\u03bf \u03bd\u03bf\u03c3\u03bf\u03ba\u03bf\u03bc\u03b5\u03af\u03bf \u03b5\u03b4\u03ce \u03ba\u03b1\u03b9 10 \u03c7\u03c1\u03cc\u03bd\u03b9\u03b1."
+            "Ο καιρός είναι όμορφος σήμερα.",
+            "Θα ήθελα να παραγγείλω έναν καφέ, παρακαλώ.",
+            "Τα παιδιά παίζουν στο πάρκο.",
+            "Τι ώρα φεύγει το τρένο;",
+            "Δουλεύει στο νοσοκομείο εδώ και 10 χρόνια."
           ],
           "delta_vs_base": 0.0
         },
@@ -383,7 +398,7 @@
       "date": "2026-03-23T03:51:34.359513+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -446,7 +461,7 @@
       "date": "2026-03-24T00:48:13.725903",
       "doctor": "Herm OC1",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Original HF model stress test \u2014 downloaded source model from HuggingFace, 5 paragraph types",
+      "method": "Original HF model stress test — downloaded source model from HuggingFace, 5 paragraph types",
       "protocol_script": "run_stress.py",
       "source_tested": "Helsinki-NLP/opus-mt-ar-el (original from HuggingFace, NOT Windy Pro copy)",
       "results": {
@@ -470,7 +485,7 @@
       "date": "2026-03-24T04:57:13.873051+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -506,7 +521,7 @@
       "date": "2026-03-24T15:26:06.593827+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -519,17 +534,17 @@
           "old_size_mb": 199.4,
           "new_size_mb": 292.3,
           "verified_match": true,
-          "sample_translation": "\u03a7\u0399\u039b\u039f \u0393\u039f\u03a5\u039f\u03a1\u039d\u03a4"
+          "sample_translation": "ΧΙΛΟ ΓΟΥΟΡΝΤ"
         }
       },
-      "notes": "Replaced broken pickle INT8 (199.4MB) with clean safetensors (292.3MB). Verified base-CT2 output match: True. Sample translation: \"\u03a7\u0399\u039b\u039f \u0393\u039f\u03a5\u039f\u03a1\u039d\u03a4\". Elapsed: 42.6s."
+      "notes": "Replaced broken pickle INT8 (199.4MB) with clean safetensors (292.3MB). Verified base-CT2 output match: True. Sample translation: \"ΧΙΛΟ ΓΟΥΟΡΝΤ\". Elapsed: 42.6s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -547,7 +562,7 @@
       "date": "2026-03-28T14:42:27.914304+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -557,7 +572,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 80.69,
@@ -566,21 +581,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "forward": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+                  "original": "مرحباً، كيف حالك اليوم؟",
+                  "forward": "Γεια. Πώς είσαι σήμερα;",
+                  "returned": "مرحباً، كيف حالك اليوم؟",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
+                  "original": "الطقس جميل هذا الصباح",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "الطقس جميل هذا الصباح",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "\u0623\u0631\u064a\u062f \u0642\u0647\u0648\u0629\u060c \u0645\u0646 \u0641\u0636\u0644\u0643.",
+                  "original": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "forward": "Θα ήθελα έναν καφέ, παρακαλώ.",
+                  "returned": "أريد قهوة، من فضلك.",
                   "similarity": 0.5556
                 }
               ]
@@ -592,21 +607,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "forward": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+                  "original": "مرحباً، كيف حالك اليوم؟",
+                  "forward": "Γεια. Πώς είσαι σήμερα;",
+                  "returned": "مرحباً، كيف حالك اليوم؟",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
+                  "original": "الطقس جميل هذا الصباح",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "الطقس جميل هذا الصباح",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "\u0623\u0631\u064a\u062f \u0642\u0647\u0648\u0629\u060c \u0645\u0646 \u0641\u0636\u0644\u0643.",
+                  "original": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "forward": "Θα ήθελα έναν καφέ, παρακαλώ.",
+                  "returned": "أريد قهوة، من فضلك.",
                   "similarity": 0.5556
                 }
               ]
@@ -618,21 +633,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "forward": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+                  "original": "مرحباً، كيف حالك اليوم؟",
+                  "forward": "Γεια. Πώς είσαι σήμερα;",
+                  "returned": "مرحباً، كيف حالك اليوم؟",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
+                  "original": "الطقس جميل هذا الصباح",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "الطقس جميل هذا الصباح",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "\u0623\u0631\u064a\u062f \u0642\u0647\u0648\u0629\u060c \u0645\u0646 \u0641\u0636\u0644\u0643.",
+                  "original": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "forward": "Θα ήθελα έναν καφέ, παρακαλώ.",
+                  "returned": "أريد قهوة، من فضلك.",
                   "similarity": 0.5556
                 }
               ]
@@ -644,21 +659,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "forward": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+                  "original": "مرحباً، كيف حالك اليوم؟",
+                  "forward": "Γεια. Πώς είσαι σήμερα;",
+                  "returned": "مرحباً، كيف حالك اليوم؟",
                   "similarity": 1.0
                 },
                 {
-                  "original": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03b1\u03bb\u03cc\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "\u0627\u0644\u0637\u0642\u0633 \u062c\u064a\u062f \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
+                  "original": "الطقس جميل هذا الصباح",
+                  "forward": "Ο καιρός είναι καλός σήμερα το πρωί.",
+                  "returned": "الطقس جيد هذا الصباح",
                   "similarity": 0.9268
                 },
                 {
-                  "original": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "forward": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "returned": "\u0623\u0631\u064a\u062f \u0642\u0647\u0648\u0629\u060c \u0645\u0646 \u0641\u0636\u0644\u0643.",
+                  "original": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "forward": "Θα ήθελα έναν καφέ, παρακαλώ.",
+                  "returned": "أريد قهوة، من فضلك.",
                   "similarity": 0.5556
                 }
               ]
@@ -703,19 +718,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "مرحباً، كيف حالك اليوم؟",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια. Πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "الطقس جميل هذا الصباح",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
-                  "source": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα έναν καφέ, παρακαλώ."
                 }
               ]
             },
@@ -731,19 +746,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "مرحباً، كيف حالك اليوم؟",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια. Πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "الطقس جميل هذا الصباح",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
-                  "source": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα έναν καφέ, παρακαλώ."
                 }
               ]
             },
@@ -759,19 +774,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "مرحباً، كيف حالك اليوم؟",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια. Πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "الطقس جميل هذا الصباح",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
-                  "source": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα έναν καφέ, παρακαλώ."
                 }
               ]
             },
@@ -787,19 +802,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1. \u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "مرحباً، كيف حالك اليوم؟",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια. Πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03ba\u03b1\u03bb\u03cc\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "الطقس جميل هذا الصباح",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι καλός σήμερα το πρωί."
                 },
                 {
-                  "source": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0643\u0648\u0628\u0627\u064b \u0645\u0646 \u0627\u0644\u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "source": "أود أن أطلب كوباً من القهوة من فضلك",
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θα ήθελα έναν καφέ, παρακαλώ."
                 }
               ]
             }
@@ -872,11 +887,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ar\u2192el)"
+              "reason": "no English endpoint (ar→el)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ar\u2192el"
+              "reason": "no reference pairs for ar→el"
             },
             "vitals": {
               "status": "complete",
@@ -930,11 +945,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ar\u2192el)"
+              "reason": "no English endpoint (ar→el)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ar\u2192el"
+              "reason": "no reference pairs for ar→el"
             },
             "vitals": {
               "status": "complete",
@@ -1007,14 +1022,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ar-el/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ar-el/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ar-el/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ar-el/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-ar-el",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-ar-el/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-ar-el/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -1023,7 +1038,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1087,14 +1102,14 @@
       },
       "best_grade": "A+",
       "best_score": 97.06,
-      "notes": "Dr. C independent certification of ar-el. Tested 1 variant(s): base. Best variant grade: A+ (97.06). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ar-el. Tested 1 variant(s): base. Best variant grade: A+ (97.06). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-ar-el",
       "date": "2026-04-12T15:33:41.262833+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 75.5, after: 79.4, delta: 3.9. IMPROVED \u2014 saved as herm0/",
+      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 75.5, after: 79.4, delta: 3.9. IMPROVED — saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1103,7 +1118,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -1177,7 +1192,7 @@
       "best_stars": 4.0,
       "best_tier": "standard",
       "best_composite": 74.4,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-ar-el",
@@ -1222,7 +1237,7 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HFUPLOAD-ar-el",
@@ -1237,6 +1252,18 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-ar-el",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-DRIFT-RECONCILE-ar-el",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_added": [
+        "herm0_ct2_int8"
+      ],
+      "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1376,7 +1403,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T04:57:13.873051+00:00",
       "variant_scores": {}
@@ -1390,7 +1417,7 @@
     "lora_size_mb": 306.55,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:40:07.136145+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1400,7 +1427,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-11T20:03:17.828866+00:00",
+  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-gmq-zlw.json",
   "patient_id": "tcbig-gmq-zlw",
   "admitted": "2026-03-22T20:59:13.782581+00:00",
@@ -17,7 +17,7 @@
   },
   "variant_cluster": {
     "base": {
-      "status": "present",
+      "status": "not_materialized_on_disk",
       "format": "safetensors",
       "size_bytes": 945395220,
       "model_dir": null,
@@ -27,11 +27,12 @@
       "on_disk_files": [
         "model.safetensors"
       ],
-      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "No windy-pair-* directory exists on disk for this patient. Weights have never been materialized, or were lost prior to current doctor handoff."
     },
     "lora": {
-      "status": "present",
+      "status": "not_materialized_on_disk",
       "format": "safetensors",
       "size_bytes": 945395220,
       "identical_to_base": null,
@@ -42,8 +43,9 @@
       "on_disk_files": [
         "model.safetensors"
       ],
-      "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "note": "No windy-pair-* directory exists on disk for this patient. Weights have never been materialized, or were lost prior to current doctor handoff."
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -68,7 +70,7 @@
       "date": "2026-03-22T20:59:13.782581+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -84,27 +86,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hej, hur m\u00e5r du idag?",
-              "output": "Cze\u015b\u0107, jak si\u0119 dzi\u015b dzi\u015b dzi\u015b jak jak jak?? Jak si\u0119 dzisiaj?? jak jak si\u0119 dzisiaj?? jak jak jak???? jak jak jak????? jak jak jak????? jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak???? jak jak jak jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak???????????",
+              "input": "Hej, hur mår du idag?",
+              "output": "Cześć, jak się dziś dziś dziś jak jak jak?? Jak się dzisiaj?? jak jak się dzisiaj?? jak jak jak???? jak jak jak????? jak jak jak????? jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak???? jak jak jak jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak???????????",
               "passed": false
             },
             {
-              "input": "V\u00e4dret \u00e4r vackert i morse.",
-              "output": "Pogoda dzi\u015b r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no jest pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pogoda dzi\u015b r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran rangogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogo dzi\u015b dzi\u015b dzi\u015b r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed",
+              "input": "Vädret är vackert i morse.",
+              "output": "Pogoda dziś ráno ráno ráno ráno ráno jest pięknie pięknie pięknie pięknie pogoda dziś ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran rangogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogo dziś dziś dziś ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran Počasí Počasí Počasí Počasí Počasí",
               "passed": false
             },
             {
-              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
-              "output": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017can fili\u017can fili\u017can kawy kawy kawy, poprosz\u0119 k\u00e1vu kawy kawy kawy kawy kawy kawy k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu, dzi\u0119kuj\u0119 bardzo bardzo bardzo, dzi\u0119kuj\u0119 bardzo bardzo bardzo bardzo bardzo bardzo prosz\u0119 prosz\u0119 k\u00e1vu kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy",
+              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
+              "output": "Chciałbym zamówić filiżan filiżan filiżan kawy kawy kawy, poproszę kávu kawy kawy kawy kawy kawy kawy kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu, dziękuję bardzo bardzo bardzo, dziękuję bardzo bardzo bardzo bardzo bardzo bardzo proszę proszę kávu kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy",
               "passed": false
             },
             {
-              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
-              "output": "Rychl\u00fd, hn\u011bnohhn\u011bn\u00e1 li\u0161ka skakaka leniwego psa, nad leniv\u00fdm psem skokaka po leniv\u00fdm psem skokakaka  szybki szybki hn\u011bnononoh hn\u011bnanana po leni lan leni psa , rychl\u00fd h h hnananana  szybki szybki lis h h hnananananananana szybki lis szybki szybki lis rychl\u00fd h h h hna szybki szybki  szybki szybki h h h h h h h h h h h h h h h rychl\u00fd szybki szybki szybki szybki szybki szybki",
+              "input": "Den snabba bruna räven hoppar över den lata hunden.",
+              "output": "Rychlý, hněnohhněná liška skakaka leniwego psa, nad lenivým psem skokaka po lenivým psem skokakaka  szybki szybki hněnononoh hněnanana po leni lan leni psa , rychlý h h hnananana  szybki szybki lis h h hnananananananana szybki lis szybki szybki lis rychlý h h h hna szybki szybki  szybki szybki h h h h h h h h h h h h h h h rychlý szybki szybki szybki szybki szybki szybki",
               "passed": false
             },
             {
-              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "input": "Artificiell intelligens förändrar världen.",
               "output": "Sz Sz szt szt szt szt szt szt szt szt szt szt szt sztu szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt",
               "passed": false
             }
@@ -118,27 +120,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hej, hur m\u00e5r du idag?",
-              "output": "Cze\u015b\u0107, jak si\u0119 dzi\u015b dzi\u015b dzi\u015b jak jak jak?? Jak si\u0119 dzisiaj?? jak jak si\u0119 dzisiaj?? jak jak jak???? jak jak jak????? jak jak jak????? jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak???? jak jak jak jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak???????????",
+              "input": "Hej, hur mår du idag?",
+              "output": "Cześć, jak się dziś dziś dziś jak jak jak?? Jak się dzisiaj?? jak jak się dzisiaj?? jak jak jak???? jak jak jak????? jak jak jak????? jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak???? jak jak jak jak jak jak???? jak jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak jak???????????",
               "passed": false
             },
             {
-              "input": "V\u00e4dret \u00e4r vackert i morse.",
-              "output": "Pogoda dzi\u015b r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no jest pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pogoda dzi\u015b r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran rangogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogo dzi\u015b dzi\u015b dzi\u015b r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed Po\u010das\u00ed",
+              "input": "Vädret är vackert i morse.",
+              "output": "Pogoda dziś ráno ráno ráno ráno ráno jest pięknie pięknie pięknie pięknie pogoda dziś ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran rangogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogogo dziś dziś dziś ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran Počasí Počasí Počasí Počasí Počasí",
               "passed": false
             },
             {
-              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
-              "output": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017can fili\u017can fili\u017can kawy kawy kawy, poprosz\u0119 k\u00e1vu kawy kawy kawy kawy kawy kawy k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu, dzi\u0119kuj\u0119 bardzo bardzo bardzo, dzi\u0119kuj\u0119 bardzo bardzo bardzo bardzo bardzo bardzo prosz\u0119 k\u00e1vu kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy",
+              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
+              "output": "Chciałbym zamówić filiżan filiżan filiżan kawy kawy kawy, poproszę kávu kawy kawy kawy kawy kawy kawy kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu, dziękuję bardzo bardzo bardzo, dziękuję bardzo bardzo bardzo bardzo bardzo bardzo proszę kávu kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy kawy",
               "passed": false
             },
             {
-              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
-              "output": "Rychl\u00fd, hn\u011bnohhn\u011bn\u00e1 li\u0161ka skakaka leniwego psa, nad leniv\u00fdm psem skokaka po leniv\u00fdm psem skokakaka  szybki szybki hn\u011bnononoh hn\u011bnanana po leni lan leni psa , rychl\u00fd h h hnananana  szybki szybki lis h h hnananananananana szybki lis szybki szybki lis rychl\u00fd h h h hna szybki szybki  szybki szybki h h h h h h h h h h h h h h h rychl\u00fd szybki szybki szybki szybki szybki szybki",
+              "input": "Den snabba bruna räven hoppar över den lata hunden.",
+              "output": "Rychlý, hněnohhněná liška skakaka leniwego psa, nad lenivým psem skokaka po lenivým psem skokakaka  szybki szybki hněnononoh hněnanana po leni lan leni psa , rychlý h h hnananana  szybki szybki lis h h hnananananananana szybki lis szybki szybki lis rychlý h h h hna szybki szybki  szybki szybki h h h h h h h h h h h h h h h rychlý szybki szybki szybki szybki szybki szybki",
               "passed": false
             },
             {
-              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "input": "Artificiell intelligens förändrar världen.",
               "output": "Sz Sz szt szt szt szt szt szt szt szt szt szt szt sztu szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt",
               "passed": false
             }
@@ -152,34 +154,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Hej, hur m\u00e5r du idag?",
-              "output": "- Jak si\u0119 dzi\u015b? Jak si\u0119 dzi\u015b? Jak si\u0119 dzi\u015b? jak jak jak???? jak???? jak jak jak jak?????????? jak jak jak jak??????? jak jak jak jak jak??????? jak jak jak jak???? jak jak jak jak jak??? jak jak jak jak???? jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak??????? jak jak jak jak jak jak jak jak jak jak jak jak jak",
+              "input": "Hej, hur mår du idag?",
+              "output": "- Jak się dziś? Jak się dziś? Jak się dziś? jak jak jak???? jak???? jak jak jak jak?????????? jak jak jak jak??????? jak jak jak jak jak??????? jak jak jak jak???? jak jak jak jak jak??? jak jak jak jak???? jak jak jak jak jak?????? jak jak jak jak jak jak jak jak jak??????? jak jak jak jak jak jak jak jak jak jak jak jak jak",
               "passed": false
             },
             {
-              "input": "V\u00e4dret \u00e4r vackert i morse.",
-              "output": "Po\u010das\u00ed r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no pi\u0119kne po\u010das\u00ed po\u010das\u00ed r\u00e1no r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no r\u00e1no kr\u00e1sn\u011b po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed po\u010das\u00ed kr\u00e1sn\u011b kr\u00e1sn\u011b pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pogoda pogoda pogoda dzi\u015b dzi\u015b r\u00e1no r\u00e1no r\u00e1no r\u00e1no ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran",
+              "input": "Vädret är vackert i morse.",
+              "output": "Počasí ráno ráno ráno ráno ráno ráno piękne počasí počasí ráno ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ráno ráno ráno ráno ráno ráno krásně počasí počasí počasí počasí počasí počasí počasí počasí počasí počasí krásně krásně pięknie pięknie pięknie pięknie pogoda pogoda pogoda dziś dziś ráno ráno ráno ráno ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran ran",
               "passed": false
             },
             {
-              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
-              "output": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017can fili\u017can fili\u017can kawy kawy kawy, prosz\u0119 k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu k\u00e1vu kawy kawy kawy kawy kawy kawy kawy kawy, moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc pros\u00edm pros\u00edm pros\u00edm pros\u00edm pros\u00edm moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc",
+              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
+              "output": "Chciałbym zamówić filiżan filiżan filiżan kawy kawy kawy, proszę kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kávu kawy kawy kawy kawy kawy kawy kawy kawy, moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc prosím prosím prosím prosím prosím moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc moc",
               "passed": false
             },
             {
-              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
-              "output": "Rychl\u00fd, hn\u011bnohn\u011bh hn\u011bna szybki li\u0161ka skokakaka leniv\u00fd leniv\u00fd pes , szybki hn\u011bnonoh hnananana sk\u00e1ka , leni psa , leni , leni psa , , , , , , , , , , , , , , , , , , , leni , , , , , ,  szybki szybki  szybki szybki h h h h h h h h h h h h",
+              "input": "Den snabba bruna räven hoppar över den lata hunden.",
+              "output": "Rychlý, hněnohněh hněna szybki liška skokakaka lenivý lenivý pes , szybki hněnonoh hnananana skáka , leni psa , leni , leni psa , , , , , , , , , , , , , , , , , , , leni , , , , , ,  szybki szybki  szybki szybki h h h h h h h h h h h h",
               "passed": false
             },
             {
-              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "input": "Artificiell intelligens förändrar världen.",
               "output": "Sz Sz Sz szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szte szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt szt",
               "passed": false
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -210,17 +212,17 @@
           "score": 3,
           "certified": false,
           "quality": "Poor",
-          "stars": "\u2b50\u2b50"
+          "stars": "⭐⭐"
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:32:14.919178+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -236,9 +238,9 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Weaweaweaweaweaweaweaweaweaweaweaweaweaweaweaweaaweweaaweweaaweweaweaaautiful beautiful todaydayweweweweaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
-            "I would like to or or or or order a cup coffeffee a coffeffee, prosz\u0119.",
-            "Dzieci dzieci bawi\u0105 si\u0119 w parku, graj\u0105 w parku.",
+            "Weaweaweaweaweaweaweaweaweaweaweaweaweaweaweaweaaweweaaweweaaweweaweaaautiful beautiful todaydayweweweweaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe piękna piękna piękna piękna piękna piękna pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+            "I would like to or or or or order a cup coffeffee a coffeffee, proszę.",
+            "Dzieci dzieci bawią się w parku, grają w parku.",
             "What tide czases the train does the train leave?",
             "She been working at the hos hos hospital for ten yearss for ten yearss for ten yearss be been working at the ho hosss for the ho hoss hossss for ten ten yearss for ten yearss be be beworking at the ho hoss hospital for ten  yes be be be be be be be be be be the the the the the the the the the the the the the the the the the the the the the the the the the the She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be"
           ]
@@ -251,9 +253,9 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Weaweaweaweaweaweaweaweaweaweaweaweaweaweaweaweaaweweaaweweaaweweaweaaautiful beautiful todaydayweweweweaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie pi\u0119knie dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaaaaaaaaa dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119kna pi\u0119knaaaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
-            "I would like to or or or or order a cup coffeffee a coffeffee, prosz\u0119.",
-            "Dzieci dzieci bawi\u0105 si\u0119 w parku, graj\u0105 w parku.",
+            "Weaweaweaweaweaweaweaweaweaweaweaweaweaweaweaweaaweweaaweweaaweweaweaaautiful beautiful todaydayweweweweaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe piękna piękna piękna piękna piękna piękna pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie pięknie dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dzisiaj dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dniaaaaaaaaaaaaaaaaaaaa dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia dnia piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna piękna pięknaaaawewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+            "I would like to or or or or order a cup coffeffee a coffeffee, proszę.",
+            "Dzieci dzieci bawią się w parku, grają w parku.",
             "What tide czases the train does the train leave?",
             "She been working at the hos hos hospital for ten yearss for ten yearss for ten yearss be been working at the ho hosss for the ho hoss hossss for ten ten yearss for ten yearss be be beworking at the ho hoss hospital for ten  yes be be be be be be be be be be the the the the the the the the the the the the the the the the the the the the the the the the the the She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She She be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be"
           ],
@@ -289,7 +291,7 @@
       "date": "2026-03-23T08:32:14.919178+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -352,7 +354,7 @@
       "date": "2026-03-24T07:33:11.414982+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -388,7 +390,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -421,6 +423,19 @@
         "newly_found": []
       },
       "notes": "Fleet inventory audit by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-11. Non-destructive: no model weights were modified, created, or deleted. Only this patient JSON file was updated. The purpose of this audit was to reconcile claimed variant presence against actual on-disk state, because between Herm Zero's Grand Rounds run (2026-03-28/29) and today, 374 of the 375 OPUS-improved models were ONNX-INT8-exported and their source safetensors were deleted, but the patient files still claimed the safetensors were 'present'. This audit updates each patient file's variant_cluster.<variant>.status to reflect what is actually on disk right now."
+    },
+    {
+      "exam_id": "DRC-DRIFT-NOT-MATERIALIZED-tcbig-gmq-zlw",
+      "date": "2026-04-16T18:50:31.471263+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Drift reconcile — patient admitted to clinic but no windy-pair-* directory on disk",
+      "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
+      "variants_flagged": [
+        "base",
+        "lora"
+      ],
+      "notes": "No /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tcbig-gmq-zlw/ directory found. Patient exists in clinic but has no materialized weights. Variant_cluster entries previously claiming \"present\" have been reset to \"not_materialized_on_disk\". Upload pipeline will correctly skip this patient (disk check fails). Flagged for future decision: retrain from source or retire from roster. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -449,13 +464,13 @@
     "source2_diagnosis": [
       "LORA_SUSPICIOUS: LoRA variant nearly same size as base (delta < 1KB)",
       "CT2_SEVERELY_DEGRADED: INT8 scores 25.5 points below base",
-      "OC1_UNDERRATED: OC1 gave 0\u2605 but H0 scores 90.0"
+      "OC1_UNDERRATED: OC1 gave 0★ but H0 scores 90.0"
     ],
     "source3_paragraph_source": "en_fallback"
   },
   "quality_rating": {
     "stars": 5.0,
-    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
+    "stars_display": "★★★★★",
     "half_stars": 10,
     "label": "Gold Standard",
     "avg_cert_score": 10.0,
@@ -532,7 +547,7 @@
       }
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:33:11.414982+00:00",
       "variant_scores": {}
@@ -546,7 +561,7 @@
     "lora_size_mb": 901.6,
     "verified_by": "Kit OC1 Alpha (supplemental hash check)",
     "verification_date": "2026-03-24T14:15:46.045467+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [],
   "variant_count": 3
