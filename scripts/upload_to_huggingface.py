@@ -244,8 +244,25 @@ CC-BY-4.0, inherited from upstream Helsinki-NLP. Attribution required.
 """
 
 
-def build_stt_readme(name: str, base_model: str, variants_available: list) -> str:
+def build_stt_readme(name: str, base_model: str, variants_available: list,
+                     patient: dict = None) -> str:
     variant_list = "\n".join(f"- `{v}/`" for v in variants_available)
+
+    # Language block: default to English for voice models, read from patient for lingua
+    lang_codes = ["en"]
+    script_note = ""
+    output_note = ""
+    if patient:
+        lc = patient.get("language")
+        if lc and isinstance(lc, str):
+            lang_codes = [lc.lower()]
+        on = patient.get("hf_upload_notes") or {}
+        if on.get("output_script"):
+            script_note = f"\n**Output script:** {on['output_script']}\n"
+        if on.get("important_note"):
+            output_note = f"\n> **Important:** {on['important_note']}\n"
+
+    lang_yaml = "\n".join(f"- {c}" for c in lang_codes)
     return f"""---
 license: apache-2.0
 tags:
@@ -255,13 +272,13 @@ tags:
 library_name: transformers
 pipeline_tag: automatic-speech-recognition
 language:
-- en
+{lang_yaml}
 ---
 
 # WindyWord.ai STT — {name.replace('windy-', 'Windy ').replace('-', ' ').title()}
 
 Part of the [WindyWord.ai](https://windyword.ai) voice-to-text fleet.
-
+{script_note}{output_note}
 ## Available Variants
 
 {variant_list}
@@ -575,8 +592,15 @@ def phase2_upload_stt_voice(state):
         if onnx_int8.exists() and upload_variant_folder(repo_id, onnx_int8, "onnx-int8"):
             variants.append("onnx-int8")
 
-        # README
-        readme = build_stt_readme(name, base_model, variants)
+        # README (look up patient file if present to surface any per-model notes)
+        patient = None
+        pf = STT_PATIENTS / f"{name}.json"
+        if pf.exists():
+            try:
+                patient = json.loads(pf.read_text())
+            except Exception:
+                patient = None
+        readme = build_stt_readme(name, base_model, variants, patient=patient)
         tmp = Path(f"/tmp/_readme_{name}")
         tmp.mkdir(exist_ok=True)
         (tmp / "README.md").write_text(readme)
@@ -611,13 +635,38 @@ def phase3_upload_stt_lingua(state):
         if not create_repo_safe(repo_id, repo_type="model", private=False):
             continue
 
-        variants = []
-        if upload_variant_folder(repo_id, src_dir, "safetensors" if not name.endswith("-ct2") else "ct2-int8"):
-            variants.append("safetensors" if not name.endswith("-ct2") else "ct2-int8")
+        # Load patient file (if present) to surface language + script notes in README
+        patient = None
+        pf = STT_PATIENTS / f"{name}.json"
+        if pf.exists():
+            try:
+                patient = json.loads(pf.read_text())
+            except Exception:
+                patient = None
+        base_model = (patient or {}).get("source_repo", "openai/whisper-small")
 
+        variants = []
+        subfolder = "safetensors" if not name.endswith("-ct2") else "ct2-int8"
+        if upload_variant_folder(repo_id, src_dir, subfolder):
+            variants.append(subfolder)
+
+        # README with per-language output-script notes (important for Hindi → Hinglish)
+        try:
+            readme = build_stt_readme(name, base_model, variants, patient=patient)
+            tmp = Path(f"/tmp/_readme_{name}")
+            tmp.mkdir(exist_ok=True)
+            (tmp / "README.md").write_text(readme)
+            upload_folder(repo_id=repo_id, folder_path=str(tmp), repo_type="model",
+                          commit_message="Add model card")
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+        except Exception as e:
+            log(f"  README upload error {name}: {e}")
+
+        record_upload_in_patient(name, repo_id, variants, subtype="stt")
         state["phase3_done"].append(name)
         save_checkpoint(state)
-        log(f"  ✓ uploaded")
+        log(f"  ✓ uploaded {len(variants)} variant(s)")
 
 
 # ═══════════════════════════════════════════════════════════════

@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-16T19:01:28.667329+00:00",
+  "_last_updated": "2026-04-16T19:56:52.651850+00:00",
   "_clinic_path": "stt-models/windy-lingua-hindi.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-hindi",
@@ -105,6 +105,24 @@
       "rtf": 0.0098,
       "peak_gpu_mb": 333.9,
       "notes": "100-sample FLEURS stress test (up from 15 samples). WER=0.999, CER=1.1335, RTF=0.0098, mean latency 104.9ms. WARNING: WER ≈100% confirms Hinglish-vs-Devanagari mismatch — model outputs romanized Hindi while FLEURS reference is Devanagari script. Product decision required. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HINDI-PRODUCT-CALL-20260416",
+      "date": "2026-04-16T19:56:52.651850+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Product framing decision — Hinglish vs Devanagari output",
+      "protocol_script": "inline by Dr. C at Grant approval",
+      "decision": "Ship A — Hinglish, clearly labeled.",
+      "rationale": "Base model (Oriserve/Whisper-Hindi2Hinglish-Swift) is explicitly designed to emit Latin-script Hinglish. The 99.9% FLEURS-Devanagari WER is a script mismatch, not a quality failure. Retraining a Devanagari-output variant would cost ~1 day of GPU on speculation of demand. Better to ship the current Hinglish model with crystal-clear README disclosure than to delay release on a hypothetical need. Revisit if customer feedback or benchmark coverage requests Devanagari.",
+      "actions_taken": [
+        "hf_upload_notes added to patient file so build_stt_readme() injects script note into published README",
+        "quality_rating updated with script=latin, target_language=Hinglish, FLEURS-Devanagari WER caveat",
+        "build_stt_readme in upload_to_huggingface.py patched to accept patient dict and render script/output notes when provided",
+        "phase3_upload_stt_lingua now loads patient file and uploads a README per lingua repo (previously only folder was uploaded)"
+      ],
+      "reversibility": "Future Devanagari-output variant can ship as a separate repo (WindyWord/listen-windy-lingua-hindi-devanagari) without disturbing this one.",
+      "notes": "Grant greenlit option A (ship Hinglish with explicit labeling) on 2026-04-16. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -114,5 +132,30 @@
     "stt_grade": "F",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",
     "stt_certified_at": "2026-04-12T01:52:35.335682+00:00"
+  },
+  "hf_upload_notes": {
+    "output_script": "Latin (Hinglish) — romanized Hindi",
+    "important_note": "This model transcribes **Hindi speech into romanized (Hinglish) text**, not Devanagari. Output is suitable for chat, social-media captions, code-switched messaging, and any downstream use expecting Latin-script Hindi. If you need Devanagari output, this is not the right model. A Devanagari-output variant may be added as a separate repo in future (not yet available).",
+    "output_language": "hi (romanized)",
+    "base_model_rationale": "Base model is Oriserve/Whisper-Hindi2Hinglish-Swift, explicitly designed to emit Hinglish output. The Hinglish behaviour is by design, not a defect.",
+    "benchmark_disclosure": "FLEURS Hindi dev set (Devanagari reference) measures this model at ~100% WER. This is a script mismatch, not a quality signal: the model correctly transcribes audio but in Latin characters while the reference is Devanagari. A Hinglish-script WER benchmark is not yet established in the public STT ecosystem. Qualitative inspection of transcripts (see patient file examination_log) shows the model produces coherent, grammatically reasonable Hinglish of the spoken Hindi audio."
+  },
+  "quality_rating": {
+    "rated_at": "2026-04-16T19:56:52.651850+00:00",
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "script": "latin",
+    "target_language": "hi (Hinglish)",
+    "fleurs_hi_devanagari_wer": 0.999,
+    "fleurs_hi_devanagari_wer_note": "Script mismatch — not a quality signal. FLEURS reference is Devanagari; model outputs Latin-script Hinglish by design.",
+    "qualitative_grade": "B (Hinglish transcripts coherent; quantitative Hinglish-reference benchmark pending)",
+    "tier": "standard (for Hinglish use cases)",
+    "production_ready_for": [
+      "Hindi voice input → Latin-script output pipelines",
+      "Social/chat captioning",
+      "Code-switched messaging"
+    ],
+    "not_production_ready_for": [
+      "Applications expecting Devanagari output (requires separate Devanagari-output model)"
+    ]
   }
 }

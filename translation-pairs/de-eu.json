@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
+  "_last_updated": "2026-04-16T19:54:52.019595+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/de-eu.json",
   "patient_id": "de-eu",
   "admitted": "2026-03-22T19:29:15.413510+00:00",
@@ -101,7 +101,10 @@
       "improved_at": "2026-04-14T05:58:40.142908+00:00",
       "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-de-eu/tree/main/herm0",
-      "hf_uploaded_at": "2026-04-16T00:39:26.925641+00:00"
+      "hf_uploaded_at": "2026-04-16T00:39:26.925641+00:00",
+      "hf_pruned_at": "2026-04-16T19:54:52.019595+00:00",
+      "hf_pruned_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "hf_prune_reason": "GR v2 regression: delta -6.30 (MODERATE)"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -112,7 +115,10 @@
       "quantized_at": "2026-04-15T20:44:42.132585+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-de-eu/tree/main/herm0-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:39:26.925641+00:00"
+      "hf_uploaded_at": "2026-04-16T00:39:26.925641+00:00",
+      "hf_pruned_at": "2026-04-16T19:54:52.019595+00:00",
+      "hf_pruned_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "hf_prune_reason": "GR v2 regression: delta -6.30 (MODERATE)"
     }
   },
   "architecture": {
@@ -1109,6 +1115,27 @@
       "herm0_on_disk": true,
       "action_taken": "herm0 subdir is LIVE on HuggingFace — awaiting Grant approval to prune.",
       "notes": "Grand Rounds v2 paragraph-level composite score: base=74.7 herm0=68.4 delta=-6.30. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-PRUNE-de-eu",
+      "date": "2026-04-16T19:54:52.019595+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace live-repo prune — remove regressed herm0 and herm0-ct2-int8 subfolders",
+      "protocol_script": "inline HfApi.delete_files() by Dr. C",
+      "severity": "MODERATE",
+      "base_score": 74.7,
+      "herm0_score": 68.4,
+      "delta": -6.3,
+      "repo": "WindyWord/translate-de-eu",
+      "subfolders_deleted": [
+        "herm0/",
+        "herm0-ct2-int8/"
+      ],
+      "files_deleted": 11,
+      "user_impact": "Users now fall back to lora/ variant (≡ Helsinki-NLP baseline quality).",
+      "reversibility": "herm0/ and herm0-ct2-int8/ directories remain on local disk at /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-{pid}/. Can be re-uploaded if retrained, or if future evaluation justifies re-shipping.",
+      "notes": "Pruned regressed herm0 variants from live HF repo. GR v2 paragraph-level composite score: base=74.7, herm0=68.4, delta=-6.30 (MODERATE). User-facing translation quality was net-negative vs base for this pair. Pipeline also adds pid to herm0_skiplist.json so future scheduler runs will not re-upload these variants. Reversible. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

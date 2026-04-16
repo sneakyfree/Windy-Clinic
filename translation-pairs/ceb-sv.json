@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
+  "_last_updated": "2026-04-16T19:54:52.019595+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ceb-sv.json",
   "patient_id": "ceb-sv",
   "admitted": "2026-03-22T19:28:37.327697+00:00",
@@ -104,7 +104,10 @@
       "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data.",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ceb-sv/tree/main/herm0",
-      "hf_uploaded_at": "2026-04-16T00:29:39.190215+00:00"
+      "hf_uploaded_at": "2026-04-16T00:29:39.190215+00:00",
+      "hf_pruned_at": "2026-04-16T19:54:52.019595+00:00",
+      "hf_pruned_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "hf_prune_reason": "GR v2 regression: delta -7.00 (MODERATE)"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -161,7 +164,10 @@
       "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
       "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster.",
+      "hf_pruned_at": "2026-04-16T19:54:52.019595+00:00",
+      "hf_pruned_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "hf_prune_reason": "GR v2 regression: delta -7.00 (MODERATE)"
     }
   },
   "architecture": {
@@ -1282,6 +1288,27 @@
         "herm0_ct2_int8"
       ],
       "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-PRUNE-ceb-sv",
+      "date": "2026-04-16T19:54:52.019595+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace live-repo prune — remove regressed herm0 and herm0-ct2-int8 subfolders",
+      "protocol_script": "inline HfApi.delete_files() by Dr. C",
+      "severity": "MODERATE",
+      "base_score": 80.1,
+      "herm0_score": 73.1,
+      "delta": -7.0,
+      "repo": "WindyWord/translate-ceb-sv",
+      "subfolders_deleted": [
+        "herm0/",
+        "herm0-ct2-int8/"
+      ],
+      "files_deleted": 11,
+      "user_impact": "Users now fall back to lora/ variant (≡ Helsinki-NLP baseline quality).",
+      "reversibility": "herm0/ and herm0-ct2-int8/ directories remain on local disk at /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-{pid}/. Can be re-uploaded if retrained, or if future evaluation justifies re-shipping.",
+      "notes": "Pruned regressed herm0 variants from live HF repo. GR v2 paragraph-level composite score: base=80.1, herm0=73.1, delta=-7.00 (MODERATE). User-facing translation quality was net-negative vs base for this pair. Pipeline also adds pid to herm0_skiplist.json so future scheduler runs will not re-upload these variants. Reversible. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
