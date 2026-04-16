@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/fi-el.json",
   "patient_id": "fi-el",
   "admitted": "2026-03-22T19:33:43.231340+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-fi-el/lora",
@@ -120,7 +120,7 @@
       "date": "2026-03-22T19:33:43.231340+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -136,28 +136,28 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
-              "output": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Hei, miten voit tänään?",
+              "output": "Γεια σου, πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "Sää on kaunis tänä aamuna.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
               "input": "Haluaisin tilata kupin kahvia, kiitos.",
-              "output": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
-              "output": "\u0393\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03ad\u03bd\u03b1 \u03bf\u03ba\u03bd\u03b7\u03c1\u03cc \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "Nopea ruskea kettu hyppää laiskan koiran yli.",
+              "output": "Γρήγορη καφέ αλεπού πηδάει πάνω από ένα οκνηρό σκυλί.",
               "passed": true
             },
             {
-              "input": "Teko\u00e4ly muuttaa maailmaa.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "Tekoäly muuttaa maailmaa.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
@@ -170,28 +170,28 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
-              "output": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Hei, miten voit tänään?",
+              "output": "Γεια σου, πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "Sää on kaunis tänä aamuna.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
               "input": "Haluaisin tilata kupin kahvia, kiitos.",
-              "output": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
-              "output": "\u0393\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03ad\u03bd\u03b1 \u03bf\u03ba\u03bd\u03b7\u03c1\u03cc \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "Nopea ruskea kettu hyppää laiskan koiran yli.",
+              "output": "Γρήγορη καφέ αλεπού πηδάει πάνω από ένα οκνηρό σκυλί.",
               "passed": true
             },
             {
-              "input": "Teko\u00e4ly muuttaa maailmaa.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "Tekoäly muuttaa maailmaa.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
@@ -204,34 +204,34 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
-              "output": "\u03a0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
+              "input": "Hei, miten voit tänään?",
+              "output": "Πώς είσαι σήμερα;",
               "passed": true
             },
             {
-              "input": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-              "output": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
+              "input": "Sää on kaunis tänä aamuna.",
+              "output": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
               "passed": true
             },
             {
               "input": "Haluaisin tilata kupin kahvia, kiitos.",
-              "output": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+              "output": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
               "passed": true
             },
             {
-              "input": "Nopea ruskea kettu hypp\u00e4\u00e4 laiskan koiran yli.",
-              "output": "\u0393\u03c1\u03ae\u03b3\u03bf\u03c1\u03b7 \u03ba\u03b1\u03c6\u03ad \u03b1\u03bb\u03b5\u03c0\u03bf\u03cd \u03c0\u03b7\u03b4\u03ac\u03b5\u03b9 \u03c0\u03ac\u03bd\u03c9 \u03b1\u03c0\u03cc \u03ad\u03bd\u03b1 \u03bf\u03ba\u03bd\u03b7\u03c1\u03cc \u03c3\u03ba\u03c5\u03bb\u03af.",
+              "input": "Nopea ruskea kettu hyppää laiskan koiran yli.",
+              "output": "Γρήγορη καφέ αλεπού πηδάει πάνω από ένα οκνηρό σκυλί.",
               "passed": true
             },
             {
-              "input": "Teko\u00e4ly muuttaa maailmaa.",
-              "output": "\u0397 \u03c4\u03b5\u03c7\u03bd\u03b7\u03c4\u03ae \u03bd\u03bf\u03b7\u03bc\u03bf\u03c3\u03cd\u03bd\u03b7 \u03b1\u03bb\u03bb\u03ac\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03ba\u03cc\u03c3\u03bc\u03bf.",
+              "input": "Tekoäly muuttaa maailmaa.",
+              "output": "Η τεχνητή νοημοσύνη αλλάζει τον κόσμο.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -265,14 +265,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T05:04:55.553991+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -288,11 +288,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1.",
-            "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-            "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c0\u03ac\u03c1\u03ba\u03bf.",
-            "\u03a4\u03b9 \u03ce\u03c1\u03b1 \u03c6\u03b5\u03cd\u03b3\u03b5\u03b9 \u03c4\u03bf \u03c4\u03c1\u03ad\u03bd\u03bf;",
-            "\u0394\u03bf\u03c5\u03bb\u03b5\u03cd\u03b5\u03b9 \u03c3\u03c4\u03bf \u03bd\u03bf\u03c3\u03bf\u03ba\u03bf\u03bc\u03b5\u03af\u03bf \u03b5\u03b4\u03ce \u03ba\u03b1\u03b9 10 \u03c7\u03c1\u03cc\u03bd\u03b9\u03b1."
+            "Ο καιρός είναι όμορφος σήμερα.",
+            "Θέλω να παραγγείλω καφέ, παρακαλώ.",
+            "Τα παιδιά παίζουν στο πάρκο.",
+            "Τι ώρα φεύγει το τρένο;",
+            "Δουλεύει στο νοσοκομείο εδώ και 10 χρόνια."
           ]
         },
         "lora": {
@@ -303,11 +303,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1.",
-            "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-            "\u03a4\u03b1 \u03c0\u03b1\u03b9\u03b4\u03b9\u03ac \u03c0\u03b1\u03af\u03b6\u03bf\u03c5\u03bd \u03c3\u03c4\u03bf \u03c0\u03ac\u03c1\u03ba\u03bf.",
-            "\u03a4\u03b9 \u03ce\u03c1\u03b1 \u03c6\u03b5\u03cd\u03b3\u03b5\u03b9 \u03c4\u03bf \u03c4\u03c1\u03ad\u03bd\u03bf;",
-            "\u0394\u03bf\u03c5\u03bb\u03b5\u03cd\u03b5\u03b9 \u03c3\u03c4\u03bf \u03bd\u03bf\u03c3\u03bf\u03ba\u03bf\u03bc\u03b5\u03af\u03bf \u03b5\u03b4\u03ce \u03ba\u03b1\u03b9 10 \u03c7\u03c1\u03cc\u03bd\u03b9\u03b1."
+            "Ο καιρός είναι όμορφος σήμερα.",
+            "Θέλω να παραγγείλω καφέ, παρακαλώ.",
+            "Τα παιδιά παίζουν στο πάρκο.",
+            "Τι ώρα φεύγει το τρένο;",
+            "Δουλεύει στο νοσοκομείο εδώ και 10 χρόνια."
           ],
           "delta_vs_base": 0.0
         },
@@ -319,11 +319,11 @@
           "not_echo": 10,
           "unique_outputs": 1,
           "sample_translations": [
-            "\u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1",
-            "\u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1",
-            "\u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1",
-            "\u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1",
-            "\u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1 \u03bd\u03b1"
+            "να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να",
+            "να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να",
+            "να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να",
+            "να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να",
+            "να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να να"
           ],
           "delta_vs_base": -38.5
         }
@@ -341,7 +341,7 @@
       "date": "2026-03-23T05:04:55.553991+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -404,7 +404,7 @@
       "date": "2026-03-24T05:38:01.497731+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -440,7 +440,7 @@
       "date": "2026-03-24T16:43:38.548025+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -463,7 +463,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -481,7 +481,7 @@
       "date": "2026-03-28T15:23:26.784870+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -490,7 +490,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 87.77,
@@ -499,20 +499,20 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+                  "original": "Hei, kuinka voit tänään?",
+                  "forward": "Γεια σου, πώς είσαι σήμερα;",
+                  "returned": "Hei, miten voit tänään?",
                   "similarity": 0.8511
                 },
                 {
-                  "original": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+                  "original": "Sää on kaunis tänä aamuna.",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "Sää on kaunis tänä aamuna.",
                   "similarity": 1.0
                 },
                 {
                   "original": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "forward": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+                  "forward": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
                   "returned": "Haluaisin tilata kahvia.",
                   "similarity": 0.7742
                 }
@@ -525,20 +525,20 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+                  "original": "Hei, kuinka voit tänään?",
+                  "forward": "Γεια σου, πώς είσαι σήμερα;",
+                  "returned": "Hei, miten voit tänään?",
                   "similarity": 0.8511
                 },
                 {
-                  "original": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+                  "original": "Sää on kaunis tänä aamuna.",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "Sää on kaunis tänä aamuna.",
                   "similarity": 1.0
                 },
                 {
                   "original": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "forward": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+                  "forward": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
                   "returned": "Haluaisin tilata kahvia.",
                   "similarity": 0.7742
                 }
@@ -551,20 +551,20 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "forward": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "returned": "Hei, miten voit t\u00e4n\u00e4\u00e4n?",
+                  "original": "Hei, kuinka voit tänään?",
+                  "forward": "Γεια σου, πώς είσαι σήμερα;",
+                  "returned": "Hei, miten voit tänään?",
                   "similarity": 0.8511
                 },
                 {
-                  "original": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "forward": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "returned": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
+                  "original": "Sää on kaunis tänä aamuna.",
+                  "forward": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "returned": "Sää on kaunis tänä aamuna.",
                   "similarity": 1.0
                 },
                 {
                   "original": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "forward": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
+                  "forward": "Θέλω να παραγγείλω καφέ, παρακαλώ.",
                   "returned": "Haluaisin tilata kahvia.",
                   "similarity": 0.7742
                 }
@@ -603,19 +603,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "Hei, kuinka voit tänään?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "Sää on kaunis tänä aamuna.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
                   "source": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θέλω να παραγγείλω καφέ, παρακαλώ."
                 }
               ]
             },
@@ -631,19 +631,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "Hei, kuinka voit tänään?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "Sää on kaunis tänä aamuna.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
                   "source": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θέλω να παραγγείλω καφέ, παρακαλώ."
                 }
               ]
             },
@@ -659,19 +659,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hei, kuinka voit t\u00e4n\u00e4\u00e4n?",
-                  "reference": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03b1\u03c2, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03c4\u03b5 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;",
-                  "hypothesis": "\u0393\u03b5\u03b9\u03b1 \u03c3\u03bf\u03c5, \u03c0\u03ce\u03c2 \u03b5\u03af\u03c3\u03b1\u03b9 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1;"
+                  "source": "Hei, kuinka voit tänään?",
+                  "reference": "Γεια σας, πώς είστε σήμερα;",
+                  "hypothesis": "Γεια σου, πώς είσαι σήμερα;"
                 },
                 {
-                  "source": "S\u00e4\u00e4 on kaunis t\u00e4n\u00e4 aamuna.",
-                  "reference": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af.",
-                  "hypothesis": "\u039f \u03ba\u03b1\u03b9\u03c1\u03cc\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03cc\u03bc\u03bf\u03c1\u03c6\u03bf\u03c2 \u03c3\u03ae\u03bc\u03b5\u03c1\u03b1 \u03c4\u03bf \u03c0\u03c1\u03c9\u03af."
+                  "source": "Sää on kaunis tänä aamuna.",
+                  "reference": "Ο καιρός είναι όμορφος σήμερα το πρωί.",
+                  "hypothesis": "Ο καιρός είναι όμορφος σήμερα το πρωί."
                 },
                 {
                   "source": "Haluaisin tilata kupin kahvia, kiitos.",
-                  "reference": "\u0398\u03b1 \u03ae\u03b8\u03b5\u03bb\u03b1 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ad\u03bd\u03b1 \u03c6\u03bb\u03b9\u03c4\u03b6\u03ac\u03bd\u03b9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce.",
-                  "hypothesis": "\u0398\u03ad\u03bb\u03c9 \u03bd\u03b1 \u03c0\u03b1\u03c1\u03b1\u03b3\u03b3\u03b5\u03af\u03bb\u03c9 \u03ba\u03b1\u03c6\u03ad, \u03c0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce."
+                  "reference": "Θα ήθελα να παραγγείλω ένα φλιτζάνι καφέ, παρακαλώ.",
+                  "hypothesis": "Θέλω να παραγγείλω καφέ, παρακαλώ."
                 }
               ]
             }
@@ -735,11 +735,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (fi\u2192el)"
+              "reason": "no English endpoint (fi→el)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for fi\u2192el"
+              "reason": "no reference pairs for fi→el"
             },
             "vitals": {
               "status": "complete",
@@ -793,7 +793,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -913,7 +913,7 @@
       },
       "best_grade": "A+",
       "best_score": 97.1,
-      "notes": "Dr. C independent certification of fi-el. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.1). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of fi-el. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.1). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-fi-el",
@@ -929,7 +929,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -1003,14 +1003,14 @@
       "best_stars": 5.0,
       "best_tier": "premium",
       "best_composite": 87.6,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 5.0\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 5.0★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-P2-fi-el",
       "date": "2026-04-14T07:44:49.660155+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 86.2\u219290.8 (\u0394+4.6). IMPROVED \u2014 saved as herm0/",
+      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 86.2→90.8 (Δ+4.6). IMPROVED — saved as herm0/",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 2 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1021,7 +1021,7 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (75 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (75 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-fi-el",
@@ -1066,7 +1066,25 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-REGRESS-fi-el",
+      "date": "2026-04-16T18:48:06.751670+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 herm0 regression audit",
+      "protocol_script": "scripts/upload_to_huggingface.py + huggingface-uploads/herm0_skiplist.json",
+      "severity": "MODERATE",
+      "base_score": 87.6,
+      "herm0_score": 81.7,
+      "delta": -5.9,
+      "threshold_delta": -5.0,
+      "shipped_to_hf": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true,
+      "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=87.6 herm0=81.7 delta=-5.90. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1205,7 +1223,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:38:01.497731+00:00",
       "variant_scores": {}
@@ -1219,7 +1237,7 @@
     "lora_size_mb": 299.14,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T21:58:05.178583+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1229,7 +1247,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 93.4,

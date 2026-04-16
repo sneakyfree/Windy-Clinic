@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from upload_to_huggingface import (
     ORG, MODELS, PATIENTS, STT_PATIENTS, DOCTOR, MACHINE,
     STT_REBUILT, STT_CT2, STT_ONNX, STT_ONNX_INT8, STT_LINGUA,
-    VARIANT_UPLOAD_MAP, STT_VOICE_BASE_MAP,
+    VARIANT_UPLOAD_MAP, STT_VOICE_BASE_MAP, HERM0_SKIP_PIDS,
     build_translation_readme, build_stt_readme,
     create_repo_safe, upload_variant_folder, record_upload_in_patient,
 )
@@ -97,6 +97,9 @@ def upload_one_translation(pid, worker_id):
 
     uploaded = []
     for disk_name, subfolder in VARIANT_UPLOAD_MAP:
+        if disk_name in ("herm0", "herm0-ct2-int8") and pid in HERM0_SKIP_PIDS:
+            log(f"SKIP {disk_name} for {pid}: GR v2 regression (herm0_skiplist.json)", f"w{worker_id}")
+            continue
         vdir = MODELS / f"windy-pair-{pid}" / disk_name
         real = vdir.resolve() if vdir.is_symlink() else vdir
         if not real.exists():

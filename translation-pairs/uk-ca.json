@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/uk-ca.json",
   "patient_id": "uk-ca",
   "admitted": "2026-03-22T19:51:50.621998+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -141,7 +141,7 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
@@ -160,7 +160,7 @@
       "date": "2026-03-22T19:51:50.621998+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -176,28 +176,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
-              "output": "Hola, com est\u00e0s avui?",
+              "input": "Привіт, як у вас справи сьогодні?",
+              "output": "Hola, com estàs avui?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
-              "output": "Avui mat\u00ed, el temps \u00e9s magn\u00edfic.",
+              "input": "Сьогодні вранці чудова погода.",
+              "output": "Avui matí, el temps és magnífic.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "M'agradaria convocar una tassa de cafè, si us plau.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "L'escor\u00e7a r\u00e0pida va saltar a trav\u00e9s del gel.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "L'escorça ràpida va saltar a través del gel.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
-              "output": "La intel\u00b7lig\u00e8ncia artificial transforma el m\u00f3n.",
+              "input": "Штучний інтелект перетворює світ.",
+              "output": "La intel·ligència artificial transforma el món.",
               "passed": true
             }
           ]
@@ -210,28 +210,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
-              "output": "Hola, com est\u00e0s avui?",
+              "input": "Привіт, як у вас справи сьогодні?",
+              "output": "Hola, com estàs avui?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
-              "output": "Avui mat\u00ed, el temps \u00e9s magn\u00edfic.",
+              "input": "Сьогодні вранці чудова погода.",
+              "output": "Avui matí, el temps és magnífic.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "M'agradaria convocar una tassa de cafè, si us plau.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "L'escor\u00e7a r\u00e0pida va saltar a trav\u00e9s del gel.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "L'escorça ràpida va saltar a través del gel.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
-              "output": "La intel\u00b7lig\u00e8ncia artificial transforma el m\u00f3n.",
+              "input": "Штучний інтелект перетворює світ.",
+              "output": "La intel·ligència artificial transforma el món.",
               "passed": true
             }
           ]
@@ -244,34 +244,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0443 \u0432\u0430\u0441 \u0441\u043f\u0440\u0430\u0432\u0438 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456?",
-              "output": "Hola, com est\u00e0s avui?",
+              "input": "Привіт, як у вас справи сьогодні?",
+              "output": "Hola, com estàs avui?",
               "passed": true
             },
             {
-              "input": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0447\u0443\u0434\u043e\u0432\u0430 \u043f\u043e\u0433\u043e\u0434\u0430.",
-              "output": "Avui dia, el mat\u00ed \u00e9s preci\u00f3s.",
+              "input": "Сьогодні вранці чудова погода.",
+              "output": "Avui dia, el matí és preciós.",
               "passed": true
             },
             {
-              "input": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-              "output": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
+              "input": "Я хотів би замовити чашку кави, будь ласка.",
+              "output": "M'agradaria convocar una tassa de cafè, si us plau.",
               "passed": true
             },
             {
-              "input": "\u0428\u0432\u0438\u0434\u043a\u0430 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u044f \u0441\u0442\u0440\u0438\u0431\u0430\u0454 \u0447\u0435\u0440\u0435\u0437 \u043b\u0456\u043d\u0438\u0432\u043e\u0433\u043e \u043f\u0441\u0430.",
-              "output": "Una bugaderia r\u00e0pida salta a trav\u00e9s de l'estiu.",
+              "input": "Швидка коричнева лисиця стрибає через лінивого пса.",
+              "output": "Una bugaderia ràpida salta a través de l'estiu.",
               "passed": true
             },
             {
-              "input": "\u0428\u0442\u0443\u0447\u043d\u0438\u0439 \u0456\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u044e\u0454 \u0441\u0432\u0456\u0442.",
-              "output": "La intel\u00b7lig\u00e8ncia artificial transforma el m\u00f3n.",
+              "input": "Штучний інтелект перетворює світ.",
+              "output": "La intel·ligència artificial transforma el món.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -305,14 +305,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:50:13.007087+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -381,7 +381,7 @@
       "date": "2026-03-23T08:50:13.007087+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -444,7 +444,7 @@
       "date": "2026-03-24T07:09:36.375879+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -480,7 +480,7 @@
       "date": "2026-03-24T20:36:14.382467+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -503,7 +503,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -521,7 +521,7 @@
       "date": "2026-03-28T16:23:35.620054+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -531,7 +531,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
+          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 70.14,
@@ -540,21 +540,21 @@
               "max": 89.74,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
+                  "original": "Привіт, як ся маєш?",
                   "forward": "Hola, com et trobes?",
-                  "returned": "\u044f\u043a \u0442\u0438 \u0441\u0435\u0431\u0435 \u043f\u043e\u0447\u0443\u0432\u0430\u0454\u0448?",
+                  "returned": "як ти себе почуваєш?",
                   "similarity": 0.4615
                 },
                 {
-                  "original": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "forward": "Avui dia, el mat\u00ed \u00e9s un bon moment.",
-                  "returned": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u2014 \u0446\u0435 \u0445\u043e\u0440\u043e\u0448\u0438\u0439 \u0447\u0430\u0441.",
+                  "original": "Сьогодні вранці погода гарна.",
+                  "forward": "Avui dia, el matí és un bon moment.",
+                  "returned": "Сьогодні вранці — це хороший час.",
                   "similarity": 0.6452
                 },
                 {
-                  "original": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "forward": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u043f\u043e\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
+                  "original": "Я хотів би замовити чашку кави, будь ласка.",
+                  "forward": "M'agradaria convocar una tassa de cafè, si us plau.",
+                  "returned": "Я хотів би побудувати чашку кави, будь ласка.",
                   "similarity": 0.8636
                 }
               ]
@@ -566,21 +566,21 @@
               "max": 89.74,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
+                  "original": "Привіт, як ся маєш?",
                   "forward": "Hola, com et trobes?",
-                  "returned": "\u044f\u043a \u0442\u0438 \u0441\u0435\u0431\u0435 \u043f\u043e\u0447\u0443\u0432\u0430\u0454\u0448?",
+                  "returned": "як ти себе почуваєш?",
                   "similarity": 0.4615
                 },
                 {
-                  "original": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "forward": "Avui dia, el mat\u00ed \u00e9s un bon moment.",
-                  "returned": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u2014 \u0446\u0435 \u0445\u043e\u0440\u043e\u0448\u0438\u0439 \u0447\u0430\u0441.",
+                  "original": "Сьогодні вранці погода гарна.",
+                  "forward": "Avui dia, el matí és un bon moment.",
+                  "returned": "Сьогодні вранці — це хороший час.",
                   "similarity": 0.6452
                 },
                 {
-                  "original": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "forward": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u043f\u043e\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
+                  "original": "Я хотів би замовити чашку кави, будь ласка.",
+                  "forward": "M'agradaria convocar una tassa de cafè, si us plau.",
+                  "returned": "Я хотів би побудувати чашку кави, будь ласка.",
                   "similarity": 0.8636
                 }
               ]
@@ -592,21 +592,21 @@
               "max": 89.74,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
+                  "original": "Привіт, як ся маєш?",
                   "forward": "Hola, com et trobes?",
-                  "returned": "\u044f\u043a \u0442\u0438 \u0441\u0435\u0431\u0435 \u043f\u043e\u0447\u0443\u0432\u0430\u0454\u0448?",
+                  "returned": "як ти себе почуваєш?",
                   "similarity": 0.4615
                 },
                 {
-                  "original": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "forward": "Avui dia, el mat\u00ed \u00e9s un bon moment.",
-                  "returned": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u2014 \u0446\u0435 \u0445\u043e\u0440\u043e\u0448\u0438\u0439 \u0447\u0430\u0441.",
+                  "original": "Сьогодні вранці погода гарна.",
+                  "forward": "Avui dia, el matí és un bon moment.",
+                  "returned": "Сьогодні вранці — це хороший час.",
                   "similarity": 0.6452
                 },
                 {
-                  "original": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "forward": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u043f\u043e\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
+                  "original": "Я хотів би замовити чашку кави, будь ласка.",
+                  "forward": "M'agradaria convocar una tassa de cafè, si us plau.",
+                  "returned": "Я хотів би побудувати чашку кави, будь ласка.",
                   "similarity": 0.8636
                 }
               ]
@@ -618,21 +618,21 @@
               "max": 89.74,
               "sentences": [
                 {
-                  "original": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
+                  "original": "Привіт, як ся маєш?",
                   "forward": "Hola, com t'has de fer?",
-                  "returned": "\u044f\u043a \u0442\u043e\u0431\u0456 \u0446\u0435 \u0440\u043e\u0431\u0438\u0442\u0438?",
+                  "returned": "як тобі це робити?",
                   "similarity": 0.2703
                 },
                 {
-                  "original": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "forward": "Avui dia, el mat\u00ed \u00e9s preci\u00f3s.",
-                  "returned": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u0446\u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e.",
+                  "original": "Сьогодні вранці погода гарна.",
+                  "forward": "Avui dia, el matí és preciós.",
+                  "returned": "Сьогодні вранці це прекрасно.",
                   "similarity": 0.6552
                 },
                 {
-                  "original": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "forward": "M'agradaria convocar una tassa de caf\u00e8, si us plau.",
-                  "returned": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u043f\u043e\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
+                  "original": "Я хотів би замовити чашку кави, будь ласка.",
+                  "forward": "M'agradaria convocar una tassa de cafè, si us plau.",
+                  "returned": "Я хотів би побудувати чашку кави, будь ласка.",
                   "similarity": 0.8636
                 }
               ]
@@ -677,19 +677,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
-                  "reference": "Hola, com est\u00e0s avui?",
+                  "source": "Привіт, як ся маєш?",
+                  "reference": "Hola, com estàs avui?",
                   "hypothesis": "Hola, com et trobes?"
                 },
                 {
-                  "source": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "reference": "El temps \u00e9s bonic aquest mat\u00ed.",
-                  "hypothesis": "Avui dia, el mat\u00ed \u00e9s un bon moment."
+                  "source": "Сьогодні вранці погода гарна.",
+                  "reference": "El temps és bonic aquest matí.",
+                  "hypothesis": "Avui dia, el matí és un bon moment."
                 },
                 {
-                  "source": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "reference": "Voldria demanar una tassa de caf\u00e8, si us plau.",
-                  "hypothesis": "M'agradaria convocar una tassa de caf\u00e8, si us plau."
+                  "source": "Я хотів би замовити чашку кави, будь ласка.",
+                  "reference": "Voldria demanar una tassa de cafè, si us plau.",
+                  "hypothesis": "M'agradaria convocar una tassa de cafè, si us plau."
                 }
               ]
             },
@@ -705,19 +705,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
-                  "reference": "Hola, com est\u00e0s avui?",
+                  "source": "Привіт, як ся маєш?",
+                  "reference": "Hola, com estàs avui?",
                   "hypothesis": "Hola, com et trobes?"
                 },
                 {
-                  "source": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "reference": "El temps \u00e9s bonic aquest mat\u00ed.",
-                  "hypothesis": "Avui dia, el mat\u00ed \u00e9s un bon moment."
+                  "source": "Сьогодні вранці погода гарна.",
+                  "reference": "El temps és bonic aquest matí.",
+                  "hypothesis": "Avui dia, el matí és un bon moment."
                 },
                 {
-                  "source": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "reference": "Voldria demanar una tassa de caf\u00e8, si us plau.",
-                  "hypothesis": "M'agradaria convocar una tassa de caf\u00e8, si us plau."
+                  "source": "Я хотів би замовити чашку кави, будь ласка.",
+                  "reference": "Voldria demanar una tassa de cafè, si us plau.",
+                  "hypothesis": "M'agradaria convocar una tassa de cafè, si us plau."
                 }
               ]
             },
@@ -733,19 +733,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
-                  "reference": "Hola, com est\u00e0s avui?",
+                  "source": "Привіт, як ся маєш?",
+                  "reference": "Hola, com estàs avui?",
                   "hypothesis": "Hola, com et trobes?"
                 },
                 {
-                  "source": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "reference": "El temps \u00e9s bonic aquest mat\u00ed.",
-                  "hypothesis": "Avui dia, el mat\u00ed \u00e9s un bon moment."
+                  "source": "Сьогодні вранці погода гарна.",
+                  "reference": "El temps és bonic aquest matí.",
+                  "hypothesis": "Avui dia, el matí és un bon moment."
                 },
                 {
-                  "source": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "reference": "Voldria demanar una tassa de caf\u00e8, si us plau.",
-                  "hypothesis": "M'agradaria convocar una tassa de caf\u00e8, si us plau."
+                  "source": "Я хотів би замовити чашку кави, будь ласка.",
+                  "reference": "Voldria demanar una tassa de cafè, si us plau.",
+                  "hypothesis": "M'agradaria convocar una tassa de cafè, si us plau."
                 }
               ]
             },
@@ -761,19 +761,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "\u041f\u0440\u0438\u0432\u0456\u0442, \u044f\u043a \u0441\u044f \u043c\u0430\u0454\u0448?",
-                  "reference": "Hola, com est\u00e0s avui?",
+                  "source": "Привіт, як ся маєш?",
+                  "reference": "Hola, com estàs avui?",
                   "hypothesis": "Hola, com t'has de fer?"
                 },
                 {
-                  "source": "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0432\u0440\u0430\u043d\u0446\u0456 \u043f\u043e\u0433\u043e\u0434\u0430 \u0433\u0430\u0440\u043d\u0430.",
-                  "reference": "El temps \u00e9s bonic aquest mat\u00ed.",
-                  "hypothesis": "Avui dia, el mat\u00ed \u00e9s preci\u00f3s."
+                  "source": "Сьогодні вранці погода гарна.",
+                  "reference": "El temps és bonic aquest matí.",
+                  "hypothesis": "Avui dia, el matí és preciós."
                 },
                 {
-                  "source": "\u042f \u0445\u043e\u0442\u0456\u0432 \u0431\u0438 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u0447\u0430\u0448\u043a\u0443 \u043a\u0430\u0432\u0438, \u0431\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430.",
-                  "reference": "Voldria demanar una tassa de caf\u00e8, si us plau.",
-                  "hypothesis": "M'agradaria convocar una tassa de caf\u00e8, si us plau."
+                  "source": "Я хотів би замовити чашку кави, будь ласка.",
+                  "reference": "Voldria demanar una tassa de cafè, si us plau.",
+                  "hypothesis": "M'agradaria convocar una tassa de cafè, si us plau."
                 }
               ]
             }
@@ -846,11 +846,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (uk\u2192ca)"
+              "reason": "no English endpoint (uk→ca)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for uk\u2192ca"
+              "reason": "no reference pairs for uk→ca"
             },
             "vitals": {
               "status": "complete",
@@ -904,11 +904,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (uk\u2192ca)"
+              "reason": "no English endpoint (uk→ca)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for uk\u2192ca"
+              "reason": "no reference pairs for uk→ca"
             },
             "vitals": {
               "status": "complete",
@@ -962,11 +962,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (uk\u2192ca)"
+              "reason": "no English endpoint (uk→ca)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for uk\u2192ca"
+              "reason": "no reference pairs for uk→ca"
             },
             "vitals": {
               "status": "complete",
@@ -1031,14 +1031,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-uk-ca/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-uk-ca/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-uk-ca/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-uk-ca/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-uk-ca",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-uk-ca/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-uk-ca/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -1047,7 +1047,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1111,14 +1111,14 @@
       },
       "best_grade": "A+",
       "best_score": 97.36,
-      "notes": "Dr. C independent certification of uk-ca. Tested 1 variant(s): base. Best variant grade: A+ (97.36). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of uk-ca. Tested 1 variant(s): base. Best variant grade: A+ (97.36). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-uk-ca",
       "date": "2026-04-12T22:28:41.623408+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 77.6, after: 82.1, delta: 4.5. IMPROVED \u2014 saved as herm0/",
+      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 77.6, after: 82.1, delta: 4.5. IMPROVED — saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1127,7 +1127,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -1201,7 +1201,7 @@
       "best_stars": 5.0,
       "best_tier": "premium",
       "best_composite": 85.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 5.0\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 5.0★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-uk-ca",
@@ -1246,7 +1246,25 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-REGRESS-uk-ca",
+      "date": "2026-04-16T18:48:06.751670+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 herm0 regression audit",
+      "protocol_script": "scripts/upload_to_huggingface.py + huggingface-uploads/herm0_skiplist.json",
+      "severity": "SEVERE",
+      "base_score": 85.5,
+      "herm0_score": 75.0,
+      "delta": -10.5,
+      "threshold_delta": -5.0,
+      "shipped_to_hf": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true,
+      "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=85.5 herm0=75.0 delta=-10.50. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1385,7 +1403,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:09:36.375879+00:00",
       "variant_scores": {}
@@ -1399,7 +1417,7 @@
     "lora_size_mb": 192.07,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:57:03.780506+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1409,7 +1427,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

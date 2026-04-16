@@ -1,0 +1,292 @@
+{
+  "_schema": "1.0",
+  "_generated_at": "2026-04-16T00:00:00Z",
+  "_generated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "_purpose": "Pairs with herm0 GR v2 regression delta <= -5 vs base. Upload pipeline skips herm0 and herm0-ct2-int8 variants for these pids.",
+  "_threshold_delta": -5.0,
+  "_source": "THE_CLINIC/grand-rounds/grv2/results.jsonl + grv2_herm0/results.jsonl",
+  "herm0_skip_pids": [
+    "ceb-sv",
+    "de-et",
+    "de-eu",
+    "en-bi",
+    "en-iir",
+    "en-nic",
+    "en-sk",
+    "en-tut",
+    "eo-sh",
+    "es-bg",
+    "es-da",
+    "et-sv",
+    "fi-el",
+    "fi-sk",
+    "fr-sv",
+    "ig-fr",
+    "it-ca",
+    "no-fr",
+    "no-ru",
+    "pl-no",
+    "ru-et",
+    "sh-eo",
+    "sv-bg",
+    "sv-cs",
+    "sv-et",
+    "sv-fr",
+    "sv-sl",
+    "uk-ca"
+  ],
+  "details": [
+    {
+      "pid": "en-iir",
+      "base": 79.6,
+      "herm0": 63.1,
+      "delta": -16.5,
+      "shipped_herm0": true,
+      "shipped_herm0_ct2": true,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "en-tut",
+      "base": 82.5,
+      "herm0": 68.7,
+      "delta": -13.8,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "fi-sk",
+      "base": 90.7,
+      "herm0": 78.8,
+      "delta": -11.9,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "no-ru",
+      "base": 82.7,
+      "herm0": 71.1,
+      "delta": -11.6,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "et-sv",
+      "base": 91.3,
+      "herm0": 79.9,
+      "delta": -11.4,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "pl-no",
+      "base": 81.0,
+      "herm0": 70.0,
+      "delta": -11.0,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sv-cs",
+      "base": 92.6,
+      "herm0": 81.8,
+      "delta": -10.8,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "uk-ca",
+      "base": 85.5,
+      "herm0": 75.0,
+      "delta": -10.5,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "es-bg",
+      "base": 91.0,
+      "herm0": 80.7,
+      "delta": -10.3,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "en-nic",
+      "base": 81.2,
+      "herm0": 72.6,
+      "delta": -8.6,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "es-da",
+      "base": 89.8,
+      "herm0": 82.5,
+      "delta": -7.3,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "fr-sv",
+      "base": 94.2,
+      "herm0": 87.0,
+      "delta": -7.2,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "ceb-sv",
+      "base": 80.1,
+      "herm0": 73.1,
+      "delta": -7.0,
+      "shipped_herm0": true,
+      "shipped_herm0_ct2": true,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "en-bi",
+      "base": 81.6,
+      "herm0": 74.7,
+      "delta": -6.9,
+      "shipped_herm0": true,
+      "shipped_herm0_ct2": true,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sv-sl",
+      "base": 91.2,
+      "herm0": 84.3,
+      "delta": -6.9,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sv-fr",
+      "base": 93.1,
+      "herm0": 86.3,
+      "delta": -6.8,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "de-et",
+      "base": 90.3,
+      "herm0": 83.6,
+      "delta": -6.7,
+      "shipped_herm0": true,
+      "shipped_herm0_ct2": true,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "ig-fr",
+      "base": 78.2,
+      "herm0": 71.6,
+      "delta": -6.6,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sh-eo",
+      "base": 81.7,
+      "herm0": 75.2,
+      "delta": -6.5,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "de-eu",
+      "base": 74.7,
+      "herm0": 68.4,
+      "delta": -6.3,
+      "shipped_herm0": true,
+      "shipped_herm0_ct2": true,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "it-ca",
+      "base": 86.7,
+      "herm0": 80.5,
+      "delta": -6.2,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "ru-et",
+      "base": 87.2,
+      "herm0": 81.2,
+      "delta": -6.0,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "fi-el",
+      "base": 87.6,
+      "herm0": 81.7,
+      "delta": -5.9,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "no-fr",
+      "base": 84.8,
+      "herm0": 78.9,
+      "delta": -5.9,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "en-sk",
+      "base": 98.9,
+      "herm0": 93.4,
+      "delta": -5.5,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "eo-sh",
+      "base": 78.7,
+      "herm0": 73.2,
+      "delta": -5.5,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sv-bg",
+      "base": 89.5,
+      "herm0": 84.0,
+      "delta": -5.5,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    },
+    {
+      "pid": "sv-et",
+      "base": 92.2,
+      "herm0": 87.0,
+      "delta": -5.2,
+      "shipped_herm0": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true
+    }
+  ]
+}

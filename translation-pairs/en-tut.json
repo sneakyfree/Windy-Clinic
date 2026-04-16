@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/en-tut.json",
   "patient_id": "en-tut",
   "admitted": "2026-03-22T19:31:50.984606+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-tut/lora",
@@ -120,7 +120,7 @@
       "date": "2026-03-22T19:31:50.984606+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -137,27 +137,27 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?",
+              "output": "Сауалама беріпсіз бе?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440.",
+              "output": "Ансало һауаһы — bu иртәнге матур.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
+              "output": "Бераз кофе алгым gelýär.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Okka, beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n ot!",
+              "output": "Okka, berilýän berilýän berilýän berilýän berilýän ot!",
               "passed": false
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Artimik imtiyaz d\u00fcn\u00fd\u00e4 \u043f\u04d7\u0440\u043c\u0430\u044f\u0445 \u04af\u0437\u0433\u04d9\u0440\u0435\u0442.",
+              "output": "Artimik imtiyaz dünýä пӗрмаях үзгәрет.",
               "passed": true
             }
           ]
@@ -171,27 +171,27 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?",
+              "output": "Сауалама беріпсіз бе?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440.",
+              "output": "Ансало һауаһы — bu иртәнге матур.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
+              "output": "Бераз кофе алгым gelýär.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Okka, beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n beril\u00fd\u00e4n ot!",
+              "output": "Okka, berilýän berilýän berilýän berilýän berilýän ot!",
               "passed": false
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Artimik imtiyaz d\u00fcn\u00fd\u00e4 \u043f\u04d7\u0440\u043c\u0430\u044f\u0445 \u04af\u0437\u0433\u04d9\u0440\u0435\u0442.",
+              "output": "Artimik imtiyaz dünýä пӗрмаях үзгәрет.",
               "passed": true
             }
           ]
@@ -205,33 +205,33 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Bu g\u00fcn \u015fiiririmi?",
+              "output": "Bu gün şiiririmi?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "Bu sabahk\u00fck\u00fck\u00fc \u043c\u0430\u0433\u0430n.",
+              "output": "Bu sabahkükükü магаn.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "\u0411\u044b\u043d\u0434\u0430\u0439\u0493\u0443\u043d\u0443\u043d \u0442\u0435\u043b\u0435\u0432\u0438\u0434\u0435\u043d\u0438\u0435 15: 5.",
+              "output": "Бындайғунун телевидение 15: 5.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Oglum paslynda\u0418\u0439\u0418\u0439 \u041c\u0443\u0445\u04d9\u043c\u043c\u04d9\u0434!",
+              "output": "Oglum paslyndaИйИй Мухәммәд!",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Artikikik istikrar . \u0422\u04d7\u043d\u0447\u0435\u043d\u0435 \u04e9\u0437\u0433\u04e9\u0440\u0442\u04af\u04af.",
+              "output": "Artikikik istikrar . Тӗнчене өзгөртүү.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -265,14 +265,14 @@
           "stars": 4.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:41:35.540876+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -288,11 +288,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c \u043f\u0430\u044f\u043d \u0431\u0438\u043a \u043c\u0430\u0442\u0443\u0440.",
-            "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
-            "\u0411\u0430\u043b\u0430\u043b\u0430\u0440 \u043f\u0430\u0440\u043a\u0442\u0430 \u043e\u0439\u043d\u0430\u0439.",
-            "\u041c\u04d7\u043d\u0435 \u043f\u0443\u043b\u0430 \u043f\u043e\u0435\u0437\u0434 qa\u00e7\u0430\u0442\u044c?",
-            "\u0423\u043d\u0442\u0430 \u0432\u04d1\u043b on \u00fdyldan b\u00e4ri \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044c\u0434\u0430 \u04d7\u04ab\u043b\u0435\u0442."
+            "Автомобиль паян бик матур.",
+            "Бераз кофе алгым gelýär.",
+            "Балалар паркта ойнай.",
+            "Мӗне пула поезд qaçать?",
+            "Унта вӑл on ýyldan bäri госпитальда ӗҫлет."
           ]
         },
         "lora": {
@@ -303,11 +303,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c \u043f\u0430\u044f\u043d \u0431\u0438\u043a \u043c\u0430\u0442\u0443\u0440.",
-            "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
-            "\u0411\u0430\u043b\u0430\u043b\u0430\u0440 \u043f\u0430\u0440\u043a\u0442\u0430 \u043e\u0439\u043d\u0430\u0439.",
-            "\u041c\u04d7\u043d\u0435 \u043f\u0443\u043b\u0430 \u043f\u043e\u0435\u0437\u0434 qa\u00e7\u0430\u0442\u044c?",
-            "\u0423\u043d\u0442\u0430 \u0432\u04d1\u043b on \u00fdyldan b\u00e4ri \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044c\u0434\u0430 \u04d7\u04ab\u043b\u0435\u0442."
+            "Автомобиль паян бик матур.",
+            "Бераз кофе алгым gelýär.",
+            "Балалар паркта ойнай.",
+            "Мӗне пула поезд qaçать?",
+            "Унта вӑл on ýyldan bäri госпитальда ӗҫлет."
           ],
           "delta_vs_base": 0.0
         },
@@ -341,7 +341,7 @@
       "date": "2026-03-23T04:41:35.540876+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -404,7 +404,7 @@
       "date": "2026-03-24T05:24:54.808925+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -440,7 +440,7 @@
       "date": "2026-03-24T16:18:14.313120+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -463,7 +463,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -481,7 +481,7 @@
       "date": "2026-03-28T15:10:18.313263+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -505,18 +505,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?",
-                  "hypothesis": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?"
+                  "reference": "Сауалама беріпсіз бе?",
+                  "hypothesis": "Сауалама беріпсіз бе?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440.",
-                  "hypothesis": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440."
+                  "reference": "Ансало һауаһы — bu иртәнге матур.",
+                  "hypothesis": "Ансало һауаһы — bu иртәнге матур."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
-                  "hypothesis": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r."
+                  "reference": "Бераз кофе алгым gelýär.",
+                  "hypothesis": "Бераз кофе алгым gelýär."
                 }
               ]
             },
@@ -533,18 +533,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?",
-                  "hypothesis": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?"
+                  "reference": "Сауалама беріпсіз бе?",
+                  "hypothesis": "Сауалама беріпсіз бе?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440.",
-                  "hypothesis": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440."
+                  "reference": "Ансало һауаһы — bu иртәнге матур.",
+                  "hypothesis": "Ансало һауаһы — bu иртәнге матур."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
-                  "hypothesis": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r."
+                  "reference": "Бераз кофе алгым gelýär.",
+                  "hypothesis": "Бераз кофе алгым gelýär."
                 }
               ]
             },
@@ -561,18 +561,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?",
-                  "hypothesis": "\u0421\u0430\u0443\u0430\u043b\u0430\u043c\u0430 \u0431\u0435\u0440\u0456\u043f\u0441\u0456\u0437 \u0431\u0435?"
+                  "reference": "Сауалама беріпсіз бе?",
+                  "hypothesis": "Сауалама беріпсіз бе?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440.",
-                  "hypothesis": "\u0410\u043d\u0441\u0430\u043b\u043e \u04bb\u0430\u0443\u0430\u04bb\u044b \u2014 bu \u0438\u0440\u0442\u04d9\u043d\u0433\u0435 \u043c\u0430\u0442\u0443\u0440."
+                  "reference": "Ансало һауаһы — bu иртәнге матур.",
+                  "hypothesis": "Ансало һауаһы — bu иртәнге матур."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r.",
-                  "hypothesis": "\u0411\u0435\u0440\u0430\u0437 \u043a\u043e\u0444\u0435 \u0430\u043b\u0433\u044b\u043c gel\u00fd\u00e4r."
+                  "reference": "Бераз кофе алгым gelýär.",
+                  "hypothesis": "Бераз кофе алгым gelýär."
                 }
               ]
             }
@@ -636,11 +636,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no reverse model tut\u2192en"
+              "reason": "no reverse model tut→en"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for en\u2192tut"
+              "reason": "no reference pairs for en→tut"
             },
             "vitals": {
               "status": "complete",
@@ -694,7 +694,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -814,7 +814,7 @@
       },
       "best_grade": "A+",
       "best_score": 99.19,
-      "notes": "Dr. C independent certification of en-tut. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.19). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of en-tut. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (99.19). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-en-tut",
@@ -830,7 +830,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -904,14 +904,14 @@
       "best_stars": 4.5,
       "best_tier": "premium",
       "best_composite": 82.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-P3-en-tut",
       "date": "2026-04-14T16:24:48.642564+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 75.7\u219279.4 (\u0394+3.8). IMPROVED \u2014 saved as herm0/",
+      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 75.7→79.4 (Δ+3.8). IMPROVED — saved as herm0/",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 3 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -922,7 +922,7 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (76 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (76 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-en-tut",
@@ -967,7 +967,25 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HERM0-REGRESS-en-tut",
+      "date": "2026-04-16T18:48:06.751670+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Grand Rounds v2 herm0 regression audit",
+      "protocol_script": "scripts/upload_to_huggingface.py + huggingface-uploads/herm0_skiplist.json",
+      "severity": "SEVERE",
+      "base_score": 82.5,
+      "herm0_score": 68.7,
+      "delta": -13.8,
+      "threshold_delta": -5.0,
+      "shipped_to_hf": false,
+      "shipped_herm0_ct2": false,
+      "herm0_on_disk": true,
+      "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=82.5 herm0=68.7 delta=-13.80. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1106,7 +1124,7 @@
       "oc1_stars_reference": 4.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:24:54.808925+00:00",
       "variant_scores": {}
@@ -1120,7 +1138,7 @@
     "lora_size_mb": 303.1,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:52:43.246982+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1130,7 +1148,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

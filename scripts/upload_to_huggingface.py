@@ -63,6 +63,17 @@ VARIANT_UPLOAD_MAP = [
     ("scripture-ct2-int8", "scripture-ct2-int8"),  # CT2 INT8 of scripture
 ]
 
+# Pairs whose herm0 fine-tune regressed below base in Grand Rounds v2 (delta <= -5).
+# We do NOT ship herm0 or herm0-ct2-int8 for these pids — users fall back to lora (≈ base).
+HERM0_SKIPLIST_PATH = OUT_DIR / "herm0_skiplist.json"
+HERM0_SKIP_PIDS: set = set()
+if HERM0_SKIPLIST_PATH.exists():
+    try:
+        _sk = json.loads(HERM0_SKIPLIST_PATH.read_text())
+        HERM0_SKIP_PIDS = set(_sk.get("herm0_skip_pids", []))
+    except Exception:
+        HERM0_SKIP_PIDS = set()
+
 api = HfApi()
 
 
@@ -460,7 +471,12 @@ def phase1_upload_translations(state, limit=None):
 
         # Upload variant subfolders
         uploaded = []
+        skipped_regression = False
         for disk_name, subfolder in VARIANT_UPLOAD_MAP:
+            if disk_name in ("herm0", "herm0-ct2-int8") and pid in HERM0_SKIP_PIDS:
+                log(f"  SKIP {disk_name} for {pid}: GR v2 regression (see herm0_skiplist.json)")
+                skipped_regression = True
+                continue
             vdir = MODELS / f"windy-pair-{pid}" / disk_name
             real = vdir.resolve() if vdir.is_symlink() else vdir
             if not real.exists():
