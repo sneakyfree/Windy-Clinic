@@ -206,6 +206,86 @@ def _lang_label(code: str) -> str:
     return code
 
 
+# Common family expansions — so "zle" can be shown as "East Slavic (Russian, Ukrainian, Belarusian)".
+_FAMILY_MEMBERS = {
+    "zle": ["Russian", "Ukrainian", "Belarusian"],
+    "zls": ["Bulgarian", "Croatian", "Macedonian", "Serbian", "Slovenian"],
+    "zlw": ["Czech", "Polish", "Slovak"],
+    "zlo": ["Slavic"],
+    "sla": ["Russian", "Polish", "Czech", "Ukrainian", "Bulgarian", "Serbian", "Croatian", "Slovak"],
+    "itc": ["Italian", "Spanish", "Portuguese", "French", "Catalan", "Romanian"],
+    "roa": ["Italian", "Spanish", "Portuguese", "French", "Catalan", "Romanian"],
+    "gmw": ["English", "German", "Dutch", "Afrikaans", "Yiddish"],
+    "gmq": ["Swedish", "Danish", "Norwegian", "Icelandic", "Faroese"],
+    "gem": ["English", "German", "Dutch", "Swedish", "Danish", "Norwegian"],
+    "bat": ["Lithuanian", "Latvian"],
+    "sem": ["Arabic", "Hebrew", "Maltese", "Amharic"],
+    "bnt": ["Swahili", "Zulu", "Xhosa", "Shona", "Yoruba-related Bantu"],
+    "urj": ["Finnish", "Estonian", "Hungarian", "Sami"],
+    "fiu": ["Finnish", "Estonian", "Hungarian"],
+    "iir": ["Hindi", "Persian", "Urdu", "Bengali", "Gujarati", "Marathi"],
+    "inc": ["Hindi", "Bengali", "Urdu", "Gujarati", "Marathi", "Punjabi"],
+    "ira": ["Persian", "Pashto", "Kurdish", "Tajik"],
+    "trk": ["Turkish", "Azerbaijani", "Kazakh", "Uzbek", "Kyrgyz", "Turkmen"],
+    "tut": ["Turkish", "Mongolian", "Japanese", "Korean"],
+    "ine": ["English", "Spanish", "French", "German", "Russian", "Hindi"],
+    "aav": ["Vietnamese", "Khmer", "Mon"],
+    "afa": ["Arabic", "Hebrew", "Amharic", "Berber"],
+    "alv": ["Igbo", "Swahili", "Yoruba", "Zulu"],
+    "map": ["Indonesian", "Malay", "Tagalog", "Malagasy", "Samoan"],
+    "poz": ["Indonesian", "Malay", "Tagalog", "Samoan"],
+    "pqw": ["Indonesian", "Malay", "Tagalog", "Javanese"],
+    "phi": ["Tagalog", "Cebuano", "Hiligaynon"],
+    "cel": ["Irish", "Welsh", "Scottish Gaelic", "Breton"],
+    "ber": ["Berber"],
+    "cau": ["Georgian", "Armenian"],
+    "smi": ["Northern Sami", "Lule Sami", "Southern Sami"],
+    "cpp": ["Portuguese-based Creoles"],
+    "dra": ["Tamil", "Telugu", "Kannada", "Malayalam"],
+    "mkh": ["Vietnamese", "Khmer", "Mon"],
+    "tai": ["Thai", "Lao", "Shan"],
+    "nic": ["Swahili", "Yoruba", "Igbo", "Zulu", "Xhosa"],
+    "mul": ["multiple languages"],
+    "NORTH_EU": ["Swedish", "Danish", "Norwegian", "Finnish", "Estonian", "Latvian", "Lithuanian"],
+    "SCANDINAVIA": ["Swedish", "Danish", "Norwegian", "Icelandic"],
+    "SAMI": ["Northern Sami", "Lule Sami"],
+}
+
+
+def _expand_lang(code: str) -> str:
+    """Return a spelled-out expansion for a code, including family members if known.
+    e.g. 'fi' → 'Finnish';  'zle' → 'East Slavic (Russian, Ukrainian, Belarusian)'"""
+    label = _lang_label(code)
+    if code in _FAMILY_MEMBERS and label != code:
+        members = ", ".join(_FAMILY_MEMBERS[code])
+        return f"{label} ({members})"
+    if "_" in code:
+        # Multi-language bundle, show all members
+        parts = [_LANG_NAMES.get(p, _LANG_NAMES.get(p.lower(), p)) for p in code.split("_")]
+        return " / ".join(parts)
+    return label
+
+
+def _tag_list(code: str):
+    """Return a list of lowercase-hyphenated tag strings for the code's languages.
+    Used to populate YAML `tags:` for HF search indexing."""
+    out = []
+    if not code:
+        return out
+    label = _lang_label(code)
+    if label and label != code:
+        out.append(label.lower().replace("/", "-").replace(" ", "-"))
+    members = _FAMILY_MEMBERS.get(code, [])
+    for m in members:
+        out.append(m.lower().replace(" ", "-").split("(")[0].strip("-"))
+    if "_" in code:
+        for p in code.split("_"):
+            n = _LANG_NAMES.get(p, _LANG_NAMES.get(p.lower()))
+            if n:
+                out.append(n.lower().replace(" ", "-"))
+    return out
+
+
 def _valid_iso(code: str) -> bool:
     """Check if a language code is a valid ISO 639-1/2/3 style (2-3 lowercase alpha) or special."""
     import re
@@ -282,6 +362,17 @@ def build_translation_readme(patient: dict) -> str:
             primary_sub = "herm0-scripture"
             primary_ct2 = "scripture-ct2-int8"
 
+    # Build richer language-name tag list for HF search indexing
+    extra_tags = []
+    for t in _tag_list(src_lang) + _tag_list(tgt_lang):
+        if t and t not in extra_tags:
+            extra_tags.append(t)
+    tag_yaml_extra = "\n".join(f"- {t}" for t in extra_tags[:20])  # cap at 20 to keep YAML clean
+
+    # Spelled-out labels with family expansions for the tagline
+    src_full = _expand_lang(src_lang)
+    tgt_full = _expand_lang(tgt_lang)
+
     lang_yaml = "\n".join(f"- {c}" for c in yaml_langs)
     return f"""---
 license: cc-by-4.0
@@ -289,6 +380,7 @@ tags:
 - translation
 - marian
 - windyword
+{tag_yaml_extra}
 language:
 {lang_yaml}
 library_name: transformers
@@ -296,6 +388,8 @@ pipeline_tag: translation
 ---
 
 # WindyWord.ai Translation — {src_display} → {tgt_display}
+
+**Translates {src_full} → {tgt_full}.**
 
 **Quality Rating: {star_display}  ({stars}★ {tier})**
 
