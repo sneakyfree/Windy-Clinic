@@ -1,18 +1,18 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T16:18:20.193786+00:00",
+  "_last_updated": "2026-04-20T13:07:37.612338+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-big-zle-es.json",
   "patient_id": "tc-big-zle-es",
   "admitted": "2026-03-22T19:50:06.708712+00:00",
   "source_repo": "Helsinki-NLP/opus-mt-tc-big-zle-es",
   "source_language": {
-    "code": "tc",
-    "name": "tc",
+    "code": "zle",
+    "name": "East Slavic",
     "family": "Unknown"
   },
   "target_language": {
     "code": "es",
-    "name": "es",
+    "name": "Spanish",
     "family": "Unknown"
   },
   "variant_cluster": {
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-zle-es/tree/main/lora",
+      "hf_uploaded_at": "2026-04-20T13:07:37.612338+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-zle-es/lora-ct2-int8",
       "on_disk_bytes": 247463936,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-zle-es/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-20T13:07:37.612338+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -774,6 +778,34 @@
       "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=1. Score 35.9\u219232.8 (\u0394-3.2). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 1. Data: 49950 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-LANGCODE-FIX-tc-big-zle-es",
+      "date": "2026-04-20T13:07:22.747916+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Correct source/target language codes parsed from pid (Helsinki family-prefix stripping)",
+      "old_src": "tc",
+      "old_tgt": "es",
+      "new_src": "zle",
+      "new_tgt": "es",
+      "src_name": "East Slavic",
+      "tgt_name": "Spanish",
+      "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tc-big-zle-es",
+      "date": "2026-04-20T13:07:37.612338+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tc-big-zle-es",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tc-big-zle-es",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

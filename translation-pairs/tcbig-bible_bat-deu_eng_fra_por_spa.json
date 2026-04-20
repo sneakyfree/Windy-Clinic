@@ -1,18 +1,18 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-13T20:15:01.354351+00:00",
+  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-bible_bat-deu_eng_fra_por_spa.json",
   "patient_id": "tcbig-bible_bat-deu_eng_fra_por_spa",
   "admitted": "2026-03-22T20:03:59.148934+00:00",
   "source_repo": "Helsinki-NLP/opus-mt-tc-bible-big-bat-deu_eng_fra_por_spa",
   "source_language": {
-    "code": "tcbig",
-    "name": "tcbig",
+    "code": "bat",
+    "name": "Baltic",
     "family": "Unknown"
   },
   "target_language": {
     "code": "deu_eng_fra_por_spa",
-    "name": "deu_eng_fra_por_spa",
+    "name": "German/English/French/Portuguese/Spanish",
     "family": "Unknown"
   },
   "variant_cluster": {
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tcbig-bible_bat-deu_eng_fra_por_spa/lora",
@@ -100,7 +100,7 @@
       "date": "2026-03-22T20:03:59.148934+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,27 +116,27 @@
           "quality_label": "Experimental",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "input": "Sveiki, kaip sekasi šiandien?",
               "output": "Hello, how are you today?",
               "passed": true
             },
             {
-              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "input": "Šį rytą oras yra gražus.",
               "output": "The weather is beautiful this morning.",
               "passed": true
             },
             {
-              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "input": "Greita ruda lapė šoka per tingų šunį.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "input": "Dirbtinis intelektas keičia pasaulį.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -150,27 +150,27 @@
           "quality_label": "Experimental",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "input": "Sveiki, kaip sekasi šiandien?",
               "output": "Hello, how are you today?",
               "passed": true
             },
             {
-              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "input": "Šį rytą oras yra gražus.",
               "output": "The weather is beautiful this morning.",
               "passed": true
             },
             {
-              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "input": "Greita ruda lapė šoka per tingų šunį.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "input": "Dirbtinis intelektas keičia pasaulį.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -184,34 +184,34 @@
           "quality_label": "Experimental",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "input": "Sveiki, kaip sekasi šiandien?",
               "output": "Hey, how are you today?",
               "passed": true
             },
             {
-              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "input": "Šį rytą oras yra gražus.",
               "output": "This morning the weather is nice.",
               "passed": true
             },
             {
-              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "input": "Greita ruda lapė šoka per tingų šunį.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "input": "Dirbtinis intelektas keičia pasaulį.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +245,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:00:16.882307+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -321,7 +321,7 @@
       "date": "2026-03-23T08:00:16.882307+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +384,7 @@
       "date": "2026-03-24T07:16:51.194999+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +420,7 @@
       "date": "2026-03-25T20:49:52.684181+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 reexport for newly integrated tcbig bible model \u2014 pickle INT8 to safetensors",
+      "method": "CT2 reexport for newly integrated tcbig bible model — pickle INT8 to safetensors",
       "protocol_script": "ct2_reexport_tcbig.py",
       "variants_tested": [
         "ct2_int8"
@@ -439,7 +439,7 @@
       "date": "2026-03-25T20:53:20.341213+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 2 integration \u2014 tcbig bible model moved from models_phase2/ to models/ fleet",
+      "method": "Phase 2 integration — tcbig bible model moved from models_phase2/ to models/ fleet",
       "protocol_script": "phase2_integration.py",
       "variants_tested": [
         "base",
@@ -463,7 +463,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -516,11 +516,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tcbig-bible_bat\u2192deu_eng_fra_por_spa)"
+              "reason": "no English endpoint (tcbig-bible_bat→deu_eng_fra_por_spa)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tcbig-bible_bat\u2192deu_eng_fra_por_spa"
+              "reason": "no reference pairs for tcbig-bible_bat→deu_eng_fra_por_spa"
             },
             "vitals": {
               "status": "complete",
@@ -574,7 +574,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -694,7 +694,7 @@
       },
       "best_grade": "B-",
       "best_score": 80.33,
-      "notes": "Dr. C independent certification of tcbig-bible_bat-deu_eng_fra_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: B- (80.33). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tcbig-bible_bat-deu_eng_fra_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: B- (80.33). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tcbig-bible_bat-deu_eng_fra_por_spa",
@@ -710,7 +710,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -784,7 +784,21 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-LANGCODE-FIX-tcbig-bible_bat-deu_eng_fra_por_spa",
+      "date": "2026-04-20T13:07:22.747916+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Correct source/target language codes parsed from pid (Helsinki family-prefix stripping)",
+      "old_src": "tcbig",
+      "old_tgt": "deu_eng_fra_por_spa",
+      "new_src": "bat",
+      "new_tgt": "deu_eng_fra_por_spa",
+      "src_name": "Baltic",
+      "tgt_name": "German/English/French/Portuguese/Spanish",
+      "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -903,7 +917,7 @@
       }
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:16:51.194999+00:00",
       "variant_scores": {}
@@ -917,7 +931,7 @@
     "lora_size_mb": 905.3,
     "verified_by": "Kit OC1 Alpha (phase2 hash check)",
     "verification_date": "2026-03-24T14:20:43.206435+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -927,7 +941,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

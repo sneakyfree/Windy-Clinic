@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-04-18T04:45:16.462241+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/lt-sv.json",
   "patient_id": "lt-sv",
   "admitted": "2026-03-22T19:39:09.948590+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-lt-sv/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lt-sv/tree/main/lora",
+      "hf_uploaded_at": "2026-04-18T04:45:16.462241+00:00"
     },
     "herm0_scripture": {
       "status": "present",
@@ -99,7 +101,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -115,7 +117,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lt-sv/tree/main/herm0-scripture",
+      "hf_uploaded_at": "2026-04-18T04:45:16.462241+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -124,7 +128,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-lt-sv/lora-ct2-int8",
       "on_disk_bytes": 77594624,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lt-sv/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:45:16.462241+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -137,7 +143,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-lt-sv/scripture-ct2-int8",
       "on_disk_bytes": 77594624,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lt-sv/tree/main/scripture-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:45:16.462241+00:00"
     }
   },
   "architecture": {
@@ -153,7 +161,7 @@
       "date": "2026-03-22T19:39:09.948590+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -169,28 +177,28 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
-              "output": "Hej, hur är det i dag?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "output": "Hej, hur \u00e4r det i dag?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
-              "output": "Luften är vacker i morse.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "output": "Luften \u00e4r vacker i morse.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
-              "output": "Jag vill beställa en kopp kaffe, tack.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "output": "Jag vill best\u00e4lla en kopp kaffe, tack.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
-              "output": "En snabb brun räv hoppar över en hund.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "output": "En snabb brun r\u00e4v hoppar \u00f6ver en hund.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
-              "output": "Konstgjord intelligens förändrar världen.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "output": "Konstgjord intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
               "passed": true
             }
           ]
@@ -203,28 +211,28 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
-              "output": "Hej, hur är det i dag?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "output": "Hej, hur \u00e4r det i dag?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
-              "output": "Luften är vacker i morse.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "output": "Luften \u00e4r vacker i morse.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
-              "output": "Jag vill beställa en kopp kaffe, tack.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "output": "Jag vill best\u00e4lla en kopp kaffe, tack.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
-              "output": "En snabb brun räv hoppar över en hund.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "output": "En snabb brun r\u00e4v hoppar \u00f6ver en hund.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
-              "output": "Konstgjord intelligens förändrar världen.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "output": "Konstgjord intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
               "passed": true
             }
           ]
@@ -237,34 +245,34 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
-              "output": "Hej, hur är det i dag?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
+              "output": "Hej, hur \u00e4r det i dag?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
-              "output": "Luften är vacker i morse.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
+              "output": "Luften \u00e4r vacker i morse.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
-              "output": "Jag skulle vilja beställa en kopp kaffe.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
+              "output": "Jag skulle vilja best\u00e4lla en kopp kaffe.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
-              "output": "En snabb, brun räv hoppar över en hund.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
+              "output": "En snabb, brun r\u00e4v hoppar \u00f6ver en hund.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
-              "output": "Konstgjord intelligens förändrar världen.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
+              "output": "Konstgjord intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +306,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:21:49.359235+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -321,10 +329,10 @@
           "not_echo": 4,
           "unique_outputs": 10,
           "sample_translations": [
-            "Det är ingen fara. Det är ingen fara.",
+            "Det \u00e4r ingen fara. Det \u00e4r ingen fara.",
             "I would like to order a cup of coffee, please.",
             "The children are playing in the Park.",
-            "Vad är det med train leave?",
+            "Vad \u00e4r det med train leave?",
             "She has been working at the hospital for ten years."
           ]
         },
@@ -336,10 +344,10 @@
           "not_echo": 4,
           "unique_outputs": 10,
           "sample_translations": [
-            "Det är ingen fara. Det är ingen fara.",
+            "Det \u00e4r ingen fara. Det \u00e4r ingen fara.",
             "I would like to order a cup of coffee, please.",
             "The children are playing in the Park.",
-            "Vad är det med train leave?",
+            "Vad \u00e4r det med train leave?",
             "She has been working at the hospital for ten years."
           ],
           "delta_vs_base": 0.0
@@ -374,7 +382,7 @@
       "date": "2026-03-23T06:21:49.359235+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +445,7 @@
       "date": "2026-03-24T06:10:07.445452+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +481,7 @@
       "date": "2026-03-24T17:55:38.764418+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -496,7 +504,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -514,7 +522,7 @@
       "date": "2026-03-28T15:53:56.514969+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -538,19 +546,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Sveiki, kaip sekasi šiandien?",
-                  "reference": "Hej, hur mår du idag?",
-                  "hypothesis": "Hej, hur är det i dag?"
+                  "source": "Sveiki, kaip sekasi \u0161iandien?",
+                  "reference": "Hej, hur m\u00e5r du idag?",
+                  "hypothesis": "Hej, hur \u00e4r det i dag?"
                 },
                 {
-                  "source": "Oras šįryt gražus.",
-                  "reference": "Vädret är vackert i morse.",
-                  "hypothesis": "Luften är vacker i morse."
+                  "source": "Oras \u0161\u012fryt gra\u017eus.",
+                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
+                  "hypothesis": "Luften \u00e4r vacker i morse."
                 },
                 {
-                  "source": "Norėčiau užsisakyti puodelį kavos.",
-                  "reference": "Jag vill beställa en kopp kaffe, tack.",
-                  "hypothesis": "Jag skulle vilja beställa en kopp kaffe."
+                  "source": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "hypothesis": "Jag skulle vilja best\u00e4lla en kopp kaffe."
                 }
               ]
             },
@@ -566,19 +574,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Sveiki, kaip sekasi šiandien?",
-                  "reference": "Hej, hur mår du idag?",
-                  "hypothesis": "Hej, hur är det i dag?"
+                  "source": "Sveiki, kaip sekasi \u0161iandien?",
+                  "reference": "Hej, hur m\u00e5r du idag?",
+                  "hypothesis": "Hej, hur \u00e4r det i dag?"
                 },
                 {
-                  "source": "Oras šįryt gražus.",
-                  "reference": "Vädret är vackert i morse.",
-                  "hypothesis": "Luften är vacker i morse."
+                  "source": "Oras \u0161\u012fryt gra\u017eus.",
+                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
+                  "hypothesis": "Luften \u00e4r vacker i morse."
                 },
                 {
-                  "source": "Norėčiau užsisakyti puodelį kavos.",
-                  "reference": "Jag vill beställa en kopp kaffe, tack.",
-                  "hypothesis": "Jag skulle vilja beställa en kopp kaffe."
+                  "source": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "hypothesis": "Jag skulle vilja best\u00e4lla en kopp kaffe."
                 }
               ]
             },
@@ -594,18 +602,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Sveiki, kaip sekasi šiandien?",
-                  "reference": "Hej, hur mår du idag?",
+                  "source": "Sveiki, kaip sekasi \u0161iandien?",
+                  "reference": "Hej, hur m\u00e5r du idag?",
                   "hypothesis": "Hej, hej. Hej."
                 },
                 {
-                  "source": "Oras šįryt gražus.",
-                  "reference": "Vädret är vackert i morse.",
-                  "hypothesis": "Luften är självig i morse."
+                  "source": "Oras \u0161\u012fryt gra\u017eus.",
+                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
+                  "hypothesis": "Luften \u00e4r sj\u00e4lvig i morse."
                 },
                 {
-                  "source": "Norėčiau užsisakyti puodelį kavos.",
-                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "source": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
                   "hypothesis": "Jag skulle vilja ha en kopp kaffe."
                 }
               ]
@@ -622,18 +630,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Sveiki, kaip sekasi šiandien?",
-                  "reference": "Hej, hur mår du idag?",
+                  "source": "Sveiki, kaip sekasi \u0161iandien?",
+                  "reference": "Hej, hur m\u00e5r du idag?",
                   "hypothesis": "Hej, hej. Hej."
                 },
                 {
-                  "source": "Oras šįryt gražus.",
-                  "reference": "Vädret är vackert i morse.",
-                  "hypothesis": "Luften är självig i morse."
+                  "source": "Oras \u0161\u012fryt gra\u017eus.",
+                  "reference": "V\u00e4dret \u00e4r vackert i morse.",
+                  "hypothesis": "Luften \u00e4r sj\u00e4lvig i morse."
                 },
                 {
-                  "source": "Norėčiau užsisakyti puodelį kavos.",
-                  "reference": "Jag vill beställa en kopp kaffe, tack.",
+                  "source": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "reference": "Jag vill best\u00e4lla en kopp kaffe, tack.",
                   "hypothesis": "Jag skulle vilja ha en kopp kaffe."
                 }
               ]
@@ -706,11 +714,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (lt→sv)"
+              "reason": "no English endpoint (lt\u2192sv)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for lt→sv"
+              "reason": "no reference pairs for lt\u2192sv"
             },
             "vitals": {
               "status": "complete",
@@ -764,11 +772,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (lt→sv)"
+              "reason": "no English endpoint (lt\u2192sv)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for lt→sv"
+              "reason": "no reference pairs for lt\u2192sv"
             },
             "vitals": {
               "status": "complete",
@@ -790,7 +798,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (lt→sv)"
+              "reason": "no English endpoint for scripture test (lt\u2192sv)"
             }
           }
         }
@@ -823,7 +831,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -999,7 +1007,7 @@
       },
       "best_grade": "A",
       "best_score": 94.54,
-      "notes": "Dr. C independent certification of lt-sv. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (94.54). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of lt-sv. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (94.54). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-lt-sv",
@@ -1024,10 +1032,26 @@
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=lt) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=lt) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-lt-sv",
+      "date": "2026-04-18T04:45:16.462241+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-lt-sv",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0-scripture",
+        "scripture-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-lt-sv",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1072,7 +1096,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★½",
+    "stars_display": "\u2605\u2605\u00bd",
     "half_stars": 5,
     "label": "Deferred",
     "avg_cert_score": 4.7,
@@ -1177,7 +1201,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:10:07.445452+00:00",
       "variant_scores": {}
@@ -1191,7 +1215,7 @@
     "lora_size_mb": 296.64,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:40:19.813238+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1201,7 +1225,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 94.2,
@@ -1215,7 +1239,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune — loss 7.18 -> 2.99 (58.3% improvement)",
+      "procedure": "eBible verse-aligned fine-tune \u2014 loss 7.18 -> 2.99 (58.3% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 7084,

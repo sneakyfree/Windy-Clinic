@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-04-18T04:41:34.658700+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ln-en.json",
   "patient_id": "ln-en",
   "admitted": "2026-03-22T19:38:56.236175+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ln-en/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ln-en/tree/main/lora",
+      "hf_uploaded_at": "2026-04-18T04:41:34.658700+00:00"
     },
     "herm0_scripture": {
       "status": "present",
@@ -99,7 +101,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -115,7 +117,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ln-en/tree/main/herm0-scripture",
+      "hf_uploaded_at": "2026-04-18T04:41:34.658700+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -124,7 +128,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ln-en/lora-ct2-int8",
       "on_disk_bytes": 77594624,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ln-en/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:41:34.658700+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -137,7 +143,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ln-en/scripture-ct2-int8",
       "on_disk_bytes": 77594624,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ln-en/tree/main/scripture-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:41:34.658700+00:00"
     }
   },
   "architecture": {
@@ -153,7 +161,7 @@
       "date": "2026-03-22T19:38:56.236175+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -264,7 +272,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +306,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:19:19.537706+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -374,7 +382,7 @@
       "date": "2026-03-23T06:19:19.537706+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +445,7 @@
       "date": "2026-03-24T06:08:44.155279+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +481,7 @@
       "date": "2026-03-24T17:52:22.789120+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -496,7 +504,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -514,7 +522,7 @@
       "date": "2026-03-28T15:52:38.201188+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -524,7 +532,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 84.0,
@@ -539,15 +547,15 @@
                   "similarity": 0.8909
                 },
                 {
-                  "original": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "original": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "forward": "Today, the weather is hot.",
                   "returned": "Lelo oyo, molunge ezali makasi.",
                   "similarity": 0.7606
                 },
                 {
-                  "original": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "original": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "forward": "I want to show you a cup of coffee.",
-                  "returned": "Nalingi kolakisa yo kɔpɔ ya kafe.",
+                  "returned": "Nalingi kolakisa yo k\u0254p\u0254 ya kafe.",
                   "similarity": 0.8767
                 }
               ]
@@ -565,15 +573,15 @@
                   "similarity": 0.8909
                 },
                 {
-                  "original": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "original": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "forward": "Today, the weather is hot.",
                   "returned": "Lelo oyo, molunge ezali makasi.",
                   "similarity": 0.7606
                 },
                 {
-                  "original": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "original": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "forward": "I want to show you a cup of coffee.",
-                  "returned": "Nalingi kolakisa yo kɔpɔ ya kafe.",
+                  "returned": "Nalingi kolakisa yo k\u0254p\u0254 ya kafe.",
                   "similarity": 0.8767
                 }
               ]
@@ -591,13 +599,13 @@
                   "similarity": 0.64
                 },
                 {
-                  "original": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "original": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "forward": "In the day of the day , the day of the day of the day of the day of the day is a day , and they is that is that with the land .",
                   "returned": "Na mokolo ya mokolo, mokolo ya moi ezalaka mokolo ya mokolo, mpe ezali mokolo yango nde mokili.",
                   "similarity": 0.4
                 },
                 {
-                  "original": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "original": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "forward": "I will not to you , that I will command to you .",
                   "returned": "Nakopesa yo mitindo te.",
                   "similarity": 0.4127
@@ -617,13 +625,13 @@
                   "similarity": 0.64
                 },
                 {
-                  "original": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "original": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "forward": "In the day of the day , the day of the day of the day of the day of the day is a day , and they is that is that with the land .",
                   "returned": "Na mokolo ya mokolo, mokolo ya moi ezalaka mokolo ya mokolo, mpe ezali mokolo yango nde mokili.",
                   "similarity": 0.4
                 },
                 {
-                  "original": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "original": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "forward": "I will not to you , that I will command to you .",
                   "returned": "Nakopesa yo mitindo te.",
                   "similarity": 0.4127
@@ -675,12 +683,12 @@
                   "hypothesis": "What is he saying to me, and how are you today?"
                 },
                 {
-                  "source": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "source": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "Today, the weather is hot."
                 },
                 {
-                  "source": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "source": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I want to show you a cup of coffee."
                 }
@@ -703,12 +711,12 @@
                   "hypothesis": "What is he saying to me, and how are you today?"
                 },
                 {
-                  "source": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "source": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "Today, the weather is hot."
                 },
                 {
-                  "source": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "source": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I want to show you a cup of coffee."
                 }
@@ -731,12 +739,12 @@
                   "hypothesis": "And he said to me : How do you do you ?"
                 },
                 {
-                  "source": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "source": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "In the day of the day , the day of the day of the day of the day of the day is a day , and they is that is that with the land ."
                 },
                 {
-                  "source": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "source": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I will not to you , that I will command to you ."
                 }
@@ -759,12 +767,12 @@
                   "hypothesis": "And he said to me : How do you do you ?"
                 },
                 {
-                  "source": "Na ntɔngɔ ya lelo, molunge ezali makasi.",
+                  "source": "Na nt\u0254ng\u0254 ya lelo, molunge ezali makasi.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "In the day of the day , the day of the day of the day of the day of the day is a day , and they is that is that with the land ."
                 },
                 {
-                  "source": "Nalingi kolakisa bino kɔpɔ moko ya kafe.",
+                  "source": "Nalingi kolakisa bino k\u0254p\u0254 moko ya kafe.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I will not to you , that I will command to you ."
                 }
@@ -847,7 +855,7 @@
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ln→en"
+              "reason": "no reference pairs for ln\u2192en"
             },
             "vitals": {
               "status": "complete",
@@ -915,7 +923,7 @@
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ln→en"
+              "reason": "no reference pairs for ln\u2192en"
             },
             "vitals": {
               "status": "complete",
@@ -970,7 +978,7 @@
       "date": "2026-04-11T20:26:38.204240+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -1053,7 +1061,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1253,7 +1261,7 @@
       },
       "best_grade": "D+",
       "best_score": 69.29,
-      "notes": "Dr. C independent certification of ln-en. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: D+ (69.29). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ln-en. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: D+ (69.29). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-ln-en",
@@ -1278,10 +1286,26 @@
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=ln) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=ln) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-ln-en",
+      "date": "2026-04-18T04:41:34.658700+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-ln-en",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0-scripture",
+        "scripture-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-ln-en",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1329,7 +1353,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★★★★",
+    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
     "half_stars": 10,
     "label": "Deferred",
     "avg_cert_score": 10.0,
@@ -1434,7 +1458,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:08:44.155279+00:00",
       "variant_scores": {}
@@ -1448,7 +1472,7 @@
     "lora_size_mb": 296.24,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:38:31.419962+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1458,7 +1482,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
       "details": {
         "data_samples": 21277,
         "base_score": 90.3,
@@ -1472,7 +1496,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune — loss 10.74 -> 3.11 (71.1% improvement)",
+      "procedure": "eBible verse-aligned fine-tune \u2014 loss 10.74 -> 3.11 (71.1% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 25000,

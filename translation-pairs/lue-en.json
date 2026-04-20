@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T02:43:36.122573+00:00",
+  "_last_updated": "2026-04-18T04:47:09.336503+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/lue-en.json",
   "patient_id": "lue-en",
   "admitted": "2026-03-22T19:39:43.870946+00:00",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lue-en/tree/main/lora",
+      "hf_uploaded_at": "2026-04-18T04:47:09.336503+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-lue-en/lora-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-lue-en/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:47:09.336503+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -1153,6 +1157,20 @@
       "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=1. Score 74.8\u219256.6 (\u0394-18.2). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 1. Data: 49950 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-lue-en",
+      "date": "2026-04-18T04:47:09.336503+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-lue-en",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-lue-en",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

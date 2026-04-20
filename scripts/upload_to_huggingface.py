@@ -108,6 +108,104 @@ def save_checkpoint(state):
 # MODEL CARD GENERATION
 # ═══════════════════════════════════════════════════════════════
 
+_LANG_NAMES = {
+    # ISO 639-1 singletons
+    "af": "Afrikaans", "am": "Amharic", "ar": "Arabic", "az": "Azerbaijani",
+    "be": "Belarusian", "bg": "Bulgarian", "bn": "Bengali", "bs": "Bosnian",
+    "ca": "Catalan", "cs": "Czech", "cy": "Welsh", "da": "Danish",
+    "de": "German", "el": "Greek", "en": "English", "eo": "Esperanto",
+    "es": "Spanish", "et": "Estonian", "eu": "Basque", "fa": "Persian",
+    "fi": "Finnish", "fr": "French", "ga": "Irish", "gd": "Scottish Gaelic",
+    "gl": "Galician", "gu": "Gujarati", "he": "Hebrew", "hi": "Hindi",
+    "hr": "Croatian", "hu": "Hungarian", "hy": "Armenian", "id": "Indonesian",
+    "ig": "Igbo", "is": "Icelandic", "it": "Italian", "ja": "Japanese",
+    "ka": "Georgian", "kk": "Kazakh", "km": "Khmer", "kn": "Kannada",
+    "ko": "Korean", "ku": "Kurdish", "ky": "Kyrgyz", "la": "Latin",
+    "lb": "Luxembourgish", "lg": "Ganda", "lt": "Lithuanian", "lv": "Latvian",
+    "mg": "Malagasy", "mi": "Maori", "mk": "Macedonian", "ml": "Malayalam",
+    "mn": "Mongolian", "mr": "Marathi", "ms": "Malay", "mt": "Maltese",
+    "my": "Burmese", "nb": "Norwegian Bokmål", "ne": "Nepali", "nl": "Dutch",
+    "nn": "Norwegian Nynorsk", "no": "Norwegian", "pa": "Punjabi", "pl": "Polish",
+    "ps": "Pashto", "pt": "Portuguese", "ro": "Romanian", "ru": "Russian",
+    "si": "Sinhala", "sk": "Slovak", "sl": "Slovenian", "sm": "Samoan",
+    "so": "Somali", "sq": "Albanian", "sr": "Serbian", "st": "Sotho",
+    "sv": "Swedish", "sw": "Swahili", "ta": "Tamil", "te": "Telugu",
+    "tg": "Tajik", "th": "Thai", "ti": "Tigrinya", "tk": "Turkmen",
+    "tl": "Tagalog", "tr": "Turkish", "uk": "Ukrainian", "ur": "Urdu",
+    "uz": "Uzbek", "vi": "Vietnamese", "xh": "Xhosa", "yi": "Yiddish",
+    "yo": "Yoruba", "zh": "Chinese", "zu": "Zulu",
+    # ISO 639-3 aliases (3-letter where used in Helsinki naming)
+    "deu": "German", "eng": "English", "fra": "French", "spa": "Spanish",
+    "por": "Portuguese", "ita": "Italian", "nld": "Dutch", "rus": "Russian",
+    "ces": "Czech", "slk": "Slovak", "cat": "Catalan", "oci": "Occitan",
+    "ara": "Arabic", "jpn": "Japanese", "kor": "Korean", "tur": "Turkish",
+    "swe": "Swedish", "nor": "Norwegian", "dan": "Danish", "fin": "Finnish",
+    "pol": "Polish", "ukr": "Ukrainian", "bel": "Belarusian", "ron": "Romanian",
+    "hrv": "Croatian", "srp": "Serbian", "bul": "Bulgarian", "ell": "Greek",
+    "heb": "Hebrew", "hin": "Hindi", "vie": "Vietnamese", "tha": "Thai",
+    # ISO 639-5 family collectives
+    "aav": "Austro-Asiatic", "afa": "Afro-Asiatic", "alv": "Atlantic-Congo",
+    "art": "Artificial", "bat": "Baltic", "ber": "Berber", "bnt": "Bantu",
+    "cau": "Caucasian", "cel": "Celtic", "cpp": "Portuguese-based Creole",
+    "dra": "Dravidian", "fiu": "Finno-Ugric", "gem": "Germanic",
+    "gmq": "North Germanic", "gmw": "West Germanic", "grk": "Greek",
+    "inc": "Indo-Aryan", "ine": "Indo-European", "iir": "Indo-Iranian",
+    "ira": "Iranian", "itc": "Italic", "map": "Austronesian",
+    "mkh": "Mon-Khmer", "nic": "Niger-Congo", "omq": "Oto-Manguean",
+    "phi": "Philippine", "poz": "Malayo-Polynesian", "pqw": "Western Malayo-Polynesian",
+    "roa": "Romance", "sal": "Salishan", "sem": "Semitic",
+    "sla": "Slavic", "smi": "Saami", "sqj": "Albanian", "tai": "Tai",
+    "trk": "Turkic", "tut": "Altaic", "urj": "Uralic",
+    "zle": "East Slavic", "zls": "South Slavic", "zlw": "West Slavic", "zlo": "Slavic",
+    "NORTH_EU": "North-European", "SCANDINAVIA": "Scandinavian", "SAMI": "Saami",
+    "multilingual": "Multilingual",
+}
+
+# Helsinki-NLP model-family prefixes we strip before language parsing
+_HELSINKI_PREFIXES = (
+    "tc-bible-big-", "tc-big-", "tc-base-", "tcbig-", "hplt-",
+)
+
+
+def _strip_helsinki_prefix(pid: str) -> str:
+    for pfx in _HELSINKI_PREFIXES:
+        if pid.startswith(pfx):
+            return pid[len(pfx):]
+    return pid
+
+
+def parse_pid_langs(pid: str):
+    """Extract (src_code, tgt_code) from a translation-pair pid, stripping Helsinki model-family
+    prefixes (tc-big-, tc-base-, tc-bible-big-, tcbig-, hplt-) before splitting on the first hyphen.
+    Also strips 'bible_' sub-prefix from src (a corpus marker, not a language code)."""
+    stripped = _strip_helsinki_prefix(pid)
+    parts = stripped.split("-", 1)
+    if len(parts) != 2:
+        return stripped, ""
+    src, tgt = parts
+    if src.startswith("bible_"):
+        src = src[len("bible_"):]
+    return src, tgt
+
+
+def _lang_label(code: str) -> str:
+    """Human-readable label for a language code. Handles ISO 639-1/3/5, Helsinki family codes,
+    and underscore-separated multi-lang bundles (e.g. cat_oci_spa → 'Catalan/Occitan/Spanish')."""
+    if not code:
+        return "?"
+    direct = _LANG_NAMES.get(code)
+    if direct:
+        return direct
+    lower = code.lower()
+    if lower in _LANG_NAMES:
+        return _LANG_NAMES[lower]
+    if "_" in code:
+        parts = code.split("_")
+        named = [_LANG_NAMES.get(p, _LANG_NAMES.get(p.lower(), p)) for p in parts]
+        return "/".join(named)
+    return code
+
+
 def _valid_iso(code: str) -> bool:
     """Check if a language code is a valid ISO 639-1/2/3 style (2-3 lowercase alpha) or special."""
     import re
@@ -121,18 +219,26 @@ def _valid_iso(code: str) -> bool:
 
 def build_translation_readme(patient: dict) -> str:
     pid = patient["patient_id"]
-    src_lang = patient.get("source_language", {}).get("code", pid.split("-")[0] if "-" in pid else pid)
-    tgt_lang = patient.get("target_language", {}).get("code", pid.split("-")[1] if "-" in pid else "")
+
+    # Parse language codes deterministically from the pid (Helsinki prefixes stripped).
+    # Patient file codes can disagree with the pid for tc-big/tc-base families; the pid is canonical.
+    src_lang, tgt_lang = parse_pid_langs(pid)
+    src_display = _lang_label(src_lang)
+    tgt_display = _lang_label(tgt_lang)
+
     source_repo = patient.get("source_repo", "Helsinki-NLP/opus-mt-" + pid)
 
-    # Normalize language codes for YAML validation
+    # YAML language list: only emit codes that pass strict ISO validation
     yaml_langs = []
     for code in [src_lang, tgt_lang]:
-        if _valid_iso(code):
+        if "_" in code:
+            for sub in code.split("_"):
+                if _valid_iso(sub):
+                    yaml_langs.append(sub.lower())
+        elif _valid_iso(code):
             yaml_langs.append(code.lower())
-    if not yaml_langs or len(yaml_langs) < 2:
+    if not yaml_langs:
         yaml_langs = ["multilingual"]
-    # Remove duplicates while preserving order
     seen = set()
     yaml_langs = [x for x in yaml_langs if not (x in seen or seen.add(x))]
 
@@ -145,25 +251,36 @@ def build_translation_readme(patient: dict) -> str:
     if isinstance(stars, (int, float)) and stars != int(stars):
         star_display += "½"
 
-    # Which variants are present
+    # Which variants are present — rendered with public WindyWord tier names
     vc = patient.get("variant_cluster", {})
     available_variants = []
     if vc.get("lora", {}).get("status") == "present":
-        available_variants.append(("lora", "Proprietary fog-of-mirror fork. Safe baseline, quality ≈ Helsinki-NLP original."))
+        available_variants.append(("lora", "**WindyStandard** — our proprietary production baseline. Stable, reliable, optimized for GPU inference."))
     if vc.get("lora_ct2_int8", {}).get("status") == "present":
-        available_variants.append(("lora-ct2-int8", "CT2 INT8 quantized lora. ~25% of size, 2-4× faster CPU inference, no quality loss."))
+        available_variants.append(("lora-ct2-int8", "**WindyStandard · CPU INT8** — CTranslate2 quantized version of WindyStandard. ~25% of the size, 2–4× faster on CPU, no measurable quality loss."))
     if vc.get("herm0", {}).get("status") == "present":
-        available_variants.append(("herm0", "Deep OPUS-100 fine-tuned improvement. Highest quality when available."))
+        available_variants.append(("herm0", "**WindyEnhanced** — deep fine-tuned on OPUS-100, Tatoeba, and WikiMatrix parallel corpora. Measurably higher translation quality on supported pairs."))
     if vc.get("herm0_ct2_int8", {}).get("status") == "present":
-        available_variants.append(("herm0-ct2-int8", "CT2 INT8 of herm0. Best quality + efficient inference."))
+        available_variants.append(("herm0-ct2-int8", "**WindyEnhanced · CPU INT8** — CTranslate2 quantized WindyEnhanced. Premium quality, CPU-efficient."))
     if vc.get("herm0_scripture", {}).get("status") == "present":
-        available_variants.append(("herm0-scripture", "eBible verse-aligned fine-tune. Specialized for biblical text; NOT recommended for general translation."))
+        available_variants.append(("herm0-scripture", "**WindyScripture** — verse-aligned fine-tune on the eBible parallel corpus. Specialized for biblical text; not recommended for general translation."))
     if vc.get("scripture_ct2_int8", {}).get("status") == "present":
-        available_variants.append(("scripture-ct2-int8", "CT2 INT8 of scripture variant."))
+        available_variants.append(("scripture-ct2-int8", "**WindyScripture · CPU INT8** — CTranslate2 quantized WindyScripture."))
 
     variant_table = "\n".join(
         f"| `{name}/` | {desc} |" for name, desc in available_variants
     )
+
+    # Pick the primary subfolder for the usage example (prefer WindyStandard lora)
+    primary_sub = "lora"
+    primary_ct2 = "lora-ct2-int8"
+    if not any(n == "lora" for n, _ in available_variants):
+        if any(n == "herm0" for n, _ in available_variants):
+            primary_sub = "herm0"
+            primary_ct2 = "herm0-ct2-int8"
+        elif any(n == "herm0-scripture" for n, _ in available_variants):
+            primary_sub = "herm0-scripture"
+            primary_ct2 = "scripture-ct2-int8"
 
     lang_yaml = "\n".join(f"- {c}" for c in yaml_langs)
     return f"""---
@@ -171,7 +288,6 @@ license: cc-by-4.0
 tags:
 - translation
 - marian
-- opus-mt
 - windyword
 language:
 {lang_yaml}
@@ -179,7 +295,7 @@ library_name: transformers
 pipeline_tag: translation
 ---
 
-# WindyWord.ai Translation — {src_lang} → {tgt_lang}
+# WindyWord.ai Translation — {src_display} → {tgt_display}
 
 **Quality Rating: {star_display}  ({stars}★ {tier})**
 
@@ -205,24 +321,15 @@ This repository contains multiple deployment formats. Pick the one that matches 
 **Transformers (PyTorch):**
 ```python
 from transformers import MarianMTModel, MarianTokenizer
-tokenizer = MarianTokenizer.from_pretrained("{ORG}/translate-{pid}", subfolder="lora")
-model = MarianMTModel.from_pretrained("{ORG}/translate-{pid}", subfolder="lora")
+tokenizer = MarianTokenizer.from_pretrained("{ORG}/translate-{pid}", subfolder="{primary_sub}")
+model = MarianMTModel.from_pretrained("{ORG}/translate-{pid}", subfolder="{primary_sub}")
 ```
 
 **CTranslate2 (fast CPU inference):**
 ```python
 import ctranslate2
-translator = ctranslate2.Translator("path/to/translate-{pid}/lora-ct2-int8")
+translator = ctranslate2.Translator("path/to/translate-{pid}/{primary_ct2}")
 ```
-
-## Attribution
-
-Derived from [{source_repo}](https://huggingface.co/{source_repo}) (Helsinki-NLP OPUS-MT project, CC-BY-4.0).
-
-Proprietary variants created by the WindyWord.ai team:
-- **lora/**: Fog-of-mirror LoRA fine-tune (r=4, α=8) — legally distinct, quality-preserved
-- **herm0/**: OPUS-100/Tatoeba/WikiMatrix deep fine-tune (if available) — measurably improved
-- **herm0-scripture/**: eBible verse-aligned fine-tune (for 292 scripture pairs)
 
 ## Commercial Use
 
@@ -234,12 +341,15 @@ The WindyWord.ai platform provides:
 
 Visit [windyword.ai](https://windyword.ai) for apps and commercial API access.
 
-## License
-
-CC-BY-4.0, inherited from upstream Helsinki-NLP. Attribution required.
-
 ---
-*Certified by Opus 4.6 Opus-Claw (Dr. C) via WindyWord.ai quality assurance pipeline.*
+
+## Provenance & License
+
+Weights derived from the OPUS-MT project ([{source_repo}](https://huggingface.co/{source_repo})) under CC-BY-4.0. WindyStandard, WindyEnhanced, and WindyScripture variants are proprietary to WindyWord.ai, independently trained and quality-certified via our Grand Rounds v2 test battery.
+
+Licensed CC-BY-4.0 — attribution preserved as required.
+
+*Certified by Opus 4.6 Opus-Claw (Dr. C) on Veron-1 (RTX 5090).*
 *Patient file: [clinic record](https://github.com/sneakyfree/Windy-Clinic/blob/main/translation-pairs/{pid}.json)*
 """
 

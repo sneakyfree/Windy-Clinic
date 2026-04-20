@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-14T21:22:09.700365+00:00",
+  "_last_updated": "2026-04-17T03:13:24.974693+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/fr-bcl.json",
   "patient_id": "fr-bcl",
   "admitted": "2026-03-22T19:34:50.947286+00:00",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-bcl/tree/main/lora",
+      "hf_uploaded_at": "2026-04-17T03:13:24.974693+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-fr-bcl/lora-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-bcl/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-17T03:13:24.974693+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -993,6 +997,20 @@
       "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 74.7\u21926.2 (\u0394-68.5). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 3 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-fr-bcl",
+      "date": "2026-04-17T03:13:24.974693+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-fr-bcl",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-fr-bcl",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T04:44:00.626228+00:00",
+  "_last_updated": "2026-04-19T05:17:10.345155+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/rn-en.json",
   "patient_id": "rn-en",
   "admitted": "2026-03-22T19:41:49.935802+00:00",
@@ -51,7 +51,9 @@
       "base_hash_prefix": "475cc9e6f6b998b3",
       "lora_hash_prefix": "74c7bc757047d7b4",
       "created_at": "2026-04-14T23:31:46.798226+00:00",
-      "created_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-rn-en/tree/main/lora",
+      "hf_uploaded_at": "2026-04-19T05:17:10.345155+00:00"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -1366,6 +1368,19 @@
       "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=1. Score 70.9\u219267.8 (\u0394-3.1). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 1. Data: 1656 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-rn-en",
+      "date": "2026-04-19T05:17:10.345155+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-rn-en",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-rn-en",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-13T20:15:01.354351+00:00",
+  "_last_updated": "2026-04-18T04:05:43.722145+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/fr-sn.json",
   "patient_id": "fr-sn",
   "admitted": "2026-03-22T19:35:37.654879+00:00",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-sn/tree/main/lora",
+      "hf_uploaded_at": "2026-04-18T04:05:43.722145+00:00"
     },
     "herm0_scripture": {
       "status": "present",
@@ -115,7 +117,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-sn/tree/main/herm0-scripture",
+      "hf_uploaded_at": "2026-04-18T04:05:43.722145+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -124,7 +128,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-fr-sn/lora-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-sn/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:05:43.722145+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -137,7 +143,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-fr-sn/scripture-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-sn/tree/main/scripture-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:05:43.722145+00:00"
     }
   },
   "architecture": {
@@ -1263,6 +1271,22 @@
       "best_tier": "premium",
       "best_composite": 87.1,
       "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 5.0\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-fr-sn",
+      "date": "2026-04-18T04:05:43.722145+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-fr-sn",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0-scripture",
+        "scripture-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-fr-sn",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

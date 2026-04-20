@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T22:07:16.122522+00:00",
+  "_last_updated": "2026-04-19T05:47:19.389647+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/sv-tll.json",
   "patient_id": "sv-tll",
   "admitted": "2026-03-22T19:44:31.111330+00:00",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sv-tll/tree/main/lora",
+      "hf_uploaded_at": "2026-04-19T05:47:19.389647+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-sv-tll/lora-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sv-tll/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-19T05:47:19.389647+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -95,7 +99,9 @@
       "score_after": 80.0,
       "delta": 16.6,
       "improved_at": "2026-04-15T07:47:17.979487+00:00",
-      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sv-tll/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-19T05:47:19.389647+00:00"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -104,7 +110,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-sv-tll/herm0-ct2-int8",
       "on_disk_bytes": 78761954,
       "quantized_at": "2026-04-15T20:47:47.345130+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sv-tll/tree/main/herm0-ct2-int8",
+      "hf_uploaded_at": "2026-04-19T05:47:19.389647+00:00"
     }
   },
   "architecture": {
@@ -1067,6 +1075,22 @@
         }
       },
       "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-sv-tll",
+      "date": "2026-04-19T05:47:19.389647+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-sv-tll",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-sv-tll",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

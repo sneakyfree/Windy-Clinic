@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
+  "_last_updated": "2026-04-18T04:31:46.499372+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ja-fi.json",
   "patient_id": "ja-fi",
   "admitted": "2026-03-22T19:38:00.616893+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -102,7 +102,9 @@
       "on_disk_bytes": 308281344,
       "recreated_at": "2026-04-12T20:03:34.736178+00:00",
       "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data."
+      "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data.",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ja-fi/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-18T04:31:46.499372+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -141,7 +143,7 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
@@ -159,7 +161,9 @@
       "derived_from": "herm0/ (CTranslate2 INT8 quantization of herm0)",
       "reconciled_at": "2026-04-16T18:50:31.471263+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster."
+      "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster.",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-ja-fi/tree/main/herm0-ct2-int8",
+      "hf_uploaded_at": "2026-04-18T04:31:46.499372+00:00"
     }
   },
   "architecture": {
@@ -175,7 +179,7 @@
       "date": "2026-03-22T19:38:00.616893+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -191,28 +195,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "こんにちは、今日はお元気ですか？",
+              "input": "\u3053\u3093\u306b\u3061\u306f\u3001\u4eca\u65e5\u306f\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f",
               "output": "Hei, miten menee?",
               "passed": true
             },
             {
-              "input": "今朝は天気がとても良いです。",
-              "output": "Aamulla on todella hyvä sää.",
+              "input": "\u4eca\u671d\u306f\u5929\u6c17\u304c\u3068\u3066\u3082\u826f\u3044\u3067\u3059\u3002",
+              "output": "Aamulla on todella hyv\u00e4 s\u00e4\u00e4.",
               "passed": true
             },
             {
-              "input": "コーヒーを一杯注文したいのですが。",
+              "input": "\u30b3\u30fc\u30d2\u30fc\u3092\u4e00\u676f\u6ce8\u6587\u3057\u305f\u3044\u306e\u3067\u3059\u304c\u3002",
               "output": "Haluaisin tilata kupin kahvia.",
               "passed": true
             },
             {
-              "input": "素早い茶色のキツネが怠け者の犬を飛び越えます。",
-              "output": "Nopein ruskea kettu lentää laiskan koiran ohi.",
+              "input": "\u7d20\u65e9\u3044\u8336\u8272\u306e\u30ad\u30c4\u30cd\u304c\u6020\u3051\u8005\u306e\u72ac\u3092\u98db\u3073\u8d8a\u3048\u307e\u3059\u3002",
+              "output": "Nopein ruskea kettu lent\u00e4\u00e4 laiskan koiran ohi.",
               "passed": true
             },
             {
-              "input": "人工知能が世界を変えています。",
-              "output": "Tekoäly muuttaa maailmaa.",
+              "input": "\u4eba\u5de5\u77e5\u80fd\u304c\u4e16\u754c\u3092\u5909\u3048\u3066\u3044\u307e\u3059\u3002",
+              "output": "Teko\u00e4ly muuttaa maailmaa.",
               "passed": true
             }
           ]
@@ -225,28 +229,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "こんにちは、今日はお元気ですか？",
+              "input": "\u3053\u3093\u306b\u3061\u306f\u3001\u4eca\u65e5\u306f\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f",
               "output": "Hei, miten menee?",
               "passed": true
             },
             {
-              "input": "今朝は天気がとても良いです。",
-              "output": "Aamulla on todella hyvä sää.",
+              "input": "\u4eca\u671d\u306f\u5929\u6c17\u304c\u3068\u3066\u3082\u826f\u3044\u3067\u3059\u3002",
+              "output": "Aamulla on todella hyv\u00e4 s\u00e4\u00e4.",
               "passed": true
             },
             {
-              "input": "コーヒーを一杯注文したいのですが。",
+              "input": "\u30b3\u30fc\u30d2\u30fc\u3092\u4e00\u676f\u6ce8\u6587\u3057\u305f\u3044\u306e\u3067\u3059\u304c\u3002",
               "output": "Haluaisin tilata kupin kahvia.",
               "passed": true
             },
             {
-              "input": "素早い茶色のキツネが怠け者の犬を飛び越えます。",
-              "output": "Nopein ruskea kettu lentää laiskan koiran ohi.",
+              "input": "\u7d20\u65e9\u3044\u8336\u8272\u306e\u30ad\u30c4\u30cd\u304c\u6020\u3051\u8005\u306e\u72ac\u3092\u98db\u3073\u8d8a\u3048\u307e\u3059\u3002",
+              "output": "Nopein ruskea kettu lent\u00e4\u00e4 laiskan koiran ohi.",
               "passed": true
             },
             {
-              "input": "人工知能が世界を変えています。",
-              "output": "Tekoäly muuttaa maailmaa.",
+              "input": "\u4eba\u5de5\u77e5\u80fd\u304c\u4e16\u754c\u3092\u5909\u3048\u3066\u3044\u307e\u3059\u3002",
+              "output": "Teko\u00e4ly muuttaa maailmaa.",
               "passed": true
             }
           ]
@@ -259,34 +263,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "こんにちは、今日はお元気ですか？",
+              "input": "\u3053\u3093\u306b\u3061\u306f\u3001\u4eca\u65e5\u306f\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f",
               "output": "Hei, miten menee?",
               "passed": true
             },
             {
-              "input": "今朝は天気がとても良いです。",
-              "output": "Sää on hyvä tänä aamuna.",
+              "input": "\u4eca\u671d\u306f\u5929\u6c17\u304c\u3068\u3066\u3082\u826f\u3044\u3067\u3059\u3002",
+              "output": "S\u00e4\u00e4 on hyv\u00e4 t\u00e4n\u00e4 aamuna.",
               "passed": true
             },
             {
-              "input": "コーヒーを一杯注文したいのですが。",
+              "input": "\u30b3\u30fc\u30d2\u30fc\u3092\u4e00\u676f\u6ce8\u6587\u3057\u305f\u3044\u306e\u3067\u3059\u304c\u3002",
               "output": "Haluaisin tilata kahvia.",
               "passed": true
             },
             {
-              "input": "素早い茶色のキツネが怠け者の犬を飛び越えます。",
-              "output": "Nopeita, ruskeita kettuja, jotka hyppäävät laiskan koiran ohi.",
+              "input": "\u7d20\u65e9\u3044\u8336\u8272\u306e\u30ad\u30c4\u30cd\u304c\u6020\u3051\u8005\u306e\u72ac\u3092\u98db\u3073\u8d8a\u3048\u307e\u3059\u3002",
+              "output": "Nopeita, ruskeita kettuja, jotka hypp\u00e4\u00e4v\u00e4t laiskan koiran ohi.",
               "passed": true
             },
             {
-              "input": "人工知能が世界を変えています。",
-              "output": "Tekoäly muuttaa maailmaa.",
+              "input": "\u4eba\u5de5\u77e5\u80fd\u304c\u4e16\u754c\u3092\u5909\u3048\u3066\u3044\u307e\u3059\u3002",
+              "output": "Teko\u00e4ly muuttaa maailmaa.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -320,14 +324,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:11:52.510391+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -343,11 +347,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Tänään on kaunis päivä.",
+            "T\u00e4n\u00e4\u00e4n on kaunis p\u00e4iv\u00e4.",
             "Saisinko kupin kahvia, kiitos.",
-            "Lapset leikkivät puistossa.",
-            "Mihin aikaan juna lähtee?",
-            "Hän on työskennellyt sairaalassa kymmenen vuotta."
+            "Lapset leikkiv\u00e4t puistossa.",
+            "Mihin aikaan juna l\u00e4htee?",
+            "H\u00e4n on ty\u00f6skennellyt sairaalassa kymmenen vuotta."
           ]
         },
         "lora": {
@@ -358,11 +362,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Tänään on kaunis päivä.",
+            "T\u00e4n\u00e4\u00e4n on kaunis p\u00e4iv\u00e4.",
             "Saisinko kupin kahvia, kiitos.",
-            "Lapset leikkivät puistossa.",
-            "Mihin aikaan juna lähtee?",
-            "Hän on työskennellyt sairaalassa kymmenen vuotta."
+            "Lapset leikkiv\u00e4t puistossa.",
+            "Mihin aikaan juna l\u00e4htee?",
+            "H\u00e4n on ty\u00f6skennellyt sairaalassa kymmenen vuotta."
           ],
           "delta_vs_base": 0.0
         },
@@ -396,7 +400,7 @@
       "date": "2026-03-23T06:11:52.510391+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -459,7 +463,7 @@
       "date": "2026-03-24T06:04:45.258064+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -495,7 +499,7 @@
       "date": "2026-03-24T17:44:06.917912+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -518,7 +522,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -573,11 +577,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ja→fi)"
+              "reason": "no English endpoint (ja\u2192fi)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ja→fi"
+              "reason": "no reference pairs for ja\u2192fi"
             },
             "vitals": {
               "status": "complete",
@@ -631,11 +635,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ja→fi)"
+              "reason": "no English endpoint (ja\u2192fi)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ja→fi"
+              "reason": "no reference pairs for ja\u2192fi"
             },
             "vitals": {
               "status": "complete",
@@ -689,11 +693,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ja→fi)"
+              "reason": "no English endpoint (ja\u2192fi)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ja→fi"
+              "reason": "no reference pairs for ja\u2192fi"
             },
             "vitals": {
               "status": "complete",
@@ -758,14 +762,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ja-fi/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ja-fi/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ja-fi/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ja-fi/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-ja-fi",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-ja-fi/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-ja-fi/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -774,7 +778,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -838,14 +842,14 @@
       },
       "best_grade": "A+",
       "best_score": 97.01,
-      "notes": "Dr. C independent certification of ja-fi. Tested 1 variant(s): base. Best variant grade: A+ (97.01). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ja-fi. Tested 1 variant(s): base. Best variant grade: A+ (97.01). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-ja-fi",
       "date": "2026-04-12T20:03:34.736178+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 54.2, after: 55.7, delta: 1.5. IMPROVED — saved as herm0/",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 54.2, after: 55.7, delta: 1.5. IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -854,7 +858,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -928,7 +932,7 @@
       "best_stars": 4.5,
       "best_tier": "premium",
       "best_composite": 79.6,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-ja-fi",
@@ -973,19 +977,33 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-DRIFT-RECONCILE-ja-fi",
       "date": "2026-04-16T18:50:31.471263+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "method": "Targeted drift reconciliation \u2014 back-annotate disk variants not declared in patient file",
       "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
       "variants_added": [
         "herm0_ct2_int8"
       ],
       "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-ja-fi",
+      "date": "2026-04-18T04:31:46.499372+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-ja-fi",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-ja-fi",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1124,7 +1142,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:04:45.258064+00:00",
       "variant_scores": {}
@@ -1138,7 +1156,7 @@
     "lora_size_mb": 304.82,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:33:14.037528+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1148,7 +1166,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

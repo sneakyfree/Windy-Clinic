@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
+  "_last_updated": "2026-04-19T05:23:49.249777+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/sh-eo.json",
   "patient_id": "sh-eo",
   "admitted": "2026-03-22T19:42:28.737573+00:00",
@@ -51,7 +51,9 @@
       "base_hash_prefix": null,
       "lora_hash_prefix": null,
       "created_at": "2026-04-14T23:31:59.938705+00:00",
-      "created_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sh-eo/tree/main/lora",
+      "hf_uploaded_at": "2026-04-19T05:23:49.249777+00:00"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -127,7 +129,7 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
@@ -155,7 +157,7 @@
       "date": "2026-03-22T19:42:28.737573+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -172,7 +174,7 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Saluton, ĉu ne?",
+              "output": "Saluton, \u0109u ne?",
               "passed": true
             },
             {
@@ -187,7 +189,7 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Theckquick woox fasignas ĉi tiun ĉokoladan yeah.",
+              "output": "Theckquick woox fasignas \u0109i tiun \u0109okoladan yeah.",
               "passed": true
             },
             {
@@ -206,7 +208,7 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Saluton, ĉu ne?",
+              "output": "Saluton, \u0109u ne?",
               "passed": true
             },
             {
@@ -221,7 +223,7 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Theckquick woox fasignas ĉi tiun ĉokoladan yeah.",
+              "output": "Theckquick woox fasignas \u0109i tiun \u0109okoladan yeah.",
               "passed": true
             },
             {
@@ -240,7 +242,7 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Saluton, ĉu ne?",
+              "output": "Saluton, \u0109u ne?",
               "passed": true
             },
             {
@@ -255,7 +257,7 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Theckquick wox fasignas la ĉampiono de ĉi tiu truo.",
+              "output": "Theckquick wox fasignas la \u0109ampiono de \u0109i tiu truo.",
               "passed": true
             },
             {
@@ -266,7 +268,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -300,14 +302,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:47:17.734359+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -326,8 +328,8 @@
             "Theyouth kaj Bluetyth.",
             "Kaj wolfram subtenantoj de la literaturo.",
             "Thecheller arkitekto.",
-            "Ĉu vi volas ke mi transdonu la bebon?",
-            "Ŝanhajo- benzino works! characy."
+            "\u0108u vi volas ke mi transdonu la bebon?",
+            "\u015canhajo- benzino works! characy."
           ]
         },
         "lora": {
@@ -341,8 +343,8 @@
             "Theyouth kaj Bluetyth.",
             "Kaj wolfram subtenantoj de la literaturo.",
             "Thecheller arkitekto.",
-            "Ĉu vi volas ke mi transdonu la bebon?",
-            "Ŝanhajo- benzino works! characy."
+            "\u0108u vi volas ke mi transdonu la bebon?",
+            "\u015canhajo- benzino works! characy."
           ],
           "delta_vs_base": 0.0
         },
@@ -376,7 +378,7 @@
       "date": "2026-03-23T06:47:17.734359+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -439,7 +441,7 @@
       "date": "2026-03-24T06:28:28.760180+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -475,7 +477,7 @@
       "date": "2026-03-24T19:19:00.415963+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -498,7 +500,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -553,11 +555,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sh→eo)"
+              "reason": "no English endpoint (sh\u2192eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sh→eo"
+              "reason": "no reference pairs for sh\u2192eo"
             },
             "vitals": {
               "status": "complete",
@@ -611,11 +613,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sh→eo)"
+              "reason": "no English endpoint (sh\u2192eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sh→eo"
+              "reason": "no reference pairs for sh\u2192eo"
             },
             "vitals": {
               "status": "complete",
@@ -669,11 +671,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sh→eo)"
+              "reason": "no English endpoint (sh\u2192eo)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sh→eo"
+              "reason": "no reference pairs for sh\u2192eo"
             },
             "vitals": {
               "status": "complete",
@@ -738,14 +740,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-sh-eo/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-sh-eo/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-sh-eo/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-sh-eo/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-sh-eo",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-sh-eo/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-sh-eo/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -754,7 +756,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -818,14 +820,14 @@
       },
       "best_grade": "A+",
       "best_score": 98.44,
-      "notes": "Dr. C independent certification of sh-eo. Tested 1 variant(s): base. Best variant grade: A+ (98.44). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of sh-eo. Tested 1 variant(s): base. Best variant grade: A+ (98.44). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-sh-eo",
       "date": "2026-04-12T21:38:15.109322+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 26872 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 80.5, after: 78.1, delta: -2.3. No improvement — discarded.",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 26872 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 80.5, after: 78.1, delta: -2.3. No improvement \u2014 discarded.",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (26872 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -834,7 +836,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base"
@@ -876,7 +878,7 @@
       "best_stars": 4.5,
       "best_tier": "premium",
       "best_composite": 81.7,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-FOGMIRROR-P4-sh-eo",
@@ -892,7 +894,7 @@
       "date": "2026-04-15T05:33:57.773861+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=1. Score 76.6→82.0 (Δ+5.4). IMPROVED — saved as herm0/",
+      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=1. Score 76.6\u219282.0 (\u0394+5.4). IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 1. Data: 26872 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -903,7 +905,7 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (47 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (47 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-sh-eo",
@@ -948,7 +950,7 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-REGRESS-sh-eo",
@@ -966,7 +968,20 @@
       "shipped_herm0_ct2": false,
       "herm0_on_disk": true,
       "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
-      "notes": "Grand Rounds v2 paragraph-level composite score: base=81.7 herm0=75.2 delta=-6.50. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=81.7 herm0=75.2 delta=-6.50. Below threshold of -5.0 \u2192 herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (\u2261 base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-sh-eo",
+      "date": "2026-04-19T05:23:49.249777+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-sh-eo",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-sh-eo",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1105,7 +1120,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:28:28.760180+00:00",
       "variant_scores": {}
@@ -1119,7 +1134,7 @@
     "lora_size_mb": 191.65,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:00:58.719500+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1129,7 +1144,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
       "details": {
         "data_samples": 26807,
         "epochs": 1,

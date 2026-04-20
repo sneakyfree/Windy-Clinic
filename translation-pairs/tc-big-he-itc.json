@@ -1,18 +1,18 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T14:45:17.187302+00:00",
+  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-big-he-itc.json",
   "patient_id": "tc-big-he-itc",
   "admitted": "2026-03-22T19:49:38.972159+00:00",
   "source_repo": "Helsinki-NLP/opus-mt-tc-big-he-itc",
   "source_language": {
-    "code": "tc",
-    "name": "tc",
+    "code": "he",
+    "name": "Hebrew",
     "family": "Unknown"
   },
   "target_language": {
     "code": "itc",
-    "name": "itc",
+    "name": "Italic",
     "family": "Unknown"
   },
   "variant_cluster": {
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-he-itc/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-he-itc/tree/main/lora",
+      "hf_uploaded_at": "2026-04-20T12:57:54.353961+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-he-itc/lora-ct2-int8",
       "on_disk_bytes": 246415360,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-he-itc/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-20T12:57:54.353961+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -100,7 +104,7 @@
       "date": "2026-03-22T19:49:38.972159+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,28 +120,28 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u05e9\u05dc\u05d5\u05dd, \u05de\u05d4 \u05e9\u05dc\u05d5\u05de\u05da \u05d4\u05d9\u05d5\u05dd?",
-              "output": "- Ol\u00e1, como est\u00e1?",
+              "input": "שלום, מה שלומך היום?",
+              "output": "- Olá, como está?",
               "passed": true
             },
             {
-              "input": "\u05de\u05d6\u05d2 \u05d4\u05d0\u05d5\u05d5\u05d9\u05e8 \u05d9\u05e4\u05d4 \u05d4\u05d1\u05d5\u05e7\u05e8.",
-              "output": "O clima est\u00e1 lindo esta manh\u00e3.",
+              "input": "מזג האוויר יפה הבוקר.",
+              "output": "O clima está lindo esta manhã.",
               "passed": true
             },
             {
-              "input": "\u05d0\u05e0\u05d9 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d4\u05d6\u05de\u05d9\u05df \u05db\u05d5\u05e1 \u05e7\u05e4\u05d4, \u05d1\u05d1\u05e7\u05e9\u05d4.",
-              "output": "Gostaria de uma x\u00edcara de caf\u00e9, por favor.",
+              "input": "אני רוצה להזמין כוס קפה, בבקשה.",
+              "output": "Gostaria de uma xícara de café, por favor.",
               "passed": true
             },
             {
-              "input": "\u05d4\u05e9\u05d5\u05e2\u05dc \u05d4\u05d7\u05d5\u05dd \u05d4\u05de\u05d4\u05d9\u05e8 \u05e7\u05d5\u05e4\u05e5 \u05de\u05e2\u05dc \u05d4\u05db\u05dc\u05d1 \u05d4\u05e2\u05e6\u05dc\u05df.",
-              "output": "A raposa marrom salta sobre o c\u00e3o pregui\u00e7oso.",
+              "input": "השועל החום המהיר קופץ מעל הכלב העצלן.",
+              "output": "A raposa marrom salta sobre o cão preguiçoso.",
               "passed": true
             },
             {
-              "input": "\u05d1\u05d9\u05e0\u05d4 \u05de\u05dc\u05d0\u05db\u05d5\u05ea\u05d9\u05ea \u05de\u05e9\u05e0\u05d4 \u05d0\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd.",
-              "output": "A IA est\u00e1 mudando o mundo.",
+              "input": "בינה מלאכותית משנה את העולם.",
+              "output": "A IA está mudando o mundo.",
               "passed": true
             }
           ]
@@ -150,28 +154,28 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u05e9\u05dc\u05d5\u05dd, \u05de\u05d4 \u05e9\u05dc\u05d5\u05de\u05da \u05d4\u05d9\u05d5\u05dd?",
-              "output": "- Ol\u00e1, como est\u00e1?",
+              "input": "שלום, מה שלומך היום?",
+              "output": "- Olá, como está?",
               "passed": true
             },
             {
-              "input": "\u05de\u05d6\u05d2 \u05d4\u05d0\u05d5\u05d5\u05d9\u05e8 \u05d9\u05e4\u05d4 \u05d4\u05d1\u05d5\u05e7\u05e8.",
-              "output": "O clima est\u00e1 lindo esta manh\u00e3.",
+              "input": "מזג האוויר יפה הבוקר.",
+              "output": "O clima está lindo esta manhã.",
               "passed": true
             },
             {
-              "input": "\u05d0\u05e0\u05d9 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d4\u05d6\u05de\u05d9\u05df \u05db\u05d5\u05e1 \u05e7\u05e4\u05d4, \u05d1\u05d1\u05e7\u05e9\u05d4.",
-              "output": "Gostaria de uma x\u00edcara de caf\u00e9, por favor.",
+              "input": "אני רוצה להזמין כוס קפה, בבקשה.",
+              "output": "Gostaria de uma xícara de café, por favor.",
               "passed": true
             },
             {
-              "input": "\u05d4\u05e9\u05d5\u05e2\u05dc \u05d4\u05d7\u05d5\u05dd \u05d4\u05de\u05d4\u05d9\u05e8 \u05e7\u05d5\u05e4\u05e5 \u05de\u05e2\u05dc \u05d4\u05db\u05dc\u05d1 \u05d4\u05e2\u05e6\u05dc\u05df.",
-              "output": "A raposa marrom salta sobre o c\u00e3o pregui\u00e7oso.",
+              "input": "השועל החום המהיר קופץ מעל הכלב העצלן.",
+              "output": "A raposa marrom salta sobre o cão preguiçoso.",
               "passed": true
             },
             {
-              "input": "\u05d1\u05d9\u05e0\u05d4 \u05de\u05dc\u05d0\u05db\u05d5\u05ea\u05d9\u05ea \u05de\u05e9\u05e0\u05d4 \u05d0\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd.",
-              "output": "A IA est\u00e1 mudando o mundo.",
+              "input": "בינה מלאכותית משנה את העולם.",
+              "output": "A IA está mudando o mundo.",
               "passed": true
             }
           ]
@@ -184,34 +188,34 @@
           "quality_label": "Good",
           "sample_translations": [
             {
-              "input": "\u05e9\u05dc\u05d5\u05dd, \u05de\u05d4 \u05e9\u05dc\u05d5\u05de\u05da \u05d4\u05d9\u05d5\u05dd?",
-              "output": "- Ol\u00e1, como est\u00e1?",
+              "input": "שלום, מה שלומך היום?",
+              "output": "- Olá, como está?",
               "passed": true
             },
             {
-              "input": "\u05de\u05d6\u05d2 \u05d4\u05d0\u05d5\u05d5\u05d9\u05e8 \u05d9\u05e4\u05d4 \u05d4\u05d1\u05d5\u05e7\u05e8.",
-              "output": "Bonito clima esta manh\u00e3.",
+              "input": "מזג האוויר יפה הבוקר.",
+              "output": "Bonito clima esta manhã.",
               "passed": true
             },
             {
-              "input": "\u05d0\u05e0\u05d9 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d4\u05d6\u05de\u05d9\u05df \u05db\u05d5\u05e1 \u05e7\u05e4\u05d4, \u05d1\u05d1\u05e7\u05e9\u05d4.",
-              "output": "Eu gostaria de pedir uma x\u00edcara de caf\u00e9, por favor.",
+              "input": "אני רוצה להזמין כוס קפה, בבקשה.",
+              "output": "Eu gostaria de pedir uma xícara de café, por favor.",
               "passed": true
             },
             {
-              "input": "\u05d4\u05e9\u05d5\u05e2\u05dc \u05d4\u05d7\u05d5\u05dd \u05d4\u05de\u05d4\u05d9\u05e8 \u05e7\u05d5\u05e4\u05e5 \u05de\u05e2\u05dc \u05d4\u05db\u05dc\u05d1 \u05d4\u05e2\u05e6\u05dc\u05df.",
-              "output": "A raposa castanha salta sobre o c\u00e3o pregui\u00e7oso.",
+              "input": "השועל החום המהיר קופץ מעל הכלב העצלן.",
+              "output": "A raposa castanha salta sobre o cão preguiçoso.",
               "passed": true
             },
             {
-              "input": "\u05d1\u05d9\u05e0\u05d4 \u05de\u05dc\u05d0\u05db\u05d5\u05ea\u05d9\u05ea \u05de\u05e9\u05e0\u05d4 \u05d0\u05ea \u05d4\u05e2\u05d5\u05dc\u05dd.",
-              "output": "A IA est\u00e1 mudando o mundo.",
+              "input": "בינה מלאכותית משנה את העולם.",
+              "output": "A IA está mudando o mundo.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +249,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:47:41.935386+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -270,8 +274,8 @@
           "sample_translations": [
             "\"The weather is beautiful Today.\"",
             "I would like to order a cup of coffee, please.",
-            "Los ni\u00f1os juegan en el parque.",
-            "\u00bfCu\u00e1l es el momento de dejar el tren?",
+            "Los niños juegan en el parque.",
+            "¿Cuál es el momento de dejar el tren?",
             "Trabalhou para o Hospital durante 10 anos."
           ]
         },
@@ -285,8 +289,8 @@
           "sample_translations": [
             "\"The weather is beautiful Today.\"",
             "I would like to order a cup of coffee, please.",
-            "Los ni\u00f1os juegan en el parque.",
-            "\u00bfCu\u00e1l es el momento de dejar el tren?",
+            "Los niños juegan en el parque.",
+            "¿Cuál es el momento de dejar el tren?",
             "Trabalhou para o Hospital durante 10 anos."
           ],
           "delta_vs_base": 0.0
@@ -321,7 +325,7 @@
       "date": "2026-03-23T07:47:41.935386+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +388,7 @@
       "date": "2026-03-24T06:59:43.765360+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +424,7 @@
       "date": "2026-03-24T20:17:25.007127+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +447,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -496,11 +500,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tc-big-he\u2192itc)"
+              "reason": "no English endpoint (tc-big-he→itc)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tc-big-he\u2192itc"
+              "reason": "no reference pairs for tc-big-he→itc"
             },
             "vitals": {
               "status": "complete",
@@ -554,7 +558,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -674,7 +678,7 @@
       },
       "best_grade": "A-",
       "best_score": 92.78,
-      "notes": "Dr. C independent certification of tc-big-he-itc. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.78). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-big-he-itc. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.78). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-big-he-itc",
@@ -690,7 +694,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -764,16 +768,44 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-P4-tc-big-he-itc",
       "date": "2026-04-15T14:45:17.187302+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=2. Score 89.5\u219246.7 (\u0394-42.8). No improvement \u2014 discarded.",
+      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=2. Score 89.5→46.7 (Δ-42.8). No improvement — discarded.",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 2. Data: 49950 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tc-big-he-itc",
+      "date": "2026-04-20T12:57:54.353961+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tc-big-he-itc",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tc-big-he-itc",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-LANGCODE-FIX-tc-big-he-itc",
+      "date": "2026-04-20T13:07:22.747916+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Correct source/target language codes parsed from pid (Helsinki family-prefix stripping)",
+      "old_src": "tc",
+      "old_tgt": "itc",
+      "new_src": "he",
+      "new_tgt": "itc",
+      "src_name": "Hebrew",
+      "tgt_name": "Italic",
+      "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -912,7 +944,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:59:43.765360+00:00",
       "variant_scores": {}
@@ -926,7 +958,7 @@
     "lora_size_mb": 956.16,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:44:05.255022+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -936,7 +968,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

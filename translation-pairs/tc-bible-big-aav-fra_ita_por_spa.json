@@ -1,18 +1,18 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-13T20:15:01.354351+00:00",
+  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-bible-big-aav-fra_ita_por_spa.json",
   "patient_id": "tc-bible-big-aav-fra_ita_por_spa",
   "admitted": "2026-03-22T19:45:44.575183+00:00",
   "source_repo": "Helsinki-NLP/opus-mt-tc-bible-big-aav-fra_ita_por_spa",
   "source_language": {
-    "code": "tc",
-    "name": "tc",
+    "code": "aav",
+    "name": "Austro-Asiatic",
     "family": "Unknown"
   },
   "target_language": {
     "code": "fra_ita_por_spa",
-    "name": "fra_ita_por_spa",
+    "name": "French/Italian/Portuguese/Spanish",
     "family": "Unknown"
   },
   "variant_cluster": {
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-bible-big-aav-fra_ita_por_spa/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-aav-fra_ita_por_spa/tree/main/lora",
+      "hf_uploaded_at": "2026-04-20T12:09:48.403938+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-bible-big-aav-fra_ita_por_spa/lora-ct2-int8",
       "on_disk_bytes": 243269632,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-aav-fra_ita_por_spa/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-20T12:09:48.403938+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -100,7 +104,7 @@
       "date": "2026-03-22T19:45:44.575183+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,28 +120,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0e2a\u0e27\u0e31\u0e2a\u0e14\u0e35 \u0e27\u0e31\u0e19\u0e19\u0e35\u0e49\u0e04\u0e38\u0e13\u0e40\u0e1b\u0e47\u0e19\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e44\u0e23\u0e1a\u0e49\u0e32\u0e07?",
-              "output": "Les frais de vos services sont-ils pay\u00e9s par les services que vous avez re\u00e7us?",
+              "input": "สวัสดี วันนี้คุณเป็นอย่างไรบ้าง?",
+              "output": "Les frais de vos services sont-ils payés par les services que vous avez reçus?",
               "passed": true
             },
             {
-              "input": "\u0e40\u0e0a\u0e49\u0e32\u0e19\u0e35\u0e49\u0e2d\u0e32\u0e01\u0e32\u0e28\u0e14\u0e35\u0e21\u0e32\u0e01",
+              "input": "เช้านี้อากาศดีมาก",
               "output": "samsara, samsara, samsara",
               "passed": true
             },
             {
-              "input": "\u0e09\u0e31\u0e19\u0e2d\u0e22\u0e32\u0e01\u0e2a\u0e31\u0e48\u0e07\u0e01\u0e32\u0e41\u0e1f\u0e2a\u0e31\u0e01\u0e41\u0e01\u0e49\u0e27\u0e04\u0e48\u0e30",
-              "output": "\u0e48\u0e2d\u0e2d\u0e2d\u0e2d\u0e2d\u0e2d\u0e48\u0e48\u0e40\u0e22\u0e22\u0e22\u0e19",
+              "input": "ฉันอยากสั่งกาแฟสักแก้วค่ะ",
+              "output": "่ออออออ่่เยยยน",
               "passed": true
             },
             {
-              "input": "\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e08\u0e34\u0e49\u0e07\u0e08\u0e2d\u0e01\u0e2a\u0e35\u0e19\u0e49\u0e33\u0e15\u0e32\u0e25\u0e17\u0e35\u0e48\u0e23\u0e27\u0e14\u0e40\u0e23\u0e47\u0e27\u0e01\u0e23\u0e30\u0e42\u0e14\u0e14\u0e02\u0e49\u0e32\u0e21\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e02\u0e35\u0e49\u0e40\u0e01\u0e35\u0e22\u0e08",
-              "output": "Mais gr\u00e2ce \u00e0 la plainte de la minorit\u00e9 de Kirin, la plainte est devenue si forte que la plainte est devenue si forte que la plainte est devenue la plainte de la p\u00e9nitence de la p\u00e9nurie de sang de la p\u00e9ninsule de Libert\u00e9.",
+              "input": "สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ",
+              "output": "Mais grâce à la plainte de la minorité de Kirin, la plainte est devenue si forte que la plainte est devenue si forte que la plainte est devenue la plainte de la pénitence de la pénurie de sang de la péninsule de Liberté.",
               "passed": true
             },
             {
-              "input": "\u0e1b\u0e31\u0e0d\u0e0d\u0e32\u0e1b\u0e23\u0e30\u0e14\u0e34\u0e29\u0e10\u0e4c\u0e01\u0e33\u0e25\u0e31\u0e07\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e42\u0e25\u0e01",
-              "output": "Les habitants de \u00c1frica, y de toda la regi\u00f3n de \u00c1frica, se convirtieron en \u00c1frica subsahariana.",
+              "input": "ปัญญาประดิษฐ์กำลังเปลี่ยนแปลงโลก",
+              "output": "Les habitants de África, y de toda la región de África, se convirtieron en África subsahariana.",
               "passed": true
             }
           ]
@@ -150,28 +154,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0e2a\u0e27\u0e31\u0e2a\u0e14\u0e35 \u0e27\u0e31\u0e19\u0e19\u0e35\u0e49\u0e04\u0e38\u0e13\u0e40\u0e1b\u0e47\u0e19\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e44\u0e23\u0e1a\u0e49\u0e32\u0e07?",
-              "output": "Les frais de vos services sont-ils pay\u00e9s par les services que vous avez re\u00e7us?",
+              "input": "สวัสดี วันนี้คุณเป็นอย่างไรบ้าง?",
+              "output": "Les frais de vos services sont-ils payés par les services que vous avez reçus?",
               "passed": true
             },
             {
-              "input": "\u0e40\u0e0a\u0e49\u0e32\u0e19\u0e35\u0e49\u0e2d\u0e32\u0e01\u0e32\u0e28\u0e14\u0e35\u0e21\u0e32\u0e01",
+              "input": "เช้านี้อากาศดีมาก",
               "output": "samsara, samsara, samsara",
               "passed": true
             },
             {
-              "input": "\u0e09\u0e31\u0e19\u0e2d\u0e22\u0e32\u0e01\u0e2a\u0e31\u0e48\u0e07\u0e01\u0e32\u0e41\u0e1f\u0e2a\u0e31\u0e01\u0e41\u0e01\u0e49\u0e27\u0e04\u0e48\u0e30",
-              "output": "\u0e48\u0e2d\u0e2d\u0e2d\u0e2d\u0e2d\u0e2d\u0e48\u0e48\u0e40\u0e22\u0e22\u0e22\u0e19",
+              "input": "ฉันอยากสั่งกาแฟสักแก้วค่ะ",
+              "output": "่ออออออ่่เยยยน",
               "passed": true
             },
             {
-              "input": "\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e08\u0e34\u0e49\u0e07\u0e08\u0e2d\u0e01\u0e2a\u0e35\u0e19\u0e49\u0e33\u0e15\u0e32\u0e25\u0e17\u0e35\u0e48\u0e23\u0e27\u0e14\u0e40\u0e23\u0e47\u0e27\u0e01\u0e23\u0e30\u0e42\u0e14\u0e14\u0e02\u0e49\u0e32\u0e21\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e02\u0e35\u0e49\u0e40\u0e01\u0e35\u0e22\u0e08",
-              "output": "Mais gr\u00e2ce \u00e0 la plainte de la minorit\u00e9 de Kirin, la plainte est devenue si forte que la plainte est devenue si forte que la plainte est devenue la plainte de la p\u00e9nitence de la p\u00e9nurie de sang de la p\u00e9ninsule de Libert\u00e9.",
+              "input": "สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ",
+              "output": "Mais grâce à la plainte de la minorité de Kirin, la plainte est devenue si forte que la plainte est devenue si forte que la plainte est devenue la plainte de la pénitence de la pénurie de sang de la péninsule de Liberté.",
               "passed": true
             },
             {
-              "input": "\u0e1b\u0e31\u0e0d\u0e0d\u0e32\u0e1b\u0e23\u0e30\u0e14\u0e34\u0e29\u0e10\u0e4c\u0e01\u0e33\u0e25\u0e31\u0e07\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e42\u0e25\u0e01",
-              "output": "Les habitants de \u00c1frica, a trav\u00e9s de la c\u00f4te de \u00c1frica, nacieron en \u00c1frica, la pen\u00ednsula de \u00c1frica.",
+              "input": "ปัญญาประดิษฐ์กำลังเปลี่ยนแปลงโลก",
+              "output": "Les habitants de África, a través de la côte de África, nacieron en África, la península de África.",
               "passed": true
             }
           ]
@@ -184,34 +188,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0e2a\u0e27\u0e31\u0e2a\u0e14\u0e35 \u0e27\u0e31\u0e19\u0e19\u0e35\u0e49\u0e04\u0e38\u0e13\u0e40\u0e1b\u0e47\u0e19\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e44\u0e23\u0e1a\u0e49\u0e32\u0e07?",
-              "output": "Tu as re\u00e7u l'ordre de payer de l'argent pour vos services, ainsi que de la part de Tungst\u00e8ne assis et de la part de Caravane?",
+              "input": "สวัสดี วันนี้คุณเป็นอย่างไรบ้าง?",
+              "output": "Tu as reçu l'ordre de payer de l'argent pour vos services, ainsi que de la part de Tungstène assis et de la part de Caravane?",
               "passed": true
             },
             {
-              "input": "\u0e40\u0e0a\u0e49\u0e32\u0e19\u0e35\u0e49\u0e2d\u0e32\u0e01\u0e32\u0e28\u0e14\u0e35\u0e21\u0e32\u0e01",
-              "output": "Santillana \u00b7 Saludo \u00b7",
+              "input": "เช้านี้อากาศดีมาก",
+              "output": "Santillana · Saludo ·",
               "passed": true
             },
             {
-              "input": "\u0e09\u0e31\u0e19\u0e2d\u0e22\u0e32\u0e01\u0e2a\u0e31\u0e48\u0e07\u0e01\u0e32\u0e41\u0e1f\u0e2a\u0e31\u0e01\u0e41\u0e01\u0e49\u0e27\u0e04\u0e48\u0e30",
-              "output": "\u0e48\u0e48\u0e48\u0e2d\u0e22\u0e48\u0e48\u0e48\u0e48\u0e40\u0e22",
+              "input": "ฉันอยากสั่งกาแฟสักแก้วค่ะ",
+              "output": "่่่อย่่่่เย",
               "passed": true
             },
             {
-              "input": "\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e08\u0e34\u0e49\u0e07\u0e08\u0e2d\u0e01\u0e2a\u0e35\u0e19\u0e49\u0e33\u0e15\u0e32\u0e25\u0e17\u0e35\u0e48\u0e23\u0e27\u0e14\u0e40\u0e23\u0e47\u0e27\u0e01\u0e23\u0e30\u0e42\u0e14\u0e14\u0e02\u0e49\u0e32\u0e21\u0e2a\u0e38\u0e19\u0e31\u0e02\u0e02\u0e35\u0e49\u0e40\u0e01\u0e35\u0e22\u0e08",
-              "output": "Mais la plainte d\u00e9plore que la plainte est d\u00e9plorable, et que la plainte est d\u00e9plorable, et que la plainte est d\u00e9plorable, c\u2019est que la plainte est d\u00e9plorable.",
+              "input": "สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ",
+              "output": "Mais la plainte déplore que la plainte est déplorable, et que la plainte est déplorable, et que la plainte est déplorable, c’est que la plainte est déplorable.",
               "passed": true
             },
             {
-              "input": "\u0e1b\u0e31\u0e0d\u0e0d\u0e32\u0e1b\u0e23\u0e30\u0e14\u0e34\u0e29\u0e10\u0e4c\u0e01\u0e33\u0e25\u0e31\u0e07\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e41\u0e1b\u0e25\u0e07\u0e42\u0e25\u0e01",
-              "output": "\u00c0 P\u00f3rdom, c\u2019est-\u00e0-dire \u00e0 \u00c1frica, que se encuentra el territorio de \u00c1frica.",
+              "input": "ปัญญาประดิษฐ์กำลังเปลี่ยนแปลงโลก",
+              "output": "À Pórdom, c’est-à-dire à África, que se encuentra el territorio de África.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +249,14 @@
           "stars": 4.5
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:09:21.436140+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -269,10 +273,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "Le temps est beau aujourd'hui.",
-            "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
+            "Me gustaría pedir una taza de café, por favor.",
             "Les enfants jouent dans le parc.",
             "Quel est le moment de quitter le train ?",
-            "Elle a travaill\u00e9 dans l'h\u00f4pital pendant dix ans."
+            "Elle a travaillé dans l'hôpital pendant dix ans."
           ]
         },
         "lora": {
@@ -284,10 +288,10 @@
           "unique_outputs": 10,
           "sample_translations": [
             "Le temps est beau aujourd'hui.",
-            "Me gustar\u00eda pedir una taza de caf\u00e9, por favor.",
+            "Me gustaría pedir una taza de café, por favor.",
             "Les enfants jouent dans le parc.",
             "Quel est le moment de quitter le train ?",
-            "Elle a travaill\u00e9 dans l'h\u00f4pital pendant dix ans."
+            "Elle a travaillé dans l'hôpital pendant dix ans."
           ],
           "delta_vs_base": 0.0
         },
@@ -321,7 +325,7 @@
       "date": "2026-03-23T07:09:21.436140+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +388,7 @@
       "date": "2026-03-24T06:42:05.987565+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +424,7 @@
       "date": "2026-03-24T19:48:47.141538+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +447,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -496,11 +500,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (aav\u2192fra_ita_por_spa)"
+              "reason": "no English endpoint (aav→fra_ita_por_spa)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for aav\u2192fra_ita_por_spa"
+              "reason": "no reference pairs for aav→fra_ita_por_spa"
             },
             "vitals": {
               "status": "complete",
@@ -522,7 +526,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (aav\u2192fra_ita_por_spa)"
+              "reason": "no English endpoint for scripture test (aav→fra_ita_por_spa)"
             }
           }
         }
@@ -554,7 +558,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -674,7 +678,7 @@
       },
       "best_grade": "A-",
       "best_score": 92.82,
-      "notes": "Dr. C independent certification of tc-bible-big-aav-fra_ita_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.82). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-bible-big-aav-fra_ita_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.82). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-bible-big-aav-fra_ita_por_spa",
@@ -690,7 +694,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -764,7 +768,35 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tc-bible-big-aav-fra_ita_por_spa",
+      "date": "2026-04-20T12:09:48.403938+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tc-bible-big-aav-fra_ita_por_spa",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-aav-fra_ita_por_spa",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-LANGCODE-FIX-tc-bible-big-aav-fra_ita_por_spa",
+      "date": "2026-04-20T13:07:22.747916+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Correct source/target language codes parsed from pid (Helsinki family-prefix stripping)",
+      "old_src": "tc",
+      "old_tgt": "fra_ita_por_spa",
+      "new_src": "aav",
+      "new_tgt": "fra_ita_por_spa",
+      "src_name": "Austro-Asiatic",
+      "tgt_name": "French/Italian/Portuguese/Spanish",
+      "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -903,7 +935,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:42:05.987565+00:00",
       "variant_scores": {}
@@ -917,7 +949,7 @@
     "lora_size_mb": 945.2,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:19:10.992604+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -927,7 +959,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

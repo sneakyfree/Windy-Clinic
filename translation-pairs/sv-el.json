@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-14T23:32:11.579956+00:00",
+  "_last_updated": "2026-04-19T05:31:32.345342+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/sv-el.json",
   "patient_id": "sv-el",
   "admitted": "2026-03-22T19:43:31.856234+00:00",
@@ -51,7 +51,9 @@
       "base_hash_prefix": null,
       "lora_hash_prefix": null,
       "created_at": "2026-04-14T23:32:11.579956+00:00",
-      "created_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-sv-el/tree/main/lora",
+      "hf_uploaded_at": "2026-04-19T05:31:32.345342+00:00"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -1231,6 +1233,19 @@
       "method": "Phase 4 Fog-of-Mirror: epsilon noise (1e-7) applied to q_proj + v_proj weights (72 parameter tensors). Creates legally-distinct proprietary weights with zero measurable quality impact.",
       "protocol_script": "scripts/fog_of_mirror_restored.py",
       "notes": "This patient was restored from HuggingFace after the 2026-03-29 ONNX deletion event and had only the Helsinki-NLP base/ on disk (no proprietary variant). Dr. C applied fog-of-mirror to produce a distinct lora/ variant so the patient has a Windy Word-proprietary fork. Base hash: None, LoRA hash: None (distinct: None). Saved to /home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-sv-el/lora (289.6 MB). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-sv-el",
+      "date": "2026-04-19T05:31:32.345342+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-sv-el",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-sv-el",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

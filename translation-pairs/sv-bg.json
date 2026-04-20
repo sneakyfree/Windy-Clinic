@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:48:06.751670+00:00",
+  "_last_updated": "2026-04-19T05:30:07.137832+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/sv-bg.json",
   "patient_id": "sv-bg",
   "admitted": "2026-03-22T19:43:22.128987+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -142,7 +142,7 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
@@ -170,7 +170,7 @@
       "date": "2026-03-22T19:43:22.128987+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -186,28 +186,28 @@
           "quality_label": "High Quality",
           "sample_translations": [
             {
-              "input": "Hej, hur mår du idag?",
-              "output": "Здравей, как си днес?",
+              "input": "Hej, hur m\u00e5r du idag?",
+              "output": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
               "passed": true
             },
             {
-              "input": "Vädret är vackert i morse.",
-              "output": "Времето е прекрасно тази сутрин.",
+              "input": "V\u00e4dret \u00e4r vackert i morse.",
+              "output": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
               "passed": true
             },
             {
-              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
-              "output": "Бих искала да поръчам кафе, моля.",
+              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
+              "output": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b\u0430 \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
               "passed": true
             },
             {
-              "input": "Den snabba bruna räven hoppar över den lata hunden.",
-              "output": "Бързата кафява лисица прескача мързеливото куче.",
+              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
+              "output": "\u0411\u044a\u0440\u0437\u0430\u0442\u0430 \u043a\u0430\u0444\u044f\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u0430 \u043f\u0440\u0435\u0441\u043a\u0430\u0447\u0430 \u043c\u044a\u0440\u0437\u0435\u043b\u0438\u0432\u043e\u0442\u043e \u043a\u0443\u0447\u0435.",
               "passed": true
             },
             {
-              "input": "Artificiell intelligens förändrar världen.",
-              "output": "Изкуственият интелект променя света.",
+              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "output": "\u0418\u0437\u043a\u0443\u0441\u0442\u0432\u0435\u043d\u0438\u044f\u0442 \u0438\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0440\u043e\u043c\u0435\u043d\u044f \u0441\u0432\u0435\u0442\u0430.",
               "passed": true
             }
           ]
@@ -220,28 +220,28 @@
           "quality_label": "High Quality",
           "sample_translations": [
             {
-              "input": "Hej, hur mår du idag?",
-              "output": "Здравей, как си днес?",
+              "input": "Hej, hur m\u00e5r du idag?",
+              "output": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
               "passed": true
             },
             {
-              "input": "Vädret är vackert i morse.",
-              "output": "Времето е прекрасно тази сутрин.",
+              "input": "V\u00e4dret \u00e4r vackert i morse.",
+              "output": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
               "passed": true
             },
             {
-              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
-              "output": "Бих искала да поръчам кафе, моля.",
+              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
+              "output": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b\u0430 \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
               "passed": true
             },
             {
-              "input": "Den snabba bruna räven hoppar över den lata hunden.",
-              "output": "Бързата кафява лисица прескача мързеливото куче.",
+              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
+              "output": "\u0411\u044a\u0440\u0437\u0430\u0442\u0430 \u043a\u0430\u0444\u044f\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u0430 \u043f\u0440\u0435\u0441\u043a\u0430\u0447\u0430 \u043c\u044a\u0440\u0437\u0435\u043b\u0438\u0432\u043e\u0442\u043e \u043a\u0443\u0447\u0435.",
               "passed": true
             },
             {
-              "input": "Artificiell intelligens förändrar världen.",
-              "output": "Изкуственият интелект променя света.",
+              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "output": "\u0418\u0437\u043a\u0443\u0441\u0442\u0432\u0435\u043d\u0438\u044f\u0442 \u0438\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0440\u043e\u043c\u0435\u043d\u044f \u0441\u0432\u0435\u0442\u0430.",
               "passed": true
             }
           ]
@@ -254,34 +254,34 @@
           "quality_label": "High Quality",
           "sample_translations": [
             {
-              "input": "Hej, hur mår du idag?",
-              "output": "Здравейте, как сте днес?",
+              "input": "Hej, hur m\u00e5r du idag?",
+              "output": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439\u0442\u0435, \u043a\u0430\u043a \u0441\u0442\u0435 \u0434\u043d\u0435\u0441?",
               "passed": true
             },
             {
-              "input": "Vädret är vackert i morse.",
-              "output": "Времето е прекрасно тази сутрин.",
+              "input": "V\u00e4dret \u00e4r vackert i morse.",
+              "output": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
               "passed": true
             },
             {
-              "input": "Jag skulle vilja beställa en kopp kaffe, tack.",
-              "output": "Бих искал да поръчам чаша кафе, моля.",
+              "input": "Jag skulle vilja best\u00e4lla en kopp kaffe, tack.",
+              "output": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u0447\u0430\u0448\u0430 \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
               "passed": true
             },
             {
-              "input": "Den snabba bruna räven hoppar över den lata hunden.",
-              "output": "Бързата кафява лисица прескача мързеливото куче.",
+              "input": "Den snabba bruna r\u00e4ven hoppar \u00f6ver den lata hunden.",
+              "output": "\u0411\u044a\u0440\u0437\u0430\u0442\u0430 \u043a\u0430\u0444\u044f\u0432\u0430 \u043b\u0438\u0441\u0438\u0446\u0430 \u043f\u0440\u0435\u0441\u043a\u0430\u0447\u0430 \u043c\u044a\u0440\u0437\u0435\u043b\u0438\u0432\u043e\u0442\u043e \u043a\u0443\u0447\u0435.",
               "passed": true
             },
             {
-              "input": "Artificiell intelligens förändrar världen.",
-              "output": "Изкуственият интелект променя света.",
+              "input": "Artificiell intelligens f\u00f6r\u00e4ndrar v\u00e4rlden.",
+              "output": "\u0418\u0437\u043a\u0443\u0441\u0442\u0432\u0435\u043d\u0438\u044f\u0442 \u0438\u043d\u0442\u0435\u043b\u0435\u043a\u0442 \u043f\u0440\u043e\u043c\u0435\u043d\u044f \u0441\u0432\u0435\u0442\u0430.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -315,14 +315,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:53:07.199121+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -338,11 +338,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Времето днес е прекрасно.",
-            "Бих искала да поръчам кафе, моля.",
-            "Децата си играят в парка.",
-            "В колко часа тръгва влака?",
-            "Работи в болницата от 10 години."
+            "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0434\u043d\u0435\u0441 \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e.",
+            "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b\u0430 \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
+            "\u0414\u0435\u0446\u0430\u0442\u0430 \u0441\u0438 \u0438\u0433\u0440\u0430\u044f\u0442 \u0432 \u043f\u0430\u0440\u043a\u0430.",
+            "\u0412 \u043a\u043e\u043b\u043a\u043e \u0447\u0430\u0441\u0430 \u0442\u0440\u044a\u0433\u0432\u0430 \u0432\u043b\u0430\u043a\u0430?",
+            "\u0420\u0430\u0431\u043e\u0442\u0438 \u0432 \u0431\u043e\u043b\u043d\u0438\u0446\u0430\u0442\u0430 \u043e\u0442 10 \u0433\u043e\u0434\u0438\u043d\u0438."
           ]
         },
         "lora": {
@@ -353,11 +353,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Времето днес е прекрасно.",
-            "Бих искала да поръчам кафе, моля.",
-            "Децата си играят в парка.",
-            "В колко часа тръгва влака?",
-            "Работи в болницата от 10 години."
+            "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0434\u043d\u0435\u0441 \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e.",
+            "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b\u0430 \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
+            "\u0414\u0435\u0446\u0430\u0442\u0430 \u0441\u0438 \u0438\u0433\u0440\u0430\u044f\u0442 \u0432 \u043f\u0430\u0440\u043a\u0430.",
+            "\u0412 \u043a\u043e\u043b\u043a\u043e \u0447\u0430\u0441\u0430 \u0442\u0440\u044a\u0433\u0432\u0430 \u0432\u043b\u0430\u043a\u0430?",
+            "\u0420\u0430\u0431\u043e\u0442\u0438 \u0432 \u0431\u043e\u043b\u043d\u0438\u0446\u0430\u0442\u0430 \u043e\u0442 10 \u0433\u043e\u0434\u0438\u043d\u0438."
           ],
           "delta_vs_base": 0.0
         },
@@ -391,7 +391,7 @@
       "date": "2026-03-23T06:53:07.199121+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -454,7 +454,7 @@
       "date": "2026-03-24T06:32:10.167564+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -490,7 +490,7 @@
       "date": "2026-03-24T19:25:27.910595+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -503,17 +503,17 @@
           "old_size_mb": 0,
           "new_size_mb": 284.5,
           "verified_match": true,
-          "sample_translation": "Хей world"
+          "sample_translation": "\u0425\u0435\u0439 world"
         }
       },
-      "notes": "Replaced broken pickle INT8 (0.0MB) with clean safetensors (284.5MB). Verified base-CT2 output match: True. Sample translation: \"Хей world\". Elapsed: 31.2s."
+      "notes": "Replaced broken pickle INT8 (0.0MB) with clean safetensors (284.5MB). Verified base-CT2 output match: True. Sample translation: \"\u0425\u0435\u0439 world\". Elapsed: 31.2s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -531,7 +531,7 @@
       "date": "2026-03-28T16:10:29.653720+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -541,7 +541,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 95.09,
@@ -550,21 +550,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hej, hur mår du idag?",
-                  "forward": "Здравей, как си днес?",
-                  "returned": "Hej, hur mår du idag?",
+                  "original": "Hej, hur m\u00e5r du idag?",
+                  "forward": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "returned": "Hej, hur m\u00e5r du idag?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Vädret är vackert i morse.",
-                  "forward": "Времето е прекрасно тази сутрин.",
-                  "returned": "Vädret är underbart i morse.",
+                  "original": "V\u00e4dret \u00e4r vackert i morse.",
+                  "forward": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
+                  "returned": "V\u00e4dret \u00e4r underbart i morse.",
                   "similarity": 0.8148
                 },
                 {
-                  "original": "Jag vill beställa en kopp kaffe, tack.",
-                  "forward": "Искам да поръчам кафе, моля.",
-                  "returned": "Jag vill beställa kaffe, tack.",
+                  "original": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "forward": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
+                  "returned": "Jag vill best\u00e4lla kaffe, tack.",
                   "similarity": 0.8824
                 }
               ]
@@ -576,21 +576,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hej, hur mår du idag?",
-                  "forward": "Здравей, как си днес?",
-                  "returned": "Hej, hur mår du idag?",
+                  "original": "Hej, hur m\u00e5r du idag?",
+                  "forward": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "returned": "Hej, hur m\u00e5r du idag?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Vädret är vackert i morse.",
-                  "forward": "Времето е прекрасно тази сутрин.",
-                  "returned": "Vädret är underbart i morse.",
+                  "original": "V\u00e4dret \u00e4r vackert i morse.",
+                  "forward": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
+                  "returned": "V\u00e4dret \u00e4r underbart i morse.",
                   "similarity": 0.8148
                 },
                 {
-                  "original": "Jag vill beställa en kopp kaffe, tack.",
-                  "forward": "Искам да поръчам кафе, моля.",
-                  "returned": "Jag vill beställa kaffe, tack.",
+                  "original": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "forward": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
+                  "returned": "Jag vill best\u00e4lla kaffe, tack.",
                   "similarity": 0.8824
                 }
               ]
@@ -602,21 +602,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hej, hur mår du idag?",
-                  "forward": "Здравей, как си днес?",
-                  "returned": "Hej, hur mår du idag?",
+                  "original": "Hej, hur m\u00e5r du idag?",
+                  "forward": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "returned": "Hej, hur m\u00e5r du idag?",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Vädret är vackert i morse.",
-                  "forward": "Времето е прекрасно тази сутрин.",
-                  "returned": "Vädret är underbart i morse.",
+                  "original": "V\u00e4dret \u00e4r vackert i morse.",
+                  "forward": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
+                  "returned": "V\u00e4dret \u00e4r underbart i morse.",
                   "similarity": 0.8148
                 },
                 {
-                  "original": "Jag vill beställa en kopp kaffe, tack.",
-                  "forward": "Искам да поръчам кафе, моля.",
-                  "returned": "Jag vill beställa kaffe, tack.",
+                  "original": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "forward": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f.",
+                  "returned": "Jag vill best\u00e4lla kaffe, tack.",
                   "similarity": 0.8824
                 }
               ]
@@ -628,21 +628,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Hej, hur mår du idag?",
-                  "forward": "Как се чувстваш днес?",
-                  "returned": "Hur mår du idag?",
+                  "original": "Hej, hur m\u00e5r du idag?",
+                  "forward": "\u041a\u0430\u043a \u0441\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0430\u0448 \u0434\u043d\u0435\u0441?",
+                  "returned": "Hur m\u00e5r du idag?",
                   "similarity": 0.8649
                 },
                 {
-                  "original": "Vädret är vackert i morse.",
-                  "forward": "Времето е хубаво тази сутрин.",
-                  "returned": "Vädret är fint i morse.",
+                  "original": "V\u00e4dret \u00e4r vackert i morse.",
+                  "forward": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u0445\u0443\u0431\u0430\u0432\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d.",
+                  "returned": "V\u00e4dret \u00e4r fint i morse.",
                   "similarity": 0.8163
                 },
                 {
-                  "original": "Jag vill beställa en kopp kaffe, tack.",
-                  "forward": "Искам да поръчам кафе.",
-                  "returned": "Jag vill beställa kaffe.",
+                  "original": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "forward": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435.",
+                  "returned": "Jag vill best\u00e4lla kaffe.",
                   "similarity": 0.7742
                 }
               ]
@@ -687,19 +687,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hej, hur mår du idag?",
-                  "reference": "Здравей, как си днес?",
-                  "hypothesis": "Здравей, как си днес?"
+                  "source": "Hej, hur m\u00e5r du idag?",
+                  "reference": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "hypothesis": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?"
                 },
                 {
-                  "source": "Vädret är vackert i morse.",
-                  "reference": "Времето е подходящо за това.",
-                  "hypothesis": "Времето е прекрасно тази сутрин."
+                  "source": "V\u00e4dret \u00e4r vackert i morse.",
+                  "reference": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u043e \u0437\u0430 \u0442\u043e\u0432\u0430.",
+                  "hypothesis": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d."
                 },
                 {
-                  "source": "Jag vill beställa en kopp kaffe, tack.",
-                  "reference": "Бих искал да си поръчам чаша кафе, ако обичате.",
-                  "hypothesis": "Искам да поръчам кафе, моля."
+                  "source": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "reference": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b \u0434\u0430 \u0441\u0438 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u0447\u0430\u0448\u0430 \u043a\u0430\u0444\u0435, \u0430\u043a\u043e \u043e\u0431\u0438\u0447\u0430\u0442\u0435.",
+                  "hypothesis": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f."
                 }
               ]
             },
@@ -715,19 +715,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hej, hur mår du idag?",
-                  "reference": "Здравей, как си днес?",
-                  "hypothesis": "Здравей, как си днес?"
+                  "source": "Hej, hur m\u00e5r du idag?",
+                  "reference": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "hypothesis": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?"
                 },
                 {
-                  "source": "Vädret är vackert i morse.",
-                  "reference": "Времето е подходящо за това.",
-                  "hypothesis": "Времето е прекрасно тази сутрин."
+                  "source": "V\u00e4dret \u00e4r vackert i morse.",
+                  "reference": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u043e \u0437\u0430 \u0442\u043e\u0432\u0430.",
+                  "hypothesis": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d."
                 },
                 {
-                  "source": "Jag vill beställa en kopp kaffe, tack.",
-                  "reference": "Бих искал да си поръчам чаша кафе, ако обичате.",
-                  "hypothesis": "Искам да поръчам кафе, моля."
+                  "source": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "reference": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b \u0434\u0430 \u0441\u0438 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u0447\u0430\u0448\u0430 \u043a\u0430\u0444\u0435, \u0430\u043a\u043e \u043e\u0431\u0438\u0447\u0430\u0442\u0435.",
+                  "hypothesis": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f."
                 }
               ]
             },
@@ -743,19 +743,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hej, hur mår du idag?",
-                  "reference": "Здравей, как си днес?",
-                  "hypothesis": "Здравей, как си днес?"
+                  "source": "Hej, hur m\u00e5r du idag?",
+                  "reference": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "hypothesis": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?"
                 },
                 {
-                  "source": "Vädret är vackert i morse.",
-                  "reference": "Времето е подходящо за това.",
-                  "hypothesis": "Времето е прекрасно тази сутрин."
+                  "source": "V\u00e4dret \u00e4r vackert i morse.",
+                  "reference": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u043e \u0437\u0430 \u0442\u043e\u0432\u0430.",
+                  "hypothesis": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d."
                 },
                 {
-                  "source": "Jag vill beställa en kopp kaffe, tack.",
-                  "reference": "Бих искал да си поръчам чаша кафе, ако обичате.",
-                  "hypothesis": "Искам да поръчам кафе, моля."
+                  "source": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "reference": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b \u0434\u0430 \u0441\u0438 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u0447\u0430\u0448\u0430 \u043a\u0430\u0444\u0435, \u0430\u043a\u043e \u043e\u0431\u0438\u0447\u0430\u0442\u0435.",
+                  "hypothesis": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435, \u043c\u043e\u043b\u044f."
                 }
               ]
             },
@@ -771,19 +771,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Hej, hur mår du idag?",
-                  "reference": "Здравей, как си днес?",
-                  "hypothesis": "Как се чувстваш днес?"
+                  "source": "Hej, hur m\u00e5r du idag?",
+                  "reference": "\u0417\u0434\u0440\u0430\u0432\u0435\u0439, \u043a\u0430\u043a \u0441\u0438 \u0434\u043d\u0435\u0441?",
+                  "hypothesis": "\u041a\u0430\u043a \u0441\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0430\u0448 \u0434\u043d\u0435\u0441?"
                 },
                 {
-                  "source": "Vädret är vackert i morse.",
-                  "reference": "Времето е подходящо за това.",
-                  "hypothesis": "Времето е хубаво тази сутрин."
+                  "source": "V\u00e4dret \u00e4r vackert i morse.",
+                  "reference": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u043e \u0437\u0430 \u0442\u043e\u0432\u0430.",
+                  "hypothesis": "\u0412\u0440\u0435\u043c\u0435\u0442\u043e \u0435 \u0445\u0443\u0431\u0430\u0432\u043e \u0442\u0430\u0437\u0438 \u0441\u0443\u0442\u0440\u0438\u043d."
                 },
                 {
-                  "source": "Jag vill beställa en kopp kaffe, tack.",
-                  "reference": "Бих искал да си поръчам чаша кафе, ако обичате.",
-                  "hypothesis": "Искам да поръчам кафе."
+                  "source": "Jag vill best\u00e4lla en kopp kaffe, tack.",
+                  "reference": "\u0411\u0438\u0445 \u0438\u0441\u043a\u0430\u043b \u0434\u0430 \u0441\u0438 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u0447\u0430\u0448\u0430 \u043a\u0430\u0444\u0435, \u0430\u043a\u043e \u043e\u0431\u0438\u0447\u0430\u0442\u0435.",
+                  "hypothesis": "\u0418\u0441\u043a\u0430\u043c \u0434\u0430 \u043f\u043e\u0440\u044a\u0447\u0430\u043c \u043a\u0430\u0444\u0435."
                 }
               ]
             }
@@ -856,11 +856,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sv→bg)"
+              "reason": "no English endpoint (sv\u2192bg)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sv→bg"
+              "reason": "no reference pairs for sv\u2192bg"
             },
             "vitals": {
               "status": "complete",
@@ -914,11 +914,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sv→bg)"
+              "reason": "no English endpoint (sv\u2192bg)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sv→bg"
+              "reason": "no reference pairs for sv\u2192bg"
             },
             "vitals": {
               "status": "complete",
@@ -972,11 +972,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (sv→bg)"
+              "reason": "no English endpoint (sv\u2192bg)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for sv→bg"
+              "reason": "no reference pairs for sv\u2192bg"
             },
             "vitals": {
               "status": "complete",
@@ -1041,14 +1041,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-sv-bg/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-sv-bg/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-sv-bg/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-sv-bg/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-sv-bg",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-sv-bg/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-sv-bg/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -1057,7 +1057,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1121,14 +1121,14 @@
       },
       "best_grade": "B-",
       "best_score": 81.62,
-      "notes": "Dr. C independent certification of sv-bg. Tested 1 variant(s): base. Best variant grade: B- (81.62). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of sv-bg. Tested 1 variant(s): base. Best variant grade: B- (81.62). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-sv-bg",
       "date": "2026-04-12T21:48:41.476050+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 86.5, after: 85.5, delta: -1.1. No improvement — discarded.",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 49950 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 86.5, after: 85.5, delta: -1.1. No improvement \u2014 discarded.",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (49950 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1137,7 +1137,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base"
@@ -1179,14 +1179,14 @@
       "best_stars": 5.0,
       "best_tier": "premium",
       "best_composite": 89.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 5.0★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 5.0\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-P1-sv-bg",
       "date": "2026-04-14T03:29:47.712362+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 1: 3 epochs, lr=5e-06, 49950 pairs. Score 86.5→86.7 (Δ+0.2). IMPROVED — saved as herm0/",
+      "method": "Herm0 improvement Phase 1: 3 epochs, lr=5e-06, 49950 pairs. Score 86.5\u219286.7 (\u0394+0.2). IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 1 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 3 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1197,7 +1197,7 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (75 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (75 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-sv-bg",
@@ -1242,7 +1242,7 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-REGRESS-sv-bg",
@@ -1260,7 +1260,18 @@
       "shipped_herm0_ct2": false,
       "herm0_on_disk": true,
       "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
-      "notes": "Grand Rounds v2 paragraph-level composite score: base=89.5 herm0=84.0 delta=-5.50. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=89.5 herm0=84.0 delta=-5.50. Below threshold of -5.0 \u2192 herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (\u2261 base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-sv-bg",
+      "date": "2026-04-19T05:30:07.137832+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-sv-bg",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [],
+      "hf_url": "https://huggingface.co/WindyWord/translate-sv-bg",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: . Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1399,7 +1410,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:32:10.167564+00:00",
       "variant_scores": {}
@@ -1413,7 +1424,7 @@
     "lora_size_mb": 298.36,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:05:47.771280+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1423,7 +1434,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
       "details": {
         "data_samples": 50000,
         "epochs": 1,

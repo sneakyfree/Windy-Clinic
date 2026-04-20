@@ -1,18 +1,18 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-13T20:15:01.354351+00:00",
+  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-bible-big-afa-deu_eng_fra_por_spa.json",
   "patient_id": "tc-bible-big-afa-deu_eng_fra_por_spa",
   "admitted": "2026-03-22T19:46:03.014224+00:00",
   "source_repo": "Helsinki-NLP/opus-mt-tc-bible-big-afa-deu_eng_fra_por_spa",
   "source_language": {
-    "code": "tc",
-    "name": "tc",
+    "code": "afa",
+    "name": "Afro-Asiatic",
     "family": "Unknown"
   },
   "target_language": {
     "code": "deu_eng_fra_por_spa",
-    "name": "deu_eng_fra_por_spa",
+    "name": "German/English/French/Portuguese/Spanish",
     "family": "Unknown"
   },
   "variant_cluster": {
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-bible-big-afa-deu_eng_fra_por_spa/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-afa-deu_eng_fra_por_spa/tree/main/lora",
+      "hf_uploaded_at": "2026-04-20T12:09:50.557334+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-bible-big-afa-deu_eng_fra_por_spa/lora-ct2-int8",
       "on_disk_bytes": 246415360,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-afa-deu_eng_fra_por_spa/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-20T12:09:50.557334+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -100,7 +104,7 @@
       "date": "2026-03-22T19:46:03.014224+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification \u2014 binary quality checks per sentence",
+      "method": "10-sentence certification — binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,27 +120,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+              "input": "مرحباً، كيف حالك اليوم؟",
               "output": "Hi hi hi hi hi hi hi hi hi hi, how how are you today today? how how day day day? how how day day day? how how??",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
+              "input": "الطقس جميل هذا الصباح.",
               "output": "It is beautiful weather beautiful this morning morning morning morning morning morning weather weather weather is beautiful weather this morning. this morning is very nice weather weather this this morning morning morning.. weather weather weather weather weather this this this this this this morning morning is is very very nice weather weather this this this this morning morning.. weather weather weather weather weather weather this this this this this this this this this morning morning is is weather weather weather weather weather weather weather weather weather weather weather this this this this this this this this this this this this this morning morning is weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
               "output": "I would like a a coffee coffee coffee coffee coffee coffee cup, please please please please please please please, please please, please for a a cup of coffee coffee for a cup cup cup coffee coffee, please please please please please please please please please please please please please please for for for for a a a cup cup cup cup cup cup coffee coffee for a a coffee for for a a a a a coffee for for for for for for a a a a cup cup cup cup cup cup cup cup cup cup cup cup cup coffee coffee, please please please please please please please please please please please please please please please please please please please",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
               "output": "A quick quick quick br br br br br br br br br br br br a quick quick quick br br br br br br br br br br br br br br br br br br br br br br br br br br br a quick quick quick quick br br br br br br br br br br br br br br br br br br br br br br a jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump a dog the the dog the dog the dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
               "output": "Art Art Art Art Art Art Art Art Art Intelligence is changing changing the world changing changing changing the world changing changing changing the world.",
               "passed": true
             }
@@ -150,27 +154,27 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+              "input": "مرحباً، كيف حالك اليوم؟",
               "output": "Hi hi hi hi hi hi hi hi hi hi, how how are you today today? how how day day day? how how day day day? how how??",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
+              "input": "الطقس جميل هذا الصباح.",
               "output": "It is beautiful weather beautiful this morning morning morning morning morning morning weather weather weather is beautiful weather this morning. this morning is very nice weather weather this this morning morning morning.. weather weather weather weather weather this this this this this this morning morning is is very very nice weather weather this this this this morning morning.. weather weather weather weather weather weather this this this this this this this this this morning morning is is weather weather weather weather weather weather weather weather weather weather weather this this this this this this this this this this this this this morning morning is weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather weather",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
               "output": "I would like a a coffee coffee coffee coffee coffee coffee cup, please please please please please please please, please please, please for a a cup of coffee coffee for a cup cup cup coffee coffee, please please please please please please please please please please please please please please for for for for a a a cup cup cup cup cup cup coffee coffee for a a coffee for for a a a a a coffee for for for for for for a a a a cup cup cup cup cup cup cup cup cup cup cup cup cup coffee coffee, please please please please please please please please please please please please please please please please please please please",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
               "output": "A quick quick quick br br br br br br br br br br br br a quick quick quick br br br br br br br br br br br br br br br br br br br br br br br br br br br a quick quick quick quick br br br br br br br br br br br br br br br br br br br br br br a jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump jump a dog the the dog the dog the dog the dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog dog",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
               "output": "Art Art Art Art Art Art Art Art Art Intelligence is changing changing the world changing changing changing the world changing changing changing the world.",
               "passed": true
             }
@@ -184,34 +188,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "\u0645\u0631\u062d\u0628\u0627\u064b\u060c \u0643\u064a\u0641 \u062d\u0627\u0644\u0643 \u0627\u0644\u064a\u0648\u0645\u061f",
+              "input": "مرحباً، كيف حالك اليوم؟",
               "output": "hi hi hi hi hi hi hi hi hi hi hi, how how how are you doing today day day? how how day day day day today? how how day day today?",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u0637\u0642\u0633 \u062c\u0645\u064a\u0644 \u0647\u0630\u0627 \u0627\u0644\u0635\u0628\u0627\u062d.",
+              "input": "الطقس جميل هذا الصباح.",
               "output": "It's beautiful weather this morning this morning. very nice weather this morning morning. weather weather this morning. very nice weather weather this morning. this morning. weather weather is very very nice weather this this this morning morning morning.. weather weather very very very nice weather weather this this this this this this this morning morning morning.. weather weather weather weather weather is very nice weather weather this this this this weather weather weather weather weather this this this this morning. very very very very weather weather weather weather weather weather weather weather weather weather weather this this this this this this this this weather weather weather weather weather weather weather weather weather weather weather",
               "passed": true
             },
             {
-              "input": "\u0623\u0648\u062f \u0623\u0646 \u0623\u0637\u0644\u0628 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643.",
+              "input": "أود أن أطلب فنجان قهوة من فضلك.",
               "output": "I would want a a cup of coffee coffee coffee coffee coffee, please please please please please please, please please, please for a cup of coffee coffee, please please please please please please please for for a a cup cup of coffee, please please please please please please please please for for for for a a a cup coffee for for for a a a cup cup coffee, please please please please please please please please please please please please please please please please please please please for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for for",
               "passed": true
             },
             {
-              "input": "\u0627\u0644\u062b\u0639\u0644\u0628 \u0627\u0644\u0628\u0646\u064a \u0627\u0644\u0633\u0631\u064a\u0639 \u064a\u0642\u0641\u0632 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0628 \u0627\u0644\u0643\u0633\u0648\u0644.",
+              "input": "الثعلب البني السريع يقفز فوق الكلب الكسول.",
               "output": "A fast fast fast br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br br a fast fast fast br br br br br br br br br br br br br br br br br br br br br br br br br a jump jump jump jump jump jump jump jump jump jump on a dog the the dog dog the dog dog dog dog dog dog dog dog",
               "passed": false
             },
             {
-              "input": "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u063a\u064a\u0631 \u0627\u0644\u0639\u0627\u0644\u0645.",
+              "input": "الذكاء الاصطناعي يغير العالم.",
               "output": "Intel artificial artificial artificial artificial artificial artificial intelligence is changing changing the world changing changing changing the world changing changing changing changing changing the world changing changing changing the world changing changing changing the world changing changing changing changing changing the world changing changing changing changing changing the world changing changing changing the world changing changing changing changing changing changing the world changing changing changing the world changing changing changing changing changing changing changing changing the world changing changing changing the world changing changing changing the world changing changing changing changing changing changing changing the world changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing changing the the the world changing the the the the the",
               "passed": false
             }
           ]
         }
       },
-      "notes": "Sweep 1 \u2014 source-language-aware certification"
+      "notes": "Sweep 1 — source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +249,14 @@
           "stars": 2.0
         }
       },
-      "notes": "Sweep 2 \u2014 recertification"
+      "notes": "Sweep 2 — recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:09:37.370911+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -268,11 +272,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Aujourd Aujourd Aujourd Aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd est tr\u00e8s beau beau beau beau beau aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s agr\u00e9able aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd           tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd",
+            "Aujourd Aujourd Aujourd Aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd est très beau beau beau beau beau aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très agréable aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd           très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd",
             "I would like like to order order a cup cup cup of coffee coffee coffee coffee coffee coffee coffee coffee please please please please please please please please please please please please please .. please please please please please please .. please please please please please please  ...                        . please please please please please please please please please please please please please               i i i i i i i i i i i i i i i i i i i i i i i",
             "The children children are playing play play play play play in the par par par par par par par par par par par par par par par par par par par par par par par par par par..",
             "Quelle heure le temps que le train train le temps de vacances vacances en voyage en train??",
-            "She worked in hospital hospital hospital hospital hospital for 10 ans, 10 10 ans, she a \u00e9t\u00e9 hospital hospital hospital hospital hospital hospital ."
+            "She worked in hospital hospital hospital hospital hospital for 10 ans, 10 10 ans, she a été hospital hospital hospital hospital hospital hospital ."
           ]
         },
         "lora": {
@@ -283,11 +287,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Aujourd Aujourd Aujourd Aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd est tr\u00e8s beau beau beau beau beau aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s agr\u00e9able aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd           tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd        tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s tr\u00e8s                       aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd",
+            "Aujourd Aujourd Aujourd Aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd est très beau beau beau beau beau aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très agréable aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd très très très très très très très très très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd           très très très très très très très très très très très très très très très très très très très très très très très aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd        très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très très                       aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd aujourd",
             "I would like like to order order a cup cup cup of coffee coffee coffee coffee coffee coffee coffee coffee please please please please please please please please please please please please please .. please please please please please please .. please please please please please please please  ...               i i i i i i i i i i i i i i i i i i i i i i i i i please please please please please please please please please please please please please please please please please              so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so so please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please please",
             "The children children are playing play play play play play in the par par par par par par par par par par par par par par par par par par par par par par par par par par..",
             "Quelle heure le temps que le train train le temps de vacances vacances en voyage en train??",
-            "She worked in hospital hospital hospital hospital hospital for 10 ans, 10 10 ans, she a \u00e9t\u00e9 hospital hospital hospital hospital hospital hospital ."
+            "She worked in hospital hospital hospital hospital hospital for 10 ans, 10 10 ans, she a été hospital hospital hospital hospital hospital hospital ."
           ],
           "delta_vs_base": 0.0
         },
@@ -321,7 +325,7 @@
       "date": "2026-03-23T07:09:37.370911+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
+      "method": "Independent replication — 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +388,7 @@
       "date": "2026-03-24T06:42:14.113190+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +424,7 @@
       "date": "2026-03-24T19:48:54.436910+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +447,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -501,11 +505,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (afa\u2192deu_eng_fra_por_spa)"
+              "reason": "no English endpoint (afa→deu_eng_fra_por_spa)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for afa\u2192deu_eng_fra_por_spa"
+              "reason": "no reference pairs for afa→deu_eng_fra_por_spa"
             },
             "vitals": {
               "status": "complete",
@@ -559,7 +563,7 @@
       "date": "2026-04-11T20:31:15.115717+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -642,7 +646,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -774,7 +778,7 @@
       },
       "best_grade": "D-",
       "best_score": 61.05,
-      "notes": "Dr. C independent certification of tc-bible-big-afa-deu_eng_fra_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: D- (61.05). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-bible-big-afa-deu_eng_fra_por_spa. Tested 2 variant(s): base, ct2_int8. Best variant grade: D- (61.05). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-bible-big-afa-deu_eng_fra_por_spa",
@@ -790,7 +794,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -864,7 +868,35 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tc-bible-big-afa-deu_eng_fra_por_spa",
+      "date": "2026-04-20T12:09:50.557334+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tc-bible-big-afa-deu_eng_fra_por_spa",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-afa-deu_eng_fra_por_spa",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-LANGCODE-FIX-tc-bible-big-afa-deu_eng_fra_por_spa",
+      "date": "2026-04-20T13:07:22.747916+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Correct source/target language codes parsed from pid (Helsinki family-prefix stripping)",
+      "old_src": "tc",
+      "old_tgt": "deu_eng_fra_por_spa",
+      "new_src": "afa",
+      "new_tgt": "deu_eng_fra_por_spa",
+      "src_name": "Afro-Asiatic",
+      "tgt_name": "German/English/French/Portuguese/Spanish",
+      "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1007,7 +1039,7 @@
       "oc1_stars_reference": 4.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
+      "doctor": "Herm Zero (Dr. B) — STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:42:14.113190+00:00",
       "variant_scores": {}
@@ -1021,7 +1053,7 @@
     "lora_size_mb": 957.4,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:19:22.179928+00:00",
-    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1031,7 +1063,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

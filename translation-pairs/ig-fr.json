@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:50:31.471263+00:00",
+  "_last_updated": "2026-04-18T04:21:52.060680+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/ig-fr.json",
   "patient_id": "ig-fr",
   "admitted": "2026-03-22T19:37:28.963409+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "note": "Weights not found on disk. May have been deleted, renamed, or archived as ONNX (see variant_cluster.onnx_int8_archive if present).",
@@ -141,7 +141,7 @@
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only — no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
+      "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
       "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
@@ -175,7 +175,7 @@
       "date": "2026-03-22T19:37:28.963409+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -197,7 +197,7 @@
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "J'ai fait la connaissance d'un homme qui m'a dit: \"C'est comme ça que j'ai fait la connaissance de Jéhovah.",
+              "output": "J'ai fait la connaissance d'un homme qui m'a dit: \"C'est comme \u00e7a que j'ai fait la connaissance de J\u00e9hovah.",
               "passed": true
             },
             {
@@ -207,7 +207,7 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "L'ESPEPE (angl.) était plein d'agraphes.",
+              "output": "L'ESPEPE (angl.) \u00e9tait plein d'agraphes.",
               "passed": true
             },
             {
@@ -231,7 +231,7 @@
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "J'ai fait la connaissance d'un homme qui m'a dit: \"C'est comme ça que j'ai fait la connaissance de Jéhovah.",
+              "output": "J'ai fait la connaissance d'un homme qui m'a dit: \"C'est comme \u00e7a que j'ai fait la connaissance de J\u00e9hovah.",
               "passed": true
             },
             {
@@ -241,7 +241,7 @@
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "L'ESPEPE (angl.) était plein d'agraphes.",
+              "output": "L'ESPEPE (angl.) \u00e9tait plein d'agraphes.",
               "passed": true
             },
             {
@@ -286,7 +286,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -320,14 +320,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:04:20.583758+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -343,11 +343,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "L'ail a été mis au point avec l'aimable autorisation d'un aigle.",
+            "L'ail a \u00e9t\u00e9 mis au point avec l'aimable autorisation d'un aigle.",
             "L'EBFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTITITITITITITIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTITITITITITIFFFF",
-            "Le livre La nuit est tombée dans l'oubli (angl.).",
+            "Le livre La nuit est tomb\u00e9e dans l'oubli (angl.).",
             "Quel est le point de vue de la Bible sur le mariage?",
-            "Shils ont ajouté à l'aide d'un guide intitulé Les valeurs morales à l'égard des droits de l'homme: www.watchtower.org."
+            "Shils ont ajout\u00e9 \u00e0 l'aide d'un guide intitul\u00e9 Les valeurs morales \u00e0 l'\u00e9gard des droits de l'homme: www.watchtower.org."
           ]
         },
         "lora": {
@@ -358,11 +358,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "L'ail a été mis au point avec l'aimable autorisation d'un aigle.",
+            "L'ail a \u00e9t\u00e9 mis au point avec l'aimable autorisation d'un aigle.",
             "L'EBFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTITITITITITITIFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFTITITITITITIFFFF",
-            "Le livre La nuit est tombée dans l'oubli (angl.).",
+            "Le livre La nuit est tomb\u00e9e dans l'oubli (angl.).",
             "Quel est le point de vue de la Bible sur le mariage?",
-            "Shils ont ajouté à l'aide d'un guide intitulé Les valeurs morales à l'égard des droits de l'homme: www.watchtower.org."
+            "Shils ont ajout\u00e9 \u00e0 l'aide d'un guide intitul\u00e9 Les valeurs morales \u00e0 l'\u00e9gard des droits de l'homme: www.watchtower.org."
           ],
           "delta_vs_base": 0.0
         },
@@ -396,7 +396,7 @@
       "date": "2026-03-23T06:04:20.583758+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -459,7 +459,7 @@
       "date": "2026-03-24T06:00:28.874094+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -495,7 +495,7 @@
       "date": "2026-03-24T17:36:28.587927+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -518,7 +518,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -536,7 +536,7 @@
       "date": "2026-03-28T15:46:17.699911+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -546,7 +546,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 72.75,
@@ -555,21 +555,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Taa, olee otú i si akpa àgwà?",
-                  "forward": "Aujourd'hui, comment réagissez - vous?",
-                  "returned": "Olee ihe ị na - eme ugbu a?",
+                  "original": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
+                  "forward": "Aujourd'hui, comment r\u00e9agissez - vous?",
+                  "returned": "Olee ihe \u1ecb na - eme ugbu a?",
                   "similarity": 0.3571
                 },
                 {
-                  "original": "Ihu igwe mara mma n'ụtụtụ a.",
-                  "forward": "Ce matin - là, le climat était beau.",
-                  "returned": "Ihu igwe mara mma n'ụtụtụ ahụ.",
+                  "original": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
+                  "forward": "Ce matin - l\u00e0, le climat \u00e9tait beau.",
+                  "returned": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 ah\u1ee5.",
                   "similarity": 0.9655
                 },
                 {
-                  "original": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "forward": "S'il vous plaît, je voudrais vous donner un café.",
-                  "returned": "Biko, m ga - enye gị kọfị. \"",
+                  "original": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "forward": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9.",
+                  "returned": "Biko, m ga - enye g\u1ecb k\u1ecdf\u1ecb. \"",
                   "similarity": 0.7463
                 }
               ]
@@ -581,21 +581,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Taa, olee otú i si akpa àgwà?",
-                  "forward": "Aujourd'hui, comment réagissez - vous?",
-                  "returned": "Olee ihe ị na - eme ugbu a?",
+                  "original": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
+                  "forward": "Aujourd'hui, comment r\u00e9agissez - vous?",
+                  "returned": "Olee ihe \u1ecb na - eme ugbu a?",
                   "similarity": 0.3571
                 },
                 {
-                  "original": "Ihu igwe mara mma n'ụtụtụ a.",
-                  "forward": "Ce matin - là, le climat était beau.",
-                  "returned": "Ihu igwe mara mma n'ụtụtụ ahụ.",
+                  "original": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
+                  "forward": "Ce matin - l\u00e0, le climat \u00e9tait beau.",
+                  "returned": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 ah\u1ee5.",
                   "similarity": 0.9655
                 },
                 {
-                  "original": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "forward": "S'il vous plaît, je voudrais vous donner un café.",
-                  "returned": "Biko, m ga - enye gị kọfị. \"",
+                  "original": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "forward": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9.",
+                  "returned": "Biko, m ga - enye g\u1ecb k\u1ecdf\u1ecb. \"",
                   "similarity": 0.7463
                 }
               ]
@@ -607,21 +607,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Taa, olee otú i si akpa àgwà?",
-                  "forward": "Aujourd'hui, comment réagissez - vous?",
-                  "returned": "Olee ihe ị na - eme ugbu a?",
+                  "original": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
+                  "forward": "Aujourd'hui, comment r\u00e9agissez - vous?",
+                  "returned": "Olee ihe \u1ecb na - eme ugbu a?",
                   "similarity": 0.3571
                 },
                 {
-                  "original": "Ihu igwe mara mma n'ụtụtụ a.",
-                  "forward": "Ce matin - là, le climat était beau.",
-                  "returned": "Ihu igwe mara mma n'ụtụtụ ahụ.",
+                  "original": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
+                  "forward": "Ce matin - l\u00e0, le climat \u00e9tait beau.",
+                  "returned": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 ah\u1ee5.",
                   "similarity": 0.9655
                 },
                 {
-                  "original": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "forward": "S'il vous plaît, je voudrais vous donner un café.",
-                  "returned": "Biko, m ga - enye gị kọfị. \"",
+                  "original": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "forward": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9.",
+                  "returned": "Biko, m ga - enye g\u1ecb k\u1ecdf\u1ecb. \"",
                   "similarity": 0.7463
                 }
               ]
@@ -633,21 +633,21 @@
               "max": 96.55,
               "sentences": [
                 {
-                  "original": "Taa, olee otú i si akpa àgwà?",
+                  "original": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
                   "forward": "Aujourd'hui, comment vous conduisez - vous?",
-                  "returned": "Olee otú i si ele onwe gị anya ugbu a?",
+                  "returned": "Olee ot\u00fa i si ele onwe g\u1ecb anya ugbu a?",
                   "similarity": 0.5672
                 },
                 {
-                  "original": "Ihu igwe mara mma n'ụtụtụ a.",
-                  "forward": "Ce matin - là, le climat était beau.",
-                  "returned": "Ihu igwe mara mma n'ụtụtụ ahụ.",
+                  "original": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
+                  "forward": "Ce matin - l\u00e0, le climat \u00e9tait beau.",
+                  "returned": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 ah\u1ee5.",
                   "similarity": 0.9655
                 },
                 {
-                  "original": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "forward": "S'il vous plaît, je voudrais vous donner un café.",
-                  "returned": "Biko, m ga - enye gị kọfị. \"",
+                  "original": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "forward": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9.",
+                  "returned": "Biko, m ga - enye g\u1ecb k\u1ecdf\u1ecb. \"",
                   "similarity": 0.7463
                 }
               ]
@@ -692,19 +692,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Taa, olee otú i si akpa àgwà?",
+                  "source": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "hypothesis": "Aujourd'hui, comment réagissez - vous?"
+                  "hypothesis": "Aujourd'hui, comment r\u00e9agissez - vous?"
                 },
                 {
-                  "source": "Ihu igwe mara mma n'ụtụtụ a.",
+                  "source": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
                   "reference": "Le temps est beau ce matin.",
-                  "hypothesis": "Ce matin - là, le climat était beau."
+                  "hypothesis": "Ce matin - l\u00e0, le climat \u00e9tait beau."
                 },
                 {
-                  "source": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "reference": "J'aimerais commander un café, s'il vous plaît.",
-                  "hypothesis": "S'il vous plaît, je voudrais vous donner un café."
+                  "source": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+                  "hypothesis": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9."
                 }
               ]
             },
@@ -720,19 +720,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Taa, olee otú i si akpa àgwà?",
+                  "source": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "hypothesis": "Aujourd'hui, comment réagissez - vous?"
+                  "hypothesis": "Aujourd'hui, comment r\u00e9agissez - vous?"
                 },
                 {
-                  "source": "Ihu igwe mara mma n'ụtụtụ a.",
+                  "source": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
                   "reference": "Le temps est beau ce matin.",
-                  "hypothesis": "Ce matin - là, le climat était beau."
+                  "hypothesis": "Ce matin - l\u00e0, le climat \u00e9tait beau."
                 },
                 {
-                  "source": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "reference": "J'aimerais commander un café, s'il vous plaît.",
-                  "hypothesis": "S'il vous plaît, je voudrais vous donner un café."
+                  "source": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+                  "hypothesis": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9."
                 }
               ]
             },
@@ -748,19 +748,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Taa, olee otú i si akpa àgwà?",
+                  "source": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
-                  "hypothesis": "Aujourd'hui, comment réagissez - vous?"
+                  "hypothesis": "Aujourd'hui, comment r\u00e9agissez - vous?"
                 },
                 {
-                  "source": "Ihu igwe mara mma n'ụtụtụ a.",
+                  "source": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
                   "reference": "Le temps est beau ce matin.",
-                  "hypothesis": "Ce matin - là, le climat était beau."
+                  "hypothesis": "Ce matin - l\u00e0, le climat \u00e9tait beau."
                 },
                 {
-                  "source": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "reference": "J'aimerais commander un café, s'il vous plaît.",
-                  "hypothesis": "S'il vous plaît, je voudrais vous donner un café."
+                  "source": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+                  "hypothesis": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9."
                 }
               ]
             },
@@ -776,19 +776,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Taa, olee otú i si akpa àgwà?",
+                  "source": "Taa, olee ot\u00fa i si akpa \u00e0gw\u00e0?",
                   "reference": "Bonjour, comment allez-vous aujourd'hui ?",
                   "hypothesis": "Aujourd'hui, comment vous conduisez - vous?"
                 },
                 {
-                  "source": "Ihu igwe mara mma n'ụtụtụ a.",
+                  "source": "Ihu igwe mara mma n'\u1ee5t\u1ee5t\u1ee5 a.",
                   "reference": "Le temps est beau ce matin.",
-                  "hypothesis": "Ce matin - là, le climat était beau."
+                  "hypothesis": "Ce matin - l\u00e0, le climat \u00e9tait beau."
                 },
                 {
-                  "source": "Biko, m ga - achọ inye gị otu iko kọfị.",
-                  "reference": "J'aimerais commander un café, s'il vous plaît.",
-                  "hypothesis": "S'il vous plaît, je voudrais vous donner un café."
+                  "source": "Biko, m ga - ach\u1ecd inye g\u1ecb otu iko k\u1ecdf\u1ecb.",
+                  "reference": "J'aimerais commander un caf\u00e9, s'il vous pla\u00eet.",
+                  "hypothesis": "S'il vous pla\u00eet, je voudrais vous donner un caf\u00e9."
                 }
               ]
             }
@@ -861,11 +861,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ig→fr)"
+              "reason": "no English endpoint (ig\u2192fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ig→fr"
+              "reason": "no reference pairs for ig\u2192fr"
             },
             "vitals": {
               "status": "complete",
@@ -919,11 +919,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ig→fr)"
+              "reason": "no English endpoint (ig\u2192fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ig→fr"
+              "reason": "no reference pairs for ig\u2192fr"
             },
             "vitals": {
               "status": "complete",
@@ -977,11 +977,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ig→fr)"
+              "reason": "no English endpoint (ig\u2192fr)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ig→fr"
+              "reason": "no reference pairs for ig\u2192fr"
             },
             "vitals": {
               "status": "complete",
@@ -1046,14 +1046,14 @@
       "variants_restored": [
         "base"
       ],
-      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ig-fr/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights — NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ig-fr/). Non-destructive: symlinks only, no files moved or deleted."
+      "notes": "On 2026-03-29 ~18:25-20:09 UTC, this patient's base/lora/ct2 safetensors were deleted after INT8 ONNX export. Only model_int8.onnx (56 MB, no tokenizer) remained locally. On 2026-04-11, Opus 4.6 Opus-Claw (Dr. C) re-downloaded the original Helsinki-NLP base weights from HuggingFace and symlinked them into models/windy-pair-ig-fr/base so the grand rounds harness can load them. The restored base is the ORIGINAL pre-fine-tune Helsinki-NLP weights \u2014 NOT Herm Zero's OPUS-improved herm0 variant (those exist only as INT8 ONNX at ~/Desktop/grants_folder/windy-pro/onnx_fleet/windy-pair-ig-fr/). Non-destructive: symlinks only, no files moved or deleted."
     },
     {
       "exam_id": "DRC-ONNX-RELOCATE-ig-fr",
       "date": "2026-04-11T21:06:19.560202+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Directory rename: onnx_fleet/windy-pair-*/ → onnx_fleet/herm0_int8/windy-pair-*/",
+      "method": "Directory rename: onnx_fleet/windy-pair-*/ \u2192 onnx_fleet/herm0_int8/windy-pair-*/",
       "protocol_script": "inline in session",
       "notes": "Moved the INT8 ONNX archive into onnx_fleet/herm0_int8/ to make it unambiguous that these files represent the HERM0-IMPROVED variant (OPUS fine-tune), NOT the base Helsinki-NLP weights. After the 2026-04-11 restore pass, models/windy-pair-ig-fr/base/ is a symlink to the ORIGINAL Helsinki-NLP base weights, while onnx_fleet/herm0_int8/windy-pair-ig-fr/model_int8.onnx is the improved variant. These are different models with different quality grades. Variant key renamed from \"onnx_int8_archive\" to \"herm0_int8_onnx\" for clarity."
     },
@@ -1062,7 +1062,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base"
@@ -1126,14 +1126,14 @@
       },
       "best_grade": "A",
       "best_score": 95.5,
-      "notes": "Dr. C independent certification of ig-fr. Tested 1 variant(s): base. Best variant grade: A (95.5). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ig-fr. Tested 1 variant(s): base. Best variant grade: A (95.5). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-HERM0RECREATE-ig-fr",
       "date": "2026-04-12T19:35:58.645982+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm Zero model recreation — OPUS-100 deep fine-tune. Data: 157 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 71.8, after: 73.4, delta: 1.6. IMPROVED — saved as herm0/",
+      "method": "Herm Zero model recreation \u2014 OPUS-100 deep fine-tune. Data: 157 parallel pairs from cached corpus. Training: 1 epoch, lr=1e-5, batch=16, fp16. Score before: 71.8, after: 73.4, delta: 1.6. IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/recreate_herm0_models.py",
       "notes": "Recreating the herm0-improved variant that was lost in the 2026-03-29 ONNX deletion event. Using Herm Zero's cached training data (157 pairs from OPUS-100/Tatoeba/WikiMatrix/CCAligned). Same methodology: 1 epoch full weight update. Status: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1142,7 +1142,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "base",
@@ -1216,7 +1216,7 @@
       "best_stars": 4.5,
       "best_tier": "premium",
       "best_composite": 78.2,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5★ (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: base at 4.5\u2605 (premium). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-HERM0-ig-fr",
@@ -1261,7 +1261,7 @@
           }
         }
       },
-      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0★ (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "GR v2 certification of herm0 (proprietary deeply-improved) variant. Rating: 4.0\u2605 (standard). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-REGRESS-ig-fr",
@@ -1279,19 +1279,30 @@
       "shipped_herm0_ct2": false,
       "herm0_on_disk": true,
       "action_taken": "herm0/herm0-ct2-int8 added to upload_skiplist; will not be shipped.",
-      "notes": "Grand Rounds v2 paragraph-level composite score: base=78.2 herm0=71.6 delta=-6.60. Below threshold of -5.0 → herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (≡ base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level composite score: base=78.2 herm0=71.6 delta=-6.60. Below threshold of -5.0 \u2192 herm0 fine-tune regressed vs base. Added to HERM0_SKIP_PIDS in huggingface-uploads/herm0_skiplist.json. Upload pipeline (upload_to_huggingface.py, upload_parallel.py) now skips herm0 and herm0-ct2-int8 variants for this pid; users fall back to lora (\u2261 base quality). herm0/ directory retained on disk for future investigation / retraining. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-DRIFT-RECONCILE-ig-fr",
       "date": "2026-04-16T18:50:31.471263+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Targeted drift reconciliation — back-annotate disk variants not declared in patient file",
+      "method": "Targeted drift reconciliation \u2014 back-annotate disk variants not declared in patient file",
       "protocol_script": "scripts/reconcile_drift_v2 (inline Dr. C one-off)",
       "variants_added": [
         "herm0_ct2_int8"
       ],
       "notes": "Drift reconcile added 1 variant(s) to variant_cluster: ['herm0_ct2_int8']. These weights existed on disk (from Phase 4 CT2 quantize / herm0 fine-tune) but were not back-annotated into the patient file. Upload pipeline reads disk directly so uploads were not blocked, but the clinical record was stale. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-ig-fr",
+      "date": "2026-04-18T04:21:52.060680+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-ig-fr",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [],
+      "hf_url": "https://huggingface.co/WindyWord/translate-ig-fr",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: . Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1430,7 +1441,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:00:28.874094+00:00",
       "variant_scores": {}
@@ -1444,7 +1455,7 @@
     "lora_size_mb": 299.36,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:27:45.404497+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1454,7 +1465,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "Deep LoRA fine-tune, beats base — model saved as herm0/v2.0",
+      "procedure": "Deep LoRA fine-tune, beats base \u2014 model saved as herm0/v2.0",
       "details": {
         "data_samples": 206,
         "epochs": 3,

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-04-19T05:01:48.150231+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/mt-en.json",
   "patient_id": "mt-en",
   "admitted": "2026-03-22T19:40:12.754411+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-mt-en/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-mt-en/tree/main/lora",
+      "hf_uploaded_at": "2026-04-19T05:01:48.150231+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-mt-en/lora-ct2-int8",
       "on_disk_bytes": 75497472,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-mt-en/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-19T05:01:48.150231+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -95,7 +99,9 @@
       "score_after": 89.3,
       "delta": 4.1,
       "improved_at": "2026-04-14T08:43:56.464296+00:00",
-      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-mt-en/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-19T05:01:48.150231+00:00"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -104,7 +110,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-mt-en/herm0-ct2-int8",
       "on_disk_bytes": 75870184,
       "quantized_at": "2026-04-15T20:54:08.641312+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-mt-en/tree/main/herm0-ct2-int8",
+      "hf_uploaded_at": "2026-04-19T05:01:48.150231+00:00"
     }
   },
   "architecture": {
@@ -120,7 +128,7 @@
       "date": "2026-03-22T19:40:12.754411+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -136,27 +144,27 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Bonġu, kif int illum?",
+              "input": "Bon\u0121u, kif int illum?",
               "output": "Well, how are you today?",
               "passed": true
             },
             {
-              "input": "It-temp sabiħ dalgħodu.",
+              "input": "It-temp sabi\u0127 dalg\u0127odu.",
               "output": "The beautiful weather this morning.",
               "passed": true
             },
             {
-              "input": "Nixtieq nordna tazza kafè, jekk jogħġbok.",
+              "input": "Nixtieq nordna tazza kaf\u00e8, jekk jog\u0127\u0121bok.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Il-volpi kannella ħafifa taqbeż fuq il-kelb għażżien.",
+              "input": "Il-volpi kannella \u0127afifa taqbe\u017c fuq il-kelb g\u0127a\u017c\u017cien.",
               "output": "The light brown fox jumps over the lazy dog.",
               "passed": true
             },
             {
-              "input": "L-intelliġenza artifiċjali qed tibdel id-dinja.",
+              "input": "L-intelli\u0121enza artifi\u010bjali qed tibdel id-dinja.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -170,27 +178,27 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Bonġu, kif int illum?",
+              "input": "Bon\u0121u, kif int illum?",
               "output": "Well, how are you today?",
               "passed": true
             },
             {
-              "input": "It-temp sabiħ dalgħodu.",
+              "input": "It-temp sabi\u0127 dalg\u0127odu.",
               "output": "The beautiful weather this morning.",
               "passed": true
             },
             {
-              "input": "Nixtieq nordna tazza kafè, jekk jogħġbok.",
+              "input": "Nixtieq nordna tazza kaf\u00e8, jekk jog\u0127\u0121bok.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Il-volpi kannella ħafifa taqbeż fuq il-kelb għażżien.",
+              "input": "Il-volpi kannella \u0127afifa taqbe\u017c fuq il-kelb g\u0127a\u017c\u017cien.",
               "output": "The light brown fox jumps over the lazy dog.",
               "passed": true
             },
             {
-              "input": "L-intelliġenza artifiċjali qed tibdel id-dinja.",
+              "input": "L-intelli\u0121enza artifi\u010bjali qed tibdel id-dinja.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -204,34 +212,34 @@
           "quality_label": "Fair",
           "sample_translations": [
             {
-              "input": "Bonġu, kif int illum?",
+              "input": "Bon\u0121u, kif int illum?",
               "output": "Bonus, how are you today?",
               "passed": true
             },
             {
-              "input": "It-temp sabiħ dalgħodu.",
+              "input": "It-temp sabi\u0127 dalg\u0127odu.",
               "output": "The beautiful weather this morning.",
               "passed": true
             },
             {
-              "input": "Nixtieq nordna tazza kafè, jekk jogħġbok.",
+              "input": "Nixtieq nordna tazza kaf\u00e8, jekk jog\u0127\u0121bok.",
               "output": "I would like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Il-volpi kannella ħafifa taqbeż fuq il-kelb għażżien.",
+              "input": "Il-volpi kannella \u0127afifa taqbe\u017c fuq il-kelb g\u0127a\u017c\u017cien.",
               "output": "The light brown fox exceeds the lazy dog.",
               "passed": true
             },
             {
-              "input": "L-intelliġenza artifiċjali qed tibdel id-dinja.",
+              "input": "L-intelli\u0121enza artifi\u010bjali qed tibdel id-dinja.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -265,14 +273,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T06:29:23.499288+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -341,7 +349,7 @@
       "date": "2026-03-23T06:29:23.499288+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -404,7 +412,7 @@
       "date": "2026-03-24T06:14:18.539308+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -440,7 +448,7 @@
       "date": "2026-03-24T18:03:09.037569+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -482,7 +490,7 @@
       "notes": "Back-translation pair en-mt<->mt-en: score 82.7, similarity 0.879, grade A. This model served as reverse leg.",
       "samples": {
         "original": "The local farmers market opens every Saturday morning, offering fresh produce and handmade crafts fr",
-        "intermediate": "Is-suq tal-bdiewa lokali jiftaħ is-Sibt filgħodu, u joffri prodotti friski u snajja' magħmulin bl-id",
+        "intermediate": "Is-suq tal-bdiewa lokali jifta\u0127 is-Sibt filg\u0127odu, u joffri prodotti friski u snajja' mag\u0127mulin bl-id",
         "roundtrip": "The local farmers market opens Saturday morning, offering fresh products and crafts made by the comm"
       }
     },
@@ -491,7 +499,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -509,7 +517,7 @@
       "date": "2026-03-28T15:57:33.034000+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -518,7 +526,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 93.84,
@@ -533,15 +541,15 @@
                   "similarity": 1.0
                 },
                 {
-                  "original": "It-temp huwa sabiħ dalgħodu.",
+                  "original": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "forward": "The weather is beautiful this morning.",
-                  "returned": "It-temp huwa sabiħ dalgħodu.",
+                  "returned": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "original": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "forward": "I would like to order a cup of coffee, please.",
-                  "returned": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "returned": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "similarity": 1.0
                 }
               ]
@@ -559,15 +567,15 @@
                   "similarity": 1.0
                 },
                 {
-                  "original": "It-temp huwa sabiħ dalgħodu.",
+                  "original": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "forward": "The weather is beautiful this morning.",
-                  "returned": "It-temp huwa sabiħ dalgħodu.",
+                  "returned": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "original": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "forward": "I would like to order a cup of coffee, please.",
-                  "returned": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "returned": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "similarity": 1.0
                 }
               ]
@@ -585,15 +593,15 @@
                   "similarity": 1.0
                 },
                 {
-                  "original": "It-temp huwa sabiħ dalgħodu.",
+                  "original": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "forward": "The weather is beautiful this morning.",
-                  "returned": "It-temp huwa sabiħ dalgħodu.",
+                  "returned": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "similarity": 1.0
                 },
                 {
-                  "original": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "original": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "forward": "I would like to order a cup of coffee, please.",
-                  "returned": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "returned": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "similarity": 1.0
                 }
               ]
@@ -636,12 +644,12 @@
                   "hypothesis": "Hello, how are you today?"
                 },
                 {
-                  "source": "It-temp huwa sabiħ dalgħodu.",
+                  "source": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "The weather is beautiful this morning."
                 },
                 {
-                  "source": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "source": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I would like to order a cup of coffee, please."
                 }
@@ -664,12 +672,12 @@
                   "hypothesis": "Hello, how are you today?"
                 },
                 {
-                  "source": "It-temp huwa sabiħ dalgħodu.",
+                  "source": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "The weather is beautiful this morning."
                 },
                 {
-                  "source": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "source": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I would like to order a cup of coffee, please."
                 }
@@ -692,12 +700,12 @@
                   "hypothesis": "Hello, how are you today?"
                 },
                 {
-                  "source": "It-temp huwa sabiħ dalgħodu.",
+                  "source": "It-temp huwa sabi\u0127 dalg\u0127odu.",
                   "reference": "The weather is beautiful this morning.",
                   "hypothesis": "The weather is beautiful this morning."
                 },
                 {
-                  "source": "Nixtieq nordna kikkra kafè, jekk jogħġbok.",
+                  "source": "Nixtieq nordna kikkra kaf\u00e8, jekk jog\u0127\u0121bok.",
                   "reference": "I would like to order a cup of coffee, please.",
                   "hypothesis": "I would like to order a cup of coffee, please."
                 }
@@ -772,7 +780,7 @@
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for mt→en"
+              "reason": "no reference pairs for mt\u2192en"
             },
             "vitals": {
               "status": "complete",
@@ -826,7 +834,7 @@
       "date": "2026-04-11T20:27:51.334196+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -909,7 +917,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1041,7 +1049,7 @@
       },
       "best_grade": "D+",
       "best_score": 68.97,
-      "notes": "Dr. C independent certification of mt-en. Tested 2 variant(s): base, ct2_int8. Best variant grade: D+ (68.97). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of mt-en. Tested 2 variant(s): base, ct2_int8. Best variant grade: D+ (68.97). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-mt-en",
@@ -1057,7 +1065,7 @@
       "date": "2026-04-14T08:43:56.464296+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 85.2→89.3 (Δ+4.1). IMPROVED — saved as herm0/",
+      "method": "Herm0 improvement Phase 2: 2 epochs, lr=5e-06, 49950 pairs. Score 85.2\u219289.3 (\u0394+4.1). IMPROVED \u2014 saved as herm0/",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 2 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: improved. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1068,17 +1076,33 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
-      "notes": "Quantized herm0/model.safetensors → herm0-ct2-int8/model.bin (72 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (72 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-GRV2-DEFERRED-mt-en",
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=mt) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=mt) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-mt-en",
+      "date": "2026-04-19T05:01:48.150231+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-mt-en",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-mt-en",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1127,7 +1151,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★½",
+    "stars_display": "\u2605\u2605\u00bd",
     "half_stars": 5,
     "label": "Deferred",
     "avg_cert_score": 5.0,
@@ -1232,7 +1256,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:14:18.539308+00:00",
       "variant_scores": {}
@@ -1246,7 +1270,7 @@
     "lora_size_mb": 291.58,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T22:46:02.349690+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1256,7 +1280,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 94.1,
