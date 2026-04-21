@@ -1,0 +1,56 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-21T20:12:07.592418+00:00",
+  "_clinic_path": "stt-models/windy-lingua-az.json",
+  "patient_id": "windy-lingua-az",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Azerbaijani",
+  "admitted": "2026-04-21T20:12:07.592418+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "language": "az",
+  "language_name": "Azerbaijani",
+  "source_repo_origin": "WindyProLabs/windy-lingua-az",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-az",
+    "WindyWord/listen-windy-lingua-az-ct2"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-az",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-21T20:12:07.592418+00:00"
+    },
+    "ct2-int8": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-az-ct2",
+      "subfolder": "ct2-int8",
+      "format": "ctranslate2_int8",
+      "ported_at": "2026-04-21T20:12:07.592418+00:00"
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-LINGUA-az",
+      "date": "2026-04-21T20:12:07.592418+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Cross-org port WindyProLabs → WindyWord with signed WER audit metadata",
+      "ported_variants": [
+        "safetensors",
+        "ct2-int8"
+      ],
+      "wer_audit_result": {
+        "wer": 0.4317,
+        "cer": 0.1131,
+        "rtf": 0.0507,
+        "mean_latency_ms": 620.9,
+        "n_samples": 50,
+        "fleurs_subset": "az_az"
+      },
+      "upstream_note": "Model originally uploaded to WindyProLabs on 2026-03-10 by Dr. A / Kit OC1 Alpha. Underlying base is a community Whisper fine-tune (see individual HF model card for lineage).",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ]
+}

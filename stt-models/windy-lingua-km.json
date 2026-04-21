@@ -1,0 +1,47 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-21T20:12:07.594813+00:00",
+  "_clinic_path": "stt-models/windy-lingua-km.json",
+  "patient_id": "windy-lingua-km",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Khmer",
+  "admitted": "2026-04-21T20:12:07.594813+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "language": "km",
+  "language_name": "Khmer",
+  "source_repo_origin": "WindyProLabs/windy-lingua-km",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-km"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-km",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-21T20:12:07.594813+00:00"
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-LINGUA-km",
+      "date": "2026-04-21T20:12:07.594813+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Cross-org port WindyProLabs → WindyWord with signed WER audit metadata",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "wer_audit_result": {
+        "wer": 1.0,
+        "cer": 1.0,
+        "rtf": 0.0002,
+        "mean_latency_ms": 2.5,
+        "n_samples": 50,
+        "fleurs_subset": "km_kh"
+      },
+      "upstream_note": "Model originally uploaded to WindyProLabs on 2026-03-10 by Dr. A / Kit OC1 Alpha. Underlying base is a community Whisper fine-tune (see individual HF model card for lineage).",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ]
+}

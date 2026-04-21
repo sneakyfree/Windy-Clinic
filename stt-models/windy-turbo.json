@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-12T01:51:35.265488+00:00",
+  "_last_updated": "2026-04-21T15:09:35.560811+00:00",
   "_clinic_path": "stt-models/windy-turbo.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyLabs/*) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-turbo",
@@ -111,6 +111,22 @@
         }
       },
       "notes": "Dr. C independent STT quality certification. WER: 5.6% (A). RTF: 0.0237 (real-time factor, <1 = faster than real-time). Mean latency: 226.7 ms. Peak GPU: 3261 MB. Tested on FLEURS english dev split (15 clips). Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-windy-turbo",
+      "date": "2026-04-21T15:09:35.560811+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/listen-windy-turbo",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "safetensors",
+        "ct2-int8",
+        "onnx",
+        "onnx-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/listen-windy-turbo",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: safetensors, ct2-int8, onnx, onnx-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

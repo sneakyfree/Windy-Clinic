@@ -1,0 +1,56 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-21T20:12:07.594197+00:00",
+  "_clinic_path": "stt-models/windy-lingua-it.json",
+  "patient_id": "windy-lingua-it",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Italian",
+  "admitted": "2026-04-21T20:12:07.594197+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "language": "it",
+  "language_name": "Italian",
+  "source_repo_origin": "WindyProLabs/windy-lingua-it",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-it",
+    "WindyWord/listen-windy-lingua-it-ct2"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-it",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-21T20:12:07.594197+00:00"
+    },
+    "ct2-int8": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-it-ct2",
+      "subfolder": "ct2-int8",
+      "format": "ctranslate2_int8",
+      "ported_at": "2026-04-21T20:12:07.594197+00:00"
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-LINGUA-it",
+      "date": "2026-04-21T20:12:07.594197+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Cross-org port WindyProLabs → WindyWord with signed WER audit metadata",
+      "ported_variants": [
+        "safetensors",
+        "ct2-int8"
+      ],
+      "wer_audit_result": {
+        "wer": 0.2512,
+        "cer": 0.0843,
+        "rtf": 0.0435,
+        "mean_latency_ms": 564.4,
+        "n_samples": 50,
+        "fleurs_subset": "it_it"
+      },
+      "upstream_note": "Model originally uploaded to WindyProLabs on 2026-03-10 by Dr. A / Kit OC1 Alpha. Underlying base is a community Whisper fine-tune (see individual HF model card for lineage).",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+[2026-04-21T15:32:11.635857+00:00] WER audit for WindyProLabs windy-lingua-* models
+[2026-04-21T15:32:11.635931+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-21T15:32:11.635943+00:00] Samples per model: 50
+[2026-04-21T15:32:11.635953+00:00] Total targets: 34, already done: 0
+[2026-04-21T15:32:11.635961+00:00] [1/34] am ← FLEURS am_et, whisper lang 'amharic'
+[2026-04-21T15:33:02.282360+00:00]     WER=1.1891 CER=1.1203 RTF=0.0625 lat=668.8ms  (50.6s)
+[2026-04-21T15:33:02.282404+00:00] [2/34] arabic ← FLEURS ar_eg, whisper lang 'arabic'
+[2026-04-21T15:34:18.215277+00:00]     WER=0.3891 CER=0.0808 RTF=0.0633 lat=696.0ms  (75.9s)
+[2026-04-21T15:34:18.215352+00:00] [3/34] az ← FLEURS az_az, whisper lang 'azerbaijani'
+[2026-04-21T15:35:21.638489+00:00]     WER=0.4317 CER=0.1131 RTF=0.0507 lat=620.9ms  (63.4s)
+[2026-04-21T15:35:21.638534+00:00] [4/34] bn ← FLEURS bn_in, whisper lang 'bengali'
+[2026-04-21T15:35:53.107042+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (31.5s)
+[2026-04-21T15:35:53.107085+00:00] [5/34] ca ← FLEURS ca_es, whisper lang 'catalan'
+[2026-04-21T15:36:46.879317+00:00]     WER=0.2689 CER=0.09 RTF=0.0394 lat=479.2ms  (53.8s)
+[2026-04-21T15:36:46.879360+00:00] [6/34] chinese ← FLEURS cmn_hans_cn, whisper lang 'chinese'
+[2026-04-21T15:37:30.698107+00:00]     WER=0.0 CER=0.0 RTF=0.0426 lat=490.7ms  (43.8s)
+[2026-04-21T15:37:30.698155+00:00] [7/34] cs ← FLEURS cs_cz, whisper lang 'czech'
+[2026-04-21T15:38:58.018408+00:00]     WER=0.3251 CER=0.0878 RTF=0.0654 lat=800.7ms  (87.3s)
+[2026-04-21T15:38:58.018452+00:00] [8/34] de ← FLEURS de_de, whisper lang 'german'
+[2026-04-21T15:39:41.569148+00:00]     WER=0.5671 CER=0.2748 RTF=0.0188 lat=239.1ms  (43.6s)
+[2026-04-21T15:39:41.569193+00:00] [9/34] fa ← FLEURS fa_ir, whisper lang 'persian'
+[2026-04-21T15:40:19.314628+00:00]     WER=0.2657 CER=0.075 RTF=0.0238 lat=371.0ms  (37.7s)
+[2026-04-21T15:40:19.314670+00:00] [10/34] fi ← FLEURS fi_fi, whisper lang 'finnish'
+[2026-04-21T15:41:35.170302+00:00]     WER=0.3137 CER=0.0443 RTF=0.0578 lat=667.8ms  (75.9s)
+[2026-04-21T15:41:35.170347+00:00] [11/34] french ← FLEURS fr_fr, whisper lang 'french'
+[2026-04-21T15:42:31.532727+00:00]     WER=0.065 CER=0.0324 RTF=0.0568 lat=548.6ms  (56.4s)
+[2026-04-21T15:42:31.532770+00:00] [12/34] gu ← FLEURS gu_in, whisper lang 'gujarati'
+[2026-04-21T15:43:00.639025+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (29.1s)
+[2026-04-21T15:43:00.639070+00:00] [13/34] he ← FLEURS he_il, whisper lang 'hebrew'
+[2026-04-21T15:44:20.954099+00:00]     WER=0.6691 CER=0.3902 RTF=0.0888 lat=835.0ms  (80.3s)
+[2026-04-21T15:44:20.954144+00:00] [14/34] hindi ← FLEURS hi_in, whisper lang 'hindi'
+[2026-04-21T15:44:41.288300+00:00]     WER=1.0254 CER=0.999 RTF=0.0161 lat=176.5ms  (20.3s)
+[2026-04-21T15:44:41.288343+00:00] [15/34] hu ← FLEURS hu_hu, whisper lang 'hungarian'
+[2026-04-21T15:45:22.404365+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (41.1s)
+[2026-04-21T15:45:22.404408+00:00] [16/34] hy ← FLEURS hy_am, whisper lang 'armenian'
+[2026-04-21T15:46:09.668185+00:00]     WER=0.3557 CER=0.1116 RTF=0.0414 lat=392.9ms  (47.3s)
+[2026-04-21T15:46:09.668235+00:00] [17/34] ig ← FLEURS ig_ng, whisper lang 'igbo'
+[2026-04-21T15:46:39.359923+00:00]     WER=1.5741 CER=1.5418 RTF=0.0199 lat=319.4ms  (29.7s)
+[2026-04-21T15:46:39.359969+00:00] [18/34] it ← FLEURS it_it, whisper lang 'italian'
+[2026-04-21T15:47:50.961816+00:00]     WER=0.2512 CER=0.0843 RTF=0.0435 lat=564.4ms  (71.6s)
+[2026-04-21T15:47:50.961861+00:00] [19/34] ja ← FLEURS ja_jp, whisper lang 'japanese'
+[2026-04-21T15:48:04.540698+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (13.6s)
+[2026-04-21T15:48:04.540774+00:00] [20/34] kk ← FLEURS kk_kz, whisper lang 'kazakh'
+[2026-04-21T15:48:47.218926+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (42.7s)
+[2026-04-21T15:48:47.218973+00:00] [21/34] km ← FLEURS km_kh, whisper lang 'khmer'
+[2026-04-21T15:49:09.837672+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (22.6s)
+[2026-04-21T15:49:09.837717+00:00] [22/34] ml ← FLEURS ml_in, whisper lang 'malayalam'
+[2026-04-21T15:50:06.458213+00:00]     WER=0.7325 CER=0.4872 RTF=0.0491 lat=751.0ms  (56.6s)
+[2026-04-21T15:50:06.458258+00:00] [23/34] mn ← FLEURS mn_mn, whisper lang 'mongolian'
+[2026-04-21T15:50:19.737979+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (13.3s)
+[2026-04-21T15:50:19.738054+00:00] [24/34] mr ← FLEURS mr_in, whisper lang 'marathi'
+[2026-04-21T15:50:59.848246+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (40.1s)
+[2026-04-21T15:50:59.848322+00:00] [25/34] ms ← FLEURS ms_my, whisper lang 'malay'
+[2026-04-21T15:51:27.868881+00:00]     WER=0.2988 CER=0.0713 RTF=0.0245 lat=240.2ms  (28.0s)
+[2026-04-21T15:51:27.868925+00:00] [26/34] nl ← FLEURS nl_nl, whisper lang 'dutch'
+[2026-04-21T15:52:38.087257+00:00]     WER=0.2666 CER=0.0833 RTF=0.0657 lat=646.8ms  (70.2s)
+[2026-04-21T15:52:38.087302+00:00] [27/34] no ← FLEURS nb_no, whisper lang 'norwegian'
+[2026-04-21T15:53:09.624618+00:00]     WER=0.3188 CER=0.0948 RTF=0.0253 lat=326.7ms  (31.5s)
+[2026-04-21T15:53:09.624664+00:00] [28/34] pa ← FLEURS pa_in, whisper lang 'punjabi'
+[2026-04-21T15:53:48.270906+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (38.6s)
+[2026-04-21T15:53:48.270953+00:00] [29/34] ps ← FLEURS ps_af, whisper lang 'pashto'
+[2026-04-21T15:54:15.610857+00:00]     WER=0.5366 CER=0.2137 RTF=0.0238 lat=295.7ms  (27.3s)
+[2026-04-21T15:54:15.610904+00:00] [30/34] pt ← FLEURS pt_br, whisper lang 'portuguese'
+[2026-04-21T15:55:13.693165+00:00]     WER=0.2651 CER=0.0796 RTF=0.0482 lat=581.3ms  (58.1s)
+[2026-04-21T15:55:13.693208+00:00] [31/34] ro ← FLEURS ro_ro, whisper lang 'romanian'
+[2026-04-21T15:55:43.202963+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (29.5s)
+[2026-04-21T15:55:43.203007+00:00] [32/34] si ← FLEURS si_lk, whisper lang 'sinhalese'
+[2026-04-21T15:55:43.276996+00:00]     FLEURS unavailable: meta download failed: 404 Client Error. (Request ID: Root=1-69e79dff-725d06ca00fc80073ef00727;b746e1e3-86cd-4026-a5d4-99be868e631c)
+
+Entry Not
+[2026-04-21T15:55:43.277021+00:00] [33/34] spanish ← FLEURS es_419, whisper lang 'spanish'
+[2026-04-21T15:56:05.386044+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (22.1s)
+[2026-04-21T15:56:05.386136+00:00] [34/34] te ← FLEURS te_in, whisper lang 'telugu'
+[2026-04-21T15:56:15.172514+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (9.8s)
+[2026-04-21T15:56:15.172559+00:00] Complete.
+[2026-04-21T16:39:17.433942+00:00] WER audit for WindyProLabs windy-lingua-* models
+[2026-04-21T16:39:17.434023+00:00] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-21T16:39:17.434036+00:00] Samples per model: 50
+[2026-04-21T16:39:17.434247+00:00] Total targets: 34, already done: 21
+[2026-04-21T16:39:17.434263+00:00] [1/34] am: skip (resume)
+[2026-04-21T16:39:17.434273+00:00] [2/34] arabic: skip (resume)
+[2026-04-21T16:39:17.434280+00:00] [3/34] az: skip (resume)
+[2026-04-21T16:39:17.434287+00:00] [4/34] bn ← FLEURS bn_in, whisper lang 'bengali'
+[2026-04-21T16:39:23.069988+00:00]     WER=1.0 CER=1.0 RTF=0.0003 lat=3.5ms  (5.6s)
+[2026-04-21T16:39:23.070031+00:00] [5/34] ca: skip (resume)
+[2026-04-21T16:39:23.070041+00:00] [6/34] chinese: skip (resume)
+[2026-04-21T16:39:23.070049+00:00] [7/34] cs: skip (resume)
+[2026-04-21T16:39:23.070057+00:00] [8/34] de: skip (resume)
+[2026-04-21T16:39:23.070063+00:00] [9/34] fa: skip (resume)
+[2026-04-21T16:39:23.070070+00:00] [10/34] fi: skip (resume)
+[2026-04-21T16:39:23.070077+00:00] [11/34] french: skip (resume)
+[2026-04-21T16:39:23.070084+00:00] [12/34] gu ← FLEURS gu_in, whisper lang 'gujarati'
+[2026-04-21T16:39:27.735904+00:00]     WER=1.0 CER=1.0 RTF=0.0003 lat=2.9ms  (4.7s)
+[2026-04-21T16:39:27.735949+00:00] [13/34] he: skip (resume)
+[2026-04-21T16:39:27.735964+00:00] [14/34] hindi: skip (resume)
+[2026-04-21T16:39:27.735973+00:00] [15/34] hu ← FLEURS hu_hu, whisper lang 'hungarian'
+[2026-04-21T16:39:33.598370+00:00]     WER=1.0 CER=1.0 RTF=0.0004 lat=5.4ms  (5.9s)
+[2026-04-21T16:39:33.598409+00:00] [16/34] hy: skip (resume)
+[2026-04-21T16:39:33.598421+00:00] [17/34] ig: skip (resume)
+[2026-04-21T16:39:33.598429+00:00] [18/34] it: skip (resume)
+[2026-04-21T16:39:33.598437+00:00] [19/34] ja ← FLEURS ja_jp, whisper lang 'japanese'
+[2026-04-21T16:39:38.439258+00:00]     status=infer_error err=index -2 is out of bounds for dimension 0 with size 0  (4.8s)
+[2026-04-21T16:39:38.439299+00:00] [20/34] kk ← FLEURS kk_kz, whisper lang 'kazakh'
+[2026-04-21T16:39:45.060146+00:00]     WER=1.0 CER=1.0 RTF=0.0002 lat=2.2ms  (6.6s)
+[2026-04-21T16:39:45.060189+00:00] [21/34] km ← FLEURS km_kh, whisper lang 'khmer'
+[2026-04-21T16:39:50.645379+00:00]     WER=1.0 CER=1.0 RTF=0.0002 lat=2.5ms  (5.6s)
+[2026-04-21T16:39:50.645421+00:00] [22/34] ml: skip (resume)
+[2026-04-21T16:39:50.645433+00:00] [23/34] mn ← FLEURS mn_mn, whisper lang 'mongolian'
+[2026-04-21T16:39:56.160189+00:00]     WER=1.0 CER=1.0 RTF=0.0027 lat=27.8ms  (5.5s)
+[2026-04-21T16:39:56.160235+00:00] [24/34] mr ← FLEURS mr_in, whisper lang 'marathi'
+[2026-04-21T16:40:02.580572+00:00]     WER=1.0 CER=1.0 RTF=0.0002 lat=2.2ms  (6.4s)
+[2026-04-21T16:40:02.580618+00:00] [25/34] ms: skip (resume)
+[2026-04-21T16:40:02.580630+00:00] [26/34] nl: skip (resume)
+[2026-04-21T16:40:02.580639+00:00] [27/34] no: skip (resume)
+[2026-04-21T16:40:02.580648+00:00] [28/34] pa ← FLEURS pa_in, whisper lang 'punjabi'
+[2026-04-21T16:40:07.816977+00:00]     WER=1.0 CER=1.0 RTF=0.0004 lat=4.4ms  (5.2s)
+[2026-04-21T16:40:07.817018+00:00] [29/34] ps: skip (resume)
+[2026-04-21T16:40:07.817030+00:00] [30/34] pt: skip (resume)
+[2026-04-21T16:40:07.817039+00:00] [31/34] ro ← FLEURS ro_ro, whisper lang 'romanian'
+[2026-04-21T16:40:12.710421+00:00]     WER=1.0 CER=1.0 RTF=0.0003 lat=2.8ms  (4.9s)
+[2026-04-21T16:40:12.710466+00:00] [32/34] si ← FLEURS si_lk, whisper lang 'sinhalese'
+[2026-04-21T16:40:12.791798+00:00]     FLEURS unavailable: meta download failed: 404 Client Error. (Request ID: Root=1-69e7a86c-608e261e202e66854a2c88b9;d10be015-e800-4d22-a5b8-a427a5617f42)
+
+Entry Not
+[2026-04-21T16:40:12.791831+00:00] [33/34] spanish ← FLEURS es_419, whisper lang 'spanish'
+[2026-04-21T16:40:17.472095+00:00]     WER=1.0 CER=1.0 RTF=0.0004 lat=5.1ms  (4.7s)
+[2026-04-21T16:40:17.472137+00:00] [34/34] te ← FLEURS te_in, whisper lang 'telugu'
+[2026-04-21T16:40:21.457414+00:00]     WER=1.0 CER=1.0 RTF=0.0006 lat=6.2ms  (4.0s)
+[2026-04-21T16:40:21.457454+00:00] Complete.

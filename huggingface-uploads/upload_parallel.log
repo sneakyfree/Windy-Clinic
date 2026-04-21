@@ -16792,3 +16792,11 @@ Internal Error - We're working hard to fix this as soon as possible!
 [2026-04-21T15:17:57.503794+00:00] [main] ============================================================
 [2026-04-21T15:17:57.503837+00:00] [main] UPLOAD PIPELINE COMPLETE
 [2026-04-21T15:17:57.503847+00:00] [main] ============================================================
+[2026-04-21T16:15:47Z] [scheduler] Daily batch starting
+[2026-04-21T16:15:48Z] [scheduler] Quota still exhausted, waiting another hour
+[2026-04-21T17:15:48Z] [scheduler] Daily batch starting
+[2026-04-21T17:15:49Z] [scheduler] Quota still exhausted, waiting another hour
+[2026-04-21T18:15:49Z] [scheduler] Daily batch starting
+[2026-04-21T18:15:50Z] [scheduler] Quota still exhausted, waiting another hour
+[2026-04-21T19:15:50Z] [scheduler] Daily batch starting
+[2026-04-21T19:15:50Z] [scheduler] Quota still exhausted, waiting another hour
