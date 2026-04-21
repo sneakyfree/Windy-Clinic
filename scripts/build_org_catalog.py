@@ -145,10 +145,62 @@ def build_catalog(live_pids: set) -> str:
     md.append("")
     md.append("## Speech-to-Text fleet")
     md.append("")
-    md.append(f"WindyWord also publishes {10} English STT voice models and 6 per-language Lingua STT models under [`{ORG}/listen-*`](https://huggingface.co/{ORG}?search=listen).")
+    # Dynamically enumerate listen-* repos
+    api = HfApi()
+    all_listen = [m.id for m in api.list_models(author=ORG) if m.id.startswith(f"{ORG}/listen-")]
+    voice = sorted([m for m in all_listen if "lingua" not in m])
+    lingua = sorted([m for m in all_listen if "lingua" in m])
+    # Unique lingua languages (collapse -ct2 variants into parent)
+    lingua_langs = sorted(set(m.replace(f"{ORG}/listen-windy-lingua-", "").replace("-ct2", "") for m in lingua))
+    md.append(f"WindyWord also publishes **{len(voice)} English STT voice models** and **{len(lingua_langs)} per-language Lingua STT models** (with CT2 CPU variants where applicable) under [`{ORG}/listen-*`](https://huggingface.co/{ORG}?search=listen).")
     md.append("")
-    md.append("- **Voice models** (Whisper-based): `listen-windy-nano`, `-lite`, `-core`, `-plus`, `-turbo`, `-pro-engine`, `-edge`, `-distil-small/medium/large`")
-    md.append("- **Per-language Lingua**: `listen-windy-lingua-spanish`, `-chinese`, `-french`, `-arabic`, `-hindi` (Hinglish output)")
+    md.append("### Voice tiers (English, multilingual-capable via Whisper)")
+    md.append("")
+    for m in voice:
+        name = m.replace(f"{ORG}/listen-", "")
+        md.append(f"- [`{name}`](https://huggingface.co/{m}) — GPU + CPU INT8 + ONNX variants as subfolders")
+    md.append("")
+    md.append(f"### Per-language specialists ({len(lingua_langs)} languages)")
+    md.append("")
+    # WER scores from the audit
+    wer_by_slug = {}
+    wer_path = CLINIC / "grand-rounds" / "wpl_audit" / "wer_results.jsonl"
+    if wer_path.exists():
+        for line in wer_path.read_text().splitlines():
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("status") == "complete":
+                wer_by_slug[r["slug"]] = r.get("wer")
+    # Also our WindyWord Phase-3 WER results
+    p3d_path = CLINIC / "grand-rounds" / "phase3d_stt" / "phase3d_results.jsonl"
+    if p3d_path.exists():
+        for line in p3d_path.read_text().splitlines():
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("n_samples", 0) >= 50:
+                slug = r.get("patient_id", "").replace("windy-lingua-", "")
+                if slug not in wer_by_slug or wer_by_slug[slug] is None:
+                    wer_by_slug[slug] = r.get("wer")
+    LANG_FULL = {
+        "am": "Amharic", "arabic": "Arabic", "az": "Azerbaijani", "bn": "Bengali",
+        "ca": "Catalan", "chinese": "Chinese (Mandarin)", "cs": "Czech", "de": "German",
+        "fa": "Persian (Farsi)", "fi": "Finnish", "french": "French", "gu": "Gujarati",
+        "he": "Hebrew", "hindi": "Hindi", "hu": "Hungarian", "hy": "Armenian",
+        "ig": "Igbo", "it": "Italian", "ja": "Japanese", "kk": "Kazakh",
+        "km": "Khmer", "lt": "Lithuanian", "ml": "Malayalam", "mn": "Mongolian",
+        "mr": "Marathi", "ms": "Malay", "nl": "Dutch", "no": "Norwegian",
+        "pa": "Punjabi", "ps": "Pashto", "pt": "Portuguese", "ro": "Romanian",
+        "si": "Sinhala", "spanish": "Spanish", "te": "Telugu",
+    }
+    for slug in lingua_langs:
+        full = LANG_FULL.get(slug, slug.capitalize())
+        has_ct2 = any(slug + "-ct2" in m for m in lingua)
+        ct2_note = " + CPU INT8" if has_ct2 else ""
+        wer = wer_by_slug.get(slug)
+        wer_note = f" — WER {wer*100:.1f}%" if wer is not None else " — unverified"
+        md.append(f"- **{full}** ({slug}){ct2_note}{wer_note} &nbsp;&nbsp; [`listen-windy-lingua-{slug}`](https://huggingface.co/{ORG}/listen-windy-lingua-{slug})")
     md.append("")
     md.append("---")
     md.append("")
