@@ -1,0 +1,61 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-21T15:36:54.101237+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/en-pt.json",
+  "patient_id": "en-pt",
+  "admitted": "2026-04-21T15:36:54.101237+00:00",
+  "source_repo": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+  "source_language": {
+    "code": "en",
+    "name": "English",
+    "family": "Indo-European > Germanic"
+  },
+  "target_language": {
+    "code": "pt",
+    "name": "Portuguese",
+    "family": "Indo-European > Italic > Romance"
+  },
+  "variant_cluster": {
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "derived_from": "WindyProLabs/windy-pair-en-pt (Helsinki-NLP/opus-mt-tc-big-en-pt)",
+      "ported_at": "2026-04-21T15:36:54.101237+00:00",
+      "ported_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "on_disk_path": null,
+      "note": "Ported from WindyProLabs/windy-pair-en-pt via download+reupload (cross-org; no native duplicate_repo for models). 930 MB safetensors + tokenizer."
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": "tc-big scale"
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-en-pt",
+      "date": "2026-04-21T15:36:54.101237+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Cross-org port: WindyProLabs/windy-pair-en-pt → WindyWord/translate-en-pt",
+      "protocol_script": "inline by Dr. C",
+      "source_repo": "WindyProLabs/windy-pair-en-pt",
+      "target_repo": "WindyWord/translate-en-pt",
+      "bytes_transferred": 933000000,
+      "variants_uploaded": [
+        "lora"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-en-pt",
+      "rationale": "en-pt was identified as the one installer-referenced translation pair missing from WindyWord. Only copy lived in WindyProLabs/windy-pair-en-pt (private, Dr. A era 2026-03-10 upload). WindyWord/translate-en-ROMANCE already covers Portuguese as a Romance target, but dedicated en-pt is better for single-language users. HfApi has move_repo but not duplicate_repo for models; cross-org move_repo requires admin on both orgs which our token doesn't have. Workaround: download via HuggingFaceVeron1 (WindyProLabs scope), upload via WindyWordGodAPI1 (WindyWord scope). Variant published under lora/ subfolder matching WindyWord convention. Future work: build proprietary herm0/ and herm0-scripture/ variants via the normal fine-tune pipeline. Currently lora ≡ base Helsinki weights.",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "quality_rating": {
+    "composite_score": null,
+    "stars": null,
+    "tier": "standard",
+    "label": "standard",
+    "rated_at": null,
+    "rated_by": null,
+    "note": "Pending Grand Rounds v2 certification. Ported from legitimate upstream (Helsinki-NLP/opus-mt-tc-big-en-pt, 34k downloads community-trusted)."
+  }
+}

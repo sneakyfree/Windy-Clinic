@@ -1,0 +1,10 @@
+[2026-04-20T13:21:15.322125+00:00] Gathering live repos from HF…
+[2026-04-20T13:21:15.746961+00:00] 1440 live translate-* repos
+[2026-04-20T13:21:15.967819+00:00] Catalog written: /tmp/windyword_org_catalog.md (347,778 bytes)
+[2026-04-20T13:21:41.072521+00:00] Gathering live repos from HF…
+[2026-04-20T13:21:41.412531+00:00] 1443 live translate-* repos
+[2026-04-20T13:21:41.612268+00:00] Catalog written: /tmp/windyword_org_catalog.md (348,752 bytes)
+[2026-04-20T13:21:41.612302+00:00] Creating/ensuring org-profile repo: WindyWord/WindyWord
+[2026-04-20T13:21:42.156195+00:00] Uploading catalog README…
+[2026-04-20T13:21:43.265828+00:00] ✓ Uploaded to https://huggingface.co/WindyWord/WindyWord
+[2026-04-20T13:21:43.265891+00:00] If HF does not yet show this as the org landing page, visit org settings and pin this repo.

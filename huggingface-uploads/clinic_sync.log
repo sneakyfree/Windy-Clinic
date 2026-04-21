@@ -1,0 +1,83 @@
+[2026-04-20T12:40:13Z] post-commit sync start for 4b6a6cd: Dr. C: auto-sync clinic to HF dataset + post-commit hook
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl:  86%|████████▌ | 16.7MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl:  86%|████████▌ | 16.7MB / 19.5MB            [A[AProcessing Files (0 / 1)      :  86%|████████▌ | 16.7MB / 19.5MB, 2.14MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.44MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.22MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 1994 files, last_modified=2026-04-20 12:40:25+00:00
+[2026-04-20T12:41:27Z] post-commit sync done for 4b6a6cd (exit=0)
+[2026-04-20T13:08:09Z] post-commit sync start for 5be9338: Dr. C: WindyStandard/Enhanced/Scripture rebrand + tc-big parsing fix
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.38MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.12MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 1994 files, last_modified=2026-04-20 13:08:22+00:00
+[2026-04-20T13:09:20Z] post-commit sync done for 5be9338 (exit=0)
+[2026-04-20T13:21:39Z] post-commit sync start for 7b46e1f: Dr. C: language-name discoverability — spelled-out tagline, tags, org catalog
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.22MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 2.12MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 1998 files, last_modified=2026-04-20 13:21:52+00:00
+[2026-04-20T13:22:26Z] post-commit sync done for 7b46e1f (exit=0)
+[2026-04-20T17:08:34Z] post-commit sync start for c14958a: Dr. C: doctor-log — 2026-04-20 public rebrand + discoverability narrative
+create_repo failed: 429 Client Error: Too Many Requests for url: https://huggingface.co/api/repos/create (Request ID: Root=1-69e65d92-6d9bdc3f3fcb79792a98fdb8;f7335252-61d6-4df8-a413-d57b09b14fa8)
+
+You have exceeded the rate limit for repository creation (300 per day). You can retry this action in about 20 hours.
+[2026-04-20T17:08:34Z] post-commit sync done for c14958a (exit=0)

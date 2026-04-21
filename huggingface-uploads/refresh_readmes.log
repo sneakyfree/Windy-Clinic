@@ -1,0 +1,276 @@
+[2026-04-20T13:08:49.663222+00:00] Refresh target: 1 repos
+[2026-04-20T13:09:00.170727+00:00] Refresh target: 1 repos
+[2026-04-20T13:09:17.758660+00:00] Listing live translate-* repos on HF…
+[2026-04-20T13:09:18.211677+00:00] Refresh target: 1373 repos
+[2026-04-20T13:09:22.764209+00:00] progress 50/1373  done=50 errs=0  (5s, 659.0/min)
+[2026-04-20T13:09:30.202682+00:00] progress 100/1373  done=100 errs=0  (12s, 500.4/min)
+[2026-04-20T13:09:34.761901+00:00] progress 150/1373  done=150 errs=0  (17s, 543.8/min)
+[2026-04-20T13:09:39.284554+00:00] progress 200/1373  done=200 errs=0  (21s, 569.5/min)
+[2026-04-20T13:09:46.131434+00:00] progress 250/1373  done=250 errs=0  (28s, 537.3/min)
+[2026-04-20T13:09:50.498747+00:00] progress 300/1373  done=300 errs=0  (32s, 557.5/min)
+[2026-04-20T13:09:55.422181+00:00] progress 350/1373  done=350 errs=0  (37s, 564.4/min)
+[2026-04-20T13:10:02.088978+00:00] progress 400/1373  done=400 errs=0  (44s, 547.0/min)
+[2026-04-20T13:10:06.874348+00:00] progress 450/1373  done=450 errs=0  (49s, 554.8/min)
+[2026-04-20T13:10:11.273755+00:00] progress 500/1373  done=500 errs=0  (53s, 565.4/min)
+[2026-04-20T13:10:18.516351+00:00] progress 550/1373  done=550 errs=0  (60s, 547.2/min)
+[2026-04-20T13:10:23.308164+00:00] progress 600/1373  done=600 errs=0  (65s, 553.0/min)
+[2026-04-20T13:10:27.725621+00:00] progress 650/1373  done=650 errs=0  (70s, 561.0/min)
+[2026-04-20T13:10:34.353516+00:00] progress 700/1373  done=700 errs=0  (76s, 551.6/min)
+[2026-04-20T13:10:38.893265+00:00] progress 750/1373  done=750 errs=0  (81s, 557.7/min)
+[2026-04-20T13:10:43.324993+00:00] progress 800/1373  done=800 errs=0  (85s, 564.0/min)
+[2026-04-20T13:10:50.300211+00:00] progress 850/1373  done=850 errs=0  (92s, 553.8/min)
+[2026-04-20T13:10:55.028715+00:00] progress 900/1373  done=900 errs=0  (97s, 557.8/min)
+[2026-04-20T13:10:59.280597+00:00] progress 950/1373  done=950 errs=0  (101s, 564.0/min)
+[2026-04-20T13:11:05.905694+00:00] progress 1000/1373  done=1000 errs=0  (108s, 557.1/min)
+[2026-04-20T13:11:10.299770+00:00] progress 1050/1373  done=1050 errs=0  (112s, 562.1/min)
+[2026-04-20T13:11:15.159716+00:00] progress 1100/1373  done=1100 errs=0  (117s, 564.4/min)
+[2026-04-20T13:11:19.517811+00:00] progress 1150/1373  done=1150 errs=0  (121s, 568.8/min)
+[2026-04-20T13:11:21.456706+00:00] [1171/1373] sv-umb: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-umb/commit/main (R
+[2026-04-20T13:11:21.529083+00:00] [1172/1373] sv-ve: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-ve/preupload/main 
+[2026-04-20T13:11:21.583399+00:00] [1175/1373] sv-war: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-war/preupload/main
+[2026-04-20T13:11:21.660899+00:00] [1176/1373] sv-wls: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-wls/preupload/main
+[2026-04-20T13:11:21.686652+00:00] [1178/1373] sv-xh: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-xh/preupload/main 
+[2026-04-20T13:11:21.695289+00:00] [1179/1373] sv-yap: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-yap/preupload/main
+[2026-04-20T13:11:21.713449+00:00] [1180/1373] sv-yo: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-yo/preupload/main 
+[2026-04-20T13:11:21.795453+00:00] [1182/1373] sv-zne: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-sv-zne/preupload/main
+[2026-04-20T13:11:21.800993+00:00] [1183/1373] swc-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-swc-en/preupload/main
+[2026-04-20T13:11:21.816282+00:00] [1184/1373] swc-es: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-swc-es/preupload/main
+[2026-04-20T13:11:21.826226+00:00] [1185/1373] swc-fi: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-swc-fi/preupload/main
+[2026-04-20T13:11:21.844182+00:00] [1186/1373] swc-fr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-swc-fr/preupload/main
+[2026-04-20T13:11:21.853351+00:00] [1187/1373] swc-sv: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-swc-sv/preupload/main
+[2026-04-20T13:11:21.928267+00:00] [1188/1373] synthetic-en-eu: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-eu/preup
+[2026-04-20T13:11:21.935295+00:00] [1189/1373] synthetic-en-gd: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-gd/preup
+[2026-04-20T13:11:21.950874+00:00] [1190/1373] synthetic-en-is: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-is/preup
+[2026-04-20T13:11:21.958273+00:00] [1191/1373] synthetic-en-ka: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-ka/preup
+[2026-04-20T13:11:21.983440+00:00] [1192/1373] synthetic-en-mk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-mk/preup
+[2026-04-20T13:11:21.987094+00:00] [1193/1373] synthetic-en-so: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-so/preup
+[2026-04-20T13:11:22.062406+00:00] [1194/1373] synthetic-en-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-synthetic-en-uk/preup
+[2026-04-20T13:11:22.068765+00:00] [1195/1373] taw-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-taw-en/preupload/main
+[2026-04-20T13:11:22.104894+00:00] [1196/1373] tc-base-ces_slk-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-ces_slk-uk/pr
+[2026-04-20T13:11:22.110256+00:00] [1197/1373] tc-base-bat-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-bat-zle/preup
+[2026-04-20T13:11:22.122005+00:00] [1198/1373] tc-base-en-sh: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-en-sh/preuplo
+[2026-04-20T13:11:22.122908+00:00] [1199/1373] tc-base-fi-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-fi-uk/preuplo
+[2026-04-20T13:11:22.197895+00:00] [1200/1373] tc-base-gmw-gmw: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-gmw-gmw/preup
+[2026-04-20T13:11:22.198390+00:00] progress 1200/1373  done=1174 errs=26  (124s, 580.7/min)
+[2026-04-20T13:11:22.210423+00:00] [1201/1373] tc-base-hu-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-hu-uk/preuplo
+[2026-04-20T13:11:22.245265+00:00] [1202/1373] tc-base-ro-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-ro-uk/preuplo
+[2026-04-20T13:11:22.250561+00:00] [1203/1373] tc-base-tr-uk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-tr-uk/preuplo
+[2026-04-20T13:11:22.262431+00:00] [1204/1373] tc-base-uk-ces_slk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-uk-ces_slk/pr
+[2026-04-20T13:11:22.266403+00:00] [1205/1373] tc-base-uk-fi: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-uk-fi/preuplo
+[2026-04-20T13:11:22.345558+00:00] [1206/1373] tc-base-uk-hu: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-uk-hu/preuplo
+[2026-04-20T13:11:22.356905+00:00] [1207/1373] tc-base-uk-ro: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-uk-ro/preuplo
+[2026-04-20T13:11:22.391183+00:00] [1208/1373] tc-base-uk-tr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-uk-tr/preuplo
+[2026-04-20T13:11:22.394755+00:00] [1209/1373] tc-base-zle-bat: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-base-zle-bat/preup
+[2026-04-20T13:11:22.408473+00:00] [1210/1373] tc-bible-big-aav-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-aav-fra_
+[2026-04-20T13:11:22.409906+00:00] [1211/1373] tc-bible-big-afa-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-afa-deu_
+[2026-04-20T13:11:22.494905+00:00] [1212/1373] tc-bible-big-afa-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-afa-deu_
+[2026-04-20T13:11:22.508558+00:00] [1213/1373] tc-bible-big-afa-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-afa-en/p
+[2026-04-20T13:11:22.546631+00:00] [1214/1373] tc-bible-big-alv-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-alv-deu_
+[2026-04-20T13:11:22.553694+00:00] [1215/1373] tc-bible-big-bat-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-bat-deu_
+[2026-04-20T13:11:22.554651+00:00] [1216/1373] tc-bible-big-bat-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-bat-deu_
+[2026-04-20T13:11:22.639707+00:00] [1217/1373] tc-bible-big-bat-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-bat-en/p
+[2026-04-20T13:11:22.652114+00:00] [1218/1373] tc-bible-big-bnt-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-bnt-deu_
+[2026-04-20T13:11:22.685087+00:00] [1219/1373] tc-bible-big-afa-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-afa-fra_
+[2026-04-20T13:11:22.686282+00:00] [1220/1373] tc-bible-big-cel-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-cel-deu_
+[2026-04-20T13:11:22.692757+00:00] [1221/1373] tc-bible-big-deu_eng_fra_por_spa-aav: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.700034+00:00] [1222/1373] tc-bible-big-deu_eng_fra_por_spa-afa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.792200+00:00] [1223/1373] tc-bible-big-deu_eng_fra_por_spa-bat: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.821550+00:00] [1224/1373] tc-bible-big-deu_eng_fra_por_spa-bnt: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.837866+00:00] [1225/1373] tc-bible-big-deu_eng_fra_por_spa-gem: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.838771+00:00] [1226/1373] tc-bible-big-deu_eng_fra_por_spa-fiu: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.846252+00:00] [1227/1373] tc-bible-big-deu_eng_fra_por_spa-gmw: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.860151+00:00] [1228/1373] tc-bible-big-deu_eng_fra_por_spa-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.944271+00:00] [1229/1373] tc-bible-big-deu_eng_fra_por_spa-iir: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.968946+00:00] [1230/1373] tc-bible-big-deu_eng_fra_por_spa-inc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.985800+00:00] [1231/1373] tc-bible-big-deu_eng_fra_por_spa-ine: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:22.999648+00:00] [1232/1373] tc-bible-big-deu_eng_fra_por_spa-mkh: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.010258+00:00] [1233/1373] tc-bible-big-deu_eng_fra_por_spa-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.011326+00:00] [1234/1373] tc-bible-big-deu_eng_fra_por_spa-mul: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.088140+00:00] [1235/1373] tc-bible-big-deu_eng_fra_por_spa-pqw: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.111151+00:00] [1236/1373] tc-bible-big-deu_eng_fra_por_spa-roa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.127643+00:00] [1237/1373] tc-bible-big-deu_eng_fra_por_spa-sem: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.143471+00:00] [1238/1373] tc-bible-big-deu_eng_fra_por_spa-sla: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.146493+00:00] [1239/1373] tc-bible-big-deu_eng_fra_por_spa-urj: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.149541+00:00] [1240/1373] tc-bible-big-deu_eng_fra_por_spa-trk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-deu_eng_
+[2026-04-20T13:11:23.218333+00:00] [1241/1373] tc-bible-big-dra-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-dra-deu_
+[2026-04-20T13:11:23.238499+00:00] [1242/1373] tc-bible-big-dra-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-dra-en/p
+[2026-04-20T13:11:23.259860+00:00] [1243/1373] tc-bible-big-fiu-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-fiu-deu_
+[2026-04-20T13:11:23.267470+00:00] [1244/1373] tc-bible-big-fiu-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-fiu-en/p
+[2026-04-20T13:11:23.269229+00:00] [1245/1373] tc-bible-big-fiu-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-fiu-fra_
+[2026-04-20T13:11:23.356000+00:00] [1246/1373] tc-bible-big-gmq-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmq-deu_
+[2026-04-20T13:11:23.360502+00:00] [1247/1373] tc-bible-big-gem-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gem-fra_
+[2026-04-20T13:11:23.361990+00:00] [1248/1373] tc-bible-big-gem-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gem-deu_
+[2026-04-20T13:11:23.387892+00:00] [1249/1373] tc-bible-big-gmq-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmq-en/p
+[2026-04-20T13:11:23.388877+00:00] [1250/1373] tc-bible-big-gmw-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmw-deu_
+[2026-04-20T13:11:23.389831+00:00] progress 1250/1373  done=1174 errs=76  (125s, 599.1/min)
+[2026-04-20T13:11:23.397090+00:00] [1251/1373] tc-bible-big-gmw-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmw-deu_
+[2026-04-20T13:11:23.483360+00:00] [1252/1373] tc-bible-big-gmw-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmw-fra_
+[2026-04-20T13:11:23.484459+00:00] [1253/1373] tc-bible-big-gmw-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-gmw-en/p
+[2026-04-20T13:11:23.484604+00:00] [1254/1373] tc-bible-big-iir-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-iir-deu_
+[2026-04-20T13:11:23.511276+00:00] [1255/1373] tc-bible-big-iir-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-iir-en/p
+[2026-04-20T13:11:23.518307+00:00] [1256/1373] tc-bible-big-inc-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-inc-deu_
+[2026-04-20T13:11:23.522080+00:00] [1257/1373] tc-bible-big-inc-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-inc-deu_
+[2026-04-20T13:11:23.607213+00:00] [1258/1373] tc-bible-big-ine-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-ine-deu_
+[2026-04-20T13:11:23.607498+00:00] [1259/1373] tc-bible-big-inc-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-inc-en/p
+[2026-04-20T13:11:23.607867+00:00] [1260/1373] tc-bible-big-ine-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-ine-deu_
+[2026-04-20T13:11:23.640655+00:00] [1261/1373] tc-bible-big-itc-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-itc-deu_
+[2026-04-20T13:11:23.644831+00:00] [1262/1373] tc-bible-big-ira-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-ira-deu_
+[2026-04-20T13:11:23.654563+00:00] [1263/1373] tc-bible-big-itc-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-itc-deu_
+[2026-04-20T13:11:23.738952+00:00] [1264/1373] tc-bible-big-map-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-map-en/p
+[2026-04-20T13:11:23.742275+00:00] [1265/1373] tc-bible-big-itc-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-itc-fra_
+[2026-04-20T13:11:23.742456+00:00] [1266/1373] tc-bible-big-map-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-map-fra_
+[2026-04-20T13:11:23.770210+00:00] [1267/1373] tc-bible-big-mkh-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-mkh-deu_
+[2026-04-20T13:11:23.775633+00:00] [1268/1373] tc-bible-big-mkh-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-mkh-fra_
+[2026-04-20T13:11:23.785010+00:00] [1269/1373] tc-bible-big-mul-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-mul-deu_
+[2026-04-20T13:11:23.878848+00:00] [1270/1373] tc-bible-big-mul-mul: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-mul-mul/
+[2026-04-20T13:11:23.879764+00:00] [1271/1373] tc-bible-big-phi-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-phi-deu_
+[2026-04-20T13:11:23.916779+00:00] [1272/1373] tc-bible-big-phi-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-phi-en/p
+[2026-04-20T13:11:23.928876+00:00] [1273/1373] tc-bible-big-poz-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-poz-deu_
+[2026-04-20T13:11:23.944648+00:00] [1274/1373] tc-bible-big-poz-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-poz-en/p
+[2026-04-20T13:11:24.022959+00:00] [1275/1373] tc-bible-big-mul-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-mul-deu_
+[2026-04-20T13:11:24.028680+00:00] [1276/1373] tc-bible-big-poz-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-poz-fra_
+[2026-04-20T13:11:24.035379+00:00] [1277/1373] tc-bible-big-pqe-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-pqe-deu_
+[2026-04-20T13:11:24.079979+00:00] [1278/1373] tc-bible-big-pqw-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-pqw-en/p
+[2026-04-20T13:11:24.083634+00:00] [1279/1373] tc-bible-big-pqw-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-pqw-deu_
+[2026-04-20T13:11:24.100646+00:00] [1280/1373] tc-bible-big-pqw-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-pqw-fra_
+[2026-04-20T13:11:24.166114+00:00] [1281/1373] tc-bible-big-roa-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-roa-deu_
+[2026-04-20T13:11:24.169711+00:00] [1282/1373] tc-bible-big-sem-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-sem-deu_
+[2026-04-20T13:11:24.169973+00:00] [1283/1373] tc-bible-big-roa-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-roa-en/p
+[2026-04-20T13:11:24.204997+00:00] [1284/1373] tc-bible-big-sem-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-sem-en/p
+[2026-04-20T13:11:24.222150+00:00] [1285/1373] tc-bible-big-sla-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-sla-deu_
+[2026-04-20T13:11:24.269993+00:00] [1286/1373] tc-bible-big-sem-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-sem-deu_
+[2026-04-20T13:11:24.286685+00:00] [1287/1373] tc-bible-big-sla-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-sla-en/p
+[2026-04-20T13:11:24.290629+00:00] [1288/1373] tc-bible-big-trk-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-trk-deu_
+[2026-04-20T13:11:24.293358+00:00] [1289/1373] tc-bible-big-tai-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-tai-deu_
+[2026-04-20T13:11:24.328827+00:00] [1290/1373] tc-bible-big-urj-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-urj-deu_
+[2026-04-20T13:11:24.344816+00:00] [1291/1373] tc-bible-big-urj-deu_eng_nld: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-urj-deu_
+[2026-04-20T13:11:24.395516+00:00] [1292/1373] tc-bible-big-urj-fra_ita_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-urj-fra_
+[2026-04-20T13:11:24.408570+00:00] [1293/1373] tc-bible-big-zhx-deu_eng_fra_por_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-zhx-deu_
+[2026-04-20T13:11:24.420672+00:00] [1294/1373] tc-big-ar-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-ar-en/preuploa
+[2026-04-20T13:11:24.424383+00:00] [1295/1373] tc-bible-big-zhx-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-bible-big-zhx-en/p
+[2026-04-20T13:11:24.449088+00:00] [1296/1373] tc-big-ar-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-ar-gmq/preuplo
+[2026-04-20T13:11:24.465520+00:00] [1297/1373] tc-big-ar-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-ar-itc/preuplo
+[2026-04-20T13:11:24.517556+00:00] [1298/1373] tc-big-bg-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-bg-en/preuploa
+[2026-04-20T13:11:24.541881+00:00] [1299/1373] tc-big-cel-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-cel-en/preuplo
+[2026-04-20T13:11:24.543095+00:00] [1300/1373] tc-big-cat_oci_spa-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-cat_oci_spa-en
+[2026-04-20T13:11:24.543208+00:00] progress 1300/1373  done=1174 errs=126  (126s, 617.4/min)
+[2026-04-20T13:11:24.546823+00:00] [1301/1373] tc-big-ces_slk-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-ces_slk-en/pre
+[2026-04-20T13:11:24.582362+00:00] [1302/1373] tc-big-de-es: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-de-es/preuploa
+[2026-04-20T13:11:24.598572+00:00] [1303/1373] tc-big-de-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-de-gmq/preuplo
+[2026-04-20T13:11:24.646236+00:00] [1304/1373] tc-big-de-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-de-zle/preuplo
+[2026-04-20T13:11:24.672881+00:00] [1305/1373] tc-big-en-bg: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-bg/preuploa
+[2026-04-20T13:11:24.674238+00:00] [1306/1373] tc-big-en-ar: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-ar/preuploa
+[2026-04-20T13:11:24.675027+00:00] [1307/1373] tc-big-el-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-el-en/preuploa
+[2026-04-20T13:11:24.711105+00:00] [1308/1373] tc-big-en-cat_oci_spa: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-cat_oci_spa
+[2026-04-20T13:11:24.722070+00:00] [1309/1373] tc-big-en-ces_slk: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-ces_slk/pre
+[2026-04-20T13:11:24.798677+00:00] [1310/1373] tc-big-en-es: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-es/preuploa
+[2026-04-20T13:11:24.802589+00:00] [1311/1373] tc-big-en-fi: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-fi/preuploa
+[2026-04-20T13:11:24.803553+00:00] [1312/1373] tc-big-en-et: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-et/preuploa
+[2026-04-20T13:11:24.806087+00:00] [1313/1373] tc-big-en-el: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-el/preuploa
+[2026-04-20T13:11:24.842894+00:00] [1314/1373] tc-big-en-fr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-fr/preuploa
+[2026-04-20T13:11:24.851602+00:00] [1315/1373] tc-big-en-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-gmq/preuplo
+[2026-04-20T13:11:24.923927+00:00] [1316/1373] tc-big-en-hu: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-hu/preuploa
+[2026-04-20T13:11:24.928623+00:00] [1317/1373] tc-big-en-lt: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-lt/preuploa
+[2026-04-20T13:11:24.933687+00:00] [1318/1373] tc-big-en-ko: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-ko/preuploa
+[2026-04-20T13:11:24.948148+00:00] [1319/1373] tc-big-en-it: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-it/preuploa
+[2026-04-20T13:11:24.970514+00:00] [1320/1373] tc-big-en-lv: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-lv/preuploa
+[2026-04-20T13:11:24.976699+00:00] [1321/1373] tc-big-en-pt: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-pt/preuploa
+[2026-04-20T13:11:25.051942+00:00] [1322/1373] tc-big-en-ro: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-ro/preuploa
+[2026-04-20T13:11:25.057561+00:00] [1323/1373] tc-big-en-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-zle/preuplo
+[2026-04-20T13:11:25.064003+00:00] [1324/1373] tc-big-en-tr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-en-tr/preuploa
+[2026-04-20T13:11:25.075187+00:00] [1325/1373] tc-big-es-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-es-zle/preuplo
+[2026-04-20T13:11:25.095703+00:00] [1326/1373] tc-big-et-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-et-en/preuploa
+[2026-04-20T13:11:25.105959+00:00] [1327/1373] tc-big-eu-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-eu-itc/preuplo
+[2026-04-20T13:11:25.181271+00:00] [1328/1373] tc-big-fa-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fa-gmq/preuplo
+[2026-04-20T13:11:25.181627+00:00] [1329/1373] tc-big-fa-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fa-itc/preuplo
+[2026-04-20T13:11:25.188888+00:00] [1330/1373] tc-big-fi-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fi-en/preuploa
+[2026-04-20T13:11:25.201326+00:00] [1331/1373] tc-big-fi-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fi-zle/preuplo
+[2026-04-20T13:11:25.222263+00:00] [1332/1373] tc-big-fi-zls: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fi-zls/preuplo
+[2026-04-20T13:11:25.232195+00:00] [1333/1373] tc-big-fr-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fr-en/preuploa
+[2026-04-20T13:11:25.302844+00:00] [1334/1373] tc-big-fr-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-fr-zle/preuplo
+[2026-04-20T13:11:25.303561+00:00] [1335/1373] tc-big-gmq-ar: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-ar/preuplo
+[2026-04-20T13:11:25.312180+00:00] [1336/1373] tc-big-gmq-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-en/preuplo
+[2026-04-20T13:11:25.328632+00:00] [1337/1373] tc-big-gmq-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-gmq/preupl
+[2026-04-20T13:11:25.343064+00:00] [1338/1373] tc-big-gmq-he: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-he/preuplo
+[2026-04-20T13:11:25.355096+00:00] [1339/1373] tc-big-gmq-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-itc/preupl
+[2026-04-20T13:11:25.431428+00:00] [1340/1373] tc-big-gmq-tr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-tr/preuplo
+[2026-04-20T13:11:25.432360+00:00] [1341/1373] tc-big-gmq-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-zle/preupl
+[2026-04-20T13:11:25.435852+00:00] [1342/1373] tc-big-gmq-zlw: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmq-zlw/preupl
+[2026-04-20T13:11:25.454107+00:00] [1343/1373] tc-big-gmw-gmw: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-gmw-gmw/preupl
+[2026-04-20T13:11:25.467574+00:00] [1344/1373] tc-big-he-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-he-en/preuploa
+[2026-04-20T13:11:25.483276+00:00] [1345/1373] tc-big-he-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-he-gmq/preuplo
+[2026-04-20T13:11:25.557047+00:00] [1346/1373] tc-big-he-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-he-itc/preuplo
+[2026-04-20T13:11:25.565658+00:00] [1347/1373] tc-big-hu-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-hu-en/preuploa
+[2026-04-20T13:11:25.566568+00:00] [1348/1373] tc-big-it-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-it-en/preuploa
+[2026-04-20T13:11:25.584633+00:00] [1349/1373] tc-big-it-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-it-zle/preuplo
+[2026-04-20T13:11:25.591298+00:00] [1350/1373] tc-big-itc-ar: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-ar/preuplo
+[2026-04-20T13:11:25.591361+00:00] progress 1350/1373  done=1174 errs=176  (127s, 635.9/min)
+[2026-04-20T13:11:25.616275+00:00] [1351/1373] tc-big-itc-bat: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-bat/preupl
+[2026-04-20T13:11:25.680985+00:00] [1352/1373] tc-big-itc-eu: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-eu/preuplo
+[2026-04-20T13:11:25.688748+00:00] [1353/1373] tc-big-itc-he: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-he/preuplo
+[2026-04-20T13:11:25.689826+00:00] [1354/1373] tc-big-itc-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-itc/preupl
+[2026-04-20T13:11:25.708908+00:00] [1355/1373] tc-big-itc-tr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-itc-tr/preuplo
+[2026-04-20T13:11:25.713036+00:00] [1356/1373] tc-big-ko-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-ko-en/preuploa
+[2026-04-20T13:11:25.741204+00:00] [1357/1373] tc-big-lt-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-lt-en/preuploa
+[2026-04-20T13:11:25.814930+00:00] [1358/1373] tc-big-sh-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-sh-en/preuploa
+[2026-04-20T13:11:25.821278+00:00] [1359/1373] tc-big-pt-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-pt-zle/preuplo
+[2026-04-20T13:11:25.834668+00:00] [1360/1373] tc-big-lv-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-lv-en/preuploa
+[2026-04-20T13:11:25.836746+00:00] [1361/1373] tc-big-tr-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-tr-en/preuploa
+[2026-04-20T13:11:25.841245+00:00] [1362/1373] tc-big-zh-ja: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zh-ja/preuploa
+[2026-04-20T13:11:25.871946+00:00] [1363/1373] tc-big-zle-de: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-de/preuplo
+[2026-04-20T13:11:25.935387+00:00] [1364/1373] tc-big-zle-en: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-en/preuplo
+[2026-04-20T13:11:25.939814+00:00] [1365/1373] tc-big-zle-es: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-es/preuplo
+[2026-04-20T13:11:25.970127+00:00] [1366/1373] tc-big-zle-fr: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-fr/preuplo
+[2026-04-20T13:11:25.972441+00:00] [1367/1373] tc-big-zle-fi: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-fi/preuplo
+[2026-04-20T13:11:25.975527+00:00] [1368/1373] tc-big-zle-gmq: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-gmq/preupl
+[2026-04-20T13:11:25.999989+00:00] [1369/1373] tc-big-zle-it: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-it/preuplo
+[2026-04-20T13:11:26.061740+00:00] [1370/1373] tc-big-zle-pt: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-pt/preuplo
+[2026-04-20T13:11:26.062043+00:00] [1371/1373] tc-big-zle-itc: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-itc/preupl
+[2026-04-20T13:11:26.105510+00:00] [1372/1373] tc-big-zle-zle: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-zle/preupl
+[2026-04-20T13:11:26.105722+00:00] [1373/1373] tc-big-zle-zls: error:HfHubHTTPError:429 Client Error: Too Many Requests for url: https://huggingface.co/api/models/WindyWord/translate-tc-big-zle-zls/preupl
+[2026-04-20T13:11:26.106101+00:00] Complete. done=1174, errors=199, total=1373
+[2026-04-20T13:12:57.740726+00:00] Refresh target: 199 repos
+[2026-04-20T13:13:30.020935+00:00] progress 50/199  done=50 errs=0  (32s, 92.9/min)
+[2026-04-20T13:14:02.409385+00:00] progress 100/199  done=100 errs=0  (65s, 92.8/min)
+[2026-04-20T13:14:33.028866+00:00] progress 150/199  done=150 errs=0  (95s, 94.5/min)
+[2026-04-20T13:15:00.517673+00:00] Complete. done=199, errors=0, total=199
+[2026-04-20T13:20:19.634588+00:00] Refresh target: 1 repos
+[2026-04-20T13:20:19.748269+00:00] Refresh target: 1 repos
+[2026-04-20T13:21:52.774209+00:00] Listing live translate-* repos on HF…
+[2026-04-20T13:21:53.151178+00:00] Refresh target: 1443 repos
+[2026-04-20T13:22:22.954276+00:00] progress 50/1443  done=50 errs=0  (30s, 100.7/min)
+[2026-04-20T13:22:53.545923+00:00] progress 100/1443  done=100 errs=0  (60s, 99.3/min)
+[2026-04-20T13:23:24.330327+00:00] progress 150/1443  done=150 errs=0  (91s, 98.7/min)
+[2026-04-20T13:23:53.676220+00:00] progress 200/1443  done=200 errs=0  (121s, 99.6/min)
+[2026-04-20T13:24:24.229172+00:00] progress 250/1443  done=250 errs=0  (151s, 99.3/min)
+[2026-04-20T13:24:53.268796+00:00] progress 300/1443  done=300 errs=0  (180s, 99.9/min)
+[2026-04-20T13:25:24.361025+00:00] progress 350/1443  done=350 errs=0  (211s, 99.4/min)
+[2026-04-20T13:25:55.079341+00:00] progress 400/1443  done=400 errs=0  (242s, 99.2/min)
+[2026-04-20T13:26:29.728770+00:00] progress 450/1443  done=450 errs=0  (277s, 97.6/min)
+[2026-04-20T13:27:02.161984+00:00] progress 500/1443  done=500 errs=0  (309s, 97.1/min)
+[2026-04-20T13:27:29.734215+00:00] progress 550/1443  done=550 errs=0  (337s, 98.0/min)
+[2026-04-20T13:27:57.007257+00:00] progress 600/1443  done=600 errs=0  (364s, 98.9/min)
+[2026-04-20T13:28:27.613897+00:00] progress 650/1443  done=650 errs=0  (394s, 98.9/min)
+[2026-04-20T13:28:58.909876+00:00] progress 700/1443  done=700 errs=0  (426s, 98.6/min)
+[2026-04-20T13:29:27.413999+00:00] progress 750/1443  done=750 errs=0  (454s, 99.1/min)
+[2026-04-20T13:29:58.464494+00:00] progress 800/1443  done=800 errs=0  (485s, 98.9/min)
+[2026-04-20T13:30:27.534327+00:00] progress 850/1443  done=850 errs=0  (514s, 99.1/min)
+[2026-04-20T13:30:59.902919+00:00] progress 900/1443  done=900 errs=0  (547s, 98.8/min)
+[2026-04-20T13:31:31.862702+00:00] progress 950/1443  done=950 errs=0  (579s, 98.5/min)
+[2026-04-20T13:32:02.068926+00:00] progress 1000/1443  done=1000 errs=0  (609s, 98.5/min)
+[2026-04-20T13:32:30.755449+00:00] progress 1050/1443  done=1050 errs=0  (638s, 98.8/min)
+[2026-04-20T13:33:02.754041+00:00] progress 1100/1443  done=1100 errs=0  (670s, 98.6/min)
+[2026-04-20T13:33:33.373199+00:00] progress 1150/1443  done=1150 errs=0  (700s, 98.5/min)
+[2026-04-20T13:34:06.373201+00:00] progress 1200/1443  done=1200 errs=0  (733s, 98.2/min)
+[2026-04-20T13:34:35.237172+00:00] progress 1250/1443  done=1250 errs=0  (762s, 98.4/min)
+[2026-04-20T13:35:06.230927+00:00] progress 1300/1443  done=1300 errs=0  (793s, 98.4/min)
+[2026-04-20T13:35:39.806459+00:00] progress 1350/1443  done=1350 errs=0  (827s, 98.0/min)
+[2026-04-20T13:36:10.081898+00:00] progress 1400/1443  done=1400 errs=0  (857s, 98.0/min)
+[2026-04-20T13:36:36.970817+00:00] Complete. done=1443, errors=0, total=1443
+[2026-04-20T14:23:40.745082+00:00] Refresh target: 278 repos
+[2026-04-20T14:23:54.699311+00:00] progress 50/278  done=50 errs=0  (14s, 215.0/min)
+[2026-04-20T14:24:07.142828+00:00] progress 100/278  done=100 errs=0  (26s, 227.3/min)
+[2026-04-20T14:24:19.194918+00:00] progress 150/278  done=150 errs=0  (38s, 234.1/min)
+[2026-04-20T14:24:32.155638+00:00] progress 200/278  done=200 errs=0  (51s, 233.4/min)
+[2026-04-20T14:24:45.684907+00:00] progress 250/278  done=250 errs=0  (65s, 231.0/min)
+[2026-04-20T14:25:01.188569+00:00] Complete. done=278, errors=0, total=278
