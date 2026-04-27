@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-15T20:50:17.209286+00:00",
+  "_last_updated": "2026-04-21T14:51:51.165496+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/uk-pt.json",
   "patient_id": "uk-pt",
   "admitted": "2026-03-22T19:52:05.775616+00:00",
@@ -51,7 +51,9 @@
       "base_hash_prefix": null,
       "lora_hash_prefix": null,
       "created_at": "2026-04-14T23:32:37.964863+00:00",
-      "created_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-uk-pt/tree/main/lora",
+      "hf_uploaded_at": "2026-04-21T14:51:51.165496+00:00"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -88,7 +90,9 @@
       "score_after": 93.9,
       "delta": 2.3,
       "improved_at": "2026-04-15T19:54:39.419853+00:00",
-      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-uk-pt/tree/main/herm0",
+      "hf_uploaded_at": "2026-04-21T14:51:51.165496+00:00"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -139,7 +143,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-uk-pt/herm0-ct2-int8",
       "on_disk_bytes": 80253174,
       "quantized_at": "2026-04-15T20:50:17.209235+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-uk-pt/tree/main/herm0-ct2-int8",
+      "hf_uploaded_at": "2026-04-21T14:51:51.165496+00:00"
     }
   },
   "architecture": {
@@ -1192,6 +1198,21 @@
       "method": "CTranslate2 INT8 quantization of herm0/ (deeply-improved proprietary weights)",
       "protocol_script": "scripts/post_phase4_orchestrator.py",
       "notes": "Quantized herm0/model.safetensors \u2192 herm0-ct2-int8/model.bin (77 MB, ~25% of source). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-uk-pt",
+      "date": "2026-04-21T14:51:51.165496+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-uk-pt",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "herm0",
+        "herm0-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-uk-pt",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {

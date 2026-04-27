@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
+  "_last_updated": "2026-04-20T13:12:57.867453+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-big-zlw-zle.json",
   "patient_id": "tc-big-zlw-zle",
   "admitted": "2026-03-22T19:50:35.745131+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-zlw-zle/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-zlw-zle/tree/main/lora",
+      "hf_uploaded_at": "2026-04-20T13:12:57.867453+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -80,7 +82,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-zlw-zle/lora-ct2-int8",
       "on_disk_bytes": 247463936,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-zlw-zle/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-20T13:12:57.867453+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -100,7 +104,7 @@
       "date": "2026-03-22T19:50:35.745131+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -116,28 +120,28 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Cześć, jak się dzisiaj masz?",
-              "output": "Привет, как дела сегодня?",
+              "input": "Cze\u015b\u0107, jak si\u0119 dzisiaj masz?",
+              "output": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
               "passed": true
             },
             {
-              "input": "Dzisiaj rano pogoda jest piękna.",
-              "output": "Сегодня утром погода прекрасная.",
+              "input": "Dzisiaj rano pogoda jest pi\u0119kna.",
+              "output": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u043e\u0433\u043e\u0434\u0430 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f.",
               "passed": true
             },
             {
-              "input": "Chciałbym zamówić filiżankę kawy, proszę.",
-              "output": "Я бы хотел заказать чашку кофе, пожалуйста.",
+              "input": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017cank\u0119 kawy, prosz\u0119.",
+              "output": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
               "passed": true
             },
             {
-              "input": "Szybki brązowy lis przeskakuje nad leniwym psem.",
-              "output": "Быстрая коричневая лиса прыгает над ленивой собакой.",
+              "input": "Szybki br\u0105zowy lis przeskakuje nad leniwym psem.",
+              "output": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u043b\u0438\u0441\u0430 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u043d\u0430\u0434 \u043b\u0435\u043d\u0438\u0432\u043e\u0439 \u0441\u043e\u0431\u0430\u043a\u043e\u0439.",
               "passed": true
             },
             {
-              "input": "Sztuczna inteligencja zmienia świat.",
-              "output": "Искусственный интеллект меняет мир.",
+              "input": "Sztuczna inteligencja zmienia \u015bwiat.",
+              "output": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043c\u0435\u043d\u044f\u0435\u0442 \u043c\u0438\u0440.",
               "passed": true
             }
           ]
@@ -150,28 +154,28 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Cześć, jak się dzisiaj masz?",
-              "output": "Привет, как дела сегодня?",
+              "input": "Cze\u015b\u0107, jak si\u0119 dzisiaj masz?",
+              "output": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
               "passed": true
             },
             {
-              "input": "Dzisiaj rano pogoda jest piękna.",
-              "output": "Сегодня утром погода прекрасная.",
+              "input": "Dzisiaj rano pogoda jest pi\u0119kna.",
+              "output": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u043e\u0433\u043e\u0434\u0430 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f.",
               "passed": true
             },
             {
-              "input": "Chciałbym zamówić filiżankę kawy, proszę.",
-              "output": "Я бы хотел заказать чашку кофе, пожалуйста.",
+              "input": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017cank\u0119 kawy, prosz\u0119.",
+              "output": "\u042f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
               "passed": true
             },
             {
-              "input": "Szybki brązowy lis przeskakuje nad leniwym psem.",
-              "output": "Быстрая коричневая лиса прыгает над ленивой собакой.",
+              "input": "Szybki br\u0105zowy lis przeskakuje nad leniwym psem.",
+              "output": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u043b\u0438\u0441\u0430 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u043d\u0430\u0434 \u043b\u0435\u043d\u0438\u0432\u043e\u0439 \u0441\u043e\u0431\u0430\u043a\u043e\u0439.",
               "passed": true
             },
             {
-              "input": "Sztuczna inteligencja zmienia świat.",
-              "output": "Искусственный интеллект меняет мир.",
+              "input": "Sztuczna inteligencja zmienia \u015bwiat.",
+              "output": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043c\u0435\u043d\u044f\u0435\u0442 \u043c\u0438\u0440.",
               "passed": true
             }
           ]
@@ -184,34 +188,34 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Cześć, jak się dzisiaj masz?",
-              "output": "Привет, как дела сегодня?",
+              "input": "Cze\u015b\u0107, jak si\u0119 dzisiaj masz?",
+              "output": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043a\u0430\u043a \u0434\u0435\u043b\u0430 \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
               "passed": true
             },
             {
-              "input": "Dzisiaj rano pogoda jest piękna.",
-              "output": "Сегодня утром погода прекрасная.",
+              "input": "Dzisiaj rano pogoda jest pi\u0119kna.",
+              "output": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0443\u0442\u0440\u043e\u043c \u043f\u043e\u0433\u043e\u0434\u0430 \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u043d\u0430\u044f.",
               "passed": true
             },
             {
-              "input": "Chciałbym zamówić filiżankę kawy, proszę.",
-              "output": "Я хотел бы заказать чашку кофе, пожалуйста.",
+              "input": "Chcia\u0142bym zam\u00f3wi\u0107 fili\u017cank\u0119 kawy, prosz\u0119.",
+              "output": "\u042f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0437\u0430\u043a\u0430\u0437\u0430\u0442\u044c \u0447\u0430\u0448\u043a\u0443 \u043a\u043e\u0444\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430.",
               "passed": true
             },
             {
-              "input": "Szybki brązowy lis przeskakuje nad leniwym psem.",
-              "output": "Быстрый коричневый лис прыгает над ленивой собакой.",
+              "input": "Szybki br\u0105zowy lis przeskakuje nad leniwym psem.",
+              "output": "\u0411\u044b\u0441\u0442\u0440\u044b\u0439 \u043a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u044b\u0439 \u043b\u0438\u0441 \u043f\u0440\u044b\u0433\u0430\u0435\u0442 \u043d\u0430\u0434 \u043b\u0435\u043d\u0438\u0432\u043e\u0439 \u0441\u043e\u0431\u0430\u043a\u043e\u0439.",
               "passed": true
             },
             {
-              "input": "Sztuczna inteligencja zmienia świat.",
-              "output": "Искусственный интеллект меняет мир.",
+              "input": "Sztuczna inteligencja zmienia \u015bwiat.",
+              "output": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u043c\u0435\u043d\u044f\u0435\u0442 \u043c\u0438\u0440.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -245,14 +249,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:57:03.563568+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -270,7 +274,7 @@
           "sample_translations": [
             "The weather is beautiful today.",
             "I would like to order a cup of coffee, please.",
-            "Дети играют в парке.",
+            "\u0414\u0435\u0442\u0438 \u0438\u0433\u0440\u0430\u044e\u0442 \u0432 \u043f\u0430\u0440\u043a\u0435.",
             "What time does the train leave?",
             "She has been working at the hospital for ten years."
           ]
@@ -285,7 +289,7 @@
           "sample_translations": [
             "The weather is beautiful today.",
             "I would like to order a cup of coffee, please.",
-            "Дети играют в парке.",
+            "\u0414\u0435\u0442\u0438 \u0438\u0433\u0440\u0430\u044e\u0442 \u0432 \u043f\u0430\u0440\u043a\u0435.",
             "What time does the train leave?",
             "She has been working at the hospital for ten years."
           ],
@@ -299,11 +303,11 @@
           "not_echo": 8,
           "unique_outputs": 6,
           "sample_translations": [
-            "вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы",
+            "\u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b",
             "",
-            "вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы",
-            "вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы",
-            "вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы вы"
+            "\u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b",
+            "\u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b",
+            "\u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b \u0432\u044b"
           ],
           "delta_vs_base": -11.0
         }
@@ -321,7 +325,7 @@
       "date": "2026-03-23T07:57:03.563568+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -384,7 +388,7 @@
       "date": "2026-03-24T07:04:05.554286+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -420,7 +424,7 @@
       "date": "2026-03-24T20:24:02.151882+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -443,7 +447,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -496,11 +500,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tc-big-zlw→zle)"
+              "reason": "no English endpoint (tc-big-zlw\u2192zle)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tc-big-zlw→zle"
+              "reason": "no reference pairs for tc-big-zlw\u2192zle"
             },
             "vitals": {
               "status": "complete",
@@ -554,7 +558,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -674,7 +678,7 @@
       },
       "best_grade": "A-",
       "best_score": 92.68,
-      "notes": "Dr. C independent certification of tc-big-zlw-zle. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.68). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-big-zlw-zle. Tested 2 variant(s): base, ct2_int8. Best variant grade: A- (92.68). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-big-zlw-zle",
@@ -690,7 +694,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -764,7 +768,7 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-LANGCODE-FIX-tc-big-zlw-zle",
@@ -779,6 +783,20 @@
       "src_name": "West Slavic",
       "tgt_name": "East Slavic",
       "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tc-big-zlw-zle",
+      "date": "2026-04-20T13:12:57.867453+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tc-big-zlw-zle",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tc-big-zlw-zle",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -918,7 +936,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:04:05.554286+00:00",
       "variant_scores": {}
@@ -932,7 +950,7 @@
     "lora_size_mb": 957.99,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:50:02.371666+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -942,7 +960,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     },
     {
       "surgery_id": "H0-IMPROVE-TCBIGZLWZLE-20260328",
@@ -951,7 +969,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     },
     {
       "surgery_id": "H0-IMPROVE-TCBIGZLWZLE-20260328",
@@ -960,7 +978,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

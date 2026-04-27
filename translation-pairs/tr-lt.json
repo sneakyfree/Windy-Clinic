@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-04-21T14:44:53.245061+00:00",
   "_clinic_path": "THE_CLINIC/translation-pairs/tr-lt.json",
   "patient_id": "tr-lt",
   "admitted": "2026-03-22T19:51:17.493842+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tr-lt/lora",
@@ -71,7 +71,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tr-lt/tree/main/lora",
+      "hf_uploaded_at": "2026-04-21T14:44:53.245061+00:00"
     },
     "herm0_scripture": {
       "status": "present",
@@ -99,7 +101,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -115,7 +117,9 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tr-lt/tree/main/herm0-scripture",
+      "hf_uploaded_at": "2026-04-21T14:44:53.245061+00:00"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -124,7 +128,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tr-lt/lora-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tr-lt/tree/main/lora-ct2-int8",
+      "hf_uploaded_at": "2026-04-21T14:44:53.245061+00:00"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -137,7 +143,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tr-lt/scripture-ct2-int8",
       "on_disk_bytes": 78643200,
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-tr-lt/tree/main/scripture-ct2-int8",
+      "hf_uploaded_at": "2026-04-21T14:44:53.245061+00:00"
     }
   },
   "architecture": {
@@ -153,7 +161,7 @@
       "date": "2026-03-22T19:51:17.493842+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -169,28 +177,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Merhaba, bugün nasılsınız?",
-              "output": "Sveiki, kaip laikotės?",
+              "input": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+              "output": "Sveiki, kaip laikot\u0117s?",
               "passed": true
             },
             {
-              "input": "Bu sabah hava çok güzel.",
-              "output": "Šįryt labai gražu.",
+              "input": "Bu sabah hava \u00e7ok g\u00fczel.",
+              "output": "\u0160\u012fryt labai gra\u017eu.",
               "passed": true
             },
             {
-              "input": "Bir fincan kahve sipariş etmek istiyorum, lütfen.",
-              "output": "Norėčiau užsisakyti puodelį kavos.",
+              "input": "Bir fincan kahve sipari\u015f etmek istiyorum, l\u00fctfen.",
+              "output": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
               "passed": true
             },
             {
-              "input": "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.",
-              "output": "Greita ruda lapė nušoka nuo tingaus šuns.",
+              "input": "H\u0131zl\u0131 kahverengi tilki tembel k\u00f6pe\u011fin \u00fczerinden atlar.",
+              "output": "Greita ruda lap\u0117 nu\u0161oka nuo tingaus \u0161uns.",
               "passed": true
             },
             {
-              "input": "Yapay zeka dünyayı değiştiriyor.",
-              "output": "Dirbtinis protas keičia pasaulį.",
+              "input": "Yapay zeka d\u00fcnyay\u0131 de\u011fi\u015ftiriyor.",
+              "output": "Dirbtinis protas kei\u010dia pasaul\u012f.",
               "passed": true
             }
           ]
@@ -203,28 +211,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Merhaba, bugün nasılsınız?",
-              "output": "Sveiki, kaip laikotės?",
+              "input": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+              "output": "Sveiki, kaip laikot\u0117s?",
               "passed": true
             },
             {
-              "input": "Bu sabah hava çok güzel.",
-              "output": "Šįryt labai gražu.",
+              "input": "Bu sabah hava \u00e7ok g\u00fczel.",
+              "output": "\u0160\u012fryt labai gra\u017eu.",
               "passed": true
             },
             {
-              "input": "Bir fincan kahve sipariş etmek istiyorum, lütfen.",
-              "output": "Norėčiau užsisakyti puodelį kavos.",
+              "input": "Bir fincan kahve sipari\u015f etmek istiyorum, l\u00fctfen.",
+              "output": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
               "passed": true
             },
             {
-              "input": "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.",
-              "output": "Greita ruda lapė nušoka nuo tingaus šuns.",
+              "input": "H\u0131zl\u0131 kahverengi tilki tembel k\u00f6pe\u011fin \u00fczerinden atlar.",
+              "output": "Greita ruda lap\u0117 nu\u0161oka nuo tingaus \u0161uns.",
               "passed": true
             },
             {
-              "input": "Yapay zeka dünyayı değiştiriyor.",
-              "output": "Dirbtinis protas keičia pasaulį.",
+              "input": "Yapay zeka d\u00fcnyay\u0131 de\u011fi\u015ftiriyor.",
+              "output": "Dirbtinis protas kei\u010dia pasaul\u012f.",
               "passed": true
             }
           ]
@@ -237,34 +245,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "Merhaba, bugün nasılsınız?",
-              "output": "Sveiki, kaip laikotės šiandien?",
+              "input": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+              "output": "Sveiki, kaip laikot\u0117s \u0161iandien?",
               "passed": true
             },
             {
-              "input": "Bu sabah hava çok güzel.",
-              "output": "Šįryt labai gražu.",
+              "input": "Bu sabah hava \u00e7ok g\u00fczel.",
+              "output": "\u0160\u012fryt labai gra\u017eu.",
               "passed": true
             },
             {
-              "input": "Bir fincan kahve sipariş etmek istiyorum, lütfen.",
-              "output": "Norėčiau užsisakyti puodelį kavos, prašau.",
+              "input": "Bir fincan kahve sipari\u015f etmek istiyorum, l\u00fctfen.",
+              "output": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
               "passed": true
             },
             {
-              "input": "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.",
-              "output": "Greita ruda lapė nušoka nuo tingaus šuns.",
+              "input": "H\u0131zl\u0131 kahverengi tilki tembel k\u00f6pe\u011fin \u00fczerinden atlar.",
+              "output": "Greita ruda lap\u0117 nu\u0161oka nuo tingaus \u0161uns.",
               "passed": true
             },
             {
-              "input": "Yapay zeka dünyayı değiştiriyor.",
-              "output": "Dirbtinis protas keičia pasaulį.",
+              "input": "Yapay zeka d\u00fcnyay\u0131 de\u011fi\u015ftiriyor.",
+              "output": "Dirbtinis protas kei\u010dia pasaul\u012f.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -298,14 +306,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T08:46:15.673726+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -321,11 +329,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Šiandien labai geras oras.",
-            "Norėčiau užsisakyti puodelį kavos.",
-            "Vaikai žaidžia parke.",
-            "Kada išvyksta traukinys?",
-            "10 metų dirbo ligoninėje."
+            "\u0160iandien labai geras oras.",
+            "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+            "Vaikai \u017eaid\u017eia parke.",
+            "Kada i\u0161vyksta traukinys?",
+            "10 met\u0173 dirbo ligonin\u0117je."
           ]
         },
         "lora": {
@@ -336,11 +344,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Šiandien labai geras oras.",
-            "Norėčiau užsisakyti puodelį kavos.",
-            "Vaikai žaidžia parke.",
-            "Kada išvyksta traukinys?",
-            "10 metų dirbo ligoninėje."
+            "\u0160iandien labai geras oras.",
+            "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+            "Vaikai \u017eaid\u017eia parke.",
+            "Kada i\u0161vyksta traukinys?",
+            "10 met\u0173 dirbo ligonin\u0117je."
           ],
           "delta_vs_base": 0.0
         },
@@ -374,7 +382,7 @@
       "date": "2026-03-23T08:46:15.673726+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -437,7 +445,7 @@
       "date": "2026-03-24T07:07:13.240858+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -473,7 +481,7 @@
       "date": "2026-03-24T20:30:36.429078+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -496,7 +504,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -514,7 +522,7 @@
       "date": "2026-03-28T16:21:43.031948+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -524,7 +532,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 79.45,
@@ -533,20 +541,20 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Merhaba, bugün nasılsınız?",
-                  "forward": "Sveiki, kaip laikotės?",
-                  "returned": "Merhaba, nasılsınız?",
+                  "original": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "forward": "Sveiki, kaip laikot\u0117s?",
+                  "returned": "Merhaba, nas\u0131ls\u0131n\u0131z?",
                   "similarity": 0.8696
                 },
                 {
-                  "original": "Bu sabah hava çok güzel.",
-                  "forward": "Šįryt labai gražu.",
-                  "returned": "Bu sabah çok güzel.",
+                  "original": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "forward": "\u0160\u012fryt labai gra\u017eu.",
+                  "returned": "Bu sabah \u00e7ok g\u00fczel.",
                   "similarity": 0.8837
                 },
                 {
-                  "original": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "forward": "Norėčiau užsisakyti puodelį kavos.",
+                  "original": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "forward": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
                   "returned": "Bir fincan kahve istiyorum.",
                   "similarity": 0.7397
                 }
@@ -559,20 +567,20 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Merhaba, bugün nasılsınız?",
-                  "forward": "Sveiki, kaip laikotės?",
-                  "returned": "Merhaba, nasılsınız?",
+                  "original": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "forward": "Sveiki, kaip laikot\u0117s?",
+                  "returned": "Merhaba, nas\u0131ls\u0131n\u0131z?",
                   "similarity": 0.8696
                 },
                 {
-                  "original": "Bu sabah hava çok güzel.",
-                  "forward": "Šįryt labai gražu.",
-                  "returned": "Bu sabah çok güzel.",
+                  "original": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "forward": "\u0160\u012fryt labai gra\u017eu.",
+                  "returned": "Bu sabah \u00e7ok g\u00fczel.",
                   "similarity": 0.8837
                 },
                 {
-                  "original": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "forward": "Norėčiau užsisakyti puodelį kavos.",
+                  "original": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "forward": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
                   "returned": "Bir fincan kahve istiyorum.",
                   "similarity": 0.7397
                 }
@@ -585,21 +593,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Merhaba, bugün nasılsınız?",
-                  "forward": "Sveiki, kaip laikotės?",
-                  "returned": "Merhaba, nasılsınız?",
+                  "original": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "forward": "Sveiki, kaip laikot\u0117s?",
+                  "returned": "Merhaba, nas\u0131ls\u0131n\u0131z?",
                   "similarity": 0.8696
                 },
                 {
-                  "original": "Bu sabah hava çok güzel.",
-                  "forward": "Šį rytą ir ir žodžių žodžiai.",
+                  "original": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "forward": "\u0160\u012f ryt\u0105 ir ir \u017eod\u017ei\u0173 \u017eod\u017eiai.",
                   "returned": "Bu sabah ve kelimeler.",
                   "similarity": 0.6522
                 },
                 {
-                  "original": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "forward": "Norėčiau pavaišinti jus puodeliu kavos.",
-                  "returned": "Size bir fincan kahve ısmarlamak istiyorum.",
+                  "original": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "forward": "Nor\u0117\u010diau pavai\u0161inti jus puodeliu kavos.",
+                  "returned": "Size bir fincan kahve \u0131smarlamak istiyorum.",
                   "similarity": 0.8539
                 }
               ]
@@ -611,21 +619,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Merhaba, bugün nasılsınız?",
-                  "forward": "Sveiki, kaip laikotės?",
-                  "returned": "Merhaba, nasılsınız?",
+                  "original": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "forward": "Sveiki, kaip laikot\u0117s?",
+                  "returned": "Merhaba, nas\u0131ls\u0131n\u0131z?",
                   "similarity": 0.8696
                 },
                 {
-                  "original": "Bu sabah hava çok güzel.",
-                  "forward": "Šį rytą ir ir žodžių žodžiai.",
+                  "original": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "forward": "\u0160\u012f ryt\u0105 ir ir \u017eod\u017ei\u0173 \u017eod\u017eiai.",
                   "returned": "Bu sabah ve kelimeler.",
                   "similarity": 0.6522
                 },
                 {
-                  "original": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "forward": "Norėčiau pavaišinti jus puodeliu kavos.",
-                  "returned": "Size bir fincan kahve ısmarlamak istiyorum.",
+                  "original": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "forward": "Nor\u0117\u010diau pavai\u0161inti jus puodeliu kavos.",
+                  "returned": "Size bir fincan kahve \u0131smarlamak istiyorum.",
                   "similarity": 0.8539
                 }
               ]
@@ -670,19 +678,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Merhaba, bugün nasılsınız?",
-                  "reference": "Sveiki, kaip sekasi šiandien?",
-                  "hypothesis": "Sveiki, kaip laikotės?"
+                  "source": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "reference": "Sveiki, kaip sekasi \u0161iandien?",
+                  "hypothesis": "Sveiki, kaip laikot\u0117s?"
                 },
                 {
-                  "source": "Bu sabah hava çok güzel.",
-                  "reference": "Oras šįryt gražus.",
-                  "hypothesis": "Šįryt labai gražu."
+                  "source": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "reference": "Oras \u0161\u012fryt gra\u017eus.",
+                  "hypothesis": "\u0160\u012fryt labai gra\u017eu."
                 },
                 {
-                  "source": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "reference": "Norėčiau užsisakyti puodelį kavos.",
-                  "hypothesis": "Norėčiau užsisakyti puodelį kavos."
+                  "source": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "reference": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "hypothesis": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos."
                 }
               ]
             },
@@ -698,19 +706,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Merhaba, bugün nasılsınız?",
-                  "reference": "Sveiki, kaip sekasi šiandien?",
-                  "hypothesis": "Sveiki, kaip laikotės?"
+                  "source": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "reference": "Sveiki, kaip sekasi \u0161iandien?",
+                  "hypothesis": "Sveiki, kaip laikot\u0117s?"
                 },
                 {
-                  "source": "Bu sabah hava çok güzel.",
-                  "reference": "Oras šįryt gražus.",
-                  "hypothesis": "Šįryt labai gražu."
+                  "source": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "reference": "Oras \u0161\u012fryt gra\u017eus.",
+                  "hypothesis": "\u0160\u012fryt labai gra\u017eu."
                 },
                 {
-                  "source": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "reference": "Norėčiau užsisakyti puodelį kavos.",
-                  "hypothesis": "Norėčiau užsisakyti puodelį kavos."
+                  "source": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "reference": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "hypothesis": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos."
                 }
               ]
             },
@@ -726,19 +734,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Merhaba, bugün nasılsınız?",
-                  "reference": "Sveiki, kaip sekasi šiandien?",
-                  "hypothesis": "Sveiki, kaip laikotės?"
+                  "source": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "reference": "Sveiki, kaip sekasi \u0161iandien?",
+                  "hypothesis": "Sveiki, kaip laikot\u0117s?"
                 },
                 {
-                  "source": "Bu sabah hava çok güzel.",
-                  "reference": "Oras šįryt gražus.",
-                  "hypothesis": "Šį rytą ir ir žodžių žodžiai."
+                  "source": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "reference": "Oras \u0161\u012fryt gra\u017eus.",
+                  "hypothesis": "\u0160\u012f ryt\u0105 ir ir \u017eod\u017ei\u0173 \u017eod\u017eiai."
                 },
                 {
-                  "source": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "reference": "Norėčiau užsisakyti puodelį kavos.",
-                  "hypothesis": "Norėčiau pavaišinti jus puodeliu kavos."
+                  "source": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "reference": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "hypothesis": "Nor\u0117\u010diau pavai\u0161inti jus puodeliu kavos."
                 }
               ]
             },
@@ -754,19 +762,19 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Merhaba, bugün nasılsınız?",
-                  "reference": "Sveiki, kaip sekasi šiandien?",
-                  "hypothesis": "Sveiki, kaip laikotės?"
+                  "source": "Merhaba, bug\u00fcn nas\u0131ls\u0131n\u0131z?",
+                  "reference": "Sveiki, kaip sekasi \u0161iandien?",
+                  "hypothesis": "Sveiki, kaip laikot\u0117s?"
                 },
                 {
-                  "source": "Bu sabah hava çok güzel.",
-                  "reference": "Oras šįryt gražus.",
-                  "hypothesis": "Šį rytą ir ir žodžių žodžiai."
+                  "source": "Bu sabah hava \u00e7ok g\u00fczel.",
+                  "reference": "Oras \u0161\u012fryt gra\u017eus.",
+                  "hypothesis": "\u0160\u012f ryt\u0105 ir ir \u017eod\u017ei\u0173 \u017eod\u017eiai."
                 },
                 {
-                  "source": "Bir fincan kahve ısmarlamak istiyorum, lütfen.",
-                  "reference": "Norėčiau užsisakyti puodelį kavos.",
-                  "hypothesis": "Norėčiau pavaišinti jus puodeliu kavos."
+                  "source": "Bir fincan kahve \u0131smarlamak istiyorum, l\u00fctfen.",
+                  "reference": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos.",
+                  "hypothesis": "Nor\u0117\u010diau pavai\u0161inti jus puodeliu kavos."
                 }
               ]
             }
@@ -838,11 +846,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tr→lt)"
+              "reason": "no English endpoint (tr\u2192lt)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tr→lt"
+              "reason": "no reference pairs for tr\u2192lt"
             },
             "vitals": {
               "status": "complete",
@@ -896,11 +904,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (tr→lt)"
+              "reason": "no English endpoint (tr\u2192lt)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tr→lt"
+              "reason": "no reference pairs for tr\u2192lt"
             },
             "vitals": {
               "status": "complete",
@@ -922,7 +930,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (tr→lt)"
+              "reason": "no English endpoint for scripture test (tr\u2192lt)"
             }
           }
         }
@@ -955,7 +963,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1131,7 +1139,7 @@
       },
       "best_grade": "A+",
       "best_score": 99.44,
-      "notes": "Dr. C independent certification of tr-lt. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A+ (99.44). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tr-lt. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A+ (99.44). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tr-lt",
@@ -1156,10 +1164,26 @@
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=tr) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=tr) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-HFUPLOAD-tr-lt",
+      "date": "2026-04-21T14:44:53.245061+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "HuggingFace public upload to WindyWord/translate-tr-lt",
+      "protocol_script": "scripts/upload_to_huggingface.py",
+      "variants_uploaded": [
+        "lora",
+        "lora-ct2-int8",
+        "herm0-scripture",
+        "scripture-ct2-int8"
+      ],
+      "hf_url": "https://huggingface.co/WindyWord/translate-tr-lt",
+      "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
   "consensus": {
@@ -1203,7 +1227,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★★★½",
+    "stars_display": "\u2605\u2605\u2605\u2605\u00bd",
     "half_stars": 9,
     "label": "Deferred",
     "avg_cert_score": 9.0,
@@ -1308,7 +1332,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:07:13.240858+00:00",
       "variant_scores": {}
@@ -1322,7 +1346,7 @@
     "lora_size_mb": 302.61,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:54:03.012418+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1332,7 +1356,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
       "details": {
         "data_samples": 50000,
         "base_score": 91.8,
@@ -1346,7 +1370,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune — loss 8.44 -> 3.09 (63.4% improvement)",
+      "procedure": "eBible verse-aligned fine-tune \u2014 loss 8.44 -> 3.09 (63.4% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 7070,
