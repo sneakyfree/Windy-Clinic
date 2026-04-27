@@ -143,6 +143,62 @@ _LANG_NAMES = {
     "pol": "Polish", "ukr": "Ukrainian", "bel": "Belarusian", "ron": "Romanian",
     "hrv": "Croatian", "srp": "Serbian", "bul": "Bulgarian", "ell": "Greek",
     "heb": "Hebrew", "hin": "Hindi", "vie": "Vietnamese", "tha": "Thai",
+    # African languages (ISO 639-3)
+    "bem": "Bemba", "ee": "Ewe", "efi": "Efik", "gaa": "Ga",
+    "guw": "Gun", "ha": "Hausa", "iso": "Isoko", "kab": "Kabyle",
+    "kg": "Kongo", "kqn": "Kaonde", "kwn": "Kwangali", "kwy": "San Salvador Kongo",
+    "ln": "Lingala", "loz": "Lozi", "lu": "Luba-Katanga", "lua": "Luba-Lulua",
+    "lue": "Luvale", "lun": "Lunda", "luo": "Luo",
+    "mos": "Mossi", "ng": "Ndonga", "nso": "Northern Sotho",
+    "ny": "Chichewa", "nyk": "Nyaneka", "om": "Oromo",
+    "rn": "Rundi", "rnd": "Ruund", "run": "Rundi",
+    "rw": "Kinyarwanda", "sg": "Sango", "sn": "Shona",
+    "ss": "Swati", "swc": "Congo Swahili", "tiv": "Tiv",
+    "tll": "Tetela", "tn": "Tswana", "toi": "Tonga (Zambia)",
+    "ts": "Tsonga", "tum": "Tumbuka", "tw": "Twi",
+    "umb": "Umbundu", "ve": "Venda", "wal": "Wolaytta",
+    "zne": "Zande",
+    # Pacific / Oceanic / Melanesian
+    "bi": "Bislama", "fj": "Fijian", "gil": "Gilbertese",
+    "ho": "Hiri Motu", "kj": "Kuanyama", "kl": "Kalaallisut (Greenlandic)",
+    "lus": "Mizo", "mh": "Marshallese", "niu": "Niuean",
+    "pis": "Pijin", "pon": "Pohnpeian", "to": "Tongan",
+    "tpi": "Tok Pisin", "tvl": "Tuvaluan", "ty": "Tahitian",
+    "wls": "Wallisian", "yap": "Yapese", "chk": "Chuukese",
+    # Philippine languages
+    "bcl": "Central Bikol", "ceb": "Cebuano", "hil": "Hiligaynon",
+    "ilo": "Ilocano", "pag": "Pangasinan", "war": "Waray",
+    # Caribbean / Creoles
+    "bzs": "Brazilian Sign Language", "crs": "Seychellois Creole",
+    "ht": "Haitian Creole", "mfe": "Mauritian Creole",
+    "pap": "Papiamento", "srn": "Sranan Tongo", "tdt": "Tetum",
+    # Sign languages
+    "ase": "American Sign Language", "aed": "Argentine Sign Language",
+    "csg": "Chilean Sign Language", "csn": "Colombian Sign Language",
+    "fse": "Finnish Sign Language", "mfs": "Mexican Sign Language",
+    "prl": "Peruvian Sign Language", "ssp": "Spanish Sign Language",
+    "vsl": "Venezuelan Sign Language",
+    # Americas / indigenous
+    "tzo": "Tzotzil", "yua": "Yucatec Maya", "zai": "Isthmus Zapotec",
+    # European minor / Celtic
+    "gv": "Manx", "wa": "Walloon",
+    # Asia
+    "jap": "Japanese (alias)", "lus": "Mizo",  # lus also covered above
+    "zhx": "Sinitic (Chinese variants)",
+    # Helsinki-NLP family / collective codes
+    "NORTH_EU": "North European", "SCANDINAVIA": "Scandinavian",
+    "NORWAY": "Norwegian (regional)", "ROMANCE": "Romance languages",
+    "CELTIC": "Celtic languages", "ZH": "Chinese (variants)",
+    "SAMI": "Saami", "caenes": "Catalan/English/Spanish",
+    # Multiple-language markers
+    "mul": "Multiple Languages", "synthetic": "Synthetic Corpus",
+    # Helsinki-NLP family-of-families collective codes
+    "ccs": "South Caucasian (Kartvelian)", "cpf": "French-based Creoles",
+    "cus": "Cushitic languages", "euq": "Basque-Iberian",
+    "pqe": "Eastern Malayo-Polynesian", "sit": "Sino-Tibetan",
+    "taw": "Tai-Kadai",
+    # Historical / deprecated
+    "sh": "Serbo-Croatian (historical, now Bosnian/Croatian/Serbian)",
     # ISO 639-5 family collectives
     "aav": "Austro-Asiatic", "afa": "Afro-Asiatic", "alv": "Atlantic-Congo",
     "art": "Artificial", "bat": "Baltic", "ber": "Berber", "bnt": "Bantu",
@@ -161,9 +217,12 @@ _LANG_NAMES = {
     "multilingual": "Multilingual",
 }
 
-# Helsinki-NLP model-family prefixes we strip before language parsing
+# Helsinki-NLP model-family prefixes we strip before language parsing.
+# "synthetic-" added to handle pids like "synthetic-en-eu" (English→Basque from
+# synthetic corpus) — without stripping, naive split would yield src="synthetic"
+# and tgt="en-eu" which is incorrect.
 _HELSINKI_PREFIXES = (
-    "tc-bible-big-", "tc-big-", "tc-base-", "tcbig-", "hplt-",
+    "tc-bible-big-", "tc-big-", "tc-base-", "tcbig-", "hplt-", "synthetic-",
 )
 
 
@@ -249,6 +308,20 @@ _FAMILY_MEMBERS = {
     "NORTH_EU": ["Swedish", "Danish", "Norwegian", "Finnish", "Estonian", "Latvian", "Lithuanian"],
     "SCANDINAVIA": ["Swedish", "Danish", "Norwegian", "Icelandic"],
     "SAMI": ["Northern Sami", "Lule Sami"],
+    # Helsinki-NLP composite codes
+    "ROMANCE": ["Italian", "Spanish", "Portuguese", "French", "Catalan", "Romanian"],
+    "CELTIC": ["Irish", "Welsh", "Scottish Gaelic", "Breton", "Manx"],
+    "NORWAY": ["Norwegian Bokmål", "Norwegian Nynorsk"],
+    "ZH": ["Mandarin", "Cantonese", "Min Nan", "Hakka", "Wu"],
+    "caenes": ["Catalan", "English", "Spanish"],
+    "ccs": ["Georgian", "Mingrelian", "Svan", "Laz"],
+    "euq": ["Basque", "Aquitanian"],
+    "cus": ["Somali", "Oromo", "Afar", "Beja"],
+    "cpf": ["Haitian Creole", "Mauritian Creole", "Seychellois Creole", "Réunion Creole"],
+    "sit": ["Mandarin", "Cantonese", "Tibetan", "Burmese"],
+    "taw": ["Thai", "Lao", "Zhuang", "Shan"],
+    "pqe": ["Indonesian", "Malay", "Tagalog", "Samoan"],
+    "zhx": ["Mandarin", "Cantonese", "Min Nan", "Hakka", "Wu"],
 }
 
 
