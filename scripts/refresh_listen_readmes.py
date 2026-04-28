@@ -95,7 +95,7 @@ LANG_FAMILY = {
 
 # Per-language SPECIAL notes (dialects, scripts, quality caveats, etc.)
 LANG_NOTES = {
-    "de": "**Standard High German (Hochdeutsch).** Derived from `primeline/whisper-large-v3-turbo-german` — the top community German Whisper fine-tune (46k+ downloads). Replaces an earlier Swiss-German-only variant.",
+    "de": "**Standard High German (Hochdeutsch).** Indo-European > Germanic > West Germanic. Derived from `primeline/whisper-large-v3-turbo-german` — the top community German Whisper fine-tune (46k+ downloads). Replaces an earlier Swiss-German-only variant. WER 42.6% / CER 8.06% on 100-sample FLEURS (CER is the reliable signal here).",
     "hindi": "Outputs Hindi audio as **Latin-script Hinglish, NOT Devanagari**. FLEURS-Devanagari WER ≈100% is a script mismatch, not a quality failure. Useful for code-switched / chat / SMS contexts. For Devanagari output, use a separate model (not yet shipped).",
     "ig": "**Quality caveat:** model is whisper-tiny-igbo (39M params, 4 layers); audited at 157% WER. Ported from legacy WindyProLabs upload. Limited capacity; for production use we recommend an `openai/whisper-large-v3` multilingual fallback.",
     "am": "**Quality caveat:** ported from legacy upload that audited at 119% WER on FLEURS Amharic. Not retired pending a better community fine-tune; use with caution.",
@@ -316,7 +316,7 @@ Part of the [WindyWord.ai](https://windyword.ai) STT fleet. Visit windyword.ai f
 
 ## Provenance & License
 
-Weights derived from [{upstream}](https://huggingface.co/{upstream}) under Apache-2.0 (inherited). Proprietary fine-tuning by WindyWord.ai team via LoRA fog-of-mirror methodology where applicable.
+Weights derived from [{upstream}](https://huggingface.co/{upstream}) under Apache-2.0 (inherited). Voice tiers are direct redistributions of the upstream community Whisper / distil-whisper variants; no LoRA fine-tuning has been applied to these voice models.
 
 *Certified by Opus 4.6 Opus-Claw (Dr. C) on Veron-1 (RTX 5090, Mt Pleasant SC).*
 """

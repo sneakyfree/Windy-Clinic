@@ -1,0 +1,55 @@
+{
+  "_schema": "2.0",
+  "_last_updated": "2026-04-28T02:05:47.915312+00:00",
+  "_clinic_path": "THE_CLINIC/translation-pairs/pt-en.json",
+  "patient_id": "pt-en",
+  "admitted": "2026-04-28T02:05:47.915312+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "source_repo": "Helsinki-NLP/opus-mt-ROMANCE-en",
+  "source_language": {
+    "code": "pt",
+    "name": "Portuguese",
+    "family": "Indo-European > Italic > Romance"
+  },
+  "target_language": {
+    "code": "en",
+    "name": "English",
+    "family": "Indo-European > Germanic > West Germanic"
+  },
+  "variant_cluster": {
+    "lora": {
+      "status": "present",
+      "format": "safetensors",
+      "derived_from": "Helsinki-NLP/opus-mt-ROMANCE-en (Portuguese is one of 6 Romance source languages this multilingual MarianMT model handles)",
+      "ported_at": "2026-04-28T02:05:47.915312+00:00",
+      "ported_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-pt-en/tree/main/lora",
+      "hf_uploaded_at": "2026-04-28T02:05:47.915312+00:00",
+      "note": "Helsinki-NLP does not publish a Portuguese-only opus-mt-pt-en. Their canonical Portuguese-source path is opus-mt-ROMANCE-en (multilingual Romance→English). This WindyWord repo wraps those weights with a Portuguese-specific name to satisfy installer / consumer expectations for translate-pt-en."
+    }
+  },
+  "architecture": {
+    "model_type": "MarianMT",
+    "parameters": "ROMANCE-en multilingual scale"
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-pt-en",
+      "date": "2026-04-28T02:05:47.915312+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Build WindyWord/translate-pt-en from Helsinki-NLP/opus-mt-ROMANCE-en",
+      "rationale": "The Windy Pro installer's MODEL_REGISTRY has a windy-pair-pt-en entry, but no Portuguese-only Helsinki-NLP/opus-mt-pt-en exists upstream. Helsinki's canonical path for Portuguese-source translation is opus-mt-ROMANCE-en (68k+ downloads), which handles Portuguese alongside Italian/Spanish/French/Catalan/Romanian as source languages. This port wraps those weights under a pt-en namespace so installer URL construction works without the wizard needing special-case logic. The README on WindyWord/translate-pt-en clearly discloses the ROMANCE-derived nature.",
+      "source_repo": "Helsinki-NLP/opus-mt-ROMANCE-en",
+      "target_repo": "WindyWord/translate-pt-en",
+      "underlying_lineage": "identical to WindyWord/translate-ROMANCE-en — same weights, different namespace",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "quality_rating": {
+    "tier": "standard",
+    "label": "Standard",
+    "rated_at": null,
+    "note": "Inherits ROMANCE-en quality; not WER-audited as a Portuguese-specific pair yet. Community downloads (68k on Helsinki) suggest production-grade Portuguese coverage."
+  }
+}
