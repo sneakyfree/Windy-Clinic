@@ -39,9 +39,23 @@
       },
       "final_base": "ihanif/whisper-medium-pashto",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-FORCED-IDS-AUDIT-ps",
+      "date": "2026-04-28T01:45:43.094765+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "30-sample FLEURS audit using explicit forced_decoder_ids strategy",
+      "metrics": {
+        "wer": 0.053,
+        "cer": 0.032,
+        "script": 99.2,
+        "tier": "excellent"
+      },
+      "note": "forced_decoder_ids strategy substantially better than language= kwarg for ps — WindyWord harness now prefers forced_ids for Whisper inference."
     }
   ],
-  "_last_updated": "2026-04-28T01:34:30.852502+00:00",
+  "_last_updated": "2026-04-28T01:45:43.094765+00:00",
   "source_repo_origin": "ihanif/whisper-medium-pashto",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-ps"
@@ -58,12 +72,13 @@
     }
   },
   "quality_rating": {
-    "tier": "marginal",
-    "wer": 0.415,
-    "cer": 0.392,
-    "script_match_pct": 70,
-    "rated_at": "2026-04-28T01:34:30.852502+00:00",
+    "tier": "excellent",
+    "wer": 0.053,
+    "cer": 0.032,
+    "script_match_pct": 99.2,
+    "rated_at": "2026-04-28T01:45:43.094765+00:00",
     "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
-    "audit_method": "50-sample FLEURS Grand Rounds STT harness"
+    "audit_method": "30-sample FLEURS Grand Rounds STT harness with forced_decoder_ids",
+    "inference_recommendation": "use forced_decoder_ids prefix; language= kwarg may degrade quality"
   }
 }
