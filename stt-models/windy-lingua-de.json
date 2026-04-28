@@ -1,0 +1,61 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-28T00:23:50.278782+00:00",
+  "_clinic_path": "stt-models/windy-lingua-de.json",
+  "patient_id": "windy-lingua-de",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua German (Standard High German)",
+  "admitted": "2026-04-28T00:23:50.278782+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "language": "de",
+  "language_name": "German",
+  "language_dialect": "Standard High German (Hochdeutsch)",
+  "language_family": "Indo-European > Germanic > West Germanic",
+  "source_repo_origin": "primeline/whisper-large-v3-turbo-german",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-de"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-de",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T00:23:50.278782+00:00",
+      "upstream_base": "primeline/whisper-large-v3-turbo-german",
+      "params": "~809M (whisper-large-v3-turbo)",
+      "size_mb": 1620
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-LINGUA-DE",
+      "date": "2026-04-28T00:23:50.278782+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Cross-org port from primeline/whisper-large-v3-turbo-german (community model, 46k+ HF downloads, 57 likes — top German Whisper fine-tune)",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "rationale": "Earlier WindyProLabs/windy-lingua-de was inadvertently built on Flurin17/whisper-large-v3-turbo-swiss-german (a Swiss German fine-tune). When audited against standard German FLEURS (de_de) it scored 56.7% WER — unusable for the vast majority of German speakers (Berlin/Munich/Hochdeutsch). Excluded from the 04-21 port-everything-not-unusable batch as a result. Today (04-27) replaced by primeline's standard High German Whisper, the most-downloaded community German STT model on HF. The Swiss-German variant is left untouched on WindyProLabs for users specifically needing Swiss content.",
+      "wer_audit_result": {
+        "pending": "schedule WindyWord Phase-3d run"
+      },
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "quality_rating": {
+    "tier": "good (provisional)",
+    "label": "Good (provisional, pending in-house audit)",
+    "rated_at": null,
+    "rated_by": null,
+    "wer_pending": true,
+    "community_signal": {
+      "downloads": 46465,
+      "likes": 57,
+      "source": "HuggingFace primeline/whisper-large-v3-turbo-german"
+    },
+    "expected_wer_range": "<10% on standard German FLEURS based on community benchmarks; will verify with our 100-sample harness",
+    "note": "Replaces the Swiss-German-mismatch fallback with a community-validated High German Whisper."
+  }
+}

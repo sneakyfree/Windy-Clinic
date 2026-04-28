@@ -17096,3 +17096,28 @@ Internal Error - We're working hard to fix this as soon as possible!
 [2026-04-27T22:18:29Z] [scheduler] Quota still exhausted, waiting another hour
 [2026-04-27T23:18:29Z] [scheduler] Daily batch starting
 [2026-04-27T23:18:30Z] [scheduler] Quota still exhausted, waiting another hour
+[2026-04-28T00:18:30Z] [scheduler] Daily batch starting
+[2026-04-28T00:18:31Z] [scheduler] Quota available, launching upload
+[2026-04-28T00:18:31.581827+00:00] [main] ============================================================
+[2026-04-28T00:18:31.583758+00:00] [main] PARALLEL UPLOAD — 4 workers
+[2026-04-28T00:18:31.583778+00:00] [main] Doctor: Opus 4.6 Opus-Claw (Dr. C)
+[2026-04-28T00:18:31.583788+00:00] [main] ============================================================
+[2026-04-28T00:18:31.753076+00:00] [main] Auth: sneakyfree
+[2026-04-28T00:18:31.753365+00:00] [main] Targets already built: 1607
+[2026-04-28T00:18:31.753957+00:00] [main] Phase 1: 1607 targets, 1607 done, 0 remaining
+[2026-04-28T00:18:31.756008+00:00] [w0] Worker 0 started
+[2026-04-28T00:18:31.756578+00:00] [w0] No more targets. Exiting. Processed 0, errors 0.
+[2026-04-28T00:18:32.756774+00:00] [w1] Worker 1 started
+[2026-04-28T00:18:32.757446+00:00] [w1] No more targets. Exiting. Processed 0, errors 0.
+[2026-04-28T00:18:33.757731+00:00] [w2] Worker 2 started
+[2026-04-28T00:18:33.758537+00:00] [w2] No more targets. Exiting. Processed 0, errors 0.
+[2026-04-28T00:18:34.759152+00:00] [w3] Worker 3 started
+[2026-04-28T00:18:34.759859+00:00] [w3] No more targets. Exiting. Processed 0, errors 0.
+[2026-04-28T00:18:35.758507+00:00] [main] Phase 1 parallel complete
+[2026-04-28T00:18:35.758634+00:00] [main] 
+=== Phase 2: STT voice ===
+[2026-04-28T00:18:35.758839+00:00] [main] 
+=== Phase 3: STT lingua ===
+[2026-04-28T00:18:35.759059+00:00] [main] ============================================================
+[2026-04-28T00:18:35.759071+00:00] [main] UPLOAD PIPELINE COMPLETE
+[2026-04-28T00:18:35.759079+00:00] [main] ============================================================
