@@ -23,9 +23,25 @@
       },
       "rationale": "Previous Pashto Lingua was ported from WPL/ihanif/whisper-base-pashto, audited at 53.7% WER — unusable for production. Replaced with ihanif/whisper-medium-pashto, selected as the most-downloaded community Pashto Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-AUDIT-VERDICT-ps",
+      "date": "2026-04-28T01:34:30.852502+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "50-sample FLEURS audit with script-sanity check",
+      "verdict": "WINNER",
+      "metrics": {
+        "wer": 0.415,
+        "cer": 0.392,
+        "script_match_pct": 70,
+        "predecessor_wer": 0.5366
+      },
+      "final_base": "ihanif/whisper-medium-pashto",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
-  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "_last_updated": "2026-04-28T01:34:30.852502+00:00",
   "source_repo_origin": "ihanif/whisper-medium-pashto",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-ps"
@@ -42,9 +58,12 @@
     }
   },
   "quality_rating": {
-    "tier": "upgraded-pending-verification",
-    "previous_wer_unusable": 0.5366,
-    "rated_at": null,
-    "note": "Replaced unusable WPL fallback with community whisper-medium Pashto fine-tune. Quality verification pending."
+    "tier": "marginal",
+    "wer": 0.415,
+    "cer": 0.392,
+    "script_match_pct": 70,
+    "rated_at": "2026-04-28T01:34:30.852502+00:00",
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "audit_method": "50-sample FLEURS Grand Rounds STT harness"
   }
 }

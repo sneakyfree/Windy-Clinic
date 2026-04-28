@@ -23,9 +23,25 @@
       },
       "rationale": "Previous Amharic Lingua was ported from WPL/seyyaw/whisper-finetuned-amharic, audited at 118.9% WER — unusable for production. Replaced with b1n1yam/shook-medium-amharic-2k, selected as the most-downloaded community Amharic Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "DRC-AUDIT-VERDICT-am",
+      "date": "2026-04-28T01:34:30.852502+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "50-sample FLEURS audit with script-sanity check",
+      "verdict": "WINNER",
+      "metrics": {
+        "wer": 0.281,
+        "cer": 0.139,
+        "script_match_pct": 100,
+        "predecessor_wer": 1.1891
+      },
+      "final_base": "b1n1yam/shook-medium-amharic-2k",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     }
   ],
-  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "_last_updated": "2026-04-28T01:34:30.852502+00:00",
   "source_repo_origin": "b1n1yam/shook-medium-amharic-2k",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-am"
@@ -42,9 +58,12 @@
     }
   },
   "quality_rating": {
-    "tier": "upgraded-pending-verification",
-    "previous_wer_unusable": 1.1891,
-    "rated_at": null,
-    "note": "Replaced unusable WPL fallback with community whisper-medium Amharic fine-tune. Quality verification pending."
+    "tier": "good",
+    "wer": 0.281,
+    "cer": 0.139,
+    "script_match_pct": 100,
+    "rated_at": "2026-04-28T01:34:30.852502+00:00",
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "audit_method": "50-sample FLEURS Grand Rounds STT harness"
   }
 }

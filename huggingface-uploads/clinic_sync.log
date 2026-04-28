@@ -247,3 +247,27 @@ Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
   ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
 OK — dataset now has 2036 files, last_modified=2026-04-28 00:25:07+00:00
 [2026-04-28T00:25:27Z] post-commit sync done for 6752948 (exit=0)
+[2026-04-28T01:01:06Z] post-commit sync start for bb32443: Dr. C: 7-language quality-tier upgrade complete (de, ps, he, ml, mn, am, ig)
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 8.86MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 6.97MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 2042 files, last_modified=2026-04-28 01:01:13+00:00
+[2026-04-28T01:01:54Z] post-commit sync done for bb32443 (exit=0)
