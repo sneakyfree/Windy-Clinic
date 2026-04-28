@@ -101,9 +101,9 @@ LANG_NOTES = {
     "am": "**Quality caveat:** ported from legacy upload that audited at 119% WER on FLEURS Amharic. Not retired pending a better community fine-tune; use with caution.",
     "ps": "**Quality caveat:** based on whisper-base-pashto (74M params); audited at 53.7% WER. Limited capacity for serious transcription work.",
     "ja": "**Quality note:** based on whisper-base-japanese (74M params). Small model for a top-10 language; production users may prefer the multilingual `openai/whisper-large-v3` for higher accuracy.",
-    "ml": "**Quality caveat:** audited at 73.3% WER. Imported from legacy WindyProLabs.",
-    "he": "**Quality caveat:** audited at 66.9% WER. Imported from legacy WindyProLabs.",
-    "mn": "**Quality caveat:** community Mongolian Whisper fine-tune; audited as broken on our harness. Use with caution.",
+    "ml": "**Quality ceiling:** audited at 73.3% WER (community Malayalam Whisper space is thin — best alternative on HuggingFace audited at 76.5%, ~1.5% worse). Source: `vrclc/Whisper-small-Malayalam`. For high-stakes Malayalam transcription consider `openai/whisper-large-v3` multilingual.",
+    "he": "Replaces a previous build whose weights were incomplete (decoder layers 10-23 missing) and produced gibberish output. Now derived from `oridror/whisper-large-v3-turbo-hebrew-r1-myd-r1` (Whisper Large-v3 turbo Hebrew fine-tune). Verified post-upload at WER 24.2% / CER 11.5% / script-match 99% on 20-sample FLEURS he_il — GOOD tier. Tokenizer/preprocessor files filled in from `openai/whisper-large-v3` since the upstream fine-tune omits them.",
+    "mn": "Replaces a previous community Mongolian fine-tune that audited as broken (index error on first sample). Now derived from `Ganaa0614/whisper-small-mongolian-ver_0.1` (top community Mongolian Whisper by downloads). Verified post-upload at WER 57.7% / CER 17.3% / script-match 100% on 20-sample FLEURS mn_mn — MARGINAL tier (functional, with hesitation on rare vocabulary). Tokenizer/preprocessor files filled in from `openai/whisper-small` since the upstream fine-tune omits them.",
 }
 
 # Voice tier metadata: parameter sizes + Whisper architecture
