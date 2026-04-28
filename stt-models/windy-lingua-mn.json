@@ -1,0 +1,50 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "patient_id": "windy-lingua-mn",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Mongolian",
+  "language": "mn",
+  "language_name": "Mongolian",
+  "language_family": "Mongolic",
+  "examination_log": [
+    {
+      "exam_id": "DRC-LINGUA-UPGRADE-mn",
+      "date": "2026-04-28T00:59:14.220049+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Community-upgrade port: replaced WPL-era unusable Mongolian variant with stronger community fine-tune",
+      "previous": {
+        "base": "Otgonbaatar/whisper-small-mongolian-3",
+        "wer": 1.0
+      },
+      "new": {
+        "base": "Ganaa0614/whisper-small-mongolian-ver_0.1",
+        "wer": "pending audit"
+      },
+      "rationale": "Previous Mongolian Lingua was ported from WPL/Otgonbaatar/whisper-small-mongolian-3, audited at 100.0% WER — unusable for production. Replaced with Ganaa0614/whisper-small-mongolian-ver_0.1, selected as the most-downloaded community Mongolian Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "source_repo_origin": "Ganaa0614/whisper-small-mongolian-ver_0.1",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-mn"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-mn",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T00:59:14.220049+00:00",
+      "upstream_base": "Ganaa0614/whisper-small-mongolian-ver_0.1",
+      "community_downloads_at_port": 641
+    }
+  },
+  "quality_rating": {
+    "tier": "upgraded-pending-verification",
+    "previous_wer_unusable": 1.0,
+    "rated_at": null,
+    "note": "Replaced unusable WPL fallback with community whisper-small Mongolian fine-tune. Quality verification pending."
+  }
+}

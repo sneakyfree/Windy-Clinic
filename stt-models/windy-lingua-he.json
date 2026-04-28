@@ -1,0 +1,50 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "patient_id": "windy-lingua-he",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Hebrew",
+  "language": "he",
+  "language_name": "Hebrew",
+  "language_family": "Afro-Asiatic > Semitic",
+  "examination_log": [
+    {
+      "exam_id": "DRC-LINGUA-UPGRADE-he",
+      "date": "2026-04-28T00:59:14.220049+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Community-upgrade port: replaced WPL-era unusable Hebrew variant with stronger community fine-tune",
+      "previous": {
+        "base": "adarcook/whisper-large-v3-hebrew",
+        "wer": 0.6691
+      },
+      "new": {
+        "base": "oridror/whisper-large-v3-turbo-hebrew-r1-myd-r1",
+        "wer": "pending audit"
+      },
+      "rationale": "Previous Hebrew Lingua was ported from WPL/adarcook/whisper-large-v3-hebrew, audited at 66.9% WER — unusable for production. Replaced with oridror/whisper-large-v3-turbo-hebrew-r1-myd-r1, selected as the most-downloaded community Hebrew Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "source_repo_origin": "oridror/whisper-large-v3-turbo-hebrew-r1-myd-r1",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-he"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-he",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T00:59:14.220049+00:00",
+      "upstream_base": "oridror/whisper-large-v3-turbo-hebrew-r1-myd-r1",
+      "community_downloads_at_port": 26
+    }
+  },
+  "quality_rating": {
+    "tier": "upgraded-pending-verification",
+    "previous_wer_unusable": 0.6691,
+    "rated_at": null,
+    "note": "Replaced unusable WPL fallback with community whisper-large-v3-turbo Hebrew fine-tune. Quality verification pending."
+  }
+}

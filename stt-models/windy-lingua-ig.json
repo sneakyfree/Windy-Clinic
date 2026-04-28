@@ -1,0 +1,52 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-04-28T01:01:06.966955+00:00",
+  "_clinic_path": "stt-models/windy-lingua-ig.json",
+  "patient_id": "windy-lingua-ig",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Igbo",
+  "admitted": "2026-04-28T01:01:06.966955+00:00",
+  "admitted_by": "Opus 4.6 Opus-Claw (Dr. C)",
+  "language": "ig",
+  "language_name": "Igbo",
+  "language_family": "Niger-Congo > Volta-Niger",
+  "source_repo_origin": "benjaminogbonna/whisper-tiny-igbo",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-ig"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-ig",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T01:01:06.966955+00:00",
+      "upstream_base": "benjaminogbonna/whisper-tiny-igbo",
+      "params": "~39M (whisper-tiny)",
+      "size_mb": 151
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "DRC-PORT-LINGUA-IG",
+      "date": "2026-04-28T01:01:06.966955+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Initial port from benjaminogbonna/whisper-tiny-igbo (only available community Igbo Whisper)",
+      "rationale": "Igbo is significantly underserved in community ASR. The only Whisper fine-tunes available on HF are: benjaminogbonna/whisper-tiny-igbo (157% WER in our 04-21 audit, but the only ungated option) and NCAIR1/Igbo-ASR (1.1k downloads, gated/restricted access — can't redistribute). We're shipping the tiny-igbo as a placeholder with explicit quality-limitation disclosure in the README; recommend production users route through openai/whisper-large-v3 multilingual with language='ig' for materially better quality. Slated for a fallback-multilingual-variant when we build that infrastructure.",
+      "wer_audit_result": {
+        "WPL_baseline": 1.5741,
+        "current": "same as WPL — same base model"
+      },
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "quality_rating": {
+    "tier": "limited",
+    "label": "Limited (production users should route to multilingual fallback)",
+    "rated_at": "2026-04-28T01:01:06.966955+00:00",
+    "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+    "wer_baseline_audit": 1.5741,
+    "production_recommendation": "Use openai/whisper-large-v3 with language='ig' for serious Igbo transcription"
+  }
+}

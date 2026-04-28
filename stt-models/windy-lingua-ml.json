@@ -1,0 +1,50 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "patient_id": "windy-lingua-ml",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Malayalam",
+  "language": "ml",
+  "language_name": "Malayalam",
+  "language_family": "Dravidian > Southern Dravidian",
+  "examination_log": [
+    {
+      "exam_id": "DRC-LINGUA-UPGRADE-ml",
+      "date": "2026-04-28T00:59:14.220049+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Community-upgrade port: replaced WPL-era unusable Malayalam variant with stronger community fine-tune",
+      "previous": {
+        "base": "vrclc/Whisper-small-Malayalam",
+        "wer": 0.7325
+      },
+      "new": {
+        "base": "BettySara/whisper-large-v3-malayalam-merged",
+        "wer": "pending audit"
+      },
+      "rationale": "Previous Malayalam Lingua was ported from WPL/vrclc/Whisper-small-Malayalam, audited at 73.2% WER — unusable for production. Replaced with BettySara/whisper-large-v3-malayalam-merged, selected as the most-downloaded community Malayalam Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "source_repo_origin": "BettySara/whisper-large-v3-malayalam-merged",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-ml"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-ml",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T00:59:14.220049+00:00",
+      "upstream_base": "BettySara/whisper-large-v3-malayalam-merged",
+      "community_downloads_at_port": 89
+    }
+  },
+  "quality_rating": {
+    "tier": "upgraded-pending-verification",
+    "previous_wer_unusable": 0.7325,
+    "rated_at": null,
+    "note": "Replaced unusable WPL fallback with community whisper-large-v3 Malayalam fine-tune. Quality verification pending."
+  }
+}

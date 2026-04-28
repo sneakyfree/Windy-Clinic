@@ -1,0 +1,50 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "patient_id": "windy-lingua-ps",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Pashto",
+  "language": "ps",
+  "language_name": "Pashto",
+  "language_family": "Indo-European > Indo-Iranian > Iranian",
+  "examination_log": [
+    {
+      "exam_id": "DRC-LINGUA-UPGRADE-ps",
+      "date": "2026-04-28T00:59:14.220049+00:00",
+      "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "Community-upgrade port: replaced WPL-era unusable Pashto variant with stronger community fine-tune",
+      "previous": {
+        "base": "ihanif/whisper-base-pashto",
+        "wer": 0.5366
+      },
+      "new": {
+        "base": "ihanif/whisper-medium-pashto",
+        "wer": "pending audit"
+      },
+      "rationale": "Previous Pashto Lingua was ported from WPL/ihanif/whisper-base-pashto, audited at 53.7% WER — unusable for production. Replaced with ihanif/whisper-medium-pashto, selected as the most-downloaded community Pashto Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    }
+  ],
+  "_last_updated": "2026-04-28T00:59:14.220049+00:00",
+  "source_repo_origin": "ihanif/whisper-medium-pashto",
+  "hf_repos_windyword": [
+    "WindyWord/listen-windy-lingua-ps"
+  ],
+  "variant_cluster": {
+    "safetensors": {
+      "status": "present",
+      "hf_repo": "WindyWord/listen-windy-lingua-ps",
+      "subfolder": "safetensors",
+      "format": "safetensors",
+      "ported_at": "2026-04-28T00:59:14.220049+00:00",
+      "upstream_base": "ihanif/whisper-medium-pashto",
+      "community_downloads_at_port": 65
+    }
+  },
+  "quality_rating": {
+    "tier": "upgraded-pending-verification",
+    "previous_wer_unusable": 0.5366,
+    "rated_at": null,
+    "note": "Replaced unusable WPL fallback with community whisper-medium Pashto fine-tune. Quality verification pending."
+  }
+}
