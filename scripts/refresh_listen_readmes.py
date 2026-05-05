@@ -44,32 +44,32 @@ def log(msg: str):
 # ────────────────────────────────────────────────────────────
 
 LANG_NAMES = {
-    "am": "Amharic", "arabic": "Arabic", "az": "Azerbaijani", "bn": "Bengali",
-    "ca": "Catalan", "chinese": "Chinese (Mandarin)", "cs": "Czech", "de": "German",
-    "fa": "Persian (Farsi)", "fi": "Finnish", "french": "French", "gu": "Gujarati",
-    "he": "Hebrew", "hindi": "Hindi", "hu": "Hungarian", "hy": "Armenian",
+    "am": "Amharic", "ar": "Arabic", "az": "Azerbaijani", "bn": "Bengali",
+    "ca": "Catalan", "cs": "Czech", "de": "German", "es": "Spanish",
+    "fa": "Persian (Farsi)", "fi": "Finnish", "fr": "French", "gu": "Gujarati",
+    "he": "Hebrew", "hi": "Hindi", "hu": "Hungarian", "hy": "Armenian",
     "ig": "Igbo", "it": "Italian", "ja": "Japanese", "kk": "Kazakh",
     "km": "Khmer", "lt": "Lithuanian", "ml": "Malayalam", "mn": "Mongolian",
     "mr": "Marathi", "ms": "Malay", "nl": "Dutch", "no": "Norwegian",
     "pa": "Punjabi", "ps": "Pashto", "pt": "Portuguese", "ro": "Romanian",
-    "si": "Sinhala", "spanish": "Spanish", "te": "Telugu",
+    "si": "Sinhala", "te": "Telugu", "zh": "Chinese (Mandarin)",
 }
 
 LANG_FAMILY = {
     "am": "Afro-Asiatic > Semitic > South Semitic",
-    "arabic": "Afro-Asiatic > Semitic",
+    "ar": "Afro-Asiatic > Semitic",
     "az": "Turkic > Oghuz",
     "bn": "Indo-European > Indo-Iranian > Indo-Aryan",
     "ca": "Indo-European > Italic > Romance",
-    "chinese": "Sino-Tibetan > Sinitic",
     "cs": "Indo-European > Balto-Slavic > West Slavic",
     "de": "Indo-European > Germanic > West Germanic",
+    "es": "Indo-European > Italic > Romance",
     "fa": "Indo-European > Indo-Iranian > Iranian",
     "fi": "Uralic > Finnic",
-    "french": "Indo-European > Italic > Romance",
+    "fr": "Indo-European > Italic > Romance",
     "gu": "Indo-European > Indo-Iranian > Indo-Aryan",
     "he": "Afro-Asiatic > Semitic",
-    "hindi": "Indo-European > Indo-Iranian > Indo-Aryan",
+    "hi": "Indo-European > Indo-Iranian > Indo-Aryan",
     "hu": "Uralic > Ugric",
     "hy": "Indo-European > Armenian",
     "ig": "Niger-Congo > Volta-Niger",
@@ -89,15 +89,15 @@ LANG_FAMILY = {
     "pt": "Indo-European > Italic > Romance",
     "ro": "Indo-European > Italic > Romance",
     "si": "Indo-European > Indo-Iranian > Indo-Aryan",
-    "spanish": "Indo-European > Italic > Romance",
     "te": "Dravidian > South-Central",
+    "zh": "Sino-Tibetan > Sinitic",
 }
 
 # Per-language SPECIAL notes (dialects, scripts, quality caveats, etc.)
 LANG_NOTES = {
     "de": "**Standard High German (Hochdeutsch).** Indo-European > Germanic > West Germanic. Derived from `primeline/whisper-large-v3-turbo-german` — the top community German Whisper fine-tune (46k+ downloads). Replaces an earlier Swiss-German-only variant. WER 42.6% / CER 8.06% on 100-sample FLEURS (CER is the reliable signal here).",
-    "hindi": "Outputs Hindi audio as **Latin-script Hinglish, NOT Devanagari**. FLEURS-Devanagari WER ≈100% is a script mismatch, not a quality failure. Useful for code-switched / chat / SMS contexts. For Devanagari output, use a separate model (not yet shipped).",
-    "ig": "**Quality caveat:** model is whisper-tiny-igbo (39M params, 4 layers); audited at 157% WER. Ported from legacy WindyProLabs upload. Limited capacity; for production use we recommend an `openai/whisper-large-v3` multilingual fallback.",
+    "hi": "Outputs Hindi audio as **Latin-script Hinglish, NOT Devanagari**. FLEURS-Devanagari WER ≈100% is a script mismatch, not a quality failure. Useful for code-switched / chat / SMS contexts. For Devanagari output, use a separate model (not yet shipped).",
+    "ig": "**Quality caveat:** model is whisper-tiny-igbo (39M params, 4 layers); audited at 157% WER. Limited capacity at this parameter size; for production use we recommend an `openai/whisper-large-v3` multilingual fallback.",
     "am": "**Quality caveat:** ported from legacy upload that audited at 119% WER on FLEURS Amharic. Not retired pending a better community fine-tune; use with caution.",
     "ps": "**Quality caveat:** based on whisper-base-pashto (74M params); audited at 53.7% WER. Limited capacity for serious transcription work.",
     "ja": "**Quality note:** based on whisper-base-japanese (74M params). Small model for a top-10 language; production users may prefer the multilingual `openai/whisper-large-v3` for higher accuracy.",
@@ -201,10 +201,7 @@ def build_lingua_readme(slug: str, is_ct2: bool, wer_data: dict, repo_id: str):
     variant_label = "ct2-int8" if is_ct2 else "safetensors"
     variant_header = "CPU INT8 (CTranslate2)" if is_ct2 else "GPU (safetensors)"
 
-    yaml_lang = slug if len(slug) == 2 else {
-        "arabic": "ar", "chinese": "zh", "french": "fr",
-        "hindi": "hi", "spanish": "es",
-    }.get(slug, "multilingual")
+    yaml_lang = slug if len(slug) in (2, 3) else "multilingual"
 
     return f"""---
 license: apache-2.0
