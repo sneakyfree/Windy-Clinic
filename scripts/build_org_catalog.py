@@ -184,15 +184,15 @@ def build_catalog(live_pids: set) -> str:
                 if slug not in wer_by_slug or wer_by_slug[slug] is None:
                     wer_by_slug[slug] = r.get("wer")
     LANG_FULL = {
-        "am": "Amharic", "arabic": "Arabic", "az": "Azerbaijani", "bn": "Bengali",
-        "ca": "Catalan", "chinese": "Chinese (Mandarin)", "cs": "Czech", "de": "German",
-        "fa": "Persian (Farsi)", "fi": "Finnish", "french": "French", "gu": "Gujarati",
-        "he": "Hebrew", "hindi": "Hindi", "hu": "Hungarian", "hy": "Armenian",
+        "am": "Amharic", "ar": "Arabic", "az": "Azerbaijani", "bn": "Bengali",
+        "ca": "Catalan", "cs": "Czech", "de": "German", "es": "Spanish",
+        "fa": "Persian (Farsi)", "fi": "Finnish", "fr": "French", "gu": "Gujarati",
+        "he": "Hebrew", "hi": "Hindi", "hu": "Hungarian", "hy": "Armenian",
         "ig": "Igbo", "it": "Italian", "ja": "Japanese", "kk": "Kazakh",
         "km": "Khmer", "lt": "Lithuanian", "ml": "Malayalam", "mn": "Mongolian",
         "mr": "Marathi", "ms": "Malay", "nl": "Dutch", "no": "Norwegian",
         "pa": "Punjabi", "ps": "Pashto", "pt": "Portuguese", "ro": "Romanian",
-        "si": "Sinhala", "spanish": "Spanish", "te": "Telugu",
+        "si": "Sinhala", "te": "Telugu", "zh": "Chinese (Mandarin)",
     }
     for slug in lingua_langs:
         full = LANG_FULL.get(slug, slug.capitalize())

@@ -319,3 +319,73 @@ Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
   ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
 OK — dataset now has 2045 files, last_modified=2026-04-28 01:46:31+00:00
 [2026-04-28T01:46:57Z] post-commit sync done for b26a43d (exit=0)
+[2026-04-28T02:06:47Z] post-commit sync start for e5d2f4e: Dr. C: 5-bug cleanup pass post-audit
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 7.50MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 5.74MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 2047 files, last_modified=2026-04-28 02:06:54+00:00
+[2026-04-28T02:07:12Z] post-commit sync done for e5d2f4e (exit=0)
+[2026-04-28T02:51:25Z] post-commit sync start for 94491bc: Dr. C: he+mn replacement + ml ceiling documentation
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 8.87MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 7.50MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 2048 files, last_modified=2026-04-28 02:51:31+00:00
+[2026-04-28T02:51:51Z] post-commit sync done for 94491bc (exit=0)
+[2026-05-05T23:48:13Z] post-commit sync start for b005adb: Dr. C: brutal audit pass — ISO rename, orphan delete, dead-org sweep
+/home/user1-gpu/.local/lib/python3.12/site-packages/huggingface_hub/hf_api.py:9662: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+It seems you are trying to upload a large folder at once. This might take some time and then fail if the folder is too large. For such cases, it is recommended to upload in smaller batches or to use `HfApi().upload_large_folder(...)`/`hf upload-large-folder` instead. For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/upload#upload-a-large-folder.
+Syncing /srv/repos/windy-pro/THE_CLINIC → WindyWord/clinic-patient-records …
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 16.3MB/s  
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[A
+
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 19.5MB / 19.5MB, 12.2MB/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...b_fullfleet/results.jsonl: 100%|██████████| 19.5MB / 19.5MB            
+OK — dataset now has 2049 files, last_modified=2026-05-05 23:48:18+00:00
+[2026-05-05T23:48:40Z] post-commit sync done for b005adb (exit=0)
