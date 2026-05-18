@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T00:21:45.377721+00:00",
+  "_last_updated": "2026-05-13T22:06:10-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/ar-pl.json",
   "patient_id": "ar-pl",
   "admitted": "2026-03-22T19:27:36.451754+00:00",
@@ -146,7 +146,9 @@
       "improved_at": "2026-04-14T05:11:35.306196+00:00",
       "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ar-pl/tree/main/herm0",
-      "hf_uploaded_at": "2026-04-16T00:21:45.377721+00:00"
+      "hf_uploaded_at": "2026-04-16T00:21:45.377721+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ar-pl/tree/main/herm0",
+      "windstormlabs_uploaded_at": "2026-05-13T22:06:10-0400"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -157,7 +159,9 @@
       "quantized_at": "2026-04-15T21:00:35.672417+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ar-pl/tree/main/herm0-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:21:45.377721+00:00"
+      "hf_uploaded_at": "2026-04-16T00:21:45.377721+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ar-pl/tree/main/herm0-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-13T22:06:10-0400"
     }
   },
   "architecture": {
@@ -1062,12 +1066,35 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-ar-pl",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-13T22-06-10-ar-pl",
+      "date": "2026-05-13T22:06:10-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-ar-pl",
+        "dest_repo": "WindstormLabs/translate-ar-pl",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 5.2,
+        "quality_tier": null,
+        "stars": 4.0,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.287471",
-    "doctors_examined": 3,
-    "exams_total": 8,
+    "last_updated": "2026-05-13T22:06:10-0400",
+    "doctors_examined": 6,
+    "exams_total": 19,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

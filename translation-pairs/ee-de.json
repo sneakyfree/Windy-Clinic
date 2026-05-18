@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-05-13T22:20:30-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/ee-de.json",
   "patient_id": "ee-de",
   "admitted": "2026-03-22T19:29:49.604368+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-ee-de/lora",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ee-de/tree/main/lora",
-      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00"
+      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ee-de/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-13T22:20:30-0400"
     },
     "herm0_scripture": {
       "status": "present",
@@ -101,7 +103,7 @@
       },
       "specialization": "scripture",
       "specialization_label": "Bible/Scripture Translation",
-      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation — use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
+      "specialization_note": "This variant is fine-tuned on eBible.org verse-aligned biblical text. Optimized for scripture translation (Bible, theological texts, liturgical content). NOT recommended for general-purpose translation \u2014 use base or ct2 for that. Bloodwork-001 showed -32.3% avg round-trip and -72.6% avg BLEU on general text, confirming narrow specialization.",
       "use_cases": [
         "Bible translation",
         "Theological text translation",
@@ -119,7 +121,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ee-de/tree/main/herm0-scripture",
-      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00"
+      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ee-de/tree/main/herm0-scripture",
+      "windstormlabs_uploaded_at": "2026-05-13T22:20:30-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -130,7 +134,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ee-de/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00"
+      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ee-de/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-13T22:20:30-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -145,7 +151,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ee-de/tree/main/scripture-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00"
+      "hf_uploaded_at": "2026-04-16T00:45:00.475707+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ee-de/tree/main/scripture-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-13T22:20:30-0400"
     }
   },
   "architecture": {
@@ -161,7 +169,7 @@
       "date": "2026-03-22T19:29:49.604368+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -198,7 +206,7 @@
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Artificial in Telgececes össening the Interd.",
+              "output": "Artificial in Telgececes \u00f6ssening the Interd.",
               "passed": true
             }
           ]
@@ -232,7 +240,7 @@
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Artificial in Telgececes össening the Interd.",
+              "output": "Artificial in Telgececes \u00f6ssening the Interd.",
               "passed": true
             }
           ]
@@ -251,7 +259,7 @@
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "Das Buch The weathher as beflüchtigen.",
+              "output": "Das Buch The weathher as befl\u00fcchtigen.",
               "passed": true
             },
             {
@@ -272,7 +280,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -306,14 +314,14 @@
           "stars": 4.5
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:17:22.381509+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -329,11 +337,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Das Buch The weather atis benündert sich, um durch die Milch zu kastrieren.",
+            "Das Buch The weather atis ben\u00fcndert sich, um durch die Milch zu kastrieren.",
             "I www.jw.org, Ep.",
             "The Fenren are Playing in the pak.",
-            "Wie war es, daß ich mir die Haut rasierte?",
-            "She Hass bestündet die Veröffentlichung the Faxital for Teens."
+            "Wie war es, da\u00df ich mir die Haut rasierte?",
+            "She Hass best\u00fcndet die Ver\u00f6ffentlichung the Faxital for Teens."
           ]
         },
         "lora": {
@@ -344,11 +352,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Das Buch The weather atis benündert sich, um durch die Milch zu kastrieren.",
+            "Das Buch The weather atis ben\u00fcndert sich, um durch die Milch zu kastrieren.",
             "I www.jw.org, Ep.",
             "The Fenren are Playing in the pak.",
-            "Wie war es, daß ich mir die Haut rasierte?",
-            "She Hass bestündet die Veröffentlichung the Faxital for Teens."
+            "Wie war es, da\u00df ich mir die Haut rasierte?",
+            "She Hass best\u00fcndet die Ver\u00f6ffentlichung the Faxital for Teens."
           ],
           "delta_vs_base": 0.0
         },
@@ -382,7 +390,7 @@
       "date": "2026-03-23T04:17:22.381509+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -445,7 +453,7 @@
       "date": "2026-03-24T02:31:57.847978",
       "doctor": "Herm OC1",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Original HF model stress test — downloaded source model from HuggingFace, 5 paragraph types",
+      "method": "Original HF model stress test \u2014 downloaded source model from HuggingFace, 5 paragraph types",
       "protocol_script": "run_stress.py",
       "source_tested": "Helsinki-NLP/opus-mt-ee-de (original from HuggingFace, NOT Windy Pro copy)",
       "results": {
@@ -469,7 +477,7 @@
       "date": "2026-03-24T05:11:22.990251+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -505,7 +513,7 @@
       "date": "2026-03-24T15:55:37.637201+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -528,7 +536,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -546,7 +554,7 @@
       "date": "2026-03-28T14:55:39.005194+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -556,7 +564,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 67.7,
@@ -565,21 +573,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Ŋdi na wò, aleke nèle egbeae?",
-                  "forward": "Für jeden Morgen, wie sieht es heute aus?",
-                  "returned": "Ŋdi sia ŋdi la, aleke nɔnɔmea le egbea?",
+                  "original": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
+                  "forward": "F\u00fcr jeden Morgen, wie sieht es heute aus?",
+                  "returned": "\u014adi sia \u014bdi la, aleke n\u0254n\u0254mea le egbea?",
                   "similarity": 0.7059
                 },
                 {
-                  "original": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "forward": "Das Wetter ist ein schöner Morgen.",
-                  "returned": "Yame ƒe nɔnɔme nyo ŋutɔ le ŋdi me.",
+                  "original": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "forward": "Das Wetter ist ein sch\u00f6ner Morgen.",
+                  "returned": "Yame \u0192e n\u0254n\u0254me nyo \u014but\u0254 le \u014bdi me.",
                   "similarity": 0.6769
                 },
                 {
-                  "original": "Medi be mana kɔfi kplu ɖekam.",
+                  "original": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "forward": "Ich wollte mir ein Glas Kaffee geben.",
-                  "returned": "Medi be mana kɔfi kplu ɖekam.",
+                  "returned": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "similarity": 1.0
                 }
               ]
@@ -591,21 +599,21 @@
               "max": 100.0,
               "sentences": [
                 {
-                  "original": "Ŋdi na wò, aleke nèle egbeae?",
-                  "forward": "Für jeden Morgen, wie sieht es heute aus?",
-                  "returned": "Ŋdi sia ŋdi la, aleke nɔnɔmea le egbea?",
+                  "original": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
+                  "forward": "F\u00fcr jeden Morgen, wie sieht es heute aus?",
+                  "returned": "\u014adi sia \u014bdi la, aleke n\u0254n\u0254mea le egbea?",
                   "similarity": 0.7059
                 },
                 {
-                  "original": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "forward": "Das Wetter ist ein schöner Morgen.",
-                  "returned": "Yame ƒe nɔnɔme nyo ŋutɔ le ŋdi me.",
+                  "original": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "forward": "Das Wetter ist ein sch\u00f6ner Morgen.",
+                  "returned": "Yame \u0192e n\u0254n\u0254me nyo \u014but\u0254 le \u014bdi me.",
                   "similarity": 0.6769
                 },
                 {
-                  "original": "Medi be mana kɔfi kplu ɖekam.",
+                  "original": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "forward": "Ich wollte mir ein Glas Kaffee geben.",
-                  "returned": "Medi be mana kɔfi kplu ɖekam.",
+                  "returned": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "similarity": 1.0
                 }
               ]
@@ -617,21 +625,21 @@
               "max": 51.35,
               "sentences": [
                 {
-                  "original": "Ŋdi na wò, aleke nèle egbeae?",
+                  "original": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "forward": "Und er sprach zu ihm: Was wirst du ihr?",
-                  "returned": "Yesu ɖo eŋu nɛ be, \"Nu kae nye miaƒe susu?\"",
+                  "returned": "Yesu \u0256o e\u014bu n\u025b be, \"Nu kae nye mia\u0192e susu?\"",
                   "similarity": 0.3889
                 },
                 {
-                  "original": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
+                  "original": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
                   "forward": "Und das Wort des Himms ist das Wort des HERRN.",
-                  "returned": "Ale Aƒetɔ la ƒe gbee nye Himmer ƒe nya la.\"",
+                  "returned": "Ale A\u0192et\u0254 la \u0192e gbee nye Himmer \u0192e nya la.\"",
                   "similarity": 0.2973
                 },
                 {
-                  "original": "Medi be mana kɔfi kplu ɖekam.",
+                  "original": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "forward": "Und ich werde mich euch euch euch einen Wein, und ich sprach zu ihnen.",
-                  "returned": "Eye mana wein mi, eye maƒo nu na wo.",
+                  "returned": "Eye mana wein mi, eye ma\u0192o nu na wo.",
                   "similarity": 0.4308
                 }
               ]
@@ -643,21 +651,21 @@
               "max": 51.35,
               "sentences": [
                 {
-                  "original": "Ŋdi na wò, aleke nèle egbeae?",
+                  "original": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "forward": "Und er sprach zu ihm: Was wirst du ihr?",
-                  "returned": "Yesu ɖo eŋu nɛ be, \"Nu kae nye miaƒe susu?\"",
+                  "returned": "Yesu \u0256o e\u014bu n\u025b be, \"Nu kae nye mia\u0192e susu?\"",
                   "similarity": 0.3889
                 },
                 {
-                  "original": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
+                  "original": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
                   "forward": "Und das Wort des Himms ist das Wort des HERRN.",
-                  "returned": "Ale Aƒetɔ la ƒe gbee nye Himmer ƒe nya la.\"",
+                  "returned": "Ale A\u0192et\u0254 la \u0192e gbee nye Himmer \u0192e nya la.\"",
                   "similarity": 0.2973
                 },
                 {
-                  "original": "Medi be mana kɔfi kplu ɖekam.",
+                  "original": "Medi be mana k\u0254fi kplu \u0256ekam.",
                   "forward": "Und ich werde mich euch euch euch einen Wein, und ich sprach zu ihnen.",
-                  "returned": "Eye mana wein mi, eye maƒo nu na wo.",
+                  "returned": "Eye mana wein mi, eye ma\u0192o nu na wo.",
                   "similarity": 0.4308
                 }
               ]
@@ -702,18 +710,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ŋdi na wò, aleke nèle egbeae?",
+                  "source": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "reference": "Hallo, wie geht's dir heute?",
-                  "hypothesis": "Für jeden Morgen, wie sieht es heute aus?"
+                  "hypothesis": "F\u00fcr jeden Morgen, wie sieht es heute aus?"
                 },
                 {
-                  "source": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "reference": "Das Wetter ist heute Morgen schön.",
-                  "hypothesis": "Das Wetter ist ein schöner Morgen."
+                  "source": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "reference": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "hypothesis": "Das Wetter ist ein sch\u00f6ner Morgen."
                 },
                 {
-                  "source": "Medi be mana kɔfi kplu ɖekam.",
-                  "reference": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Medi be mana k\u0254fi kplu \u0256ekam.",
+                  "reference": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "hypothesis": "Ich wollte mir ein Glas Kaffee geben."
                 }
               ]
@@ -730,18 +738,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ŋdi na wò, aleke nèle egbeae?",
+                  "source": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "reference": "Hallo, wie geht's dir heute?",
-                  "hypothesis": "Für jeden Morgen, wie sieht es heute aus?"
+                  "hypothesis": "F\u00fcr jeden Morgen, wie sieht es heute aus?"
                 },
                 {
-                  "source": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "reference": "Das Wetter ist heute Morgen schön.",
-                  "hypothesis": "Das Wetter ist ein schöner Morgen."
+                  "source": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "reference": "Das Wetter ist heute Morgen sch\u00f6n.",
+                  "hypothesis": "Das Wetter ist ein sch\u00f6ner Morgen."
                 },
                 {
-                  "source": "Medi be mana kɔfi kplu ɖekam.",
-                  "reference": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Medi be mana k\u0254fi kplu \u0256ekam.",
+                  "reference": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "hypothesis": "Ich wollte mir ein Glas Kaffee geben."
                 }
               ]
@@ -758,18 +766,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ŋdi na wò, aleke nèle egbeae?",
+                  "source": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "reference": "Hallo, wie geht's dir heute?",
                   "hypothesis": "Und er sprach zu ihm: Was wirst du ihr?"
                 },
                 {
-                  "source": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "reference": "Das Wetter ist heute Morgen schön.",
+                  "source": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "reference": "Das Wetter ist heute Morgen sch\u00f6n.",
                   "hypothesis": "Und das Wort des Himms ist das Wort des HERRN."
                 },
                 {
-                  "source": "Medi be mana kɔfi kplu ɖekam.",
-                  "reference": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Medi be mana k\u0254fi kplu \u0256ekam.",
+                  "reference": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "hypothesis": "Und ich werde mich euch euch euch einen Wein, und ich sprach zu ihnen."
                 }
               ]
@@ -786,18 +794,18 @@
               ],
               "sample_translations": [
                 {
-                  "source": "Ŋdi na wò, aleke nèle egbeae?",
+                  "source": "\u014adi na w\u00f2, aleke n\u00e8le egbeae?",
                   "reference": "Hallo, wie geht's dir heute?",
                   "hypothesis": "Und er sprach zu ihm: Was wirst du ihr?"
                 },
                 {
-                  "source": "Yame ƒe nɔnɔme dze ani ŋdi sia.",
-                  "reference": "Das Wetter ist heute Morgen schön.",
+                  "source": "Yame \u0192e n\u0254n\u0254me dze ani \u014bdi sia.",
+                  "reference": "Das Wetter ist heute Morgen sch\u00f6n.",
                   "hypothesis": "Und das Wort des Himms ist das Wort des HERRN."
                 },
                 {
-                  "source": "Medi be mana kɔfi kplu ɖekam.",
-                  "reference": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Medi be mana k\u0254fi kplu \u0256ekam.",
+                  "reference": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "hypothesis": "Und ich werde mich euch euch euch einen Wein, und ich sprach zu ihnen."
                 }
               ]
@@ -870,11 +878,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ee→de)"
+              "reason": "no English endpoint (ee\u2192de)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ee→de"
+              "reason": "no reference pairs for ee\u2192de"
             },
             "vitals": {
               "status": "complete",
@@ -928,11 +936,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (ee→de)"
+              "reason": "no English endpoint (ee\u2192de)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for ee→de"
+              "reason": "no reference pairs for ee\u2192de"
             },
             "vitals": {
               "status": "complete",
@@ -954,7 +962,7 @@
             },
             "scripture": {
               "status": "skipped",
-              "reason": "no English endpoint for scripture test (ee→de)"
+              "reason": "no English endpoint for scripture test (ee\u2192de)"
             }
           }
         }
@@ -987,7 +995,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1163,7 +1171,7 @@
       },
       "best_grade": "A",
       "best_score": 95.92,
-      "notes": "Dr. C independent certification of ee-de. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (95.92). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of ee-de. Tested 3 variant(s): base, ct2_int8, herm0_scripture. Best variant grade: A (95.92). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-ee-de",
@@ -1204,16 +1212,39 @@
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=ee) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=ee) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-13T22-20-30-ee-de",
+      "date": "2026-05-13T22:20:30-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-ee-de",
+        "dest_repo": "WindstormLabs/translate-ee-de",
+        "files_uploaded": 25,
+        "expected_files": 25,
+        "verify": "match",
+        "elapsed_s": 7.1,
+        "quality_tier": null,
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.370069",
-    "doctors_examined": 3,
-    "exams_total": 8,
+    "last_updated": "2026-05-13T22:20:30-0400",
+    "doctors_examined": 6,
+    "exams_total": 17,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -1252,7 +1283,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★★★★",
+    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
     "half_stars": 10,
     "label": "Deferred",
     "avg_cert_score": 10.0,
@@ -1357,7 +1388,7 @@
       "oc1_stars_reference": 4.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:11:22.990251+00:00",
       "variant_scores": {}
@@ -1371,7 +1402,7 @@
     "lora_size_mb": 300.41,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:46:30.118060+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1381,7 +1412,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "no_improvement",
-      "procedure": "Deep LoRA fine-tune attempted — did not beat base, weights discarded",
+      "procedure": "Deep LoRA fine-tune attempted \u2014 did not beat base, weights discarded",
       "details": {
         "data_samples": 8017,
         "base_score": 89.2,
@@ -1395,7 +1426,7 @@
       "type": "fine-tune",
       "variant_target": "herm0",
       "outcome": "success",
-      "procedure": "eBible verse-aligned fine-tune — loss 12.98 -> 3.14 (75.8% improvement)",
+      "procedure": "eBible verse-aligned fine-tune \u2014 loss 12.98 -> 3.14 (75.8% improvement)",
       "details": {
         "data_source": "eBible.org",
         "training_pairs": 25000,

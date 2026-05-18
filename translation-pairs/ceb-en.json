@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T00:28:51.008842+00:00",
+  "_last_updated": "2026-05-13T22:11:24-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/ceb-en.json",
   "patient_id": "ceb-en",
   "admitted": "2026-03-22T19:28:32.070623+00:00",
@@ -53,7 +53,9 @@
       "created_at": "2026-04-14T23:28:31.770178+00:00",
       "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-ceb-en/tree/main/lora",
-      "hf_uploaded_at": "2026-04-16T00:28:51.008842+00:00"
+      "hf_uploaded_at": "2026-04-16T00:28:51.008842+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-ceb-en/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-13T22:11:24-0400"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -1221,12 +1223,35 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-ceb-en",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-13T22-11-24-ceb-en",
+      "date": "2026-05-13T22:11:24-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-ceb-en",
+        "dest_repo": "WindstormLabs/translate-ceb-en",
+        "files_uploaded": 10,
+        "expected_files": 10,
+        "verify": "match",
+        "elapsed_s": 5.2,
+        "quality_tier": null,
+        "stars": 5.0,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.317810",
-    "doctors_examined": 3,
-    "exams_total": 8,
+    "last_updated": "2026-05-13T22:11:24-0400",
+    "doctors_examined": 6,
+    "exams_total": 19,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

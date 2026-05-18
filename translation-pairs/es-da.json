@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-17T02:38:54.697304+00:00",
+  "_last_updated": "2026-05-15T00:51:02-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/es-da.json",
   "patient_id": "es-da",
   "admitted": "2026-03-22T19:32:30.469673+00:00",
@@ -103,7 +103,9 @@
       "score_after": 84.9,
       "delta": 0.8,
       "improved_at": "2026-04-14T00:00:21.896471+00:00",
-      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "improved_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-es-da/tree/main/herm0",
+      "windstormlabs_uploaded_at": "2026-05-15T00:51:02-0400"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -145,7 +147,9 @@
       "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
-      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-es-da/tree/main/windy-pair-es-da",
+      "windstormlabs_uploaded_at": "2026-05-15T00:51:02-0400"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -154,7 +158,9 @@
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-es-da/herm0-ct2-int8",
       "on_disk_bytes": 76778388,
       "quantized_at": "2026-04-15T20:59:15.276313+00:00",
-      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-es-da/tree/main/herm0-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-15T00:51:02-0400"
     }
   },
   "architecture": {
@@ -1222,12 +1228,35 @@
       "variants_uploaded": [],
       "hf_url": "https://huggingface.co/WindyWord/translate-es-da",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: . Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-15T00-51-02-es-da",
+      "date": "2026-05-15T00:51:02-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-es-da",
+        "dest_repo": "WindstormLabs/translate-es-da",
+        "files_uploaded": 13,
+        "expected_files": 2,
+        "verify": "superset",
+        "elapsed_s": 6.2,
+        "quality_tier": "premium",
+        "stars": 5.0,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.479967",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-15T00:51:02-0400",
+    "doctors_examined": 5,
+    "exams_total": 21,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

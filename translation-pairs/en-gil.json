@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-05-13T22:26:09-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/en-gil.json",
   "patient_id": "en-gil",
   "admitted": "2026-03-22T19:30:34.469061+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-gil/lora",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-en-gil/tree/main/lora",
-      "hf_uploaded_at": "2026-04-16T00:53:56.164810+00:00"
+      "hf_uploaded_at": "2026-04-16T00:53:56.164810+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-en-gil/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-13T22:26:09-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +86,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-en-gil/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:53:56.164810+00:00"
+      "hf_uploaded_at": "2026-04-16T00:53:56.164810+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-en-gil/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-13T22:26:09-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -104,7 +108,7 @@
       "date": "2026-03-22T19:30:34.469061+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -215,7 +219,7 @@
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -249,14 +253,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:26:32.903811+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -325,7 +329,7 @@
       "date": "2026-03-23T04:26:32.903811+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -388,7 +392,7 @@
       "date": "2026-03-24T05:16:30.980206+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -424,7 +428,7 @@
       "date": "2026-03-24T08:27:57.436628",
       "doctor": "Herm OC1",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Original HF model stress test — downloaded source model from HuggingFace, 5 paragraph types",
+      "method": "Original HF model stress test \u2014 downloaded source model from HuggingFace, 5 paragraph types",
       "protocol_script": "run_stress.py",
       "source_tested": "Helsinki-NLP/opus-mt-en-gil (original from HuggingFace, NOT Windy Pro copy)",
       "results": {
@@ -448,7 +452,7 @@
       "date": "2026-03-24T16:05:43.478391+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -471,7 +475,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -489,7 +493,7 @@
       "date": "2026-03-28T15:01:13.594255+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -498,7 +502,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 55.6,
@@ -752,7 +756,7 @@
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for en→gil"
+              "reason": "no reference pairs for en\u2192gil"
             },
             "vitals": {
               "status": "complete",
@@ -806,7 +810,7 @@
       "date": "2026-04-11T20:17:27.710146+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -889,7 +893,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1021,7 +1025,7 @@
       },
       "best_grade": "D",
       "best_score": 64.0,
-      "notes": "Dr. C independent certification of en-gil. Tested 2 variant(s): base, ct2_int8. Best variant grade: D (64.0). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of en-gil. Tested 2 variant(s): base, ct2_int8. Best variant grade: D (64.0). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-en-gil",
@@ -1084,13 +1088,36 @@
         "stars": 3.0,
         "tier": "basic"
       },
-      "notes": "Smoke battery: 5/5 short English sentences translated cleanly (non-empty, non-identity, reasonable length). GR v2 paragraph harness fails this pair with CUDA indexing assertion — suspected vocab-OOB during tokenization of paragraph fixtures. Tier assigned conservatively (basic, 3.0★) because only sentence-level verified. Paragraph-level quality UNVERIFIED. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Smoke battery: 5/5 short English sentences translated cleanly (non-empty, non-identity, reasonable length). GR v2 paragraph harness fails this pair with CUDA indexing assertion \u2014 suspected vocab-OOB during tokenization of paragraph fixtures. Tier assigned conservatively (basic, 3.0\u2605) because only sentence-level verified. Paragraph-level quality UNVERIFIED. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-13T22-26-09-en-gil",
+      "date": "2026-05-13T22:26:09-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-en-gil",
+        "dest_repo": "WindstormLabs/translate-en-gil",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 4.7,
+        "quality_tier": null,
+        "stars": 3.0,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.402156",
-    "doctors_examined": 3,
-    "exams_total": 8,
+    "last_updated": "2026-05-13T22:26:09-0400",
+    "doctors_examined": 6,
+    "exams_total": 17,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -1230,7 +1257,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:16:30.980206+00:00",
       "variant_scores": {}
@@ -1244,7 +1271,7 @@
     "lora_size_mb": 279.23,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:48:51.346343+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1254,7 +1281,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

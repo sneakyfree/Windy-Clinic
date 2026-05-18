@@ -31,8 +31,9 @@ THE_CLINIC/
 | Dr. A | Kit OC1 Alpha | 21-23 Mar 2026 | Phase 1 fleet build, LoRA fog-of-mirror, STT catalog |
 | Dr. B | Herm Zero (H0) | 24-29 Mar 2026 | CT2 fix, OPUS+eBible fine-tune, Grand Rounds v1, undocumented 2026-03-29 quantization event |
 | Dr. C | Opus 4.6 Opus-Claw | 11 Apr 2026+ | Full inventory audit, HF restore, Phase 3a verification, Phase 3b+4 improvement pipelines, real CT2 INT8, Grand Rounds v2, STT rebuild |
+| Dr. D | Opus 4.7 1M-Context | 18 May 2026+ | ADR-039 Phase C clone WindyWord → WindstormLabs; clinic signoff wiring for Phase C; introduced clinic-wide `fleet_events.jsonl` event journal; backfilled 1,174 silently-completed clones |
 
-Next agent: pick letter D, E, F...
+Next agent: pick letter E, F, G...
 
 ## Patient file schema
 

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-05-13T22:17:00-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/de-fj.json",
   "patient_id": "de-fj",
   "admitted": "2026-03-22T19:29:18.345793+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-de-fj/lora",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-de-fj/tree/main/lora",
-      "hf_uploaded_at": "2026-04-16T00:39:16.089072+00:00"
+      "hf_uploaded_at": "2026-04-16T00:39:16.089072+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-de-fj/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-13T22:17:00-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +86,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-de-fj/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:39:16.089072+00:00"
+      "hf_uploaded_at": "2026-04-16T00:39:16.089072+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-de-fj/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-13T22:17:00-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -104,7 +108,7 @@
       "date": "2026-03-22T19:29:18.345793+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -125,22 +129,22 @@
               "passed": true
             },
             {
-              "input": "Das Wetter ist heute Morgen wunderschön.",
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
               "output": "Sa bau totoka dina na draki ena gauna oqo.",
               "passed": true
             },
             {
-              "input": "Ich möchte bitte eine Tasse Kaffee bestellen.",
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
               "output": "Au kerea me dua noqu bilo kofi.",
               "passed": true
             },
             {
-              "input": "Der schnelle braune Fuchs springt über den faulen Hund.",
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
               "output": "E sega ni bera na nona cici totolo na koli ca oqo.",
               "passed": true
             },
             {
-              "input": "Künstliche Intelligenz verändert die Welt.",
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
               "output": "Na vuku vakatamata e veisautaka na vuravura.",
               "passed": true
             }
@@ -159,22 +163,22 @@
               "passed": true
             },
             {
-              "input": "Das Wetter ist heute Morgen wunderschön.",
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
               "output": "Sa bau totoka dina na draki ena gauna oqo.",
               "passed": true
             },
             {
-              "input": "Ich möchte bitte eine Tasse Kaffee bestellen.",
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
               "output": "Au kerea me dua noqu bilo kofi.",
               "passed": true
             },
             {
-              "input": "Der schnelle braune Fuchs springt über den faulen Hund.",
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
               "output": "E sega ni bera na nona cici totolo na koli ca oqo.",
               "passed": true
             },
             {
-              "input": "Künstliche Intelligenz verändert die Welt.",
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
               "output": "Na vuku vakatamata e veisautaka na vuravura.",
               "passed": true
             }
@@ -193,29 +197,29 @@
               "passed": true
             },
             {
-              "input": "Das Wetter ist heute Morgen wunderschön.",
+              "input": "Das Wetter ist heute Morgen wundersch\u00f6n.",
               "output": "E totoka dina na draki ena gauna oqo.",
               "passed": true
             },
             {
-              "input": "Ich möchte bitte eine Tasse Kaffee bestellen.",
+              "input": "Ich m\u00f6chte bitte eine Tasse Kaffee bestellen.",
               "output": "Au kerea me dua noqu bilo kofi.",
               "passed": true
             },
             {
-              "input": "Der schnelle braune Fuchs springt über den faulen Hund.",
+              "input": "Der schnelle braune Fuchs springt \u00fcber den faulen Hund.",
               "output": "E sega ni bera na nona cici totolo na koli ca oqo.",
               "passed": true
             },
             {
-              "input": "Künstliche Intelligenz verändert die Welt.",
+              "input": "K\u00fcnstliche Intelligenz ver\u00e4ndert die Welt.",
               "output": "Na vuku vakatamata e veisautaka na vuravura.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -249,14 +253,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:11:31.691195+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -325,7 +329,7 @@
       "date": "2026-03-23T04:11:31.691195+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -388,7 +392,7 @@
       "date": "2026-03-24T05:08:06.654913+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -424,7 +428,7 @@
       "date": "2026-03-24T15:48:35.574776+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -447,7 +451,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -465,7 +469,7 @@
       "date": "2026-03-28T14:52:35.223520+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -493,12 +497,12 @@
                   "hypothesis": "O sa bau wilika e dua na ulutaga me baleta na vakayagataki ni wainimate gaga?"
                 },
                 {
-                  "source": "Das Wetter ist heute Morgen schön.",
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
                   "reference": "E totoka dina na draki ena mataka qo.",
                   "hypothesis": "Sa draki vinaka sara tu ga ena gauna oqo na draki."
                 },
                 {
-                  "source": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "reference": "Au via volia e dua na bilo kofi, me daru gunu kofi mada.",
                   "hypothesis": "Au via volia e dua na bilo kofi."
                 }
@@ -521,12 +525,12 @@
                   "hypothesis": "O sa bau wilika e dua na ulutaga me baleta na vakayagataki ni wainimate gaga?"
                 },
                 {
-                  "source": "Das Wetter ist heute Morgen schön.",
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
                   "reference": "E totoka dina na draki ena mataka qo.",
                   "hypothesis": "Sa draki vinaka sara tu ga ena gauna oqo na draki."
                 },
                 {
-                  "source": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "reference": "Au via volia e dua na bilo kofi, me daru gunu kofi mada.",
                   "hypothesis": "Au via volia e dua na bilo kofi."
                 }
@@ -549,12 +553,12 @@
                   "hypothesis": "O sa bau wilika e dua na ulutaga me baleta na vakayagataki ni wainimate gaga?"
                 },
                 {
-                  "source": "Das Wetter ist heute Morgen schön.",
+                  "source": "Das Wetter ist heute Morgen sch\u00f6n.",
                   "reference": "E totoka dina na draki ena mataka qo.",
                   "hypothesis": "Sa draki vinaka sara tu ga ena gauna oqo na draki."
                 },
                 {
-                  "source": "Ich möchte eine Tasse Kaffee bestellen, bitte.",
+                  "source": "Ich m\u00f6chte eine Tasse Kaffee bestellen, bitte.",
                   "reference": "Au via volia e dua na bilo kofi, me daru gunu kofi mada.",
                   "hypothesis": "Au via volia e dua na bilo kofi."
                 }
@@ -620,11 +624,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (de→fj)"
+              "reason": "no English endpoint (de\u2192fj)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for de→fj"
+              "reason": "no reference pairs for de\u2192fj"
             },
             "vitals": {
               "status": "complete",
@@ -678,7 +682,7 @@
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -798,7 +802,7 @@
       },
       "best_grade": "A+",
       "best_score": 97.1,
-      "notes": "Dr. C independent certification of de-fj. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.1). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of de-fj. Tested 2 variant(s): base, ct2_int8. Best variant grade: A+ (97.1). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-de-fj",
@@ -828,16 +832,39 @@
       "date": "2026-04-16T18:55:33.775352+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "GR v2 rating deferred — native-language corpus required",
+      "method": "GR v2 rating deferred \u2014 native-language corpus required",
       "protocol_script": "deferred (no native test fixtures)",
       "variant_tested": null,
-      "notes": "Patient has base weights on disk but no native-language (src=de) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant — byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Patient has base weights on disk but no native-language (src=de) test corpus for paragraph-level stress test, and the GR v2 paragraph harness triggers CUDA vocab-OOB on this pair. Rating DEFERRED. Ships under lora variant \u2014 byte-identical to Helsinki-NLP public original for 1,790+ pairs, so users get the original Helsinki quality. Future work: source native-language test fixtures (FLORES-200, OPUS-100, or Tatoeba) or patch GR v2 tokenization. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-13T22-17-00-de-fj",
+      "date": "2026-05-13T22:17:00-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-de-fj",
+        "dest_repo": "WindstormLabs/translate-de-fj",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 4.8,
+        "quality_tier": null,
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.349512",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-13T22:17:00-0400",
+    "doctors_examined": 5,
+    "exams_total": 15,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -875,7 +902,7 @@
   },
   "quality_rating": {
     "stars": null,
-    "stars_display": "★★★★★",
+    "stars_display": "\u2605\u2605\u2605\u2605\u2605",
     "half_stars": 10,
     "label": "Deferred",
     "avg_cert_score": 10.0,
@@ -980,7 +1007,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:08:06.654913+00:00",
       "variant_scores": {}
@@ -994,7 +1021,7 @@
     "lora_size_mb": 299.3,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:45:02.540450+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1004,7 +1031,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

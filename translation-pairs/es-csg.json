@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-17T02:38:45.908206+00:00",
+  "_last_updated": "2026-05-15T00:50:50-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/es-csg.json",
   "patient_id": "es-csg",
   "admitted": "2026-03-22T20:52:27.745619+00:00",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-es-csg/tree/main/lora",
-      "hf_uploaded_at": "2026-04-17T02:38:45.908206+00:00"
+      "hf_uploaded_at": "2026-04-17T02:38:45.908206+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-es-csg/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-15T00:50:50-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +86,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-es-csg/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-17T02:38:45.908206+00:00"
+      "hf_uploaded_at": "2026-04-17T02:38:45.908206+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-es-csg/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-15T00:50:50-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -933,12 +937,35 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-es-csg",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-15T00-50-50-es-csg",
+      "date": "2026-05-15T00:50:50-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-es-csg",
+        "dest_repo": "WindstormLabs/translate-es-csg",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 4.9,
+        "quality_tier": "below_bar",
+        "stars": 2.5,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.479129",
-    "doctors_examined": 2,
-    "exams_total": 8,
+    "last_updated": "2026-05-15T00:50:50-0400",
+    "doctors_examined": 5,
+    "exams_total": 17,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

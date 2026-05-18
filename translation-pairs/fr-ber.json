@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-17T03:13:59.434972+00:00",
+  "_last_updated": "2026-05-16T08:50:07-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/fr-ber.json",
   "patient_id": "fr-ber",
   "admitted": "2026-03-22T19:34:57.097785+00:00",
@@ -104,7 +104,9 @@
       "recreated_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "note": "Recreation of Herm Zero's OPUS-100 improvement. Original herm0 weights were deleted in the 2026-03-29 ONNX event. Recreated by Dr. C using the same cached training data and methodology (1 epoch, lr=1e-5, fp16). Not byte-identical to Herm Zero's original but trained on same data.",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-ber/tree/main/herm0",
-      "hf_uploaded_at": "2026-04-17T03:13:59.434972+00:00"
+      "hf_uploaded_at": "2026-04-17T03:13:59.434972+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-ber/tree/main/herm0",
+      "windstormlabs_uploaded_at": "2026-05-16T08:50:07-0400"
     },
     "herm0_ct2": {
       "status": "missing_from_disk",
@@ -146,7 +148,9 @@
       "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
-      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-ber/tree/main/windy-pair-fr-ber",
+      "windstormlabs_uploaded_at": "2026-05-16T08:50:07-0400"
     },
     "herm0_ct2_int8": {
       "status": "present",
@@ -163,7 +167,9 @@
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "note": "Back-annotated by drift reconcile: weights exist on disk but were not declared in variant_cluster.",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-ber/tree/main/herm0-ct2-int8",
-      "hf_uploaded_at": "2026-04-17T03:13:59.434972+00:00"
+      "hf_uploaded_at": "2026-04-17T03:13:59.434972+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-ber/tree/main/herm0-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-16T08:50:07-0400"
     }
   },
   "architecture": {
@@ -1292,12 +1298,35 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-fr-ber",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: herm0, herm0-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-16T08-50-07-fr-ber",
+      "date": "2026-05-16T08:50:07-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-fr-ber",
+        "dest_repo": "WindstormLabs/translate-fr-ber",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 4.5,
+        "quality_tier": "marginal",
+        "stars": 3.5,
+        "certified": true,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.578085",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-16T08:50:07-0400",
+    "doctors_examined": 5,
+    "exams_total": 19,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

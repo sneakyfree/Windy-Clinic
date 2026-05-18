@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-16T18:55:33.775352+00:00",
+  "_last_updated": "2026-05-15T00:40:25-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/en-lus.json",
   "patient_id": "en-lus",
   "admitted": "2026-03-22T19:31:03.134508+00:00",
@@ -61,7 +61,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-en-lus/lora",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-en-lus/tree/main/lora",
-      "hf_uploaded_at": "2026-04-16T00:59:32.265518+00:00"
+      "hf_uploaded_at": "2026-04-16T00:59:32.265518+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-en-lus/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-15T00:40:25-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +86,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-en-lus/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-16T00:59:32.265518+00:00"
+      "hf_uploaded_at": "2026-04-16T00:59:32.265518+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-en-lus/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-15T00:40:25-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -104,7 +108,7 @@
       "date": "2026-03-22T19:31:03.134508+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -121,27 +125,27 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Tûn laiah engtin nge i nih?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Mi chak lote chuan ui avâng chuan an zuang thla a.",
+              "output": "Mi chak lote chuan ui av\u00e2ng chuan an zuang thla a.",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Mi fing tak finna chuan khawvêl hi a tidanglam a ni.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
               "passed": true
             }
           ]
@@ -155,27 +159,27 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Tûn laiah engtin nge i nih?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Mi chak lote chuan ui avâng chuan an zuang thla a.",
+              "output": "Mi chak lote chuan ui av\u00e2ng chuan an zuang thla a.",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Mi fing tak finna chuan khawvêl hi a tidanglam a ni.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
               "passed": true
             }
           ]
@@ -189,33 +193,33 @@
           "sample_translations": [
             {
               "input": "Hello, how are you today?",
-              "output": "Tûn laiah engtin nge i nih?",
+              "output": "T\u00fbn laiah engtin nge i nih?",
               "passed": true
             },
             {
               "input": "The weather is beautiful this morning.",
-              "output": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+              "output": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
               "passed": true
             },
             {
               "input": "I would like to order a cup of coffee, please.",
-              "output": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+              "output": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
               "passed": true
             },
             {
               "input": "The quick brown fox jumps over the lazy dog.",
-              "output": "Mi chak lote chu ui avâng chuan an zuang thla ta thut mai a.",
+              "output": "Mi chak lote chu ui av\u00e2ng chuan an zuang thla ta thut mai a.",
               "passed": true
             },
             {
               "input": "Artificial intelligence is transforming the world.",
-              "output": "Mi fing tak finna chuan khawvêl hi a tidanglam a ni.",
+              "output": "Mi fing tak finna chuan khawv\u00eal hi a tidanglam a ni.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -249,14 +253,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T04:32:24.320674+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -272,11 +276,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Tûn laiah sik leh sa chu a mawi hle a.",
-            "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+            "T\u00fbn laiah sik leh sa chu a mawi hle a.",
+            "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
             "Naupangte chu motor - ah an infiam a.",
-            "Zirtîrna chuan eng hun nge a kalsan?",
-            "Damdawi ina kum sâwm lai thawk a ni tawh a."
+            "Zirt\u00eerna chuan eng hun nge a kalsan?",
+            "Damdawi ina kum s\u00e2wm lai thawk a ni tawh a."
           ]
         },
         "lora": {
@@ -287,11 +291,11 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Tûn laiah sik leh sa chu a mawi hle a.",
-            "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+            "T\u00fbn laiah sik leh sa chu a mawi hle a.",
+            "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
             "Naupangte chu motor - ah an infiam a.",
-            "Zirtîrna chuan eng hun nge a kalsan?",
-            "Damdawi ina kum sâwm lai thawk a ni tawh a."
+            "Zirt\u00eerna chuan eng hun nge a kalsan?",
+            "Damdawi ina kum s\u00e2wm lai thawk a ni tawh a."
           ],
           "delta_vs_base": 0.0
         },
@@ -325,7 +329,7 @@
       "date": "2026-03-23T04:32:24.320674+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -388,7 +392,7 @@
       "date": "2026-03-24T05:19:53.765413+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -424,7 +428,7 @@
       "date": "2026-03-24T16:10:36.068187+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -437,17 +441,17 @@
           "old_size_mb": 165.7,
           "new_size_mb": 265.4,
           "verified_match": true,
-          "sample_translation": "He khawvêl Hi A Entîr Lâwk"
+          "sample_translation": "He khawv\u00eal Hi A Ent\u00eer L\u00e2wk"
         }
       },
-      "notes": "Replaced broken pickle INT8 (165.7MB) with clean safetensors (265.4MB). Verified base-CT2 output match: True. Sample translation: \"He khawvêl Hi A Entîr Lâwk\". Elapsed: 16.3s."
+      "notes": "Replaced broken pickle INT8 (165.7MB) with clean safetensors (265.4MB). Verified base-CT2 output match: True. Sample translation: \"He khawv\u00eal Hi A Ent\u00eer L\u00e2wk\". Elapsed: 16.3s."
     },
     {
       "exam_id": "H0-STRESS-CORRECTION-20260325",
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -465,7 +469,7 @@
       "date": "2026-03-28T15:05:06.484956+00:00",
       "doctor": "Herm Zero",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Bloodwork — Variant Fidelity Test (round-trip + BLEU)",
+      "method": "Bloodwork \u2014 Variant Fidelity Test (round-trip + BLEU)",
       "protocol_script": "bloodwork_test.py v1.0",
       "variants_tested": [
         "base",
@@ -474,7 +478,7 @@
       ],
       "results": {
         "roundtrip_fidelity": {
-          "description": "Round-trip translation (src→tgt→src) text similarity percentage",
+          "description": "Round-trip translation (src\u2192tgt\u2192src) text similarity percentage",
           "variant_scores": {
             "base": {
               "score": 58.02,
@@ -484,19 +488,19 @@
               "sentences": [
                 {
                   "original": "Hello, how are you today?",
-                  "forward": "Tûn laiah engtin nge i nih?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
                   "returned": "How are you today?",
                   "similarity": 0.8372
                 },
                 {
                   "original": "The weather is beautiful this morning.",
-                  "forward": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
                   "returned": "The weather was this beautiful morning.",
                   "similarity": 0.8571
                 },
                 {
                   "original": "I would like to order a cup of coffee, please.",
-                  "forward": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
                   "returned": "I wanted to make a cup of wine, and I wanted to please it.",
                   "similarity": 0.5577
                 }
@@ -510,19 +514,19 @@
               "sentences": [
                 {
                   "original": "Hello, how are you today?",
-                  "forward": "Tûn laiah engtin nge i nih?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
                   "returned": "How are you today?",
                   "similarity": 0.8372
                 },
                 {
                   "original": "The weather is beautiful this morning.",
-                  "forward": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
                   "returned": "The weather was this beautiful morning.",
                   "similarity": 0.8571
                 },
                 {
                   "original": "I would like to order a cup of coffee, please.",
-                  "forward": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
                   "returned": "I wanted to make a cup of wine, and I wanted to please it.",
                   "similarity": 0.5577
                 }
@@ -536,19 +540,19 @@
               "sentences": [
                 {
                   "original": "Hello, how are you today?",
-                  "forward": "Tûn laiah engtin nge i nih?",
+                  "forward": "T\u00fbn laiah engtin nge i nih?",
                   "returned": "How are you today?",
                   "similarity": 0.8372
                 },
                 {
                   "original": "The weather is beautiful this morning.",
-                  "forward": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
+                  "forward": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
                   "returned": "The weather was this beautiful morning.",
                   "similarity": 0.8571
                 },
                 {
                   "original": "I would like to order a cup of coffee, please.",
-                  "forward": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
+                  "forward": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
                   "returned": "I wanted to make a cup of wine, and I wanted to please it.",
                   "similarity": 0.5577
                 }
@@ -588,18 +592,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "Tûn laiah engtin nge i nih?",
-                  "hypothesis": "Tûn laiah engtin nge i nih?"
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
-                  "hypothesis": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni."
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
-                  "hypothesis": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni."
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
                 }
               ]
             },
@@ -616,18 +620,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "Tûn laiah engtin nge i nih?",
-                  "hypothesis": "Tûn laiah engtin nge i nih?"
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
-                  "hypothesis": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni."
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
-                  "hypothesis": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni."
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
                 }
               ]
             },
@@ -644,18 +648,18 @@
               "sample_translations": [
                 {
                   "source": "Hello, how are you today?",
-                  "reference": "Tûn laiah engtin nge i nih?",
-                  "hypothesis": "Tûn laiah engtin nge i nih?"
+                  "reference": "T\u00fbn laiah engtin nge i nih?",
+                  "hypothesis": "T\u00fbn laiah engtin nge i nih?"
                 },
                 {
                   "source": "The weather is beautiful this morning.",
-                  "reference": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni.",
-                  "hypothesis": "Khaw sik leh sa chu he mi zîng mawi tak hi a ni."
+                  "reference": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni.",
+                  "hypothesis": "Khaw sik leh sa chu he mi z\u00eeng mawi tak hi a ni."
                 },
                 {
                   "source": "I would like to order a cup of coffee, please.",
-                  "reference": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni.",
-                  "hypothesis": "Uain no siam ka duh a, chu chu tihlâwm ka duh a ni."
+                  "reference": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni.",
+                  "hypothesis": "Uain no siam ka duh a, chu chu tihl\u00e2wm ka duh a ni."
                 }
               ]
             }
@@ -728,7 +732,7 @@
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for en→lus"
+              "reason": "no reference pairs for en\u2192lus"
             },
             "vitals": {
               "status": "complete",
@@ -782,7 +786,7 @@
       "date": "2026-04-11T20:19:35.003435+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3a — Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
+      "method": "Phase 3a \u2014 Independent re-run of Herm Zero's Grand Rounds v1 harness (same methodology, fresh execution). Targets: base variants that graded D+/D/D-/F in GR1 and still have safetensors on disk.",
       "protocol_script": "grand_rounds_harness.py v1 via phase3a_retest.py",
       "variants_tested": [
         "base"
@@ -891,14 +895,14 @@
           "score": 59.05
         }
       },
-      "notes": "This patient was flagged as a 'still differs' mismatch after phase3a/phase3a_v2 re-tests. To classify, ran the harness 3 times back-to-back. All 3 runs produced IDENTICAL grade D-/60.87, but this differs from GR1's F/59.05. Classification: stable_differs_from_gr1_environmental. The harness is deterministic (same inputs always give same outputs), but something environmental changed between GR1 (2026-03-29) and today (2026-04-11) — most likely subtle numerical drift from a library/tokenizer update, a CUDA kernel path change, or a fresh download pulling slightly different Helsinki-NLP weights than what Herm Zero had. The score delta is always within one grade step and is reproducibly stable. No model modification was performed. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "This patient was flagged as a 'still differs' mismatch after phase3a/phase3a_v2 re-tests. To classify, ran the harness 3 times back-to-back. All 3 runs produced IDENTICAL grade D-/60.87, but this differs from GR1's F/59.05. Classification: stable_differs_from_gr1_environmental. The harness is deterministic (same inputs always give same outputs), but something environmental changed between GR1 (2026-03-29) and today (2026-04-11) \u2014 most likely subtle numerical drift from a library/tokenizer update, a CUDA kernel path change, or a fresh download pulling slightly different Helsinki-NLP weights than what Herm Zero had. The score delta is always within one grade step and is reproducibly stable. No model modification was performed. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-CERT-en-lus",
       "date": "2026-04-12T03:56:38.345772+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -1030,7 +1034,7 @@
       },
       "best_grade": "D-",
       "best_score": 60.87,
-      "notes": "Dr. C independent certification of en-lus. Tested 2 variant(s): base, ct2_int8. Best variant grade: D- (60.87). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of en-lus. Tested 2 variant(s): base, ct2_int8. Best variant grade: D- (60.87). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-en-lus",
@@ -1046,7 +1050,7 @@
       "date": "2026-04-14T15:10:02.199141+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 72.4→58.0 (Δ-14.4). No improvement — discarded.",
+      "method": "Herm0 improvement Phase 3: 2 epochs, lr=5e-06, 49950 pairs. Score 72.4\u219258.0 (\u0394-14.4). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_improvement_pipeline.py",
       "notes": "Phase 3 of comprehensive improvement pipeline. Data: 49950 parallel pairs from cached OPUS/Tatoeba/WikiMatrix. Training: 2 epochs, lr=5e-06, batch=16, fp16, warmup=100, weight_decay=0.01. Result: no_improvement. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -1078,11 +1082,11 @@
       "samples": [
         {
           "src": "Hello, how are you today?",
-          "tgt": "Tûn laiah engtin nge i nih?"
+          "tgt": "T\u00fbn laiah engtin nge i nih?"
         },
         {
           "src": "The sun is shining brightly.",
-          "tgt": "Nî hi a êng chhuak a."
+          "tgt": "N\u00ee hi a \u00eang chhuak a."
         },
         {
           "src": "I would like to go home.",
@@ -1090,11 +1094,11 @@
         },
         {
           "src": "Thank you very much for your help.",
-          "tgt": "I ṭanpuina avângin i lâwm hle a ni."
+          "tgt": "I \u1e6danpuina av\u00e2ngin i l\u00e2wm hle a ni."
         },
         {
           "src": "Good morning, friend.",
-          "tgt": "Zîng khat chu, kan ṭhian ṭha tak a ni a."
+          "tgt": "Z\u00eeng khat chu, kan \u1e6dhian \u1e6dha tak a ni a."
         }
       ],
       "rating": {
@@ -1102,13 +1106,36 @@
         "stars": 3.0,
         "tier": "basic"
       },
-      "notes": "Smoke battery: 5/5 short English sentences translated cleanly (non-empty, non-identity, reasonable length). GR v2 paragraph harness fails this pair with CUDA indexing assertion — suspected vocab-OOB during tokenization of paragraph fixtures. Tier assigned conservatively (basic, 3.0★) because only sentence-level verified. Paragraph-level quality UNVERIFIED. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Smoke battery: 5/5 short English sentences translated cleanly (non-empty, non-identity, reasonable length). GR v2 paragraph harness fails this pair with CUDA indexing assertion \u2014 suspected vocab-OOB during tokenization of paragraph fixtures. Tier assigned conservatively (basic, 3.0\u2605) because only sentence-level verified. Paragraph-level quality UNVERIFIED. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-15T00-40-25-en-lus",
+      "date": "2026-05-15T00:40:25-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-en-lus",
+        "dest_repo": "WindstormLabs/translate-en-lus",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 6.9,
+        "quality_tier": "marginal",
+        "stars": 3.0,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.422876",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-15T00:40:25-0400",
+    "doctors_examined": 5,
+    "exams_total": 18,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -1250,7 +1277,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T05:19:53.765413+00:00",
       "variant_scores": {}
@@ -1264,7 +1291,7 @@
     "lora_size_mb": 278.29,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T20:50:22.046678+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -1274,7 +1301,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

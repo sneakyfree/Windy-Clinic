@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-18T04:09:37.200370+00:00",
+  "_last_updated": "2026-05-16T08:58:09-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/fr-yo.json",
   "patient_id": "fr-yo",
   "admitted": "2026-03-22T19:36:00.010950+00:00",
@@ -73,7 +73,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-yo/tree/main/lora",
-      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00"
+      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-yo/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-16T08:58:09-0400"
     },
     "herm0_scripture": {
       "status": "present",
@@ -119,7 +121,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-yo/tree/main/herm0-scripture",
-      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00"
+      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-yo/tree/main/herm0-scripture",
+      "windstormlabs_uploaded_at": "2026-05-16T08:58:09-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -130,7 +134,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-yo/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00"
+      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-yo/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-16T08:58:09-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -145,7 +151,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-fr-yo/tree/main/scripture-ct2-int8",
-      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00"
+      "hf_uploaded_at": "2026-04-18T04:09:37.200370+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-fr-yo/tree/main/scripture-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-16T08:58:09-0400"
     }
   },
   "architecture": {
@@ -1147,12 +1155,35 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-fr-yo",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-16T08-58-09-fr-yo",
+      "date": "2026-05-16T08:58:09-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-backfill-20260518T091555Z",
+      "results": {
+        "source_repo": "WindyWord/translate-fr-yo",
+        "dest_repo": "WindstormLabs/translate-fr-yo",
+        "files_uploaded": 25,
+        "expected_files": 25,
+        "verify": "match",
+        "elapsed_s": 5.9,
+        "quality_tier": "marginal",
+        "stars": 3.5,
+        "certified": true,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.626120",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-16T08:58:09-0400",
+    "doctors_examined": 5,
+    "exams_total": 16,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
