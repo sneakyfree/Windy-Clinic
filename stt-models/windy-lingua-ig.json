@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T01:01:06.966955+00:00",
+  "_last_updated": "2026-05-19T13:08:52-0400",
   "_clinic_path": "stt-models/windy-lingua-ig.json",
   "patient_id": "windy-lingua-ig",
   "kind": "stt_lingua",
@@ -23,7 +23,9 @@
       "ported_at": "2026-04-28T01:01:06.966955+00:00",
       "upstream_base": "benjaminogbonna/whisper-tiny-igbo",
       "params": "~39M (whisper-tiny)",
-      "size_mb": 151
+      "size_mb": 151,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-ig/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:08:52-0400"
     }
   },
   "examination_log": [
@@ -33,12 +35,34 @@
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "Initial port from benjaminogbonna/whisper-tiny-igbo (only available community Igbo Whisper)",
-      "rationale": "Igbo is significantly underserved in community ASR. The only Whisper fine-tunes available on HF are: benjaminogbonna/whisper-tiny-igbo (157% WER in our 04-21 audit, but the only ungated option) and NCAIR1/Igbo-ASR (1.1k downloads, gated/restricted access — can't redistribute). We're shipping the tiny-igbo as a placeholder with explicit quality-limitation disclosure in the README; recommend production users route through openai/whisper-large-v3 multilingual with language='ig' for materially better quality. Slated for a fallback-multilingual-variant when we build that infrastructure.",
+      "rationale": "Igbo is significantly underserved in community ASR. The only Whisper fine-tunes available on HF are: benjaminogbonna/whisper-tiny-igbo (157% WER in our 04-21 audit, but the only ungated option) and NCAIR1/Igbo-ASR (1.1k downloads, gated/restricted access \u2014 can't redistribute). We're shipping the tiny-igbo as a placeholder with explicit quality-limitation disclosure in the README; recommend production users route through openai/whisper-large-v3 multilingual with language='ig' for materially better quality. Slated for a fallback-multilingual-variant when we build that infrastructure.",
       "wer_audit_result": {
         "WPL_baseline": 1.5741,
-        "current": "same as WPL — same base model"
+        "current": "same as WPL \u2014 same base model"
       },
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-08-52-windy-lingua-ig",
+      "date": "2026-05-19T13:08:52-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-ig",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-ig",
+        "files_uploaded": 12,
+        "expected_files": 12,
+        "verify": "match",
+        "elapsed_s": 5.4,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
   "quality_rating": {
@@ -48,5 +72,10 @@
     "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
     "wer_baseline_audit": 1.5741,
     "production_recommendation": "Use openai/whisper-large-v3 with language='ig' for serious Igbo transcription"
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:08:52-0400",
+    "exams_total": 2,
+    "doctors_examined": 2
   }
 }

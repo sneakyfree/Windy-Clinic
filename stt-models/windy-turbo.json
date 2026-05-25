@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T02:04:38.883982+00:00",
+  "_last_updated": "2026-05-19T13:16:02-0400",
   "_clinic_path": "stt-models/windy-turbo.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyWord/listen-* (post-2026-04-21 migration; original WindyLabs/* references were Dr. A era stale pointers)) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-turbo",
@@ -29,7 +29,9 @@
       "on_disk_bytes": 3237489616,
       "rebuilt_at": "2026-04-12T01:38:07.122578+00:00",
       "rebuilt_by": "Opus 4.6 Opus-Claw (Dr. C)",
-      "hf_subfolder": "safetensors"
+      "hf_subfolder": "safetensors",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-turbo/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:16:02-0400"
     }
   },
   "training_artifacts": {
@@ -60,16 +62,16 @@
       "date": "2026-04-12T01:38:07.122578+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "LoRA merge: openai/whisper-large-v3-turbo + lora-large-v3-turbo-en-20260226T023039Z (r=4, α=8)",
+      "method": "LoRA merge: openai/whisper-large-v3-turbo + lora-large-v3-turbo-en-20260226T023039Z (r=4, \u03b1=8)",
       "protocol_script": "scripts/rebuild_stt_fleet.py (inline execution)",
-      "notes": "Rebuilt windy-turbo by downloading the base whisper model from HuggingFace and merging Kit OC1 Alpha's LoRA adapter (from ~/Desktop/grants_folder/windy-pro/artifacts/lora_checkpoints/). The LoRA was a Fog-of-Mirror fine-tune (r=4, α=8) designed to produce a distinct set of weights without meaningfully altering model quality. Merged model saved as safetensors at /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_rebuilt/windy-turbo (3087.5 MB). This model was previously listed in Kit OC1 Alpha's 2026-03-10 model_registry.json but was never uploaded to HuggingFace. Dr. C rebuilt it on 2026-04-11 from the base + adapter. Pending: CT2 INT8 export (GPU required, queued behind Phase 3b) and STT quality certification (FLEURS WER test)."
+      "notes": "Rebuilt windy-turbo by downloading the base whisper model from HuggingFace and merging Kit OC1 Alpha's LoRA adapter (from ~/Desktop/grants_folder/windy-pro/artifacts/lora_checkpoints/). The LoRA was a Fog-of-Mirror fine-tune (r=4, \u03b1=8) designed to produce a distinct set of weights without meaningfully altering model quality. Merged model saved as safetensors at /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt_rebuilt/windy-turbo (3087.5 MB). This model was previously listed in Kit OC1 Alpha's 2026-03-10 model_registry.json but was never uploaded to HuggingFace. Dr. C rebuilt it on 2026-04-11 from the base + adapter. Pending: CT2 INT8 export (GPU required, queued behind Phase 3b) and STT quality certification (FLEURS WER test)."
     },
     {
       "exam_id": "DRC-STTCERT-windy-turbo",
       "date": "2026-04-12T01:51:35.265474+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification — FLEURS english dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification \u2014 FLEURS english dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -134,19 +136,44 @@
       "date": "2026-04-28T02:04:38.883982+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Sweep update — WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
+      "method": "Sweep update \u2014 WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
       "is_stale_subvariant": false,
       "parent_repo": null,
       "subfolder": null,
       "notes": "Original Dr. A-era patient files referenced the WindyLabs/* HF org (which never had live models due to a typo). Migration to WindyWord/listen-* completed 2026-04-21. This sweep updates all hf_repo + variant_cluster.*.hf_repo + _filing_note pointers in this patient file to reflect the canonical WindyWord URL. "
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-16-02-windy-turbo",
+      "date": "2026-05-19T13:16:02-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "base"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-turbo",
+        "dest_repo": "WindstormLabs/listen-windy-turbo",
+        "files_uploaded": 41,
+        "expected_files": 41,
+        "verify": "match",
+        "elapsed_s": 46.6,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.0556,
     "stt_grade": "A",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",
-    "stt_certified_at": "2026-04-12T01:51:35.265486+00:00"
+    "stt_certified_at": "2026-04-12T01:51:35.265486+00:00",
+    "last_updated": "2026-05-19T13:16:02-0400",
+    "exams_total": 6,
+    "doctors_examined": 2
   }
 }

@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T02:04:38.883982+00:00",
+  "_last_updated": "2026-05-19T13:04:30-0400",
   "_clinic_path": "stt-models/windy-lingua-arabic.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyWord/listen-* (post-2026-04-21 migration; original WindyLabs/* references were Dr. A era stale pointers)) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-arabic",
@@ -39,14 +39,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic. Size: 2949.5 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-arabic. Size: 2949.5 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-arabic",
       "date": "2026-04-12T01:53:18.180293+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification — FLEURS arabic dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification \u2014 FLEURS arabic dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -66,24 +66,24 @@
           "fleurs_subset": "ar_eg",
           "sample_transcriptions": [
             {
-              "ref": "لم يبد لي ذلك منطقيا بالتأكيد لم يكن عادلا",
-              "hyp": "لم يبد لي ذلك منطقيا بالتاكيد لم يكن عادلا"
+              "ref": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627",
+              "hyp": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0627\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627"
             },
             {
-              "ref": "لم يبد لي ذلك منطقيا بالتأكيد لم يكن عادلا",
-              "hyp": "لم يبد لي ذلك منطقيا بالتاكيد لم يكن عادلا"
+              "ref": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0623\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627",
+              "hyp": "\u0644\u0645 \u064a\u0628\u062f \u0644\u064a \u0630\u0644\u0643 \u0645\u0646\u0637\u0642\u064a\u0627 \u0628\u0627\u0644\u062a\u0627\u0643\u064a\u062f \u0644\u0645 \u064a\u0643\u0646 \u0639\u0627\u062f\u0644\u0627"
             },
             {
-              "ref": "لم تكن هناك غابات كبيرة في أرض كنعان لذلك كان الخشب باهظ الثمن",
-              "hyp": "لم تكن هناك غابات كبيره في ارض كنعان لذلك كان الخشب باهظ الثمن"
+              "ref": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0629 \u0641\u064a \u0623\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646",
+              "hyp": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0647 \u0641\u064a \u0627\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646"
             },
             {
-              "ref": "لم تكن هناك غابات كبيرة في أرض كنعان لذلك كان الخشب باهظ الثمن",
-              "hyp": "لم تكن هناك غابات كبيره في ارض كنعان لذلك كان الخشب باهظ الثمن"
+              "ref": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0629 \u0641\u064a \u0623\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646",
+              "hyp": "\u0644\u0645 \u062a\u0643\u0646 \u0647\u0646\u0627\u0643 \u063a\u0627\u0628\u0627\u062a \u0643\u0628\u064a\u0631\u0647 \u0641\u064a \u0627\u0631\u0636 \u0643\u0646\u0639\u0627\u0646 \u0644\u0630\u0644\u0643 \u0643\u0627\u0646 \u0627\u0644\u062e\u0634\u0628 \u0628\u0627\u0647\u0638 \u0627\u0644\u062b\u0645\u0646"
             },
             {
-              "ref": "تتيح التقنية الحل من خلال الزيارات الميدانية الافتراضية يمكن للطلاب مشاهدة القطع الأثرية بالمتحف أو ",
-              "hyp": "تتيح التقنيه الحل من خلال الزيارات الميدانيه الافتراضيه يمكن للطلاب مشاهده القطع الاثريه بالمتحف او "
+              "ref": "\u062a\u062a\u064a\u062d \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u062d\u0644 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0629 \u064a\u0645\u0643\u0646 \u0644\u0644\u0637\u0644\u0627\u0628 \u0645\u0634\u0627\u0647\u062f\u0629 \u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0623\u062b\u0631\u064a\u0629 \u0628\u0627\u0644\u0645\u062a\u062d\u0641 \u0623\u0648 ",
+              "hyp": "\u062a\u062a\u064a\u062d \u0627\u0644\u062a\u0642\u0646\u064a\u0647 \u0627\u0644\u062d\u0644 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0647 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0647 \u064a\u0645\u0643\u0646 \u0644\u0644\u0637\u0644\u0627\u0628 \u0645\u0634\u0627\u0647\u062f\u0647 \u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0627\u062b\u0631\u064a\u0647 \u0628\u0627\u0644\u0645\u062a\u062d\u0641 \u0627\u0648 "
             }
           ]
         }
@@ -95,7 +95,7 @@
       "date": "2026-04-16T19:01:28.667329+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "method": "STT WER expansion \u2014 100 FLEURS clips (6.7\u00d7 larger sample than baseline)",
       "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
       "fleurs_subset": "ar_eg",
       "n_samples": 100,
@@ -112,19 +112,56 @@
       "date": "2026-04-28T02:04:38.883982+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Sweep update — WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
+      "method": "Sweep update \u2014 WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
       "is_stale_subvariant": false,
       "parent_repo": null,
       "subfolder": null,
       "notes": "Original Dr. A-era patient files referenced the WindyLabs/* HF org (which never had live models due to a typo). Migration to WindyWord/listen-* completed 2026-04-21. This sweep updates all hf_repo + variant_cluster.*.hf_repo + _filing_note pointers in this patient file to reflect the canonical WindyWord URL. "
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-ALIAS-2026-05-19T13-04-30-windy-lingua-ar",
+      "date": "2026-05-19T13:04:30-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C alias mirror \u2014 ISO-code duplicate 'windy-lingua-ar' of canonical 'windy-lingua-arabic' (byte-identical weights verified via SHA-256)",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-ar",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-ar",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 34.6,
+        "alias_of_canonical": "windy-lingua-arabic",
+        "weight_sha256_matches_canonical": true,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ISO-code alias mirror; both WindyWord and WindstormLabs publish identical weights under both names."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.3564,
     "stt_grade": "C",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",
-    "stt_certified_at": "2026-04-12T01:53:18.180305+00:00"
-  }
+    "stt_certified_at": "2026-04-12T01:53:18.180305+00:00",
+    "last_updated": "2026-05-19T13:04:30-0400",
+    "exams_total": 5,
+    "doctors_examined": 2
+  },
+  "iso_aliases": [
+    {
+      "iso_pid": "windy-lingua-ar",
+      "iso_hf_repo_source": "WindyWord/listen-windy-lingua-ar",
+      "iso_hf_repo_dest": "WindstormLabs/listen-windy-lingua-ar",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-ar",
+      "weight_sha256_matches_canonical": true,
+      "verified_at": "2026-05-19T13:04:30-0400",
+      "verified_by": "Opus 4.7 1M-Context (Dr. D)",
+      "note": "WindyWord publishes byte-identical copies under ISO code 'ar' and full name; both mirrored to Labs."
+    }
+  ]
 }

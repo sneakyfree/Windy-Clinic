@@ -21,7 +21,7 @@
         "base": "Ganaa0614/whisper-small-mongolian-ver_0.1",
         "wer": "pending audit"
       },
-      "rationale": "Previous Mongolian Lingua was ported from WPL/Otgonbaatar/whisper-small-mongolian-3, audited at 100.0% WER — unusable for production. Replaced with Ganaa0614/whisper-small-mongolian-ver_0.1, selected as the most-downloaded community Mongolian Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "rationale": "Previous Mongolian Lingua was ported from WPL/Otgonbaatar/whisper-small-mongolian-3, audited at 100.0% WER \u2014 unusable for production. Replaced with Ganaa0614/whisper-small-mongolian-ver_0.1, selected as the most-downloaded community Mongolian Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
@@ -37,11 +37,33 @@
         "script_match_pct": null,
         "predecessor_wer": 1.0
       },
-      "final_base": "Otgonbaatar/whisper-small-mongolian-3 (predecessor — upgrade audit-failed)",
+      "final_base": "Otgonbaatar/whisper-small-mongolian-3 (predecessor \u2014 upgrade audit-failed)",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-10-10-windy-lingua-mn",
+      "date": "2026-05-19T13:10:10-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-mn",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-mn",
+        "files_uploaded": 17,
+        "expected_files": 17,
+        "verify": "match",
+        "elapsed_s": 10.1,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
-  "_last_updated": "2026-04-28T01:34:30.852502+00:00",
+  "_last_updated": "2026-05-19T13:10:10-0400",
   "source_repo_origin": "Ganaa0614/whisper-small-mongolian-ver_0.1",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-mn"
@@ -54,7 +76,9 @@
       "format": "safetensors",
       "ported_at": "2026-04-28T00:59:14.220049+00:00",
       "upstream_base": "Ganaa0614/whisper-small-mongolian-ver_0.1",
-      "community_downloads_at_port": 641
+      "community_downloads_at_port": 641,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-mn/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:10:10-0400"
     }
   },
   "quality_rating": {
@@ -62,5 +86,10 @@
     "previous_wer_unusable": 1.0,
     "rated_at": null,
     "note": "Replaced unusable WPL fallback with community whisper-small Mongolian fine-tune. Quality verification pending."
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:10:10-0400",
+    "exams_total": 3,
+    "doctors_examined": 2
   }
 }

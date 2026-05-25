@@ -21,7 +21,7 @@
         "base": "ihanif/whisper-medium-pashto",
         "wer": "pending audit"
       },
-      "rationale": "Previous Pashto Lingua was ported from WPL/ihanif/whisper-base-pashto, audited at 53.7% WER — unusable for production. Replaced with ihanif/whisper-medium-pashto, selected as the most-downloaded community Pashto Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "rationale": "Previous Pashto Lingua was ported from WPL/ihanif/whisper-base-pashto, audited at 53.7% WER \u2014 unusable for production. Replaced with ihanif/whisper-medium-pashto, selected as the most-downloaded community Pashto Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
@@ -52,10 +52,32 @@
         "script": 99.2,
         "tier": "excellent"
       },
-      "note": "forced_decoder_ids strategy substantially better than language= kwarg for ps — WindyWord harness now prefers forced_ids for Whisper inference."
+      "note": "forced_decoder_ids strategy substantially better than language= kwarg for ps \u2014 WindyWord harness now prefers forced_ids for Whisper inference."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-11-43-windy-lingua-ps",
+      "date": "2026-05-19T13:11:43-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-ps",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-ps",
+        "files_uploaded": 20,
+        "expected_files": 20,
+        "verify": "match",
+        "elapsed_s": 25.1,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
-  "_last_updated": "2026-04-28T01:45:43.094765+00:00",
+  "_last_updated": "2026-05-19T13:11:43-0400",
   "source_repo_origin": "ihanif/whisper-medium-pashto",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-ps"
@@ -68,7 +90,9 @@
       "format": "safetensors",
       "ported_at": "2026-04-28T00:59:14.220049+00:00",
       "upstream_base": "ihanif/whisper-medium-pashto",
-      "community_downloads_at_port": 65
+      "community_downloads_at_port": 65,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-ps/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:11:43-0400"
     }
   },
   "quality_rating": {
@@ -80,5 +104,10 @@
     "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
     "audit_method": "30-sample FLEURS Grand Rounds STT harness with forced_decoder_ids",
     "inference_recommendation": "use forced_decoder_ids prefix; language= kwarg may degrade quality"
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:11:43-0400",
+    "exams_total": 4,
+    "doctors_examined": 2
   }
 }

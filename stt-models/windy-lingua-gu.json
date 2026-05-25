@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-21T20:12:07.593579+00:00",
+  "_last_updated": "2026-05-19T12:17:27-0400",
   "_clinic_path": "stt-models/windy-lingua-gu.json",
   "patient_id": "windy-lingua-gu",
   "kind": "stt_lingua",
@@ -19,7 +19,9 @@
       "hf_repo": "WindyWord/listen-windy-lingua-gu",
       "subfolder": "safetensors",
       "format": "safetensors",
-      "ported_at": "2026-04-21T20:12:07.593579+00:00"
+      "ported_at": "2026-04-21T20:12:07.593579+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-gu/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T12:17:27-0400"
     }
   },
   "examination_log": [
@@ -28,7 +30,7 @@
       "date": "2026-04-21T20:12:07.593579+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Cross-org port WindyProLabs → WindyWord with signed WER audit metadata",
+      "method": "Cross-org port WindyProLabs \u2192 WindyWord with signed WER audit metadata",
       "ported_variants": [
         "safetensors"
       ],
@@ -42,6 +44,33 @@
       },
       "upstream_note": "Model originally uploaded to WindyProLabs on 2026-03-10 by Dr. A / Kit OC1 Alpha. Underlying base is a community Whisper fine-tune (see individual HF model card for lineage).",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T12-17-27-windy-lingua-gu",
+      "date": "2026-05-19T12:17:27-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 upload-from-local-cache clone WindyWord/listen-<pid> \u2192 WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T161659Z-c77f3f",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-gu",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-gu",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 9.5,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
-  ]
+  ],
+  "consensus": {
+    "last_updated": "2026-05-19T12:17:27-0400",
+    "exams_total": 2,
+    "doctors_examined": 2
+  }
 }

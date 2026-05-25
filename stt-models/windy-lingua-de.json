@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T00:50:36.466462+00:00",
+  "_last_updated": "2026-05-19T13:06:19-0400",
   "_clinic_path": "stt-models/windy-lingua-de.json",
   "patient_id": "windy-lingua-de",
   "kind": "stt_lingua",
@@ -24,7 +24,9 @@
       "ported_at": "2026-04-28T00:23:50.278782+00:00",
       "upstream_base": "primeline/whisper-large-v3-turbo-german",
       "params": "~809M (whisper-large-v3-turbo)",
-      "size_mb": 1620
+      "size_mb": 1620,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-de/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:06:19-0400"
     }
   },
   "examination_log": [
@@ -33,11 +35,11 @@
       "date": "2026-04-28T00:23:50.278782+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Cross-org port from primeline/whisper-large-v3-turbo-german (community model, 46k+ HF downloads, 57 likes — top German Whisper fine-tune)",
+      "method": "Cross-org port from primeline/whisper-large-v3-turbo-german (community model, 46k+ HF downloads, 57 likes \u2014 top German Whisper fine-tune)",
       "ported_variants": [
         "safetensors"
       ],
-      "rationale": "Earlier WindyProLabs/windy-lingua-de was inadvertently built on Flurin17/whisper-large-v3-turbo-swiss-german (a Swiss German fine-tune). When audited against standard German FLEURS (de_de) it scored 56.7% WER — unusable for the vast majority of German speakers (Berlin/Munich/Hochdeutsch). Excluded from the 04-21 port-everything-not-unusable batch as a result. Today (04-27) replaced by primeline's standard High German Whisper, the most-downloaded community German STT model on HF. The Swiss-German variant is left untouched on WindyProLabs for users specifically needing Swiss content.",
+      "rationale": "Earlier WindyProLabs/windy-lingua-de was inadvertently built on Flurin17/whisper-large-v3-turbo-swiss-german (a Swiss German fine-tune). When audited against standard German FLEURS (de_de) it scored 56.7% WER \u2014 unusable for the vast majority of German speakers (Berlin/Munich/Hochdeutsch). Excluded from the 04-21 port-everything-not-unusable batch as a result. Today (04-27) replaced by primeline's standard High German Whisper, the most-downloaded community German STT model on HF. The Swiss-German variant is left untouched on WindyProLabs for users specifically needing Swiss content.",
       "wer_audit_result": {
         "pending": "schedule WindyWord Phase-3d run"
       },
@@ -56,9 +58,31 @@
         "mean_latency_ms": 197.8,
         "peak_gpu_mb": 3419.0
       },
-      "interpretation": "Raw WER 42.60% looks high but is dominated by FLEURS reference style: refs are lowercase, no punctuation; the model produces properly-cased + punctuated output. CER of 8.06% is the more reliable signal (character-level edit distance, immune to casing/punctuation mismatch). For comparison: the Swiss-German-mismatch fallback we replaced scored 56.7% WER with 27.5% CER — so the new German is ~14pp better on WER AND ~3.4× better on CER. Production transcripts will look BETTER than the FLEURS refs (properly cased and punctuated).",
+      "interpretation": "Raw WER 42.60% looks high but is dominated by FLEURS reference style: refs are lowercase, no punctuation; the model produces properly-cased + punctuated output. CER of 8.06% is the more reliable signal (character-level edit distance, immune to casing/punctuation mismatch). For comparison: the Swiss-German-mismatch fallback we replaced scored 56.7% WER with 27.5% CER \u2014 so the new German is ~14pp better on WER AND ~3.4\u00d7 better on CER. Production transcripts will look BETTER than the FLEURS refs (properly cased and punctuated).",
       "tier_call": "GOOD (sub-10% CER on standard High German FLEURS; production-ready)",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-06-19-windy-lingua-de",
+      "date": "2026-05-19T13:06:19-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-de",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-de",
+        "files_uploaded": 12,
+        "expected_files": 12,
+        "verify": "match",
+        "elapsed_s": 14.7,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
   "quality_rating": {
@@ -70,5 +94,10 @@
     "cer_raw": 0.0806,
     "rtf": 0.0163,
     "note": "100-sample FLEURS de_de audit. CER is the reliable measure (8.06%); raw WER inflated by FLEURS lowercase/no-punct refs."
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:06:19-0400",
+    "exams_total": 3,
+    "doctors_examined": 2
   }
 }

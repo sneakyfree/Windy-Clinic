@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-28T02:05:47.915312+00:00",
+  "_last_updated": "2026-05-19T11:27:10-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/pt-en.json",
   "patient_id": "pt-en",
   "admitted": "2026-04-28T02:05:47.915312+00:00",
@@ -25,7 +25,9 @@
       "ported_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-pt-en/tree/main/lora",
       "hf_uploaded_at": "2026-04-28T02:05:47.915312+00:00",
-      "note": "Helsinki-NLP does not publish a Portuguese-only opus-mt-pt-en. Their canonical Portuguese-source path is opus-mt-ROMANCE-en (multilingual Romance→English). This WindyWord repo wraps those weights with a Portuguese-specific name to satisfy installer / consumer expectations for translate-pt-en."
+      "note": "Helsinki-NLP does not publish a Portuguese-only opus-mt-pt-en. Their canonical Portuguese-source path is opus-mt-ROMANCE-en (multilingual Romance\u2192English). This WindyWord repo wraps those weights with a Portuguese-specific name to satisfy installer / consumer expectations for translate-pt-en.",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-pt-en/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-19T11:27:10-0400"
     }
   },
   "architecture": {
@@ -42,8 +44,31 @@
       "rationale": "The Windy Pro installer's MODEL_REGISTRY has a windy-pair-pt-en entry, but no Portuguese-only Helsinki-NLP/opus-mt-pt-en exists upstream. Helsinki's canonical path for Portuguese-source translation is opus-mt-ROMANCE-en (68k+ downloads), which handles Portuguese alongside Italian/Spanish/French/Catalan/Romanian as source languages. This port wraps those weights under a pt-en namespace so installer URL construction works without the wizard needing special-case logic. The README on WindyWord/translate-pt-en clearly discloses the ROMANCE-derived nature.",
       "source_repo": "Helsinki-NLP/opus-mt-ROMANCE-en",
       "target_repo": "WindyWord/translate-pt-en",
-      "underlying_lineage": "identical to WindyWord/translate-ROMANCE-en — same weights, different namespace",
+      "underlying_lineage": "identical to WindyWord/translate-ROMANCE-en \u2014 same weights, different namespace",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-19T11-27-10-pt-en",
+      "date": "2026-05-19T11:27:10-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-gap-20260519T152642Z-416b3e",
+      "results": {
+        "source_repo": "WindyWord/translate-pt-en",
+        "dest_repo": "WindstormLabs/translate-pt-en",
+        "files_uploaded": 9,
+        "expected_files": 9,
+        "verify": "match",
+        "elapsed_s": 9.5,
+        "quality_tier": "unrated",
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "quality_rating": {
@@ -51,5 +76,10 @@
     "label": "Standard",
     "rated_at": null,
     "note": "Inherits ROMANCE-en quality; not WER-audited as a Portuguese-specific pair yet. Community downloads (68k on Helsinki) suggest production-grade Portuguese coverage."
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T11:27:10-0400",
+    "doctors_examined": 2,
+    "exams_total": 2
   }
 }

@@ -21,7 +21,7 @@
         "base": "BettySara/whisper-large-v3-malayalam-merged",
         "wer": "pending audit"
       },
-      "rationale": "Previous Malayalam Lingua was ported from WPL/vrclc/Whisper-small-Malayalam, audited at 73.2% WER — unusable for production. Replaced with BettySara/whisper-large-v3-malayalam-merged, selected as the most-downloaded community Malayalam Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "rationale": "Previous Malayalam Lingua was ported from WPL/vrclc/Whisper-small-Malayalam, audited at 73.2% WER \u2014 unusable for production. Replaced with BettySara/whisper-large-v3-malayalam-merged, selected as the most-downloaded community Malayalam Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
@@ -37,11 +37,33 @@
         "script_match_pct": 100,
         "predecessor_wer": 0.7325
       },
-      "final_base": "vrclc/Whisper-small-Malayalam (predecessor — community-upgrade failed)",
+      "final_base": "vrclc/Whisper-small-Malayalam (predecessor \u2014 community-upgrade failed)",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-10-00-windy-lingua-ml",
+      "date": "2026-05-19T13:10:00-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-ml",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-ml",
+        "files_uploaded": 12,
+        "expected_files": 12,
+        "verify": "match",
+        "elapsed_s": 12.3,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
-  "_last_updated": "2026-04-28T01:34:30.852502+00:00",
+  "_last_updated": "2026-05-19T13:10:00-0400",
   "source_repo_origin": "BettySara/whisper-large-v3-malayalam-merged",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-ml"
@@ -54,7 +76,9 @@
       "format": "safetensors",
       "ported_at": "2026-04-28T00:59:14.220049+00:00",
       "upstream_base": "BettySara/whisper-large-v3-malayalam-merged",
-      "community_downloads_at_port": 89
+      "community_downloads_at_port": 89,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-ml/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:10:00-0400"
     }
   },
   "quality_rating": {
@@ -62,5 +86,10 @@
     "previous_wer_unusable": 0.7325,
     "rated_at": null,
     "note": "Replaced unusable WPL fallback with community whisper-large-v3 Malayalam fine-tune. Quality verification pending."
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:10:00-0400",
+    "exams_total": 3,
+    "doctors_examined": 2
   }
 }

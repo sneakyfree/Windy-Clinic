@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-05-17T09:40:49-0400",
+  "_last_updated": "2026-05-25T18:04:03-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/ru-eu.json",
   "patient_id": "ru-eu",
   "admitted": "2026-03-22T19:42:03.480975+00:00",
@@ -39,7 +39,18 @@
       "on_disk_target": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/ru-eu",
       "on_disk_format": "pytorch_bin",
       "restored_at": "2026-04-11T20:51:05.692682+00:00",
-      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-ru-eu",
+      "upstream_status": "verified",
+      "upstream_recorded_at": "2026-05-25T18:04:03-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "upstream_note": "Upstream identity could not be recovered from local config.json _name_or_path or README. Pair name and model_type=marian suggest Helsinki-NLP/opus-mt-* origin but specific repo unresolved; manual investigation needed.",
+      "upstream_recovery_note": "Identity recovered from local README.md hf_name field after Phase D initial inventory marked this pair upstream:unknown due to missing _name_or_path in config.json (older config schema). README inspection yielded Helsinki-NLP/opus-mt-ru-eu.",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-ru-eu",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-ru-eu",
+      "windstormlabs_origin_uploaded_at": "2026-05-25T18:04:03-0400",
+      "windstormlabs_origin_verify": "byte_perfect_match",
+      "windstormlabs_origin_archive_mode": "byte_perfect"
     },
     "lora": {
       "status": "missing_from_disk",
@@ -1321,12 +1332,57 @@
         "sandbox_mode": true
       },
       "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-ru-eu",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": null,
+        "upstream_status": "unknown",
+        "upstream_commit_sha": null,
+        "upstream_license": null,
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-UNKNOWN-RECOVERY-2026-05-25T18-04-03-ru-eu",
+      "date": "2026-05-25T18:04:03-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D unknown-pair recovery \u2014 upstream identity recovered from local README.md, then mirrored to Labs. Upstream: Helsinki-NLP/opus-mt-ru-eu",
+      "session_id": "phase-d-unknown-pair-20260525T220351Z-1616ce",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-ru-eu",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-ru-eu",
+        "verify": "byte_perfect_match",
+        "sha_mismatches": [],
+        "readme_patch": {
+          "status": "skipped (clean yaml)",
+          "changes": {}
+        },
+        "elapsed_s": 12.4
+      },
+      "notes": "Closes the second of two upstream-unknown gaps surfaced by Phase D records phase on 2026-05-19. Identity recovered from README inspection; upstream YAML clean, no patch needed."
     }
   ],
   "consensus": {
-    "last_updated": "2026-05-17T09:40:49-0400",
+    "last_updated": "2026-05-25T18:04:03-0400",
     "doctors_examined": 5,
-    "exams_total": 19,
+    "exams_total": 21,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

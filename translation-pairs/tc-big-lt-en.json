@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
+  "_last_updated": "2026-05-25T17:16:35-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-big-lt-en.json",
   "patient_id": "tc-big-lt-en",
   "admitted": "2026-03-22T19:49:51.992924+00:00",
@@ -39,7 +39,22 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-lt-en",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "19488d4ca36c1e5ff72934f042c0549a0d89648f",
+      "upstream_last_modified_at_record_time": "2023-10-10 10:37:14+00:00",
+      "upstream_license": "cc-by-4.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "safetensors",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-lt-en",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-lt-en",
+      "windstormlabs_origin_uploaded_at": "2026-05-25T17:16:35-0400",
+      "windstormlabs_origin_archive_mode": "byte_perfect",
+      "windstormlabs_origin_verify": "byte_perfect_match",
+      "windstormlabs_origin_representative_pair": "tc-big-lt-en"
     },
     "lora": {
       "status": "present",
@@ -61,7 +76,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-big-lt-en/lora",
@@ -73,7 +88,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-lt-en/tree/main/lora",
-      "hf_uploaded_at": "2026-04-20T13:02:57.946488+00:00"
+      "hf_uploaded_at": "2026-04-20T13:02:57.946488+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tc-big-lt-en/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-18T10:03:29-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +101,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-big-lt-en/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-20T13:02:57.946488+00:00"
+      "hf_uploaded_at": "2026-04-20T13:02:57.946488+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tc-big-lt-en/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-18T10:03:29-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -104,7 +123,7 @@
       "date": "2026-03-22T19:49:51.992924+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -120,27 +139,27 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
               "output": "Hello, how's it going today?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
               "output": "The weather is nice this morning.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
               "output": "I'd like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -154,27 +173,27 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
               "output": "Hello, how's it going today?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
               "output": "The weather is nice this morning.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
               "output": "I'd like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
@@ -188,34 +207,34 @@
           "quality_label": "Basic",
           "sample_translations": [
             {
-              "input": "Sveiki, kaip sekasi šiandien?",
+              "input": "Sveiki, kaip sekasi \u0161iandien?",
               "output": "Hello, how's it going today?",
               "passed": true
             },
             {
-              "input": "Šį rytą oras yra gražus.",
+              "input": "\u0160\u012f ryt\u0105 oras yra gra\u017eus.",
               "output": "The weather is nice this morning.",
               "passed": true
             },
             {
-              "input": "Norėčiau užsisakyti puodelį kavos, prašau.",
+              "input": "Nor\u0117\u010diau u\u017esisakyti puodel\u012f kavos, pra\u0161au.",
               "output": "I'd like to order a cup of coffee, please.",
               "passed": true
             },
             {
-              "input": "Greita ruda lapė šoka per tingų šunį.",
+              "input": "Greita ruda lap\u0117 \u0161oka per ting\u0173 \u0161un\u012f.",
               "output": "A quick brown fox jumps over a lazy dog.",
               "passed": true
             },
             {
-              "input": "Dirbtinis intelektas keičia pasaulį.",
+              "input": "Dirbtinis intelektas kei\u010dia pasaul\u012f.",
               "output": "Artificial intelligence is changing the world.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -249,14 +268,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:50:49.563497+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -325,7 +344,7 @@
       "date": "2026-03-23T07:50:49.563497+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -388,7 +407,7 @@
       "date": "2026-03-24T07:01:08.272453+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -424,7 +443,7 @@
       "date": "2026-03-24T20:20:43.765216+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -447,7 +466,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -500,11 +519,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no reverse model en→tc-big-lt"
+              "reason": "no reverse model en\u2192tc-big-lt"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for tc-big-lt→en"
+              "reason": "no reference pairs for tc-big-lt\u2192en"
             },
             "vitals": {
               "status": "complete",
@@ -558,7 +577,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -678,7 +697,7 @@
       },
       "best_grade": "A",
       "best_score": 95.34,
-      "notes": "Dr. C independent certification of tc-big-lt-en. Tested 2 variant(s): base, ct2_int8. Best variant grade: A (95.34). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-big-lt-en. Tested 2 variant(s): base, ct2_int8. Best variant grade: A (95.34). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-big-lt-en",
@@ -694,7 +713,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -768,14 +787,14 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HERM0-P4-tc-big-lt-en",
       "date": "2026-04-15T15:35:35.278746+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=2. Score 98.3→89.4 (Δ-8.9). No improvement — discarded.",
+      "method": "Parallel improvement pipeline (Phase 4): 2 epochs, lr=5e-6, batch=32, fp16, worker=2. Score 98.3\u219289.4 (\u0394-8.9). No improvement \u2014 discarded.",
       "protocol_script": "scripts/herm0_pipeline_parallel.py",
       "notes": "Parallel worker 2. Data: 49950 pairs. Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
@@ -806,12 +825,82 @@
       "src_name": "Lithuanian",
       "tgt_name": "English",
       "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-18T10-03-29-tc-big-lt-en",
+      "date": "2026-05-18T10:03:29-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-20260518T134017Z-cbfb4a",
+      "results": {
+        "source_repo": "WindyWord/translate-tc-big-lt-en",
+        "dest_repo": "WindstormLabs/translate-tc-big-lt-en",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 7.4,
+        "quality_tier": "below_bar",
+        "stars": 2.5,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-tc-big-lt-en",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-lt-en",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "19488d4ca36c1e5ff72934f042c0549a0d89648f",
+        "upstream_license": "cc-by-4.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-MIRROR-2026-05-25T17-16-35-tc-big-lt-en",
+      "date": "2026-05-25T17:16:35-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-archive mirror Helsinki-NLP/opus-mt-opus-mt-tc-big-lt-en \u2192 WindstormLabs/origin-Helsinki-NLP-opus-mt-opus-mt-tc-big-lt-en",
+      "session_id": "phase-d-origin-20260525T205716Z-e14255",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-lt-en",
+        "source_repo": "Helsinki-NLP/opus-mt-tc-big-lt-en",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-lt-en",
+        "source_pair_used": "tc-big-lt-en",
+        "is_representative_for_shared_upstream": false,
+        "files_uploaded": 14,
+        "expected_files": 14,
+        "verify": "byte_perfect_match",
+        "elapsed_s": 15.0,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase D upstream-archive snapshot; Helsinki-NLP remains canonical."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.949755",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-25T17:16:35-0400",
+    "doctors_examined": 4,
+    "exams_total": 18,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -944,7 +1033,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T07:01:08.272453+00:00",
       "variant_scores": {}
@@ -958,7 +1047,7 @@
     "lora_size_mb": 945.62,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:46:02.226490+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -968,7 +1057,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

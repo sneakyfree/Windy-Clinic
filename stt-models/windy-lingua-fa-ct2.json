@@ -1,0 +1,57 @@
+{
+  "_schema": "windstorm_clinic_stt_v1",
+  "_last_updated": "2026-05-19T13:07:01-0400",
+  "_filing_note": "Scaffolded by Opus 4.7 1M-Context (Dr. D) on 2026-05-19 during Phase C listen-* migration. CT2 (CTranslate2 int8) quantized companion to the parent windy-lingua-fa patient. Created because the parent's clinic record had no -ct2 sibling, even though WindyWord ships both.",
+  "patient_id": "windy-lingua-fa-ct2",
+  "kind": "stt_lingua",
+  "name": "Windy Lingua Persian (CPU)",
+  "admitted": "2026-05-19",
+  "admitted_by": "Opus 4.7 1M-Context (Dr. D)",
+  "source_registry": null,
+  "source_repo": null,
+  "hf_repo": "WindyWord/listen-windy-lingua-fa-ct2",
+  "language": "fa",
+  "language_pair": null,
+  "variant_cluster": {
+    "ct2_int8": {
+      "status": "present",
+      "format": "ctranslate2_int8",
+      "hf_repo": "WindyWord/listen-windy-lingua-fa-ct2",
+      "hf_subfolder": null,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-fa-ct2",
+      "windstormlabs_uploaded_at": "2026-05-19T13:07:01-0400",
+      "reconciled_at": "2026-05-19T13:07:01-0400",
+      "reconciled_by": "Opus 4.7 1M-Context (Dr. D)",
+      "note": "Patient file created at Phase C migration time; weights confirmed present via HF readback."
+    }
+  },
+  "examination_log": [
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-07-01-windy-lingua-fa-ct2",
+      "date": "2026-05-19T13:07:01-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-windy-lingua-fa-ct2 then upload-folder to WindstormLabs/listen-windy-lingua-fa-ct2; patient file also scaffolded in same operation",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "ct2_int8"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-fa-ct2",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-fa-ct2",
+        "files_uploaded": 5,
+        "expected_files": 5,
+        "verify": "match",
+        "elapsed_s": 6.2,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; CT2 quantized variant scaffold created alongside upload."
+    }
+  ],
+  "consensus": {
+    "last_updated": "2026-05-19T13:07:01-0400",
+    "exams_total": 1,
+    "doctors_examined": 1
+  }
+}

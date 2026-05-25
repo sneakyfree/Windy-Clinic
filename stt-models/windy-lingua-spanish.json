@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T02:04:38.883982+00:00",
+  "_last_updated": "2026-05-19T13:06:39-0400",
   "_clinic_path": "stt-models/windy-lingua-spanish.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyWord/listen-* (post-2026-04-21 migration; original WindyLabs/* references were Dr. A era stale pointers)) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-spanish",
@@ -39,14 +39,14 @@
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
       "method": "HuggingFace snapshot_download from WindyProLabs/* org",
       "protocol_script": "scripts/restore_downloads.py",
-      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') — this was a typo."
+      "notes": "Weights pulled from HuggingFace WindyProLabs org into /home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/stt/windy-lingua-spanish. Size: 466.0 MB. Previous state: catalogued_not_local. Now available for local STT quality testing. Filed by Opus 4.6 Opus-Claw (Dr. C). Note: Kit OC1 Alpha's 2026-03-10 model_registry.json had the wrong HF org name ('WindyLabs' instead of 'WindyProLabs') \u2014 this was a typo."
     },
     {
       "exam_id": "DRC-STTCERT-windy-lingua-spanish",
       "date": "2026-04-12T01:52:15.385190+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3d STT certification — FLEURS spanish dev (15 samples), WER + CER + RTF + latency + peak VRAM",
+      "method": "Phase 3d STT certification \u2014 FLEURS spanish dev (15 samples), WER + CER + RTF + latency + peak VRAM",
       "protocol_script": "scripts/phase3d_full_stt_cert.py",
       "variants_tested": [
         "base"
@@ -66,24 +66,24 @@
           "fleurs_subset": "es_419",
           "sample_transcriptions": [
             {
-              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental"
+              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental"
             },
             {
-              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte del movimiento samiental"
+              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte del movimiento samiental"
             },
             {
-              "ref": "podemos comenzar a llevar una vida más amigable con el planeta formar parte de movimientos ambiental",
-              "hyp": "podemos comenzar a llevar una vida más amigable con el planeta formar parte movimiento san mientalis"
+              "ref": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte de movimientos ambiental",
+              "hyp": "podemos comenzar a llevar una vida m\u00e1s amigable con el planeta formar parte movimiento san mientalis"
             },
             {
-              "ref": "aún intentan establecer cuán importante fue el impacto y de qué modo afectará al planeta",
-              "hyp": "aún intentan establecer cuál importante fue el impacto y de que moda afectar al planeta"
+              "ref": "a\u00fan intentan establecer cu\u00e1n importante fue el impacto y de qu\u00e9 modo afectar\u00e1 al planeta",
+              "hyp": "a\u00fan intentan establecer cu\u00e1l importante fue el impacto y de que moda afectar al planeta"
             },
             {
-              "ref": "aún intentan establecer cuán importante fue el impacto y de qué modo afectará al planeta",
-              "hyp": "aún intentan establecer cuán importantes fue el impacto y de que moda afectar al planeta"
+              "ref": "a\u00fan intentan establecer cu\u00e1n importante fue el impacto y de qu\u00e9 modo afectar\u00e1 al planeta",
+              "hyp": "a\u00fan intentan establecer cu\u00e1n importantes fue el impacto y de que moda afectar al planeta"
             }
           ]
         }
@@ -95,7 +95,7 @@
       "date": "2026-04-16T19:01:28.667329+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STT WER expansion — 100 FLEURS clips (6.7× larger sample than baseline)",
+      "method": "STT WER expansion \u2014 100 FLEURS clips (6.7\u00d7 larger sample than baseline)",
       "protocol_script": "scripts/phase3d_stt_harness.py --samples 100 --fresh",
       "fleurs_subset": "es_419",
       "n_samples": 100,
@@ -112,19 +112,56 @@
       "date": "2026-04-28T02:04:38.883982+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Sweep update — WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
+      "method": "Sweep update \u2014 WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
       "is_stale_subvariant": false,
       "parent_repo": null,
       "subfolder": null,
       "notes": "Original Dr. A-era patient files referenced the WindyLabs/* HF org (which never had live models due to a typo). Migration to WindyWord/listen-* completed 2026-04-21. This sweep updates all hf_repo + variant_cluster.*.hf_repo + _filing_note pointers in this patient file to reflect the canonical WindyWord URL. "
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-ALIAS-2026-05-19T13-06-39-windy-lingua-es",
+      "date": "2026-05-19T13:06:39-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C alias mirror \u2014 ISO-code duplicate 'windy-lingua-es' of canonical 'windy-lingua-spanish' (byte-identical weights verified via SHA-256)",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-es",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-es",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 8.5,
+        "alias_of_canonical": "windy-lingua-spanish",
+        "weight_sha256_matches_canonical": true,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ISO-code alias mirror; both WindyWord and WindstormLabs publish identical weights under both names."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine.",
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
     "stt_wer": 0.3675,
     "stt_grade": "C",
     "stt_certified_by": "Opus 4.6 Opus-Claw (Dr. C)",
-    "stt_certified_at": "2026-04-12T01:52:15.385209+00:00"
-  }
+    "stt_certified_at": "2026-04-12T01:52:15.385209+00:00",
+    "last_updated": "2026-05-19T13:06:39-0400",
+    "exams_total": 5,
+    "doctors_examined": 2
+  },
+  "iso_aliases": [
+    {
+      "iso_pid": "windy-lingua-es",
+      "iso_hf_repo_source": "WindyWord/listen-windy-lingua-es",
+      "iso_hf_repo_dest": "WindstormLabs/listen-windy-lingua-es",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-es",
+      "weight_sha256_matches_canonical": true,
+      "verified_at": "2026-05-19T13:06:39-0400",
+      "verified_by": "Opus 4.7 1M-Context (Dr. D)",
+      "note": "WindyWord publishes byte-identical copies under ISO code 'es' and full name; both mirrored to Labs."
+    }
+  ]
 }

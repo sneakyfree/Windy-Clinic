@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-21T14:40:12.483577+00:00",
+  "_last_updated": "2026-05-25T17:23:41-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/tn-en.json",
   "patient_id": "tn-en",
   "admitted": "2026-03-22T19:50:54.042760+00:00",
@@ -39,7 +39,22 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-tn-en",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "903feefa144ddf8b2a2735974f7441eb47732102",
+      "upstream_last_modified_at_record_time": "2023-08-16 12:07:02+00:00",
+      "upstream_license": "apache-2.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "safetensors",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tn-en",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-tn-en",
+      "windstormlabs_origin_uploaded_at": "2026-05-25T17:23:41-0400",
+      "windstormlabs_origin_archive_mode": "byte_perfect",
+      "windstormlabs_origin_verify": "byte_perfect_match",
+      "windstormlabs_origin_representative_pair": "tn-en"
     },
     "lora": {
       "status": "present",
@@ -73,7 +88,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tn-en/tree/main/lora",
-      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00"
+      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tn-en/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-19T10:49:47-0400"
     },
     "herm0_scripture": {
       "status": "present",
@@ -119,7 +136,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tn-en/tree/main/herm0-scripture",
-      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00"
+      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tn-en/tree/main/herm0-scripture",
+      "windstormlabs_uploaded_at": "2026-05-19T10:49:47-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -130,7 +149,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tn-en/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00"
+      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tn-en/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-19T10:49:47-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -145,7 +166,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tn-en/tree/main/scripture-ct2-int8",
-      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00"
+      "hf_uploaded_at": "2026-04-21T14:40:12.483577+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tn-en/tree/main/scripture-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-19T10:49:47-0400"
     }
   },
   "architecture": {
@@ -1345,12 +1368,82 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-tn-en",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8, herm0-scripture, scripture-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-19T10-49-47-tn-en",
+      "date": "2026-05-19T10:49:47-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-20260519T144801Z-6c1ea6",
+      "results": {
+        "source_repo": "WindyWord/translate-tn-en",
+        "dest_repo": "WindstormLabs/translate-tn-en",
+        "files_uploaded": 25,
+        "expected_files": 25,
+        "verify": "match",
+        "elapsed_s": 6.4,
+        "quality_tier": "unrated",
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-tn-en",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tn-en",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "903feefa144ddf8b2a2735974f7441eb47732102",
+        "upstream_license": "apache-2.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-MIRROR-2026-05-25T17-23-41-tn-en",
+      "date": "2026-05-25T17:23:41-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-archive mirror Helsinki-NLP/opus-mt-opus-mt-tn-en \u2192 WindstormLabs/origin-Helsinki-NLP-opus-mt-opus-mt-tn-en",
+      "session_id": "phase-d-origin-20260525T205716Z-e14255",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tn-en",
+        "source_repo": "Helsinki-NLP/opus-mt-tn-en",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tn-en",
+        "source_pair_used": "tn-en",
+        "is_representative_for_shared_upstream": false,
+        "files_uploaded": 10,
+        "expected_files": 10,
+        "verify": "byte_perfect_match",
+        "elapsed_s": 7.6,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase D upstream-archive snapshot; Helsinki-NLP remains canonical."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.997660",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-25T17:23:41-0400",
+    "doctors_examined": 5,
+    "exams_total": 19,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

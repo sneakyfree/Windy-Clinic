@@ -21,7 +21,7 @@
         "base": "b1n1yam/shook-medium-amharic-2k",
         "wer": "pending audit"
       },
-      "rationale": "Previous Amharic Lingua was ported from WPL/seyyaw/whisper-finetuned-amharic, audited at 118.9% WER — unusable for production. Replaced with b1n1yam/shook-medium-amharic-2k, selected as the most-downloaded community Amharic Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
+      "rationale": "Previous Amharic Lingua was ported from WPL/seyyaw/whisper-finetuned-amharic, audited at 118.9% WER \u2014 unusable for production. Replaced with b1n1yam/shook-medium-amharic-2k, selected as the most-downloaded community Amharic Whisper fine-tune on HF. Full WER audit pending; community signal supports usability.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
@@ -52,10 +52,32 @@
         "script": 100.0,
         "tier": "good"
       },
-      "note": "forced_ids gave a small additional bump (28.1% → 26.2% WER); confirms tier=GOOD."
+      "note": "forced_ids gave a small additional bump (28.1% \u2192 26.2% WER); confirms tier=GOOD."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-03-47-windy-lingua-am",
+      "date": "2026-05-19T13:03:47-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-am",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-am",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 25.1,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
   ],
-  "_last_updated": "2026-04-28T01:45:43.094765+00:00",
+  "_last_updated": "2026-05-19T13:03:47-0400",
   "source_repo_origin": "b1n1yam/shook-medium-amharic-2k",
   "hf_repos_windyword": [
     "WindyWord/listen-windy-lingua-am"
@@ -68,7 +90,9 @@
       "format": "safetensors",
       "ported_at": "2026-04-28T00:59:14.220049+00:00",
       "upstream_base": "b1n1yam/shook-medium-amharic-2k",
-      "community_downloads_at_port": 1485
+      "community_downloads_at_port": 1485,
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-am/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:03:47-0400"
     }
   },
   "quality_rating": {
@@ -80,5 +104,10 @@
     "rated_by": "Opus 4.6 Opus-Claw (Dr. C)",
     "audit_method": "30-sample FLEURS Grand Rounds STT harness with forced_decoder_ids",
     "inference_recommendation": "use forced_decoder_ids prefix; language= kwarg may degrade quality"
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T13:03:47-0400",
+    "exams_total": 4,
+    "doctors_examined": 2
   }
 }

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-05-13T22:06:18-0400",
+  "_last_updated": "2026-05-19T18:04:00-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/ar-tr.json",
   "patient_id": "ar-tr",
   "admitted": "2026-03-22T19:27:36.601240+00:00",
@@ -39,7 +39,28 @@
       "on_disk_target": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_lost/ar-tr",
       "on_disk_format": "pytorch_bin",
       "restored_at": "2026-04-11T20:51:05.692682+00:00",
-      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-ar-tr",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "16881361b4430997704818848adb79ed8436767e",
+      "upstream_last_modified_at_record_time": "2023-08-16 11:25:46+00:00",
+      "upstream_license": "apache-2.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "pytorch_bin",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-ar-tr",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-ar-tr",
+      "windstormlabs_origin_uploaded_at": "2026-05-19T14:59:24-0400",
+      "windstormlabs_origin_source_pair": "ar-tr",
+      "windstormlabs_origin_verify": "subset",
+      "windstormlabs_origin_archive_mode": "byte_perfect_match",
+      "windstormlabs_origin_files_added": [
+        "metadata.json",
+        "tf_model.h5"
+      ],
+      "windstormlabs_origin_files_removed": [],
+      "windstormlabs_origin_byteperfect_at": "2026-05-19T18:04:00-0400"
     },
     "lora": {
       "status": "missing_from_disk",
@@ -1184,12 +1205,83 @@
         "sandbox_mode": true
       },
       "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-ar-tr",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-ar-tr",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "16881361b4430997704818848adb79ed8436767e",
+        "upstream_license": "apache-2.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-MIRROR-2026-05-19T14-59-24-ar-tr",
+      "date": "2026-05-19T14:59:24-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-archive mirror Helsinki-NLP/opus-mt-opus-mt-ar-tr \u2192 WindstormLabs/origin-Helsinki-NLP-opus-mt-opus-mt-ar-tr",
+      "session_id": "phase-d-origin-20260519T185714Z-d7ab3b",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-ar-tr",
+        "source_repo": "Helsinki-NLP/opus-mt-ar-tr",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-ar-tr",
+        "source_pair_used": "ar-tr",
+        "is_representative_for_shared_upstream": false,
+        "files_uploaded": 9,
+        "expected_files": 11,
+        "verify": "subset",
+        "elapsed_s": 4.1,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase D upstream-archive snapshot; Helsinki-NLP remains canonical."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-BYTEPERFECT-2026-05-19T18-04-00-ar-tr",
+      "date": "2026-05-19T18:04:00-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D byte-perfect upgrade \u2014 re-uploaded upstream snapshot replacing locally-converted files. Source: Helsinki-NLP/opus-mt-ar-tr",
+      "session_id": "phase-d-byteperfect-20260519T215954Z-1c6d5a",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-ar-tr",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-ar-tr",
+        "verify_status": "byte_perfect_match",
+        "file_list_match": true,
+        "lfs_sha_match": true,
+        "files_added": [
+          "metadata.json",
+          "tf_model.h5"
+        ],
+        "files_deleted_from_dest": [],
+        "sha_mismatches": [],
+        "elapsed_s": 8.3
+      },
+      "notes": "This mirror is now a literal byte-perfect snapshot of the upstream as of upstream_commit_sha_at_record_time. Local fine-tune-derived files (e.g. model.safetensors) were removed from the mirror to preserve upstream fidelity; they remain in the local windy-pair-<pair>/base/ dir."
     }
   ],
   "consensus": {
-    "last_updated": "2026-05-13T22:06:18-0400",
+    "last_updated": "2026-05-19T18:04:00-0400",
     "doctors_examined": 6,
-    "exams_total": 18,
+    "exams_total": 21,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

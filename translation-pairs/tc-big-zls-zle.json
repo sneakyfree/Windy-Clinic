@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-20T13:12:36.296233+00:00",
+  "_last_updated": "2026-05-25T18:00:19-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-big-zls-zle.json",
   "patient_id": "tc-big-zls-zle",
   "admitted": "2026-03-22T19:50:30.175325+00:00",
@@ -39,7 +39,33 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-zls-zle",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "5cd18302dac2e217a0f0182cedec5e38896b6f6f",
+      "upstream_last_modified_at_record_time": "2023-10-10 11:25:27+00:00",
+      "upstream_license": "cc-by-4.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "safetensors",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-zls-zle",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-zls-zle",
+      "windstormlabs_origin_uploaded_at": "2026-05-25T18:00:19-0400",
+      "windstormlabs_origin_archive_mode": "byte_perfect_weights_only_readme_patched",
+      "windstormlabs_origin_verify": "byte_perfect_weights_only_readme_patched",
+      "windstormlabs_origin_readme_patched": true,
+      "windstormlabs_origin_readme_patch_detail": {
+        "status": "patched",
+        "changes": {
+          "lang_replacements": [],
+          "moved_to_bcp47": [
+            "sr_Cyrl",
+            "sr_Latn"
+          ]
+        }
+      },
+      "windstormlabs_origin_representative_pair": "tc-big-zls-zle"
     },
     "lora": {
       "status": "present",
@@ -797,12 +823,63 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-tc-big-zls-zle",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-tc-big-zls-zle",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-zls-zle",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "5cd18302dac2e217a0f0182cedec5e38896b6f6f",
+        "upstream_license": "cc-by-4.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-README-REPAIR-2026-05-25T18-00-19-tc-big-zls-zle",
+      "date": "2026-05-25T18:00:19-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D README repair \u2014 upstream YAML frontmatter had invalid language[] entries; minimal patch applied before upload. Source: Helsinki-NLP/opus-mt-tc-big-zls-zle",
+      "session_id": "phase-d-readme-repair-20260525T215834Z-07e26c",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-big-zls-zle",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-big-zls-zle",
+        "verify": "byte_perfect_weights_only_readme_patched",
+        "sha_mismatches": [],
+        "readme_patch": {
+          "status": "patched",
+          "changes": {
+            "lang_replacements": [],
+            "moved_to_bcp47": [
+              "sr_Cyrl",
+              "sr_Latn"
+            ]
+          }
+        },
+        "elapsed_s": 8.4
+      },
+      "notes": "Weights are byte-identical to upstream; only README.md YAML frontmatter was patched to satisfy HF's metadata validator. A WINDSTORM_NOTE block in the patched README documents the specific changes inline. Original unpatched README remains canonical at Helsinki-NLP/opus-mt-* upstream."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.957252",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-25T18:00:19-0400",
+    "doctors_examined": 4,
+    "exams_total": 16,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

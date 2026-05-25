@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-20T13:07:22.747916+00:00",
+  "_last_updated": "2026-05-24T16:54:07-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/tc-bible-big-mkh-deu_eng_nld.json",
   "patient_id": "tc-bible-big-mkh-deu_eng_nld",
   "admitted": "2026-03-22T19:47:14.219928+00:00",
@@ -39,7 +39,22 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-mkh-deu_eng_nld",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "d23bd9fb48f2bdd1ba6566c7250fea6d4f073041",
+      "upstream_last_modified_at_record_time": "2024-10-08 09:14:39+00:00",
+      "upstream_license": "apache-2.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "safetensors",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-mkh-deu_eng_nld",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-mkh-deu_eng_nld",
+      "windstormlabs_origin_uploaded_at": "2026-05-24T16:54:07-0400",
+      "windstormlabs_origin_archive_mode": "byte_perfect",
+      "windstormlabs_origin_verify": "byte_perfect_match",
+      "windstormlabs_origin_representative_pair": "tc-bible-big-mkh-deu_eng_nld"
     },
     "lora": {
       "status": "present",
@@ -61,7 +76,7 @@
           "method": "LoRA",
           "rank": 4,
           "alpha": 8,
-          "note": "Fog a Mirror — minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
+          "note": "Fog a Mirror \u2014 minimal LoRA intended as baseline, merged to full weights. Byte-identical to base in most cases."
         }
       },
       "on_disk_path": "/home/user1-gpu/Desktop/grants_folder/windy-pro/models/windy-pair-tc-bible-big-mkh-deu_eng_nld/lora",
@@ -73,7 +88,9 @@
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
       "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-mkh-deu_eng_nld/tree/main/lora",
-      "hf_uploaded_at": "2026-04-20T12:22:40.601673+00:00"
+      "hf_uploaded_at": "2026-04-20T12:22:40.601673+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tc-bible-big-mkh-deu_eng_nld/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-18T09:51:05-0400"
     },
     "lora_ct2_int8": {
       "status": "present",
@@ -84,7 +101,9 @@
       "quantized_at": "2026-04-12T12:43:56.560698+00:00",
       "quantized_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-tc-bible-big-mkh-deu_eng_nld/tree/main/lora-ct2-int8",
-      "hf_uploaded_at": "2026-04-20T12:22:40.601673+00:00"
+      "hf_uploaded_at": "2026-04-20T12:22:40.601673+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-tc-bible-big-mkh-deu_eng_nld/tree/main/lora-ct2-int8",
+      "windstormlabs_uploaded_at": "2026-05-18T09:51:05-0400"
     },
     "ct2_int8_DELETED_was_fake": {
       "note": "This was a byte-identical copy of base/, NOT real INT8. Deleted 2026-04-12 by Dr. C. Replaced by lora_ct2_int8 (real INT8 of proprietary weights).",
@@ -104,7 +123,7 @@
       "date": "2026-03-22T19:47:14.219928+00:00",
       "doctor": "Kit OC1 Alpha (Dr. A)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "10-sentence certification — binary quality checks per sentence",
+      "method": "10-sentence certification \u2014 binary quality checks per sentence",
       "protocol_script": "scripts/certify_one_model.py v2",
       "variants_tested": [
         "base",
@@ -120,28 +139,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "សួស្តី តើអ្នកសុខសប្បាយទេថ្ងៃនេះ?",
-              "output": "Bist du heute glücklich?",
+              "input": "\u179f\u17bd\u179f\u17d2\u178f\u17b8 \u178f\u17be\u17a2\u17d2\u1793\u1780\u179f\u17bb\u1781\u179f\u1794\u17d2\u1794\u17b6\u1799\u1791\u17c1\u1790\u17d2\u1784\u17c3\u1793\u17c1\u17c7?",
+              "output": "Bist du heute gl\u00fccklich?",
               "passed": true
             },
             {
-              "input": "អាកាសធាតុព្រឹកនេះស្អាតណាស់។",
+              "input": "\u17a2\u17b6\u1780\u17b6\u179f\u1792\u17b6\u178f\u17bb\u1796\u17d2\u179a\u17b9\u1780\u1793\u17c1\u17c7\u179f\u17d2\u17a2\u17b6\u178f\u178e\u17b6\u179f\u17cb\u17d4",
               "output": "The morning light is beautiful.",
               "passed": true
             },
             {
-              "input": "ខ្ញុំចង់បញ្ជាកាហ្វេមួយកែវសូមអរគុណ។",
+              "input": "\u1781\u17d2\u1789\u17bb\u17c6\u1785\u1784\u17cb\u1794\u1789\u17d2\u1787\u17b6\u1780\u17b6\u17a0\u17d2\u179c\u17c1\u1798\u17bd\u1799\u1780\u17c2\u179c\u179f\u17bc\u1798\u17a2\u179a\u1782\u17bb\u178e\u17d4",
               "output": "I'd like to order a cupcake, thank you.",
               "passed": true
             },
             {
-              "input": "កញ្ជ្រោងពណ៌ត្នោតលឿនលោតឆ្លងពីឆ្កែច្របូកច្របល់។",
+              "input": "\u1780\u1789\u17d2\u1787\u17d2\u179a\u17c4\u1784\u1796\u178e\u17cc\u178f\u17d2\u1793\u17c4\u178f\u179b\u17bf\u1793\u179b\u17c4\u178f\u1786\u17d2\u179b\u1784\u1796\u17b8\u1786\u17d2\u1780\u17c2\u1785\u17d2\u179a\u1794\u17bc\u1780\u1785\u17d2\u179a\u1794\u179b\u17cb\u17d4",
               "output": "The smouldering, smouldering smouldering smouldering smog.",
               "passed": true
             },
             {
-              "input": "បញ្ញាសិប្បនិម្មិតកំពុងផ្លាស់ប្តូរពិភពលោក។",
-              "output": "Der Geist verändert die Welt.",
+              "input": "\u1794\u1789\u17d2\u1789\u17b6\u179f\u17b7\u1794\u17d2\u1794\u1793\u17b7\u1798\u17d2\u1798\u17b7\u178f\u1780\u17c6\u1796\u17bb\u1784\u1795\u17d2\u179b\u17b6\u179f\u17cb\u1794\u17d2\u178f\u17bc\u179a\u1796\u17b7\u1797\u1796\u179b\u17c4\u1780\u17d4",
+              "output": "Der Geist ver\u00e4ndert die Welt.",
               "passed": true
             }
           ]
@@ -154,28 +173,28 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "សួស្តី តើអ្នកសុខសប្បាយទេថ្ងៃនេះ?",
-              "output": "Bist du heute glücklich?",
+              "input": "\u179f\u17bd\u179f\u17d2\u178f\u17b8 \u178f\u17be\u17a2\u17d2\u1793\u1780\u179f\u17bb\u1781\u179f\u1794\u17d2\u1794\u17b6\u1799\u1791\u17c1\u1790\u17d2\u1784\u17c3\u1793\u17c1\u17c7?",
+              "output": "Bist du heute gl\u00fccklich?",
               "passed": true
             },
             {
-              "input": "អាកាសធាតុព្រឹកនេះស្អាតណាស់។",
+              "input": "\u17a2\u17b6\u1780\u17b6\u179f\u1792\u17b6\u178f\u17bb\u1796\u17d2\u179a\u17b9\u1780\u1793\u17c1\u17c7\u179f\u17d2\u17a2\u17b6\u178f\u178e\u17b6\u179f\u17cb\u17d4",
               "output": "The morning light is beautiful.",
               "passed": true
             },
             {
-              "input": "ខ្ញុំចង់បញ្ជាកាហ្វេមួយកែវសូមអរគុណ។",
+              "input": "\u1781\u17d2\u1789\u17bb\u17c6\u1785\u1784\u17cb\u1794\u1789\u17d2\u1787\u17b6\u1780\u17b6\u17a0\u17d2\u179c\u17c1\u1798\u17bd\u1799\u1780\u17c2\u179c\u179f\u17bc\u1798\u17a2\u179a\u1782\u17bb\u178e\u17d4",
               "output": "I'd like to order a cupcake, thank you.",
               "passed": true
             },
             {
-              "input": "កញ្ជ្រោងពណ៌ត្នោតលឿនលោតឆ្លងពីឆ្កែច្របូកច្របល់។",
+              "input": "\u1780\u1789\u17d2\u1787\u17d2\u179a\u17c4\u1784\u1796\u178e\u17cc\u178f\u17d2\u1793\u17c4\u178f\u179b\u17bf\u1793\u179b\u17c4\u178f\u1786\u17d2\u179b\u1784\u1796\u17b8\u1786\u17d2\u1780\u17c2\u1785\u17d2\u179a\u1794\u17bc\u1780\u1785\u17d2\u179a\u1794\u179b\u17cb\u17d4",
               "output": "The smouldering, smouldering smouldering smouldering smog.",
               "passed": true
             },
             {
-              "input": "បញ្ញាសិប្បនិម្មិតកំពុងផ្លាស់ប្តូរពិភពលោក។",
-              "output": "Der Geist verändert die Welt.",
+              "input": "\u1794\u1789\u17d2\u1789\u17b6\u179f\u17b7\u1794\u17d2\u1794\u1793\u17b7\u1798\u17d2\u1798\u17b7\u178f\u1780\u17c6\u1796\u17bb\u1784\u1795\u17d2\u179b\u17b6\u179f\u17cb\u1794\u17d2\u178f\u17bc\u179a\u1796\u17b7\u1797\u1796\u179b\u17c4\u1780\u17d4",
+              "output": "Der Geist ver\u00e4ndert die Welt.",
               "passed": true
             }
           ]
@@ -188,34 +207,34 @@
           "quality_label": "Gold Standard",
           "sample_translations": [
             {
-              "input": "សួស្តី តើអ្នកសុខសប្បាយទេថ្ងៃនេះ?",
+              "input": "\u179f\u17bd\u179f\u17d2\u178f\u17b8 \u178f\u17be\u17a2\u17d2\u1793\u1780\u179f\u17bb\u1781\u179f\u1794\u17d2\u1794\u17b6\u1799\u1791\u17c1\u1790\u17d2\u1784\u17c3\u1793\u17c1\u17c7?",
               "output": "So, you're happy today?",
               "passed": true
             },
             {
-              "input": "អាកាសធាតុព្រឹកនេះស្អាតណាស់។",
-              "output": "Die Morgenröte ist schön.",
+              "input": "\u17a2\u17b6\u1780\u17b6\u179f\u1792\u17b6\u178f\u17bb\u1796\u17d2\u179a\u17b9\u1780\u1793\u17c1\u17c7\u179f\u17d2\u17a2\u17b6\u178f\u178e\u17b6\u179f\u17cb\u17d4",
+              "output": "Die Morgenr\u00f6te ist sch\u00f6n.",
               "passed": true
             },
             {
-              "input": "ខ្ញុំចង់បញ្ជាកាហ្វេមួយកែវសូមអរគុណ។",
+              "input": "\u1781\u17d2\u1789\u17bb\u17c6\u1785\u1784\u17cb\u1794\u1789\u17d2\u1787\u17b6\u1780\u17b6\u17a0\u17d2\u179c\u17c1\u1798\u17bd\u1799\u1780\u17c2\u179c\u179f\u17bc\u1798\u17a2\u179a\u1782\u17bb\u178e\u17d4",
               "output": "I'd like to order a cupcake, thank you.",
               "passed": true
             },
             {
-              "input": "កញ្ជ្រោងពណ៌ត្នោតលឿនលោតឆ្លងពីឆ្កែច្របូកច្របល់។",
-              "output": "Die hellen Knöllchen sind von der Unendlichkeit gewichen.",
+              "input": "\u1780\u1789\u17d2\u1787\u17d2\u179a\u17c4\u1784\u1796\u178e\u17cc\u178f\u17d2\u1793\u17c4\u178f\u179b\u17bf\u1793\u179b\u17c4\u178f\u1786\u17d2\u179b\u1784\u1796\u17b8\u1786\u17d2\u1780\u17c2\u1785\u17d2\u179a\u1794\u17bc\u1780\u1785\u17d2\u179a\u1794\u179b\u17cb\u17d4",
+              "output": "Die hellen Kn\u00f6llchen sind von der Unendlichkeit gewichen.",
               "passed": true
             },
             {
-              "input": "បញ្ញាសិប្បនិម្មិតកំពុងផ្លាស់ប្តូរពិភពលោក។",
-              "output": "Der Geist verändert die Welt.",
+              "input": "\u1794\u1789\u17d2\u1789\u17b6\u179f\u17b7\u1794\u17d2\u1794\u1793\u17b7\u1798\u17d2\u1798\u17b7\u178f\u1780\u17c6\u1796\u17bb\u1784\u1795\u17d2\u179b\u17b6\u179f\u17cb\u1794\u17d2\u178f\u17bc\u179a\u1796\u17b7\u1797\u1796\u179b\u17c4\u1780\u17d4",
+              "output": "Der Geist ver\u00e4ndert die Welt.",
               "passed": true
             }
           ]
         }
       },
-      "notes": "Sweep 1 — source-language-aware certification"
+      "notes": "Sweep 1 \u2014 source-language-aware certification"
     },
     {
       "exam_id": "OC1-CERT-SWEEP2",
@@ -249,14 +268,14 @@
           "stars": 5.0
         }
       },
-      "notes": "Sweep 2 — recertification"
+      "notes": "Sweep 2 \u2014 recertification"
     },
     {
       "exam_id": "H0-DEEPAUDIT",
       "date": "2026-03-23T07:25:35.669320+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -272,8 +291,8 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Das Wetter ist heute schön.",
-            "Ich würde gerne eine Tasse Kaffee bestellen, bitte.",
+            "Das Wetter ist heute sch\u00f6n.",
+            "Ich w\u00fcrde gerne eine Tasse Kaffee bestellen, bitte.",
             "Die Kinder spielen im Park.",
             "Was ist die Zeit, in der der Zug verlassen wird?",
             "Sie arbeitet seit zehn Jahren im Krankenhaus."
@@ -287,8 +306,8 @@
           "not_echo": 10,
           "unique_outputs": 10,
           "sample_translations": [
-            "Das Wetter ist heute schön.",
-            "Ich würde gerne eine Tasse Kaffee bestellen, bitte.",
+            "Das Wetter ist heute sch\u00f6n.",
+            "Ich w\u00fcrde gerne eine Tasse Kaffee bestellen, bitte.",
             "Die Kinder spielen im Park.",
             "Was ist die Zeit, in der der Zug verlassen wird?",
             "Sie arbeitet seit zehn Jahren im Krankenhaus."
@@ -325,7 +344,7 @@
       "date": "2026-03-23T07:25:35.669320+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Independent replication — 10 test sentences, structural quality scoring",
+      "method": "Independent replication \u2014 10 test sentences, structural quality scoring",
       "protocol_script": "deep_audit_v4",
       "variants_tested": [
         "base",
@@ -388,7 +407,7 @@
       "date": "2026-03-24T06:49:27.758934+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "STREPS — paragraph-length native-language input (~100 words), 7 quality checks",
+      "method": "STREPS \u2014 paragraph-length native-language input (~100 words), 7 quality checks",
       "protocol_script": "streps_audit",
       "variants_tested": [
         "base",
@@ -424,7 +443,7 @@
       "date": "2026-03-24T20:00:30.047178+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "CT2 INT8 reexport — load broken pickle model, extract state_dict, rebuild as safetensors",
+      "method": "CT2 INT8 reexport \u2014 load broken pickle model, extract state_dict, rebuild as safetensors",
       "protocol_script": "ct2_reexport_phase1.py",
       "variants_tested": [
         "ct2_int8"
@@ -447,7 +466,7 @@
       "date": "2026-03-25T20:53:20.341203+00:00",
       "doctor": "Herm Zero (Dr. B)",
       "machine": "Veron 1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Stress test methodology correction — retroactive note on en_fallback artifact",
+      "method": "Stress test methodology correction \u2014 retroactive note on en_fallback artifact",
       "protocol_script": "stress_test_correction_analysis.py",
       "variants_tested": [],
       "results": {
@@ -505,11 +524,11 @@
           "tests": {
             "bloodwork": {
               "status": "skipped",
-              "reason": "no English endpoint (mkh→deu_eng_nld)"
+              "reason": "no English endpoint (mkh\u2192deu_eng_nld)"
             },
             "crossmatch": {
               "status": "skipped",
-              "reason": "no reference pairs for mkh→deu_eng_nld"
+              "reason": "no reference pairs for mkh\u2192deu_eng_nld"
             },
             "vitals": {
               "status": "complete",
@@ -563,7 +582,7 @@
       "date": "2026-04-12T12:01:51.648993+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Phase 3b — Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
+      "method": "Phase 3b \u2014 Full Fleet Dr. C Independent Certification. Ran grand_rounds_harness.py (same 6-test battery as Herm Zero's GR1) independently on every testable variant. This is Dr. C's personal certification, not a verification of GR1.",
       "protocol_script": "scripts/phase3b_fullfleet.py + grand_rounds_harness.py",
       "variants_tested": [
         "base",
@@ -695,7 +714,7 @@
       },
       "best_grade": "B",
       "best_score": 86.3,
-      "notes": "Dr. C independent certification of tc-bible-big-mkh-deu_eng_nld. Tested 2 variant(s): base, ct2_int8. Best variant grade: B (86.3). This is a fresh, independent run — not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
+      "notes": "Dr. C independent certification of tc-bible-big-mkh-deu_eng_nld. Tested 2 variant(s): base, ct2_int8. Best variant grade: B (86.3). This is a fresh, independent run \u2014 not a re-run of GR1. Filed by Opus 4.6 Opus-Claw (Dr. C) on 2026-04-12."
     },
     {
       "exam_id": "DRC-REALCT2-lora-tc-bible-big-mkh-deu_eng_nld",
@@ -711,7 +730,7 @@
       "date": "2026-04-13T20:15:01.354351+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Grand Rounds v2 — 8-test paragraph-level stress battery with 5-star rating",
+      "method": "Grand Rounds v2 \u2014 8-test paragraph-level stress battery with 5-star rating",
       "protocol_script": "scripts/grand_rounds_v2.py + grand_rounds_v2_runner.py (subprocess-isolated)",
       "variants_tested": [
         "lora",
@@ -785,7 +804,7 @@
       "best_stars": 2.5,
       "best_tier": "basic",
       "best_composite": 52.5,
-      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5★ (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
+      "notes": "Grand Rounds v2 paragraph-level stress test. 8 tests: sentences, paragraphs (5 domains), long-form (2 passages), native input, domain stress, edge cases, round-trip, speed. Non-English-source models tested with native OPUS data. Best variant: lora at 2.5\u2605 (basic). Filed by Opus 4.6 Opus-Claw (Dr. C)."
     },
     {
       "exam_id": "DRC-HFUPLOAD-tc-bible-big-mkh-deu_eng_nld",
@@ -814,12 +833,82 @@
       "src_name": "Mon-Khmer",
       "tgt_name": "German/English/Dutch",
       "notes": "Patient file had language codes derived from a naive pid split (e.g., src=\"tc\" for pid=\"tc-big-fi-zle\"). Corrected to use a Helsinki-family-prefix-stripped parse so src/tgt reflect actual source and target languages. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-18T09-51-05-tc-bible-big-mkh-deu_eng_nld",
+      "date": "2026-05-18T09:51:05-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-20260518T134017Z-cbfb4a",
+      "results": {
+        "source_repo": "WindyWord/translate-tc-bible-big-mkh-deu_eng_nld",
+        "dest_repo": "WindstormLabs/translate-tc-bible-big-mkh-deu_eng_nld",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 8.8,
+        "quality_tier": "below_bar",
+        "stars": 2.5,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-tc-bible-big-mkh-deu_eng_nld",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-mkh-deu_eng_nld",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "d23bd9fb48f2bdd1ba6566c7250fea6d4f073041",
+        "upstream_license": "apache-2.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-MIRROR-2026-05-24T16-54-07-tc-bible-big-mkh-deu_eng_nld",
+      "date": "2026-05-24T16:54:07-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-archive mirror Helsinki-NLP/opus-mt-opus-mt-tc-bible-big-mkh-deu_eng_nld \u2192 WindstormLabs/origin-Helsinki-NLP-opus-mt-opus-mt-tc-bible-big-mkh-deu_eng_nld",
+      "session_id": "phase-d-origin-20260524T201016Z-0f2eec",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-mkh-deu_eng_nld",
+        "source_repo": "Helsinki-NLP/opus-mt-tc-bible-big-mkh-deu_eng_nld",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-mkh-deu_eng_nld",
+        "source_pair_used": "tc-bible-big-mkh-deu_eng_nld",
+        "is_representative_for_shared_upstream": false,
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "byte_perfect_match",
+        "elapsed_s": 10.3,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase D upstream-archive snapshot; Helsinki-NLP remains canonical."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.916690",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-24T16:54:07-0400",
+    "doctors_examined": 4,
+    "exams_total": 17,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",
@@ -952,7 +1041,7 @@
       "oc1_stars_reference": 5.0
     },
     "herm_zero_streps": {
-      "doctor": "Herm Zero (Dr. B) — STREPS",
+      "doctor": "Herm Zero (Dr. B) \u2014 STREPS",
       "source": "streps_stress_test",
       "timestamp": "2026-03-24T06:49:27.758934+00:00",
       "variant_scores": {}
@@ -966,7 +1055,7 @@
     "lora_size_mb": 932.88,
     "verified_by": "Herm Zero (Dr. B) deep_audit_v4",
     "verification_date": "2026-03-23T23:29:42.629507+00:00",
-    "legal_status": "DISTINCT_BINARY — LoRA weights differ from base (different SHA-256)"
+    "legal_status": "DISTINCT_BINARY \u2014 LoRA weights differ from base (different SHA-256)"
   },
   "surgical_log": [
     {
@@ -976,7 +1065,7 @@
       "type": "attempted-fine-tune",
       "variant_target": "herm0",
       "outcome": "aborted",
-      "procedure": "Fine-tune attempted — no parallel data available in OPUS/Tatoeba/WikiMatrix"
+      "procedure": "Fine-tune attempted \u2014 no parallel data available in OPUS/Tatoeba/WikiMatrix"
     }
   ],
   "variant_count": 3

@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-20T13:16:45.493942+00:00",
+  "_last_updated": "2026-05-24T16:47:37-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/tcbig-bible_deu_eng_fra_por_spa-mkh.json",
   "patient_id": "tcbig-bible_deu_eng_fra_por_spa-mkh",
   "admitted": "2026-03-22T20:04:30.645650+00:00",
@@ -39,7 +39,22 @@
         "model.safetensors"
       ],
       "reconciled_at": "2026-04-11T20:03:17.828866+00:00",
-      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "reconciled_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+      "upstream_status": "verified",
+      "upstream_commit_sha_at_record_time": "c3645de4a523ba4e0afadb8e36bb5d4f809c13bf",
+      "upstream_last_modified_at_record_time": "2024-10-08 07:20:30+00:00",
+      "upstream_license": "apache-2.0",
+      "upstream_gated": false,
+      "upstream_recorded_at": "2026-05-19T14:54:33-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "local_weight_format": "safetensors",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+      "windstormlabs_origin_uploaded_at": "2026-05-24T16:47:37-0400",
+      "windstormlabs_origin_archive_mode": "byte_perfect",
+      "windstormlabs_origin_verify": "byte_perfect_match",
+      "windstormlabs_origin_representative_pair": "tc-bible-big-deu_eng_fra_por_spa-mkh"
     },
     "lora": {
       "status": "present",
@@ -817,12 +832,59 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-tcbig-bible_deu_eng_fra_por_spa-mkh",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora, lora-ct2-int8. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-tcbig-bible_deu_eng_fra_por_spa-mkh",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+        "upstream_status": "verified",
+        "upstream_commit_sha": "c3645de4a523ba4e0afadb8e36bb5d4f809c13bf",
+        "upstream_license": "apache-2.0",
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-MIRROR-2026-05-24T16-47-37-tcbig-bible_deu_eng_fra_por_spa-mkh",
+      "date": "2026-05-24T16:47:37-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-archive mirror Helsinki-NLP/opus-mt-opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh \u2192 WindstormLabs/origin-Helsinki-NLP-opus-mt-opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+      "session_id": "phase-d-origin-20260524T201016Z-0f2eec",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+        "source_repo": "Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh",
+        "source_pair_used": "tc-bible-big-deu_eng_fra_por_spa-mkh",
+        "is_representative_for_shared_upstream": true,
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "byte_perfect_match",
+        "elapsed_s": 11.0,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase D upstream-archive snapshot; Helsinki-NLP remains canonical."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:57.967434",
-    "doctors_examined": 2,
-    "exams_total": 8,
+    "last_updated": "2026-05-24T16:47:37-0400",
+    "doctors_examined": 4,
+    "exams_total": 17,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "LOADER_BROKEN",

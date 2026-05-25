@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-21T15:36:54.101237+00:00",
+  "_last_updated": "2026-05-19T11:27:01-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/en-pt.json",
   "patient_id": "en-pt",
   "admitted": "2026-04-21T15:36:54.101237+00:00",
@@ -23,7 +23,10 @@
       "ported_at": "2026-04-21T15:36:54.101237+00:00",
       "ported_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "on_disk_path": null,
-      "note": "Ported from WindyProLabs/windy-pair-en-pt via download+reupload (cross-org; no native duplicate_repo for models). 930 MB safetensors + tokenizer."
+      "note": "Ported from WindyProLabs/windy-pair-en-pt via download+reupload (cross-org; no native duplicate_repo for models). 930 MB safetensors + tokenizer.",
+      "huggingface_url": "https://huggingface.co/WindyWord/translate-en-pt/tree/main/lora",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-en-pt/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-19T11:27:01-0400"
     }
   },
   "architecture": {
@@ -36,7 +39,7 @@
       "date": "2026-04-21T15:36:54.101237+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Cross-org port: WindyProLabs/windy-pair-en-pt → WindyWord/translate-en-pt",
+      "method": "Cross-org port: WindyProLabs/windy-pair-en-pt \u2192 WindyWord/translate-en-pt",
       "protocol_script": "inline by Dr. C",
       "source_repo": "WindyProLabs/windy-pair-en-pt",
       "target_repo": "WindyWord/translate-en-pt",
@@ -45,8 +48,31 @@
         "lora"
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-en-pt",
-      "rationale": "en-pt was identified as the one installer-referenced translation pair missing from WindyWord. Only copy lived in WindyProLabs/windy-pair-en-pt (private, Dr. A era 2026-03-10 upload). WindyWord/translate-en-ROMANCE already covers Portuguese as a Romance target, but dedicated en-pt is better for single-language users. HfApi has move_repo but not duplicate_repo for models; cross-org move_repo requires admin on both orgs which our token doesn't have. Workaround: download via HuggingFaceVeron1 (WindyProLabs scope), upload via WindyWordGodAPI1 (WindyWord scope). Variant published under lora/ subfolder matching WindyWord convention. Future work: build proprietary herm0/ and herm0-scripture/ variants via the normal fine-tune pipeline. Currently lora ≡ base Helsinki weights.",
+      "rationale": "en-pt was identified as the one installer-referenced translation pair missing from WindyWord. Only copy lived in WindyProLabs/windy-pair-en-pt (private, Dr. A era 2026-03-10 upload). WindyWord/translate-en-ROMANCE already covers Portuguese as a Romance target, but dedicated en-pt is better for single-language users. HfApi has move_repo but not duplicate_repo for models; cross-org move_repo requires admin on both orgs which our token doesn't have. Workaround: download via HuggingFaceVeron1 (WindyProLabs scope), upload via WindyWordGodAPI1 (WindyWord scope). Variant published under lora/ subfolder matching WindyWord convention. Future work: build proprietary herm0/ and herm0-scripture/ variants via the normal fine-tune pipeline. Currently lora \u2261 base Helsinki weights.",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-19T11-27-01-en-pt",
+      "date": "2026-05-19T11:27:01-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-gap-20260519T152642Z-416b3e",
+      "results": {
+        "source_repo": "WindyWord/translate-en-pt",
+        "dest_repo": "WindstormLabs/translate-en-pt",
+        "files_uploaded": 10,
+        "expected_files": 10,
+        "verify": "match",
+        "elapsed_s": 18.8,
+        "quality_tier": "unrated",
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
     }
   ],
   "quality_rating": {
@@ -57,5 +83,10 @@
     "rated_at": null,
     "rated_by": null,
     "note": "Pending Grand Rounds v2 certification. Ported from legitimate upstream (Helsinki-NLP/opus-mt-tc-big-en-pt, 34k downloads community-trusted)."
+  },
+  "consensus": {
+    "last_updated": "2026-05-19T11:27:01-0400",
+    "doctors_examined": 2,
+    "exams_total": 2
   }
 }

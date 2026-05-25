@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_last_updated": "2026-04-21T15:01:49.675282+00:00",
+  "_last_updated": "2026-05-25T18:04:12-0400",
   "_clinic_path": "THE_CLINIC/translation-pairs/zlw-fiu.json",
   "patient_id": "zlw-fiu",
   "admitted": "2026-03-22T19:53:11.539460+00:00",
@@ -39,7 +39,30 @@
       "on_disk_target": "/home/user1-gpu/Desktop/grants_folder/windy-pro/restore_20260411/phase1_onnx_restore/zlw-fiu",
       "on_disk_format": "pytorch_bin",
       "restored_at": "2026-04-11T20:51:05.692682+00:00",
-      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "restored_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "upstream_repo": "Helsinki-NLP/opus-mt-zlw-fiu",
+      "upstream_status": "verified",
+      "upstream_recorded_at": "2026-05-25T18:04:12-0400",
+      "upstream_recorded_by": "Opus 4.7 1M-Context (Dr. D)",
+      "upstream_note": "Upstream identity could not be recovered from local config.json _name_or_path or README. Pair name and model_type=marian suggest Helsinki-NLP/opus-mt-* origin but specific repo unresolved; manual investigation needed.",
+      "upstream_recovery_note": "Identity recovered from local README.md hf_name field after Phase D initial inventory marked this pair upstream:unknown due to missing _name_or_path in config.json (older config schema). README inspection yielded Helsinki-NLP/opus-mt-zlw-fiu.",
+      "windstormlabs_origin_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-zlw-fiu",
+      "windstormlabs_origin_url": "https://huggingface.co/WindstormLabs/origin-Helsinki-NLP-opus-mt-zlw-fiu",
+      "windstormlabs_origin_uploaded_at": "2026-05-25T18:04:12-0400",
+      "windstormlabs_origin_verify": "byte_perfect_weights_only_readme_patched",
+      "windstormlabs_origin_archive_mode": "byte_perfect_weights_only_readme_patched",
+      "windstormlabs_origin_readme_patched": true,
+      "windstormlabs_origin_readme_patch_detail": {
+        "status": "patched",
+        "changes": {
+          "lang_replacements": [],
+          "moved_to_bcp47": [
+            "csb_Latn",
+            "liv_Latn",
+            "fkv_Latn"
+          ]
+        }
+      }
     },
     "lora": {
       "status": "present",
@@ -53,7 +76,9 @@
       "created_at": "2026-04-14T23:32:55.015104+00:00",
       "created_by": "Opus 4.6 Opus-Claw (Dr. C)",
       "huggingface_url": "https://huggingface.co/WindyWord/translate-zlw-fiu/tree/main/lora",
-      "hf_uploaded_at": "2026-04-21T15:01:49.675282+00:00"
+      "hf_uploaded_at": "2026-04-21T15:01:49.675282+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-zlw-fiu/tree/main/lora",
+      "windstormlabs_uploaded_at": "2026-05-19T11:02:20-0400"
     },
     "ct2_int8": {
       "status": "missing_from_disk",
@@ -189,7 +214,9 @@
       "note": "INT8 ONNX archive of the herm0 (OPUS-improved) variant. Contains model_int8.onnx only \u2014 no tokenizer, no config. Relocated to onnx_fleet/herm0_int8/ on 2026-04-11 for variant clarity by Opus 4.6 Opus-Claw (Dr. C).",
       "variant_meaning": "herm0_int8_onnx",
       "relocated_at": "2026-04-11T21:06:19.560202+00:00",
-      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)"
+      "relocated_by": "Opus 4.6 Opus-Claw (Dr. C)",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/translate-zlw-fiu/tree/main/windy-pair-zlw-fiu",
+      "windstormlabs_uploaded_at": "2026-05-19T11:02:20-0400"
     }
   },
   "architecture": {
@@ -1096,12 +1123,87 @@
       ],
       "hf_url": "https://huggingface.co/WindyWord/translate-zlw-fiu",
       "notes": "Uploaded to WindyWord HuggingFace organization. Variants published: lora. Public repo with branded model card. Patient file attribution linked via README. Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-2026-05-19T11-02-20-zlw-fiu",
+      "date": "2026-05-19T11:02:20-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C \u2014 upload-from-local clone WindyWord/translate-<pid> \u2192 WindstormLabs/translate-<pid>",
+      "protocol_script": "clone_to_labs.py",
+      "session_id": "phase-c-20260519T144801Z-6c1ea6",
+      "results": {
+        "source_repo": "WindyWord/translate-zlw-fiu",
+        "dest_repo": "WindstormLabs/translate-zlw-fiu",
+        "files_uploaded": 10,
+        "expected_files": 10,
+        "verify": "match",
+        "elapsed_s": 6.4,
+        "quality_tier": "unrated",
+        "stars": null,
+        "certified": false,
+        "visibility": "public",
+        "sandbox_mode": true
+      },
+      "notes": "ADR-039 Phase C bulk migration; WindyWord left intact."
+    },
+    {
+      "exam_id": "WSL-PROVENANCE-2026-05-19T14-54-33-zlw-fiu",
+      "date": "2026-05-19T14:54:33-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D \u2014 upstream-provenance recording for the Helsinki-NLP/opus-mt-* fine-tune corpus",
+      "session_id": "phase-d-records-20260519T185433Z-1097fb",
+      "scope": "variant_cluster.base",
+      "fields_added": [
+        "upstream_repo",
+        "upstream_status",
+        "upstream_commit_sha_at_record_time",
+        "upstream_license",
+        "upstream_recorded_at"
+      ],
+      "results": {
+        "upstream_repo": null,
+        "upstream_status": "unknown",
+        "upstream_commit_sha": null,
+        "upstream_license": null,
+        "windstormlabs_origin_pre_existing": false
+      },
+      "notes": "Records-only step preceding the WindstormLabs/origin-* mirror. Captures upstream HF repo id + current commit sha + license at record time."
+    },
+    {
+      "exam_id": "WSL-ORIGIN-UNKNOWN-RECOVERY-2026-05-25T18-04-12-zlw-fiu",
+      "date": "2026-05-25T18:04:12-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase D unknown-pair recovery \u2014 upstream identity recovered from local README.md, then mirrored to Labs. Upstream: Helsinki-NLP/opus-mt-zlw-fiu",
+      "session_id": "phase-d-unknown-pair-20260525T220351Z-1616ce",
+      "scope": "variant_cluster.base",
+      "results": {
+        "upstream_repo": "Helsinki-NLP/opus-mt-zlw-fiu",
+        "dest_repo": "WindstormLabs/origin-Helsinki-NLP-opus-mt-zlw-fiu",
+        "verify": "byte_perfect_weights_only_readme_patched",
+        "sha_mismatches": [],
+        "readme_patch": {
+          "status": "patched",
+          "changes": {
+            "lang_replacements": [],
+            "moved_to_bcp47": [
+              "csb_Latn",
+              "liv_Latn",
+              "fkv_Latn"
+            ]
+          }
+        },
+        "elapsed_s": 8.3
+      },
+      "notes": "Closes the second of two upstream-unknown gaps surfaced by Phase D records phase on 2026-05-19. Identity recovered from README inspection; README YAML was minimally patched to satisfy HF validator."
     }
   ],
   "consensus": {
-    "last_updated": "2026-04-11T14:59:58.057751",
-    "doctors_examined": 2,
-    "exams_total": 7,
+    "last_updated": "2026-05-25T18:04:12-0400",
+    "doctors_examined": 5,
+    "exams_total": 19,
     "base_verdict": "PASS",
     "lora_verdict": "PASS",
     "ct2_verdict": "REEXPORTED_SAFETENSORS",

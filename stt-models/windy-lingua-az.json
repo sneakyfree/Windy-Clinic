@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-21T20:12:07.592418+00:00",
+  "_last_updated": "2026-05-19T13:05:00-0400",
   "_clinic_path": "stt-models/windy-lingua-az.json",
   "patient_id": "windy-lingua-az",
   "kind": "stt_lingua",
@@ -20,7 +20,9 @@
       "hf_repo": "WindyWord/listen-windy-lingua-az",
       "subfolder": "safetensors",
       "format": "safetensors",
-      "ported_at": "2026-04-21T20:12:07.592418+00:00"
+      "ported_at": "2026-04-21T20:12:07.592418+00:00",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-az/tree/main/safetensors",
+      "windstormlabs_uploaded_at": "2026-05-19T13:05:00-0400"
     },
     "ct2-int8": {
       "status": "present",
@@ -36,7 +38,7 @@
       "date": "2026-04-21T20:12:07.592418+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Cross-org port WindyProLabs → WindyWord with signed WER audit metadata",
+      "method": "Cross-org port WindyProLabs \u2192 WindyWord with signed WER audit metadata",
       "ported_variants": [
         "safetensors",
         "ct2-int8"
@@ -51,6 +53,33 @@
       },
       "upstream_note": "Model originally uploaded to WindyProLabs on 2026-03-10 by Dr. A / Kit OC1 Alpha. Underlying base is a community Whisper fine-tune (see individual HF model card for lineage).",
       "notes": "Filed by Opus 4.6 Opus-Claw (Dr. C)."
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-2026-05-19T13-05-00-windy-lingua-az",
+      "date": "2026-05-19T13:05:00-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C (listen-* track) \u2014 snapshot-download from WindyWord/listen-<pid> then upload-folder to WindstormLabs/listen-<pid>",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [
+        "safetensors"
+      ],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-az",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-az",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 16.0,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ADR-039 Phase C listen-* migration; WindyWord left intact."
     }
-  ]
+  ],
+  "consensus": {
+    "last_updated": "2026-05-19T13:05:00-0400",
+    "exams_total": 2,
+    "doctors_examined": 2
+  }
 }

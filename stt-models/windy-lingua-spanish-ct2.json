@@ -1,6 +1,6 @@
 {
   "_schema": "windstorm_clinic_stt_v1",
-  "_last_updated": "2026-04-28T02:04:38.883982+00:00",
+  "_last_updated": "2026-05-19T13:06:46-0400",
   "_clinic_path": "stt-models/windy-lingua-spanish-ct2.json",
   "_filing_note": "Metadata-only record. Weights live on HuggingFace (WindyWord/listen-* (post-2026-04-21 migration; original WindyLabs/* references were Dr. A era stale pointers)) or on the remote training machine. Not locally testable.",
   "patient_id": "windy-lingua-spanish-ct2",
@@ -55,15 +55,52 @@
       "date": "2026-04-28T02:04:38.883982+00:00",
       "doctor": "Opus 4.6 Opus-Claw (Dr. C)",
       "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
-      "method": "Sweep update — WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
+      "method": "Sweep update \u2014 WindyLabs/* references updated to WindyWord/listen-* (2026-04-28 cleanup pass)",
       "is_stale_subvariant": false,
       "parent_repo": null,
       "subfolder": null,
       "notes": "Original Dr. A-era patient files referenced the WindyLabs/* HF org (which never had live models due to a typo). Migration to WindyWord/listen-* completed 2026-04-21. This sweep updates all hf_repo + variant_cluster.*.hf_repo + _filing_note pointers in this patient file to reflect the canonical WindyWord URL. "
+    },
+    {
+      "exam_id": "WSL-CLONE-LISTEN-ALIAS-2026-05-19T13-06-46-windy-lingua-es-ct2",
+      "date": "2026-05-19T13:06:46-0400",
+      "doctor": "Opus 4.7 1M-Context (Dr. D)",
+      "machine": "Veron-1 (RTX 5090, Mt Pleasant SC)",
+      "method": "ADR-039 Phase C alias mirror \u2014 ISO-code duplicate 'windy-lingua-es-ct2' of canonical 'windy-lingua-spanish-ct2' (byte-identical weights verified via SHA-256)",
+      "session_id": "phase-c-listen-20260519T170038Z-a81714",
+      "ported_variants": [],
+      "results": {
+        "source_repo": "WindyWord/listen-windy-lingua-es-ct2",
+        "dest_repo": "WindstormLabs/listen-windy-lingua-es-ct2",
+        "files_uploaded": 13,
+        "expected_files": 13,
+        "verify": "match",
+        "elapsed_s": 6.7,
+        "alias_of_canonical": "windy-lingua-spanish-ct2",
+        "weight_sha256_matches_canonical": true,
+        "sandbox_mode": true,
+        "visibility": "public"
+      },
+      "notes": "ISO-code alias mirror; both WindyWord and WindstormLabs publish identical weights under both names."
     }
   ],
   "consensus": {
     "status": "awaiting_sync",
-    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present — can only be tested after pulling from HuggingFace or remote machine."
-  }
+    "notes": "Shipping catalog entry from 2026-03-10. Local merged weights not present \u2014 can only be tested after pulling from HuggingFace or remote machine.",
+    "last_updated": "2026-05-19T13:06:46-0400",
+    "exams_total": 4,
+    "doctors_examined": 2
+  },
+  "iso_aliases": [
+    {
+      "iso_pid": "windy-lingua-es-ct2",
+      "iso_hf_repo_source": "WindyWord/listen-windy-lingua-es-ct2",
+      "iso_hf_repo_dest": "WindstormLabs/listen-windy-lingua-es-ct2",
+      "windstormlabs_url": "https://huggingface.co/WindstormLabs/listen-windy-lingua-es-ct2",
+      "weight_sha256_matches_canonical": true,
+      "verified_at": "2026-05-19T13:06:46-0400",
+      "verified_by": "Opus 4.7 1M-Context (Dr. D)",
+      "note": "WindyWord publishes byte-identical copies under ISO code 'es' and full name; both mirrored to Labs."
+    }
+  ]
 }
