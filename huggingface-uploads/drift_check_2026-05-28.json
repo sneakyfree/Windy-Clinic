@@ -1,0 +1,268 @@
+{
+  "ts": "2026-05-29T03:27:08+00:00",
+  "src": "WindyWord",
+  "dst": "WindstormLabs",
+  "shared_count": 1668,
+  "only_in_WindyWord": [],
+  "only_in_WindstormLabs": [],
+  "weight_identical": 1640,
+  "weight_drift": 28,
+  "errors": 0,
+  "metadata_differs_count": 0,
+  "drift_repos": [
+    {
+      "name": "translate-ceb-sv",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-de-et",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-de-eu",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-en-bi",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-en-iir",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-en-nic",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-en-sk",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-en-tut",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-eo-sh",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-es-da",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-es-bg",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-et-sv",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-fi-el",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-fi-sk",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-fr-sv",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-ig-fr",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-it-ca",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-no-fr",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-no-ru",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-pl-no",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-ru-et",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sh-eo",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sv-bg",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sv-et",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sv-fr",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sv-cs",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-sv-sl",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    },
+    {
+      "name": "translate-uk-ca",
+      "detail": [
+        "extra-in-WindstormLabs:herm0-ct2-int8/model.bin",
+        "extra-in-WindstormLabs:herm0/model.safetensors",
+        "extra-in-WindstormLabs:herm0/source.spm",
+        "extra-in-WindstormLabs:herm0/target.spm"
+      ]
+    }
+  ],
+  "error_repos": [],
+  "recheck_ts": "2026-05-29T03:34:55+00:00"
+}
